@@ -11,6 +11,10 @@ Revise somente o conteúdo enviado para a área, página ou coleção atribuída
 5. Escolha **aprovar/publicar** quando o conteúdo estiver pronto ou **devolver para ajuste** quando houver pendências.
 6. Quando devolver, descreva a alteração necessária de forma acionável; o editor corrige e reenvia para moderação.
 
+![[imagens/manual-ifrn/image36.png|Pré-visualização usada antes de decidir a publicação]]
+
+![[imagens/manual-ifrn/image14.png|Exemplo de estado no fluxo de moderação]]
+
 ## Antes de aprovar
 
 - [ ] O conteúdo pertence ao escopo do seu grupo?

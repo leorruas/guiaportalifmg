@@ -15,6 +15,10 @@ Antes de preencher qualquer campo, responda a duas perguntas: “onde uma pessoa
 
 **Exemplo:** uma informação permanente sobre atendimento costuma ficar como página do setor; um aviso com prazo curto pode ser um comunicado; uma seleção com edital e etapas precisa ser um processo seletivo.
 
+![[imagens/manual-ifrn/image10.png|Ação para editar uma página no Wagtail]]
+
+![[imagens/manual-ifrn/image43.png|Menu de ações disponível em uma página]]
+
 ## Ao usar blocos e mídia
 
 - Use links internos para páginas e documentos existentes; use links externos somente quando o destino for oficial e necessário.

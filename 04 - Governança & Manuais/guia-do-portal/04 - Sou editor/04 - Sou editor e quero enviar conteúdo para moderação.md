@@ -12,6 +12,8 @@ Moderação é uma segunda leitura antes de abrir a porta para o público. Ela n
 4. Aguarde a decisão do moderador.
 5. Se a página for devolvida, abra os comentários, corrija os pontos indicados e envie novamente para moderação.
 
+![[imagens/manual-ifrn/image14.png|Exemplo de estado de uma página no fluxo de moderação]]
+
 ## O que cada ação significa
 
 - **Salvar rascunho**: preserva o trabalho sem enviar para revisão.

@@ -14,6 +14,8 @@ Um comentário é um bilhete preso exatamente no ponto que precisa de atenção.
 6. Salve a página: comentários e respostas só são preservados com o salvamento.
 7. Pré-visualize e envie a página novamente para moderação.
 
+![[imagens/manual-ifrn/image2.png|Ícone para abrir comentários no Wagtail]]
+
 ## Consultar mudanças anteriores
 
 Use o **Histórico** da página para conferir alterações anteriores e entender o que mudou. Antes de substituir um documento ou imagem, confira onde ele é utilizado: a substituição pode atualizar várias páginas ao mesmo tempo.

@@ -17,4 +17,8 @@ Use as ações de publicação apenas nas páginas incluídas no escopo do seu g
 3. Informe a data de publicação ou expiração e salve.
 4. Registre o responsável por revisar a página antes de seu vencimento.
 
+![[imagens/manual-ifrn/image16.png|Indicador de status e opções de publicação]]
+
+![[imagens/manual-ifrn/image19.png|Formulário para agendar publicação ou expiração]]
+
 [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero revisar e aprovar conteúdos|Voltar ao papel de moderador]]

@@ -10,12 +10,18 @@ O Wagtail organiza o portal como uma árvore: as páginas mais gerais ficam no a
 
 Na tela inicial, verifique suas alterações recentes e os grupos aos quais você pertence. Eles definem as páginas e coleções em que você pode trabalhar.
 
+![[imagens/manual-ifrn/image8.png|Entrada Páginas no menu lateral do Wagtail]]
+
 ## Encontrar uma página
 
 1. Abra **Páginas** na barra lateral para navegar pela estrutura do site.
 2. Use o nome da página, as setas e o caminho de navegação para chegar à seção correta.
 3. Use **Busca** na barra lateral quando souber parte do nome da página.
 4. Abra a edição somente se a página estiver dentro do escopo do seu grupo.
+
+![[imagens/manual-ifrn/image1.png|Busca no menu lateral do Wagtail]]
+
+![[imagens/manual-ifrn/image15.png|Caminho de navegação de uma página]]
 
 **Como saber se encontrou o lugar certo:** o caminho de navegação mostra a página-pai e o nome da seção corresponde ao campus, setor ou tema que você recebeu para cuidar.
 

@@ -10,6 +10,8 @@ Comentários permitem devolver uma página com uma indicação precisa do que pr
 4. Descreva a pendência, o motivo e a alteração esperada.
 5. Salve a página para registrar o comentário.
 
+![[imagens/manual-ifrn/image2.png|Atalho de comentários no Wagtail]]
+
 ## Acompanhar a correção
 
 1. Quando o editor reenviar a página, leia as respostas e confira a alteração realizada.
