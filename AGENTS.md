@@ -16,3 +16,10 @@
 
 - Use UTF-8 com normalização Unicode NFC para todos os nomes de arquivos e pastas, inclusive os que contêm acentos.
 - Não use formas decompostas de caracteres acentuados nos caminhos. Antes de um commit que renomeie ou crie arquivos acentuados, valide a compatibilidade entre macOS e Windows.
+
+## Links e navegação
+
+- Toda página de orientação deve ser alcançável a partir do `00 - guia-do-portal.md` ou de uma pasta de papel/fundamentos já alcançável por ele.
+- Use wikilinks somente para arquivos existentes neste vault. Para evidências e documentos mantidos fora dele, use um link Markdown para a fonte oficial ou para a página `06 - Referências/00 - Referências do projeto de origem.md`.
+- Todo link deve usar um rótulo descritivo; não use URLs soltas como texto de navegação.
+- Antes de cada commit, valide que não há wikilinks sem destino e que links modificados continuam apontando para o conteúdo correto.

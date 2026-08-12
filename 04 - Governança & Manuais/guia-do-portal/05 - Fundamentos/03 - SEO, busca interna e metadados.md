@@ -78,5 +78,4 @@ Observe consultas, cliques, posição média, páginas de entrada, tráfego org�
 
 - [Guia de SEO para iniciantes — Central da Pesquisa Google](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-BR) — referência primária para descoberta, conteúdo, títulos, snippets, links, imagens e estrutura do site.
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da Informação e Encontrabilidade]] — relação entre busca, navegação, linguagem e tarefas.
-- [[06 - Dados & Artefatos/dados-analytics/protocolo-analytics|Protocolo Analytics]] — medição e interpretação dos dados de uso.
-- [[05 - Conceitos & Variáveis/variaveis/encontrabilidade|Frustração na busca]] — hipótese de falha a investigar, não diagnóstico automático.
+- [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Protocolo de analytics e variável de encontrabilidade no projeto de origem]].

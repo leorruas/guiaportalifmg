@@ -59,8 +59,4 @@ Card sorting não valida programação nem substitui testes de uso. Tree testing
 
 ## Conexões no projeto
 
-- [[03 - Arquitetura & Decisões/testes-arquitetura/01 - proposta-ia-hibrida-perfis|Proposta de IA Híbrida]] — estrutura a ser validada por tarefa e público.
-- [[03 - Arquitetura & Decisões/decisoes-design/01 - relatório-estratégico-arquitetura-informação-portal|Relatório estratégico de arquitetura da informação]] — decisões, hipóteses e critérios de validação.
-- [[05 - Conceitos & Variáveis/variaveis/encontrabilidade|Frustração na busca]] — hipótese mensurável de falha de busca ou arquitetura.
-- [[02 - Pesquisa (UXR)/descoberta/04 - analise-comportamento-busca|Análise do comportamento de busca]] — evidências para monitoramento contínuo.
-- [[05 - Conceitos & Variáveis/conceitos/linguagem-simples|Linguagem simples]] — apoio à compreensão de rótulos, instruções e conteúdo.
+- [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Proposta de IA, relatório estratégico, análise de busca e conceitos no projeto de origem]].

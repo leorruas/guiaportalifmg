@@ -76,7 +76,6 @@ Em serviços públicos, uma única *North Star Metric* raramente representa todo
 
 ## Conexões no projeto
 
-- [[00 - Inbox/03 problemas para o futuro#2026-07-28 - Monitoramento de tarefas e fluxos críticos|Monitoramento de tarefas e fluxos críticos]] — tarefas iniciais, eventos e ciclo de acompanhamento.
-- [[06 - Dados & Artefatos/dados-analytics/protocolo-analytics|Protocolo Analytics]] — método de extração e limites de interpretação dos dados atuais.
+- [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Monitoramento de tarefas e protocolo de analytics no projeto de origem]].
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/03 - SEO, busca interna e metadados|SEO, busca interna e metadados]] — consultas e abandono como sinais de encontrabilidade.
-- [[02 - Pesquisa (UXR)/testes-de-usabilidade/guia-sintese-relatorio|Guia de Síntese de Relatório]] — integração de resultados qualitativos.
+- [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Síntese de testes de usabilidade do projeto de origem]].

@@ -32,15 +32,6 @@ Esta camada explica **por que** os padrões e decisões do guia existem. Ela ser
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/05 - Alcance, impressões, engajamento, CTR e conversão|Alcance, impressões, engajamento, CTR e conversão]]
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/06 - Copywriting, UX Writing e storytelling digital|Copywriting, UX Writing e Storytelling Digital]]
 
-## Base do projeto
+## Referências do projeto de origem
 
-- [[02 - Pesquisa (UXR)/descoberta/11 - relatorio-insights-portal|Relatório de insights do portal]] — síntese das evidências de pesquisa.
-- [[03 - Arquitetura & Decisões/decisoes-design/01 - relatório-estratégico-arquitetura-informação-portal|Relatório estratégico de arquitetura da informação]] — decisões de arquitetura e hipóteses de validação.
-- [[00 - Inbox/2026-07-02 - ideias change management novo portal|Ideias de change management]] — estrutura inicial do guia, papéis e entradas “Quero…”.
-
-## Referências existentes
-
-- [[04 - Governança & Manuais/01 - diretrizes-governanca-benchmarking|Diretrizes de Governança]]
-- [[04 - Governança & Manuais/03 - manual-redacao-linguagem-simples|Manual de Redação e Estruturação]]
-- [[05 - Conceitos & Variáveis/conceitos/linguagem-simples|Conceito: Linguagem Simples]]
-- [[05 - Conceitos & Variáveis/conceitos/usabilidade|Conceito: Usabilidade]]
+[[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Abrir pesquisas, decisões de arquitetura, diretrizes e manuais do projeto de origem]].
