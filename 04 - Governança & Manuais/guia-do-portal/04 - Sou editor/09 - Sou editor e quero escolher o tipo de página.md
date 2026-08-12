@@ -1,0 +1,27 @@
+# Sou editor e quero escolher o tipo de página
+
+Ao clicar em **Adicionar subpágina**, o Wagtail mostra apenas os tipos permitidos dentro da seção atual e para o seu grupo. Escolha o tipo pela finalidade da informação, não apenas pelo formato visual.
+
+## Tipos de conteúdo do portal
+
+- **Página institucional**: conteúdo estável de setor, serviço, tema ou orientação.
+- **Notícia**: fato novo, acontecimento ou divulgação com interesse público e prazo editorial.
+- **Comunicado**: aviso objetivo, geralmente com vigência curta e ação clara.
+- **Edital ou processo seletivo**: seleção com etapas, documentos, prazos e resultado.
+- **Curso**: apresentação estruturada de uma oferta formativa.
+- **Evento**: atividade com data, local, público e inscrição ou participação.
+- **Projeto ou programa**: iniciativa institucional que precisa de página própria.
+- **Link**: encaminhamento para um serviço, sistema ou fonte externa.
+
+## Como decidir
+
+1. Identifique se a informação é temporária, permanente, uma seleção, uma oferta formativa ou um serviço.
+2. Abra a página-pai onde o público espera encontrar esse conteúdo.
+3. Clique em **Adicionar subpágina**.
+4. Escolha o tipo correspondente à finalidade da informação.
+5. Se o tipo não estiver disponível, não crie uma página em local improvisado: solicite ao administrador ou moderador que confirme a estrutura e a permissão.
+
+> [!NOTE]
+> A disponibilidade de um tipo na lista depende do local da árvore de páginas e das permissões do seu grupo.
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero criar ou editar uma página|Voltar a criar ou editar uma página]]

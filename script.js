@@ -16,6 +16,7 @@ async function obterListaDeArquivos() {
                 return {
                     titulo: nomeSemExtensao,
                     path: encodeURI(`https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/${item.path}`),
+                    sourcePath: item.path,
                     categoria: indiceGuia >= 0 ? partes[indiceGuia + 1].replace(/^\d+\s*-\s*/, "") : ""
                 };
             });
@@ -58,6 +59,7 @@ async function carregarTodosOsArtigos() {
             return {
                 titulo: item.titulo,
                 path: item.path,
+                sourcePath: item.sourcePath,
                 categoria: categoria,
                 conteudo: texto
             };
@@ -218,11 +220,12 @@ function abrirArtigo(titulo, conteudoMarkdown) {
         artigoCorpo.innerText = markdownComHighlight;
     }
 
-    // Processa os links do Obsidian [[Nome do Artigo]]
-    processarLinksObsidian();
-
     // Processa callouts / caixas de aviso do Obsidian ([!IMPORTANT], [!NOTE], [!TIP], etc.)
     processarCalloutsObsidian();
+
+    // Processa os links do Obsidian [[Nome do Artigo]] depois dos callouts,
+    // para manter links clicáveis também dentro de caixas de aviso.
+    processarLinksObsidian();
 
     // Formata itens de lista de tarefas (Checkboxes / Study Roadmap)
     artigoCorpo.querySelectorAll('li input[type="checkbox"]').forEach(checkbox => {
@@ -285,7 +288,7 @@ function processarLinksObsidian() {
     artigoCorpo.innerHTML = htmlAtual.replace(regexObsidian, (match, caminho, textoExibicao) => {
         const destino = caminho || textoExibicao;
         const rotulo = textoExibicao || destino;
-        return `<a class="obsidian-link" data-destino="${destino}">${rotulo}</a>`;
+        return `<a href="#" class="obsidian-link" data-destino="${destino}">${rotulo}</a>`;
     });
 
     // Adiciona evento de clique para os links obsidian internos
@@ -347,8 +350,9 @@ function navegarParaLinkObsidian(nomeOuCaminho) {
     // Procura o artigo correspondente pelo título ou nome de arquivo
     const encontrado = todosOsArtigos.find(a => {
         const tituloMatch = normalizar(a.titulo) === limpo;
-        const nomeArquivo = normalizar(decodeURI(a.path).split("/").pop().replace(".md", ""));
-        const caminhoSemExtensao = normalizar(decodeURI(a.path).replace("./", "").replace(".md", ""));
+        const caminhoFonte = a.sourcePath || a.path;
+        const nomeArquivo = normalizar(decodeURI(caminhoFonte).split("/").pop().replace(".md", ""));
+        const caminhoSemExtensao = normalizar(decodeURI(caminhoFonte).replace("./", "").replace(/\.md$/, ""));
         return tituloMatch || nomeArquivo === limpo || caminhoSemExtensao === limpo;
     });
 
