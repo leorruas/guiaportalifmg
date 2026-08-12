@@ -18,6 +18,10 @@ Organize documentos e etapas do processo seletivo antes de enviar a página para
 5. Informe períodos apenas quando existirem para aquela seleção; não preencha campos com datas estimadas.
 6. Pré-visualize, confira os documentos e envie para moderação.
 
+![Exemplo de coleção de documentos de um processo seletivo](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image31.png)
+
+![Escolha da pasta adequada de processos seletivos](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image45.png)
+
 ## Durante a vigência
 
 - Atualize uma etapa ou documento na coleção quando essa for a mudança necessária; evite criar uma nova notícia para cada atualização operacional.

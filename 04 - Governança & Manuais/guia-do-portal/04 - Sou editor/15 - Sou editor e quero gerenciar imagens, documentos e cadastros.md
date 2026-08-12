@@ -20,6 +20,12 @@
 2. Dentro de uma coleção, adicione documentos ou imagens e revise os itens existentes.
 3. Peça ao administrador uma nova coleção ou permissão quando o destino necessário não estiver disponível.
 
+![Configurações e permissões de uma coleção](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image4.png)
+
+![Ação para adicionar uma coleção](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image26.png)
+
+![Adição de documentos ou imagens a uma coleção](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image38.png)
+
 ## Cadastros acessórios
 
 Quando o menu administrativo disponibilizar cadastros de etapas, tipos e subtipos de processo seletivo, eixos tecnológicos, modalidades ou categorias de curso, preencha ou altere apenas registros confirmados pela área responsável. Essas listas afetam várias páginas e não devem receber valores provisórios.

@@ -28,4 +28,6 @@ Na aba **Conteúdo**, adicione o bloco que corresponde à informação que preci
 - **Galeria**: use para imagens que precisam ser vistas em conjunto.
 - **Citação**: informe a frase e a autoria verificável.
 
+Para ver as telas de configuração e o resultado de cada bloco, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/16 - Sou editor e quero consultar exemplos visuais dos blocos|os exemplos visuais dos blocos]].
+
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/06 - Sou editor e quero usar blocos para montar uma página|Voltar a usar blocos]]

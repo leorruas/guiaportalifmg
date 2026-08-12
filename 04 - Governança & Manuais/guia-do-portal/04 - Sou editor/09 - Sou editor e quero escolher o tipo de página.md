@@ -21,6 +21,8 @@ Ao clicar em **Adicionar subpágina**, o Wagtail mostra apenas os tipos permitid
 4. Escolha o tipo correspondente à finalidade da informação.
 5. Se o tipo não estiver disponível, não crie uma página em local improvisado: solicite ao administrador ou moderador que confirme a estrutura e a permissão.
 
+![Lista de tipos disponíveis ao adicionar uma subpágina](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image21.png)
+
 > [!NOTE]
 > A disponibilidade de um tipo na lista depende do local da árvore de páginas e das permissões do seu grupo.
 

@@ -13,6 +13,10 @@ Publique uma notícia na pasta de notícias correta do campus, setor ou área. A
 7. Pré-visualize em computador e em dispositivos menores, quando a opção estiver disponível.
 8. Envie para moderação.
 
+![A opção Notícia aparece apenas dentro da pasta de notícias apropriada](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image12.png)
+
+![Exemplo de preenchimento de uma notícia no Wagtail](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image9.png)
+
 ## Antes de enviar
 
 - [ ] A notícia tem fonte oficial, data e responsável pela atualização?
