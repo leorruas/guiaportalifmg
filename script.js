@@ -392,8 +392,8 @@ function renderizarPastas() {
     const ordemCategorias = [
         "Comece aqui",
         "Sou administrador",
-        "Sou editor",
         "Sou moderador",
+        "Sou editor",
         "Sou gestor",
         "Fundamentos"
     ];
