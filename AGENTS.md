@@ -12,6 +12,11 @@
 - Toda modificação material no vault deve receber uma entrada concisa e factual no `log.md` antes do commit.
 - A entrada deve informar a data, os arquivos ou artefatos principais alterados e as decisões, evidências ou efeitos relevantes. Não registrar dados pessoais, segredos ou detalhes de ambiente local.
 
+## Inbox local
+
+- A pasta `00 - Inbox/` é um espaço local de triagem, perguntas em aberto e rascunhos de trabalho; ela não deve ser enviada ao GitHub.
+- Quando uma decisão estiver amadurecida, mova ou reescreva seu resultado na pasta definitiva e registre a alteração no `log.md` antes do commit.
+
 ## Compatibilidade de nomes de arquivo
 
 - Use UTF-8 com normalização Unicode NFC para todos os nomes de arquivos e pastas, inclusive os que contêm acentos.
