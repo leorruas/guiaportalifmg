@@ -2,6 +2,12 @@
 
 Este guia organiza o trabalho no portal por papel. Comece pela página que representa sua responsabilidade; nela você encontrará o que pode fazer, o que precisa de confirmação e quais fundamentos ajudam a executar a tarefa com qualidade.
 
+## Como as explicações funcionam
+
+Cada página responde, nesta ordem, a quatro perguntas: **para que serve esta ação**, **o que você precisa ter em mãos**, **como fazer** e **o que conferir antes de concluir**. Assim, o passo a passo não vira uma lista de cliques sem propósito.
+
+Quando aparecer um termo do Wagtail, leia a explicação ao lado dele. Por exemplo: uma **coleção** é a pasta controlada onde ficam documentos e imagens; um **grupo** é o conjunto de pessoas que recebe permissões parecidas. Se uma ação não estiver no seu escopo, a página indica a quem encaminhar.
+
 ## 1. Escolha seu papel
 
 - [[04 - Governança & Manuais/guia-do-portal/01 - Sou gestor/01 - Sou gestor e quero solicitar ou acompanhar uma atualização|Sou gestor e quero solicitar ou acompanhar uma atualização]].
@@ -16,6 +22,8 @@ Para entender termos, encontrar respostas rápidas e aprender a navegar no Wagta
 ## 2. Identifique sua intenção
 
 Use a página do seu papel para localizar a ação que precisa executar: solicitar uma atualização, criar ou corrigir conteúdo, revisar uma publicação, gerir acesso ou alterar uma configuração.
+
+Em cada explicação, tente resumir a tarefa com suas próprias palavras antes de começar. Se você não conseguir dizer o objetivo da ação, volte ao primeiro parágrafo da página: ele explica o resultado que a tarefa deve produzir.
 
 ## 3. Consulte os fundamentos quando necessário
 

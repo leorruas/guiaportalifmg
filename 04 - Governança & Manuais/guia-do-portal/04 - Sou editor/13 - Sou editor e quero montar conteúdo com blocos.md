@@ -2,6 +2,8 @@
 
 Na aba **Conteúdo**, adicione o bloco que corresponde à informação que precisa ser apresentada. Clique em **+** para incluir um bloco, use as setas para reordenar e a lixeira para remover. Pré-visualize sempre que combinar blocos diferentes.
 
+Blocos são peças da página: cada peça resolve uma necessidade de leitura. Um bloco de introdução apresenta o assunto; um de links aponta caminhos; um de coleção mostra arquivos. Em vez de tentar colocar tudo em um texto longo, escolha a peça que ajuda a pessoa a encontrar e entender aquela informação.
+
 ## Texto, imagens, links, vídeos e documentos
 
 - **Texto**: escreva em linguagem simples; use maiúsculas apenas para siglas e nomes próprios.
@@ -29,5 +31,7 @@ Na aba **Conteúdo**, adicione o bloco que corresponde à informação que preci
 - **Citação**: informe a frase e a autoria verificável.
 
 Para ver as telas de configuração e o resultado de cada bloco, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/16 - Sou editor e quero consultar exemplos visuais dos blocos|os exemplos visuais dos blocos]].
+
+**Resultado esperado:** uma página que pode ser lida por partes, com cada bloco servindo a uma intenção clara. Se você não consegue explicar em uma frase por que um bloco está ali, provavelmente ele pode ser removido, dividido ou trocado.
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/06 - Sou editor e quero usar blocos para montar uma página|Voltar a usar blocos]]

@@ -4,6 +4,8 @@ Você é responsável por uma área, serviço, projeto ou informação instituci
 
 No momento, o gestor encaminha a demanda a um editor, moderador ou administrador responsável pelo escopo. O gestor não precisa operar o Wagtail para solicitar ou acompanhar a atualização.
 
+Pense na solicitação como um pedido de serviço bem explicado: quem vai publicar não conhece necessariamente o assunto da sua área. Quanto mais claro você indicar **o que mudou**, **por que importa**, **para quem** e **até quando vale**, menos idas e vindas serão necessárias.
+
 ## O que você precisa conseguir fazer
 
 - Solicitar a criação, atualização, correção, divulgação, arquivamento ou retirada de uma informação.

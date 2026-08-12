@@ -1,5 +1,7 @@
 # Sou editor e quero editar, verificar e acompanhar uma página
 
+Editar não significa publicar na hora. Pense na página como um documento em revisão: você prepara a nova versão em rascunho, confere como ela ficará e só então a envia para quem pode aprová-la. O status mostra em qual ponto desse caminho a página está.
+
 ## Editar uma página existente
 
 1. Encontre a página em **Páginas** ou **Busca**.
@@ -27,6 +29,8 @@
 2. Salve a página para registrar comentários e respostas.
 3. Abra **Histórico** para consultar alterações anteriores.
 4. Envie para moderação quando a página estiver pronta; acompanhe o estado do fluxo e corrija as pendências quando ela for devolvida.
+
+**Resultado esperado:** a alteração fica registrada, foi conferida antes de ir ao ar e tem um próximo responsável claro quando ainda precisar de revisão.
 
 ![Exemplo de estado no fluxo de moderação](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image14.png)
 

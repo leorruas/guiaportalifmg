@@ -2,6 +2,8 @@
 
 Ao clicar em **Adicionar subpágina**, o Wagtail mostra apenas os tipos permitidos dentro da seção atual e para o seu grupo. Escolha o tipo pela finalidade da informação, não apenas pelo formato visual.
 
+O tipo de página funciona como o molde do conteúdo: ele define quais campos aparecem e onde a informação ficará no portal. Uma notícia pode até parecer uma página institucional, mas nasce para comunicar algo datado; por isso, usar o molde certo evita retrabalho depois.
+
 ## Tipos de conteúdo do portal
 
 - **Página institucional**: conteúdo estável de setor, serviço, tema ou orientação.
@@ -20,6 +22,8 @@ Ao clicar em **Adicionar subpágina**, o Wagtail mostra apenas os tipos permitid
 3. Clique em **Adicionar subpágina**.
 4. Escolha o tipo correspondente à finalidade da informação.
 5. Se o tipo não estiver disponível, não crie uma página em local improvisado: solicite ao administrador ou moderador que confirme a estrutura e a permissão.
+
+**Resultado esperado:** a nova página fica no lugar em que o público a procuraria e recebe os campos necessários para ser mantida corretamente.
 
 ![Lista de tipos disponíveis ao adicionar uma subpágina](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image21.png)
 

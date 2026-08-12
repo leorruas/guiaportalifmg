@@ -2,6 +2,8 @@
 
 Publique uma notícia na pasta de notícias correta do campus, setor ou área. Antes de criar, confirme se a informação é realmente uma notícia e não uma página estável, comunicado, edital ou documento.
 
+Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela ajuda a pessoa a entender o fato e decidir se precisa agir. Informações que continuam válidas por muito tempo, como um serviço ou um contato, devem ficar em uma página institucional — não escondidas em uma notícia antiga.
+
 ## Como criar
 
 1. Em **Páginas**, navegue até a pasta de notícias atribuída ao seu grupo.
@@ -12,6 +14,8 @@ Publique uma notícia na pasta de notícias correta do campus, setor ou área. A
 6. Na aba **Promover**, revise URL, título de busca e descrição.
 7. Pré-visualize em computador e em dispositivos menores, quando a opção estiver disponível.
 8. Envie para moderação.
+
+**Resultado esperado:** a notícia aparece na pasta certa, explica o fato sem depender de contexto interno e chega à moderação com seus links e documentos verificados.
 
 ![A opção Notícia aparece apenas dentro da pasta de notícias apropriada](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image12.png)
 

@@ -2,6 +2,8 @@
 
 Organize documentos e etapas do processo seletivo antes de enviar a página para moderação. Use a pasta de processos seletivos e a coleção atribuídas ao seu grupo.
 
+Pense na página como a porta de entrada da seleção e na coleção como a pasta onde ficam os arquivos oficiais. A página explica prazos e etapas; a coleção entrega os documentos. Separar as duas coisas permite atualizar um edital sem perder a organização da página.
+
 ## Preparar documentos
 
 1. Abra **Coleções** ou a área de documentos disponível para o seu grupo.
@@ -17,6 +19,8 @@ Organize documentos e etapas do processo seletivo antes de enviar a página para
 4. Na aba **Conteúdo**, adicione o bloco de coleção e selecione a coleção preparada para o processo.
 5. Informe períodos apenas quando existirem para aquela seleção; não preencha campos com datas estimadas.
 6. Pré-visualize, confira os documentos e envie para moderação.
+
+**Resultado esperado:** quem abre a página encontra as datas, entende a etapa em que está e acessa a versão vigente de cada documento.
 
 ![Exemplo de coleção de documentos de um processo seletivo](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image31.png)
 

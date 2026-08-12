@@ -28,3 +28,10 @@
 - Use wikilinks somente para arquivos existentes neste vault. Para evidências e documentos mantidos fora dele, use um link Markdown direto para a fonte oficial.
 - Todo link deve usar um rótulo descritivo; não use URLs soltas como texto de navegação.
 - Antes de cada commit, valide que não há wikilinks sem destino e que links modificados continuam apontando para o conteúdo correto.
+
+## Explicações do guia
+
+- Escreva para uma pessoa que está executando a tarefa pela primeira vez: diga primeiro o que a ação resolve, depois onde clicar e, por fim, como conferir se deu certo.
+- Prefira palavras comuns e frases curtas. Quando um termo do Wagtail for indispensável, explique-o na primeira vez em que aparecer.
+- Use exemplos concretos e comparações simples quando eles ajudarem a formar uma imagem mental; não cite métodos de ensino no texto publicado.
+- Cada procedimento deve deixar explícitos o resultado esperado, o limite de permissão e o próximo passo quando a pessoa não puder concluir a ação sozinha.
