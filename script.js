@@ -389,7 +389,21 @@ function renderizarPastas() {
 
     pastasContainer.innerHTML = "";
 
-    const categoriasOrdenadas = Object.keys(todasAsPastas).sort();
+    const ordemCategorias = [
+        "Comece aqui",
+        "Sou administrador",
+        "Sou editor",
+        "Sou moderador",
+        "Sou gestor",
+        "Fundamentos"
+    ];
+    const categoriasOrdenadas = Object.keys(todasAsPastas).sort((a, b) => {
+        const posicaoA = ordemCategorias.indexOf(a);
+        const posicaoB = ordemCategorias.indexOf(b);
+        const indiceA = posicaoA === -1 ? ordemCategorias.length : posicaoA;
+        const indiceB = posicaoB === -1 ? ordemCategorias.length : posicaoB;
+        return indiceA - indiceB || a.localeCompare(b, "pt-BR");
+    });
 
     categoriasOrdenadas.forEach(categoria => {
         const pastaItem = document.createElement("div");
