@@ -8,7 +8,7 @@ async function obterListaDeArquivos() {
 
         // Filtra apenas os arquivos Markdown (.md), ignorando pastas internas do Obsidian/Git/Agents
         return dados.tree
-            .filter(item => item.path.endsWith(".md") && !item.path.includes(".obsidian") && !item.path.includes(".git") && !item.path.includes(".gemini") && !item.path.includes(".agents") && item.path !== "me.md" && item.path !== "log.md")
+            .filter(item => item.path.endsWith(".md") && item.path.includes("guia-do-portal/") && !item.path.endsWith("/00 - guia-do-portal.md") && !item.path.includes(".obsidian") && !item.path.includes(".git") && !item.path.includes(".gemini") && !item.path.includes(".agents") && item.path !== "me.md" && item.path !== "log.md")
             .map(item => {
                 const nomeSemExtensao = item.path.split("/").pop().replace(".md", "");
                 const partes = item.path.split("/");
@@ -16,7 +16,7 @@ async function obterListaDeArquivos() {
                 return {
                     titulo: nomeSemExtensao,
                     path: encodeURI(`https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/${item.path}`),
-                    categoria: indiceGuia >= 0 ? (partes[indiceGuia + 1] || "Guia do Portal") : "Geral"
+                    categoria: indiceGuia >= 0 ? (partes[indiceGuia + 1] || "Guia do Portal") : "Guia do Portal"
                 };
             });
     } catch (erro) {
@@ -107,7 +107,7 @@ async function carregarTodosOsArtigos() {
             // Extrai pasta/categoria se houver subpasta
             const caminhoDecodificado = decodeURI(item.path);
             const partes = caminhoDecodificado.replace("./", "").split("/");
-            const categoria = item.categoria || (partes.length > 1 ? partes[0] : "Geral");
+            const categoria = item.categoria || (partes.length > 1 ? partes[0] : "Guia do Portal");
 
             return {
                 titulo: item.titulo,

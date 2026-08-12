@@ -12,14 +12,9 @@ Este guia ajuda cada pessoa a realizar seu trabalho no portal com clareza, segur
 - [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero revisar e aprovar conteúdos|Sou moderador e quero revisar e aprovar conteúdos]].
 - [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Sou editor e quero criar e atualizar conteúdos]].
 
-## O que você quer fazer?
+## Como utilizar este guia
 
-[[04 - Governança & Manuais/guia-do-portal/04 - tarefas-e-fluxos|Ver todas as tarefas e fluxos “Quero…”]]
-
-- **Criar ou atualizar conteúdo** — criar uma notícia, página, edital, comunicado, documento ou atualização.
-- **Revisar ou aprovar uma publicação** — verificar qualidade, vigência, acessibilidade, fonte e próximo passo.
-- **Organizar ou corrigir o portal** — atualizar menus, permissões, modelos, integrações ou regras de publicação.
-- **Acompanhar uma tarefa ou conteúdo** — identificar fricções, revisar dados e priorizar melhorias.
+[[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/01 - Como utilizar este guia|Entenda como navegar pelo guia, encontrar sua tarefa e usar os fundamentos]].
 
 ## Fundamentos e pesquisa
 
@@ -31,7 +26,3 @@ Esta camada explica **por que** os padrões e decisões do guia existem. Ela ser
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]]
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/05 - Alcance, impressões, engajamento, CTR e conversão|Alcance, impressões, engajamento, CTR e conversão]]
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/06 - Copywriting, UX Writing e storytelling digital|Copywriting, UX Writing e Storytelling Digital]]
-
-## Referências do projeto de origem
-
-[[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Abrir pesquisas, decisões de arquitetura, diretrizes e manuais do projeto de origem]].

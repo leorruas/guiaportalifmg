@@ -58,5 +58,3 @@ Card sorting não valida programação nem substitui testes de uso. Tree testing
 - [ ] Há responsável e periodicidade para revisar rótulos, sinônimos e conteúdos de alta procura?
 
 ## Conexões no projeto
-
-- [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Proposta de IA, relatório estratégico, análise de busca e conceitos no projeto de origem]].

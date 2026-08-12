@@ -66,4 +66,3 @@ Em uma campanha sobre um novo serviço, o copy pode convidar: “Consulte seus b
 
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/01 - Linguagem simples e acessibilidade|Linguagem simples e acessibilidade]] — clareza, orientação e compreensão inclusiva.
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da Informação e Encontrabilidade]] — rótulos e caminhos orientados à tarefa.
-- [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Manual de redação e estruturação do projeto de origem]].

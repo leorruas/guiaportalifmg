@@ -60,4 +60,3 @@ Publicar muitas peças não comprova resultado. Em comunicação pública, uma o
 ## Conexões no projeto
 
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]] — objetivos, metas e decisões baseadas em dados.
-- [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Monitoramento de tarefas e protocolo de analytics no projeto de origem]].

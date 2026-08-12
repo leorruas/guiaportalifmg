@@ -78,7 +78,6 @@ Ferramentas automáticas são úteis para detectar parte das falhas técnicas, m
 
 ## Referências e aprofundamento
 
-- [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|Manual de redação, linguagem simples e usabilidade no projeto de origem]].
 - [W3C — tutorial de imagens acessíveis](https://www.w3.org/WAI/tutorials/images/) — classificação e aplicação geral.
 - [W3C — imagens decorativas](https://www.w3.org/WAI/tutorials/images/decorative/) — uso de `alt=""`.
 - [W3C — imagens funcionais](https://www.w3.org/WAI/tutorials/images/functional/) — texto alternativo orientado à ação ou ao destino.

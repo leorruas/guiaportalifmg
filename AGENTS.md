@@ -25,6 +25,6 @@
 ## Links e navegação
 
 - Toda página de orientação deve ser alcançável a partir do `00 - guia-do-portal.md` ou de uma pasta de papel/fundamentos já alcançável por ele.
-- Use wikilinks somente para arquivos existentes neste vault. Para evidências e documentos mantidos fora dele, use um link Markdown para a fonte oficial ou para a página `06 - Referências/00 - Referências do projeto de origem.md`.
+- Use wikilinks somente para arquivos existentes neste vault. Para evidências e documentos mantidos fora dele, use um link Markdown direto para a fonte oficial.
 - Todo link deve usar um rótulo descritivo; não use URLs soltas como texto de navegação.
 - Antes de cada commit, valide que não há wikilinks sem destino e que links modificados continuam apontando para o conteúdo correto.

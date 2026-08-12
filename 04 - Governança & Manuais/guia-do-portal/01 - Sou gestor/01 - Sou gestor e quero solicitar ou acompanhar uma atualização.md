@@ -28,4 +28,4 @@ Você é responsável por uma área, serviço, projeto ou informação instituci
 - [ ] A solicitação indica a ação que a pessoa deve realizar depois de ler o conteúdo?
 - [ ] O conteúdo deve virar notícia, página estável, comunicado, documento ou atualização de página existente?
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/04 - tarefas-e-fluxos|Tarefas e fluxos — “Quero…”]] e [[04 - Governança & Manuais/guia-do-portal/06 - Referências/00 - Referências do projeto de origem|referências do projeto de origem]].
+Consulte: [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/01 - Como utilizar este guia|Como utilizar este guia]].
