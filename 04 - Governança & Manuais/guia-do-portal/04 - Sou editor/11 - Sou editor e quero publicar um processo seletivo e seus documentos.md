@@ -20,19 +20,28 @@ Pense na página como a porta de entrada da seleção e na coleção como a past
 
 ![[imagens/manual-ifrn/image45.png|Escolha da pasta de processos seletivos antes de criar a página]]
 
-3. Preencha título, período, etapas, público, prazos e orientações.
+3. Preencha o título, o subtipo, os dados do edital, o período de ingresso, o link de inscrições e os campi relacionados, conforme os campos disponíveis.
+
+Não crie ou altere um tipo e um subtipo por conta própria: essas listas são cadastros administrativos. Se não houver uma opção correta, peça ao administrador responsável.
+
+4. Para cada etapa, escolha o tipo, informe data de início e, quando houver, data de fim e campi envolvidos. Uma etapa é a resposta para “o que está acontecendo agora?” para quem acompanha a seleção.
 
 Quando o processo tiver fases ou resultados, apresente cada etapa de forma que a pessoa identifique imediatamente onde está e o que deve consultar.
 
 ![[imagens/manual-ifrn/image9.png|Exemplo de etapas e resultados publicados em um processo seletivo]]
 
-4. Na aba **Conteúdo**, adicione o bloco de coleção e selecione a coleção preparada para o processo.
-5. Informe períodos apenas quando existirem para aquela seleção; não preencha campos com datas estimadas.
-6. Pré-visualize, confira os documentos e envie para moderação.
+5. Na aba **Conteúdo**, adicione o bloco de coleção e selecione a coleção preparada para o processo. A coleção deve incluir ao menos a área de documentos publicados, conforme a estrutura definida para a seleção.
+6. Relacione cursos somente quando o subtipo permitir essa relação e quando os cursos já estiverem cadastrados.
+7. Informe períodos apenas quando existirem para aquela seleção; não preencha campos com datas estimadas.
+8. Pré-visualize, confira os documentos e envie para moderação.
 
 ![[imagens/manual-ifrn/image31.png|Exemplo de coleção com documentos de um processo seletivo]]
 
 **Resultado esperado:** quem abre a página encontra as datas, entende a etapa em que está e acessa a versão vigente de cada documento.
+
+## Estrutura que precisa existir antes
+
+O processo é criado dentro de uma **Pasta de processos seletivos** do tipo correto e usa uma coleção própria para seus documentos. Se uma dessas duas peças ainda não existir, não improvise: peça ao moderador do campus para organizar a pasta e ao administrador para criar ou ajustar a coleção e os cadastros necessários.
 
 ## Durante a vigência
 

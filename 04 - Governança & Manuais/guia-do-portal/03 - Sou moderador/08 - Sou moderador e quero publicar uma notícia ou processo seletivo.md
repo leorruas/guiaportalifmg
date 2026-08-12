@@ -23,12 +23,14 @@ Notícia e processo seletivo parecem parecidos porque os dois podem ter prazo, m
 
 ![[imagens/manual-ifrn/image45.png|Escolha da pasta adequada de processos seletivos]]
 
-3. Informe etapas, períodos, público e orientações apenas com dados confirmados.
+3. Informe subtipo, dados do edital, período de ingresso, etapas, público e orientações apenas com dados confirmados. Cada etapa deve informar o que acontece e quando começa e termina.
 4. Insira o bloco de coleção que exibe os documentos do processo.
 
 ![[imagens/manual-ifrn/image31.png|Exemplo de coleção com documentos de um processo seletivo]]
 
 5. Pré-visualize, confira os documentos e publique.
+
+Se a pasta, o tipo ou o subtipo não existirem, não classifique a seleção em uma opção aproximada. Solicite o cadastro ao administrador e a estrutura de pasta necessária antes de publicar.
 
 Depois da publicação, acompanhe a vigência. Use despublicação, atualização ou nova etapa de forma compatível com o processo e evite criar notícias duplicadas para alterações operacionais.
 
