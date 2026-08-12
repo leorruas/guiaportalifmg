@@ -21,6 +21,14 @@ Se uma pessoa desempenha mais de um papel, consulte a página correspondente à 
 
 Para entender termos, encontrar respostas rápidas e aprender a navegar no Wagtail, consulte [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/02 - Glossário, perguntas frequentes e navegação no Wagtail|Glossário, perguntas frequentes e navegação no Wagtail]].
 
+## Atalhos para tarefas frequentes
+
+- Para editar a página inicial, acesse [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/09 - Sou administrador e quero editar a homepage|Sou administrador e quero editar a homepage]].
+- Para estruturar um campus ou uma pasta de processos seletivos, acesse [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero criar ou editar um campus|criar ou editar um campus]] ou [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/12 - Sou moderador e quero criar uma pasta de processos seletivos|criar uma pasta de processos seletivos]].
+- Para criar uma página, curso, colegiado, link, programa ou projeto, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/12 - Sou editor e quero criar cada tipo de conteúdo|Criar cada tipo de conteúdo]].
+- Para publicar notícia ou processo seletivo, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|publicar uma notícia]] ou [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|publicar um processo seletivo]].
+- Para adicionar imagem, documento ou trabalhar com coleção, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero gerenciar imagens, documentos e cadastros|gerenciar imagens, documentos e cadastros]].
+
 ## 2. Identifique sua intenção
 
 Use a página do seu papel para localizar a ação que precisa executar: solicitar uma atualização, criar ou corrigir conteúdo, revisar uma publicação, gerir acesso ou alterar uma configuração.
