@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"02 - Pesquisa (UXR)\" path:\"02 - Pesquisa (UXR)/testes-de-usabilidade\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"02 - Pesquisa (UXR)/perfis\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:\"03 - Arquitetura & Decisões/decisoes-design\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 2.1,
+  "nodeSizeMultiplier": 0.720489488547223,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.831258437078146,
+  "repelStrength": 14.8717564121794,
+  "linkStrength": 0.816259187040648,
+  "linkDistance": 30,
+  "scale": 1.004850355878346,
+  "close": true
+}

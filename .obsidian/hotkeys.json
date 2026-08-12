@@ -1,0 +1,10 @@
+{
+  "ai-agent:toggle-agent-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "A"
+    }
+  ]
+}
