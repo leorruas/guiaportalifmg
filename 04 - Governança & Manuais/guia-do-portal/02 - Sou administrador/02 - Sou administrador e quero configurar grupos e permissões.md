@@ -12,7 +12,12 @@ Imagine o grupo como um crachá: ele informa onde a pessoa pode entrar e o que e
 4. Inclua as pessoas que atuarão naquele escopo.
 5. Defina as permissões de páginas apenas para a seção de páginas necessária.
 6. Defina as permissões de coleções apenas para as coleções de imagens e documentos necessárias.
+
+![[imagens/manual-ifrn/image4.png|Tela de configuração de coleções e permissões]]
+
 7. Salve e confirme o resultado com uma pessoa do grupo.
+
+**Exemplo:** para um editor do Campus Formiga, conceda edição somente nas páginas e coleções do campus. Não conceda o acesso à árvore inteira apenas porque o grupo precisa publicar uma notícia.
 
 **Resultado esperado:** a pessoa consegue executar apenas as tarefas necessárias na seção e nas coleções combinadas. Se ela enxergar conteúdo demais ou não conseguir usar um documento de que precisa, revise qual das duas permissões — página ou coleção — está faltando ou ampla demais.
 

@@ -4,6 +4,8 @@ Você administra as condições que permitem a publicação segura e consistente
 
 Em palavras simples: você monta o ambiente em que as outras pessoas trabalham. Quando define um grupo, uma permissão ou uma coleção, está dizendo quem pode entrar em qual parte do portal e o que pode fazer ali. Uma configuração pequena pode afetar muita gente; por isso, teste antes de ampliar o acesso.
 
+Por exemplo: se um campus precisa publicar notícias e documentos próprios, o grupo daquele campus precisa ter acesso tanto à pasta de notícias quanto à coleção de arquivos. Dar só uma dessas permissões resolve metade do problema.
+
 > [!NOTE]
 > Seu acesso é cumulativo: você pode executar as tarefas de editor e moderador, além de configurar grupos, permissões, páginas e coleções no escopo administrativo atribuído.
 
@@ -22,6 +24,8 @@ Em palavras simples: você monta o ambiente em que as outras pessoas trabalham. 
 - [ ] A mudança preserva arquitetura, acessibilidade, segurança e rastreabilidade?
 - [ ] Há ambiente de homologação, responsável e plano de reversão quando o risco exigir?
 - [ ] A decisão e sua justificativa foram registradas para futuras revisões?
+
+**Como saber que a configuração está boa:** uma pessoa do grupo consegue fazer a tarefa combinada, mas não consegue alterar conteúdo ou arquivos de uma área que não lhe pertence.
 
 ## Procedimentos
 

@@ -1,5 +1,7 @@
 # Glossário, perguntas frequentes e navegação no Wagtail
 
+Use esta página quando encontrar uma palavra ou botão que não conhece. Ela traduz os nomes do Wagtail para situações comuns do trabalho no portal: encontrar uma página, fazer uma alteração ou entender o que acontece depois de enviar conteúdo para revisão.
+
 ## Glossário essencial
 
 - **Página**: conteúdo publicado no portal, organizado em uma árvore de páginas-pai e páginas-filhas.
@@ -38,12 +40,18 @@ Encaminhe a solicitação ao editor ou moderador responsável pela pasta de not�
 2. Clique em **Login com SUAP** e entre com suas credenciais institucionais.
 3. Na tela de boas-vindas, confira páginas, documentos, imagens, suas alterações recentes, tarefas de moderação e grupos de usuário.
 4. Use **Páginas** no menu lateral para navegar na árvore do site; use as setas para abrir páginas-filhas e o caminho de navegação para voltar a uma página-pai.
+
+![[imagens/manual-ifrn/image8.png|Entrada Páginas no menu lateral do Wagtail]]
+
 5. Use **Busca** no menu lateral para localizar uma página pelo título ou por parte do nome.
-6. Em uma página-pai, use **Adicionar subpágina** para criar conteúdo e o menu de ações para editar, visualizar, mover ou ordenar páginas, conforme sua permissão.
 
 ![[imagens/manual-ifrn/image1.png|Busca no menu lateral do Wagtail]]
 
+6. Quando encontrar uma página, leia o caminho de navegação antes de editar. Ele confirma em que parte do portal você está.
+
 ![[imagens/manual-ifrn/image15.png|Árvore de páginas e caminho de navegação no Wagtail]]
+
+7. Em uma página-pai, use **Adicionar subpágina** para criar conteúdo e o menu de ações para editar, visualizar, mover ou ordenar páginas, conforme sua permissão.
 
 ![[imagens/manual-ifrn/image43.png|Menu de ações de uma página]]
 
@@ -55,5 +63,7 @@ Encaminhe a solicitação ao editor ou moderador responsável pela pasta de not�
 4. Confira a ordem no menu público antes de concluir.
 
 ![[imagens/manual-ifrn/image28.png|Tela para reordenar páginas]]
+
+**Como saber que deu certo:** a página aparece na posição esperada para quem visita o portal, não apenas na lista de edição.
 
 [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/01 - Como utilizar este guia|Voltar a como utilizar este guia]]

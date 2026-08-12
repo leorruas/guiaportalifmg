@@ -2,6 +2,8 @@
 
 Como administrador, você pode criar, editar, revisar e publicar conteúdo, além de ajustar a estrutura que permite aos demais grupos fazer o mesmo. Use esse acesso de forma proporcional ao escopo sob sua responsabilidade.
 
+Esta página é um mapa de decisão rápida. Quando você estiver fazendo conteúdo, siga o procedimento de editor; quando estiver avaliando se pode ir ao ar, siga o de moderador; quando estiver mexendo em grupos, coleções ou estrutura, atue como administrador. Não misture as três decisões em um único clique.
+
 ## Criar, editar e revisar conteúdo
 
 1. Entre em [portal.ifmg.edu.br/admin](https://portal.ifmg.edu.br/admin) e abra **Páginas** ou **Busca**.
@@ -10,6 +12,9 @@ Como administrador, você pode criar, editar, revisar e publicar conteúdo, alé
 4. Monte a página com os blocos necessários: texto, introdução, informação, coleção, tabela, links, cards, linha do tempo, calendário, FAQ, lista definida, galeria e citação.
 5. Revise mídia, documentos, links, metadados, acessibilidade, vigência e próxima ação.
 6. Use comentários, histórico, status, pré-visualização e verificações para concluir a revisão.
+
+![[imagens/manual-ifrn/image36.png|Pré-visualização da página antes da publicação]]
+
 7. Publique, despublique, agende ou devolva para ajuste conforme o caso.
 
 ## Configurar as condições de trabalho
@@ -18,10 +23,15 @@ Como administrador, você pode criar, editar, revisar e publicar conteúdo, alé
 2. Atribua permissões de páginas e permissões de coleções separadamente.
 3. Inclua as pessoas no grupo correspondente e valide o resultado.
 4. Crie coleções para documentos e imagens quando o escopo precisar de segregação.
+
+![[imagens/manual-ifrn/image4.png|Configurações e permissões de uma coleção]]
+
 5. Reordene páginas, revise menus e avalie o efeito sobre URLs, links e encontrabilidade.
 
 ## Decisões de maior impacto
 
 Antes de alterar página-pai, menu, URL, coleção compartilhada, permissões amplas ou cadastros acessórios, confirme o impacto em outras áreas e preserve a rastreabilidade da alteração.
+
+**Como saber que concluiu:** a página foi conferida como público, o grupo correto consegue mantê-la depois e nenhuma outra área perdeu acesso ou recebeu acesso indevido.
 
 [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/02 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]]

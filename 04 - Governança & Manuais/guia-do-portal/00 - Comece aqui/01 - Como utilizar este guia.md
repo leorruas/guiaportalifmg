@@ -10,10 +10,12 @@ Quando aparecer um termo do Wagtail, leia a explicação ao lado dele. Por exemp
 
 ## 1. Escolha seu papel
 
-- [[04 - Governança & Manuais/guia-do-portal/01 - Sou gestor/01 - Sou gestor e quero solicitar ou acompanhar uma atualização|Sou gestor e quero solicitar ou acompanhar uma atualização]].
+Pense no papel como a permissão que você está usando agora, e não como o seu cargo. Por exemplo: uma pessoa da Comunicação pode agir como **editora** ao preparar uma notícia e como **moderadora** ao revisar uma notícia de outra pessoa, se tiver as duas permissões.
+
 - [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações|Sou administrador e quero gerir acessos e configurações]].
 - [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero revisar e aprovar conteúdos|Sou moderador e quero revisar e aprovar conteúdos]].
 - [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Sou editor e quero criar e atualizar conteúdos]].
+- [[04 - Governança & Manuais/guia-do-portal/01 - Sou gestor/01 - Sou gestor e quero solicitar ou acompanhar uma atualização|Sou gestor e quero solicitar ou acompanhar uma atualização]].
 
 Se uma pessoa desempenha mais de um papel, consulte a página correspondente à ação que ela está realizando naquele momento.
 
@@ -39,3 +41,5 @@ Os fundamentos não substituem o procedimento; eles explicam os critérios que o
 - Confirme a fonte oficial, a pessoa responsável e a vigência da informação.
 - Verifique se a próxima ação está clara e se os links levam ao destino correto.
 - Encaminhe para moderação ou validação quando seu papel não permitir a publicação direta.
+
+**Teste final:** explique em uma frase o que foi alterado, onde a pessoa encontrará a informação e quem cuidará da próxima revisão. Se não conseguir responder, a tarefa provavelmente ainda precisa de uma checagem.
