@@ -20,7 +20,7 @@ Peça a criação ou atualização de uma página institucional à pessoa que ed
 
 Abra a página em edição e clique no ícone de **Comentários**. Clique no comentário vinculado ao campo ou bloco, faça a correção e salve a página antes de reenviá-la para moderação.
 
-![Ícone de comentários na interface do Wagtail](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image2.png)
+![[.imagens/manual-ifrn/image2.png|Ícone de comentários na interface do Wagtail]]
 
 ### Como exibir páginas-filhas em um menu interno?
 
@@ -30,7 +30,7 @@ Na página-pai, abra **Promover** e marque **Exibir nos menus**, quando essa op�
 
 Encaminhe a solicitação ao editor ou moderador responsável pela pasta de notícias de destino. Informe a notícia de origem, o destino desejado, o motivo da republicação e a vigência. Não crie uma cópia concorrente sem confirmar o fluxo da área.
 
-![Exemplo de solicitação para publicar uma notícia em outra área](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image30.png)
+![[.imagens/manual-ifrn/image30.png|Exemplo de solicitação para publicar uma notícia em outra área]]
 
 ## Entrar e se orientar no Wagtail
 
@@ -41,11 +41,11 @@ Encaminhe a solicitação ao editor ou moderador responsável pela pasta de not�
 5. Use **Busca** no menu lateral para localizar uma página pelo título ou por parte do nome.
 6. Em uma página-pai, use **Adicionar subpágina** para criar conteúdo e o menu de ações para editar, visualizar, mover ou ordenar páginas, conforme sua permissão.
 
-![Busca no menu lateral do Wagtail](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image1.png)
+![[.imagens/manual-ifrn/image1.png|Busca no menu lateral do Wagtail]]
 
-![Árvore de páginas e caminho de navegação no Wagtail](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image15.png)
+![[.imagens/manual-ifrn/image15.png|Árvore de páginas e caminho de navegação no Wagtail]]
 
-![Menu de ações de uma página](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image43.png)
+![[.imagens/manual-ifrn/image43.png|Menu de ações de uma página]]
 
 ## Reordenar páginas
 
@@ -54,6 +54,6 @@ Encaminhe a solicitação ao editor ou moderador responsável pela pasta de not�
 3. Arraste as páginas pelo controle de movimentação.
 4. Confira a ordem no menu público antes de concluir.
 
-![Tela para reordenar páginas](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image28.png)
+![[.imagens/manual-ifrn/image28.png|Tela para reordenar páginas]]
 
 [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/01 - Como utilizar este guia|Voltar a como utilizar este guia]]

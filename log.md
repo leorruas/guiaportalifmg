@@ -22,3 +22,4 @@
 - Extraídas 48 capturas do Manual de Uso do Portal Institucional dos Institutos Federais para `.imagens/manual-ifrn/` e incorporadas às orientações de navegação, notícias, processos seletivos, moderação, coleções e blocos; criada uma página visual de referência para os blocos.
 - Ajustada a interface web para limitar e enquadrar as imagens do manual, preservando a leitura em telas menores.
 - Adotado um padrão de explicação em linguagem direta: cada procedimento passa a apresentar finalidade, passos, resultado esperado, exemplos ou comparações simples e limites de permissão, sem citar a metodologia que inspira essa abordagem.
+- Corrigida a exibição das capturas no Obsidian: as notas agora incorporam arquivos locais de `.imagens/manual-ifrn/`; a interface web converte essas incorporações para a cópia versionada no GitHub.

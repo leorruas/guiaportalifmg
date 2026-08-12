@@ -210,8 +210,13 @@ function abrirArtigo(titulo, conteudoMarkdown) {
     // Filtra e remove o bloco de metadados/atributos (YAML Frontmatter --- ... ---)
     const markdownLimpo = removerFrontmatter(conteudoMarkdown);
 
+    // O Obsidian usa ![[caminho|descrição]] para anexos locais. No site, a
+    // mesma imagem é carregada da cópia versionada no GitHub antes de o
+    // Markdown ser convertido para HTML.
+    const markdownComImagens = converterImagensObsidian(markdownLimpo);
+
     // Converte a sintaxe de highlight do Obsidian ==texto== para <mark class="obsidian-highlight">texto</mark>
-    const markdownComHighlight = markdownLimpo.replace(/==([^=]+)==/g, '<mark class="obsidian-highlight">$1</mark>');
+    const markdownComHighlight = markdownComImagens.replace(/==([^=]+)==/g, '<mark class="obsidian-highlight">$1</mark>');
 
     // Converte Markdown para HTML com marked
     if (typeof marked !== 'undefined') {
@@ -278,6 +283,19 @@ function abrirArtigo(titulo, conteudoMarkdown) {
 
     leitorDeArtigo.classList.remove("escondido");
     window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function converterImagensObsidian(markdown) {
+    const repositorioRaw = "https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/";
+    const regexEmbed = /!\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g;
+
+    return markdown.replace(regexEmbed, (match, caminho, descricao) => {
+        const caminhoNormalizado = caminho.trim().replace(/\\/g, "/");
+        if (!caminhoNormalizado.startsWith(".imagens/")) return match;
+
+        const textoAlternativo = (descricao || caminhoNormalizado.split("/").pop()).trim();
+        return `![${textoAlternativo}](${encodeURI(repositorioRaw + caminhoNormalizado)})`;
+    });
 }
 
 function processarLinksObsidian() {

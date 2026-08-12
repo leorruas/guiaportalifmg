@@ -22,9 +22,9 @@ Pense na página como a porta de entrada da seleção e na coleção como a past
 
 **Resultado esperado:** quem abre a página encontra as datas, entende a etapa em que está e acessa a versão vigente de cada documento.
 
-![Exemplo de coleção de documentos de um processo seletivo](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image31.png)
+![[.imagens/manual-ifrn/image31.png|Exemplo de coleção de documentos de um processo seletivo]]
 
-![Escolha da pasta adequada de processos seletivos](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image45.png)
+![[.imagens/manual-ifrn/image45.png|Escolha da pasta adequada de processos seletivos]]
 
 ## Durante a vigência
 

@@ -25,7 +25,7 @@ O tipo de página funciona como o molde do conteúdo: ele define quais campos ap
 
 **Resultado esperado:** a nova página fica no lugar em que o público a procuraria e recebe os campos necessários para ser mantida corretamente.
 
-![Lista de tipos disponíveis ao adicionar uma subpágina](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image21.png)
+![[.imagens/manual-ifrn/image21.png|Lista de tipos disponíveis ao adicionar uma subpágina]]
 
 > [!NOTE]
 > A disponibilidade de um tipo na lista depende do local da árvore de páginas e das permissões do seu grupo.

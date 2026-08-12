@@ -4,66 +4,66 @@ Esta página complementa [[04 - Governança & Manuais/guia-do-portal/04 - Sou ed
 
 ## Abrir a aba Conteúdo e adicionar um bloco
 
-![Aba Conteúdo e seletor de blocos](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image33.png)
+![[.imagens/manual-ifrn/image33.png|Aba Conteúdo e seletor de blocos]]
 
 ## Texto e introdução
 
-![Configuração de um bloco de texto](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image29.png)
+![[.imagens/manual-ifrn/image29.png|Configuração de um bloco de texto]]
 
-![Configuração de um bloco de introdução](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image20.png)
+![[.imagens/manual-ifrn/image20.png|Configuração de um bloco de introdução]]
 
-![Exemplo publicado de bloco de introdução](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image3.png)
+![[.imagens/manual-ifrn/image3.png|Exemplo publicado de bloco de introdução]]
 
 ## Informação e coleção
 
-![Configuração de um bloco de informação](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image34.png)
+![[.imagens/manual-ifrn/image34.png|Configuração de um bloco de informação]]
 
-![Exemplo publicado de bloco de informação](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image47.png)
+![[.imagens/manual-ifrn/image47.png|Exemplo publicado de bloco de informação]]
 
-![Configuração de um bloco de coleção](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image5.png)
+![[.imagens/manual-ifrn/image5.png|Configuração de um bloco de coleção]]
 
-![Exemplo publicado de bloco de coleção](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image35.png)
+![[.imagens/manual-ifrn/image35.png|Exemplo publicado de bloco de coleção]]
 
 ## Tabela, links e link único
 
-![Configuração de um bloco de tabela](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image13.png)
+![[.imagens/manual-ifrn/image13.png|Configuração de um bloco de tabela]]
 
-![Configuração de um bloco de links](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image7.png)
+![[.imagens/manual-ifrn/image7.png|Configuração de um bloco de links]]
 
-![Exemplo publicado de bloco de links](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image18.png)
+![[.imagens/manual-ifrn/image18.png|Exemplo publicado de bloco de links]]
 
-![Configuração de um bloco de link único](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image6.png)
+![[.imagens/manual-ifrn/image6.png|Configuração de um bloco de link único]]
 
-![Exemplo publicado de link único](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image27.png)
+![[.imagens/manual-ifrn/image27.png|Exemplo publicado de link único]]
 
-![Outro exemplo publicado de link único](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image11.png)
+![[.imagens/manual-ifrn/image11.png|Outro exemplo publicado de link único]]
 
 ## Cards e linha do tempo
 
-![Configuração de um bloco de cards](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image24.png)
+![[.imagens/manual-ifrn/image24.png|Configuração de um bloco de cards]]
 
-![Exemplo publicado de cards](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image48.png)
+![[.imagens/manual-ifrn/image48.png|Exemplo publicado de cards]]
 
-![Configuração de uma linha do tempo](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image44.png)
+![[.imagens/manual-ifrn/image44.png|Configuração de uma linha do tempo]]
 
-![Exemplo publicado de linha do tempo](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image37.png)
+![[.imagens/manual-ifrn/image37.png|Exemplo publicado de linha do tempo]]
 
 ## Calendário, FAQ e lista definida
 
-![Configuração de um bloco de calendário](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image42.png)
+![[.imagens/manual-ifrn/image42.png|Configuração de um bloco de calendário]]
 
-![Exemplo publicado de calendário](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image23.png)
+![[.imagens/manual-ifrn/image23.png|Exemplo publicado de calendário]]
 
-![Configuração de um bloco de FAQ](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image25.png)
+![[.imagens/manual-ifrn/image25.png|Configuração de um bloco de FAQ]]
 
-![Exemplo publicado de FAQ](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image46.png)
+![[.imagens/manual-ifrn/image46.png|Exemplo publicado de FAQ]]
 
-![Configuração de uma lista definida](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image32.png)
+![[.imagens/manual-ifrn/image32.png|Configuração de uma lista definida]]
 
-![Exemplo publicado de lista definida](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image39.png)
+![[.imagens/manual-ifrn/image39.png|Exemplo publicado de lista definida]]
 
 ## Galeria
 
-![Configuração de uma galeria](https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/.imagens/manual-ifrn/image17.png)
+![[.imagens/manual-ifrn/image17.png|Configuração de uma galeria]]
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/13 - Sou editor e quero montar conteúdo com blocos|Voltar a montar conteúdo com blocos]]
