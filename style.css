@@ -765,15 +765,15 @@ mark.obsidian-highlight, mark:not(.highlight) {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 700;
-    font-size: 0.85em;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.72em;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
 }
 
 .obsidian-callout .callout-content {
-    font-size: 0.85em;
+    font-size: 0.78em;
     line-height: 1.6;
     color: #e0e0e0;
 }

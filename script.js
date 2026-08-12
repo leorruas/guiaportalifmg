@@ -305,13 +305,15 @@ function processarCalloutsObsidian() {
     const blockquotes = artigoCorpo.querySelectorAll('blockquote');
     blockquotes.forEach(bq => {
         const conteudo = bq.innerHTML;
-        const match = conteudo.match(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:\s*([^\n<]+))?/i);
+        // Um título customizado só pode estar na mesma linha do marcador.
+        // Assim, o texto do aviso não é promovido indevidamente a título.
+        const match = conteudo.match(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:[ \t]+([^\n<]+))?/i);
         if (match) {
             const tipo = match[1].toUpperCase();
             const tituloCustomizado = match[2] ? match[2].trim() : '';
             
             // Remove a tag [!TIPO] e o título do conteúdo do parágrafo
-            let htmlLimpo = conteudo.replace(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:\s*[^\n<]+)?/i, '');
+            let htmlLimpo = conteudo.replace(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:[ \t]+[^\n<]+)?/i, '');
             
             // Remove parágrafos vazios gerados na conversão
             htmlLimpo = htmlLimpo.replace(/<p>\s*<\/p>/g, '');
