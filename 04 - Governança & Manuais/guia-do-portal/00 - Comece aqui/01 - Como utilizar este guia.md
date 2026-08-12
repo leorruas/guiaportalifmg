@@ -21,6 +21,8 @@ Se uma pessoa desempenha mais de um papel, consulte a página correspondente à 
 
 Para entender termos, encontrar respostas rápidas e aprender a navegar no Wagtail, consulte [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/02 - Glossário, perguntas frequentes e navegação no Wagtail|Glossário, perguntas frequentes e navegação no Wagtail]].
 
+Se este é seu primeiro acesso, comece por [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/03 - Como entrar no Wagtail pela primeira vez|Como entrar no Wagtail pela primeira vez]].
+
 ## Atalhos para tarefas frequentes
 
 - Para editar a página inicial, acesse [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/09 - Sou administrador e quero editar a homepage|Sou administrador e quero editar a homepage]].
