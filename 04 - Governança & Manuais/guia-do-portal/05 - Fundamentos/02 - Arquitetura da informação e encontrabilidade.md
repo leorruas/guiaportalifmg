@@ -4,6 +4,8 @@ Arquitetura da Informação (AI) organiza, classifica, nomeia, conecta e torna r
 
 AI não é o desenho visual da página. Cores, tipografia e grid pertencem ao design visual; antes deles, é preciso decidir quais conteúdos existem, como se agrupam, que nomes recebem e por quais caminhos podem ser encontrados.
 
+**Na prática:** quem quer pedir um documento não deveria precisar conhecer a pró-reitoria ou a sigla do sistema que produz o documento. A arquitetura está funcionando quando a pessoa encontra “Solicitar documento” pelo menu ou pela busca, usando as palavras que ela própria usaria.
+
 ## Os quatro sistemas da arquitetura
 
 | Sistema | Pergunta central | Diretriz para o portal |
@@ -47,6 +49,8 @@ Card sorting não valida programação nem substitui testes de uso. Tree testing
 - Revise rótulos com os públicos. Siglas só devem aparecer isoladamente quando forem amplamente reconhecidas pelo público da tarefa.
 - Use resultados de busca, atendimento e testes para manter sinônimos, taxonomias e conteúdos atualizados.
 - Trate falhas de encontrabilidade como risco de acesso a direitos, serviços, transparência e eficiência do atendimento.
+
+**Teste simples:** escolha uma tarefa real, como “encontrar um edital” ou “solicitar histórico escolar”, e tente localizá-la pela árvore do portal sem usar a busca. Depois, faça a mesma tentativa pela busca usando palavras comuns. Se um dos caminhos falhar, revise rótulo, categoria ou sinônimos antes de redesenhar a página.
 
 ## Verificação antes de publicar ou alterar a estrutura
 

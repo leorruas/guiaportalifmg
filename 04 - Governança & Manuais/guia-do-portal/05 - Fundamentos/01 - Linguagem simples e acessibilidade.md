@@ -7,6 +7,8 @@ Linguagem simples e acessibilidade digital são fundamentos do portal, não uma 
 
 Um texto claro pode continuar inacessível se estiver em um PDF sem estrutura ou em um formulário que não funciona pelo teclado. Uma interface tecnicamente compatível com leitor de telas também pode falhar se usar linguagem burocrática ou mensagens de erro vagas.
 
+**Na prática:** imagine alguém usando o celular, com pouco tempo, sem conhecer as siglas do IFMG e talvez usando leitor de tela. Se essa pessoa não consegue descobrir o que fazer, a página ainda não está pronta — mesmo que pareça bonita para quem a criou.
+
 ## Princípio de trabalho
 
 Planeje e valide acessibilidade desde o início. Ela atravessa conteúdo, design, código, navegação, formulários, multimídia, documentos e o processo de publicação. Recursos isolados — como alto contraste, aumento de fonte, tradução para Libras ou texto alternativo — ajudam, mas não tornam um portal acessível por si só.
@@ -75,6 +77,8 @@ Uma heurística rápida para decidir:
 - [ ] A revisão combinou verificação automática, inspeção humana e, quando possível, teste com usuários?
 
 Ferramentas automáticas são úteis para detectar parte das falhas técnicas, mas não substituem a avaliação humana nem testes de uso.
+
+**Teste simples:** peça a uma pessoa que não conhece o assunto para encontrar a ação principal e explicar o que faria em seguida. Se ela precisar que você traduza a página, simplifique o texto, os rótulos ou o caminho.
 
 ## Referências e aprofundamento
 

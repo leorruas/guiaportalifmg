@@ -17,6 +17,8 @@ Objetivo → KPI → Meta → Métricas → Análise → Decisão
 
 Nem toda métrica é um KPI, e um KPI não é uma meta. O KPI mede progresso; a meta define o valor esperado para ele em um período.
 
+**Na prática:** “tivemos 10 mil acessos” é uma contagem. “Queremos que mais pessoas concluam a matrícula sem procurar atendimento” é um objetivo. A taxa de conclusão da matrícula pode ser o KPI; chegar a 80% até o próximo ciclo é a meta.
+
 ## Métricas acionáveis, não métricas de vaidade
 
 Visualizações, seguidores, impressões e cliques podem ser úteis, mas não comprovam que o portal cumpriu sua finalidade. Tornam-se relevantes quando ajudam a responder a um objetivo e conduzem a uma decisão concreta.
@@ -73,6 +75,8 @@ Em serviços públicos, uma única *North Star Metric* raramente representa todo
 - [ ] Dados qualitativos estão previstos para explicar anomalias e causas?
 - [ ] O painel indica responsável, frequência de revisão e ação diante de desvio da meta?
 - [ ] A coleta evita dados pessoais desnecessários e respeita o propósito público do serviço?
+
+**Teste simples:** antes de colocar um número no painel, complete a frase “se este número subir ou cair, nós vamos…”. Se não houver uma decisão possível depois das reticências, provavelmente ele não deve ser prioridade de monitoramento.
 
 ## Conexões no projeto
 

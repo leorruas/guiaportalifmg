@@ -2,6 +2,8 @@
 
 Copywriting, UX Writing e storytelling podem atuar sobre a mesma página, mas resolvem problemas diferentes. Distingui-los ajuda a escolher o texto certo para cada ponto da experiência.
 
+**Na prática:** uma campanha pode convidar “Inscreva-se na oficina” (copywriting), usar o botão “Enviar inscrição” e explicar um erro de CPF (UX Writing), e contar por que a oficina foi criada e quem ela beneficia (storytelling). Cada texto ajuda em um momento diferente.
+
 | Disciplina | Pergunta central | Aplicação no portal |
 | --- | --- | --- |
 | Copywriting | Como estimular uma ação desejada de modo ético? | Chamada clara para inscrição, consulta de serviço ou participação em ação de interesse público. |
@@ -61,6 +63,8 @@ Em uma campanha sobre um novo serviço, o copy pode convidar: “Consulte seus b
 - [ ] O tom se adequa ao contexto sem romper a voz institucional?
 - [ ] A narrativa acrescenta compreensão sem ocultar dados, requisitos ou informações essenciais?
 - [ ] O texto reduz esforço para pessoas que não conhecem a burocracia ou o sistema?
+
+**Teste simples:** esconda o contexto que você já conhece e leia apenas título, botões, instruções e mensagens de erro. Se não der para prever a próxima ação e o resultado do clique, reescreva esses textos.
 
 ## Conexões no projeto
 

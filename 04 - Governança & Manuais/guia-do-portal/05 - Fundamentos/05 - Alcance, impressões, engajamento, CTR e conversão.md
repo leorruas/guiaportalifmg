@@ -2,6 +2,8 @@
 
 Métricas de comunicação descrevem etapas diferentes do percurso entre expor uma mensagem e gerar uma ação útil. Elas não são equivalentes nem comprovam resultado isoladamente.
 
+**Na prática:** uma postagem pode alcançar muitas pessoas e ainda não levar ninguém ao serviço. Outra pode alcançar menos pessoas, mas ajudar exatamente o público certo a se inscrever. O que importa é saber qual ação útil deveria acontecer depois da mensagem.
+
 ```text
 Exposição → atenção/interação → tráfego → ação desejada
 alcance e impressões → engajamento → cliques → conversão
@@ -56,6 +58,8 @@ Publicar muitas peças não comprova resultado. Em comunicação pública, uma o
 - [ ] A conversão corresponde a uma ação útil e o denominador escolhido foi declarado?
 - [ ] Há contexto qualitativo para interpretar reações, comentários e compartilhamentos?
 - [ ] O relatório diferencia produção, exposição, interação, resultado e impacto?
+
+**Teste simples:** siga uma campanha como uma sequência: a pessoa viu, clicou, chegou à página, começou a tarefa e terminou? O primeiro ponto em que a sequência quebra indica onde investigar, em vez de culpar a publicação inteira.
 
 ## Conexões no projeto
 

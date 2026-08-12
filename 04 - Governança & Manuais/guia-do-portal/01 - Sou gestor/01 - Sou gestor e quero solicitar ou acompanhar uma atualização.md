@@ -6,6 +6,8 @@ No momento, o gestor encaminha a demanda a um editor, moderador ou administrador
 
 Pense na solicitação como um pedido de serviço bem explicado: quem vai publicar não conhece necessariamente o assunto da sua área. Quanto mais claro você indicar **o que mudou**, **por que importa**, **para quem** e **até quando vale**, menos idas e vindas serão necessárias.
 
+**Exemplo de pedido completo:** “Atualizar a página de estágio do Campus Ouro Preto: o prazo de inscrição termina em 18 de agosto; o público são estudantes de graduação; a fonte é o Edital 12/2026 anexo; depois de ler, a pessoa deve acessar o formulário de inscrição.”
+
 ## O que você precisa conseguir fazer
 
 - Solicitar a criação, atualização, correção, divulgação, arquivamento ou retirada de uma informação.
@@ -23,3 +25,5 @@ Pense na solicitação como um pedido de serviço bem explicado: quem vai public
 - [ ] O conteúdo deve virar notícia, página estável, comunicado, documento ou atualização de página existente?
 
 Se a demanda exigir publicação, o editor cria ou altera o conteúdo e o encaminha para revisão. Consulte: [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Editor]] e [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero revisar e aprovar conteúdos|Moderador]].
+
+**Como saber que sua solicitação está pronta:** outra pessoa consegue dizer o que deve ser publicado, onde a informação deve aparecer, qual é a fonte e quando ela precisa ser revista.

@@ -30,7 +30,7 @@ Use **Introdução** para dizer, logo no início, o que a pessoa encontrará na 
 
 ![[imagens/manual-ifrn/image20.png|Configuração de um bloco de introdução]]
 
-![[imagens/manual-ifrn/image3.png|Exemplo publicado de bloco de introdução]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image3.png|Exemplo publicado de bloco de introdução]]
 
 ### Informação
 

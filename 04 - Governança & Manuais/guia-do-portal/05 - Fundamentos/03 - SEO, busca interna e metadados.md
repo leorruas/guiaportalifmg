@@ -14,6 +14,8 @@ SEO ajuda mecanismos de busca a compreenderem o conteúdo e pessoas a decidirem 
 
 O ponto de partida é a intenção de busca: o que a pessoa tenta fazer, e não apenas a expressão que digitou. Uma página chamada “Procedimento de redefinição de credenciais de autenticação” deve criar uma ponte para a linguagem da tarefa, como “Como recuperar ou alterar sua senha”, sem perder os termos oficiais quando forem necessários.
 
+**Na prática:** título, URL, resumo e links precisam responder à mesma pergunta que trouxe a pessoa até a página. Se a busca é “segunda via do boleto”, uma página chamada apenas “Financeiro” faz a pessoa trabalhar para encontrar a resposta.
+
 ## Rastreamento, indexação e ranqueamento
 
 1. **Rastreamento**: o robô descobre e acessa uma página, por links, sitemap ou outras fontes.
@@ -73,6 +75,8 @@ Observe consultas, cliques, posição média, páginas de entrada, tráfego org�
 - [ ] A página tem fonte oficial, revisão prevista e tratamento definido para vencimento ou arquivamento?
 - [ ] Conteúdos duplicados possuem versão canônica ou redirecionamento quando necessário?
 - [ ] A busca interna oferece sinônimos e trata consultas sem resultado como evidência de melhoria?
+
+**Teste simples:** anote três formas populares de pedir o mesmo serviço — inclusive siglas, sinônimos e erros frequentes — e verifique se todas levam a uma página útil. Onde não levarem, ajuste vocabulário, conteúdo ou busca.
 
 ## Referências e conexões
 
