@@ -29,3 +29,4 @@ Você administra as condições que permitem a publicação segura e consistente
 - [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero revisar e publicar conteúdo|Revisar e publicar conteúdo]].
 - [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero gerenciar documentos e imagens|Gerenciar documentos e imagens]].
 - [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar busca, menus e ordem de páginas|Configurar busca, menus e ordem de páginas]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero executar as tarefas de editor e moderador|Executar as tarefas de editor e moderador]].

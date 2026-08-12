@@ -30,3 +30,4 @@ Você protege a qualidade, a coerência e a vigência das informações publicad
 - [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero organizar documentos, imagens e coleções|Organizar documentos, imagens e coleções]].
 - [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/07 - Sou moderador e quero configurar busca e menu de uma página|Configurar busca e menu de uma página]].
 - [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero publicar uma notícia ou processo seletivo|Publicar uma notícia ou processo seletivo]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero executar as tarefas de editor|Executar as tarefas de editor]].

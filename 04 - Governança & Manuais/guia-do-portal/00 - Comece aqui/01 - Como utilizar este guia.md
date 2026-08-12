@@ -11,6 +11,8 @@ Este guia organiza o trabalho no portal por papel. Comece pela página que repre
 
 Se uma pessoa desempenha mais de um papel, consulte a página correspondente à ação que ela está realizando naquele momento.
 
+Para entender termos, encontrar respostas rápidas e aprender a navegar no Wagtail, consulte [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/02 - Glossário, perguntas frequentes e navegação no Wagtail|Glossário, perguntas frequentes e navegação no Wagtail]].
+
 ## 2. Identifique sua intenção
 
 Use a página do seu papel para localizar a ação que precisa executar: solicitar uma atualização, criar ou corrigir conteúdo, revisar uma publicação, gerir acesso ou alterar uma configuração.
