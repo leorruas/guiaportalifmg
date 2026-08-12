@@ -11,12 +11,16 @@ Imagens e documentos são conteúdo reutilizável: um mesmo arquivo pode aparece
 
 **Exemplo:** se uma foto é usada na página do curso e em uma notícia, trocar o arquivo da coleção pode mudar as duas publicações.
 
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/23 - Sou editor e quero adicionar ou atualizar uma imagem|Ver o procedimento completo para imagens]]
+
 ## Documentos
 
 1. Abra **Documentos** e selecione **Adicionar documento**.
 2. Escolha a coleção, envie o arquivo e preencha título e tags quando aplicáveis.
 3. Edite ou substitua um documento pelo título; confirme o impacto antes de alterar o arquivo associado.
 4. Use ações em massa somente quando tiver certeza de que todos os itens selecionados recebem a mesma ação.
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero adicionar ou atualizar um documento|Ver o procedimento completo para documentos]]
 
 ## Coleções
 
