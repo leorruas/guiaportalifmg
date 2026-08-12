@@ -13,7 +13,7 @@ Se uma pessoa desempenha mais de um papel, consulte a página correspondente à 
 
 ## 2. Identifique sua intenção
 
-Use a página do seu papel para localizar a ação que precisa executar: solicitar uma atualização, criar ou corrigir conteúdo, revisar uma publicação, gerir acesso ou alterar uma configuração. Quando o procedimento ainda não estiver definido, registre a dúvida na Inbox local em vez de improvisar uma regra.
+Use a página do seu papel para localizar a ação que precisa executar: solicitar uma atualização, criar ou corrigir conteúdo, revisar uma publicação, gerir acesso ou alterar uma configuração.
 
 ## 3. Consulte os fundamentos quando necessário
 
@@ -29,4 +29,3 @@ Os fundamentos não substituem o procedimento; eles explicam os critérios que o
 - Confirme a fonte oficial, a pessoa responsável e a vigência da informação.
 - Verifique se a próxima ação está clara e se os links levam ao destino correto.
 - Encaminhe para moderação ou validação quando seu papel não permitir a publicação direta.
-- Registre na Inbox local qualquer regra, permissão ou fluxo ainda não confirmado.
