@@ -3,6 +3,7 @@
 
 exclude:
   - ".obsidian"
+  - "04 - Governança & Manuais"
   - "AGENTS.md"
   - "log.md"
 
