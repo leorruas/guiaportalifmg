@@ -13,7 +13,9 @@ Pense em duas etapas: primeiro você se identifica com sua conta institucional; 
 
 ## Quando o acesso ainda não foi liberado
 
-Se, depois de entrar com o SUAP, você não conseguir acessar o Wagtail ou não enxergar a área em que precisa trabalhar, peça a liberação a uma pessoa administradora do portal.
+Se, depois de entrar com o SUAP, você não conseguir acessar o Wagtail, é provável que ainda não esteja cadastrada como usuária do portal. Peça a uma pessoa administradora que faça seu cadastro e libere o acesso necessário.
+
+Se você conseguir entrar, mas não enxergar a área em que precisa trabalhar, seu cadastro já existe; nesse caso, peça ao administrador apenas o ajuste das permissões.
 
 Envie na solicitação:
 
