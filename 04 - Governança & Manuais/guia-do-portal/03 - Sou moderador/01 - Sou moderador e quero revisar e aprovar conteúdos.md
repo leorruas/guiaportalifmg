@@ -2,6 +2,9 @@
 
 Você protege a qualidade, a coerência e a vigência das informações publicadas no seu escopo. Sua atuação é limitada às páginas e coleções atribuídas ao grupo do qual faz parte.
 
+> [!NOTE]
+> Seu acesso é cumulativo: além de revisar, devolver e aprovar, você pode executar as tarefas de editor dentro do escopo do seu grupo.
+
 ## O que você deve conseguir fazer
 
 - Revisar conteúdos enviados por editores.
@@ -18,4 +21,12 @@ Você protege a qualidade, a coerência e a vigência das informações publicad
 - [ ] O título e os metadados permitem encontrar e compreender o conteúdo?
 - [ ] Existe responsável para atualizar ou arquivar a publicação?
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/02 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]], [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/03 - Sou moderador e quero acompanhar comentários e histórico|Acompanhar comentários e histórico]] e [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/04 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, despublicar ou agendar uma página]].
+## Procedimentos
+
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/02 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/03 - Sou moderador e quero acompanhar comentários e histórico|Acompanhar comentários e histórico]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/04 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, despublicar ou agendar uma página]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/05 - Sou moderador e quero criar ou atualizar uma página|Criar ou atualizar uma página]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero organizar documentos, imagens e coleções|Organizar documentos, imagens e coleções]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/07 - Sou moderador e quero configurar busca e menu de uma página|Configurar busca e menu de uma página]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero publicar uma notícia ou processo seletivo|Publicar uma notícia ou processo seletivo]].

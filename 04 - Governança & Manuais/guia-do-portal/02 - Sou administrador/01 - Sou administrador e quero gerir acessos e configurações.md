@@ -2,6 +2,9 @@
 
 Você administra as condições que permitem a publicação segura e consistente: acessos, permissões, estrutura, modelos, integrações e parâmetros do portal. Seu trabalho tem impacto transversal e deve preservar a autonomia das áreas dentro de limites claros.
 
+> [!NOTE]
+> Seu acesso é cumulativo: você pode executar as tarefas de editor e moderador, além de configurar grupos, permissões, páginas e coleções no escopo administrativo atribuído.
+
 ## O que você deve conseguir fazer
 
 - Criar grupos e atribuir permissões específicas para páginas e coleções.
@@ -18,4 +21,11 @@ Você administra as condições que permitem a publicação segura e consistente
 - [ ] Há ambiente de homologação, responsável e plano de reversão quando o risco exigir?
 - [ ] A decisão e sua justificativa foram registradas para futuras revisões?
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/02 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]] e [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/03 - Sou administrador e quero organizar páginas e coleções|Organizar páginas e coleções]].
+## Procedimentos
+
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/02 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/03 - Sou administrador e quero organizar páginas e coleções|Organizar páginas e coleções]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/04 - Sou administrador e quero criar ou atualizar conteúdo|Criar ou atualizar conteúdo]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero revisar e publicar conteúdo|Revisar e publicar conteúdo]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero gerenciar documentos e imagens|Gerenciar documentos e imagens]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar busca, menus e ordem de páginas|Configurar busca, menus e ordem de páginas]].
