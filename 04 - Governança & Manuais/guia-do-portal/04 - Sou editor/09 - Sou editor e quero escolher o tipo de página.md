@@ -15,6 +15,8 @@ O tipo de página funciona como o molde do conteúdo: ele define quais campos ap
 - **Projeto ou programa**: iniciativa institucional que precisa de página própria.
 - **Link**: encaminhamento para um serviço, sistema ou fonte externa.
 
+Uma pergunta para decidir rápido: a informação continuará útil quando o prazo passar? Se sim, ela tende a ser uma página institucional. Se precisa contar um fato novo, é notícia. Se organiza inscrições, etapas e documentos, é processo seletivo.
+
 ## Como decidir
 
 1. Identifique se a informação é temporária, permanente, uma seleção, uma oferta formativa ou um serviço.

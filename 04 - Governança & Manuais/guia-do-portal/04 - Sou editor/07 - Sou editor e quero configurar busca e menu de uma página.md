@@ -12,6 +12,8 @@ Busca e menu são placas de orientação: elas não mudam o conteúdo da página
 4. Preencha a **tag de título** com um título que descreva o assunto ou a tarefa.
 5. Preencha a **meta descrição** com um resumo claro da página; como referência, mantenha entre 140 e 155 caracteres quando o campo estiver disponível.
 
+**Exemplo:** se a página ensina como pedir um histórico escolar, o título de busca pode ser “Solicitar histórico escolar” e a descrição deve antecipar o que a pessoa encontrará e fará na página.
+
 ## Incluir em um menu
 
 1. Na mesma aba, localize a seção de menus.

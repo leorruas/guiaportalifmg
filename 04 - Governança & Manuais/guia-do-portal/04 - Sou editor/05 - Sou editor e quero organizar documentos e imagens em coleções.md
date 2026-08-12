@@ -9,6 +9,9 @@ Uma coleção funciona como um armário compartilhado e identificado: ela guarda
 1. Abra **Documentos** ou **Imagens** no menu lateral.
 2. Selecione **Adicionar documento** ou **Adicionar imagem**.
 3. Escolha a coleção correta antes de salvar.
+
+![[imagens/manual-ifrn/image38.png|Adição de documentos ou imagens a uma coleção]]
+
 4. Dê um título claro e descritivo ao arquivo.
 5. Ao atualizar um arquivo já utilizado no portal, confirme que ele continua válido: a substituição atualiza todas as páginas que o utilizam.
 
@@ -18,6 +21,8 @@ Uma coleção funciona como um armário compartilhado e identificado: ela guarda
 2. Selecione a coleção que reúne os documentos ou imagens que devem aparecer.
 3. Marque a exibição de documentos e/ou imagens conforme a necessidade do conteúdo.
 4. Pré-visualize antes de enviar a página para moderação.
+
+![[imagens/manual-ifrn/image5.png|Configuração de um bloco de coleção em uma página]]
 
 ## Cuidados
 

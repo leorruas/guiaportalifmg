@@ -20,6 +20,8 @@ O bloco de texto é o lugar para explicar uma ideia em sequência, como esta pr�
 
 ![[imagens/manual-ifrn/image29.png|Configuração de um bloco de texto]]
 
+**Teste do texto:** retire os termos internos e leia a primeira frase. Se uma pessoa de fora não entender o assunto, reescreva antes de adicionar mais blocos.
+
 ## Blocos de estrutura e informação
 
 ### Introdução
@@ -51,6 +53,8 @@ Use **Coleção** para mostrar os documentos ou imagens que já foram organizado
 Use **Tabela** apenas quando o público precisa comparar dados. Dê nome às colunas e evite transformar um texto curto em tabela.
 
 ![[imagens/manual-ifrn/image13.png|Configuração de um bloco de tabela]]
+
+**Exemplo:** compare modalidades, horários e vagas em uma tabela; para explicar como solicitar um serviço, use texto em passos.
 
 ### Links e link único
 
@@ -111,6 +115,8 @@ Use **Lista definida** para relacionar um nome e seu valor, como “Responsável
 Use **Galeria** quando as imagens precisam ser vistas em conjunto; use **Citação** apenas se a autoria e o contexto puderem ser confirmados.
 
 ![[imagens/manual-ifrn/image17.png|Configuração de uma galeria]]
+
+**Como conferir qualquer bloco:** faça a pré-visualização e pergunte “esta peça ajuda a pessoa a entender, encontrar ou fazer algo?”. Se a resposta for não, ela é decoração ou está no lugar errado.
 
 **Resultado esperado:** uma página que pode ser lida por partes, com cada bloco servindo a uma intenção clara. Se você não consegue explicar em uma frase por que um bloco está ali, provavelmente ele pode ser removido, dividido ou trocado.
 

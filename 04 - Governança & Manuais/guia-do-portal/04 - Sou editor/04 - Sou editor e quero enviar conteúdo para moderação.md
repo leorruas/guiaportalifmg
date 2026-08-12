@@ -14,6 +14,8 @@ Moderação é uma segunda leitura antes de abrir a porta para o público. Ela n
 
 ![[imagens/manual-ifrn/image14.png|Exemplo de estado de uma página no fluxo de moderação]]
 
+O estado mostrado nessa área responde à pergunta “quem precisa agir agora?”. Se estiver aguardando moderação, a próxima decisão é do moderador; se foi devolvida, a próxima ação é sua.
+
 ## O que cada ação significa
 
 - **Salvar rascunho**: preserva o trabalho sem enviar para revisão.

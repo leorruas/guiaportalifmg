@@ -9,6 +9,8 @@ Editar não significa publicar na hora. Pense na página como um documento em re
 3. Atualize os campos necessários e salve como rascunho durante o trabalho.
 4. Use o menu de ações para copiar, mover ou remover apenas quando a permissão e o contexto permitirem.
 
+**Regra prática:** se você só precisa corrigir a informação, edite. Mova ou remova apenas quando tiver certeza de que o público deve encontrá-la em outro lugar ou não deve mais encontrá-la.
+
 ## Status, pré-visualização e verificações
 
 1. Abra **Status** para conferir a situação da página e, quando disponível, definir publicação ou expiração programada.

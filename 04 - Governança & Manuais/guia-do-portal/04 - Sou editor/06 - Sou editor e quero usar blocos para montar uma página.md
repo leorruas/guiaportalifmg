@@ -8,6 +8,9 @@ Pense nos blocos como peças de uma explicação: primeiro a pessoa entende o as
 
 1. Abra a página em edição e localize a aba **Conteúdo**.
 2. Clique em **+** acima ou abaixo de um bloco existente.
+
+![[imagens/manual-ifrn/image33.png|Aba Conteúdo e seletor de blocos]]
+
 3. Escolha o tipo de bloco e preencha seus campos.
 4. Use as setas do bloco para alterar sua posição.
 5. Duplique um bloco somente quando a estrutura e o conteúdo forem realmente reaproveitados.
@@ -24,6 +27,8 @@ Pense nos blocos como peças de uma explicação: primeiro a pessoa entende o as
 - **Calendário ou linha do tempo**: datas, etapas e prazos.
 - **FAQ**: dúvidas recorrentes com respostas curtas e diretas.
 - **Galeria ou citação**: apenas quando acrescentarem contexto relevante.
+
+Para a configuração e exemplos publicados de cada bloco, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/13 - Sou editor e quero montar conteúdo com blocos|montar conteúdo com blocos]].
 
 ## Verificação
 

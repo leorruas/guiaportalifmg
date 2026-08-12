@@ -12,6 +12,8 @@ Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela a
 ![[imagens/manual-ifrn/image12.png|No menu de Notícias, use Adicionar subpágina para criar uma notícia]]
 
 3. Escreva um título que informe o fato principal e um resumo que ajude a pessoa a decidir se deve abrir a página.
+
+**Exemplo:** em vez de “Atenção”, escreva “IFMG abre inscrições para monitoria até 18 de agosto”. A pessoa já entende o assunto e o prazo antes de abrir a notícia.
 4. Preencha o conteúdo com contexto, informação essencial, links e próxima ação. Se houver um material complementar, acrescente um bloco de link com um rótulo que explique o destino.
 
 ![[imagens/manual-ifrn/image22.png|Exemplo de bloco de link complementar em uma notícia]]

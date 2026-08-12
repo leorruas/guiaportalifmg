@@ -1,11 +1,15 @@
 # Sou editor e quero gerenciar imagens, documentos e cadastros
 
+Imagens e documentos são conteúdo reutilizável: um mesmo arquivo pode aparecer em várias páginas. Antes de trocar ou excluir algo, pense em todas as páginas que podem estar usando aquele mesmo item.
+
 ## Imagens
 
 1. Abra **Imagens** no menu lateral.
 2. Adicione ou selecione a imagem na coleção autorizada ao seu grupo.
 3. Use título claro, sem palavras inteiras em caixa alta ou separadores no lugar de palavras.
 4. Ao substituir um arquivo, confirme as páginas que usam a imagem: a alteração poderá valer para todas elas.
+
+**Exemplo:** se uma foto é usada na página do curso e em uma notícia, trocar o arquivo da coleção pode mudar as duas publicações.
 
 ## Documentos
 
@@ -31,5 +35,7 @@
 ## Cadastros acessórios
 
 Quando o menu administrativo disponibilizar cadastros de etapas, tipos e subtipos de processo seletivo, eixos tecnológicos, modalidades ou categorias de curso, preencha ou altere apenas registros confirmados pela área responsável. Essas listas afetam várias páginas e não devem receber valores provisórios.
+
+**Como saber que terminou:** o arquivo ou cadastro tem nome claro, versão confirmada e está na coleção certa; nenhuma página relacionada foi alterada sem você prever esse efeito.
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/05 - Sou editor e quero organizar documentos e imagens em coleções|Voltar a documentos e coleções]]
