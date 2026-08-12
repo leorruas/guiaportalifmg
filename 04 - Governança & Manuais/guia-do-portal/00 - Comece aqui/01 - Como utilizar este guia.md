@@ -30,5 +30,3 @@ Os fundamentos não substituem o procedimento; eles explicam os critérios que o
 - Verifique se a próxima ação está clara e se os links levam ao destino correto.
 - Encaminhe para moderação ou validação quando seu papel não permitir a publicação direta.
 - Registre na Inbox local qualquer regra, permissão ou fluxo ainda não confirmado.
-
-[[04 - Governança & Manuais/guia-do-portal/00 - guia-do-portal|Voltar ao Guia do Portal IFMG]]
