@@ -4,29 +4,23 @@ Você cria apenas os tipos disponíveis na página-pai e no escopo do seu grupo.
 
 O tipo de conteúdo não é só uma aparência. Ele define as perguntas que a página faz para você preencher e o lugar em que o público vai encontrá-la. Escolher o tipo certo é como escolher o formulário certo antes de começar a escrever.
 
-## Homepage
-
-A homepage é uma configuração de alto impacto. Edite-a somente se ela estiver no escopo do seu grupo. Revise destaques, links, blocos e ordem antes de enviar para moderação.
-
-**Pergunta de controle:** esta informação precisa aparecer para quase todo mundo que entra no portal? Se não, provavelmente ela não pertence à homepage.
-
 ## Página institucional
 
-Use para conteúdo estável de setor, serviço ou orientação. Inclua título claro, contexto, contato, fonte, links relacionados e responsável pela atualização.
+Use para conteúdo estável de setor, serviço ou orientação. [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero criar uma página institucional|Veja o procedimento para Página institucional]].
 
 **Exemplo:** horários de atendimento e como solicitar um serviço pertencem aqui, porque continuam válidos por mais tempo que uma notícia.
 
 ## Campus
 
-Use a página de campus como página-pai para conteúdos locais autorizados. Antes de criar uma subpágina, confirme se ela pertence à estrutura do campus ou a uma área institucional compartilhada.
+Campus é uma página estrutural criada e mantida pelo moderador do escopo. [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero criar ou editar um campus|Veja o procedimento para Campus]].
 
 ## Curso e colegiado
 
-Use **Curso** para a apresentação estruturada da oferta formativa e **Colegiado** para informações do órgão ou instância correspondente. Preencha apenas dados confirmados pela fonte responsável.
+Use **Curso** para a apresentação estruturada da oferta formativa e **Colegiado** para informações do órgão ou instância correspondente. Preencha apenas dados confirmados pela fonte responsável. [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero criar um curso|Criar Curso]] · [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero criar um colegiado|Criar Colegiado]].
 
 ## Link
 
-Use quando a finalidade for levar a pessoa a um serviço, sistema ou fonte oficial. Dê ao link um título que descreva o destino ou a ação; não use “clique aqui”.
+Use quando a finalidade for levar a pessoa a um serviço, sistema ou fonte oficial. Dê ao link um título que descreva o destino ou a ação; não use “clique aqui”. [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero criar um link|Veja como criar um Link]].
 
 **Exemplo:** “Acesse o SUAP” explica o destino; “Clique aqui” não explica.
 
@@ -40,7 +34,7 @@ Crie o processo na pasta correspondente ao tipo de seleção. Organize edital e 
 
 ## Programa e projeto
 
-Use esses tipos para iniciativas institucionais que precisam de página própria, com objetivo, público, responsável, vigência e canais de contato.
+Use esses tipos para iniciativas institucionais que precisam de página própria, com objetivo, público, responsável, vigência e canais de contato. [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/21 - Sou editor e quero criar um programa|Criar Programa]] · [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/22 - Sou editor e quero criar um projeto|Criar Projeto]].
 
 ## Evento e comunicado
 
