@@ -77,7 +77,3 @@ Em serviços públicos, uma única *North Star Metric* raramente representa todo
 - [ ] A coleta evita dados pessoais desnecessários e respeita o propósito público do serviço?
 
 **Teste simples:** antes de colocar um número no painel, complete a frase “se este número subir ou cair, nós vamos…”. Se não houver uma decisão possível depois das reticências, provavelmente ele não deve ser prioridade de monitoramento.
-
-## Conexões no projeto
-
-- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/03 - SEO, busca interna e metadados|SEO, busca interna e metadados]] — consultas e abandono como sinais de encontrabilidade.

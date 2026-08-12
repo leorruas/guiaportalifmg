@@ -38,7 +38,7 @@ Use **Informação** quando uma orientação, um aviso ou um dado precisa se des
 
 ![[imagens/manual-ifrn/image34.png|Configuração de um bloco de informação]]
 
-![[imagens/manual-ifrn/image47.png|Exemplo publicado de bloco de informação]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image47.png|Exemplo publicado de bloco de informação]]
 
 ### Coleção
 
@@ -46,7 +46,7 @@ Use **Coleção** para mostrar os documentos ou imagens que já foram organizado
 
 ![[imagens/manual-ifrn/image5.png|Configuração de um bloco de coleção]]
 
-![[imagens/manual-ifrn/image35.png|Exemplo publicado de bloco de coleção]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image35.png|Exemplo publicado de bloco de coleção]]
 
 ### Tabela
 
@@ -62,11 +62,11 @@ Use **Links** quando há mais de um próximo passo; use **Link único** quando u
 
 ![[imagens/manual-ifrn/image7.png|Configuração de um bloco de links]]
 
-![[imagens/manual-ifrn/image18.png|Exemplo publicado de bloco de links]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image18.png|Exemplo publicado de bloco de links]]
 
 ![[imagens/manual-ifrn/image6.png|Configuração de um bloco de link único]]
 
-![[imagens/manual-ifrn/image27.png|Exemplo publicado de link único]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image27.png|Exemplo publicado de link único]]
 
 ### Cards
 
@@ -74,7 +74,7 @@ Use **Cards** para oferecer caminhos relacionados, como serviços de uma área. 
 
 ![[imagens/manual-ifrn/image24.png|Configuração de um bloco de cards]]
 
-![[imagens/manual-ifrn/image48.png|Exemplo publicado de cards]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image48.png|Exemplo publicado de cards]]
 
 ## Blocos de tempo, consulta e apoio
 
@@ -84,7 +84,7 @@ Use **Linha do tempo** quando as etapas precisam ser compreendidas em ordem. Uma
 
 ![[imagens/manual-ifrn/image44.png|Configuração de uma linha do tempo]]
 
-![[imagens/manual-ifrn/image37.png|Exemplo publicado de linha do tempo]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image37.png|Exemplo publicado de linha do tempo]]
 
 ### Calendário
 
@@ -92,7 +92,7 @@ Use **Calendário** quando a pessoa precisa consultar datas e atividades. Revise
 
 ![[imagens/manual-ifrn/image42.png|Configuração de um bloco de calendário]]
 
-![[imagens/manual-ifrn/image23.png|Exemplo publicado de calendário]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image23.png|Exemplo publicado de calendário]]
 
 ### FAQ
 
@@ -100,7 +100,7 @@ Use **FAQ** para dúvidas que se repetem. Escreva a pergunta como alguém realme
 
 ![[imagens/manual-ifrn/image25.png|Configuração de um bloco de FAQ]]
 
-![[imagens/manual-ifrn/image46.png|Exemplo publicado de FAQ]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image46.png|Exemplo publicado de FAQ]]
 
 ### Lista definida
 
@@ -108,7 +108,7 @@ Use **Lista definida** para relacionar um nome e seu valor, como “Responsável
 
 ![[imagens/manual-ifrn/image32.png|Configuração de uma lista definida]]
 
-![[imagens/manual-ifrn/image39.png|Exemplo publicado de lista definida]]
+*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image39.png|Exemplo publicado de lista definida]]
 
 ### Galeria e citação
 
