@@ -11,14 +11,16 @@ Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela a
 
 ![[imagens/manual-ifrn/image12.png|No menu de Notícias, use Adicionar subpágina para criar uma notícia]]
 
-3. Escreva um título que informe o fato principal e um resumo que ajude a pessoa a decidir se deve abrir a página.
+3. Escreva um título que informe o fato principal e um resumo que ajude a pessoa a decidir se deve abrir a página. Quando os campos estiverem disponíveis, use o **chapéu** para indicar o tema, o **subtítulo** para complementar o título e **etiquetas** para palavras que ajudam na busca.
 
 **Exemplo:** em vez de “Atenção”, escreva “IFMG abre inscrições para monitoria até 18 de agosto”. A pessoa já entende o assunto e o prazo antes de abrir a notícia.
 4. Preencha o conteúdo com contexto, informação essencial, links e próxima ação. Se houver um material complementar, acrescente um bloco de link com um rótulo que explique o destino.
 
 ![[imagens/manual-ifrn/image22.png|Exemplo de bloco de link complementar em uma notícia]]
 
-5. Se utilizar imagem, selecione uma imagem da coleção permitida e informe texto alternativo quando ela trouxer informação.
+5. Se utilizar imagem, diferencie os dois usos: a **imagem de destaque** aparece na lista de notícias; a imagem inserida no conteúdo aparece dentro da notícia. Selecione-as na coleção permitida e informe texto alternativo quando trouxerem informação.
+
+Evite títulos, chapéus, subtítulos e etiquetas inteiros em caixa alta, exceto siglas que precisam ser escritas assim. O público lê melhor “Processo seletivo” do que “PROCESSO SELETIVO”.
 6. Na aba **Promover**, revise URL, título de busca e descrição.
 7. Pré-visualize em computador e em dispositivos menores, quando a opção estiver disponível.
 8. Envie para moderação.
