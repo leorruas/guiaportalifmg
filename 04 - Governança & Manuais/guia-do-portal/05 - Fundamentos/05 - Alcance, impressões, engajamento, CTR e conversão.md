@@ -59,7 +59,6 @@ Publicar muitas peças não comprova resultado. Em comunicação pública, uma o
 
 ## Conexões no projeto
 
-- [[04 - Governança & Manuais/guia-do-portal/04 - kpis-metricas-e-analytics|KPIs, métricas e analytics]] — objetivos, metas e decisões baseadas em dados.
+- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]] — objetivos, metas e decisões baseadas em dados.
 - [[00 - Inbox/03 problemas para o futuro#2026-07-28 - Monitoramento de tarefas e fluxos críticos|Monitoramento de tarefas e fluxos críticos]] — instrumentação de fluxos do portal.
 - [[06 - Dados & Artefatos/dados-analytics/protocolo-analytics|Protocolo Analytics]] — extração e limites das evidências atuais.
-

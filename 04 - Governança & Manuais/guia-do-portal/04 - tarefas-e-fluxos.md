@@ -12,7 +12,7 @@ Esta é a porta de entrada por tarefa do Guia do Portal. Cada item deve evoluir 
 - Quero solicitar acesso ou alteração de permissão.
 - Quero acompanhar o status de uma solicitação ou publicação.
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/01 - editor|Editor]], [[04 - Governança & Manuais/guia-do-portal/02 - moderador|Moderador]], [[04 - Governança & Manuais/guia-do-portal/03 - administrador|Administrador]] e [[04 - Governança & Manuais/guia-do-portal/04 - gestor|Gestor]].
+Consulte: [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Editor]], [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero revisar e aprovar conteúdos|Moderador]], [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações|Administrador]] e [[04 - Governança & Manuais/guia-do-portal/01 - Sou gestor/01 - Sou gestor e quero solicitar ou acompanhar uma atualização|Gestor]].
 
 ## Quero criar ou atualizar conteúdo
 
@@ -30,7 +30,7 @@ Consulte: [[04 - Governança & Manuais/guia-do-portal/01 - editor|Editor]], [[04
 - Quero revisar conteúdo antes da publicação ou devolvê-lo para ajuste.
 - Quero evitar duplicação de fontes oficiais e conteúdo desatualizado.
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/01 - linguagem-simples-e-acessibilidade|Linguagem simples e acessibilidade]] e [[04 - Governança & Manuais/guia-do-portal/03 - seo-busca-interna-e-metadados|SEO, busca interna e metadados]].
+Consulte: [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/01 - Linguagem simples e acessibilidade|Linguagem simples e acessibilidade]] e [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/03 - SEO, busca interna e metadados|SEO, busca interna e metadados]].
 
 ## Quero melhorar a encontrabilidade e a experiência
 
@@ -39,7 +39,7 @@ Consulte: [[04 - Governança & Manuais/guia-do-portal/01 - linguagem-simples-e-a
 - Quero validar se as pessoas encontram uma informação ou serviço.
 - Quero analisar busca sem resultado, páginas órfãs, links quebrados ou conteúdo vencido.
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/02 - arquitetura-da-informacao-e-encontrabilidade|Arquitetura da Informação e Encontrabilidade]].
+Consulte: [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da Informação e Encontrabilidade]].
 
 ## Quero acompanhar resultados e corrigir fluxos
 
@@ -48,7 +48,7 @@ Consulte: [[04 - Governança & Manuais/guia-do-portal/02 - arquitetura-da-inform
 - Quero definir objetivo, KPI, meta e métricas para uma página ou fluxo.
 - Quero priorizar uma correção a partir de dados, feedback e testes de usabilidade.
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/04 - kpis-metricas-e-analytics|KPIs, métricas e analytics]] e [[00 - Inbox/03 problemas para o futuro#2026-07-28 - Monitoramento de tarefas e fluxos críticos|Monitoramento de tarefas e fluxos críticos]].
+Consulte: [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]] e o registro de monitoramento de tarefas e fluxos críticos do projeto de origem.
 
 ## Próxima construção
 

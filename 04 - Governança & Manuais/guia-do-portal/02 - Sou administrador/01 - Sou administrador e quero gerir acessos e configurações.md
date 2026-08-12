@@ -1,4 +1,4 @@
-# Sou administrador
+# Sou administrador e quero gerir acessos e configurações
 
 Você administra as condições que permitem a publicação segura e consistente: acessos, permissões, estrutura, modelos, integrações e parâmetros do portal. Seu trabalho tem impacto transversal e deve preservar a autonomia das áreas dentro de limites claros.
 
@@ -25,5 +25,4 @@ Você administra as condições que permitem a publicação segura e consistente
 - [ ] Há ambiente de homologação, responsável e plano de reversão quando o risco exigir?
 - [ ] A decisão e sua justificativa foram registradas para futuras revisões?
 
-Consulte: [[04 - Governança & Manuais/01 - diretrizes-governanca-benchmarking|Diretrizes de Governança]], [[04 - Governança & Manuais/guia-do-portal/02 - arquitetura-da-informacao-e-encontrabilidade|Arquitetura da Informação e Encontrabilidade]] e [[04 - Governança & Manuais/guia-do-portal/04 - kpis-metricas-e-analytics|KPIs, métricas e analytics]].
-
+Consulte: Diretrizes de Governança do projeto de origem, [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da Informação e Encontrabilidade]] e [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]].

@@ -1,4 +1,4 @@
-# Sou moderador
+# Sou moderador e quero revisar e aprovar conteúdos
 
 Você protege a qualidade, a coerência e a vigência das informações publicadas no seu escopo. A moderação não deve ser apenas uma barreira de aprovação: ela deve ajudar quem edita a publicar conteúdo útil e sustentável.
 
@@ -25,5 +25,4 @@ Você protege a qualidade, a coerência e a vigência das informações publicad
 - [ ] O título e os metadados permitem encontrar e compreender o conteúdo?
 - [ ] Existe responsável para atualizar ou arquivar a publicação?
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/01 - linguagem-simples-e-acessibilidade|Linguagem simples e acessibilidade]], [[04 - Governança & Manuais/guia-do-portal/02 - arquitetura-da-informacao-e-encontrabilidade|Arquitetura da Informação e Encontrabilidade]] e [[04 - Governança & Manuais/guia-do-portal/04 - kpis-metricas-e-analytics|KPIs, métricas e analytics]].
-
+Consulte: [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/01 - Linguagem simples e acessibilidade|Linguagem simples e acessibilidade]], [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da Informação e Encontrabilidade]] e [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]].

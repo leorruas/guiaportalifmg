@@ -1,0 +1,12 @@
+# Configuração do GitHub Pages para a interface do Guia do Portal IFMG.
+# As notas são lidas diretamente do repositório pela API e pela URL raw do GitHub.
+
+exclude:
+  - ".obsidian"
+  - "AGENTS.md"
+  - "log.md"
+
+include:
+  - index.html
+  - style.css
+  - script.js

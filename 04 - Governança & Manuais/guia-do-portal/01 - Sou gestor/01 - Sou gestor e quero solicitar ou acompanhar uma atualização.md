@@ -1,4 +1,4 @@
-# Sou gestor
+# Sou gestor e quero solicitar ou acompanhar uma atualização
 
 Você é responsável por uma área, serviço, projeto ou informação institucional e quer divulgá-la, atualizá-la ou garantir que ela esteja correta no portal.
 
@@ -29,4 +29,3 @@ Você é responsável por uma área, serviço, projeto ou informação instituci
 - [ ] O conteúdo deve virar notícia, página estável, comunicado, documento ou atualização de página existente?
 
 Consulte: [[04 - Governança & Manuais/guia-do-portal/04 - tarefas-e-fluxos|Tarefas e fluxos — “Quero…”]] e [[04 - Governança & Manuais/03 - manual-redacao-linguagem-simples|Manual de Redação e Estruturação]].
-

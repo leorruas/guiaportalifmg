@@ -7,10 +7,10 @@ Este guia ajuda cada pessoa a realizar seu trabalho no portal com clareza, segur
 
 ## Qual é o seu papel?
 
-- [[04 - Governança & Manuais/guia-do-portal/01 - editor|Sou editor]] — quero criar, atualizar e preparar conteúdos dentro das permissões do meu setor ou campus.
-- [[04 - Governança & Manuais/guia-do-portal/02 - moderador|Sou moderador]] — quero revisar, aprovar, devolver para ajuste e zelar pelo padrão editorial.
-- [[04 - Governança & Manuais/guia-do-portal/03 - administrador|Sou administrador]] — quero gerir acessos, estrutura, configurações e regras que afetam o portal.
-- [[04 - Governança & Manuais/guia-do-portal/04 - gestor|Sou gestor]] — quero divulgar uma informação, solicitar uma atualização ou acompanhar seu encaminhamento.
+- [[04 - Governança & Manuais/guia-do-portal/01 - Sou gestor/01 - Sou gestor e quero solicitar ou acompanhar uma atualização|Sou gestor e quero solicitar ou acompanhar uma atualização]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações|Sou administrador e quero gerir acessos e configurações]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero revisar e aprovar conteúdos|Sou moderador e quero revisar e aprovar conteúdos]].
+- [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Sou editor e quero criar e atualizar conteúdos]].
 
 ## O que você quer fazer?
 
@@ -25,12 +25,12 @@ Este guia ajuda cada pessoa a realizar seu trabalho no portal com clareza, segur
 
 Esta camada explica **por que** os padrões e decisões do guia existem. Ela serve à consulta, à formação e aos links do relatório final do projeto; não é a porta de entrada para a execução cotidiana.
 
-- [[04 - Governança & Manuais/guia-do-portal/01 - linguagem-simples-e-acessibilidade|Linguagem simples e acessibilidade]]
-- [[04 - Governança & Manuais/guia-do-portal/02 - arquitetura-da-informacao-e-encontrabilidade|Arquitetura da Informação e Encontrabilidade]]
-- [[04 - Governança & Manuais/guia-do-portal/03 - seo-busca-interna-e-metadados|SEO, busca interna e metadados]]
-- [[04 - Governança & Manuais/guia-do-portal/04 - kpis-metricas-e-analytics|KPIs, métricas e analytics]]
-- [[04 - Governança & Manuais/guia-do-portal/05 - alcance-impressoes-engajamento-ctr-e-conversao|Alcance, impressões, engajamento, CTR e conversão]]
-- [[04 - Governança & Manuais/guia-do-portal/06 - copywriting-ux-writing-e-storytelling-digital|Copywriting, UX Writing e Storytelling Digital]]
+- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/01 - Linguagem simples e acessibilidade|Linguagem simples e acessibilidade]]
+- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da Informação e Encontrabilidade]]
+- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/03 - SEO, busca interna e metadados|SEO, busca interna e metadados]]
+- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]]
+- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/05 - Alcance, impressões, engajamento, CTR e conversão|Alcance, impressões, engajamento, CTR e conversão]]
+- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/06 - Copywriting, UX Writing e storytelling digital|Copywriting, UX Writing e Storytelling Digital]]
 
 ## Base do projeto
 
