@@ -291,7 +291,7 @@ function converterImagensObsidian(markdown) {
 
     return markdown.replace(regexEmbed, (match, caminho, descricao) => {
         const caminhoNormalizado = caminho.trim().replace(/\\/g, "/");
-        if (!caminhoNormalizado.startsWith(".imagens/")) return match;
+        if (!caminhoNormalizado.startsWith("imagens/")) return match;
 
         const textoAlternativo = (descricao || caminhoNormalizado.split("/").pop()).trim();
         return `![${textoAlternativo}](${encodeURI(repositorioRaw + caminhoNormalizado)})`;

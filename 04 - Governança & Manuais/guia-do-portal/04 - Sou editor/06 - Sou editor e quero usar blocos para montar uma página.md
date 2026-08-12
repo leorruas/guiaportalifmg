@@ -2,6 +2,8 @@
 
 Na aba **Conteúdo**, monte a página com blocos. Use apenas os blocos que ajudam a pessoa a entender a informação ou concluir uma tarefa.
 
+Pense nos blocos como peças de uma explicação: primeiro a pessoa entende o assunto, depois encontra os detalhes e, por fim, sabe qual é o próximo passo. A página fica mais clara quando cada peça responde a uma pergunta do público.
+
 ## Adicionar, mover ou remover um bloco
 
 1. Abra a página em edição e localize a aba **Conteúdo**.
@@ -28,5 +30,7 @@ Na aba **Conteúdo**, monte a página com blocos. Use apenas os blocos que ajuda
 - Não use um bloco decorativo para esconder informação essencial.
 - Prefira títulos, links e botões que descrevam a ação ou o destino.
 - Em tabelas, confira se os cabeçalhos identificam as colunas.
+
+**Teste simples:** leia apenas os títulos, os links e os destaques da página. Se ainda der para entender o assunto e o que fazer, os blocos estão ajudando; se não, reorganize ou simplifique.
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero criar ou editar uma página|Voltar a criar ou editar uma página]]

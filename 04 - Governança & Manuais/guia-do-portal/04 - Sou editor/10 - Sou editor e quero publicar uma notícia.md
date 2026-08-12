@@ -17,9 +17,9 @@ Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela a
 
 **Resultado esperado:** a notícia aparece na pasta certa, explica o fato sem depender de contexto interno e chega à moderação com seus links e documentos verificados.
 
-![[.imagens/manual-ifrn/image12.png|A opção Notícia aparece apenas dentro da pasta de notícias apropriada]]
+![[imagens/manual-ifrn/image12.png|A opção Notícia aparece apenas dentro da pasta de notícias apropriada]]
 
-![[.imagens/manual-ifrn/image9.png|Exemplo de preenchimento de uma notícia no Wagtail]]
+![[imagens/manual-ifrn/image9.png|Exemplo de preenchimento de uma notícia no Wagtail]]
 
 ## Antes de enviar
 

@@ -2,6 +2,8 @@
 
 Você administra as condições que permitem a publicação segura e consistente: acessos, permissões, estrutura, modelos, integrações e parâmetros do portal. Seu trabalho tem impacto transversal e deve preservar a autonomia das áreas dentro de limites claros.
 
+Em palavras simples: você monta o ambiente em que as outras pessoas trabalham. Quando define um grupo, uma permissão ou uma coleção, está dizendo quem pode entrar em qual parte do portal e o que pode fazer ali. Uma configuração pequena pode afetar muita gente; por isso, teste antes de ampliar o acesso.
+
 > [!NOTE]
 > Seu acesso é cumulativo: você pode executar as tarefas de editor e moderador, além de configurar grupos, permissões, páginas e coleções no escopo administrativo atribuído.
 

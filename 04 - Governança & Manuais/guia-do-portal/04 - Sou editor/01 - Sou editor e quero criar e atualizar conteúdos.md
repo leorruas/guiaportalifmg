@@ -2,6 +2,8 @@
 
 Você prepara e atualiza conteúdos dentro da área ou do campus para o qual recebeu acesso. Pode criar e editar páginas, coleções, documentos e imagens no escopo atribuído ao seu grupo, mas não aprova conteúdo.
 
+Em palavras simples: seu trabalho é deixar a informação certa, completa e fácil de encontrar para que outra pessoa possa revisá-la. Você prepara a entrega; quem modera decide se ela pode ir ao ar.
+
 ## O que você deve conseguir fazer
 
 - Criar e editar os tipos de página disponíveis no local em que recebeu acesso.

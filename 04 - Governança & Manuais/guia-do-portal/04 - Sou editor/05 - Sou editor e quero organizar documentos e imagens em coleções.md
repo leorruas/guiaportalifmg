@@ -2,6 +2,8 @@
 
 Coleções organizam e controlam o acesso a documentos e imagens. Você só pode trabalhar nas coleções que foram atribuídas ao seu grupo.
 
+Uma coleção funciona como um armário compartilhado e identificado: ela guarda os arquivos de uma área e define quem pode usá-los. Por isso, não basta subir o arquivo; é preciso colocá-lo no armário certo, com um nome que qualquer pessoa da equipe entenda.
+
 ## Adicionar um documento ou imagem
 
 1. Abra **Documentos** ou **Imagens** no menu lateral.
@@ -22,5 +24,7 @@ Coleções organizam e controlam o acesso a documentos e imagens. Você só pode
 - Não exclua um arquivo apenas porque ele deixou de ser necessário em uma página: primeiro confirme que ele não é utilizado em outros lugares.
 - Use títulos em linguagem natural; evite nomes inteiros em caixa alta e separadores no lugar de palavras.
 - Mantenha documentos vigentes, acessíveis e vinculados à fonte responsável.
+
+**Como saber que está organizado:** ao procurar o arquivo pelo título ou abrir a coleção da área, uma pessoa entende o que ele é, qual versão vale e em quais páginas ele poderá aparecer.
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Voltar ao papel de editor]]

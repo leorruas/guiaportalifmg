@@ -2,6 +2,8 @@
 
 Crie uma página como filha da seção correta do portal. Os tipos disponíveis dependem da página em que você está e das permissões do seu grupo.
 
+Antes de preencher qualquer campo, responda a duas perguntas: “onde uma pessoa procuraria esta informação?” e “o que ela precisa conseguir fazer depois de ler?”. As respostas indicam a página-pai e o tipo de conteúdo corretos.
+
 ## Criar ou editar
 
 1. Em **Páginas**, abra a seção onde o conteúdo deve ficar.
@@ -10,6 +12,8 @@ Crie uma página como filha da seção correta do portal. Os tipos disponíveis 
 4. Para inserir um documento ou imagem, escolha o item dentro da coleção a que seu grupo tem acesso.
 5. Na aba **Promover**, revise URL, título de busca, descrição e opção de exibição em menus quando esses campos estiverem disponíveis.
 6. Use **Pré-visualizar** antes de salvar ou enviar para moderação.
+
+**Exemplo:** uma informação permanente sobre atendimento costuma ficar como página do setor; um aviso com prazo curto pode ser um comunicado; uma seleção com edital e etapas precisa ser um processo seletivo.
 
 ## Ao usar blocos e mídia
 

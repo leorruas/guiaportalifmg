@@ -2,6 +2,8 @@
 
 Uma página devolvida para ajuste deve ser corrigida no próprio fluxo de trabalho. Use comentários para entender e registrar o que foi solicitado.
 
+Um comentário é um bilhete preso exatamente no ponto que precisa de atenção. Em vez de tentar lembrar uma orientação recebida por outra mensagem, abra o bilhete, corrija aquele trecho e deixe registrado o que mudou.
+
 ## Como responder e corrigir
 
 1. Abra a página em edição.
@@ -15,5 +17,7 @@ Uma página devolvida para ajuste deve ser corrigida no próprio fluxo de trabal
 ## Consultar mudanças anteriores
 
 Use o **Histórico** da página para conferir alterações anteriores e entender o que mudou. Antes de substituir um documento ou imagem, confira onde ele é utilizado: a substituição pode atualizar várias páginas ao mesmo tempo.
+
+**Como saber que resolveu:** o comentário foi respondido ou marcado como resolvido, a alteração está salva e a página foi reenviada para quem solicitou a revisão.
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero enviar conteúdo para moderação|Voltar a enviar para moderação]]

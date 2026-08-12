@@ -15,13 +15,13 @@ Editar não significa publicar na hora. Pense na página como um documento em re
 2. Use **Pré-visualizar** para conferir a página em desktop, tablet ou celular.
 3. Abra **Verificações** e corrija os problemas apontados antes de enviar para moderação.
 
-![[.imagens/manual-ifrn/image16.png|Status e agendamento de publicação]]
+![[imagens/manual-ifrn/image16.png|Status e agendamento de publicação]]
 
-![[.imagens/manual-ifrn/image19.png|Formulário para programar publicação ou expiração]]
+![[imagens/manual-ifrn/image19.png|Formulário para programar publicação ou expiração]]
 
-![[.imagens/manual-ifrn/image36.png|Pré-visualização da página]]
+![[imagens/manual-ifrn/image36.png|Pré-visualização da página]]
 
-![[.imagens/manual-ifrn/image41.png|Verificações disponíveis antes da publicação]]
+![[imagens/manual-ifrn/image41.png|Verificações disponíveis antes da publicação]]
 
 ## Comentários, histórico e fluxo de moderação
 
@@ -32,6 +32,6 @@ Editar não significa publicar na hora. Pense na página como um documento em re
 
 **Resultado esperado:** a alteração fica registrada, foi conferida antes de ir ao ar e tem um próximo responsável claro quando ainda precisar de revisão.
 
-![[.imagens/manual-ifrn/image14.png|Exemplo de estado no fluxo de moderação]]
+![[imagens/manual-ifrn/image14.png|Exemplo de estado no fluxo de moderação]]
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero enviar conteúdo para moderação|Voltar a enviar conteúdo para moderação]]

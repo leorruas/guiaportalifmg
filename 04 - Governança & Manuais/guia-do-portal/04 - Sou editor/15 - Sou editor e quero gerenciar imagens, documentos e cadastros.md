@@ -20,11 +20,11 @@
 2. Dentro de uma coleção, adicione documentos ou imagens e revise os itens existentes.
 3. Peça ao administrador uma nova coleção ou permissão quando o destino necessário não estiver disponível.
 
-![[.imagens/manual-ifrn/image4.png|Configurações e permissões de uma coleção]]
+![[imagens/manual-ifrn/image4.png|Configurações e permissões de uma coleção]]
 
-![[.imagens/manual-ifrn/image26.png|Ação para adicionar uma coleção]]
+![[imagens/manual-ifrn/image26.png|Ação para adicionar uma coleção]]
 
-![[.imagens/manual-ifrn/image38.png|Adição de documentos ou imagens a uma coleção]]
+![[imagens/manual-ifrn/image38.png|Adição de documentos ou imagens a uma coleção]]
 
 ## Cadastros acessórios
 

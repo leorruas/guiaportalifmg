@@ -2,6 +2,8 @@
 
 Você protege a qualidade, a coerência e a vigência das informações publicadas no seu escopo. Sua atuação é limitada às páginas e coleções atribuídas ao grupo do qual faz parte.
 
+Em palavras simples: você é a última pessoa a conferir se o público conseguirá entender e usar a informação. Não é apenas procurar erros de escrita; é verificar se a página está no lugar certo, diz a verdade, está atualizada e aponta o próximo passo.
+
 > [!NOTE]
 > Seu acesso é cumulativo: além de revisar, devolver e aprovar, você pode executar as tarefas de editor dentro do escopo do seu grupo.
 

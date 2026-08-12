@@ -2,6 +2,8 @@
 
 Use a aba **Promover** para preparar a página para busca e, quando for apropriado, incluí-la em menus do site.
 
+Busca e menu são placas de orientação: elas não mudam o conteúdo da página, mas ajudam a pessoa a chegar até ele. Um título de busca claro diz o que a página resolve; um menu bem escolhido evita que a pessoa tenha de adivinhar onde clicar.
+
 ## Configurar a busca
 
 1. Abra a página em edição e selecione a aba **Promover**.
@@ -19,5 +21,7 @@ Use a aba **Promover** para preparar a página para busca e, quando for apropria
 
 > [!NOTE]
 > Criar ou alterar itens de menu depende da permissão do grupo e da estrutura atribuída à sua área. Se a opção não estiver disponível, solicite ao administrador responsável.
+
+**Como saber que funcionou:** imagine uma pessoa que não conhece a sigla do setor. Ela deve conseguir localizar a página pelo título na busca ou pelo rótulo do menu.
 
 [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/03 - SEO, busca interna e metadados|Ver fundamentos de SEO, busca interna e metadados]]
