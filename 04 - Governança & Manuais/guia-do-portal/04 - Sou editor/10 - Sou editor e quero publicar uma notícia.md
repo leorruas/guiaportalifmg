@@ -7,19 +7,21 @@ Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela a
 ## Como criar
 
 1. Em **Páginas**, navegue até a pasta de notícias atribuída ao seu grupo.
-2. Clique em **Adicionar subpágina** e selecione **Notícia**.
+2. Clique em **Adicionar subpágina** e selecione **Notícia**. A opção aparece dentro da pasta de notícias, não em qualquer seção do portal.
+
+![[imagens/manual-ifrn/image12.png|No menu de Notícias, use Adicionar subpágina para criar uma notícia]]
+
 3. Escreva um título que informe o fato principal e um resumo que ajude a pessoa a decidir se deve abrir a página.
-4. Preencha o conteúdo com contexto, informação essencial, links e próxima ação.
+4. Preencha o conteúdo com contexto, informação essencial, links e próxima ação. Se houver um material complementar, acrescente um bloco de link com um rótulo que explique o destino.
+
+![[imagens/manual-ifrn/image22.png|Exemplo de bloco de link complementar em uma notícia]]
+
 5. Se utilizar imagem, selecione uma imagem da coleção permitida e informe texto alternativo quando ela trouxer informação.
 6. Na aba **Promover**, revise URL, título de busca e descrição.
 7. Pré-visualize em computador e em dispositivos menores, quando a opção estiver disponível.
 8. Envie para moderação.
 
 **Resultado esperado:** a notícia aparece na pasta certa, explica o fato sem depender de contexto interno e chega à moderação com seus links e documentos verificados.
-
-![[imagens/manual-ifrn/image12.png|A opção Notícia aparece apenas dentro da pasta de notícias apropriada]]
-
-![[imagens/manual-ifrn/image9.png|Exemplo de preenchimento de uma notícia no Wagtail]]
 
 ## Antes de enviar
 

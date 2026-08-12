@@ -21,11 +21,12 @@ O tipo de página funciona como o molde do conteúdo: ele define quais campos ap
 2. Abra a página-pai onde o público espera encontrar esse conteúdo.
 3. Clique em **Adicionar subpágina**.
 4. Escolha o tipo correspondente à finalidade da informação.
+
+![[imagens/manual-ifrn/image21.png|Lista de tipos disponíveis ao adicionar uma subpágina]]
+
 5. Se o tipo não estiver disponível, não crie uma página em local improvisado: solicite ao administrador ou moderador que confirme a estrutura e a permissão.
 
 **Resultado esperado:** a nova página fica no lugar em que o público a procuraria e recebe os campos necessários para ser mantida corretamente.
-
-![[imagens/manual-ifrn/image21.png|Lista de tipos disponíveis ao adicionar uma subpágina]]
 
 > [!NOTE]
 > A disponibilidade de um tipo na lista depende do local da árvore de páginas e das permissões do seu grupo.

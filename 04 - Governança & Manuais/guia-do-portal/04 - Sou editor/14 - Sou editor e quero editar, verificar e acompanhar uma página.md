@@ -12,14 +12,18 @@ Editar não significa publicar na hora. Pense na página como um documento em re
 ## Status, pré-visualização e verificações
 
 1. Abra **Status** para conferir a situação da página e, quando disponível, definir publicação ou expiração programada.
-2. Use **Pré-visualizar** para conferir a página em desktop, tablet ou celular.
-3. Abra **Verificações** e corrija os problemas apontados antes de enviar para moderação.
 
-![[imagens/manual-ifrn/image16.png|Status e agendamento de publicação]]
+![[imagens/manual-ifrn/image16.png|Status da página e acesso ao agendamento]]
+
+Se precisar programar, escolha a ação de cronograma e informe a data confirmada.
 
 ![[imagens/manual-ifrn/image19.png|Formulário para programar publicação ou expiração]]
 
-![[imagens/manual-ifrn/image36.png|Pré-visualização da página]]
+2. Use **Pré-visualizar** para conferir a página em desktop, tablet ou celular.
+
+![[imagens/manual-ifrn/image36.png|Pré-visualização da página em diferentes dispositivos]]
+
+3. Abra **Verificações** e corrija os problemas apontados antes de enviar para moderação.
 
 ![[imagens/manual-ifrn/image41.png|Verificações disponíveis antes da publicação]]
 
@@ -30,8 +34,8 @@ Editar não significa publicar na hora. Pense na página como um documento em re
 3. Abra **Histórico** para consultar alterações anteriores.
 4. Envie para moderação quando a página estiver pronta; acompanhe o estado do fluxo e corrija as pendências quando ela for devolvida.
 
-**Resultado esperado:** a alteração fica registrada, foi conferida antes de ir ao ar e tem um próximo responsável claro quando ainda precisar de revisão.
+![[imagens/manual-ifrn/image14.png|Estado da página no fluxo de moderação]]
 
-![[imagens/manual-ifrn/image14.png|Exemplo de estado no fluxo de moderação]]
+**Resultado esperado:** a alteração fica registrada, foi conferida antes de ir ao ar e tem um próximo responsável claro quando ainda precisar de revisão.
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero enviar conteúdo para moderação|Voltar a enviar conteúdo para moderação]]

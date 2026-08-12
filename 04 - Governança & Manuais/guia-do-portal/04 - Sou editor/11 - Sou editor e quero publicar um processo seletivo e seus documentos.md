@@ -16,15 +16,20 @@ Pense na página como a porta de entrada da seleção e na coleção como a past
 1. Em **Páginas**, abra a pasta de processos seletivos correspondente ao tipo de seleção.
 2. Clique em **Adicionar subpágina** e escolha **Processo seletivo** ou o tipo equivalente disponível.
 3. Preencha título, período, etapas, público, prazos e orientações.
+
+Quando o processo tiver fases ou resultados, apresente cada etapa de forma que a pessoa identifique imediatamente onde está e o que deve consultar.
+
+![[imagens/manual-ifrn/image9.png|Exemplo de etapas e resultados publicados em um processo seletivo]]
+
 4. Na aba **Conteúdo**, adicione o bloco de coleção e selecione a coleção preparada para o processo.
 5. Informe períodos apenas quando existirem para aquela seleção; não preencha campos com datas estimadas.
 6. Pré-visualize, confira os documentos e envie para moderação.
 
+![[imagens/manual-ifrn/image31.png|Exemplo de coleção com documentos de um processo seletivo]]
+
+![[imagens/manual-ifrn/image45.png|Escolha da pasta de processos seletivos antes de criar a página]]
+
 **Resultado esperado:** quem abre a página encontra as datas, entende a etapa em que está e acessa a versão vigente de cada documento.
-
-![[imagens/manual-ifrn/image31.png|Exemplo de coleção de documentos de um processo seletivo]]
-
-![[imagens/manual-ifrn/image45.png|Escolha da pasta adequada de processos seletivos]]
 
 ## Durante a vigência
 

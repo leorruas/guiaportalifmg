@@ -16,15 +16,17 @@
 
 ## Coleções
 
-1. Use apenas as coleções atribuídas ao seu grupo.
-2. Dentro de uma coleção, adicione documentos ou imagens e revise os itens existentes.
-3. Peça ao administrador uma nova coleção ou permissão quando o destino necessário não estiver disponível.
+1. Use apenas as coleções atribuídas ao seu grupo. Se você não enxergar a coleção necessária, não crie um destino improvisado: solicite a permissão ou a criação dela ao administrador.
 
 ![[imagens/manual-ifrn/image4.png|Configurações e permissões de uma coleção]]
 
-![[imagens/manual-ifrn/image26.png|Ação para adicionar uma coleção]]
+2. Dentro de uma coleção, adicione documentos ou imagens e revise os itens existentes.
 
 ![[imagens/manual-ifrn/image38.png|Adição de documentos ou imagens a uma coleção]]
+
+3. A criação de uma nova coleção depende de permissão administrativa.
+
+![[imagens/manual-ifrn/image26.png|Ação para adicionar uma coleção]]
 
 ## Cadastros acessórios
 
