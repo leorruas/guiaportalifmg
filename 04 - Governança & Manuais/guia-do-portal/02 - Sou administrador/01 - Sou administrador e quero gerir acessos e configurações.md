@@ -18,4 +18,4 @@ Você administra as condições que permitem a publicação segura e consistente
 - [ ] Há ambiente de homologação, responsável e plano de reversão quando o risco exigir?
 - [ ] A decisão e sua justificativa foram registradas para futuras revisões?
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/02 - Sou administrador e quero configurar grupos e permissões|Como configurar grupos e permissões]].
+Consulte: [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/02 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]] e [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/03 - Sou administrador e quero organizar páginas e coleções|Organizar páginas e coleções]].

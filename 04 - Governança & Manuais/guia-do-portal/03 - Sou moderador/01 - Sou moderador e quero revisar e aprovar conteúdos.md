@@ -18,4 +18,4 @@ Você protege a qualidade, a coerência e a vigência das informações publicad
 - [ ] O título e os metadados permitem encontrar e compreender o conteúdo?
 - [ ] Existe responsável para atualizar ou arquivar a publicação?
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/02 - Sou moderador e quero revisar e decidir uma publicação|Como revisar e decidir uma publicação]].
+Consulte: [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/02 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]], [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/03 - Sou moderador e quero acompanhar comentários e histórico|Acompanhar comentários e histórico]] e [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/04 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, despublicar ou agendar uma página]].
