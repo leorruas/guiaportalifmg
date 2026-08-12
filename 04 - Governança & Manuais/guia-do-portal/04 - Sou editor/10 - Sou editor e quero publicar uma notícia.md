@@ -34,4 +34,4 @@ Evite títulos, chapéus, subtítulos e etiquetas inteiros em caixa alta, exceto
 - [ ] O conteúdo indica claramente o que a pessoa deve fazer depois de ler?
 - [ ] Os links e documentos levam à versão correta e vigente?
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero enviar conteúdo para moderação|Enviar para moderação]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar para moderação]]

@@ -30,81 +30,6 @@ async function obterListaDeArquivos() {
 let todosOsArtigos = [];
 let todasAsPastas = {};
 
-// A árvore segue a sequência de trabalho, não a ordem em que os artigos foram
-// criados. Os nomes dos arquivos permanecem estáveis para preservar os links
-// internos do Obsidian.
-const ordemArtigosPorCategoria = {
-    "Comece aqui": [
-        "03 - Como entrar no Wagtail pela primeira vez",
-        "01 - Como utilizar este guia",
-        "02 - Glossário, perguntas frequentes e navegação no Wagtail"
-    ],
-    "Sou administrador": [
-        "01 - Sou administrador e quero gerir acessos e configurações",
-        "08 - Sou administrador e quero executar as tarefas de editor e moderador",
-        "04 - Sou administrador e quero criar ou atualizar conteúdo",
-        "05 - Sou administrador e quero revisar e publicar conteúdo",
-        "09 - Sou administrador e quero editar a homepage",
-        "12 - Sou administrador e quero criar uma pasta de notícias",
-        "02 - Sou administrador e quero configurar grupos e permissões",
-        "10 - Sou administrador e quero criar uma coleção e definir seus acessos",
-        "11 - Sou administrador e quero configurar cadastros de processos e cursos",
-        "03 - Sou administrador e quero organizar páginas e coleções",
-        "07 - Sou administrador e quero configurar busca, menus e ordem de páginas",
-        "06 - Sou administrador e quero gerenciar documentos e imagens"
-    ],
-    "Sou moderador": [
-        "09 - Sou moderador e quero executar as tarefas de editor",
-        "05 - Sou moderador e quero criar ou atualizar uma página",
-        "10 - Sou moderador e quero criar ou editar um campus",
-        "12 - Sou moderador e quero criar uma pasta de processos seletivos",
-        "06 - Sou moderador e quero organizar documentos, imagens e coleções",
-        "11 - Sou moderador e quero manter imagens e documentos do meu grupo",
-        "07 - Sou moderador e quero configurar busca e menu de uma página",
-        "01 - Sou moderador e quero revisar e aprovar conteúdos",
-        "02 - Sou moderador e quero revisar e decidir uma publicação",
-        "03 - Sou moderador e quero acompanhar comentários e histórico",
-        "04 - Sou moderador e quero publicar, despublicar ou agendar uma página",
-        "08 - Sou moderador e quero publicar uma notícia ou processo seletivo"
-    ],
-    "Sou editor": [
-        "01 - Sou editor e quero criar e atualizar conteúdos",
-        "02 - Sou editor e quero acessar e encontrar uma página",
-        "09 - Sou editor e quero escolher o tipo de página",
-        "17 - Sou editor e quero criar uma página institucional",
-        "18 - Sou editor e quero criar um curso",
-        "19 - Sou editor e quero criar um colegiado",
-        "20 - Sou editor e quero criar um link",
-        "21 - Sou editor e quero criar um programa",
-        "22 - Sou editor e quero criar um projeto",
-        "10 - Sou editor e quero publicar uma notícia",
-        "11 - Sou editor e quero publicar um processo seletivo e seus documentos",
-        "23 - Sou editor e quero adicionar ou atualizar uma imagem",
-        "24 - Sou editor e quero adicionar ou atualizar um documento",
-        "05 - Sou editor e quero organizar documentos e imagens em coleções",
-        "13 - Sou editor e quero montar conteúdo com blocos",
-        "06 - Sou editor e quero usar blocos para montar uma página",
-        "07 - Sou editor e quero configurar busca e menu de uma página",
-        "14 - Sou editor e quero editar, verificar e acompanhar uma página",
-        "08 - Sou editor e quero responder comentários e atualizar uma página",
-        "04 - Sou editor e quero enviar conteúdo para moderação",
-        "12 - Sou editor e quero criar cada tipo de conteúdo",
-        "15 - Sou editor e quero gerenciar imagens, documentos e cadastros",
-        "16 - Sou editor e quero consultar exemplos visuais dos blocos"
-    ]
-};
-
-function ordenarArtigos(categoria, artigos) {
-    const ordem = ordemArtigosPorCategoria[categoria] || [];
-    return [...artigos].sort((a, b) => {
-        const indiceA = ordem.indexOf(a.titulo);
-        const indiceB = ordem.indexOf(b.titulo);
-        const posicaoA = indiceA === -1 ? ordem.length : indiceA;
-        const posicaoB = indiceB === -1 ? ordem.length : indiceB;
-        return posicaoA - posicaoB || a.titulo.localeCompare(b.titulo, "pt-BR");
-    });
-}
-
 const campoTexto = document.getElementById("main-search-input");
 const campoTextoNav = document.getElementById("nav-search-input");
 const btnPesquisar = document.querySelector("main button");
@@ -501,7 +426,7 @@ function renderizarPastas() {
         const conteudo = document.createElement("div");
         conteudo.className = "pasta-conteudo";
 
-        ordenarArtigos(categoria, todasAsPastas[categoria]).forEach(arquivo => {
+        todasAsPastas[categoria].forEach(arquivo => {
             const linkArtigo = document.createElement("a");
             linkArtigo.className = "artigo-lista-link";
             linkArtigo.textContent = arquivo.titulo;

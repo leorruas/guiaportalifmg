@@ -29,14 +29,14 @@ Por exemplo: se um campus precisa publicar notícias e documentos próprios, o g
 
 ## Procedimentos
 
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/02 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/03 - Sou administrador e quero organizar páginas e coleções|Organizar páginas e coleções]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/04 - Sou administrador e quero criar ou atualizar conteúdo|Criar ou atualizar conteúdo]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero revisar e publicar conteúdo|Revisar e publicar conteúdo]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero gerenciar documentos e imagens|Gerenciar documentos e imagens]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar busca, menus e ordem de páginas|Configurar busca, menus e ordem de páginas]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero executar as tarefas de editor e moderador|Executar as tarefas de editor e moderador]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/09 - Sou administrador e quero editar a homepage|Editar a homepage]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/11 - Sou administrador e quero configurar cadastros de processos e cursos|Configurar cadastros de processos e cursos]].
-- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/12 - Sou administrador e quero criar uma pasta de notícias|Criar uma pasta de notícias]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções|Organizar páginas e coleções]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/03 - Sou administrador e quero criar ou atualizar conteúdo|Criar ou atualizar conteúdo]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/04 - Sou administrador e quero revisar e publicar conteúdo|Revisar e publicar conteúdo]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/12 - Sou administrador e quero gerenciar documentos e imagens|Gerenciar documentos e imagens]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/11 - Sou administrador e quero configurar busca, menus e ordem de páginas|Configurar busca, menus e ordem de páginas]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/02 - Sou administrador e quero executar as tarefas de editor e moderador|Executar as tarefas de editor e moderador]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero editar a homepage|Editar a homepage]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos|Configurar cadastros de processos e cursos]].
+- [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias|Criar uma pasta de notícias]].

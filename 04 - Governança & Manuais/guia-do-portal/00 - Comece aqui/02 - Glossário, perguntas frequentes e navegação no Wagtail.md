@@ -36,7 +36,7 @@ Encaminhe a solicitação ao editor ou moderador responsável pela pasta de not�
 
 ## Entrar e se orientar no Wagtail
 
-Para o primeiro acesso e a solicitação de permissão, consulte [[00 - Como entrar no Wagtail pela primeira vez|Como entrar no Wagtail pela primeira vez]].
+Para o primeiro acesso e a solicitação de permissão, consulte [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/00 - Como entrar no Wagtail pela primeira vez|Como entrar no Wagtail pela primeira vez]].
 
 1. Acesse [portal.ifmg.edu.br/admin](https://portal.ifmg.edu.br/admin).
 2. Clique em **Login com SUAP** e entre com suas credenciais institucionais.

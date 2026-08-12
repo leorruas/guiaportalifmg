@@ -13,7 +13,7 @@ Quando aparecer um termo do Wagtail, leia a explicação ao lado dele. Por exemp
 Pense no papel como a permissão que você está usando agora, e não como o seu cargo. Por exemplo: uma pessoa da Comunicação pode agir como **editora** ao preparar uma notícia e como **moderadora** ao revisar uma notícia de outra pessoa, se tiver as duas permissões.
 
 - [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações|Sou administrador e quero gerir acessos e configurações]].
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero revisar e aprovar conteúdos|Sou moderador e quero revisar e aprovar conteúdos]].
+- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos|Sou moderador e quero revisar e aprovar conteúdos]].
 - [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Sou editor e quero criar e atualizar conteúdos]].
 - [[04 - Governança & Manuais/guia-do-portal/01 - Sou gestor/01 - Sou gestor e quero solicitar ou acompanhar uma atualização|Sou gestor e quero solicitar ou acompanhar uma atualização]].
 
@@ -21,15 +21,15 @@ Se uma pessoa desempenha mais de um papel, consulte a página correspondente à 
 
 Para entender termos, encontrar respostas rápidas e aprender a navegar no Wagtail, consulte [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/02 - Glossário, perguntas frequentes e navegação no Wagtail|Glossário, perguntas frequentes e navegação no Wagtail]].
 
-Se este é seu primeiro acesso, comece por [[00 - Como entrar no Wagtail pela primeira vez|Como entrar no Wagtail pela primeira vez]].
+Se este é seu primeiro acesso, comece por [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/00 - Como entrar no Wagtail pela primeira vez|Como entrar no Wagtail pela primeira vez]].
 
 ## Atalhos para tarefas frequentes
 
-- Para editar a página inicial, acesse [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/09 - Sou administrador e quero editar a homepage|Sou administrador e quero editar a homepage]].
-- Para estruturar um campus ou uma pasta de processos seletivos, acesse [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero criar ou editar um campus|criar ou editar um campus]] ou [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/12 - Sou moderador e quero criar uma pasta de processos seletivos|criar uma pasta de processos seletivos]].
-- Para criar uma página, curso, colegiado, link, programa ou projeto, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/12 - Sou editor e quero criar cada tipo de conteúdo|Criar cada tipo de conteúdo]].
+- Para editar a página inicial, acesse [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero editar a homepage|Sou administrador e quero editar a homepage]].
+- Para estruturar um campus ou uma pasta de processos seletivos, acesse [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus|criar ou editar um campus]] ou [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos|criar uma pasta de processos seletivos]].
+- Para criar uma página, curso, colegiado, link, programa ou projeto, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo|Criar cada tipo de conteúdo]].
 - Para publicar notícia ou processo seletivo, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|publicar uma notícia]] ou [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|publicar um processo seletivo]].
-- Para adicionar imagem, documento ou trabalhar com coleção, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero gerenciar imagens, documentos e cadastros|gerenciar imagens, documentos e cadastros]].
+- Para adicionar imagem, documento ou trabalhar com coleção, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/22 - Sou editor e quero gerenciar imagens, documentos e cadastros|gerenciar imagens, documentos e cadastros]].
 
 ## 2. Identifique sua intenção
 

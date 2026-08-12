@@ -49,4 +49,4 @@ O processo é criado dentro de uma **Pasta de processos seletivos** do tipo corr
 - Se um documento for substituído, confirme que a nova versão é a oficial antes de salvar: a alteração pode refletir em outras páginas.
 - Ao fim do processo, siga a orientação de moderação para manter, arquivar ou despublicar a página.
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/05 - Sou editor e quero organizar documentos e imagens em coleções|Voltar a documentos e coleções]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Voltar a documentos e coleções]]

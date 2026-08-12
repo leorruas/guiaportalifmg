@@ -24,6 +24,6 @@ Pense na solicitação como um pedido de serviço bem explicado: quem vai public
 - [ ] A solicitação indica a ação que a pessoa deve realizar depois de ler o conteúdo?
 - [ ] O conteúdo deve virar notícia, página estável, comunicado, documento ou atualização de página existente?
 
-Se a demanda exigir publicação, o editor cria ou altera o conteúdo e o encaminha para revisão. Consulte: [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Editor]] e [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero revisar e aprovar conteúdos|Moderador]].
+Se a demanda exigir publicação, o editor cria ou altera o conteúdo e o encaminha para revisão. Consulte: [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Editor]] e [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos|Moderador]].
 
 **Como saber que sua solicitação está pronta:** outra pessoa consegue dizer o que deve ser publicado, onde a informação deve aparecer, qual é a fonte e quando ela precisa ser revista.
