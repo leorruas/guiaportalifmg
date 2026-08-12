@@ -2,10 +2,15 @@
 
 Como moderador, você também pode executar as tarefas de editor no escopo do seu grupo. A diferença é que você revisa o resultado e pode decidir a publicação.
 
+Use esta página quando precisar fazer a tarefa inteira sozinho. Trabalhe em duas rodadas: primeiro construa como editor; depois revise como moderador. Não publique enquanto ainda estiver corrigindo a própria primeira versão.
+
 ## Navegar e criar conteúdo
 
 1. Entre em [portal.ifmg.edu.br/admin](https://portal.ifmg.edu.br/admin), abra **Páginas** ou use **Busca**.
 2. Navegue até a página-pai correta; escolha **Adicionar subpágina** para criar ou **Editar** para alterar.
+
+![[imagens/manual-ifrn/image15.png|Caminho de navegação para confirmar a página-pai correta]]
+
 3. Selecione o tipo pela finalidade: página institucional, campus, curso, colegiado, link, notícia, processo seletivo, programa, projeto, evento ou comunicado.
 4. Na aba **Conteúdo**, combine texto, introdução, informação, coleção, tabela, links, cards, linha do tempo, calendário, FAQ, lista definida, galeria e citação conforme a tarefa da pessoa usuária.
 5. Adicione imagens, vídeos, links e documentos usando as coleções permitidas ao grupo.
@@ -14,6 +19,9 @@ Como moderador, você também pode executar as tarefas de editor no escopo do se
 
 1. Em **Promover**, revise slug, título de busca, meta descrição e exibição em menus.
 2. Em **Status**, confira publicação, expiração ou agendamento, quando disponíveis.
+
+![[imagens/manual-ifrn/image16.png|Status da página e ações disponíveis]]
+
 3. Use **Pré-visualizar** e **Verificações** para conferir a versão pública e corrigir problemas.
 4. Leia comentários e histórico antes de decidir a publicação.
 
@@ -25,5 +33,7 @@ Como moderador, você também pode executar as tarefas de editor no escopo do se
 - **Cadastros acessórios**: altere etapas, tipos, subtipos, eixos, modalidades ou categorias apenas com dados confirmados pela área responsável.
 
 Ao final, publique, devolva para ajuste ou mantenha como rascunho conforme o resultado da sua revisão.
+
+**Como saber que concluiu:** a página está no local certo, a informação se sustenta sem explicação extra e o status exibido corresponde à sua decisão.
 
 [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/02 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]]

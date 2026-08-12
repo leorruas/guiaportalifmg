@@ -4,6 +4,8 @@ Você protege a qualidade, a coerência e a vigência das informações publicad
 
 Em palavras simples: você é a última pessoa a conferir se o público conseguirá entender e usar a informação. Não é apenas procurar erros de escrita; é verificar se a página está no lugar certo, diz a verdade, está atualizada e aponta o próximo passo.
 
+Pense na moderação como uma leitura feita por alguém que não participou da criação. Se essa pessoa não entende o que deve fazer, um visitante do portal provavelmente também não entenderá.
+
 > [!NOTE]
 > Seu acesso é cumulativo: além de revisar, devolver e aprovar, você pode executar as tarefas de editor dentro do escopo do seu grupo.
 
@@ -22,6 +24,8 @@ Em palavras simples: você é a última pessoa a conferir se o público consegui
 - [ ] Datas, documentos, contatos e links estão vigentes?
 - [ ] O título e os metadados permitem encontrar e compreender o conteúdo?
 - [ ] Existe responsável para atualizar ou arquivar a publicação?
+
+**Como saber que pode aprovar:** você consegue responder, sem abrir outro sistema, “o que é isto?”, “para quem é?”, “o que a pessoa faz agora?” e “até quando esta informação vale?”.
 
 ## Procedimentos
 
