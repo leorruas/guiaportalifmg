@@ -35,3 +35,4 @@
 - Prefira palavras comuns e frases curtas. Quando um termo do Wagtail for indispensável, explique-o na primeira vez em que aparecer.
 - Use exemplos concretos e comparações simples quando eles ajudarem a formar uma imagem mental; não cite métodos de ensino no texto publicado.
 - Cada procedimento deve deixar explícitos o resultado esperado, o limite de permissão e o próximo passo quando a pessoa não puder concluir a ação sozinha.
+- Insira cada imagem imediatamente após o passo ou conceito que ela demonstra, com legenda que explique o que a pessoa deve observar. Não agrupe capturas em galeria, ao fim do artigo ou em seção separada quando elas puderem orientar uma ação específica no contexto.
