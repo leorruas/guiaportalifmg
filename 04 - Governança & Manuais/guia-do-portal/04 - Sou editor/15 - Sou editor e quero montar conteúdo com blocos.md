@@ -36,6 +36,8 @@ Use **Introdução** para dizer, logo no início, o que a pessoa encontrará na 
 
 Use **Informação** quando uma orientação, um aviso ou um dado precisa se destacar do restante do texto. O título deve dizer o assunto; a descrição traz apenas o necessário para agir.
 
+Quando o bloco oferecer o campo **Ícone**, escolha o ícone no [Google Icons](https://fonts.google.com/icons). Abra o ícone desejado; no painel lateral direito, procure **Icon name**, no fim do painel, e use **Copy code**. Cole no Wagtail somente o nome copiado — por exemplo, `search`. Não cole o arquivo SVG, PNG, URL ou código de incorporação.
+
 ![[imagens/manual-ifrn/image34.png|Configuração de um bloco de informação]]
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image47.png|Exemplo publicado de bloco de informação]]
@@ -59,6 +61,8 @@ Use **Tabela** apenas quando o público precisa comparar dados. Dê nome às col
 ### Links e link único
 
 Use **Links** quando há mais de um próximo passo; use **Link único** quando uma ação é claramente a principal. Em ambos os casos, o texto deve dizer o destino, não “clique aqui”.
+
+No campo **Ícone** do bloco **Links**, siga o mesmo processo: escolha no Google Icons, abra o painel lateral direito e copie apenas o valor de **Icon name**. Prefira um ícone que reforce a ação, como `search` para busca ou `download` para baixar um arquivo; não escolha apenas por aparência.
 
 ![[imagens/manual-ifrn/image7.png|Configuração de um bloco de links]]
 
@@ -106,9 +110,26 @@ Use **FAQ** para dúvidas que se repetem. Escreva a pergunta como alguém realme
 
 Use **Lista definida** para relacionar um nome e seu valor, como “Responsável: setor X” ou “Carga horária: 40 horas”.
 
+Quando o módulo aparecer como **Definições** e oferecer campo de ícone, pesquise-o no Google Icons e cole somente o **Icon name** copiado do painel lateral direito.
+
 ![[imagens/manual-ifrn/image32.png|Configuração de uma lista definida]]
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image39.png|Exemplo publicado de lista definida]]
+
+### Estatística
+
+Use **Estatística** para destacar um número que ajuda a compreender o conteúdo, acompanhado de um rótulo claro. Se o módulo oferecer o campo **Ícone**, escolha-o no Google Icons e copie somente o **Icon name** no painel lateral direito. Antes de publicar, confirme a fonte, a data de referência e se o número tem contexto suficiente para não induzir uma interpretação errada.
+
+## Como escolher e copiar um ícone
+
+1. Abra o campo **Ícone** no módulo que está editando: Informação, Links, Definições ou Estatística.
+2. Em outra aba, acesse [Google Icons](https://fonts.google.com/icons) e pesquise uma palavra que descreva a ação ou a informação.
+3. Clique no ícone escolhido para abrir o painel lateral direito.
+4. No final desse painel, localize **Icon name** e clique em **Copy code**.
+5. Cole no campo do Wagtail somente o nome recebido, como `search`.
+6. Pré-visualize o bloco e confira se o ícone reforça o sentido do texto, sem substituir o rótulo.
+
+**Como conferir:** se o ícone não carregar, revise se foi colado apenas o nome. `search` funciona como nome; uma URL, o download SVG ou o código da página não funcionam nesse campo.
 
 ### Galeria e citação
 
