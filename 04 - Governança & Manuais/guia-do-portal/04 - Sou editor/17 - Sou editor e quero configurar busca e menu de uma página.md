@@ -17,7 +17,10 @@ Busca e menu são placas de orientação: elas não mudam o conteúdo da página
 ## Incluir em um menu
 
 1. Na mesma aba, localize a seção de menus.
-2. Marque **Exibir nos menus** somente se a página deve ser uma entrada de navegação.
+2. Marque **Exibir nos menus** se quiser que a página apareça nos menus gerados automaticamente pelo portal. Se a caixa permanecer desmarcada, a página continua existindo e pode ser encontrada por link ou busca, mas não ganha uma entrada automática de menu.
+
+![[imagens/guias-contextuais/exibir-nos-menus.png|Aba Promover: marque Exibir nos menus para criar o link da página nos menus automáticos]]
+
 3. Confirme que as páginas-pai também estão configuradas para aparecer no menu quando essa for a regra da estrutura.
 4. Pré-visualize a página e verifique se a posição no menu faz sentido.
 

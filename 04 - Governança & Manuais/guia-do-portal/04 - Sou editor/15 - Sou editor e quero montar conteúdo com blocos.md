@@ -38,6 +38,8 @@ Use **Informação** quando uma orientação, um aviso ou um dado precisa se des
 
 Quando o bloco oferecer o campo **Ícone**, escolha o ícone no [Google Icons](https://fonts.google.com/icons). Abra o ícone desejado; no painel lateral direito, procure **Icon name**, no fim do painel, e use **Copy code**. Cole no Wagtail somente o nome copiado — por exemplo, `search`. Não cole o arquivo SVG, PNG, URL ou código de incorporação.
 
+![[imagens/guias-contextuais/campo-icone-wagtail.png|Campo Ícone do Wagtail: este campo recebe apenas o nome do ícone]]
+
 ![[imagens/manual-ifrn/image34.png|Configuração de um bloco de informação]]
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image47.png|Exemplo publicado de bloco de informação]]
@@ -125,7 +127,13 @@ Use **Estatística** para destacar um número que ajuda a compreender o conteúd
 1. Abra o campo **Ícone** no módulo que está editando: Informação, Links, Definições ou Estatística.
 2. Em outra aba, acesse [Google Icons](https://fonts.google.com/icons) e pesquise uma palavra que descreva a ação ou a informação.
 3. Clique no ícone escolhido para abrir o painel lateral direito.
+
+![[imagens/guias-contextuais/painel-google-icons.png|Painel lateral direito aberto após escolher um ícone no Google Icons]]
+
 4. No final desse painel, localize **Icon name** e clique em **Copy code**.
+
+![[imagens/guias-contextuais/icon-name-google-icons.png|Campo Icon name no fim do painel lateral: exemplo do nome search e botão Copy code]]
+
 5. Cole no campo do Wagtail somente o nome recebido, como `search`.
 6. Pré-visualize o bloco e confira se o ícone reforça o sentido do texto, sem substituir o rótulo.
 
