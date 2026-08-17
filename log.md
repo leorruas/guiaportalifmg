@@ -2,6 +2,7 @@
 
 ## 2026-08-17
 
+- Documentado o uso do bloco Link único como CTA: Cartão é o estilo recomendado para a ação principal, enquanto Padrão fica reservado a ações secundárias; incluídas capturas de configuração e resultado publicado dos dois estilos.
 - Atualizado o procedimento de Editor para adicionar ou atualizar documento, com regras de título descritivo, escolha da coleção, criação governada de coleções e tags consistentes.
 - Incluída uma captura contextual do formulário de documento para mostrar onde preencher título, coleção e tags.
 

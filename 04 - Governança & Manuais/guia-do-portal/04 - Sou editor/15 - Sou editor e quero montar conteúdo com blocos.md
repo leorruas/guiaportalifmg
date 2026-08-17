@@ -70,9 +70,30 @@ No campo **Ícone** do bloco **Links**, siga o mesmo processo: escolha no Google
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image18.png|Exemplo publicado de bloco de links]]
 
-![[imagens/manual-ifrn/image6.png|Configuração de um bloco de link único]]
+#### Link único como chamada para ação
 
-*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image27.png|Exemplo publicado de link único]]
+Use **Link único** como uma chamada para ação (CTA) somente quando a pessoa tiver uma ação importante e clara para fazer, como acessar um formulário, consultar um calendário ou baixar um documento essencial. Não use esse bloco apenas para destacar um link comum.
+
+- **Título**: é o texto do botão. Comece com um verbo de ação, como **Acessar**, **Consultar**, **Baixar** ou **Solicitar**.
+- **Descrição**: explica o que a pessoa encontrará ou por que deve agir. Ela aparece ao lado do botão no estilo Cartão.
+
+#### Estilo Cartão: use para CTAs
+
+Escolha **Cartão** quando a ação precisa de contexto ou é o próximo passo principal da página. É o estilo recomendado para CTAs, pois mantém a descrição visível junto ao botão.
+
+![[imagens/guias-contextuais/link-unico-cartao-configuracao.png|Configuração de Link único no estilo Cartão: título é o botão e a descrição explica a ação]]
+
+*Como este CTA renderiza no site:*![[imagens/guias-contextuais/link-unico-cartao-publicado.png|CTA de monitoria publicado no estilo Cartão, com descrição e botão Acessar]]
+
+**Exemplo:** para a monitoria, use o título **Acessar** e a descrição “Consulte os horários de monitoria para encontrar apoio nas disciplinas do seu curso.”
+
+#### Estilo Padrão: use apenas para ação secundária
+
+No estilo **Padrão**, o resultado publicado mostra somente o botão; a descrição não fica visível. Use-o apenas quando o rótulo já for suficiente e o link não for a chamada principal da página. Se a pessoa precisa entender o que encontrará antes de clicar, escolha **Cartão**.
+
+![[imagens/guias-contextuais/link-unico-padrao-configuracao.png|Configuração de Link único no estilo Padrão, com descrição preenchida]]
+
+*Como esse link renderiza no site:*![[imagens/guias-contextuais/link-unico-padrao-publicado.png|Link único no estilo Padrão: apenas o botão Acessar é exibido]]
 
 ### Cards
 
