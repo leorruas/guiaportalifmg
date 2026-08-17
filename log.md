@@ -1,5 +1,10 @@
 # Registro de mudanças
 
+## 2026-08-17
+
+- Atualizado o procedimento de Editor para adicionar ou atualizar documento, com regras de título descritivo, escolha da coleção, criação governada de coleções e tags consistentes.
+- Incluída uma captura contextual do formulário de documento para mostrar onde preencher título, coleção e tags.
+
 ## 2026-08-12
 
 - Criado o vault independente do Guia do Portal IFMG, com o guia, referências necessárias e configuração visual do Obsidian alinhada ao vault `novo portal`.
