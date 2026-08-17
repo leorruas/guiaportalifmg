@@ -42,6 +42,28 @@ Para o exemplo de horário de aula, use: `ouro branco`, `horários de aula`, `gr
 
 Não crie variações para o mesmo assunto, como `Horário`, `horarios`, `horário de aula` e `horários-aula`.
 
+## Documentos que mudam com frequência
+
+Horários de aula, monitoria e progressão parcial precisam ser revistos a cada período ou sempre que houver alteração. Antes de enviar uma nova versão, pesquise o documento atual na coleção e decida se ela **substitui** o arquivo existente ou se é uma **nova versão** que precisa permanecer disponível.
+
+### Quando substituir o documento atual
+
+Substitua o arquivo existente quando a nova versão passa a valer no lugar da anterior. Isso mantém o mesmo documento selecionado nas páginas do portal e evita vários arquivos concorrentes na coleção.
+
+Exemplo: ao receber o novo horário de monitoria, abra o documento de monitoria vigente, substitua o arquivo, atualize o título e as tags com o período correto e salve.
+
+### Quando criar uma nova versão
+
+Crie um novo documento apenas quando a versão anterior ainda precisa ficar disponível, como registro histórico, ou quando ela continua válida para outro público, curso ou período. Dê títulos que diferenciem claramente as versões.
+
+Exemplo: **Horários de aula — Sistemas de Informação — 1º semestre de 2026** e **Horários de aula — Sistemas de Informação — 2º semestre de 2026**.
+
+### Não deixe documentos vencidos na coleção
+
+Ao publicar uma versão nova, confira se a versão anterior ainda aparece em alguma página. Se ela não tiver valor histórico, não estiver sendo usada e não precisar ser mantida por regra institucional, remova-a. Se precisar permanecer como registro, mantenha-a identificada com o período e não a selecione em conteúdo vigente.
+
+O objetivo é que uma pessoa encontre uma única versão vigente para cada necessidade, sem uma lista cheia de arquivos antigos, duplicados ou sem uso.
+
 ## Atualizar a versão correta
 
 1. Busque o documento pelo título e abra o registro existente.
