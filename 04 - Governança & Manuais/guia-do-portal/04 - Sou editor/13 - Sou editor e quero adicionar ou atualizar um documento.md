@@ -25,8 +25,8 @@ Preencha esses campos antes de salvar. Eles definem como a equipe encontra o doc
 O título deve dizer exatamente o que é o documento, para quem ele serve e, quando necessário, de qual período é. Não publique o nome original do arquivo.
 
 - Esta regra é obrigatória para todo documento novo ou atualizado.
-- Para documentos de curso, use obrigatoriamente: **tipo do documento + nome completo do curso + ano ou período + campus**. Isso evita conflito entre cursos, períodos e unidades diferentes.
-- Para documentos que atendem mais de um curso, use: **tipo do documento + público ou nível + ano ou período + campus**.
+- Para documentos de curso, use obrigatoriamente: **tipo do documento + nome completo do curso + campus**. Acrescente o ano, período ou versão quando essa informação estiver disponível. Isso evita conflito entre cursos, períodos e unidades diferentes.
+- Para documentos que atendem mais de um curso, use: **tipo do documento + público ou nível + campus**. Acrescente o ano, período ou versão quando essa informação estiver disponível.
 - Escreva por extenso; não use códigos, abreviações ou nomes como `ADMINISTRACAO2026.2B.pdf`.
 - Exemplo: **Horários de aula — Bacharelado em Administração — 2º semestre de 2026 — Campus Ouro Branco**.
 
