@@ -24,9 +24,21 @@ Preencha esses campos antes de salvar. Eles definem como a equipe encontra o doc
 
 O título deve dizer exatamente o que é o documento, para quem ele serve e, quando necessário, de qual período é. Não publique o nome original do arquivo.
 
+- Esta regra é obrigatória para todo documento novo ou atualizado.
 - Use: **tipo do documento + assunto ou curso + período**.
 - Escreva por extenso; não use códigos, abreviações ou nomes como `ADMINISTRACAO2026.2B.pdf`.
 - Exemplo: **Horários de aula — Bacharelado em Administração — 2º semestre de 2026**.
+
+| Tipo de documento | Padrão de título | Exemplo |
+| --- | --- | --- |
+| Calendário acadêmico | `Calendário acadêmico — nível — ano` | `Calendário acadêmico — Cursos de graduação — 2026` |
+| Horários de aula | `Horários de aula — curso — período` | `Horários de aula — Técnico Integrado em Informática — 2026` |
+| Atendimento docente | `Horários de atendimento docente — período` | `Horários de atendimento docente — 1º semestre de 2026` |
+| Monitoria | `Horários de monitoria — público ou nível — período` | `Horários de monitoria — Cursos técnicos e de graduação — 2026` |
+| Progressão parcial | `Orientações de progressão parcial — ano ou período` | `Orientações de progressão parcial — 2026` |
+| Estágio | `tipo de documento de estágio — público ou uso` | `Termo de compromisso de estágio obrigatório — Licenciaturas` |
+
+O título do documento não é o mesmo texto do botão em uma página. Em um CTA, o botão pode dizer **Acessar** ou **Baixar**; o documento escolhido para esse botão deve continuar com seu título completo no cadastro do Wagtail.
 
 ### Escolha a coleção correta
 
