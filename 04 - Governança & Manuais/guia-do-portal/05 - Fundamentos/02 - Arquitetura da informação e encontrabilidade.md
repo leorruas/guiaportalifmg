@@ -30,6 +30,39 @@ Uma busca muito usada não é automaticamente um sucesso ou um problema. Ela pod
 
 Prefira “Solicitar benefício” a “Documentos” quando a pessoa busca realizar uma ação. Prefira “Contracheque” a uma sigla de sistema quando a tarefa é mais conhecida que a ferramenta.
 
+## Arquitetura rasa: agrupe antes de criar uma página
+
+Arquitetura rasa é uma estrutura em que a pessoa chega a uma opção útil com poucas decisões de navegação. O objetivo não é estabelecer uma quantidade fixa de cliques: é evitar páginas, menus e níveis que não acrescentam uma tarefa, uma decisão ou um contexto próprio.
+
+Antes de criar uma página, verifique se a pessoa procura aquele conteúdo como uma necessidade independente. Se não procura, ele deve ser uma seção da página que já representa o assunto.
+
+Por exemplo, **apresentação, horário de funcionamento, contato, documentos e orientações** de um mesmo setor geralmente devem ficar juntos em uma página institucional, organizados por títulos H2. Criar uma página só para “horários”, outra só para “contato” e outra só para “apresentação” fragmenta uma necessidade que a pessoa normalmente resolve de uma vez.
+
+Uma página bem estruturada permite encontrar cada parte sem multiplicar caminhos: use títulos descritivos, links internos, CTAs e as âncoras geradas pelo portal a partir dos títulos H2 e H3.
+
+### Quando criar uma página própria
+
+Crie uma página própria somente quando houver, pelo menos, um destes motivos:
+
+- a pessoa realiza uma tarefa recorrente e clara, como solicitar um serviço, inscrever-se ou consultar um catálogo;
+- o conteúdo atende outro público ou exige uma decisão diferente;
+- ele tem responsável editorial, validade ou ciclo de atualização próprio;
+- o volume exige filtros, coleção, navegação interna ou histórico;
+- há exigência normativa, privacidade, permissão de acesso ou risco que justifique separação.
+
+**Exemplo:** uma página de setor pode reunir apresentação, contatos e horário. Já um serviço com formulário, prazo, documentos exigidos e acompanhamento merece uma página própria. Uma coleção de editais também precisa de página própria quando exige status, prazos, filtros e arquivo histórico.
+
+### Perguntas para decidir
+
+1. A pessoa procura este conteúdo como uma necessidade própria?
+2. Ela consegue concluir uma tarefa nesta página sem voltar à página anterior?
+3. O conteúdo terá público, responsável ou atualização diferentes do conteúdo principal?
+4. A separação ajuda a localizar ou apenas acrescenta mais um item ao menu?
+
+Se as três primeiras respostas forem “não”, mantenha o conteúdo como seção da página existente.
+
+Para aprofundar, consulte [Flat vs. Deep Website Hierarchies — Nielsen Norman Group](https://www.nngroup.com/articles/flat-vs-deep-hierarchy/) e [10 Usability Heuristics for User Interface Design — Nielsen Norman Group](https://www.nngroup.com/articles/ten-usability-heuristics/). Testes de árvore e testes de usabilidade devem confirmar se a estrutura escolhida funciona para os públicos atendidos.
+
 ## Projetar e validar a estrutura
 
 | Método | Para que serve | Quando usar |
