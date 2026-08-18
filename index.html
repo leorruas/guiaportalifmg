@@ -34,9 +34,19 @@
             </div>
         </div>
         <div class="leitor-artigo escondido" id="leitor-artigo">
-            <h2 id="artigo-titulo"></h2>
-            <div id="artigo-corpo" class="artigo-corpo"></div>
-            <button id="btn-voltar" class="btn-voltar">&larr; voltar para a busca </button>
+            <div class="artigo-layout-container">
+                <aside class="artigo-toc-sidebar" id="artigo-toc-sidebar">
+                    <div class="toc-header">
+                        <span class="toc-title">Neste artigo</span>
+                    </div>
+                    <nav class="toc-nav" id="toc-nav" aria-label="Seções deste artigo"></nav>
+                </aside>
+                <div class="artigo-conteudo-wrapper">
+                    <h2 id="artigo-titulo"></h2>
+                    <div id="artigo-corpo" class="artigo-corpo"></div>
+                    <button id="btn-voltar" class="btn-voltar">&larr; voltar para a busca </button>
+                </div>
+            </div>
         </div>
     </main>
 

@@ -281,8 +281,81 @@ function abrirArtigo(titulo, conteudoMarkdown) {
         }, 50);
     }
 
+    gerarTableOfContents();
     leitorDeArtigo.classList.remove("escondido");
     window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+let scrollSpyObserver = null;
+
+function gerarTableOfContents() {
+    const tocNav = document.getElementById("toc-nav");
+    const tocSidebar = document.getElementById("artigo-toc-sidebar");
+    if (!tocNav || !tocSidebar) return;
+
+    tocNav.innerHTML = "";
+    const headings = Array.from(artigoCorpo.querySelectorAll("h2"));
+
+    if (headings.length === 0) {
+        tocSidebar.hidden = true;
+        return;
+    }
+
+    tocSidebar.hidden = false;
+    const lista = document.createElement("ul");
+    lista.className = "toc-list";
+    const idsUsados = new Set();
+
+    headings.forEach((heading, index) => {
+        const baseId = heading.textContent
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, "")
+            .trim()
+            .replace(/\s+/g, "-") || `secao-${index + 1}`;
+        let id = heading.id || baseId;
+        let sufixo = 2;
+        while (idsUsados.has(id)) {
+            id = `${baseId}-${sufixo++}`;
+        }
+        idsUsados.add(id);
+        heading.id = id;
+
+        const item = document.createElement("li");
+        item.className = "toc-item";
+        const link = document.createElement("a");
+        link.href = `#${id}`;
+        link.textContent = heading.textContent.trim();
+        link.dataset.headingId = id;
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const navegacao = document.getElementById("sticky-nav");
+            const deslocamento = (navegacao ? navegacao.offsetHeight : 0) + 20;
+            const posicao = heading.getBoundingClientRect().top + window.scrollY - deslocamento;
+            window.scrollTo({ top: posicao, behavior: "smooth" });
+        });
+        item.appendChild(link);
+        lista.appendChild(item);
+    });
+
+    tocNav.appendChild(lista);
+    iniciarScrollSpy(headings);
+}
+
+function iniciarScrollSpy(headings) {
+    if (scrollSpyObserver) scrollSpyObserver.disconnect();
+
+    scrollSpyObserver = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+            if (!entrada.isIntersecting) return;
+            document.querySelectorAll(".toc-nav a").forEach((link) => {
+                link.classList.toggle("toc-active", link.dataset.headingId === entrada.target.id);
+            });
+        });
+    }, { rootMargin: "-80px 0px -70% 0px", threshold: 0.1 });
+
+    headings.forEach((heading) => scrollSpyObserver.observe(heading));
 }
 
 function converterImagensObsidian(markdown) {
