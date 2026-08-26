@@ -186,6 +186,7 @@ function filtrarArtigos(termoBusca) {
         containerResultados.innerHTML = "";
         const pastasContainer = document.getElementById("pastas-container");
         if (pastasContainer) pastasContainer.classList.remove("escondido");
+        document.getElementById("orientacoes-iniciais")?.classList.remove("escondido");
         document.getElementById("explorar-perfis")?.classList.remove("escondido");
         return;
     }
@@ -195,6 +196,7 @@ function filtrarArtigos(termoBusca) {
     // Oculta container de pastas ao fazer busca
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
+    document.getElementById("orientacoes-iniciais")?.classList.add("escondido");
     document.getElementById("explorar-perfis")?.classList.add("escondido");
 
     if (termo.length < 3) {
@@ -344,6 +346,7 @@ function abrirPerfil(categoria, atualizarRota = true) {
     leitorDeArtigo.classList.add("escondido");
     divResultados.classList.add("escondido");
     document.getElementById("pastas-container")?.classList.add("escondido");
+    document.getElementById("orientacoes-iniciais")?.classList.add("escondido");
     document.getElementById("explorar-perfis")?.classList.add("escondido");
     artigoAtual = null;
 
@@ -391,6 +394,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
     leitorDePerfil.classList.add("escondido");
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
+    document.getElementById("orientacoes-iniciais")?.classList.add("escondido");
     document.getElementById("explorar-perfis")?.classList.add("escondido");
 
     artigoAtual = todosOsArtigos.find(artigo =>
@@ -857,10 +861,13 @@ function tratarRotaDaUrl() {
 
 function renderizarPastas() {
     const pastasContainer = document.getElementById("pastas-container");
-    if (!pastasContainer) return;
+    const orientacoesContainer = document.getElementById("orientacoes-container");
+    if (!pastasContainer || !orientacoesContainer) return;
 
     pastasContainer.innerHTML = "";
+    orientacoesContainer.innerHTML = "";
     const categoriasOrdenadas = ordenarCategorias(Object.keys(todasAsPastas));
+    const categoriasDeOrientacao = ["Comece aqui", "Fundamentos"];
     categoriasOrdenadas.forEach(categoria => {
         const informacao = informacoesCategorias[categoria] || informacoesCategorias.Fundamentos;
         const perfil = document.createElement("a");
@@ -872,7 +879,7 @@ function renderizarPastas() {
             event.preventDefault();
             abrirPerfil(categoria);
         });
-        pastasContainer.appendChild(perfil);
+        (categoriasDeOrientacao.includes(categoria) ? orientacoesContainer : pastasContainer).appendChild(perfil);
     });
 }
 
@@ -934,6 +941,7 @@ function voltarParaHome(atualizarRota = true) {
     if (pastasContainer) {
         pastasContainer.classList.remove("escondido");
     }
+    document.getElementById("orientacoes-iniciais")?.classList.remove("escondido");
     document.getElementById("explorar-perfis")?.classList.remove("escondido");
     if (campoTexto) campoTexto.value = "";
     if (campoTextoNav) campoTextoNav.value = "";
