@@ -1431,13 +1431,16 @@ mark:not(.highlight) {
     width: auto;
     padding: 9px 16px;
     border-radius: 999px;
-    color: var(--bg);
+    color: #07160a;
     background: var(--accent-blue);
     font-size: .5em;
     font-weight: 700;
     white-space: nowrap;
 }
-.busca-campo button:hover { background: var(--accent-blue-hover); color: var(--bg); }
+.busca-campo button:hover { background: var(--accent-blue-hover); color: #07160a; }
+
+:root[data-theme="light"] .busca-campo button,
+:root[data-theme="light"] .busca-campo button:hover { color: #fff; }
 
 .explorar-perfis { padding: 34px 0 46px; }
 .orientacoes-iniciais { padding: 34px 0 0; }
