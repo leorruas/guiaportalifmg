@@ -44,6 +44,7 @@ const artigoTitulo = document.getElementById("artigo-titulo");
 const artigoCorpo = document.getElementById("artigo-corpo");
 const btnVoltar = document.getElementById("btn-voltar");
 const btnVoltarPerfil = document.getElementById("btn-voltar-perfil");
+const retornoArtigoTexto = document.getElementById("retorno-artigo-texto");
 const btnTema = document.getElementById("theme-toggle");
 
 function aplicarTema(tema, persistir = true) {
@@ -194,6 +195,7 @@ function filtrarArtigos(termoBusca) {
     // Oculta container de pastas ao fazer busca
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
+    document.getElementById("explorar-perfis")?.classList.add("escondido");
     document.getElementById("explorar-perfis")?.classList.add("escondido");
 
     if (termo.length < 3) {
@@ -407,6 +409,13 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
         renderizarBreadcrumbs(artigoAtual);
         renderizarNavegacaoSequencial(artigoAtual);
         renderizarContextoDoArtigo(artigoAtual);
+        btnVoltar.textContent = `← ver outras ações em ${artigoAtual.categoria.toLowerCase()}`;
+        btnVoltar.setAttribute("aria-label", `Voltar para as ações de ${artigoAtual.categoria}`);
+        if (retornoArtigoTexto) retornoArtigoTexto.innerHTML = `Terminou este procedimento? <strong>Continue pelas outras ações de ${artigoAtual.categoria}.</strong>`;
+    } else {
+        btnVoltar.textContent = "← voltar para o guia";
+        btnVoltar.setAttribute("aria-label", "Voltar para o guia");
+        if (retornoArtigoTexto) retornoArtigoTexto.textContent = "Quer continuar no guia?";
     }
     
     // Filtra e remove o bloco de metadados/atributos (YAML Frontmatter --- ... ---)
@@ -887,7 +896,10 @@ if (btnPesquisar) {
 }
 
 if (btnVoltar) {
-    btnVoltar.addEventListener("click", voltarParaHome);
+    btnVoltar.addEventListener("click", () => {
+        if (artigoAtual?.categoria) abrirPerfil(artigoAtual.categoria);
+        else voltarParaHome();
+    });
 }
 
 if (btnVoltarPerfil) {
