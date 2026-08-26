@@ -1455,6 +1455,14 @@ mark:not(.highlight) {
     line-height: 1.4;
 }
 
+/* A entrada pertence somente à página inicial; a leitura de perfil/artigo não a repete. */
+main:has(.perfil-leitor:not(.escondido)) > .busca-principal,
+main:has(.perfil-leitor:not(.escondido)) > .explorar-perfis,
+main:has(.leitor-artigo:not(.escondido)) > .busca-principal,
+main:has(.leitor-artigo:not(.escondido)) > .explorar-perfis {
+    display: none !important;
+}
+
 .hero-sobretitulo {
     margin-bottom: 10px;
     color: var(--accent-blue);
