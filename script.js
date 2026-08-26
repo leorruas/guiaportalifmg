@@ -67,6 +67,24 @@ const informacoesCategorias = {
     "Fundamentos": { icone: "book", descricao: "Conheça conceitos que ajudam a tomar boas decisões no portal." }
 };
 
+const ordemCategorias = [
+    "Comece aqui",
+    "Sou administrador",
+    "Sou moderador",
+    "Sou editor",
+    "Sou gestor",
+    "Fundamentos"
+];
+
+function ordenarCategorias(categorias) {
+    return categorias.sort((a, b) => {
+        const indiceA = ordemCategorias.indexOf(a);
+        const indiceB = ordemCategorias.indexOf(b);
+        return (indiceA === -1 ? ordemCategorias.length : indiceA) - (indiceB === -1 ? ordemCategorias.length : indiceB)
+            || a.localeCompare(b, "pt-BR");
+    });
+}
+
 function iconeNeutro(nome) {
     const caminhos = {
         compass: '<circle cx="12" cy="12" r="8"></circle><path d="m14.8 9.2-2.1 4.3-4.3 2.1 2.1-4.3z"></path>',
@@ -149,11 +167,18 @@ function filtrarArtigos(termoBusca) {
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
 
-    const filtrados = todosOsArtigos.filter(artigo => {
-        const tituloMatch = artigo.titulo.toLowerCase().includes(termo);
-        const conteudoMatch = artigo.conteudo.toLowerCase().includes(termo);
-        return tituloMatch || conteudoMatch;
-    });
+    if (termo.length < 3) {
+        containerResultados.innerHTML = `<p class="mensagem-busca">Digite ao menos <strong>três letras</strong> para encontrar uma tarefa. Por exemplo: “notícia”, “imagem” ou “permissões”.</p>`;
+        return;
+    }
+
+    const filtrados = todosOsArtigos
+        .filter(artigo => artigo.titulo.toLowerCase().includes(termo) || artigo.conteudo.toLowerCase().includes(termo))
+        .sort((a, b) => {
+            const prioridadeA = a.titulo.toLowerCase().includes(termo) ? 0 : 1;
+            const prioridadeB = b.titulo.toLowerCase().includes(termo) ? 0 : 1;
+            return prioridadeA - prioridadeB || a.titulo.localeCompare(b.titulo, "pt-BR", { numeric: true });
+        });
 
     exibirResultados(filtrados, termo);
 }
@@ -162,6 +187,12 @@ function destacarTexto(texto, termo) {
     if (!termo) return texto;
     const regex = new RegExp(`(${termo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
     return texto.replace(regex, '<mark class="highlight">$1</mark>');
+}
+
+function escaparHtml(texto) {
+    const elemento = document.createElement("span");
+    elemento.textContent = texto;
+    return elemento.innerHTML;
 }
 
 function removerFrontmatter(markdown) {
@@ -195,9 +226,14 @@ function exibirResultados(artigos, termo = "") {
     divResultados.classList.remove("escondido");
 
     if (artigos.length === 0) {
-        containerResultados.innerHTML = "<p class='sem-resultados'>Nenhum resultado encontrado.</p>";
+        containerResultados.innerHTML = `<p class="mensagem-busca">Nenhum procedimento encontrado para <strong>“${escaparHtml(termo)}”</strong>. Tente uma palavra ligada à tarefa, como “publicar”, “página” ou “coleção”.</p>`;
         return;
     }
+
+    const resumoBusca = document.createElement("p");
+    resumoBusca.className = "resumo-busca";
+    resumoBusca.textContent = `${artigos.length} ${artigos.length === 1 ? "procedimento encontrado" : "procedimentos encontrados"} para “${termo}”`;
+    containerResultados.appendChild(resumoBusca);
 
     // Agrupa resultados por categoria (pasta)
     const grupos = {};
@@ -206,7 +242,13 @@ function exibirResultados(artigos, termo = "") {
         grupos[artigo.categoria].push(artigo);
     });
 
-    Object.keys(grupos).sort().forEach(categoria => {
+    ordenarCategorias(Object.keys(grupos))
+        .sort((a, b) => {
+            const tituloEmA = grupos[a].some(artigo => artigo.titulo.toLowerCase().includes(termo));
+            const tituloEmB = grupos[b].some(artigo => artigo.titulo.toLowerCase().includes(termo));
+            return Number(tituloEmB) - Number(tituloEmA);
+        })
+        .forEach(categoria => {
         const grupoDiv = document.createElement("div");
         grupoDiv.className = "busca-grupo-assunto";
 
@@ -229,6 +271,7 @@ function exibirResultados(artigos, termo = "") {
 
             const h2 = document.createElement("h2");
             h2.innerHTML = destacarTexto(artigo.titulo, termo);
+            h2.title = artigo.titulo;
 
             const p = document.createElement("p");
             p.className = "conteudo";
@@ -717,21 +760,7 @@ function renderizarPastas() {
 
     pastasContainer.innerHTML = "";
 
-    const ordemCategorias = [
-        "Comece aqui",
-        "Sou administrador",
-        "Sou moderador",
-        "Sou editor",
-        "Sou gestor",
-        "Fundamentos"
-    ];
-    const categoriasOrdenadas = Object.keys(todasAsPastas).sort((a, b) => {
-        const posicaoA = ordemCategorias.indexOf(a);
-        const posicaoB = ordemCategorias.indexOf(b);
-        const indiceA = posicaoA === -1 ? ordemCategorias.length : posicaoA;
-        const indiceB = posicaoB === -1 ? ordemCategorias.length : posicaoB;
-        return indiceA - indiceB || a.localeCompare(b, "pt-BR");
-    });
+    const categoriasOrdenadas = ordenarCategorias(Object.keys(todasAsPastas));
 
     categoriasOrdenadas.forEach(categoria => {
         const pastaItem = document.createElement("div");

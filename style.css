@@ -111,19 +111,20 @@ button:hover {
 }
 
 .cards-container {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
 }
+
+.resultados > .cards-container { display: block; }
 
 .card {
     background-color: var(--accent-blue);
     border: 1px solid var(--accent-blue);
-    width: calc((100% - 30px) /3);
-    min-width: 240px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 266px;
     box-sizing: border-box;
     color: black;
     padding: 10px;
@@ -141,17 +142,25 @@ button:hover {
 }
 
 .card h2 {
-    font-size: 1em;
-    line-height: 80%;
+    font-size: .86em;
+    line-height: .92;
     font-weight: 600;
     margin-bottom: 5px;
     text-transform: lowercase;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 .card .conteudo {
-    font-size: 0.5em;
+    font-size: .46em;
     padding-left: 20px;
     border-left: solid 1px white;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
 }
 
 .escondido {
@@ -965,6 +974,21 @@ mark:not(.highlight) {
     margin-bottom: 40px;
 }
 
+.resumo-busca,
+.mensagem-busca {
+    max-width: 700px;
+    margin: 0 0 28px;
+    padding: 14px 16px;
+    border-left: 3px solid var(--accent-blue);
+    background: var(--surface);
+    color: var(--muted);
+    font-size: .62em;
+    line-height: 1.45;
+}
+
+.resumo-busca { color: var(--accent-blue); }
+.mensagem-busca strong { color: var(--text); }
+
 .busca-assunto-titulo {
     color: var(--accent-blue);
     font-size: 1.2em;
@@ -1014,9 +1038,10 @@ mark:not(.highlight) {
     /* Cartões de resultado ocupam largura total */
     .card {
         width: 100%;
-        height: auto;
-        min-height: 220px;
+        min-height: 230px;
     }
+
+    .cards-container { grid-template-columns: 1fr; }
 
     /* Barra fixa de navegação superior */
     .sticky-nav {
