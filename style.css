@@ -1236,6 +1236,18 @@ mark:not(.highlight) {
     .resultado-conteudo strong { font-size: 1rem; }
 }
 
+/* Links de orientação: diferenciação por hierarquia, não por sublinhado. */
+.artigo-nav-cards .nav-card,
+.artigo-nav-cards .nav-card:hover,
+.artigo-nav-cards .nav-card:focus-visible,
+.artigo-nav-cards .nav-card-label,
+.artigo-nav-cards .nav-card-title,
+.retorno-artigo .btn-voltar,
+.retorno-artigo .btn-voltar:hover,
+.retorno-artigo .btn-voltar:focus-visible {
+    text-decoration: none;
+}
+
 /* Páginas internas como sumário e leitura, não como sequência de cartões. */
 .perfil-leitor, .leitor-artigo {
     max-width: 1240px;
@@ -1556,7 +1568,7 @@ mark:not(.highlight) {
 }
 
 :root[data-theme="light"] {
-    --bg: #f5f4ef;
+    --bg: #ffffff;
     --surface: transparent;
     --surface-raised: transparent;
     --text: #151515;
