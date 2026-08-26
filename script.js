@@ -40,6 +40,23 @@ const leitorDeArtigo = document.getElementById("leitor-artigo");
 const artigoTitulo = document.getElementById("artigo-titulo");
 const artigoCorpo = document.getElementById("artigo-corpo");
 const btnVoltar = document.getElementById("btn-voltar");
+const btnTema = document.getElementById("theme-toggle");
+
+function aplicarTema(tema, persistir = true) {
+    document.documentElement.dataset.theme = tema;
+    if (persistir) localStorage.setItem("tema-guia-portal", tema);
+    if (btnTema) {
+        const proximoTema = tema === "dark" ? "claro" : "escuro";
+        btnTema.textContent = `modo ${proximoTema}`;
+        btnTema.setAttribute("aria-label", `Alternar para modo ${proximoTema}`);
+    }
+}
+
+function inicializarTema() {
+    const temaSalvo = localStorage.getItem("tema-guia-portal");
+    const temaDoSistema = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    aplicarTema(temaSalvo || temaDoSistema, false);
+}
 
 const informacoesCategorias = {
     "Comece aqui": { icone: "compass", descricao: "Entenda o acesso e encontre o caminho certo para a sua tarefa." },
@@ -801,6 +818,12 @@ if (btnVoltar) {
     btnVoltar.addEventListener("click", voltarParaHome);
 }
 
+if (btnTema) {
+    btnTema.addEventListener("click", () => {
+        aplicarTema(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+    });
+}
+
 // Configuração do Sticky Navbar baseada no scroll
 const headerEl = document.querySelector("header");
 const stickyNav = document.getElementById("sticky-nav");
@@ -858,4 +881,5 @@ window.addEventListener("popstate", tratarRotaDaUrl);
 window.addEventListener("hashchange", tratarRotaDaUrl);
 
 // Inicializar na carga da página
+inicializarTema();
 carregarTodosOsArtigos();
