@@ -29,11 +29,29 @@
         <img class="hero-imagem" src="imagens/capa/instituto-federal-minas-gerais-sem-marca.png" alt="Identidade visual verde do Instituto Federal de Minas Gerais">
     </header>
     <main>
-        <input type="text" id="main-search-input" placeholder="o que você quer fazer no portal?">
-        <button>Pesquisar</button>
-        <div class="pastas-container" id="pastas-container">
-            <!-- As pastas serão listadas aqui dinamicamente -->
-        </div>
+        <section class="busca-principal" aria-label="Pesquisar no guia">
+            <div>
+                <p class="busca-sobretitulo">encontre uma orientação</p>
+                <h2>o que você quer fazer no portal?</h2>
+            </div>
+            <div class="busca-campo">
+                <label class="sr-only" for="main-search-input">Descreva a tarefa que procura</label>
+                <input type="text" id="main-search-input" placeholder="ex.: publicar uma notícia ou organizar documentos">
+                <button type="button">Pesquisar</button>
+            </div>
+        </section>
+        <section class="explorar-perfis" id="explorar-perfis" aria-labelledby="explorar-perfis-titulo">
+            <div class="explorar-perfis-cabecalho">
+                <div>
+                    <p class="busca-sobretitulo">ou comece pelo seu papel</p>
+                    <h2 id="explorar-perfis-titulo">sou...</h2>
+                </div>
+                <p>Escolha seu papel para ver as ações disponíveis.</p>
+            </div>
+            <div class="pastas-container" id="pastas-container">
+                <!-- Os perfis serão listados aqui dinamicamente -->
+            </div>
+        </section>
         <div class="resultados">
             <div class="cards-container">
                 <!-- resultados -->

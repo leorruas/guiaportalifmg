@@ -1357,6 +1357,83 @@ mark:not(.highlight) {
     color: var(--text);
 }
 
+/* Entrada do guia: busca primeiro, perfis como caminho alternativo. */
+.busca-principal {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, .9fr);
+    gap: 32px;
+    align-items: end;
+    padding: 28px 0 34px;
+    border-bottom: 1px solid var(--accent-blue-alpha-30);
+}
+
+.busca-sobretitulo {
+    margin: 0 0 8px;
+    color: var(--accent-blue);
+    font-size: .5em;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.busca-principal h2,
+.explorar-perfis h2 {
+    margin: 0;
+    color: var(--text);
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.04;
+}
+
+.busca-campo {
+    display: flex;
+    min-width: 0;
+    padding: 5px;
+    border: 1px solid var(--accent-blue-alpha-30);
+    border-radius: 999px;
+    background: var(--surface);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .09);
+}
+
+.busca-campo input {
+    min-width: 0;
+    width: 100%;
+    padding: 10px 14px;
+    color: var(--text);
+    font-size: .52em;
+}
+
+.busca-campo input:hover,
+.busca-campo input:focus { background: transparent; color: var(--text); }
+.busca-campo input::placeholder { color: var(--muted); opacity: 1; }
+.busca-campo button {
+    width: auto;
+    padding: 9px 16px;
+    border-radius: 999px;
+    color: var(--bg);
+    background: var(--accent-blue);
+    font-size: .5em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.busca-campo button:hover { background: var(--accent-blue-hover); color: var(--bg); }
+
+.explorar-perfis { padding: 34px 0 46px; }
+.explorar-perfis-cabecalho {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 18px;
+}
+.explorar-perfis-cabecalho > p {
+    max-width: 340px;
+    margin: 0;
+    color: var(--muted);
+    font-size: .48em;
+    line-height: 1.4;
+}
+
 .hero-sobretitulo {
     margin-bottom: 10px;
     color: var(--accent-blue);
@@ -1407,6 +1484,12 @@ body, .sticky-nav { background-color: var(--bg); }
     .hero-conteudo { padding: 30px 22px; }
     .hero-imagem { height: 330px; max-height: 330px; }
     .theme-toggle { width: auto; padding: 5px 10px; font-size: .46em; }
+    .busca-principal { grid-template-columns: 1fr; gap: 18px; padding: 22px 0 26px; }
+    .busca-campo { width: 100%; box-sizing: border-box; }
+    .busca-campo #main-search-input { width: 100%; margin: 0; display: block; font-size: .52em; }
+    .busca-campo button { display: block; width: auto; margin: 0; }
+    .explorar-perfis { padding: 26px 0 34px; }
+    .explorar-perfis-cabecalho { align-items: flex-start; flex-direction: column; gap: 12px; }
 }
 
 /* WARNING (Âmbar / Amarelo) */

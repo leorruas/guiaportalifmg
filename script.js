@@ -185,6 +185,7 @@ function filtrarArtigos(termoBusca) {
         containerResultados.innerHTML = "";
         const pastasContainer = document.getElementById("pastas-container");
         if (pastasContainer) pastasContainer.classList.remove("escondido");
+        document.getElementById("explorar-perfis")?.classList.remove("escondido");
         return;
     }
 
@@ -193,6 +194,7 @@ function filtrarArtigos(termoBusca) {
     // Oculta container de pastas ao fazer busca
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
+    document.getElementById("explorar-perfis")?.classList.add("escondido");
 
     if (termo.length < 3) {
         containerResultados.innerHTML = `<p class="mensagem-busca">Digite ao menos <strong>três letras</strong> para encontrar uma tarefa. Por exemplo: “notícia”, “imagem” ou “permissões”.</p>`;
@@ -341,6 +343,7 @@ function abrirPerfil(categoria, atualizarRota = true) {
     leitorDeArtigo.classList.add("escondido");
     divResultados.classList.add("escondido");
     document.getElementById("pastas-container")?.classList.add("escondido");
+    document.getElementById("explorar-perfis")?.classList.add("escondido");
     artigoAtual = null;
 
     if (atualizarRota && window.location.hash !== rotaDoPerfil(categoria)) {
@@ -919,6 +922,7 @@ function voltarParaHome(atualizarRota = true) {
     if (pastasContainer) {
         pastasContainer.classList.remove("escondido");
     }
+    document.getElementById("explorar-perfis")?.classList.remove("escondido");
     if (campoTexto) campoTexto.value = "";
     if (campoTextoNav) campoTextoNav.value = "";
     containerResultados.innerHTML = "";
