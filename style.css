@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    --accent-blue: #84d18f;
-    --accent-blue-hover: #b7edbd;
-    --accent-blue-alpha-05: rgba(132, 209, 143, 0.06);
-    --accent-blue-alpha-15: rgba(132, 209, 143, 0.16);
-    --accent-blue-alpha-30: rgba(132, 209, 143, 0.32);
-    --accent-blue-alpha-40: rgba(132, 209, 143, 0.42);
-    --bg: #07150c;
-    --surface: #102617;
-    --surface-raised: #18351f;
-    --text: #f1f8f1;
-    --muted: #a3b4a5;
-    --hero-overlay: linear-gradient(90deg, rgba(3, 18, 9, .92), rgba(3, 18, 9, .40));
+    --accent-blue: #1683f4;
+    --accent-blue-hover: #71b4ff;
+    --accent-blue-alpha-05: rgba(22, 131, 244, 0.06);
+    --accent-blue-alpha-15: rgba(22, 131, 244, 0.16);
+    --accent-blue-alpha-30: rgba(22, 131, 244, 0.32);
+    --accent-blue-alpha-40: rgba(22, 131, 244, 0.42);
+    --bg: #050505;
+    --surface: #111111;
+    --surface-raised: #1c1c1e;
+    --text: #f5f5f7;
+    --muted: #a1a1a6;
+    --hero-overlay: linear-gradient(90deg, rgba(0, 0, 0, .90), rgba(0, 0, 0, .38));
 }
 
 :root[data-theme="light"] {
