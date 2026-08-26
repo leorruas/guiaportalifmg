@@ -1570,6 +1570,40 @@ body, .sticky-nav { background-color: var(--bg); }
 .perfil-cabecalho h2 { color: var(--text); }
 .perfil-cabecalho .perfil-rotulo { color: var(--accent-blue); }
 
+/* Acabamento responsivo: mantém a hierarquia em telas compactas sem apertar os cartões. */
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .perfil-card {
+        grid-template-columns: 34px 1fr;
+        gap: 12px;
+        padding: 18px;
+    }
+    .perfil-card-meta { grid-column: 2; justify-self: start; align-self: auto; }
+    .perfil-acao { grid-template-columns: 30px 1fr auto; gap: 10px; padding: 14px; }
+    .perfil-cabecalho { gap: 12px; margin-bottom: 22px; padding: 18px; }
+    .perfil-cabecalho h2 { font-size: 1.6em; }
+    .leitor-artigo h2 { font-size: 1.45em; }
+    .artigo-contexto { margin-bottom: 22px; }
+}
+
+@media (max-width: 480px) {
+    header, main { padding-left: 14px; padding-right: 14px; }
+    .hero-conteudo { padding: 26px 20px; }
+    .hero-capa h1 { font-size: 1.65em; }
+    .hero-imagem { height: 280px; max-height: 280px; }
+    .busca-principal h2, .explorar-perfis h2 { font-size: 1.08em; }
+    .busca-campo { padding: 4px; }
+    .busca-campo #main-search-input { padding: 9px 10px; }
+    .busca-campo button { padding: 9px 12px; }
+    .perfil-acao-conteudo strong { font-size: .84em; }
+}
+
 /* Checklist: cada decisão vira uma linha legível, não apenas uma caixa isolada. */
 .artigo-corpo li.task-list-item,
 .artigo-corpo li:has(input[type="checkbox"]) {
