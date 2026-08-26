@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    --accent-blue: #1683f4;
-    --accent-blue-hover: #71b4ff;
-    --accent-blue-alpha-05: rgba(22, 131, 244, 0.06);
-    --accent-blue-alpha-15: rgba(22, 131, 244, 0.16);
-    --accent-blue-alpha-30: rgba(22, 131, 244, 0.32);
-    --accent-blue-alpha-40: rgba(22, 131, 244, 0.42);
+    --accent-blue: #78c981;
+    --accent-blue-hover: #a6e0ac;
+    --accent-blue-alpha-05: rgba(120, 201, 129, 0.06);
+    --accent-blue-alpha-15: rgba(120, 201, 129, 0.16);
+    --accent-blue-alpha-30: rgba(120, 201, 129, 0.32);
+    --accent-blue-alpha-40: rgba(120, 201, 129, 0.42);
     --bg: #050505;
     --surface: #111111;
     --surface-raised: #1c1c1e;
@@ -1373,6 +1373,8 @@ body, .sticky-nav { background-color: var(--bg); }
 :root[data-theme="light"] .sticky-nav { border-bottom-color: var(--accent-blue-alpha-30); }
 :root[data-theme="light"] .card-tag { color: var(--accent-blue); }
 :root[data-theme="light"] .artigo-corpo pre { color: var(--accent-blue); }
+:root[data-theme="light"] button { color: var(--accent-blue); }
+:root[data-theme="light"] button:hover { color: #fff; }
 
 @media (max-width: 768px) {
     .hero-capa { grid-template-columns: 1fr; min-height: 0; margin-bottom: 24px; }
@@ -1400,3 +1402,19 @@ body, .sticky-nav { background-color: var(--bg); }
 .callout-caution .callout-title {
     color: #f87171;
 }
+
+/* No modo claro, textos auxiliares e callouts recebem contraste próprio. */
+:root[data-theme="light"] .obsidian-callout .callout-content,
+:root[data-theme="light"] .obsidian-callout .callout-content p,
+:root[data-theme="light"] .task-item-content strong,
+:root[data-theme="light"] .artigo-contexto p {
+    color: #203026;
+}
+
+:root[data-theme="light"] .callout-important .callout-title { color: #6332a5; }
+:root[data-theme="light"] .callout-note .callout-title { color: #1255a3; }
+:root[data-theme="light"] .callout-tip .callout-title { color: #167440; }
+:root[data-theme="light"] .callout-warning .callout-title { color: #8a5900; }
+:root[data-theme="light"] .callout-caution .callout-title { color: #ad2929; }
+:root[data-theme="light"] .artigo-corpo a:hover,
+:root[data-theme="light"] .obsidian-link:hover { color: #142419; }

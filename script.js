@@ -89,6 +89,16 @@ function ordenarCategorias(categorias) {
     });
 }
 
+function tituloDoPerfil(categoria) {
+    return categoria.startsWith("Sou ") ? `${categoria.toLowerCase()} e...` : categoria;
+}
+
+function tituloDaAcao(titulo) {
+    return titulo
+        .replace(/^\d+\s*-\s*/, "")
+        .replace(/^sou\s+(administrador|moderador|editor|gestor)\s+e\s*/i, "");
+}
+
 function iconeNeutro(nome) {
     const caminhos = {
         compass: '<circle cx="12" cy="12" r="8"></circle><path d="m14.8 9.2-2.1 4.3-4.3 2.1 2.1-4.3z"></path>',
@@ -275,8 +285,8 @@ function exibirResultados(artigos, termo = "") {
             tag.textContent = artigo.categoria;
 
             const h2 = document.createElement("h2");
-            h2.innerHTML = destacarTexto(artigo.titulo, termo);
-            h2.title = artigo.titulo;
+            h2.innerHTML = destacarTexto(tituloDaAcao(artigo.titulo), termo);
+            h2.title = tituloDaAcao(artigo.titulo);
 
             const p = document.createElement("p");
             p.className = "conteudo";
@@ -339,13 +349,13 @@ function abrirPerfil(categoria, atualizarRota = true) {
     atual.textContent = categoria;
     breadcrumbs.append(inicio, separador, atual);
 
-    perfilCabecalho.innerHTML = `<span class="perfil-icone">${iconeNeutro(informacao.icone)}</span><div><p class="perfil-rotulo">área do guia</p><h2>${categoria}</h2><p>${informacao.descricao}</p></div>`;
+    perfilCabecalho.innerHTML = `<span class="perfil-icone">${iconeNeutro(informacao.icone)}</span><div><p class="perfil-rotulo">área do guia</p><h2>${tituloDoPerfil(categoria)}</h2><p>${informacao.descricao}</p></div>`;
     perfilAcoes.innerHTML = "";
     artigos.forEach((artigo) => {
         const acao = document.createElement("a");
         acao.className = "perfil-acao";
         acao.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
-        acao.innerHTML = `<span class="perfil-acao-numero">${artigo.titulo.match(/^\d+/)?.[0] || "•"}</span><span class="perfil-acao-conteudo"><strong>${artigo.titulo.replace(/^\d+\s*-\s*/, "")}</strong><small>ver procedimento</small></span><span class="perfil-acao-seta">→</span>`;
+        acao.innerHTML = `<span class="perfil-acao-numero">${artigo.titulo.match(/^\d+/)?.[0] || "•"}</span><span class="perfil-acao-conteudo"><strong>${tituloDaAcao(artigo.titulo)}</strong><small>ver procedimento</small></span><span class="perfil-acao-seta">→</span>`;
         acao.addEventListener("click", (event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
             event.preventDefault();
@@ -364,10 +374,10 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
 
-    artigoTitulo.textContent = titulo;
     artigoAtual = todosOsArtigos.find(artigo =>
         artigo.titulo === titulo && artigo.conteudo === conteudoMarkdown
     ) || todosOsArtigos.find(artigo => artigo.titulo === titulo) || null;
+    artigoTitulo.textContent = tituloDaAcao(artigoAtual?.titulo || titulo);
 
     if (artigoAtual && atualizarRota) {
         const hash = `#/${rotaDoArtigo(artigoAtual).split("/").map(encodeURIComponent).join("/")}`;
@@ -555,7 +565,7 @@ function criarCartaoDeNavegacao(artigo, direcao) {
 
     const titulo = document.createElement("span");
     titulo.className = "nav-card-title";
-    titulo.textContent = artigo.titulo;
+    titulo.textContent = tituloDaAcao(artigo.titulo);
 
     cartao.append(rotulo, titulo);
     cartao.addEventListener("click", (event) => {
@@ -825,7 +835,7 @@ function renderizarPastas() {
         const perfil = document.createElement("a");
         perfil.className = "perfil-card";
         perfil.href = rotaDoPerfil(categoria);
-        perfil.innerHTML = `<span class="perfil-card-icone">${iconeNeutro(informacao.icone)}</span><span class="perfil-card-conteudo"><strong>${categoria}</strong><span>${informacao.descricao}</span></span><span class="perfil-card-meta">${todasAsPastas[categoria].length} ${todasAsPastas[categoria].length === 1 ? "ação" : "ações"} <b>→</b></span>`;
+        perfil.innerHTML = `<span class="perfil-card-icone">${iconeNeutro(informacao.icone)}</span><span class="perfil-card-conteudo"><strong>${tituloDoPerfil(categoria)}</strong><span>${informacao.descricao}</span></span><span class="perfil-card-meta">${todasAsPastas[categoria].length} ${todasAsPastas[categoria].length === 1 ? "ação" : "ações"} <b>→</b></span>`;
         perfil.addEventListener("click", (event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
             event.preventDefault();
