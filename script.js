@@ -196,7 +196,6 @@ function filtrarArtigos(termoBusca) {
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
     document.getElementById("explorar-perfis")?.classList.add("escondido");
-    document.getElementById("explorar-perfis")?.classList.add("escondido");
 
     if (termo.length < 3) {
         containerResultados.innerHTML = `<p class="mensagem-busca">Digite ao menos <strong>três letras</strong> para encontrar uma tarefa. Por exemplo: “notícia”, “imagem” ou “permissões”.</p>`;
@@ -392,6 +391,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
     leitorDePerfil.classList.add("escondido");
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
+    document.getElementById("explorar-perfis")?.classList.add("escondido");
 
     artigoAtual = todosOsArtigos.find(artigo =>
         artigo.titulo === titulo && artigo.conteudo === conteudoMarkdown
