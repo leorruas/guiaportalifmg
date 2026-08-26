@@ -420,6 +420,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
 
     // Formata itens de lista de tarefas (Checkboxes / Study Roadmap)
     artigoCorpo.querySelectorAll('li input[type="checkbox"]').forEach(checkbox => {
+        checkbox.disabled = false;
         const li = checkbox.parentElement;
         if (li) {
             li.classList.add('task-list-item');
@@ -428,6 +429,10 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
             wrapper.className = 'task-item-content';
             textNodes.forEach(node => wrapper.appendChild(node));
             li.appendChild(wrapper);
+            li.addEventListener('click', (event) => {
+                if (event.target === checkbox || event.target.closest('a, button, input')) return;
+                checkbox.click();
+            });
         }
     });
 

@@ -1418,3 +1418,53 @@ body, .sticky-nav { background-color: var(--bg); }
 :root[data-theme="light"] .callout-caution .callout-title { color: #ad2929; }
 :root[data-theme="light"] .artigo-corpo a:hover,
 :root[data-theme="light"] .obsidian-link:hover { color: #142419; }
+
+/* Checklist: cada decisão vira uma linha legível, não apenas uma caixa isolada. */
+.artigo-corpo li.task-list-item,
+.artigo-corpo li:has(input[type="checkbox"]) {
+    padding: 11px 14px !important;
+    border: 1px solid var(--accent-blue-alpha-30);
+    border-radius: 9px;
+    background: var(--surface);
+    transition: border-color .2s ease, background-color .2s ease;
+}
+
+.artigo-corpo li.task-list-item:hover,
+.artigo-corpo li:has(input[type="checkbox"]):hover {
+    border-color: var(--accent-blue);
+    background: var(--surface-raised);
+}
+
+.artigo-corpo li input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    margin-top: 1px;
+    border-color: var(--accent-blue);
+    border-radius: 6px;
+    background-color: var(--surface-raised);
+    box-shadow: none;
+}
+
+.artigo-corpo li input[type="checkbox"]:hover { border-color: var(--accent-blue-hover); }
+
+.artigo-corpo li input[type="checkbox"]:checked {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    box-shadow: none;
+}
+
+.artigo-corpo li input[type="checkbox"]:checked::after {
+    color: #102216;
+    font-size: 15px;
+}
+
+.artigo-corpo li.task-list-item:has(input[type="checkbox"]:checked),
+.artigo-corpo li:has(input[type="checkbox"]:checked) {
+    border-color: var(--accent-blue-alpha-40);
+    background: var(--accent-blue-alpha-05);
+}
+
+:root[data-theme="light"] .artigo-corpo li input[type="checkbox"] { background-color: #fff; }
+:root[data-theme="light"] .task-item-content { color: #203026; }
