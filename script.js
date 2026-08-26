@@ -72,6 +72,11 @@ const informacoesCategorias = {
     "Fundamentos": { icone: "book", descricao: "Conheça conceitos que ajudam a tomar boas decisões no portal." }
 };
 
+const resumosDoIndice = {
+    "Comece aqui": "acesso, navegação e primeiras tarefas",
+    "Fundamentos": "princípios para escrever, estruturar e medir"
+};
+
 const ordemCategorias = [
     "Comece aqui",
     "Sou administrador",
@@ -294,29 +299,33 @@ function exibirResultados(artigos, termo = "") {
         grupoDiv.appendChild(tituloGrupo);
 
         const subCardsContainer = document.createElement("div");
-        subCardsContainer.className = "cards-container";
+        subCardsContainer.className = "resultados-lista";
 
-        grupos[categoria].forEach(artigo => {
+        grupos[categoria].forEach((artigo, indice) => {
             const card = document.createElement("a");
-            card.className = "card";
+            card.className = "resultado-item";
             card.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
 
-            const tag = document.createElement("span");
-            tag.className = "card-tag";
-            tag.textContent = artigo.categoria;
+            const numero = document.createElement("span");
+            numero.className = "resultado-numero";
+            numero.textContent = String(indice + 1).padStart(2, "0");
 
-            const h2 = document.createElement("h2");
-            h2.innerHTML = destacarTexto(tituloDaAcao(artigo.titulo), termo);
-            h2.title = tituloDaAcao(artigo.titulo);
+            const conteudoResultado = document.createElement("span");
+            conteudoResultado.className = "resultado-conteudo";
 
-            const p = document.createElement("p");
-            p.className = "conteudo";
-            const trecho = extrairTrechoRelevante(artigo.conteudo, termo);
-            p.innerHTML = destacarTexto(trecho, termo);
+            const titulo = document.createElement("strong");
+            titulo.innerHTML = destacarTexto(tituloDaAcao(artigo.titulo), termo);
+            titulo.title = tituloDaAcao(artigo.titulo);
 
-            card.appendChild(tag);
-            card.appendChild(h2);
-            card.appendChild(p);
+            const trecho = document.createElement("span");
+            trecho.className = "resultado-trecho";
+            const textoTrecho = extrairTrechoRelevante(artigo.conteudo, termo);
+            trecho.innerHTML = destacarTexto(textoTrecho, termo);
+
+            conteudoResultado.appendChild(titulo);
+            conteudoResultado.appendChild(trecho);
+            card.appendChild(numero);
+            card.appendChild(conteudoResultado);
 
             card.addEventListener("click", (event) => {
                 if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
@@ -885,7 +894,8 @@ function renderizarPastas() {
         const perfil = document.createElement("a");
         perfil.className = `perfil-card ${classeDoPerfil(categoria)}`;
         perfil.href = rotaDoPerfil(categoria);
-        perfil.innerHTML = `<span class="indice-numero">${numerosDoIndice[categoria] || "•"}</span><span class="perfil-card-conteudo"><strong>${tituloDoIndice(categoria)}</strong></span>`;
+        const resumo = resumosDoIndice[categoria] ? `<span class="indice-resumo">${resumosDoIndice[categoria]}</span>` : "";
+        perfil.innerHTML = `<span class="indice-numero">${numerosDoIndice[categoria] || "•"}</span><span class="perfil-card-conteudo"><strong>${tituloDoIndice(categoria)}</strong>${resumo}</span>`;
         perfil.addEventListener("click", (event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
             event.preventDefault();
