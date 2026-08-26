@@ -99,6 +99,18 @@ function tituloDaAcao(titulo) {
         .replace(/^sou\s+(administrador|moderador|editor|gestor)\s+e\s*/i, "");
 }
 
+function classeDoPerfil(categoria) {
+    const classes = {
+        "Comece aqui": "perfil-comece",
+        "Sou administrador": "perfil-administrador",
+        "Sou moderador": "perfil-moderador",
+        "Sou editor": "perfil-editor",
+        "Sou gestor": "perfil-gestor",
+        "Fundamentos": "perfil-fundamentos"
+    };
+    return classes[categoria] || "perfil-fundamentos";
+}
+
 function iconeNeutro(nome) {
     const caminhos = {
         compass: '<circle cx="12" cy="12" r="8"></circle><path d="m14.8 9.2-2.1 4.3-4.3 2.1 2.1-4.3z"></path>',
@@ -349,7 +361,9 @@ function abrirPerfil(categoria, atualizarRota = true) {
     atual.textContent = categoria;
     breadcrumbs.append(inicio, separador, atual);
 
+    perfilCabecalho.className = `perfil-cabecalho ${classeDoPerfil(categoria)}`;
     perfilCabecalho.innerHTML = `<span class="perfil-icone">${iconeNeutro(informacao.icone)}</span><div><p class="perfil-rotulo">área do guia</p><h2>${tituloDoPerfil(categoria)}</h2><p>${informacao.descricao}</p></div>`;
+    perfilAcoes.className = `perfil-acoes ${classeDoPerfil(categoria)}`;
     perfilAcoes.innerHTML = "";
     artigos.forEach((artigo) => {
         const acao = document.createElement("a");
@@ -838,7 +852,7 @@ function renderizarPastas() {
     categoriasOrdenadas.forEach(categoria => {
         const informacao = informacoesCategorias[categoria] || informacoesCategorias.Fundamentos;
         const perfil = document.createElement("a");
-        perfil.className = "perfil-card";
+        perfil.className = `perfil-card ${classeDoPerfil(categoria)}`;
         perfil.href = rotaDoPerfil(categoria);
         perfil.innerHTML = `<span class="perfil-card-icone">${iconeNeutro(informacao.icone)}</span><span class="perfil-card-conteudo"><strong>${tituloDoPerfil(categoria)}</strong><span>${informacao.descricao}</span></span><span class="perfil-card-meta">${todasAsPastas[categoria].length} ${todasAsPastas[categoria].length === 1 ? "ação" : "ações"} <b>→</b></span>`;
         perfil.addEventListener("click", (event) => {
