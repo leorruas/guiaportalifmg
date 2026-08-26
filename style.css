@@ -1190,14 +1190,6 @@ mark:not(.highlight) {
 .perfil-cabecalho,
 .perfil-acoes { --perfil-cor: var(--accent-blue); --perfil-cor-suave: var(--accent-blue-alpha-05); }
 
-/* Cor de apoio por papel: útil para orientar sem transformar a interface em um arco-íris. */
-.perfil-comece { --perfil-cor: #6fa8ff; --perfil-cor-suave: rgba(111, 168, 255, .16); }
-.perfil-administrador { --perfil-cor: #b493ff; --perfil-cor-suave: rgba(180, 147, 255, .16); }
-.perfil-moderador { --perfil-cor: #e6ad59; --perfil-cor-suave: rgba(230, 173, 89, .16); }
-.perfil-editor { --perfil-cor: #78c981; --perfil-cor-suave: rgba(120, 201, 129, .16); }
-.perfil-gestor { --perfil-cor: #52c0ce; --perfil-cor-suave: rgba(82, 192, 206, .16); }
-.perfil-fundamentos { --perfil-cor: #b3bac2; --perfil-cor-suave: rgba(179, 186, 194, .15); }
-
 .perfil-card .perfil-card-icone,
 .perfil-cabecalho .perfil-icone {
     color: var(--perfil-cor);
@@ -1219,12 +1211,6 @@ mark:not(.highlight) {
 .perfil-acoes .perfil-acao:hover,
 .perfil-acoes .perfil-acao:focus-visible { border-color: var(--perfil-cor); }
 
-:root[data-theme="light"] .perfil-comece { --perfil-cor: #1d5fbf; --perfil-cor-suave: rgba(29, 95, 191, .13); }
-:root[data-theme="light"] .perfil-administrador { --perfil-cor: #6e48b5; --perfil-cor-suave: rgba(110, 72, 181, .13); }
-:root[data-theme="light"] .perfil-moderador { --perfil-cor: #9d5f05; --perfil-cor-suave: rgba(157, 95, 5, .13); }
-:root[data-theme="light"] .perfil-editor { --perfil-cor: #216b35; --perfil-cor-suave: rgba(33, 107, 53, .13); }
-:root[data-theme="light"] .perfil-gestor { --perfil-cor: #157889; --perfil-cor-suave: rgba(21, 120, 137, .13); }
-:root[data-theme="light"] .perfil-fundamentos { --perfil-cor: #58616b; --perfil-cor-suave: rgba(88, 97, 107, .13); }
 
 @media (max-width: 768px) {
     .pastas-container { grid-template-columns: 1fr; }
