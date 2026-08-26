@@ -373,14 +373,15 @@ function abrirPerfil(categoria, atualizarRota = true) {
     breadcrumbs.append(inicio, separador, atual);
 
     perfilCabecalho.className = `perfil-cabecalho ${classeDoPerfil(categoria)}`;
-    perfilCabecalho.innerHTML = `<span class="perfil-icone">${iconeNeutro(informacao.icone)}</span><div><p class="perfil-rotulo">área do guia</p><h2>${tituloDoPerfil(categoria)}</h2><p>${informacao.descricao}</p></div>`;
+    perfilCabecalho.innerHTML = `<p class="perfil-rotulo">${categoria.startsWith("Sou ") ? "sou..." : "guia do portal ifmg"}</p><h2>${tituloDoIndice(categoria)}</h2>`;
     perfilAcoes.className = `perfil-acoes ${classeDoPerfil(categoria)}`;
     perfilAcoes.innerHTML = "";
     artigos.forEach((artigo) => {
         const acao = document.createElement("a");
         acao.className = "perfil-acao";
         acao.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
-        acao.innerHTML = `<span class="perfil-acao-numero">${artigo.titulo.match(/^\d+/)?.[0] || "•"}</span><span class="perfil-acao-conteudo"><strong>${tituloDaAcao(artigo.titulo)}</strong><small>ver procedimento</small></span><span class="perfil-acao-seta">→</span>`;
+        acao.setAttribute("aria-label", tituloDaAcao(artigo.titulo));
+        acao.innerHTML = `<span class="perfil-acao-numero">${artigo.titulo.match(/^\d+/)?.[0] || "•"}</span><span class="perfil-acao-conteudo"><strong>${tituloDaAcao(artigo.titulo)}</strong></span>`;
         acao.addEventListener("click", (event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
             event.preventDefault();
