@@ -39,11 +39,16 @@
                     <div class="toc-header">
                         <span class="toc-title">Neste artigo</span>
                     </div>
+                    <label class="toc-filter" id="toc-filter-container" hidden>
+                        <span class="sr-only">Filtrar seções</span>
+                        <input type="search" id="toc-filter-input" placeholder="filtrar seções">
+                    </label>
                     <nav class="toc-nav" id="toc-nav" aria-label="Seções deste artigo"></nav>
                 </aside>
                 <div class="artigo-conteudo-wrapper">
                     <nav class="artigo-breadcrumbs" id="artigo-breadcrumbs" aria-label="Caminho de navegação"></nav>
                     <h2 id="artigo-titulo"></h2>
+                    <div class="artigo-contexto" id="artigo-contexto"></div>
                     <div id="artigo-corpo" class="artigo-corpo"></div>
                     <nav class="artigo-nav-cards" id="artigo-nav-rodape" aria-label="Navegação entre artigos"></nav>
                     <button id="btn-voltar" class="btn-voltar">&larr; voltar para a busca </button>

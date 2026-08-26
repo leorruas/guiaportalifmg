@@ -41,6 +41,27 @@ const artigoTitulo = document.getElementById("artigo-titulo");
 const artigoCorpo = document.getElementById("artigo-corpo");
 const btnVoltar = document.getElementById("btn-voltar");
 
+const informacoesCategorias = {
+    "Comece aqui": { icone: "compass", descricao: "Entenda o acesso e encontre o caminho certo para a sua tarefa." },
+    "Sou administrador": { icone: "sliders", descricao: "Configure o ambiente e também execute as tarefas de moderador e editor." },
+    "Sou moderador": { icone: "check", descricao: "Revise conteúdos do seu grupo, além das tarefas de editor." },
+    "Sou editor": { icone: "pencil", descricao: "Crie e atualize conteúdos para encaminhá-los à moderação." },
+    "Sou gestor": { icone: "user", descricao: "Entenda como solicitar e acompanhar o trabalho no portal." },
+    "Fundamentos": { icone: "book", descricao: "Conheça conceitos que ajudam a tomar boas decisões no portal." }
+};
+
+function iconeNeutro(nome) {
+    const caminhos = {
+        compass: '<circle cx="12" cy="12" r="8"></circle><path d="m14.8 9.2-2.1 4.3-4.3 2.1 2.1-4.3z"></path>',
+        sliders: '<path d="M4 21v-7m0-4V3m8 18v-9m0-4V3m8 18v-5m0-4V3"></path><path d="M2 14h4M10 8h4m4 8h4"></path>',
+        check: '<path d="m5 12 4.5 4.5L19 7"></path><circle cx="12" cy="12" r="9"></circle>',
+        pencil: '<path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z"></path>',
+        user: '<circle cx="12" cy="8" r="3.5"></circle><path d="M5 21c.8-3.5 3.2-5.5 7-5.5s6.2 2 7 5.5"></path>',
+        book: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"></path><path d="M4 5.5v16"></path>'
+    };
+    return `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">${caminhos[nome] || caminhos.book}</svg>`;
+}
+
 // Carrega os arquivos e busca o conteúdo de cada um
 async function carregarTodosOsArtigos() {
     const lista = await obterListaDeArquivos();
@@ -181,8 +202,9 @@ function exibirResultados(artigos, termo = "") {
         subCardsContainer.className = "cards-container";
 
         grupos[categoria].forEach(artigo => {
-            const card = document.createElement("div");
+            const card = document.createElement("a");
             card.className = "card";
+            card.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
 
             const tag = document.createElement("span");
             tag.className = "card-tag";
@@ -200,7 +222,9 @@ function exibirResultados(artigos, termo = "") {
             card.appendChild(h2);
             card.appendChild(p);
 
-            card.addEventListener("click", () => {
+            card.addEventListener("click", (event) => {
+                if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
+                event.preventDefault();
                 abrirArtigo(artigo.titulo, artigo.conteudo);
             });
 
@@ -238,6 +262,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
     if (artigoAtual) {
         renderizarBreadcrumbs(artigoAtual);
         renderizarNavegacaoSequencial(artigoAtual);
+        renderizarContextoDoArtigo(artigoAtual);
     }
     
     // Filtra e remove o bloco de metadados/atributos (YAML Frontmatter --- ... ---)
@@ -264,6 +289,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
     // Processa os links do Obsidian [[Nome do Artigo]] depois dos callouts,
     // para manter links clicáveis também dentro de caixas de aviso.
     processarLinksObsidian();
+    aprimorarImagensDoArtigo();
 
     // Formata itens de lista de tarefas (Checkboxes / Study Roadmap)
     artigoCorpo.querySelectorAll('li input[type="checkbox"]').forEach(checkbox => {
@@ -319,6 +345,61 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+function renderizarContextoDoArtigo(artigo) {
+    const contexto = document.getElementById("artigo-contexto");
+    if (!contexto) return;
+    const informacao = informacoesCategorias[artigo.categoria] || informacoesCategorias.Fundamentos;
+    contexto.innerHTML = `<span class="contexto-icone">${iconeNeutro(informacao.icone)}</span><p><strong>${artigo.categoria}</strong><span>${informacao.descricao}</span></p>`;
+}
+
+function aprimorarImagensDoArtigo() {
+    artigoCorpo.querySelectorAll("img").forEach((imagem) => {
+        if (imagem.closest("figure")) return;
+        const figura = document.createElement("figure");
+        figura.className = "imagem-contextual";
+        const legenda = imagem.alt && !/\.(png|jpe?g|gif|webp)$/i.test(imagem.alt) ? imagem.alt : "Clique para ampliar a imagem.";
+        const paragrafo = imagem.parentElement?.tagName === "P" ? imagem.parentElement : null;
+        imagem.addEventListener("click", () => abrirImagemAmpliada(imagem));
+        imagem.setAttribute("role", "button");
+        imagem.setAttribute("tabindex", "0");
+        imagem.setAttribute("aria-label", `Ampliar imagem: ${legenda}`);
+        imagem.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                abrirImagemAmpliada(imagem);
+            }
+        });
+        if (paragrafo) {
+            paragrafo.replaceWith(figura);
+        } else {
+            imagem.replaceWith(figura);
+        }
+        figura.appendChild(imagem);
+        const figcaption = document.createElement("figcaption");
+        figcaption.textContent = legenda;
+        figura.appendChild(figcaption);
+    });
+}
+
+function abrirImagemAmpliada(imagem) {
+    const modal = document.createElement("div");
+    modal.className = "imagem-modal";
+    modal.setAttribute("role", "dialog");
+    modal.setAttribute("aria-modal", "true");
+    modal.setAttribute("aria-label", "Imagem ampliada");
+    modal.innerHTML = `<button type="button" class="imagem-modal-fechar" aria-label="Fechar imagem ampliada">×</button><img src="${imagem.src}" alt="${imagem.alt}">`;
+    const fechar = () => modal.remove();
+    modal.addEventListener("click", (event) => { if (event.target === modal) fechar(); });
+    modal.querySelector("button").addEventListener("click", fechar);
+    document.addEventListener("keydown", function fecharComEsc(event) {
+        if (event.key !== "Escape") return;
+        fechar();
+        document.removeEventListener("keydown", fecharComEsc);
+    });
+    document.body.appendChild(modal);
+    modal.querySelector("button").focus();
+}
+
 function renderizarBreadcrumbs(artigo) {
     const breadcrumbs = document.getElementById("artigo-breadcrumbs");
     if (!breadcrumbs) return;
@@ -348,9 +429,9 @@ function renderizarBreadcrumbs(artigo) {
 }
 
 function criarCartaoDeNavegacao(artigo, direcao) {
-    const cartao = document.createElement("button");
-    cartao.type = "button";
+    const cartao = document.createElement("a");
     cartao.className = `nav-card nav-card-${direcao}`;
+    cartao.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
 
     const rotulo = document.createElement("span");
     rotulo.className = "nav-card-label";
@@ -361,7 +442,11 @@ function criarCartaoDeNavegacao(artigo, direcao) {
     titulo.textContent = artigo.titulo;
 
     cartao.append(rotulo, titulo);
-    cartao.addEventListener("click", () => abrirArtigo(artigo.titulo, artigo.conteudo));
+    cartao.addEventListener("click", (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
+        event.preventDefault();
+        abrirArtigo(artigo.titulo, artigo.conteudo);
+    });
     return cartao;
 }
 
@@ -438,11 +523,12 @@ function gerarTableOfContents() {
         const item = document.createElement("li");
         item.className = "toc-item";
         const link = document.createElement("a");
-        link.href = `#${id}`;
+        link.href = rotaComSecao(artigoAtual, id);
         link.textContent = heading.textContent.trim();
         link.dataset.headingId = id;
         link.addEventListener("click", (event) => {
             event.preventDefault();
+            history.pushState({ rota: rotaDoArtigo(artigoAtual), secao: id }, "", rotaComSecao(artigoAtual, id));
             const navegacao = document.getElementById("sticky-nav");
             const deslocamento = (navegacao ? navegacao.offsetHeight : 0) + 20;
             const posicao = heading.getBoundingClientRect().top + window.scrollY - deslocamento;
@@ -453,7 +539,27 @@ function gerarTableOfContents() {
     });
 
     tocNav.appendChild(lista);
+    configurarFiltroDoSumario(lista, headings.length);
     iniciarScrollSpy(headings);
+}
+
+function rotaComSecao(artigo, secao) {
+    const rota = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
+    return secao ? `${rota}#${encodeURIComponent(secao)}` : rota;
+}
+
+function configurarFiltroDoSumario(lista, totalDeSecoes) {
+    const container = document.getElementById("toc-filter-container");
+    const campo = document.getElementById("toc-filter-input");
+    if (!container || !campo) return;
+    container.hidden = totalDeSecoes < 4;
+    campo.value = "";
+    campo.oninput = () => {
+        const termo = campo.value.trim().toLocaleLowerCase("pt-BR");
+        lista.querySelectorAll(".toc-item").forEach((item) => {
+            item.hidden = Boolean(termo) && !item.textContent.toLocaleLowerCase("pt-BR").includes(termo);
+        });
+    };
 }
 
 function iniciarScrollSpy(headings) {
@@ -576,9 +682,16 @@ function tratarRotaDaUrl() {
         return;
     }
 
-    const rota = decodeURIComponent(hash.replace(/^#\/?/, "")).replace(/\.md$/i, "");
+    const [rotaCodificada, secaoCodificada] = hash.replace(/^#\/?/, "").split("#");
+    const rota = decodeURIComponent(rotaCodificada).replace(/\.md$/i, "");
     const artigo = todosOsArtigos.find(item => rotaDoArtigo(item) === rota);
-    if (artigo) abrirArtigo(artigo.titulo, artigo.conteudo, false);
+    if (artigo) {
+        abrirArtigo(artigo.titulo, artigo.conteudo, false);
+        if (secaoCodificada) {
+            const secao = decodeURIComponent(secaoCodificada);
+            window.setTimeout(() => document.getElementById(secao)?.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+        }
+    }
 }
 
 function renderizarPastas() {
@@ -614,11 +727,17 @@ function renderizarPastas() {
         nome.className = "pasta-nome";
         nome.textContent = categoria;
 
+        const informacao = informacoesCategorias[categoria] || informacoesCategorias.Fundamentos;
+        const marcador = document.createElement("span");
+        marcador.className = "pasta-marcador";
+        marcador.innerHTML = `${iconeNeutro(informacao.icone)}<span class="pasta-descricao">${informacao.descricao}</span>`;
+        marcador.prepend(nome);
+
         const icone = document.createElement("span");
         icone.className = "pasta-icone";
         icone.textContent = "+";
 
-        header.appendChild(nome);
+        header.appendChild(marcador);
         header.appendChild(icone);
 
         const conteudo = document.createElement("div");
@@ -628,8 +747,10 @@ function renderizarPastas() {
             const linkArtigo = document.createElement("a");
             linkArtigo.className = "artigo-lista-link";
             linkArtigo.textContent = arquivo.titulo;
+            linkArtigo.href = `#/${rotaDoArtigo(arquivo).split("/").map(encodeURIComponent).join("/")}`;
             
             linkArtigo.addEventListener("click", async (e) => {
+                if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
                 e.preventDefault();
                 e.stopPropagation();
                 abrirArtigo(arquivo.titulo, arquivo.conteudo);
