@@ -1294,28 +1294,35 @@ mark:not(.highlight) {
 /* Capa e temas: a imagem define a família cromática, sem competir com o texto. */
 .hero-capa {
     position: relative;
-    display: flex;
-    align-items: flex-end;
-    min-height: 390px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 39%);
+    align-items: stretch;
+    min-height: 410px;
     margin-bottom: 38px;
     overflow: hidden;
     border-radius: 0 0 18px 18px;
-    background-image: var(--hero-overlay), url("imagens/capa/instituto-federal-minas-gerais.png");
-    background-position: center 39%;
-    background-size: cover;
+    background: var(--surface);
 }
 
 .hero-conteudo {
-    position: relative;
-    z-index: 1;
     max-width: 650px;
-    padding: 42px 48px;
+    align-self: end;
+    padding: 42px 48px 48px;
 }
 
 .hero-capa h1 {
     margin: 0;
     color: var(--text);
-    text-shadow: 0 2px 20px rgba(0, 0, 0, .22);
+}
+
+.hero-imagem {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 410px;
+    object-fit: contain;
+    object-position: center;
+    background: #0b2715;
 }
 
 .hero-sobretitulo,
@@ -1368,8 +1375,9 @@ body, .sticky-nav { background-color: var(--bg); }
 :root[data-theme="light"] .artigo-corpo pre { color: var(--accent-blue); }
 
 @media (max-width: 768px) {
-    .hero-capa { min-height: 300px; margin-bottom: 24px; }
+    .hero-capa { grid-template-columns: 1fr; min-height: 0; margin-bottom: 24px; }
     .hero-conteudo { padding: 30px 22px; }
+    .hero-imagem { height: 330px; max-height: 330px; }
     .theme-toggle { width: auto; padding: 5px 10px; font-size: .46em; }
 }
 
