@@ -1528,6 +1528,48 @@ body, .sticky-nav { background-color: var(--bg); }
 :root[data-theme="light"] .artigo-corpo a:hover,
 :root[data-theme="light"] .obsidian-link:hover { color: #142419; }
 
+/* Leitura de procedimentos: a cor guia a hierarquia, não toma conta da página. */
+.leitor-artigo h2 {
+    color: var(--text);
+    line-height: 1.02;
+    border-bottom-color: var(--accent-blue-alpha-30);
+}
+
+#artigo-corpo h1,
+#artigo-corpo h2,
+#artigo-corpo h3 {
+    color: var(--text);
+    text-transform: none;
+    letter-spacing: -.015em;
+    line-height: 1.18;
+}
+
+#artigo-corpo h1 { font-size: 1em; }
+#artigo-corpo h2 { font-size: .88em; }
+#artigo-corpo h3 { font-size: .76em; }
+
+#artigo-corpo h1::before,
+#artigo-corpo h2::before,
+#artigo-corpo h3::before {
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    margin: 0 8px 5px 0;
+    background: var(--accent-blue);
+    content: "";
+    vertical-align: middle;
+}
+
+.perfil-cabecalho {
+    margin-top: 24px;
+    padding: 22px;
+    border: 1px solid var(--accent-blue-alpha-30);
+    border-radius: 14px;
+    background: var(--surface);
+}
+.perfil-cabecalho h2 { color: var(--text); }
+.perfil-cabecalho .perfil-rotulo { color: var(--accent-blue); }
+
 /* Checklist: cada decisão vira uma linha legível, não apenas uma caixa isolada. */
 .artigo-corpo li.task-list-item,
 .artigo-corpo li:has(input[type="checkbox"]) {
