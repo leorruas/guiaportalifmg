@@ -1664,7 +1664,7 @@ header, main { max-width: 1240px; padding: 0 32px; box-sizing: border-box; }
 .perfil-card:nth-child(even) { padding-left: 34px; }
 .perfil-card:hover, .perfil-card:focus-visible { border-color: color-mix(in srgb, var(--text) 42%, transparent); background: transparent; color: var(--accent-blue); transform: none; outline: none; }
 .perfil-card:focus-visible { box-shadow: inset 0 -3px 0 var(--accent-blue); }
-.indice-numero { color: var(--text); font-size: 3.8rem; font-weight: 400; letter-spacing: -.07em; line-height: .92; }
+.indice-numero { color: var(--text); font-size: 3.8rem; font-weight: 700; letter-spacing: -.07em; line-height: .92; }
 .perfil-card-conteudo { display: block; }
 .perfil-card .perfil-card-conteudo strong { color: currentColor; font-size: 1.68rem; font-weight: 460; line-height: 1; letter-spacing: -.05em; }
 .perfil-card-conteudo .indice-resumo {
