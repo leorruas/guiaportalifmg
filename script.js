@@ -37,9 +37,13 @@ const btnPesquisar = document.querySelector("main button");
 const containerResultados = document.querySelector(".cards-container");
 const divResultados = document.querySelector(".resultados");
 const leitorDeArtigo = document.getElementById("leitor-artigo");
+const leitorDePerfil = document.getElementById("perfil-leitor");
+const perfilCabecalho = document.getElementById("perfil-cabecalho");
+const perfilAcoes = document.getElementById("perfil-acoes");
 const artigoTitulo = document.getElementById("artigo-titulo");
 const artigoCorpo = document.getElementById("artigo-corpo");
 const btnVoltar = document.getElementById("btn-voltar");
+const btnVoltarPerfil = document.getElementById("btn-voltar-perfil");
 const btnTema = document.getElementById("theme-toggle");
 
 function aplicarTema(tema, persistir = true) {
@@ -154,6 +158,7 @@ async function carregarTodosOsArtigos() {
 }
 
 function filtrarArtigos(termoBusca) {
+    leitorDePerfil.classList.add("escondido");
     if (!termoBusca || termoBusca.trim() === "") {
         containerResultados.innerHTML = "";
         const pastasContainer = document.getElementById("pastas-container");
@@ -302,8 +307,60 @@ function rotaDoArtigo(artigo) {
         .replace(/\.md$/i, "");
 }
 
+function rotaDoPerfil(categoria) {
+    return `#/perfil/${encodeURIComponent(categoria)}`;
+}
+
+function abrirPerfil(categoria, atualizarRota = true) {
+    const informacao = informacoesCategorias[categoria];
+    const artigos = todasAsPastas[categoria] || [];
+    if (!informacao || artigos.length === 0) return;
+
+    leitorDeArtigo.classList.add("escondido");
+    divResultados.classList.add("escondido");
+    document.getElementById("pastas-container")?.classList.add("escondido");
+    artigoAtual = null;
+
+    if (atualizarRota && window.location.hash !== rotaDoPerfil(categoria)) {
+        history.pushState({ perfil: categoria }, "", rotaDoPerfil(categoria));
+    }
+
+    const breadcrumbs = document.getElementById("perfil-breadcrumbs");
+    breadcrumbs.innerHTML = "";
+    const inicio = document.createElement("button");
+    inicio.type = "button";
+    inicio.className = "breadcrumb-link";
+    inicio.textContent = "início";
+    inicio.addEventListener("click", () => voltarParaHome(true));
+    const separador = document.createElement("span");
+    separador.className = "breadcrumb-separator";
+    separador.textContent = "/";
+    const atual = document.createElement("span");
+    atual.textContent = categoria;
+    breadcrumbs.append(inicio, separador, atual);
+
+    perfilCabecalho.innerHTML = `<span class="perfil-icone">${iconeNeutro(informacao.icone)}</span><div><p class="perfil-rotulo">área do guia</p><h2>${categoria}</h2><p>${informacao.descricao}</p></div>`;
+    perfilAcoes.innerHTML = "";
+    artigos.forEach((artigo) => {
+        const acao = document.createElement("a");
+        acao.className = "perfil-acao";
+        acao.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
+        acao.innerHTML = `<span class="perfil-acao-numero">${artigo.titulo.match(/^\d+/)?.[0] || "•"}</span><span class="perfil-acao-conteudo"><strong>${artigo.titulo.replace(/^\d+\s*-\s*/, "")}</strong><small>ver procedimento</small></span><span class="perfil-acao-seta">→</span>`;
+        acao.addEventListener("click", (event) => {
+            if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
+            event.preventDefault();
+            abrirArtigo(artigo.titulo, artigo.conteudo);
+        });
+        perfilAcoes.appendChild(acao);
+    });
+
+    leitorDePerfil.classList.remove("escondido");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
     divResultados.classList.add("escondido");
+    leitorDePerfil.classList.add("escondido");
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) pastasContainer.classList.add("escondido");
 
@@ -483,8 +540,7 @@ function renderizarBreadcrumbs(artigo) {
     breadcrumbs.appendChild(separador);
 
     breadcrumbs.appendChild(criarBotao(artigo.categoria, () => {
-        voltarParaHome(true);
-        window.setTimeout(() => abrirPastaPorNome(artigo.categoria), 100);
+        abrirPerfil(artigo.categoria);
     }));
 }
 
@@ -744,6 +800,10 @@ function tratarRotaDaUrl() {
 
     const [rotaCodificada, secaoCodificada] = hash.replace(/^#\/?/, "").split("#");
     const rota = decodeURIComponent(rotaCodificada).replace(/\.md$/i, "");
+    if (rota.startsWith("perfil/")) {
+        abrirPerfil(rota.slice("perfil/".length), false);
+        return;
+    }
     const artigo = todosOsArtigos.find(item => rotaDoArtigo(item) === rota);
     if (artigo) {
         abrirArtigo(artigo.titulo, artigo.conteudo, false);
@@ -759,68 +819,19 @@ function renderizarPastas() {
     if (!pastasContainer) return;
 
     pastasContainer.innerHTML = "";
-
     const categoriasOrdenadas = ordenarCategorias(Object.keys(todasAsPastas));
-
     categoriasOrdenadas.forEach(categoria => {
-        const pastaItem = document.createElement("div");
-        pastaItem.className = "pasta-item";
-
-        const header = document.createElement("div");
-        header.className = "pasta-header";
-
-        const nome = document.createElement("span");
-        nome.className = "pasta-nome";
-        nome.textContent = categoria;
-
         const informacao = informacoesCategorias[categoria] || informacoesCategorias.Fundamentos;
-        const marcador = document.createElement("span");
-        marcador.className = "pasta-marcador";
-        marcador.innerHTML = `${iconeNeutro(informacao.icone)}<span class="pasta-descricao">${informacao.descricao}</span>`;
-        marcador.prepend(nome);
-
-        const icone = document.createElement("span");
-        icone.className = "pasta-icone";
-        icone.textContent = "+";
-
-        header.appendChild(marcador);
-        header.appendChild(icone);
-
-        const conteudo = document.createElement("div");
-        conteudo.className = "pasta-conteudo";
-
-        todasAsPastas[categoria].forEach(arquivo => {
-            const linkArtigo = document.createElement("a");
-            linkArtigo.className = "artigo-lista-link";
-            linkArtigo.textContent = arquivo.titulo;
-            linkArtigo.href = `#/${rotaDoArtigo(arquivo).split("/").map(encodeURIComponent).join("/")}`;
-            
-            linkArtigo.addEventListener("click", async (e) => {
-                if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
-                e.preventDefault();
-                e.stopPropagation();
-                abrirArtigo(arquivo.titulo, arquivo.conteudo);
-            });
-            
-            conteudo.appendChild(linkArtigo);
+        const perfil = document.createElement("a");
+        perfil.className = "perfil-card";
+        perfil.href = rotaDoPerfil(categoria);
+        perfil.innerHTML = `<span class="perfil-card-icone">${iconeNeutro(informacao.icone)}</span><span class="perfil-card-conteudo"><strong>${categoria}</strong><span>${informacao.descricao}</span></span><span class="perfil-card-meta">${todasAsPastas[categoria].length} ${todasAsPastas[categoria].length === 1 ? "ação" : "ações"} <b>→</b></span>`;
+        perfil.addEventListener("click", (event) => {
+            if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
+            event.preventDefault();
+            abrirPerfil(categoria);
         });
-
-        pastaItem.appendChild(header);
-        pastaItem.appendChild(conteudo);
-
-        header.addEventListener("click", () => {
-            const jaAberta = pastaItem.classList.contains("aberta");
-            
-            document.querySelectorAll(".pasta-item").forEach(item => {
-                item.classList.remove("aberta");
-            });
-
-            if (!jaAberta) {
-                pastaItem.classList.add("aberta");
-            }
-        });
-
-        pastasContainer.appendChild(pastaItem);
+        pastasContainer.appendChild(perfil);
     });
 }
 
@@ -847,6 +858,10 @@ if (btnVoltar) {
     btnVoltar.addEventListener("click", voltarParaHome);
 }
 
+if (btnVoltarPerfil) {
+    btnVoltarPerfil.addEventListener("click", () => voltarParaHome(true));
+}
+
 if (btnTema) {
     btnTema.addEventListener("click", () => {
         aplicarTema(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
@@ -869,6 +884,7 @@ window.addEventListener("scroll", () => {
 
 function voltarParaHome(atualizarRota = true) {
     leitorDeArtigo.classList.add("escondido");
+    leitorDePerfil.classList.add("escondido");
     divResultados.classList.remove("escondido");
     const pastasContainer = document.getElementById("pastas-container");
     if (pastasContainer) {
