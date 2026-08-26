@@ -33,7 +33,7 @@ let artigoAtual = null;
 
 const campoTexto = document.getElementById("main-search-input");
 const campoTextoNav = document.getElementById("nav-search-input");
-const btnPesquisar = document.querySelector("main button");
+const btnPesquisar = document.getElementById("btn-pesquisar");
 const containerResultados = document.querySelector(".cards-container");
 const divResultados = document.querySelector(".resultados");
 const leitorDeArtigo = document.getElementById("leitor-artigo");
@@ -92,6 +92,10 @@ function ordenarCategorias(categorias) {
 
 function tituloDoPerfil(categoria) {
     return categoria.startsWith("Sou ") ? `${categoria.toLowerCase()} e...` : categoria;
+}
+
+function tituloDoIndice(categoria) {
+    return categoria.replace(/^Sou\s+/i, "").toLowerCase();
 }
 
 function tituloDaAcao(titulo) {
@@ -868,12 +872,19 @@ function renderizarPastas() {
     orientacoesContainer.innerHTML = "";
     const categoriasOrdenadas = ordenarCategorias(Object.keys(todasAsPastas));
     const categoriasDeOrientacao = ["Comece aqui", "Fundamentos"];
+    const numerosDoIndice = {
+        "Comece aqui": "01",
+        "Fundamentos": "02",
+        "Sou administrador": "03",
+        "Sou moderador": "04",
+        "Sou editor": "05",
+        "Sou gestor": "06"
+    };
     categoriasOrdenadas.forEach(categoria => {
-        const informacao = informacoesCategorias[categoria] || informacoesCategorias.Fundamentos;
         const perfil = document.createElement("a");
         perfil.className = `perfil-card ${classeDoPerfil(categoria)}`;
         perfil.href = rotaDoPerfil(categoria);
-        perfil.innerHTML = `<span class="perfil-card-icone">${iconeNeutro(informacao.icone)}</span><span class="perfil-card-conteudo"><strong>${tituloDoPerfil(categoria)}</strong><span>${informacao.descricao}</span></span><span class="perfil-card-meta">${todasAsPastas[categoria].length} ${todasAsPastas[categoria].length === 1 ? "ação" : "ações"} <b>→</b></span>`;
+        perfil.innerHTML = `<span class="indice-numero">${numerosDoIndice[categoria] || "•"}</span><span class="perfil-card-conteudo"><strong>${tituloDoIndice(categoria)}</strong></span>`;
         perfil.addEventListener("click", (event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
             event.preventDefault();

@@ -13,53 +13,29 @@
 <body>
     <nav class="sticky-nav" id="sticky-nav">
         <span class="nav-logo" id="nav-logo">guia do portal ifmg</span>
-        <div class="nav-search-container">
-            <input type="text" id="nav-search-input" placeholder="pesquisar...">
-        </div>
-        <a href="#pastas-container" class="nav-link-pastas" id="nav-link-pastas">pastas</a>
+        <a href="#pastas-container" class="nav-link-pastas" id="nav-link-pastas">índice</a>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar para modo claro">tema</button>
     </nav>
 
-    <header class="hero-capa">
-        <div class="hero-conteudo">
-            <p class="hero-sobretitulo">portal institucional</p>
-            <h1>guia do portal ifmg</h1>
-            <p class="hero-descricao">Encontre o procedimento certo para trabalhar no portal.</p>
-        </div>
-        <img class="hero-imagem" src="imagens/capa/instituto-federal-minas-gerais-sem-marca.png" alt="Identidade visual verde do Instituto Federal de Minas Gerais">
+    <header class="page-masthead">
+        <h1>guia do<br>portal ifmg</h1>
+        <p>manual de trabalho para o portal institucional</p>
     </header>
     <main>
         <section class="busca-principal" aria-label="Pesquisar no guia">
-            <div>
-                <p class="busca-sobretitulo">encontre uma orientação</p>
-                <h2>o que você quer fazer no portal?</h2>
-            </div>
             <div class="busca-campo">
                 <label class="sr-only" for="main-search-input">Descreva a tarefa que procura</label>
-                <input type="text" id="main-search-input" placeholder="ex.: publicar uma notícia ou organizar documentos">
-                <button type="button">Pesquisar</button>
+                <input type="search" id="main-search-input" placeholder="pesquisar no guia" autocomplete="off">
             </div>
         </section>
         <section class="orientacoes-iniciais" id="orientacoes-iniciais" aria-labelledby="orientacoes-iniciais-titulo">
-            <div class="orientacoes-iniciais-cabecalho">
-                <div>
-                    <p class="busca-sobretitulo">antes de escolher um papel</p>
-                    <h2 id="orientacoes-iniciais-titulo">comece por aqui</h2>
-                </div>
-                <p>Entenda o funcionamento do guia e os princípios que orientam o portal.</p>
-            </div>
+            <h2 id="orientacoes-iniciais-titulo" class="sr-only">Orientações iniciais</h2>
             <div class="pastas-container pastas-orientacao" id="orientacoes-container">
                 <!-- Orientações iniciais serão listadas aqui dinamicamente -->
             </div>
         </section>
         <section class="explorar-perfis" id="explorar-perfis" aria-labelledby="explorar-perfis-titulo">
-            <div class="explorar-perfis-cabecalho">
-                <div>
-                    <p class="busca-sobretitulo">ou comece pelo seu papel</p>
-                    <h2 id="explorar-perfis-titulo">sou...</h2>
-                </div>
-                <p>Escolha seu papel para ver as ações disponíveis.</p>
-            </div>
+            <h2 id="explorar-perfis-titulo">sou...</h2>
             <div class="pastas-container" id="pastas-container">
                 <!-- Os perfis serão listados aqui dinamicamente -->
             </div>
