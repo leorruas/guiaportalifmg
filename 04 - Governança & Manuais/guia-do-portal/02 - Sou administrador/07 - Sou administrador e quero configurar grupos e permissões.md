@@ -8,12 +8,13 @@ Imagine o grupo como um crachá: ele informa onde a pessoa pode entrar e o que e
 
 1. Acesse a área administrativa em [portal.ifmg.edu.br/admin](https://portal.ifmg.edu.br/admin) e entre com suas credenciais institucionais.
 2. Abra **Configurações** e acesse a gestão de grupos.
+
+![[imagens/manual-ifrn/image4.png|Menu Configurações, onde ficam Grupos e Coleções]]
+
 3. Crie um grupo ou abra o grupo que será atualizado.
 4. Inclua as pessoas que atuarão naquele escopo.
 5. Defina as permissões de páginas apenas para a seção de páginas necessária.
 6. Defina as permissões de coleções apenas para as coleções de imagens e documentos necessárias.
-
-![[imagens/manual-ifrn/image4.png|Tela de configuração de coleções e permissões]]
 
 7. Salve e confirme o resultado com uma pessoa do grupo.
 
