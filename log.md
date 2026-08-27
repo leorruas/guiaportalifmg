@@ -2,6 +2,8 @@
 
 ## 2026-08-27
 
+- Adicionado o logo do Instituto Federal de Minas Gerais logo acima do campo de pesquisa no cabeçalho da página inicial, alinhado à direita com a coluna de busca.
+- Substituído o texto "IFMG" no título visual da página pelo logo completo do Instituto Federal de Minas Gerais em tamanho reduzido, com cor derivada da variável de destaque do tema.
 - Centralizado o alinhamento visual das capturas contextuais no layout dos artigos, incluindo imagem e legenda, sem alterar os arquivos de mídia.
 - Reposicionada a captura do menu Configurações no procedimento de administrador sobre grupos e permissões, colocando a imagem junto do passo que orienta abrir Configurações e localizar Grupos e Coleções.
 - Repetido o link do repositório `https://github.com/leorruas/guiaportalifmg` em cada prompt específico do artigo sobre uso de IA, para que qualquer bloco copiado isoladamente mantenha o contexto do guia.
