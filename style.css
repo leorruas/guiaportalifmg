@@ -339,7 +339,12 @@ button:hover {
 
 .artigo-contexto strong { color: #fff; font-weight: 600; }
 
-.imagem-contextual { margin: 26px auto; }
+.imagem-contextual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 26px auto;
+}
 
 .imagem-contextual img {
     cursor: zoom-in;
@@ -354,10 +359,12 @@ button:hover {
 }
 
 .imagem-contextual figcaption {
+    width: 100%;
     margin-top: 9px;
     color: #aaa;
     font-size: .72em;
     line-height: 1.45;
+    text-align: center;
 }
 
 .imagem-modal {
