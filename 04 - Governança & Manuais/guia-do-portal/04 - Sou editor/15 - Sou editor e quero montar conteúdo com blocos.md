@@ -103,6 +103,16 @@ Use **Cards** para oferecer caminhos relacionados, como serviços de uma área. 
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image48.png|Exemplo publicado de cards]]
 
+### Galeria
+
+Use **Galeria** quando as imagens precisam ser vistas em conjunto, como o registro visual de um evento ou espaço do campus. Organize as fotos com legendas objetivas e confirme que todas possuem texto alternativo preenchido.
+
+![[imagens/manual-ifrn/image17.png|Configuração de um bloco de galeria]]
+
+### Citação
+
+Use **Citação** apenas quando a autoria, a fala e o contexto puderem ser confirmados e agregarem valor direto ao entendimento da página. Destaque a frase principal e indique o nome e cargo de quem declarou.
+
 ## Blocos de tempo, consulta e apoio
 
 ### Linha do tempo
@@ -159,12 +169,6 @@ Use **Estatística** para destacar um número que ajuda a compreender o conteúd
 6. Pré-visualize o bloco e confira se o ícone reforça o sentido do texto, sem substituir o rótulo.
 
 **Como conferir:** se o ícone não carregar, revise se foi colado apenas o nome. `search` funciona como nome; uma URL, o download SVG ou o código da página não funcionam nesse campo.
-
-### Galeria e citação
-
-Use **Galeria** quando as imagens precisam ser vistas em conjunto; use **Citação** apenas se a autoria e o contexto puderem ser confirmados.
-
-![[imagens/manual-ifrn/image17.png|Configuração de uma galeria]]
 
 **Como conferir qualquer bloco:** faça a pré-visualização e pergunte “esta peça ajuda a pessoa a entender, encontrar ou fazer algo?”. Se a resposta for não, ela é decoração ou está no lugar errado.
 
