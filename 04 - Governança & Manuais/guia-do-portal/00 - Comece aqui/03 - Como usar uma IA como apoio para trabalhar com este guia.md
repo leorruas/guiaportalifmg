@@ -31,7 +31,7 @@ Não cole senhas, dados pessoais, documentos internos restritos ou informações
 
 Copie o texto abaixo no assistente de sua preferência. Substitua os trechos entre colchetes pelas informações da sua tarefa.
 
-```text
+```prompt
 Você vai me ajudar a trabalhar com o Guia do Portal IFMG, que está neste repositório:
 https://github.com/leorruas/guiaportalifmg
 
@@ -54,7 +54,7 @@ O que eu quero receber agora é: [explicação, checklist, revisão de texto, pr
 
 Use quando a solicitação chegou de forma incompleta ou quando você ainda não sabe por onde começar.
 
-```text
+```prompt
 Com base no Guia do Portal IFMG, transforme esta demanda em um passo a passo simples.
 
 Minha demanda é: [cole ou resuma a solicitação].
@@ -75,7 +75,7 @@ O resultado esperado é uma lista que ajude você a entrar no Wagtail já sabend
 
 Use quando o conteúdo já existe, mas precisa ficar mais claro, acessível e adequado ao portal.
 
-```text
+```prompt
 Revise o texto abaixo usando as orientações do Guia do Portal IFMG sobre linguagem simples, acessibilidade, SEO, metadados e organização da informação.
 
 Texto:
@@ -99,7 +99,7 @@ Depois da revisão, compare a versão sugerida com a fonte oficial. Datas, nomes
 
 Use quando você quer conferir se uma página está pronta antes de enviar, revisar ou publicar.
 
-```text
+```prompt
 Monte um checklist com base no Guia do Portal IFMG para eu conferir esta tarefa no Wagtail.
 
 Tarefa: [descreva a tarefa].
@@ -129,4 +129,3 @@ Antes de seguir a sugestão da IA, confira:
 - se a ação final ainda respeita o fluxo de moderação, revisão ou publicação.
 
 Se a resposta parecer segura demais sobre algo que o guia não explicou, peça: “mostre em qual arquivo do guia esta orientação aparece”. Se a IA não conseguir apontar a fonte, trate a resposta como hipótese e confirme com a pessoa responsável.
-

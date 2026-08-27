@@ -699,6 +699,7 @@ button:hover {
 }
 
 .artigo-corpo pre {
+    position: relative;
     background-color: #111;
     border: 1px solid var(--accent-blue);
     padding: 15px;
@@ -707,6 +708,30 @@ button:hover {
     font-family: monospace;
     white-space: pre-wrap !important;
     word-break: break-word;
+}
+
+.artigo-corpo pre.prompt-copiavel {
+    padding-top: 54px;
+}
+
+.botao-copiar-prompt {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: 1px solid var(--accent-blue-alpha-40);
+    background-color: var(--surface-raised);
+    color: var(--text-primary);
+    border-radius: 4px;
+    padding: 8px 10px;
+    font: 600 .78rem 'Archivo', sans-serif;
+    cursor: pointer;
+}
+
+.botao-copiar-prompt:hover,
+.botao-copiar-prompt:focus-visible,
+.botao-copiar-prompt.copiado {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
 }
 
 .mermaid {

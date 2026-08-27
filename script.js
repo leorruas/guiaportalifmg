@@ -461,6 +461,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
     // para manter links clicáveis também dentro de caixas de aviso.
     processarLinksObsidian();
     aprimorarImagensDoArtigo();
+    aprimorarBlocosDePrompt();
 
     // Formata itens de lista de tarefas (Checkboxes / Study Roadmap)
     artigoCorpo.querySelectorAll('li input[type="checkbox"]').forEach(checkbox => {
@@ -554,6 +555,41 @@ function aprimorarImagensDoArtigo() {
         const figcaption = document.createElement("figcaption");
         figcaption.textContent = legenda;
         figura.appendChild(figcaption);
+    });
+}
+
+function aprimorarBlocosDePrompt() {
+    artigoCorpo.querySelectorAll("pre code.language-prompt").forEach((codigo) => {
+        const pre = codigo.parentElement;
+        if (!pre || pre.classList.contains("prompt-copiavel")) return;
+
+        pre.classList.add("prompt-copiavel");
+
+        const botao = document.createElement("button");
+        botao.type = "button";
+        botao.className = "botao-copiar-prompt";
+        botao.textContent = "Copiar prompt";
+        botao.setAttribute("aria-label", "Copiar prompt para a área de transferência");
+
+        botao.addEventListener("click", async () => {
+            const texto = codigo.textContent.trim();
+            try {
+                await navigator.clipboard.writeText(texto);
+                botao.textContent = "Prompt copiado";
+                botao.classList.add("copiado");
+                setTimeout(() => {
+                    botao.textContent = "Copiar prompt";
+                    botao.classList.remove("copiado");
+                }, 2200);
+            } catch (erro) {
+                botao.textContent = "Não foi possível copiar";
+                setTimeout(() => {
+                    botao.textContent = "Copiar prompt";
+                }, 2200);
+            }
+        });
+
+        pre.insertBefore(botao, codigo);
     });
 }
 
