@@ -2179,8 +2179,12 @@ a:focus-visible {
 }
 .masthead-copy { grid-area: copy; }
 .page-masthead .busca-principal { grid-area: search; align-self: end; margin-bottom: 54px; }
-.busca-principal { display: block; padding: 0; border: 0; }
+.masthead-titulo-linha {
+    display: contents;
+}
 .busca-marca-topo {
+    grid-column: 2;
+    grid-row: 1;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -2312,9 +2316,26 @@ body:has(.leitor-artigo:not(.escondido)) .page-masthead { display: none; }
 @media (max-width: 768px) {
     .page-masthead { display: flex; flex-direction: column; }
     .masthead-copy { order: 1; }
+    .masthead-titulo-linha {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .page-masthead h1 {
+        font-size: clamp(3.2rem, 15vw, 5.2rem);
+        line-height: .82;
+    }
+    .busca-marca-topo {
+        margin-bottom: 0;
+        padding-top: 6px;
+        flex-shrink: 0;
+    }
+    .busca-marca-topo .ifmg-logo-word {
+        width: 3.4rem;
+        height: 4.1rem;
+    }
     .page-masthead .busca-principal { order: 2; width: 100%; margin: 26px 0 30px; }
-    .busca-marca-topo { margin-bottom: 16px; padding: 0; }
-    .busca-marca-topo .ifmg-logo-word { width: 3rem; height: 3.6rem; }
     .busca-campo, .busca-campo:focus-within { padding: 0 12px; }
     .busca-campo input, .busca-campo #main-search-input { padding: 11px 0 10px; font-size: 1rem; }
     .pastas-container, .pastas-orientacao { grid-template-columns: 1fr; }

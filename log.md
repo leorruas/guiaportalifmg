@@ -2,7 +2,7 @@
 
 ## 2026-08-27
 
-- Posicionado o logo do Instituto Federal de Minas Gerais de forma exclusiva acima da barra de pesquisa, com tamanho ampliado, alinhamento à esquerda na coluna de busca e ajuste responsivo para telas móveis; removida a repetição no título textual.
+- Posicionado o logo do Instituto Federal de Minas Gerais de forma exclusiva acima da barra de pesquisa no desktop e ao lado esquerdo do título "guia do portal" em dispositivos móveis, com tamanho ampliado e tipografia proporcional; removida a repetição no título textual.
 - Centralizado o alinhamento visual das capturas contextuais no layout dos artigos, incluindo imagem e legenda, sem alterar os arquivos de mídia.
 - Reposicionada a captura do menu Configurações no procedimento de administrador sobre grupos e permissões, colocando a imagem junto do passo que orienta abrir Configurações e localizar Grupos e Coleções.
 - Repetido o link do repositório `https://github.com/leorruas/guiaportalifmg` em cada prompt específico do artigo sobre uso de IA, para que qualquer bloco copiado isoladamente mantenha o contexto do guia.
