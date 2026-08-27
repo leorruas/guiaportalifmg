@@ -57,6 +57,9 @@ Use quando a solicitação chegou de forma incompleta ou quando você ainda não
 ```prompt
 Com base no Guia do Portal IFMG, transforme esta demanda em um passo a passo simples.
 
+O guia está neste repositório:
+https://github.com/leorruas/guiaportalifmg
+
 Minha demanda é: [cole ou resuma a solicitação].
 Meu papel no Wagtail é: [papel].
 
@@ -77,6 +80,9 @@ Use quando o conteúdo já existe, mas precisa ficar mais claro, acessível e ad
 
 ```prompt
 Revise o texto abaixo usando as orientações do Guia do Portal IFMG sobre linguagem simples, acessibilidade, SEO, metadados e organização da informação.
+
+O guia está neste repositório:
+https://github.com/leorruas/guiaportalifmg
 
 Texto:
 [cole o texto que pode ser compartilhado]
@@ -101,6 +107,9 @@ Use quando você quer conferir se uma página está pronta antes de enviar, revi
 
 ```prompt
 Monte um checklist com base no Guia do Portal IFMG para eu conferir esta tarefa no Wagtail.
+
+O guia está neste repositório:
+https://github.com/leorruas/guiaportalifmg
 
 Tarefa: [descreva a tarefa].
 Papel: [gestor, editor, moderador ou administrador].
