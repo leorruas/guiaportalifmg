@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia do Portal IFMG</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=sidebar-search-v1">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
@@ -106,6 +106,10 @@
         <div class="leitor-artigo escondido" id="leitor-artigo">
             <div class="artigo-layout-container">
                 <aside class="artigo-toc-sidebar" id="artigo-toc-sidebar">
+                    <label class="sidebar-search" for="sidebar-search-input">
+                        <span>Pesquisar no guia</span>
+                        <input type="search" id="sidebar-search-input" placeholder="pesquisar no guia..." autocomplete="off">
+                    </label>
                     <div class="toc-header">
                         <span class="toc-title">Neste artigo</span>
                     </div>
@@ -130,7 +134,7 @@
         </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=sidebar-search-v1"></script>
 </body>
 
 </html>
