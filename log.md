@@ -3,6 +3,7 @@
 ## 2026-08-29
 
 - Adicionada a busca global à lateral de leitura dos artigos. A busca da página inicial e a da sidebar agora permanecem sincronizadas, permitindo iniciar uma nova consulta sem voltar ao início.
+- Adicionada a mesma busca global à navbar fixa, sincronizada com os campos da página inicial e da sidebar.
 
 ## 2026-08-27
 

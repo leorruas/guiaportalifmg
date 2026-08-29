@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia do Portal IFMG</title>
-    <link rel="stylesheet" href="style.css?v=sidebar-search-v1">
+    <link rel="stylesheet" href="style.css?v=busca-sticky-v2">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
@@ -55,6 +55,10 @@
 
     <nav class="sticky-nav" id="sticky-nav">
         <span class="nav-logo" id="nav-logo">guia do portal <span class="ifmg-logo-word" aria-label="Instituto Federal de Minas Gerais"><svg class="ifmg-logo-mark" aria-hidden="true" focusable="false"><use href="#ifmg-logo-symbol"></use></svg></span></span>
+        <label class="nav-search-container" for="nav-search-input">
+            <span class="sr-only">Pesquisar no guia</span>
+            <input type="search" id="nav-search-input" placeholder="pesquisar..." autocomplete="off">
+        </label>
         <a href="#pastas-container" class="nav-link-pastas" id="nav-link-pastas">índice</a>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar para modo claro">tema</button>
     </nav>
@@ -134,7 +138,7 @@
         </div>
     </main>
 
-    <script src="script.js?v=sidebar-search-v1"></script>
+    <script src="script.js?v=busca-sticky-v2"></script>
 </body>
 
 </html>
