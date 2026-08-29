@@ -74,7 +74,11 @@ const informacoesCategorias = {
 
 const resumosDoIndice = {
     "Comece aqui": "acesso, navegação e primeiras tarefas",
-    "Fundamentos": "princípios para escrever, estruturar e medir"
+    "Fundamentos": "princípios para escrever, estruturar e medir",
+    "Sou administrador": "configuração do ambiente, acessos e fluxos do portal",
+    "Sou moderador": "revisão, validação e publicação dos conteúdos do grupo",
+    "Sou editor": "criação e atualização de conteúdos para a moderação",
+    "Sou gestor": "solicitação, acompanhamento e validação das entregas"
 };
 
 const ordemCategorias = [
