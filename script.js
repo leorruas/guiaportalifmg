@@ -32,7 +32,6 @@ let todasAsPastas = {};
 let artigoAtual = null;
 
 const campoTexto = document.getElementById("main-search-input");
-const campoTextoSidebar = document.getElementById("sidebar-search-input");
 const campoTextoNav = document.getElementById("nav-search-input");
 const btnPesquisar = document.getElementById("btn-pesquisar");
 const containerResultados = document.querySelector(".cards-container");
@@ -944,7 +943,7 @@ function renderizarPastas() {
 
 // Event Listeners para buscas
 function executarBuscaGlobal(termo, campoDeOrigem) {
-    [campoTexto, campoTextoSidebar, campoTextoNav].forEach(campo => {
+    [campoTexto, campoTextoNav].forEach(campo => {
         if (campo && campo !== campoDeOrigem) campo.value = termo;
     });
     filtrarArtigos(termo);
@@ -952,12 +951,6 @@ function executarBuscaGlobal(termo, campoDeOrigem) {
 
 if (campoTexto) {
     campoTexto.addEventListener("input", (e) => {
-        executarBuscaGlobal(e.target.value, e.currentTarget);
-    });
-}
-
-if (campoTextoSidebar) {
-    campoTextoSidebar.addEventListener("input", (e) => {
         executarBuscaGlobal(e.target.value, e.currentTarget);
     });
 }
@@ -1016,7 +1009,6 @@ function voltarParaHome(atualizarRota = true) {
     document.getElementById("orientacoes-iniciais")?.classList.remove("escondido");
     document.getElementById("explorar-perfis")?.classList.remove("escondido");
     if (campoTexto) campoTexto.value = "";
-    if (campoTextoSidebar) campoTextoSidebar.value = "";
     if (campoTextoNav) campoTextoNav.value = "";
     containerResultados.innerHTML = "";
     artigoAtual = null;
