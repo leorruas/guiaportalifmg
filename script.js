@@ -81,6 +81,7 @@ function obterListaDeArquivos() {
 let todosOsArtigos = [];
 let todasAsPastas = {};
 let artigoAtual = null;
+let indiceDeBuscaPronto = false;
 
 const campoTexto = document.getElementById("main-search-input");
 const campoTextoNav = document.getElementById("nav-search-input");
@@ -219,6 +220,7 @@ async function carregarTodosOsArtigos() {
 
     const resultados = await Promise.all(promessas);
     todosOsArtigos = resultados.filter(artigo => artigo !== null);
+    indiceDeBuscaPronto = true;
 
     // Organiza artigos em estrutura de pasta para o accordion
     todasAsPastas = {};
@@ -299,6 +301,12 @@ function filtrarArtigos(termoBusca) {
     if (pastasContainer) pastasContainer.classList.add("escondido");
     document.getElementById("orientacoes-iniciais")?.classList.add("escondido");
     document.getElementById("explorar-perfis")?.classList.add("escondido");
+
+    if (!indiceDeBuscaPronto) {
+        divResultados.classList.remove("escondido");
+        containerResultados.innerHTML = `<p class="mensagem-busca">Preparando a pesquisa do guia… tente novamente em instantes.</p>`;
+        return;
+    }
 
     if (normalizarTextoParaBusca(termo).length < 3) {
         containerResultados.innerHTML = `<p class="mensagem-busca">Digite ao menos <strong>três letras</strong> para encontrar uma tarefa. Por exemplo: “notícia”, “imagem” ou “permissões”.</p>`;
@@ -1108,6 +1116,13 @@ function executarBuscaGlobal(termo, campoDeOrigem) {
     filtrarArtigos(termo);
 }
 
+function limparBuscaGlobal() {
+    [campoTexto, campoTextoNav].forEach(campo => {
+        if (campo) campo.value = "";
+    });
+    filtrarArtigos("");
+}
+
 if (campoTexto) {
     campoTexto.addEventListener("input", (e) => {
         executarBuscaGlobal(e.target.value, e.currentTarget);
@@ -1125,6 +1140,22 @@ if (btnPesquisar) {
         if (campoTexto) filtrarArtigos(campoTexto.value);
     });
 }
+
+document.addEventListener("keydown", (event) => {
+    const comandoDeBusca = (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k";
+    if (comandoDeBusca) {
+        event.preventDefault();
+        const campoVisivel = campoTextoNav?.offsetParent !== null ? campoTextoNav : campoTexto;
+        campoVisivel?.focus();
+        campoVisivel?.select();
+        return;
+    }
+
+    if (event.key === "Escape" && [campoTexto, campoTextoNav].includes(document.activeElement)) {
+        limparBuscaGlobal();
+        document.activeElement?.blur();
+    }
+});
 
 if (btnVoltar) {
     btnVoltar.addEventListener("click", () => {
