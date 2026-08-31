@@ -79,7 +79,3 @@ Em conteúdo sensível — processos seletivos, assistência estudantil, políti
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da informação e encontrabilidade]] — para que a pessoa encontre o conteúdo antes de precisar de ajuda.
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/06 - Copywriting, UX Writing e storytelling digital|Copywriting, UX Writing e storytelling digital]] — para distinguir convite, orientação de interface e narrativa sem perder a utilidade pública.
 - [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|Publicar uma notícia]] — para aplicar esses critérios em uma publicação concreta.
-
-## Referência de estudo utilizada
-
-O conceito e os exemplos desta página foram adaptados para o contexto do portal a partir do material público de estudo sobre comunicação pública do vault Concursos, especialmente a distinção entre comunicação pública, institucional e governamental e os eixos de transparência, acesso, interação e escuta social.
