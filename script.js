@@ -1,29 +1,77 @@
-// Função para buscar automaticamente todos os arquivos .md do seu GitHub (sem precisar de token)
-async function obterListaDeArquivos() {
-    try {
-        const resposta = await fetch("https://api.github.com/repos/leorruas/guiaportalifmg/git/trees/main?recursive=1");
-        if (!resposta.ok) throw new Error("Erro na API do GitHub");
+// Índice publicado junto ao guia: evita depender da API do GitHub e de seu limite de requisições.
+const arquivosDoGuia = [
+    "04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/00 - Como entrar no Wagtail pela primeira vez.md",
+    "04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/01 - Como utilizar este guia.md",
+    "04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/02 - Glossário, perguntas frequentes e navegação no Wagtail.md",
+    "04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/03 - Como usar uma IA como apoio para trabalhar com este guia.md",
+    "04 - Governança & Manuais/guia-do-portal/01 - Sou gestor/01 - Sou gestor e quero solicitar ou acompanhar uma atualização.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/02 - Sou administrador e quero executar as tarefas de editor e moderador.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/03 - Sou administrador e quero criar ou atualizar conteúdo.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/04 - Sou administrador e quero revisar e publicar conteúdo.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero editar a homepage.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/11 - Sou administrador e quero configurar busca, menus e ordem de páginas.md",
+    "04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/12 - Sou administrador e quero gerenciar documentos e imagens.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero executar as tarefas de editor.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/02 - Sou moderador e quero criar ou atualizar uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/05 - Sou moderador e quero organizar documentos, imagens e coleções.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/07 - Sou moderador e quero configurar busca e menu de uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/12 - Sou moderador e quero publicar uma notícia ou processo seletivo.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero escolher o tipo de página.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero criar uma página institucional.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/05 - Sou editor e quero criar um curso.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/06 - Sou editor e quero criar um colegiado.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/07 - Sou editor e quero criar um link.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/08 - Sou editor e quero criar um programa.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/09 - Sou editor e quero criar um projeto.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/16 - Sou editor e quero usar blocos para montar uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/22 - Sou editor e quero gerenciar imagens, documentos e cadastros.md",
+    "04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página.md",
+    "04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/01 - Linguagem simples e acessibilidade.md",
+    "04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade.md",
+    "04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/03 - SEO, busca interna e metadados.md",
+    "04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics.md",
+    "04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/05 - Alcance, impressões, engajamento, CTR e conversão.md",
+    "04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/06 - Copywriting, UX Writing e storytelling digital.md",
+    "04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/07 - Comunicação pública, transparência e participação.md"
+];
 
-        const dados = await resposta.json();
-
-        // Filtra apenas os arquivos Markdown (.md), ignorando pastas internas do Obsidian/Git/Agents
-        return dados.tree
-            .filter(item => item.path.endsWith(".md") && item.path.includes("guia-do-portal/") && !item.path.includes(".obsidian") && !item.path.includes(".git") && !item.path.includes(".gemini") && !item.path.includes(".agents") && item.path !== "me.md" && item.path !== "log.md")
-            .map(item => {
-                const nomeSemExtensao = item.path.split("/").pop().replace(".md", "");
-                const partes = item.path.split("/");
-                const indiceGuia = partes.indexOf("guia-do-portal");
-                return {
-                    titulo: nomeSemExtensao,
-                    path: encodeURI(`https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/${item.path}`),
-                    sourcePath: item.path,
-                    categoria: indiceGuia >= 0 ? partes[indiceGuia + 1].replace(/^\d+\s*-\s*/, "") : ""
-                };
-            });
-    } catch (erro) {
-        console.warn("Não foi possível carregar o índice do guia:", erro);
-        return [];
-    }
+function obterListaDeArquivos() {
+    return arquivosDoGuia.map(sourcePath => {
+        const partes = sourcePath.split("/");
+        const indiceGuia = partes.indexOf("guia-do-portal");
+        return {
+            titulo: partes.at(-1).replace(/\.md$/i, ""),
+            path: encodeURI(sourcePath),
+            sourcePath,
+            categoria: partes[indiceGuia + 1].replace(/^\d+\s*-\s*/, "")
+        };
+    });
 }
 
 // Variáveis globais
