@@ -24,7 +24,7 @@ Pense na moderação como uma leitura feita por alguém que não participou da c
 - [ ] Datas, documentos, contatos e links estão vigentes e levam ao destino certo?
 - [ ] O título, o resumo e os metadados permitem encontrar e compreender o conteúdo?
 - [ ] Imagens têm texto alternativo adequado, legenda quando ela acrescenta contexto e não expõem dados pessoais sem justificativa?
-- [ ] Documentos e imagens têm nomes claros, sem abreviações obscuras ou versões ambíguas — por exemplo, `edital-monitoria-2026-retificado.pdf`, e não `edital-final-novo(2).pdf`?
+- [ ] Documentos e imagens têm nomes claros, sem abreviações obscuras ou versões ambíguas — por exemplo, `edital-monitoria-2026-retificado.pdf`, e não `edital-final-novo(2).pdf`? [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo|Veja como manter imagens e documentos do seu grupo]].
 - [ ] O arquivo publicado é a versão oficial, está na coleção correta e pode ser aberto no celular?
 - [ ] Requisitos, exceções, custos, prazos e consequências estão visíveis na página, e não apenas em um anexo?
 - [ ] Existe responsável para atualizar ou arquivar a publicação e uma data ou situação que dispara essa revisão?
