@@ -6,9 +6,10 @@ Use **Documentos** para guardar e reutilizar arquivos oficiais, como editais, re
 
 1. Abra **Documentos** no menu lateral e escolha **Adicionar documento**.
 2. Selecione a coleção autorizada antes de enviar o arquivo.
-3. Envie o arquivo, preencha um título claro, confirme a coleção e acrescente tags que ajudem na busca.
-4. Salve o documento.
-5. Volte à página e selecione o documento no bloco ou campo correspondente.
+3. Consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo|como nomear arquivos e imagens]] antes do upload, especialmente quando houver nova versão ou documento parecido na coleção.
+4. Envie o arquivo, preencha um título claro, confirme a coleção e acrescente tags que ajudem na busca.
+5. Salve o documento.
+6. Volte à página e selecione o documento no bloco ou campo correspondente.
 
 ![[imagens/manual-ifrn/image38.png|Adição de documento a uma coleção]]
 

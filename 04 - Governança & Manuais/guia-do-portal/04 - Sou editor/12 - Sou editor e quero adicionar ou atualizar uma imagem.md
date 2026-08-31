@@ -6,13 +6,14 @@ Uma imagem no Wagtail é um item reutilizável. Isso é útil porque a mesma fot
 
 1. Abra **Imagens** no menu lateral e clique em **Adicionar imagem**.
 2. Antes de enviar, escolha a coleção autorizada para sua área.
-3. Envie o arquivo e escreva um título que explique a imagem em português comum.
+3. Antes do envio, consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo|como nomear arquivos e imagens]] para evitar nomes confusos, versões ambíguas ou abreviações obscuras.
+4. Envie o arquivo e escreva um título que explique a imagem em português comum.
 
 ![[imagens/manual-ifrn/image38.png|Adição de uma imagem à coleção escolhida]]
 
-4. Use a imagem na página pelo bloco adequado ou pelo seletor de imagem disponível no campo.
-5. Informe texto alternativo quando a imagem trouxer informação. Se ela só decorar a página, marque-a como decorativa quando essa opção existir.
-6. Pré-visualize para conferir corte, legibilidade e relação com o texto ao redor.
+5. Use a imagem na página pelo bloco adequado ou pelo seletor de imagem disponível no campo.
+6. Informe texto alternativo quando a imagem trouxer informação. Se ela só decorar a página, marque-a como decorativa quando essa opção existir.
+7. Pré-visualize para conferir corte, legibilidade e relação com o texto ao redor.
 
 **Exemplo de título:** “Estudantes na biblioteca do Campus Ouro Preto” explica a foto; “IMG_9382” não.
 

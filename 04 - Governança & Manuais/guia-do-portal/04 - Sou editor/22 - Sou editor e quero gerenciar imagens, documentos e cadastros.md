@@ -2,6 +2,8 @@
 
 Imagens e documentos são conteúdo reutilizável: um mesmo arquivo pode aparecer em várias páginas. Antes de trocar ou excluir algo, pense em todas as páginas que podem estar usando aquele mesmo item.
 
+Antes de adicionar ou enviar qualquer arquivo, consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo|como nomear arquivos e imagens]].
+
 ## Imagens
 
 1. Abra **Imagens** no menu lateral.

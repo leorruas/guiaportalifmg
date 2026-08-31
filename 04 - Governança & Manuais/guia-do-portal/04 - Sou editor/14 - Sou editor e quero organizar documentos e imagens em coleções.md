@@ -10,6 +10,8 @@ Uma coleção funciona como um armário compartilhado e identificado: ela guarda
 2. Selecione **Adicionar documento** ou **Adicionar imagem**.
 3. Escolha a coleção correta antes de salvar.
 
+Antes de enviar, veja [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo|como nomear arquivos e imagens]] para identificar o item e sua versão sem ambiguidade.
+
 ![[imagens/manual-ifrn/image38.png|Adição de documentos ou imagens a uma coleção]]
 
 4. Dê um título claro e descritivo ao arquivo.
