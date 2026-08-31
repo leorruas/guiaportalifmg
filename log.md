@@ -122,4 +122,5 @@
 - 2026-08-31: A busca passou a informar quando o índice ainda está sendo preparado e ganhou atalhos: Cmd/Ctrl+K foca o campo e Esc limpa a consulta ativa.
 - 2026-08-31: Adicionados filtros de resultados por perfil (administrador, moderador, editor e gestor), com o estado inicial “todos” e contagem atualizada para cada recorte.
 - 2026-08-31: Corrigido o contraste dos filtros de perfil no hover e no estado selecionado; o texto agora permanece escuro e legível sobre o fundo verde.
+- 2026-08-31: Ajustada a disposição dos filtros de perfil para manter os cinco controles em uma única linha em telas amplas, com reorganização em duas colunas em telas compactas.
 - 2026-08-31: Os procedimentos de upload de imagens e documentos passaram a apontar para a orientação de nomes claros, versões identificáveis e organização de arquivos.
