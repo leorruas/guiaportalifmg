@@ -47,6 +47,7 @@ Os fundamentos não substituem o procedimento; eles explicam os critérios que o
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da informação e encontrabilidade]] — para menus, rótulos, busca e links relacionados.
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/03 - SEO, busca interna e metadados|SEO, busca interna e metadados]] — para títulos, resumos, URLs e descoberta.
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]] — para acompanhar desempenho e priorizar melhorias.
+- [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/07 - Comunicação pública, transparência e participação|Comunicação pública, transparência e participação]] — para publicar informações orientadas a direitos, autonomia e participação.
 
 ## 4. Antes de concluir uma ação
 
