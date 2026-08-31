@@ -244,6 +244,42 @@ async function carregarTodosOsArtigos() {
     tratarRotaDaUrl();
 }
 
+function normalizarTextoParaBusca(texto = "") {
+    return String(texto)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLocaleLowerCase("pt-BR");
+}
+
+function termosDaBusca(termoBusca) {
+    return normalizarTextoParaBusca(termoBusca)
+        .replace(/[^\p{L}\p{N}]+/gu, " ")
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean);
+}
+
+function contemTodosOsTermos(texto, termos) {
+    const textoNormalizado = normalizarTextoParaBusca(texto);
+    return termos.every(termo => textoNormalizado.includes(termo));
+}
+
+function criarIndiceNormalizado(texto = "") {
+    const caracteres = Array.from(String(texto));
+    const origens = [];
+    let normalizado = "";
+
+    caracteres.forEach((caractere, indiceOriginal) => {
+        const trechoNormalizado = normalizarTextoParaBusca(caractere);
+        for (const caractereNormalizado of trechoNormalizado) {
+            normalizado += caractereNormalizado;
+            origens.push(indiceOriginal);
+        }
+    });
+
+    return { caracteres, normalizado, origens };
+}
+
 function filtrarArtigos(termoBusca) {
     leitorDePerfil.classList.add("escondido");
     if (!termoBusca || termoBusca.trim() === "") {
@@ -255,7 +291,8 @@ function filtrarArtigos(termoBusca) {
         return;
     }
 
-    const termo = termoBusca.toLowerCase().trim();
+    const termo = termoBusca.trim();
+    const termos = termosDaBusca(termo);
     
     // Oculta container de pastas ao fazer busca
     const pastasContainer = document.getElementById("pastas-container");
@@ -263,26 +300,64 @@ function filtrarArtigos(termoBusca) {
     document.getElementById("orientacoes-iniciais")?.classList.add("escondido");
     document.getElementById("explorar-perfis")?.classList.add("escondido");
 
-    if (termo.length < 3) {
+    if (normalizarTextoParaBusca(termo).length < 3) {
         containerResultados.innerHTML = `<p class="mensagem-busca">Digite ao menos <strong>três letras</strong> para encontrar uma tarefa. Por exemplo: “notícia”, “imagem” ou “permissões”.</p>`;
         return;
     }
 
     const filtrados = todosOsArtigos
-        .filter(artigo => artigo.titulo.toLowerCase().includes(termo) || artigo.conteudo.toLowerCase().includes(termo))
+        .filter(artigo => contemTodosOsTermos(`${artigo.titulo} ${artigo.categoria} ${artigo.conteudo}`, termos))
         .sort((a, b) => {
-            const prioridadeA = a.titulo.toLowerCase().includes(termo) ? 0 : 1;
-            const prioridadeB = b.titulo.toLowerCase().includes(termo) ? 0 : 1;
+            const prioridade = (artigo) => {
+                const titulo = normalizarTextoParaBusca(artigo.titulo);
+                const categoria = normalizarTextoParaBusca(artigo.categoria);
+                const consulta = normalizarTextoParaBusca(termo);
+                if (titulo === consulta) return 0;
+                if (titulo.includes(consulta)) return 1;
+                if (contemTodosOsTermos(artigo.titulo, termos)) return 2;
+                if (contemTodosOsTermos(categoria, termos)) return 3;
+                return 4;
+            };
+            const prioridadeA = prioridade(a);
+            const prioridadeB = prioridade(b);
             return prioridadeA - prioridadeB || a.titulo.localeCompare(b.titulo, "pt-BR", { numeric: true });
         });
 
-    exibirResultados(filtrados, termo);
+    exibirResultados(filtrados, termo, termos);
 }
 
 function destacarTexto(texto, termo) {
-    if (!termo) return texto;
-    const regex = new RegExp(`(${termo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-    return texto.replace(regex, '<mark class="highlight">$1</mark>');
+    const termos = termosDaBusca(termo);
+    if (!termos.length) return escaparHtml(texto);
+
+    const indice = criarIndiceNormalizado(texto);
+    const intervalos = [];
+    termos.forEach(termoNormalizado => {
+        let posicao = indice.normalizado.indexOf(termoNormalizado);
+        while (posicao !== -1) {
+            const inicio = indice.origens[posicao];
+            const fim = indice.origens[posicao + termoNormalizado.length - 1] + 1;
+            intervalos.push([inicio, fim]);
+            posicao = indice.normalizado.indexOf(termoNormalizado, posicao + termoNormalizado.length);
+        }
+    });
+
+    const mesclados = intervalos
+        .sort((a, b) => a[0] - b[0])
+        .reduce((resultado, intervalo) => {
+            const ultimo = resultado.at(-1);
+            if (ultimo && intervalo[0] <= ultimo[1]) ultimo[1] = Math.max(ultimo[1], intervalo[1]);
+            else resultado.push([...intervalo]);
+            return resultado;
+        }, []);
+
+    let cursor = 0;
+    return mesclados.map(([inicio, fim]) => {
+        const antes = escaparHtml(indice.caracteres.slice(cursor, inicio).join(""));
+        const marcado = escaparHtml(indice.caracteres.slice(inicio, fim).join(""));
+        cursor = fim;
+        return `${antes}<mark class="highlight">${marcado}</mark>`;
+    }).join("") + escaparHtml(indice.caracteres.slice(cursor).join(""));
 }
 
 function escaparHtml(texto) {
@@ -300,7 +375,13 @@ function removerFrontmatter(markdown) {
 function extrairTrechoRelevante(conteudo, termo) {
     const conteudoSemFrontmatter = removerFrontmatter(conteudo);
     const textoLimpo = conteudoSemFrontmatter.replace(/==/g, '').replace(/[#*`_~\[\]]/g, ' ');
-    const pos = textoLimpo.toLowerCase().indexOf(termo.toLowerCase());
+    const indice = criarIndiceNormalizado(textoLimpo);
+    const posicaoNormalizada = Math.min(...termosDaBusca(termo)
+        .map(termoNormalizado => indice.normalizado.indexOf(termoNormalizado))
+        .filter(posicao => posicao >= 0));
+    const pos = Number.isFinite(posicaoNormalizada)
+        ? indice.caracteres.slice(0, indice.origens[posicaoNormalizada]).join("").length
+        : -1;
     
     if (pos === -1) {
         return textoLimpo.substring(0, 150) + "...";
@@ -338,10 +419,11 @@ function exibirResultados(artigos, termo = "") {
         grupos[artigo.categoria].push(artigo);
     });
 
+    const termos = termosDaBusca(termo);
     ordenarCategorias(Object.keys(grupos))
         .sort((a, b) => {
-            const tituloEmA = grupos[a].some(artigo => artigo.titulo.toLowerCase().includes(termo));
-            const tituloEmB = grupos[b].some(artigo => artigo.titulo.toLowerCase().includes(termo));
+            const tituloEmA = grupos[a].some(artigo => contemTodosOsTermos(artigo.titulo, termos));
+            const tituloEmB = grupos[b].some(artigo => contemTodosOsTermos(artigo.titulo, termos));
             return Number(tituloEmB) - Number(tituloEmA);
         })
         .forEach(categoria => {

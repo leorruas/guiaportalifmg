@@ -117,3 +117,4 @@
 - 2026-08-31: Incluído no checklist de moderação um link direto para o procedimento de manutenção de imagens e documentos ao revisar nomes e versões de arquivos.
 - 2026-08-31: Substituída a listagem dependente da API pública do GitHub por um índice local publicado com o guia, evitando que as pastas desapareçam quando o limite de requisições da API é atingido.
 - 2026-08-31: Corrigida a leitura do índice local para obter o conteúdo Markdown pela versão bruta do repositório, pois o GitHub Pages não publica os arquivos do vault como páginas estáticas.
+- 2026-08-31: Pesquisa do guia passou a ignorar acentos, combinar todas as palavras informadas e priorizar correspondências mais próximas no título e na categoria antes de resultados apenas no conteúdo.
