@@ -67,7 +67,10 @@ function obterListaDeArquivos() {
         const indiceGuia = partes.indexOf("guia-do-portal");
         return {
             titulo: partes.at(-1).replace(/\.md$/i, ""),
-            path: encodeURI(sourcePath),
+            // O GitHub Pages publica a interface, mas não expõe os Markdown
+            // do vault. O conteúdo vem do endereço bruto do mesmo repositório,
+            // sem usar a API sujeita a limite de requisições.
+            path: encodeURI(`https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/${sourcePath}`),
             sourcePath,
             categoria: partes[indiceGuia + 1].replace(/^\d+\s*-\s*/, "")
         };
