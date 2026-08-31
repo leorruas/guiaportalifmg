@@ -467,7 +467,8 @@ function exibirResultados(artigos, termo = "") {
             card.addEventListener("click", (event) => {
                 if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
                 event.preventDefault();
-                abrirArtigo(artigo.titulo, artigo.conteudo);
+                const abrirNaOcorrencia = !contemTodosOsTermos(artigo.titulo, termos);
+                abrirArtigo(artigo.titulo, artigo.conteudo, true, abrirNaOcorrencia ? termos : []);
             });
 
             subCardsContainer.appendChild(card);
@@ -540,7 +541,23 @@ function abrirPerfil(categoria, atualizarRota = true) {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
+function encontrarAlvoDaBuscaNoArtigo(termos) {
+    if (!termos?.length) return null;
+
+    const secoes = Array.from(artigoCorpo.querySelectorAll("h2"));
+    for (const secao of secoes) {
+        let textoDaSecao = secao.textContent || "";
+        for (let no = secao.nextElementSibling; no && no.tagName !== "H2"; no = no.nextElementSibling) {
+            textoDaSecao += ` ${no.textContent || ""}`;
+        }
+        if (contemTodosOsTermos(textoDaSecao, termos)) return secao;
+    }
+
+    return Array.from(artigoCorpo.querySelectorAll("p, li, blockquote, td"))
+        .find(elemento => contemTodosOsTermos(elemento.textContent, termos)) || null;
+}
+
+function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca = []) {
     divResultados.classList.add("escondido");
     leitorDePerfil.classList.add("escondido");
     const pastasContainer = document.getElementById("pastas-container");
@@ -656,7 +673,12 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true) {
 
     gerarTableOfContents();
     leitorDeArtigo.classList.remove("escondido");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const alvoDaBusca = encontrarAlvoDaBuscaNoArtigo(termosBusca);
+    if (alvoDaBusca) {
+        window.setTimeout(() => alvoDaBusca.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+    } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 }
 
 function renderizarContextoDoArtigo(artigo) {
