@@ -1062,6 +1062,38 @@ mark:not(.highlight) {
     line-height: 1.45;
 }
 
+.busca-filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 18px;
+    margin: 0 0 22px;
+    border-top: 1px solid color-mix(in srgb, var(--text) 24%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--text) 24%, transparent);
+}
+
+.busca-filtro {
+    min-height: 38px;
+    padding: 0;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font: inherit;
+    font-size: .78rem;
+    font-weight: 650;
+    text-transform: lowercase;
+}
+
+.busca-filtro:hover,
+.busca-filtro:focus-visible,
+.busca-filtro.ativo {
+    border-bottom-color: var(--accent-blue);
+    color: var(--accent-blue);
+    outline: none;
+}
+
 .resumo-busca { color: var(--accent-blue); }
 .mensagem-busca strong { color: var(--text); }
 

@@ -82,6 +82,8 @@ let todosOsArtigos = [];
 let todasAsPastas = {};
 let artigoAtual = null;
 let indiceDeBuscaPronto = false;
+let resultadosDaBuscaAtual = [];
+let filtroDePerfilAtivo = "";
 
 const campoTexto = document.getElementById("main-search-input");
 const campoTextoNav = document.getElementById("nav-search-input");
@@ -331,7 +333,9 @@ function filtrarArtigos(termoBusca) {
             return prioridadeA - prioridadeB || a.titulo.localeCompare(b.titulo, "pt-BR", { numeric: true });
         });
 
-    exibirResultados(filtrados, termo, termos);
+    resultadosDaBuscaAtual = filtrados;
+    filtroDePerfilAtivo = "";
+    exibirResultados(filtrados, termo);
 }
 
 function destacarTexto(texto, termo) {
@@ -415,14 +419,52 @@ function exibirResultados(artigos, termo = "") {
         return;
     }
 
+    const filtrosDePerfil = [
+        { valor: "", rotulo: "todos" },
+        { valor: "Sou administrador", rotulo: "administrador" },
+        { valor: "Sou moderador", rotulo: "moderador" },
+        { valor: "Sou editor", rotulo: "editor" },
+        { valor: "Sou gestor", rotulo: "gestor" }
+    ];
+    const resultadosFiltrados = filtroDePerfilAtivo
+        ? artigos.filter(artigo => artigo.categoria === filtroDePerfilAtivo)
+        : artigos;
+
+    const filtros = document.createElement("div");
+    filtros.className = "busca-filtros";
+    filtros.setAttribute("aria-label", "Filtrar resultados por perfil");
+    filtrosDePerfil.forEach(({ valor, rotulo }) => {
+        const filtro = document.createElement("button");
+        const selecionado = filtroDePerfilAtivo === valor;
+        filtro.type = "button";
+        filtro.className = `busca-filtro${selecionado ? " ativo" : ""}`;
+        filtro.textContent = rotulo;
+        filtro.setAttribute("aria-pressed", String(selecionado));
+        filtro.addEventListener("click", () => {
+            filtroDePerfilAtivo = valor;
+            exibirResultados(resultadosDaBuscaAtual, termo);
+        });
+        filtros.appendChild(filtro);
+    });
+    containerResultados.appendChild(filtros);
+
     const resumoBusca = document.createElement("p");
     resumoBusca.className = "resumo-busca";
-    resumoBusca.textContent = `${artigos.length} ${artigos.length === 1 ? "procedimento encontrado" : "procedimentos encontrados"} para “${termo}”`;
+    const sufixoDoFiltro = filtroDePerfilAtivo ? ` em ${tituloDoIndice(filtroDePerfilAtivo)}` : "";
+    resumoBusca.textContent = `${resultadosFiltrados.length} ${resultadosFiltrados.length === 1 ? "procedimento encontrado" : "procedimentos encontrados"}${sufixoDoFiltro} para “${termo}”`;
     containerResultados.appendChild(resumoBusca);
+
+    if (resultadosFiltrados.length === 0) {
+        const mensagem = document.createElement("p");
+        mensagem.className = "mensagem-busca";
+        mensagem.textContent = "Não há procedimentos desse perfil para esta pesquisa.";
+        containerResultados.appendChild(mensagem);
+        return;
+    }
 
     // Agrupa resultados por categoria (pasta)
     const grupos = {};
-    artigos.forEach(artigo => {
+    resultadosFiltrados.forEach(artigo => {
         if (!grupos[artigo.categoria]) grupos[artigo.categoria] = [];
         grupos[artigo.categoria].push(artigo);
     });
@@ -1120,6 +1162,8 @@ function limparBuscaGlobal() {
     [campoTexto, campoTextoNav].forEach(campo => {
         if (campo) campo.value = "";
     });
+    resultadosDaBuscaAtual = [];
+    filtroDePerfilAtivo = "";
     filtrarArtigos("");
 }
 
