@@ -1086,12 +1086,17 @@ mark:not(.highlight) {
     text-transform: lowercase;
 }
 
-.busca-filtro:hover,
-.busca-filtro:focus-visible,
-.busca-filtro.ativo {
+.busca-filtro:focus-visible {
     border-bottom-color: var(--accent-blue);
     color: var(--accent-blue);
     outline: none;
+}
+
+.busca-filtro:hover,
+.busca-filtro.ativo {
+    border-bottom-color: var(--accent-blue);
+    background-color: var(--accent-blue);
+    color: #07160a;
 }
 
 .resumo-busca { color: var(--accent-blue); }

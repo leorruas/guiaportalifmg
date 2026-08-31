@@ -121,3 +121,4 @@
 - 2026-08-31: Resultados encontrados apenas no corpo de um artigo agora abrem diretamente na seção ou no trecho que contém os termos pesquisados.
 - 2026-08-31: A busca passou a informar quando o índice ainda está sendo preparado e ganhou atalhos: Cmd/Ctrl+K foca o campo e Esc limpa a consulta ativa.
 - 2026-08-31: Adicionados filtros de resultados por perfil (administrador, moderador, editor e gestor), com o estado inicial “todos” e contagem atualizada para cada recorte.
+- 2026-08-31: Corrigido o contraste dos filtros de perfil no hover e no estado selecionado; o texto agora permanece escuro e legível sobre o fundo verde.
