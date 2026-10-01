@@ -18,6 +18,8 @@ Faça estas perguntas:
 
 ## Tipos de conteúdo e procedimentos
 
+Quando houver um procedimento próprio, o link direto aparece logo abaixo da descrição do tipo.
+
 ### Página institucional
 
 Use para serviço, setor, tema ou orientação que permanece útil. **Perfil mínimo: editor.**
@@ -88,21 +90,17 @@ Use para agrupar seleções da mesma classificação. **Perfil mínimo: moderado
 
 Use para atividade com data, local, público e participação. **Perfil mínimo: editor.** Ainda não há procedimento específico.
 
-### Comunicado
-
-Use para aviso objetivo, temporário e com ação ou vigência clara. **Perfil mínimo: editor.** Ainda não há procedimento específico.
-
-## Evento e Comunicado
-
-Enquanto não houver procedimentos específicos para esses dois tipos, use a regra geral de criação e edição:
-
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página|Criar ou editar uma página]]
 
-Para **Evento**, deixe claros data, horário, local, público, forma de participação ou inscrição e responsável pelas informações.
+Ao criar um evento, deixe claros data, horário, local, público, forma de participação ou inscrição e responsável pelas informações.
 
-Para **Comunicado**, informe logo no início o que mudou, quem é afetado, o que a pessoa precisa fazer e até quando a orientação vale.
+## Quando a demanda chega como “comunicado”
 
-Essas orientações preservam a cobertura atual do guia, mas Evento e Comunicado continuam registrados como lacunas de documentação específica.
+**Comunicado não é um tipo de página do Portal.** É uma forma de nomear um aviso. Por isso, não procure um molde chamado Comunicado no Wagtail: escolha um dos tipos existentes pela finalidade da informação.
+
+- Se o aviso comunica um fato novo, uma mudança ou uma informação com prazo editorial, use [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|Notícia]].
+- Se a orientação precisa permanecer disponível como referência enquanto for válida, use [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero criar uma página institucional|Página institucional]].
+- Se o aviso pertence a um conteúdo que já existe, como processo seletivo, curso, programa ou projeto, prefira atualizar essa página em vez de criar um conteúdo separado chamado “Comunicado”.
 
 ## Como diferenciar casos próximos
 
@@ -110,7 +108,7 @@ Essas orientações preservam a cobertura atual do guia, mas Evento e Comunicado
 - Se conta um fato novo ou uma ocorrência, tende a ser **Notícia**.
 - Se organiza edital, etapas e resultados, é **Processo seletivo**.
 - Se anuncia uma atividade com data e participação, é **Evento**.
-- Se avisa uma mudança ou orientação temporária, é **Comunicado**.
+- Se a demanda é chamada de **comunicado**, esse nome sozinho não define o tipo; escolha um dos tipos acima pela finalidade e pela duração da informação.
 - Se a finalidade é apenas levar a outro destino, use **Link**.
 - Se representa uma iniciativa contínua, considere **Programa**; se precisa de identidade e estrutura próprias, considere **Projeto**.
 

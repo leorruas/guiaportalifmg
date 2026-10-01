@@ -261,3 +261,11 @@
 - Corrigido o alias singular `permissão` após teste de regressão mostrar que apenas a forma plural não cobria a consulta esperada.
 - Validados sintaxe dos dois arquivos JavaScript, ordem de carregamento, ausência do modelo canônico duplicado em `script.js`, IDs sem duplicação, aliases em formato consistente e consultas básicas de regressão.
 
+## 2026-10-01 — Correção do catálogo: comunicado não é tipo de página
+
+- Corrigido `04 - Sou editor/03 - Sou editor e quero escolher o tipo de página.md` para retirar Comunicado do catálogo de tipos do Portal.
+- Mantido “comunicado” como demanda editorial pesquisável: E03 agora orienta a escolher um tipo existente pela finalidade, com encaminhamento para Notícia, Página institucional ou atualização do conteúdo ao qual o aviso pertence.
+- Evento permanece como tipo de conteúdo sem procedimento próprio e passa a apontar explicitamente para a tarefa geral de criar ou editar uma página enquanto essa lacuna não é coberta.
+- Ajustado `04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo.md` para não registrar Comunicado como lacuna de procedimento.
+- Atualizada a auditoria da fase 2 para registrar apenas Evento como lacuna de cobertura e corrigir a decisão canônica sobre Comunicado.
+- Mantidos os links diretos já existentes do catálogo para os procedimentos específicos de Página institucional, Notícia, Processo seletivo, Curso, Colegiado, Link, Programa, Projeto, Campus e pastas estruturais.

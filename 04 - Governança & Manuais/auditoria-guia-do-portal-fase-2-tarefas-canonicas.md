@@ -76,14 +76,13 @@ Estas tarefas têm `perfil mínimo = editor` e, por herança, também aparecem p
 
 ### Lacunas de cobertura do editor
 
-E21 menciona dois tipos de conteúdo que não têm procedimento próprio. Como E21 será absorvido por E03, essas orientações não devem desaparecer.
+E21 tratava Evento e Comunicado como dois tipos de conteúdo sem procedimento próprio. A revisão confirmou que apenas Evento é um tipo de página que ainda precisa de procedimento específico. “Comunicado” é uma finalidade editorial e deve ser encaminhado para um tipo existente na referência E03.
 
 | ID canônico | Tarefa | Estado |
 | --- | --- | --- |
 | `task-event-create` | Criar um evento | lacuna: criar procedimento próprio durante a consolidação editorial |
-| `task-announcement-create` | Criar um comunicado | lacuna: criar procedimento próprio durante a consolidação editorial |
 
-Essas duas lacunas não exigem criar arquivos nesta fase. Elas ficam registradas para que a fusão de E21 não elimine cobertura existente.
+A lacuna de Evento não exige criar arquivo nesta fase. A orientação sobre comunicado permanece em E03 para que a fusão de E21 não elimine a cobertura dessa demanda editorial.
 
 ## Tarefas canônicas de moderador
 
@@ -147,7 +146,7 @@ Os sete fundamentos permanecem como referências transversais e não participam 
 | A11 | `task-page-search-menu` + `task-page-reorder` + `task-groups-permissions` |
 | A12 | `task-image-manage` + `task-document-manage` + `task-collection-use` + `task-collection-admin` |
 | E16 | `task-blocks-use` |
-| E21 | `task-content-type-choose` + procedimentos específicos; gera as lacunas Evento e Comunicado |
+| E21 | `task-content-type-choose` + procedimentos específicos; gera a lacuna Evento e corrige Comunicado como finalidade editorial, não como tipo de página |
 | E22 | `task-image-manage` + `task-document-manage` + `task-collection-use` + `task-auxiliary-registers` |
 | E18 | permanece como `task-page-check`; edição vai para E24, comentários para E19 e envio para E20 |
 
@@ -198,7 +197,7 @@ A interface deve agrupar por responsabilidade para evitar uma lista longa, mas n
 
 1. E18 menciona agendamento dentro de uma página de editor, enquanto M11 trata agendamento como capacidade de moderador. Na consolidação, o procedimento precisa refletir a configuração real de permissões do Portal IFMG.
 2. E22 sugere alteração de cadastros auxiliares quando o menu estiver disponível, enquanto A09 os define como responsabilidade administrativa. A arquitetura canônica adota A09 como referência até que a permissão real seja confirmada.
-3. Evento e Comunicado aparecem no catálogo de tipos, mas não têm procedimentos próprios.
+3. Evento permanece no catálogo sem procedimento próprio. Comunicado não é um tipo de página e deve ser tratado em E03 como uma demanda editorial encaminhada para um tipo existente.
 4. O uso de “publicar” em E10 e E11 deve ser retirado dos títulos porque o editor não toma a decisão final de publicação segundo o fluxo documentado no próprio guia.
 
 ## Resultado da fase 2
@@ -210,7 +209,7 @@ A fase 2 define:
 - herança de tarefas sem duplicação de conteúdo;
 - tarefas canônicas separadas por perfil mínimo;
 - artigos que serão absorvidos, divididos ou reduzidos a referência;
-- duas lacunas de conteúdo: Evento e Comunicado;
+- uma lacuna de conteúdo: Evento; Comunicado passa a ser tratado como finalidade editorial, não como tipo de página;
 - identificadores estáveis que podem sustentar os metadados e a busca nas fases posteriores.
 
 A próxima fase deve aplicar a hierarquia de perfis ao modelo do guia sem ainda fazer uma consolidação editorial grande.
