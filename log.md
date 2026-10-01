@@ -421,3 +421,16 @@
 - A regra respeita a hierarquia cumulativa editor → moderador → administrador: uma tarefa de editor continua indicando editor como requisito mínimo mesmo quando aberta a partir do perfil de moderador ou administrador.
 - Páginas de visão, fundamentos, orientações gerais e o papel de gestor mantêm o contexto editorial anterior, já que gestor não precisa operar o Wagtail.
 - Atualizada a versão de cache de `script.js` em `index.html`.
+
+## 2026-10-01 — Consolidação das regras do AGENTS.md
+
+- Atualizado `AGENTS.md` para refletir a arquitetura final do Guia do Portal após a consolidação editorial e técnica.
+- Formalizada a regra de uma única tarefa canônica por ação e a herança cumulativa `editor → moderador → administrador`, mantendo gestor fora dessa cadeia.
+- Registradas regras para páginas absorvidas, IDs estáveis, `tituloCanonico`, aliases e separação entre visão de papel e procedimento operacional.
+- Definidas as responsabilidades de `data/guide-metadata.js`, `search.js`, `navigation.js` e `script.js`, incluindo encapsulamento em IIFE/namespace explícito para evitar colisões no escopo global.
+- Documentada a ordem de carregamento `metadados → busca → navegação → script principal`, a necessidade de versionar cache no `index.html` após alterações em arquivos carregados pelo navegador e a preferência por fallback não fatal para módulos auxiliares.
+- Formalizados os comandos de validação `node scripts/generate-guide-index.mjs --check` e `node scripts/test-search-regression.mjs`, além da obrigação de manter o índice gerado e o corpus de regressão atualizados.
+- Registradas as restrições atuais do fuzzy: somente fallback sem resultado exato, no máximo uma palavra divergente, termo com pelo menos cinco caracteres, distância máxima 1 e comparação limitada a título/aliases.
+- Reforçada a regra de não inferir campos, permissões ou comportamento do Wagtail quando a evidência disponível for insuficiente; nesses casos, deve-se pedir confirmação ou consultar fonte oficial identificada.
+- Revisão final confirmou a presença das salvaguardas de canonicidade, hierarquia, metadados, índice, regressão, modularização, cache, fuzzy e não inferência.
+
