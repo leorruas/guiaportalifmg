@@ -14,7 +14,7 @@ No Guia do Portal IFMG, essa é uma tarefa de moderador porque a pasta altera a 
 ![[imagens/manual-ifrn/image45.png|Seleção do local e do tipo de pasta de processos seletivos]]
 
 5. Salve e confira se a pasta aparece na estrutura esperada.
-6. Valide que os editores responsáveis receberam permissão somente para a pasta e a coleção que usarão.
+6. Confirme que os editores responsáveis conseguem acessar somente a pasta e as coleções necessárias. Se o acesso estiver incorreto, encaminhe o ajuste ao administrador em [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]].
 
 ## Regra de classificação
 
