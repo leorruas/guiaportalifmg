@@ -306,3 +306,15 @@
 - Mantido o comportamento de progresso parcial até a tela terminar de montar, seguido de conclusão e desaparecimento, com duração mínima curta para evitar flashes em transições rápidas.
 - Adicionado fallback de segurança para encerrar o loader em caso de falha e tratamento de `prefers-reduced-motion`.
 - Aplicado o tema salvo antes da primeira pintura para que o loader inicial use o fundo e o destaque corretos desde a abertura.
+
+## 2026-10-01 — Índice automático dos artigos do guia
+
+- Criado `data/guide-index.json` como índice publicado dos artigos do `guia-do-portal`, com 59 arquivos Markdown e sem timestamp para manter diffs determinísticos.
+- Criado `scripts/generate-guide-index.mjs`, que percorre recursivamente a pasta do guia, valida caminhos em Unicode NFC, ordena os artigos e gera o índice.
+- O gerador aceita `--check` para validar se o JSON versionado corresponde exatamente à árvore atual, sem reescrever arquivos.
+- Criado o workflow `.github/workflows/validate-guide-index.yml` para executar essa validação em mudanças na pasta do guia, no índice, no gerador ou no próprio workflow.
+- Removida de `script.js` a lista manual `arquivosDoGuia`; a interface passa a carregar `data/guide-index.json` com `cache: no-store` e derivar título, categoria e URL a partir dos caminhos gerados.
+- Adicionada mensagem visível na home quando o índice inicial não puder ser carregado, evitando uma falha silenciosa com perfis vazios.
+- Preservada a versão de cache do loader já existente e incrementado apenas o sufixo do `script.js` para forçar o navegador a receber a nova lógica.
+- Validação final confirmou correspondência exata entre os 59 Markdown da árvore e os 59 itens do índice, ausência da lista manual, sintaxe válida do `script.js`, validação NFC útil e gatilhos completos do workflow.
+
