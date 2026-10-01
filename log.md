@@ -299,3 +299,10 @@
 - Encapsulado `data/guide-metadata.js` em uma IIFE, mantendo apenas `window.GuiaMetadata` como API pública para `script.js`.
 - Atualizada a versão de cache do arquivo de metadados em `index.html` para forçar o navegador a carregar a correção.
 
+## 2026-10-01 — Loader linear na navegação
+
+- Adicionado loader linear inspirado no leitor do repositório `puc`, exibido durante a carga inicial da home e nas transições para home, perfis e artigos.
+- A linha do loader usa `var(--accent-blue)`, acompanhando automaticamente a cor de destaque do Guia do Portal nos temas escuro e claro.
+- Mantido o comportamento de progresso parcial até a tela terminar de montar, seguido de conclusão e desaparecimento, com duração mínima curta para evitar flashes em transições rápidas.
+- Adicionado fallback de segurança para encerrar o loader em caso de falha e tratamento de `prefers-reduced-motion`.
+- Aplicado o tema salvo antes da primeira pintura para que o loader inicial use o fundo e o destaque corretos desde a abertura.

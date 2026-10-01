@@ -1,16 +1,171 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="app-loading">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia do Portal IFMG</title>
+    <script>
+        (function () {
+            var raiz = document.documentElement;
+
+            try {
+                var temaSalvo = localStorage.getItem("tema-guia-portal");
+                var temaDoSistema = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches
+                    ? "light"
+                    : "dark";
+                raiz.setAttribute("data-theme", temaSalvo || temaDoSistema);
+            } catch (erro) {}
+
+            window.GUIA_FINALIZAR_CARREGAMENTO = function () {
+                if (!raiz.classList.contains("app-loading")) return;
+
+                if (window.GUIA_LOADER_FALLBACK) {
+                    clearTimeout(window.GUIA_LOADER_FALLBACK);
+                    window.GUIA_LOADER_FALLBACK = null;
+                }
+
+                var loader = document.getElementById("initial-loader");
+                if (!loader) {
+                    raiz.classList.remove("app-loading");
+                    return;
+                }
+
+                loader.classList.add("is-complete");
+
+                window.setTimeout(function () {
+                    raiz.classList.remove("app-loading");
+                    loader.classList.add("is-leaving");
+
+                    window.setTimeout(function () {
+                        if (loader.parentNode) loader.parentNode.removeChild(loader);
+                    }, 220);
+                }, 180);
+            };
+
+            window.GUIA_MOSTRAR_TRANSICAO = function (rotulo) {
+                if (raiz.classList.contains("app-loading")) return;
+
+                var existente = document.getElementById("route-loader");
+                if (existente && existente.parentNode) existente.parentNode.removeChild(existente);
+
+                var loader = document.createElement("div");
+                loader.id = "route-loader";
+                loader.className = "app-loader";
+                loader.setAttribute("role", "status");
+                loader.setAttribute("aria-label", rotulo || "Carregando conteúdo");
+                loader.innerHTML = '<div class="app-loader__line" aria-hidden="true"></div>';
+                loader.dataset.startedAt = String(Date.now());
+                document.body.appendChild(loader);
+
+                if (window.GUIA_ROUTE_LOADER_FALLBACK) {
+                    clearTimeout(window.GUIA_ROUTE_LOADER_FALLBACK);
+                }
+                window.GUIA_ROUTE_LOADER_FALLBACK = window.setTimeout(function () {
+                    window.GUIA_FINALIZAR_TRANSICAO();
+                }, 10000);
+            };
+
+            window.GUIA_FINALIZAR_TRANSICAO = function () {
+                var loader = document.getElementById("route-loader");
+                if (!loader) return;
+
+                if (window.GUIA_ROUTE_LOADER_FALLBACK) {
+                    clearTimeout(window.GUIA_ROUTE_LOADER_FALLBACK);
+                    window.GUIA_ROUTE_LOADER_FALLBACK = null;
+                }
+
+                var inicio = Number(loader.dataset.startedAt || Date.now());
+                var restante = Math.max(0, 260 - (Date.now() - inicio));
+
+                window.setTimeout(function () {
+                    loader.classList.add("is-complete");
+
+                    window.setTimeout(function () {
+                        loader.classList.add("is-leaving");
+
+                        window.setTimeout(function () {
+                            if (loader.parentNode) loader.parentNode.removeChild(loader);
+                        }, 220);
+                    }, 140);
+                }, restante);
+            };
+
+            window.GUIA_LOADER_FALLBACK = window.setTimeout(function () {
+                window.GUIA_FINALIZAR_CARREGAMENTO();
+            }, 10000);
+        }());
+    </script>
+    <style>
+        html.app-loading,
+        html.app-loading body {
+            overflow: hidden;
+        }
+
+        html.app-loading body > :not(.app-loader):not(script) {
+            visibility: hidden;
+        }
+
+        .app-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg, #101010);
+            opacity: 1;
+        }
+
+        .app-loader__line {
+            width: min(200px, 44vw);
+            height: 2px;
+            background: var(--accent-blue, #74b77b);
+            transform: scaleX(0);
+            transform-origin: left center;
+            animation: guia-loader-progress 1.8s cubic-bezier(.2, .8, .2, 1) forwards;
+            transition: transform 180ms ease-out;
+        }
+
+        .app-loader.is-complete .app-loader__line {
+            animation: none;
+            transform: scaleX(1);
+        }
+
+        .app-loader.is-leaving {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 200ms ease;
+        }
+
+        @keyframes guia-loader-progress {
+            0% { transform: scaleX(0); }
+            38% { transform: scaleX(.42); }
+            72% { transform: scaleX(.72); }
+            100% { transform: scaleX(.9); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .app-loader__line {
+                animation: none;
+                transform: scaleX(.75);
+                transition: none;
+            }
+
+            .app-loader.is-leaving {
+                transition: none;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="style.css?v=busca-relevancia-v4">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 
 <body>
+    <div id="initial-loader" class="app-loader" role="status" aria-label="Carregando o guia">
+        <div class="app-loader__line" aria-hidden="true"></div>
+    </div>
     <svg class="ifmg-logo-source" aria-hidden="true" focusable="false" width="0" height="0">
         <symbol id="ifmg-logo-symbol" viewBox="0 0 151 183">
             <path d="M17.1878 181.973L11.8508 168.052H11.7653C11.8639 169.156 11.9165 170.464 11.9165 171.983V181.973H10.2273V166.271H12.9813L17.9634 179.226H18.0489L23.0704 166.271H25.8047V181.973H23.9775V171.858C23.9775 170.694 24.0301 169.439 24.1287 168.078H24.0432L18.6667 181.973H17.1944H17.1878Z" fill="currentColor"/>
@@ -135,7 +290,7 @@
     </main>
 
     <script src="data/guide-metadata.js?v=metadados-v2"></script>
-    <script src="script.js?v=busca-relevancia-v2"></script>
+    <script src="script.js?v=loader-linear-v1"></script>
 </body>
 
 </html>

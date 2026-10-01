@@ -761,6 +761,10 @@ function abrirPerfil(categoria, atualizarRota = true) {
     const artigosDaCategoria = todasAsPastas[categoria] || [];
     if (!informacao || (!perfil && artigosDaCategoria.length === 0)) return;
 
+    if (window.GUIA_MOSTRAR_TRANSICAO) {
+        window.GUIA_MOSTRAR_TRANSICAO("Abrindo perfil");
+    }
+
     leitorDeArtigo.classList.add("escondido");
     divResultados.classList.add("escondido");
     document.getElementById("pastas-container")?.classList.add("escondido");
@@ -795,6 +799,9 @@ function abrirPerfil(categoria, atualizarRota = true) {
         adicionarGrupoAoPerfil("orientações", artigosDaCategoria.filter(artigo => artigo.metadados?.estado !== "absorver"));
         leitorDePerfil.classList.remove("escondido");
         window.scrollTo({ top: 0, behavior: "smooth" });
+        if (window.GUIA_FINALIZAR_TRANSICAO) {
+            window.GUIA_FINALIZAR_TRANSICAO();
+        }
         return;
     }
 
@@ -817,6 +824,9 @@ function abrirPerfil(categoria, atualizarRota = true) {
 
     leitorDePerfil.classList.remove("escondido");
     window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.GUIA_FINALIZAR_TRANSICAO) {
+        window.GUIA_FINALIZAR_TRANSICAO();
+    }
 }
 
 function encontrarAlvoDaBuscaNoArtigo(termos) {
@@ -836,6 +846,10 @@ function encontrarAlvoDaBuscaNoArtigo(termos) {
 }
 
 function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca = []) {
+    if (window.GUIA_MOSTRAR_TRANSICAO) {
+        window.GUIA_MOSTRAR_TRANSICAO("Abrindo artigo");
+    }
+
     divResultados.classList.add("escondido");
     leitorDePerfil.classList.add("escondido");
     const pastasContainer = document.getElementById("pastas-container");
@@ -956,6 +970,10 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
         window.setTimeout(() => alvoDaBusca.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
     } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    if (window.GUIA_FINALIZAR_TRANSICAO) {
+        window.GUIA_FINALIZAR_TRANSICAO();
     }
 }
 
@@ -1486,6 +1504,10 @@ window.addEventListener("scroll", () => {
 });
 
 function voltarParaHome(atualizarRota = true) {
+    if (window.GUIA_MOSTRAR_TRANSICAO) {
+        window.GUIA_MOSTRAR_TRANSICAO("Abrindo início");
+    }
+
     leitorDeArtigo.classList.add("escondido");
     leitorDePerfil.classList.add("escondido");
     divResultados.classList.remove("escondido");
@@ -1503,6 +1525,9 @@ function voltarParaHome(atualizarRota = true) {
         history.pushState({}, "", window.location.pathname);
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.GUIA_FINALIZAR_TRANSICAO) {
+        window.GUIA_FINALIZAR_TRANSICAO();
+    }
 }
 
 const navLogo = document.getElementById("nav-logo");
@@ -1532,4 +1557,12 @@ window.addEventListener("hashchange", tratarRotaDaUrl);
 
 // Inicializar na carga da página
 inicializarTema();
-carregarTodosOsArtigos();
+carregarTodosOsArtigos()
+    .catch((erro) => {
+        console.error("Erro ao carregar o conteúdo inicial:", erro);
+    })
+    .finally(() => {
+        if (window.GUIA_FINALIZAR_CARREGAMENTO) {
+            window.GUIA_FINALIZAR_CARREGAMENTO();
+        }
+    });
