@@ -66,18 +66,25 @@
                     <span>buscar página</span>
                     <input type="search" placeholder="ex.: estudantes" autocomplete="off">
                 </label>
+                <button type="button" class="portal-graph-depth-toggle" aria-pressed="false">mostrar distância da Home</button>
                 <button type="button" class="portal-graph-recenter">recentralizar</button>
                 <span class="portal-graph-stats">${data.nodes.length} páginas · ${data.edges.length} relações</span>
             </div>
             <div class="portal-graph-stage">
-                <div class="portal-graph-canvas" aria-label="Grafo da estrutura do Portal IFMG"></div>
+                <div class="portal-graph-visual">
+                    <svg class="portal-depth-rings" aria-hidden="true"></svg>
+                    <div class="portal-graph-canvas" aria-label="Grafo da estrutura do Portal IFMG"></div>
+                </div>
                 <aside class="portal-graph-details" aria-live="polite"></aside>
             </div>
         `;
 
         return {
             input: root.querySelector(".portal-graph-search input"),
+            depthToggle: root.querySelector(".portal-graph-depth-toggle"),
             recenter: root.querySelector(".portal-graph-recenter"),
+            visual: root.querySelector(".portal-graph-visual"),
+            rings: root.querySelector(".portal-depth-rings"),
             canvas: root.querySelector(".portal-graph-canvas"),
             details: root.querySelector(".portal-graph-details")
         };
@@ -318,6 +325,143 @@
         aplicarLayoutsEspeciais(data, filhos, posicoes, angulos);
 
         return { posicoes, profundidades, ramoPorId };
+    }
+
+    function calcularDistanciasDaHome(data) {
+        const raiz = "https://portal.ifmg.edu.br/";
+        const idsValidos = new Set(data.nodes.map(node => node.id));
+        const saidas = new Map();
+
+        data.edges.forEach(edge => {
+            if (!idsValidos.has(edge.source) || !idsValidos.has(edge.target)) return;
+            if (!saidas.has(edge.source)) saidas.set(edge.source, []);
+            saidas.get(edge.source).push(edge.target);
+        });
+
+        const distancias = new Map([[raiz, 0]]);
+        const fila = [raiz];
+
+        while (fila.length) {
+            const atual = fila.shift();
+            const distanciaAtual = distancias.get(atual) || 0;
+
+            (saidas.get(atual) || []).forEach(destino => {
+                const proxima = distanciaAtual + 1;
+                if (distancias.has(destino) && distancias.get(destino) <= proxima) return;
+                distancias.set(destino, proxima);
+                fila.push(destino);
+            });
+        }
+
+        return distancias;
+    }
+
+    function calcularRamosEstruturais(data) {
+        const raiz = "https://portal.ifmg.edu.br/";
+        const filhos = filhosEstruturais(data);
+        const ramos = new Map([[raiz, raiz]]);
+        const filhosDaRaiz = filhos.get(raiz) || [];
+
+        filhosDaRaiz.forEach(ramoId => {
+            ramos.set(ramoId, ramoId);
+            const fila = [ramoId];
+
+            while (fila.length) {
+                const atual = fila.shift();
+                (filhos.get(atual) || []).forEach(filho => {
+                    if (ramos.has(filho)) return;
+                    ramos.set(filho, ramoId);
+                    fila.push(filho);
+                });
+            }
+        });
+
+        return { ramos, filhosDaRaiz };
+    }
+
+    function calcularLayoutPorDistancia(data) {
+        const raiz = "https://portal.ifmg.edu.br/";
+        const distancias = calcularDistanciasDaHome(data);
+        const { ramos, filhosDaRaiz } = calcularRamosEstruturais(data);
+        const posicoes = new Map([[raiz, { x: 0, y: 0 }]]);
+        const passoRaio = 300;
+        const passoSetor = filhosDaRaiz.length
+            ? (Math.PI * 2) / filhosDaRaiz.length
+            : Math.PI * 2;
+        const larguraSetor = passoSetor * 0.86;
+        const grupos = new Map();
+
+        data.nodes.forEach(node => {
+            if (node.id === raiz) return;
+            const distancia = distancias.get(node.id);
+            if (!Number.isFinite(distancia)) return;
+
+            const ramo = ramos.get(node.id) || "compartilhado";
+            const chave = `${ramo}::${distancia}`;
+            if (!grupos.has(chave)) grupos.set(chave, []);
+            grupos.get(chave).push(node.id);
+        });
+
+        filhosDaRaiz.forEach((ramoId, indiceRamo) => {
+            const centroSetor = (-Math.PI / 2) + (passoSetor * indiceRamo);
+
+            [...grupos.entries()]
+                .filter(([chave]) => chave.startsWith(`${ramoId}::`))
+                .forEach(([chave, ids]) => {
+                    const distancia = Number(chave.split("::")[1]);
+                    const raio = distancia * passoRaio;
+                    const largura = distancia === 1 ? 0 : larguraSetor;
+                    const direcoes = angulosNoSetor(ids.length, centroSetor, largura);
+
+                    ids.forEach((id, indice) => {
+                        const angulo = direcoes[indice] ?? centroSetor;
+                        posicoes.set(id, {
+                            x: Math.cos(angulo) * raio,
+                            y: Math.sin(angulo) * raio
+                        });
+                    });
+                });
+        });
+
+        const compartilhados = [...grupos.entries()]
+            .filter(([chave]) => chave.startsWith("compartilhado::"));
+
+        compartilhados.forEach(([chave, ids]) => {
+            const distancia = Number(chave.split("::")[1]);
+            const raio = distancia * passoRaio;
+            const direcoes = angulosNoSetor(ids.length, Math.PI / 2, Math.PI * 1.7);
+
+            ids.forEach((id, indice) => {
+                const angulo = direcoes[indice] ?? Math.PI / 2;
+                posicoes.set(id, {
+                    x: Math.cos(angulo) * raio,
+                    y: Math.sin(angulo) * raio
+                });
+            });
+        });
+
+        const naoAlcancados = data.nodes
+            .map(node => node.id)
+            .filter(id => !posicoes.has(id));
+
+        const profundidadeMaxima = Math.max(0, ...distancias.values());
+
+        naoAlcancados.forEach((id, indice) => {
+            const raio = (profundidadeMaxima + 1) * passoRaio;
+            const angulo = (Math.PI * 2 * indice) / Math.max(naoAlcancados.length, 1);
+            posicoes.set(id, {
+                x: Math.cos(angulo) * raio,
+                y: Math.sin(angulo) * raio
+            });
+        });
+
+        return {
+            posicoes,
+            distancias,
+            profundidadeMaxima,
+            passoRaio,
+            ramos
+        };
     }
 
     async function renderizar(root) {
