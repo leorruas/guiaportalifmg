@@ -25,4 +25,3 @@ Atualize primeiro os dados objetivos: endereço, telefone, redes oficiais e imag
 
 **Limite de permissão:** se o campus, a página-pai ou as coleções necessárias não estiverem no seu grupo, não crie uma cópia em outro local. Peça ao administrador responsável para conceder ou ajustar o acesso.
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos|Voltar ao papel de moderador]]
