@@ -180,6 +180,76 @@
                 "id": "https://portal.ifmg.edu.br/servidores/mais/",
                 "url": "https://portal.ifmg.edu.br/servidores/mais/",
                 "title": "+ informações para servidores"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/institucional/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/institucional/",
+                "title": "Institucional"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/",
+                "title": "Ações & Programas"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
+                "title": "Participação Social"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/",
+                "title": "Auditorias"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/convenios-e-transferencias/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/convenios-e-transferencias/",
+                "title": "Convênios e Transferências"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/receitas-despesas/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/receitas-despesas/",
+                "title": "Receitas & Despesas"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/licitacoes-contratos/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/licitacoes-contratos/",
+                "title": "Licitações & Contratos"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/servidores/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/servidores/",
+                "title": "Servidores"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/informacoes-classificadas/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/informacoes-classificadas/",
+                "title": "Informações Classificadas"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/",
+                "title": "Serviço de Informação ao Cidadão (SIC)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/dados-abertos/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/dados-abertos/",
+                "title": "Dados Abertos"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/sancoes-administrativas/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/sancoes-administrativas/",
+                "title": "Sanções Administrativas"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/ferramentas-e-aspectos-tecnologicos/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/ferramentas-e-aspectos-tecnologicos/",
+                "title": "Ferramentas e Aspectos Tecnológicos"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
+                "title": "Sugestões, Críticas e Elogios"
         }
 ];
 
@@ -357,6 +427,76 @@
         {
                 "source": "https://portal.ifmg.edu.br/servidores/",
                 "target": "https://portal.ifmg.edu.br/servidores/mais/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/institucional/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/convenios-e-transferencias/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/receitas-despesas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/licitacoes-contratos/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/servidores/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/informacoes-classificadas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/dados-abertos/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/sancoes-administrativas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/ferramentas-e-aspectos-tecnologicos/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
                 "type": "estrutura"
         }
 ];
