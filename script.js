@@ -911,7 +911,17 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
 function renderizarContextoDoArtigo(artigo) {
     const contexto = document.getElementById("artigo-contexto");
     if (!contexto) return;
+
     const informacao = informacoesCategorias[artigo.categoria] || informacoesCategorias.Fundamentos;
+    const perfilMinimo = artigo.metadados?.perfilMinimo;
+    const tarefaOperacional = artigo.metadados?.tipo === "tarefa"
+        && ["editor", "moderador", "administrador"].includes(perfilMinimo);
+
+    if (tarefaOperacional) {
+        contexto.innerHTML = `<span class="contexto-icone">${iconeNeutro(informacao.icone)}</span><p><strong>Perfil mínimo: ${perfilMinimo}</strong><span>Para realizar esta tarefa, seu acesso ao Wagtail precisa estar configurado, no mínimo, como ${perfilMinimo}.</span></p>`;
+        return;
+    }
+
     contexto.innerHTML = `<span class="contexto-icone">${iconeNeutro(informacao.icone)}</span><p><strong>${artigo.categoria}</strong><span>${informacao.descricao}</span></p>`;
 }
 

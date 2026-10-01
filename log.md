@@ -414,3 +414,10 @@
 - GitHub Actions confirmou `guide-index OK: 60 artigos` e `23/23` consultas de busca com o resultado esperado no topo, avaliando os `60` artigos publicados.
 - Atualizada a versão de cache de `guide-metadata.js` em `index.html` para disponibilizar imediatamente o novo metadado de Evento.
 
+## 2026-10-01 — Perfil mínimo no contexto das tarefas
+
+- O bloco de contexto abaixo do título dos procedimentos deixa de repetir apenas “Sou editor”, “Sou moderador” ou “Sou administrador”.
+- Em tarefas operacionais, o bloco passa a mostrar o perfil mínimo exigido pelos metadados e explica que o acesso ao Wagtail precisa estar configurado, no mínimo, com esse perfil.
+- A regra respeita a hierarquia cumulativa editor → moderador → administrador: uma tarefa de editor continua indicando editor como requisito mínimo mesmo quando aberta a partir do perfil de moderador ou administrador.
+- Páginas de visão, fundamentos, orientações gerais e o papel de gestor mantêm o contexto editorial anterior, já que gestor não precisa operar o Wagtail.
+- Atualizada a versão de cache de `script.js` em `index.html`.
