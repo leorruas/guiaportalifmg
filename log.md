@@ -200,3 +200,12 @@
 - Reforçada a distinção entre a pergunta editorial “o conteúdo está pronto?” e a decisão operacional “este conteúdo deve estar visível agora?”.
 - Validados wikilinks, anexos, ausência de referências absorvidas em M08 e sintaxe atual do `script.js`.
 
+## 2026-10-01 — Consolidação editorial: notícia e processo seletivo
+
+- Corrigido o papel do editor em notícia: o conteúdo canônico passa a se chamar “criar e preparar uma notícia”, deixando explícito que o editor envia para moderação e não decide a publicação.
+- Corrigido o papel do editor em processo seletivo: o conteúdo canônico passa a se chamar “criar e atualizar um processo seletivo e seus documentos”.
+- Ajustado o procedimento de processo seletivo para que editor use coleções já autorizadas e solicite criação ou ajuste ao administrador quando a estrutura não existir.
+- Mantidos os nomes físicos dos arquivos E10 e E11 para preservar rotas e backlinks antigos; adicionados `tituloCanonico` aos metadados para que perfil, busca, artigo e navegação exibam os novos títulos.
+- Alterado o carregamento dos artigos para priorizar `tituloCanonico` quando disponível, sem mudar o `sourcePath` usado pelas rotas existentes.
+- Validados os wikilinks, anexos, títulos canônicos e a sintaxe atual do `script.js`.
+
