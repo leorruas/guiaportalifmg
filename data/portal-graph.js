@@ -292,6 +292,11 @@
                 "id": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
                 "url": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
                 "title": "Sugestões, Críticas e Elogios"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/",
+                "url": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/",
+                "title": "Identidade Visual e Manuais (Marca do IFMG)"
         }
 ];
 
@@ -610,6 +615,11 @@
                 "source": "https://portal.ifmg.edu.br/estudantes/bibliotecas/",
                 "target": "https://portal.ifmg.edu.br/comunidade/bibliotecas/",
                 "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/",
+                "target": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/",
+                "type": "estrutura"
         }
 ];
 
