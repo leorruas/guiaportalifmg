@@ -318,3 +318,9 @@
 - Preservada a versão de cache do loader já existente e incrementado apenas o sufixo do `script.js` para forçar o navegador a receber a nova lógica.
 - Validação final confirmou correspondência exata entre os 59 Markdown da árvore e os 59 itens do índice, ausência da lista manual, sintaxe válida do `script.js`, validação NFC útil e gatilhos completos do workflow.
 
+## 2026-10-01 — Remoção de retornos manuais dos artigos
+
+- Removidos sete wikilinks finais usados apenas como navegação de retorno em artigos de Comece aqui, administrador, moderador e editor.
+- Retirados rótulos como “Voltar às configurações administrativas”, “Voltar ao papel de administrador”, “Voltar ao papel de moderador”, “Voltar ao papel de editor” e equivalentes.
+- Mantidos links finais que representam próxima etapa real do fluxo, como enviar para moderação, revisar, reordenar ou continuar um procedimento relacionado.
+- Atualizado `AGENTS.md` para deixar a navegação de retorno sob responsabilidade da interface e evitar a reintrodução desses links nos Markdown.
