@@ -1,0 +1,61 @@
+{
+  "description": "Consultas mínimas para validar o ranking da busca do Guia do Portal IFMG. expected_top_id deve aparecer em primeiro lugar.",
+  "queries": [
+    {
+      "query": "notícia",
+      "expected_top_id": "task-news-create"
+    },
+    {
+      "query": "processo seletivo",
+      "expected_top_id": "task-selection-create"
+    },
+    {
+      "query": "imagem",
+      "expected_top_id": "task-image-manage"
+    },
+    {
+      "query": "pdf",
+      "expected_top_id": "task-document-manage"
+    },
+    {
+      "query": "menu",
+      "expected_top_id": "task-page-search-menu"
+    },
+    {
+      "query": "busca",
+      "expected_top_id": "task-page-search-menu"
+    },
+    {
+      "query": "tirar do ar",
+      "expected_top_id": "task-publication-state"
+    },
+    {
+      "query": "permissão",
+      "expected_top_id": "task-groups-permissions"
+    },
+    {
+      "query": "homepage",
+      "expected_top_id": "task-homepage-edit"
+    },
+    {
+      "query": "editar página",
+      "expected_top_id": "task-page-create-edit"
+    },
+    {
+      "query": "coleção",
+      "expected_top_id": "task-collection-use"
+    },
+    {
+      "query": "criar coleção",
+      "expected_top_id": "task-collection-admin"
+    },
+    {
+      "query": "comentários",
+      "expected_top_id": "task-comments-respond"
+    },
+    {
+      "query": "enviar para moderação",
+      "expected_top_id": "task-submit-moderation"
+    }
+  ]
+}
