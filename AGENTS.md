@@ -38,6 +38,13 @@
 - Cada procedimento deve deixar explícitos o resultado esperado, o limite de permissão e o próximo passo quando a pessoa não puder concluir a ação sozinha.
 - Insira cada imagem imediatamente após o passo ou conceito que ela demonstra, com legenda que explique o que a pessoa deve observar. Não agrupe capturas em galeria, ao fim do artigo ou em seção separada quando elas puderem orientar uma ação específica no contexto.
 
+## Termos que não podem ser confundidos
+
+- **Link (tipo de página)** é uma entrada na árvore do Wagtail que possui uma rota no Portal e redireciona para outra URL. O procedimento canônico é `Criar um link de redirecionamento`.
+- **Links** e **Link único** são blocos inseridos dentro do conteúdo de uma página. Eles não criam nova rota na árvore. O procedimento canônico é `Montar conteúdo com blocos`.
+- Ao escrever, revisar ou escolher imagens para o guia, nunca use exemplos de blocos de link para ilustrar o tipo de página Link, nem o contrário.
+- `portal.ifmg.edu.br` é o domínio do ambiente atual de homologação. O domínio público previsto é `ifmg.edu.br`. Em exemplos procedimentais que não dependem do domínio, prefira caminhos relativos como `/evento/` e `/evento/nome-do-evento/` para evitar que o manual fique preso ao endereço de homologação.
+
 ## Nomes e títulos das tarefas
 
 - O título de uma tarefa deve explicar **o que a pessoa quer conseguir fazer**, em linguagem compreensível mesmo para quem não conhece o Wagtail.
