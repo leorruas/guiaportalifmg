@@ -455,3 +455,17 @@
 - Identificado um resíduo não funcional: `script.js` ainda procura o elemento `btn-pesquisar`, ausente do HTML atual, mas o listener é protegido por verificação de existência; não houve alteração apenas para remover esse código morto.
 - O ambiente de navegação utilizado nesta revisão não conseguiu acessar diretamente a URL pública do GitHub Pages; portanto, esta etapa é um smoke técnico do pacote publicado e dos workflows, não uma validação visual/interativa em navegador real.
 
+## 2026-10-01 — POC do mapa da estrutura do Portal
+
+- Criada a página `00 - Comece aqui/04 - Mapa da estrutura do Portal.md` como referência transversal do guia.
+- Criado `data/portal-graph.js` como dataset curado do mapa, iniciando com 6 páginas: Home, Institucional, Estudantes, Servidores, Comunidade e Acesso à Informação.
+- Registradas 5 relações do tipo `estrutura`, todas partindo da Home para os cinco caminhos de primeiro nível informados pelo usuário.
+- Criado `portal-graph.js` como módulo opcional: inicializa somente quando o artigo contém `[data-portal-graph]`, carrega Cytoscape sob demanda e trata falhas localmente sem interromper o restante do manual.
+- A POC inclui busca por título/URL, recentralização, painel de detalhes ao selecionar um nó e link para abrir a página real do Portal.
+- Integrado o componente ao renderizador de artigos por meio de `GuiaGrafoPortal.renderizarSePresente()`, sem tornar o grafo dependência obrigatória da home.
+- Adicionados estilos responsivos para o grafo e ampliada apenas a largura do artigo que contém o componente.
+- Adicionado metadado canônico `ref-portal-map` com aliases `mapa do portal`, `grafo`, `estrutura do portal` e `arquitetura do portal`.
+- Atualizados `data/guide-index.json` e `data/search-regression.json`; o guia passa a ter `61` artigos e o corpus de busca `25` consultas.
+- GitHub Actions confirmou `guide-index OK: 61 artigos` e `25/25` consultas com o resultado esperado no topo.
+- Atualizado `AGENTS.md` com as regras de manutenção incremental do mapa: URL como identidade, relações somente confirmadas, tipos explícitos de aresta, prevenção de duplicatas e Cytoscape como dependência carregada sob demanda.
+
