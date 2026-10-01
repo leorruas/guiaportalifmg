@@ -712,3 +712,16 @@
 - Mantidos os artigos absorvidos fora da navegação principal.
 - Atualizado o cache de `data/guide-metadata.js`.
 
+## 2026-10-01 — QA transversal da navegação por perfis
+
+- Padronizada a navegação dos quatro perfis do guia: Editor, Moderador, Administrador e Gestor.
+- A tela de perfil passa a exibir descrições curtas de uso abaixo dos títulos das tarefas.
+- A ordenação das tarefas passa a usar o campo `ordem` dos metadados quando disponível, preservando `sourcePath` como fallback e mantendo URLs existentes.
+- Resultado final: 20 tarefas canônicas de Editor, 5 de Moderador, 6 de Administrador e 1 de Gestor, todas com `descricaoLista`.
+- Editor segue o fluxo de produção e moderação; Moderador segue revisão → correção → estado público → estruturas especiais; Administrador agrupa estrutura → acessos/arquivos → cadastros; Gestor mantém uma única tarefa de solicitação/acompanhamento.
+- Artigos absorvidos permanecem fora da navegação principal.
+- Validação de sintaxe do `script.js` concluída com sucesso.
+- GitHub Actions `Validar busca do guia` e `Validar índice do guia` concluíram com sucesso após as alterações finais de conteúdo.
+- `data/guide-index.json` permanece com 61 artigos.
+- Atualizado o cache final de `data/guide-metadata.js` para `task-flow-v1`.
+
