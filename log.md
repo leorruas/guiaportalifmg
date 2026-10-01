@@ -606,3 +606,10 @@
 - Mantida a entrada no ramo de “+ informações para servidores”, com relação `redireciona` para o nó canônico `https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/`.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v13`.
 
+## 2026-10-01 — Links adicionais em + informações para servidores
+
+- Confirmado que `Programa de apoio financeiro à graduação e pós-graduação` já estava cadastrado como filho estrutural de `+ informações para servidores`; nenhum nó ou relação duplicada foi criado.
+- Adicionadas relações do tipo `link` de `+ informações para servidores` para os nós canônicos já existentes de `CPPD` e `CIS`.
+- `Acesse a página do CONSUP` e `Saiba mais sobre o Estágio Probatório` foram fornecidos com destino `https://portal.ifmg.edu.br/` (Home). Como isso não identifica páginas próprias e os rótulos representam destinos distintos, esses dois links não foram consolidados nem convertidos em novos nós nesta etapa.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v14`.
+
