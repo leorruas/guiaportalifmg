@@ -92,6 +92,14 @@
     {
       "query": "comunicado",
       "expected_top_id": "task-content-type-choose"
+    },
+    {
+      "query": "mapa do portal",
+      "expected_top_id": "ref-portal-map"
+    },
+    {
+      "query": "grafo",
+      "expected_top_id": "ref-portal-map"
     }
   ]
 }
