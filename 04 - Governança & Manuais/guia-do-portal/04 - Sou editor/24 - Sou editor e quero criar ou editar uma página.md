@@ -16,7 +16,7 @@ Se você ainda não sabe qual tipo usar, consulte [[04 - Governança & Manuais/g
 3. Na aba **Conteúdo**, escreva ou atualize a informação principal. Revise título, links, imagens, documentos, prazos e vigência.
 4. Use blocos apenas quando eles ajudarem a organizar a leitura ou a próxima ação.
 5. Para inserir um documento ou imagem, escolha um item da coleção a que seu grupo tem acesso.
-6. Na aba **Promover**, revise URL, título de busca, descrição e presença em menus quando esses campos estiverem disponíveis.
+6. Na aba **Promover**, revise URL, título de busca e descrição. Se a página deve aparecer nos menus gerados pelo Portal, abra **Para menus de sites** e marque **Exibir nos menus**.
 7. Salve como rascunho enquanto estiver trabalhando.
 8. Use **Pré-visualizar** e confira a página antes de encaminhar a próxima etapa.
 
