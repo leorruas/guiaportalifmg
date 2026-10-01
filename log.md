@@ -142,3 +142,13 @@
 - Registradas duas lacunas de cobertura: procedimentos próprios para Evento e Comunicado.
 - Registradas pendências de permissão em agendamento e cadastros auxiliares para validação antes da consolidação editorial.
 
+## 2026-10-01 — Hierarquia de perfis no modelo do guia: fase 3
+
+- Adicionada em `script.js` uma camada transitória de metadados canônicos com identificador, tipo de conteúdo, perfil mínimo e estado de absorção, baseada nas decisões da fase 2.
+- Implementada a herança `editor → moderador → administrador` nas páginas de perfil: moderador passa a acumular tarefas de editor e administrador acumula tarefas de editor e moderador.
+- As páginas de perfil agora separam visão do papel e tarefas por nível de responsabilidade, sem duplicar artigos já marcados para absorção.
+- A busca deixa de exibir artigos marcados para absorção e o filtro por perfil passa a considerar tarefas herdadas; o algoritmo de ranking permanece inalterado nesta fase.
+- Adicionados estilos para os agrupamentos de tarefas herdadas.
+- Mantidos fisicamente todos os Markdown atuais; nenhuma consolidação editorial ou exclusão de artigo foi realizada.
+- Durante a validação foi corrigido um erro de sintaxe nos templates da nova navegação de perfis.
+
