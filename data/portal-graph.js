@@ -125,6 +125,61 @@
                 "id": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
                 "url": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
                 "title": "+ informações para estudantes"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/normativas-manuais/",
+                "url": "https://portal.ifmg.edu.br/servidores/normativas-manuais/",
+                "title": "Normativas & Manuais"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/licencas/",
+                "url": "https://portal.ifmg.edu.br/servidores/licencas/",
+                "title": "Licenças"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/remocao-redistribuicao/",
+                "url": "https://portal.ifmg.edu.br/servidores/remocao-redistribuicao/",
+                "title": "Remoção & Redistribuição"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/teletrabalho-trabalho-remoto/",
+                "url": "https://portal.ifmg.edu.br/servidores/teletrabalho-trabalho-remoto/",
+                "title": "Teletrabalho / Trabalho Remoto"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/reconhecimento-de-saberes-e-competencias-rsc-tae/",
+                "url": "https://portal.ifmg.edu.br/servidores/reconhecimento-de-saberes-e-competencias-rsc-tae/",
+                "title": "Reconhecimento de Saberes e Competências (RSC) - TAE"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/cppd-comissao-permanente-de-pessoal-docente/",
+                "url": "https://portal.ifmg.edu.br/servidores/cppd-comissao-permanente-de-pessoal-docente/",
+                "title": "CPPD - Comissão Permanente de Pessoal Docente"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/cis-comissao-interna-de-supervisao-da-carreira-tae/",
+                "url": "https://portal.ifmg.edu.br/servidores/cis-comissao-interna-de-supervisao-da-carreira-tae/",
+                "title": "CIS - Comissão Interna de Supervisão da Carreira TAE"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/noticias/",
+                "url": "https://portal.ifmg.edu.br/servidores/noticias/",
+                "title": "Notícias para servidores"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/solicitar-ajuda-suap/",
+                "url": "https://portal.ifmg.edu.br/servidores/solicitar-ajuda-suap/",
+                "title": "Como abrir um chamado (Solicitar ajuda • SUAP)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/sugestoes-criticas-e-elogios/",
+                "url": "https://portal.ifmg.edu.br/servidores/sugestoes-criticas-e-elogios/",
+                "title": "Sugestões, Críticas e Elogios"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/mais/",
+                "url": "https://portal.ifmg.edu.br/servidores/mais/",
+                "title": "+ informações para servidores"
         }
 ];
 
@@ -247,6 +302,61 @@
         {
                 "source": "https://portal.ifmg.edu.br/estudantes/",
                 "target": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/normativas-manuais/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/licencas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/remocao-redistribuicao/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/teletrabalho-trabalho-remoto/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/reconhecimento-de-saberes-e-competencias-rsc-tae/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/cppd-comissao-permanente-de-pessoal-docente/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/cis-comissao-interna-de-supervisao-da-carreira-tae/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/noticias/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/solicitar-ajuda-suap/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/sugestoes-criticas-e-elogios/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/servidores/mais/",
                 "type": "estrutura"
         }
 ];
