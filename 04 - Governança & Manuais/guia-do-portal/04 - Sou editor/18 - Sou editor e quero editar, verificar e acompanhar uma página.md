@@ -22,6 +22,33 @@ Para criar ou alterar conteúdo, use:
 
 4. Consulte **Histórico** quando precisar confirmar o que mudou, quem fez uma alteração ou qual versão antecedeu a atual.
 
+## Bloquear a edição quando necessário
+
+No painel lateral de informações da página, a área de bloqueio indica se outras pessoas podem editar aquele conteúdo.
+
+- **Desbloqueado**: outras pessoas que já têm permissão para editar aquela página continuam podendo alterá-la.
+- **Bloquear**: impede que outras pessoas editem a página enquanto o bloqueio estiver ativo.
+
+Use o bloqueio quando for importante evitar edições simultâneas ou preservar uma versão enquanto uma revisão específica está em andamento. **Bloquear não muda quem consegue visualizar a página publicada**; ele controla somente a edição.
+
+Se a opção de bloqueio não estiver disponível para o seu perfil ou escopo, não tente contornar a restrição. Encaminhe a necessidade ao perfil responsável.
+
+## Alterar quem pode ver a página
+
+No mesmo painel, **Visível para todos** indica a configuração atual de acesso à versão publicada. Para mudar essa regra, use **Alterar privacidade**.
+
+As opções disponíveis são:
+
+- **Público**: qualquer pessoa pode acessar a página publicada;
+- **Privado, acessível com uma senha compartilhada**: o acesso exige a senha definida para aquela área;
+- **Privado, acessível a qualquer usuário logado**: somente pessoas autenticadas conseguem acessar;
+- **Privado, acessível a usuários em grupos específicos**: somente pessoas autenticadas pertencentes aos grupos escolhidos conseguem acessar.
+
+> [!WARNING]
+> Ao alterar a privacidade de uma página, a configuração também se aplica às **subpáginas** dela. Antes de salvar, confirme se todo o conteúdo abaixo daquela página deve receber a mesma restrição de acesso.
+
+**Privacidade não é publicação.** Uma página pode estar online e ainda assim ter acesso restrito. Da mesma forma, despublicar uma página retira a versão do ar; alterar a privacidade muda apenas **quem pode vê-la** enquanto ela está publicada.
+
 ## Entender o próximo responsável
 
 O estado da página deve responder à pergunta **“quem precisa agir agora?”**.
@@ -44,4 +71,4 @@ Se a página está pronta para revisão, use:
 > [!NOTE]
 > Publicar, despublicar e agendar são ações tratadas na camada de moderação neste guia.
 
-**Como saber que terminou:** você conferiu a versão atual, identificou o estado da página e sabe qual pessoa ou perfil precisa agir em seguida.
+**Como saber que terminou:** você conferiu a versão atual, identificou o estado da página, entendeu se há bloqueio ou restrição de acesso e sabe qual pessoa ou perfil precisa agir em seguida.
