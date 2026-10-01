@@ -25,4 +25,3 @@ Na tela inicial, verifique suas alterações recentes e os grupos aos quais voc�
 
 **Como saber se encontrou o lugar certo:** o caminho de navegação mostra a página-pai e o nome da seção corresponde ao campus, setor ou tema que você recebeu para cuidar.
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Voltar ao papel de editor]]
