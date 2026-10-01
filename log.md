@@ -389,3 +389,15 @@
 - Adicionado um prompt para preparar imagens para publicação, explicando texto alternativo em linguagem simples, diferenciando descrição e legenda e tratando imagens complexas.
 - Adicionado um prompt para sugerir blocos do Wagtail a partir do conteúdo, usando apenas blocos documentados, justificando sua função e preservando texto simples como padrão quando não houver ganho claro.
 - Reforçada a orientação para que assistentes sem acesso à internet não afirmem ter pesquisado ou verificado informações externas.
+
+## 2026-10-01 — Fuzzy conservador para erros de digitação
+
+- Adicionado em `search.js` um fallback fuzzy que só é acionado quando a busca exata não retorna nenhum artigo.
+- A recuperação aproximada aceita no máximo uma palavra divergente por consulta, exige termos com pelo menos cinco caracteres e usa distância de edição máxima igual a 1.
+- A comparação fuzzy é limitada às palavras do título da ação e dos aliases; o corpo do artigo não participa da aproximação, reduzindo falsos positivos.
+- Consultas exatas continuam usando o ranking ponderado original sem qualquer alteração de ordem.
+- Resultados aproximados recebem motivo explícito `correspondência aproximada` na interface e não tentam saltar para uma ocorrência literal inexistente dentro do artigo.
+- Acrescentados seis casos ao corpus de regressão: `notica`, `permisao`, `despubicar`, `processo seletvo`, `editar pagna` e `colecao`.
+- A execução real do GitHub Actions concluiu com sucesso: `20/20` consultas com o resultado esperado no topo, avaliando os `59` artigos do índice publicado.
+- Atualizadas somente as versões de cache de `search.js` e `script.js` em `index.html`, preservando as linhas concorrentes `perfil-visao`, `navigation-module` e `titulo-unico`.
+
