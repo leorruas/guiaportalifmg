@@ -16,9 +16,9 @@ const perfilPorCategoria = {
 };
 
 const metadadosCanonicos = {
-    "04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos": { id: "role-editor", aliases: ["editor","edição","criar conteúdo","atualizar conteúdo"], tipo: "visao", perfilMinimo: "editor" },
-    "03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos": { id: "role-moderator", aliases: ["moderador","moderação","revisão","aprovação"], tipo: "visao", perfilMinimo: "moderador" },
-    "02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações": { id: "role-administrator", aliases: ["administrador","admin","configuração","acessos"], tipo: "visao", perfilMinimo: "administrador" },
+    "04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos": { id: "role-editor", aliases: ["editor","edição","criar conteúdo","atualizar conteúdo"], tipo: "visao", perfilMinimo: "editor", tituloCanonico: "01 - o papel do editor" },
+    "03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos": { id: "role-moderator", aliases: ["moderador","moderação","revisão","aprovação"], tipo: "visao", perfilMinimo: "moderador", tituloCanonico: "08 - o papel do moderador" },
+    "02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações": { id: "role-administrator", aliases: ["administrador","admin","configuração","acessos"], tipo: "visao", perfilMinimo: "administrador", tituloCanonico: "01 - o papel do administrador" },
 
     "04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página": { id: "task-page-find", aliases: ["encontrar página","achar página","localizar página","buscar página"], tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/03 - Sou editor e quero escolher o tipo de página": { id: "task-content-type-choose", aliases: ["tipo de conteúdo","tipo de página","evento","comunicado","qual página criar"], tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "03 - Sou editor e quero escolher o tipo de conteúdo" },

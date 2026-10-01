@@ -1,4 +1,4 @@
-# Sou administrador e quero gerir acessos e configurações
+# O papel do administrador
 
 Como administrador, você mantém as condições estruturais para que editor e moderador trabalhem no próprio escopo com segurança. Seu papel acrescenta configuração de acessos, permissões, coleções, estruturas e cadastros às tarefas que já são herdadas dos níveis anteriores.
 

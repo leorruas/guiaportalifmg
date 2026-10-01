@@ -473,6 +473,36 @@ function removerFrontmatter(markdown) {
     return markdown.replace(/^---[\s\S]*?---\s*/, "");
 }
 
+function normalizarTituloDoDocumento(valor) {
+    const titulo = String(valor || "")
+        .replace(/\.md$/i, "")
+        .split("/")
+        .at(-1);
+
+    return tituloDaAcao(titulo)
+        .trim()
+        .toLocaleLowerCase("pt-BR")
+        .replace(/\s+/g, " ");
+}
+
+function removerTituloInicialDuplicado() {
+    const primeiroElemento = artigoCorpo.firstElementChild;
+    if (!primeiroElemento || primeiroElemento.tagName !== "H1") return;
+
+    const tituloDoCorpo = normalizarTituloDoDocumento(primeiroElemento.textContent);
+    const candidatos = [
+        artigoTitulo.textContent,
+        artigoAtual?.titulo,
+        artigoAtual?.sourcePath
+    ]
+        .map(normalizarTituloDoDocumento)
+        .filter(Boolean);
+
+    if (candidatos.includes(tituloDoCorpo)) {
+        primeiroElemento.remove();
+    }
+}
+
 function extrairTrechoRelevante(conteudo, termo) {
     const conteudoSemFrontmatter = removerFrontmatter(conteudo);
     const textoLimpo = conteudoSemFrontmatter.replace(/==/g, '').replace(/[#*`_~\[\]]/g, ' ');
@@ -797,6 +827,8 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
     } else {
         artigoCorpo.innerText = markdownComHighlight;
     }
+
+    removerTituloInicialDuplicado();
 
     // Processa callouts / caixas de aviso do Obsidian ([!IMPORTANT], [!NOTE], [!TIP], etc.)
     processarCalloutsObsidian();

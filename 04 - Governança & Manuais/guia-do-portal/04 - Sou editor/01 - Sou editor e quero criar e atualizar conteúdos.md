@@ -1,4 +1,4 @@
-# Sou editor e quero criar e atualizar conteúdos
+# O papel do editor
 
 Como editor, você prepara e atualiza conteúdos dentro das páginas e coleções já autorizadas para o seu grupo. Seu trabalho é deixar a informação correta, completa, acessível e fácil de encontrar antes de encaminhá-la para moderação.
 

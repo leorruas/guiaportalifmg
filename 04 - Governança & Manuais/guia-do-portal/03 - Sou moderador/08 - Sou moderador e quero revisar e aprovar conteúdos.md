@@ -1,4 +1,4 @@
-# Sou moderador e quero revisar e aprovar conteúdos
+# O papel do moderador
 
 Como moderador, você protege a qualidade, a coerência e a vigência das informações publicadas no escopo do seu grupo. Além das tarefas herdadas de editor, seu papel acrescenta duas responsabilidades próprias: **decidir se o conteúdo está pronto** e **controlar seu estado público quando essa ação fizer parte do fluxo**.
 

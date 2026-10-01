@@ -361,3 +361,11 @@
 - Corrigido o contraste dos filtros de perfil da busca: o estado ativo e o hover usam a cor de destaque no fundo e a cor de fundo do tema no texto, inclusive no tema claro.
 - Em telas estreitas, o marcador vazio usado para posicionar um único “próximo artigo” deixa de ocupar uma linha própria.
 - Atualizada a versão de cache de `style.css` em `index.html`.
+
+## 2026-10-01 — Hierarquia de títulos nos perfis e artigos
+
+- Renomeados os três textos de visão dos perfis editoriais para “o papel do editor”, “o papel do moderador” e “o papel do administrador”, evitando apresentar a visão geral como se fosse uma tarefa.
+- Atualizados os H1 correspondentes nos Markdown sem renomear arquivos ou rotas.
+- O leitor de artigos passa a remover o primeiro H1 do corpo quando ele corresponde ao título do documento já exibido no cabeçalho da interface, evitando repetição visual do título.
+- A verificação considera tanto o título canônico quanto o nome original do arquivo, preservando compatibilidade com artigos cujo título de exibição foi refinado sem renomear o Markdown.
+- Atualizadas as versões de cache de `guide-metadata.js` e `script.js`.
