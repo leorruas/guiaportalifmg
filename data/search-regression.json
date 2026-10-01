@@ -1,5 +1,5 @@
 {
-  "description": "Consultas mínimas para validar o ranking da busca do Guia do Portal IFMG. expected_top_id deve aparecer em primeiro lugar.",
+  "description": "Consultas mínimas para validar ranking exato e recuperação conservadora de erros de digitação. expected_top_id deve aparecer em primeiro lugar.",
   "queries": [
     {
       "query": "notícia",
@@ -56,6 +56,30 @@
     {
       "query": "enviar para moderação",
       "expected_top_id": "task-submit-moderation"
+    },
+    {
+      "query": "notica",
+      "expected_top_id": "task-news-create"
+    },
+    {
+      "query": "permisao",
+      "expected_top_id": "task-groups-permissions"
+    },
+    {
+      "query": "despubicar",
+      "expected_top_id": "task-publication-state"
+    },
+    {
+      "query": "processo seletvo",
+      "expected_top_id": "task-selection-create"
+    },
+    {
+      "query": "editar pagna",
+      "expected_top_id": "task-page-create-edit"
+    },
+    {
+      "query": "colecao",
+      "expected_top_id": "task-collection-use"
     }
   ]
 }
