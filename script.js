@@ -663,9 +663,9 @@ function rotaDoPerfil(categoria) {
 function criarLinkDeAcaoDoPerfil(artigo, numero) {
     const acao = document.createElement("a");
     acao.className = "perfil-acao";
-    acao.href = \`#/\${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}\`;
+    acao.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
     acao.setAttribute("aria-label", tituloDaAcao(artigo.titulo));
-    acao.innerHTML = \`<span class="perfil-acao-numero">\${String(numero).padStart(2, "0")}</span><span class="perfil-acao-conteudo"><strong>\${tituloDaAcao(artigo.titulo)}</strong></span>\`;
+    acao.innerHTML = `<span class="perfil-acao-numero">${String(numero).padStart(2, "0")}</span><span class="perfil-acao-conteudo"><strong>${tituloDaAcao(artigo.titulo)}</strong></span>`;
     acao.addEventListener("click", (event) => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
         event.preventDefault();
@@ -725,9 +725,9 @@ function abrirPerfil(categoria, atualizarRota = true) {
     atual.textContent = categoria;
     breadcrumbs.append(inicio, separador, atual);
 
-    perfilCabecalho.className = \`perfil-cabecalho \${classeDoPerfil(categoria)}\`;
-    perfilCabecalho.innerHTML = \`<div><p class="perfil-rotulo">\${categoria.startsWith("Sou ") ? "sou..." : "guia do portal ifmg"}</p><h2>\${tituloDoIndice(categoria)}</h2><p>\${informacao.descricao}</p></div>\`;
-    perfilAcoes.className = \`perfil-acoes \${classeDoPerfil(categoria)}\`;
+    perfilCabecalho.className = `perfil-cabecalho ${classeDoPerfil(categoria)}`;
+    perfilCabecalho.innerHTML = `<div><p class="perfil-rotulo">${categoria.startsWith("Sou ") ? "sou..." : "guia do portal ifmg"}</p><h2>${tituloDoIndice(categoria)}</h2><p>${informacao.descricao}</p></div>`;
+    perfilAcoes.className = `perfil-acoes ${classeDoPerfil(categoria)}`;
     perfilAcoes.innerHTML = "";
 
     if (!perfil) {
@@ -751,7 +751,7 @@ function abrirPerfil(categoria, atualizarRota = true) {
                 .filter(artigo => artigo.metadados?.perfilMinimo === perfilMinimo)
                 .sort(compararArtigosPorArquivo);
 
-            adicionarGrupoAoPerfil(\`tarefas de \${perfilMinimo}\`, tarefas);
+            adicionarGrupoAoPerfil(`tarefas de ${perfilMinimo}`, tarefas);
         });
 
     leitorDePerfil.classList.remove("escondido");
