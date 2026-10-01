@@ -1,12 +1,12 @@
-# Sou editor e quero enviar conteúdo para moderação
+# Sou editor e quero enviar uma página pronta para revisão
 
-Use esta tarefa quando a edição estiver concluída e a página estiver pronta para uma segunda leitura. O editor prepara o conteúdo; o moderador decide se ele está pronto e, quando for o caso, controla sua publicação.
+Use esta tarefa quando você terminou de preparar a página e ela está pronta para outra pessoa revisar. No fluxo do Portal, essa revisão é feita pelo **moderador**, que pode aprovar, devolver com correções ou seguir para a publicação.
 
 ## Antes de enviar
 
 Faça primeiro a verificação da versão:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Verificar e acompanhar uma página]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Conferir a página antes de enviar e acompanhar seu status]]
 
 Confirme especialmente fonte, vigência, links, documentos, imagens, acessibilidade e próxima ação.
 
@@ -25,7 +25,7 @@ A partir desse momento, a próxima decisão pertence ao moderador.
 
 Não faça uma nova cópia e não resolva a pendência fora do fluxo. Abra os comentários, corrija a mesma página e envie novamente.
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Responder comentários e corrigir uma página]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Corrigir uma página devolvida pela moderação]]
 
 ## O que cada ação significa
 
