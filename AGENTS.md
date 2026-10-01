@@ -28,6 +28,7 @@
 - Use wikilinks somente para arquivos existentes neste vault. Para evidências e documentos mantidos fora dele, use um link Markdown direto para a fonte oficial.
 - Todo link deve usar um rótulo descritivo; não use URLs soltas como texto de navegação.
 - Antes de cada commit, valide que não há wikilinks sem destino e que links modificados continuam apontando para o conteúdo correto.
+- A navegação de retorno entre home, perfil e artigo é responsabilidade da interface. Não acrescente ao final dos Markdown links puramente navegacionais como “Voltar ao papel de…”, “Voltar às configurações…” ou equivalentes. Mantenha links finais apenas quando indicarem uma próxima etapa real do procedimento ou uma referência necessária.
 
 ## Explicações do guia
 
