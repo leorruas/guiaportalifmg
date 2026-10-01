@@ -2528,3 +2528,26 @@ body:has(.leitor-artigo:not(.escondido)) .page-masthead { display: none; }
         display: none;
     }
 }
+
+/* Correção de overflow na navegação entre artigos. */
+.artigo-nav-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.artigo-nav-cards .nav-card {
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.artigo-nav-cards .nav-card-label,
+.artigo-nav-cards .nav-card-title {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .artigo-nav-cards-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

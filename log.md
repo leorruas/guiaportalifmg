@@ -434,3 +434,11 @@
 - Reforçada a regra de não inferir campos, permissões ou comportamento do Wagtail quando a evidência disponível for insuficiente; nesses casos, deve-se pedir confirmação ou consultar fonte oficial identificada.
 - Revisão final confirmou a presença das salvaguardas de canonicidade, hierarquia, metadados, índice, regressão, modularização, cache, fuzzy e não inferência.
 
+## 2026-10-01 — Correção de overflow na navegação entre artigos
+
+- Corrigido o vazamento horizontal do título de “próximo artigo” na navegação sequencial.
+- As duas colunas passam a usar `minmax(0, 1fr)`, permitindo que cada célula encolha dentro da largura disponível.
+- Os links de navegação passam a usar `box-sizing: border-box` e `min-width: 0`, evitando que o padding do cartão aumente sua largura além da coluna.
+- Rótulo e título podem quebrar linha dentro do próprio cartão quando necessário.
+- No mobile, a coluna única também usa `minmax(0, 1fr)`.
+- Atualizada a versão de cache de `style.css` em `index.html`.
