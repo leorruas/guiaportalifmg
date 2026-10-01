@@ -730,6 +730,16 @@
                 "source": "https://portal.ifmg.edu.br/servidores/guia/ifmg/",
                 "target": "https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/",
                 "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/cppd-comissao-permanente-de-pessoal-docente/",
+                "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/cis-comissao-interna-de-supervisao-da-carreira-tae/",
+                "type": "link"
         }
 ];
 
