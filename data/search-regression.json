@@ -80,6 +80,18 @@
     {
       "query": "colecao",
       "expected_top_id": "task-collection-use"
+    },
+    {
+      "query": "evento",
+      "expected_top_id": "task-event-create"
+    },
+    {
+      "query": "criar evento",
+      "expected_top_id": "task-event-create"
+    },
+    {
+      "query": "comunicado",
+      "expected_top_id": "task-content-type-choose"
     }
   ]
 }
