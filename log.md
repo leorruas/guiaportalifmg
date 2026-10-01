@@ -534,3 +534,11 @@
 - O mapa passa de 51 para `52` páginas e de 52 para `55` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v7`.
 
+## 2026-10-01 — Ramo Comunidade no mapa do Portal
+
+- Adicionadas 7 entradas diretas em `https://portal.ifmg.edu.br/comunidade/`: Hubs de Inovação do IFMG, Empresas Juniores e Empreendedorismo, Bibliotecas, + IFMG • Cursos livres e gratuitos, Espaços Técnico-Culturais do IFMG, Comunicação / Imprensa e Sugestões, Críticas e Elogios.
+- Registradas 7 novas relações do tipo `estrutura`, todas partindo de Comunidade.
+- A entrada `Sugestões, Críticas e Elogios` de Comunidade recebeu também relação `redireciona` para o nó único da Ouvidoria, preservando a convergência já usada nos demais ramos.
+- O mapa passa de 52 para `59` páginas e de 55 para `63` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v8`.
+
