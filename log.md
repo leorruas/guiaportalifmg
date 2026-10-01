@@ -160,3 +160,12 @@
 - Removidas de E18 as instruções de agendamento/publicação, mantendo essas ações na camada de moderação até validação específica das permissões reais do Portal IFMG.
 - Mantidos os arquivos absorvidos fisicamente no repositório como compatibilidade de navegação; eles continuam ocultos dos perfis e da busca pelo modelo canônico implementado na fase anterior.
 
+## 2026-10-01 — Consolidação editorial: busca e menu
+
+- Consolidado o procedimento de busca e menu em `04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página.md`, agora referência comum para editor, moderador e administrador.
+- Reduzido `03 - Sou moderador/07` a uma página de encaminhamento para a tarefa canônica, preservando compatibilidade de links sem duplicar o passo a passo.
+- Reescrito `02 - Sou administrador/11` como página de transição: metadados e menu apontam para E17; ordenação estrutural aponta para A10; permissões apontam para A07.
+- Separadas explicitamente configuração editorial de encontrabilidade, ordenação de páginas e gestão de permissões.
+- Mantida A10 sem consolidação adicional nesta etapa porque sua parte de coleções será tratada no bloco específico de mídia e coleções.
+- Validados os wikilinks dos arquivos alterados e confirmada a sintaxe atual do `script.js`.
+
