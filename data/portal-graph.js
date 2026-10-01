@@ -112,11 +112,6 @@
                 "title": "Bibliotecas"
         },
         {
-                "id": "https://portal.ifmg.edu.br/estudantes/httpsportaldesenvifmgedubrcomunidadesuporte-suap/",
-                "url": "https://portal.ifmg.edu.br/estudantes/httpsportaldesenvifmgedubrcomunidadesuporte-suap/",
-                "title": "Como abrir um chamado (Solicitar ajuda • SUAP)"
-        },
-        {
                 "id": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
                 "url": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
                 "title": "Sugestões, Críticas e Elogios"
@@ -165,11 +160,6 @@
                 "id": "https://portal.ifmg.edu.br/servidores/noticias/",
                 "url": "https://portal.ifmg.edu.br/servidores/noticias/",
                 "title": "Notícias para servidores"
-        },
-        {
-                "id": "https://portal.ifmg.edu.br/servidores/solicitar-ajuda-suap/",
-                "url": "https://portal.ifmg.edu.br/servidores/solicitar-ajuda-suap/",
-                "title": "Como abrir um chamado (Solicitar ajuda • SUAP)"
         },
         {
                 "id": "https://portal.ifmg.edu.br/servidores/sugestoes-criticas-e-elogios/",
@@ -256,6 +246,22 @@
                 "url": "https://www.ifmg.edu.br/portal/ouvidoria",
                 "title": "Ouvidoria",
                 "description": "Destino comum para sugestões, críticas e elogios."
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/processo-seletivo/",
+                "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/processo-seletivo/",
+                "title": "Processo Seletivo"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/",
+                "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/",
+                "title": "Reserva de Vagas (Cotas)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
+                "url": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
+                "title": "Como abrir um chamado (Solicitar ajuda • SUAP)",
+                "description": "Destino comum para suporte e abertura de chamados no SUAP."
         }
 ];
 
@@ -367,11 +373,6 @@
         },
         {
                 "source": "https://portal.ifmg.edu.br/estudantes/",
-                "target": "https://portal.ifmg.edu.br/estudantes/httpsportaldesenvifmgedubrcomunidadesuporte-suap/",
-                "type": "estrutura"
-        },
-        {
-                "source": "https://portal.ifmg.edu.br/estudantes/",
                 "target": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
                 "type": "estrutura"
         },
@@ -418,11 +419,6 @@
         {
                 "source": "https://portal.ifmg.edu.br/servidores/",
                 "target": "https://portal.ifmg.edu.br/servidores/noticias/",
-                "type": "estrutura"
-        },
-        {
-                "source": "https://portal.ifmg.edu.br/servidores/",
-                "target": "https://portal.ifmg.edu.br/servidores/solicitar-ajuda-suap/",
                 "type": "estrutura"
         },
         {
@@ -519,6 +515,31 @@
                 "source": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
                 "target": "https://www.ifmg.edu.br/portal/ouvidoria",
                 "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
+                "target": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/processo-seletivo/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
+                "target": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/",
+                "target": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/",
+                "target": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
+                "type": "estrutura"
         }
 ];
 
