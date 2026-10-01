@@ -18,21 +18,79 @@ Faça estas perguntas:
 
 ## Tipos de conteúdo e procedimentos
 
-| Tipo | Quando usar | Perfil mínimo no guia | Procedimento |
-| --- | --- | --- | --- |
-| **Página institucional** | Serviço, setor, tema ou orientação que permanece útil | editor | [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero criar uma página institucional|Criar uma página institucional]] |
-| **Notícia** | Fato novo, acontecimento ou divulgação com prazo editorial | editor | [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|Criar e preparar uma notícia]] |
-| **Processo seletivo** | Seleção com edital, etapas, documentos, prazos e resultados | editor | [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|Criar e atualizar um processo seletivo]] |
-| **Curso** | Apresentação estruturada de uma oferta formativa | editor | [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/05 - Sou editor e quero criar um curso|Criar um curso]] |
-| **Colegiado** | Instância com composição, documentos, reuniões e contato | editor | [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/06 - Sou editor e quero criar um colegiado|Criar um colegiado]] |
-| **Link** | Atalho para sistema, página, documento ou fonte oficial | editor | [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/07 - Sou editor e quero criar um link|Criar um link]] |
-| **Programa** | Iniciativa institucional contínua, com objetivo e acompanhamento | editor | [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/08 - Sou editor e quero criar um programa|Criar um programa]] |
-| **Projeto** | Iniciativa com identidade e página próprias | editor | [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/09 - Sou editor e quero criar um projeto|Criar um projeto]] |
-| **Campus** | Página estrutural de uma unidade | moderador | [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus|Criar ou editar um campus]] |
-| **Pasta de processos seletivos** | Estrutura que agrupa seleções da mesma classificação | moderador | [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos|Criar uma pasta de processos seletivos]] |
-| **Pasta de notícias** | Estrutura que recebe notícias | administrador | [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias|Criar uma pasta de notícias]] |
-| **Evento** | Atividade com data, local, público e participação | editor | procedimento específico ainda não existe |
-| **Comunicado** | Aviso objetivo, temporário e com ação ou vigência clara | editor | procedimento específico ainda não existe |
+### Página institucional
+
+Use para serviço, setor, tema ou orientação que permanece útil. **Perfil mínimo: editor.**
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero criar uma página institucional|Criar uma página institucional]]
+
+### Notícia
+
+Use para fato novo, acontecimento ou divulgação com prazo editorial. **Perfil mínimo: editor.**
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|Criar e preparar uma notícia]]
+
+### Processo seletivo
+
+Use para seleção com edital, etapas, documentos, prazos e resultados. **Perfil mínimo: editor.**
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|Criar e atualizar um processo seletivo]]
+
+### Curso
+
+Use para apresentar de forma estruturada uma oferta formativa. **Perfil mínimo: editor.**
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/05 - Sou editor e quero criar um curso|Criar um curso]]
+
+### Colegiado
+
+Use para uma instância com composição, documentos, reuniões e contato. **Perfil mínimo: editor.**
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/06 - Sou editor e quero criar um colegiado|Criar um colegiado]]
+
+### Link
+
+Use como atalho para sistema, página, documento ou fonte oficial. **Perfil mínimo: editor.**
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/07 - Sou editor e quero criar um link|Criar um link]]
+
+### Programa
+
+Use para iniciativa institucional contínua, com objetivo e acompanhamento. **Perfil mínimo: editor.**
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/08 - Sou editor e quero criar um programa|Criar um programa]]
+
+### Projeto
+
+Use para iniciativa que precisa de identidade e página próprias. **Perfil mínimo: editor.**
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/09 - Sou editor e quero criar um projeto|Criar um projeto]]
+
+### Campus
+
+É uma página estrutural de uma unidade. **Perfil mínimo: moderador.**
+
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus|Criar ou editar um campus]]
+
+### Pasta de processos seletivos
+
+Use para agrupar seleções da mesma classificação. **Perfil mínimo: moderador.**
+
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos|Criar uma pasta de processos seletivos]]
+
+### Pasta de notícias
+
+É a estrutura que recebe notícias. **Perfil mínimo: administrador.**
+
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias|Criar uma pasta de notícias]]
+
+### Evento
+
+Use para atividade com data, local, público e participação. **Perfil mínimo: editor.** Ainda não há procedimento específico.
+
+### Comunicado
+
+Use para aviso objetivo, temporário e com ação ou vigência clara. **Perfil mínimo: editor.** Ainda não há procedimento específico.
 
 ## Evento e Comunicado
 
