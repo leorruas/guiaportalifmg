@@ -600,3 +600,9 @@
 - O mapa passa de 59 para `69` páginas e de 64 para `75` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v12`.
 
+## 2026-10-01 — +IFMG como redirecionamento
+
+- Corrigida a interpretação anterior: a entrada `+IFMG` em `servidores/guia/ifmg/` redireciona para o mesmo destino de `+ IFMG • Cursos livres e gratuitos`.
+- Mantida a entrada no ramo de “+ informações para servidores”, com relação `redireciona` para o nó canônico `https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/`.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v13`.
+
