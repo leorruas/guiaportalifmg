@@ -692,3 +692,13 @@
 - A lista foi validada com 20 tarefas canônicas e 3 artigos absorvidos fora da navegação.
 - Atualizados os caches de `data/guide-metadata.js`, `script.js` e `style.css`.
 
+## 2026-10-01 — Reorganização das tarefas do Moderador
+
+- As tarefas exclusivas de moderação passam a seguir a sequência: revisar e decidir → registrar correções e acompanhar devolução → publicar/agendar/retirar do ar → criar ou editar campus → criar pasta para processos seletivos.
+- Adicionados campos `ordem` e `descricaoLista` às 5 tarefas canônicas do Moderador e à visão do papel.
+- Títulos ambíguos foram reescritos para explicar o objetivo da tarefa antes de abrir o artigo.
+- Os artigos canônicos de revisão, comentários/histórico, publicação, campus e pasta de processos seletivos foram alinhados aos novos títulos e aos links de continuidade.
+- As tarefas herdadas do Editor continuam aparecendo antes das tarefas próprias de Moderador, sem duplicação de procedimentos.
+- Mantidos os artigos absorvidos fora da navegação principal.
+- Atualizado o cache de `data/guide-metadata.js`.
+
