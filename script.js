@@ -421,6 +421,58 @@ function calcularPontuacaoBusca(artigo, termoBusca, termos) {
     return pontos;
 }
 
+function aliasCorrespondenteBusca(artigo, termoBusca) {
+    const consulta = normalizarTextoParaBusca(termoBusca).trim();
+    const termos = termosDaBusca(termoBusca);
+    const aliases = Array.isArray(artigo?.metadados?.aliases)
+        ? artigo.metadados.aliases
+        : [];
+
+    return aliases.find(alias => normalizarTextoParaBusca(alias) === consulta)
+        || (termos.length > 1
+            ? aliases.find(alias => normalizarTextoParaBusca(alias).includes(consulta))
+            : "")
+        || aliases.find(alias => contemTodosOsTermos(alias, termos))
+        || "";
+}
+
+function motivoCorrespondenciaBusca(artigo, termoBusca) {
+    const consulta = normalizarTextoParaBusca(termoBusca).trim();
+    const termos = termosDaBusca(termoBusca);
+    const campos = extrairCamposDeBusca(artigo);
+
+    if (campos.tituloAcao.includes(consulta) || contemTodosOsTermos(campos.tituloAcao, termos)) {
+        return { tipo: "titulo", rotulo: "correspondência no título" };
+    }
+
+    const alias = aliasCorrespondenteBusca(artigo, termoBusca);
+    if (alias) {
+        return { tipo: "alias", rotulo: `termo relacionado: ${alias}` };
+    }
+
+    if (campos.headings.includes(consulta) || contemTodosOsTermos(campos.headings, termos)) {
+        return { tipo: "secao", rotulo: "correspondência em uma seção" };
+    }
+
+    if (campos.introducao.includes(consulta) || contemTodosOsTermos(campos.introducao, termos)) {
+        return { tipo: "introducao", rotulo: "correspondência na introdução" };
+    }
+
+    if (campos.categoria.includes(consulta) || contemTodosOsTermos(campos.categoria, termos)) {
+        return { tipo: "categoria", rotulo: "correspondência no perfil" };
+    }
+
+    return { tipo: "conteudo", rotulo: "correspondência no conteúdo" };
+}
+
+function rotuloPerfilMinimo(artigo) {
+    const meta = artigo.metadados || {};
+    if (meta.tipo === "referencia" || meta.perfilMinimo === "todos") return "referência";
+    if (meta.tipo === "visao") return `visão de ${meta.perfilMinimo}`;
+    if (meta.perfilMinimo === "gestor") return "gestor";
+    return meta.perfilMinimo ? `perfil mínimo: ${meta.perfilMinimo}` : artigo.categoria.toLowerCase();
+}
+
 function criarIndiceNormalizado(texto = "") {
     const caracteres = Array.from(String(texto));
     const origens = [];
@@ -599,82 +651,64 @@ function exibirResultados(artigos, termo = "") {
     const resumoBusca = document.createElement("p");
     resumoBusca.className = "resumo-busca";
     const sufixoDoFiltro = filtroDePerfilAtivo ? ` em ${tituloDoIndice(filtroDePerfilAtivo)}` : "";
-    resumoBusca.textContent = `${resultadosFiltrados.length} ${resultadosFiltrados.length === 1 ? "procedimento encontrado" : "procedimentos encontrados"}${sufixoDoFiltro} para “${termo}”`;
+    resumoBusca.textContent = `${resultadosFiltrados.length} ${resultadosFiltrados.length === 1 ? "resultado encontrado" : "resultados encontrados"}${sufixoDoFiltro} para “${termo}”, em ordem de relevância`;
     containerResultados.appendChild(resumoBusca);
 
     if (resultadosFiltrados.length === 0) {
         const mensagem = document.createElement("p");
         mensagem.className = "mensagem-busca";
-        mensagem.textContent = "Não há procedimentos desse perfil para esta pesquisa.";
+        mensagem.textContent = "Não há resultados desse perfil para esta pesquisa.";
         containerResultados.appendChild(mensagem);
         return;
     }
 
-    // Agrupa resultados por categoria (pasta)
-    const grupos = {};
-    resultadosFiltrados.forEach(artigo => {
-        if (!grupos[artigo.categoria]) grupos[artigo.categoria] = [];
-        grupos[artigo.categoria].push(artigo);
-    });
-
     const termos = termosDaBusca(termo);
-    ordenarCategorias(Object.keys(grupos))
-        .sort((a, b) => {
-            const tituloEmA = grupos[a].some(artigo => contemTodosOsTermos(artigo.titulo, termos));
-            const tituloEmB = grupos[b].some(artigo => contemTodosOsTermos(artigo.titulo, termos));
-            return Number(tituloEmB) - Number(tituloEmA);
-        })
-        .forEach(categoria => {
-        const grupoDiv = document.createElement("div");
-        grupoDiv.className = "busca-grupo-assunto";
+    const lista = document.createElement("div");
+    lista.className = "resultados-lista resultados-lista-relevancia";
 
-        const tituloGrupo = document.createElement("h3");
-        tituloGrupo.className = "busca-assunto-titulo";
-        tituloGrupo.textContent = categoria;
-        grupoDiv.appendChild(tituloGrupo);
+    resultadosFiltrados.forEach((artigo, indice) => {
+        const card = document.createElement("a");
+        card.className = "resultado-item";
+        card.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
 
-        const subCardsContainer = document.createElement("div");
-        subCardsContainer.className = "resultados-lista";
+        const numero = document.createElement("span");
+        numero.className = "resultado-numero";
+        numero.textContent = String(indice + 1).padStart(2, "0");
 
-        grupos[categoria].forEach((artigo, indice) => {
-            const card = document.createElement("a");
-            card.className = "resultado-item";
-            card.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
+        const conteudoResultado = document.createElement("span");
+        conteudoResultado.className = "resultado-conteudo";
 
-            const numero = document.createElement("span");
-            numero.className = "resultado-numero";
-            numero.textContent = String(indice + 1).padStart(2, "0");
+        const titulo = document.createElement("strong");
+        titulo.innerHTML = destacarTexto(tituloDaAcao(artigo.titulo), termo);
+        titulo.title = tituloDaAcao(artigo.titulo);
 
-            const conteudoResultado = document.createElement("span");
-            conteudoResultado.className = "resultado-conteudo";
+        const motivo = motivoCorrespondenciaBusca(artigo, termo);
+        const meta = document.createElement("span");
+        meta.className = "resultado-meta";
+        meta.innerHTML = `<span>${escaparHtml(rotuloPerfilMinimo(artigo))}</span><span aria-hidden="true">·</span><span>${destacarTexto(motivo.rotulo, termo)}</span>`;
 
-            const titulo = document.createElement("strong");
-            titulo.innerHTML = destacarTexto(tituloDaAcao(artigo.titulo), termo);
-            titulo.title = tituloDaAcao(artigo.titulo);
+        const trecho = document.createElement("span");
+        trecho.className = "resultado-trecho";
+        const textoTrecho = extrairTrechoRelevante(artigo.conteudo, motivo.tipo === "alias" ? "" : termo);
+        trecho.innerHTML = destacarTexto(textoTrecho, motivo.tipo === "alias" ? "" : termo);
 
-            const trecho = document.createElement("span");
-            trecho.className = "resultado-trecho";
-            const textoTrecho = extrairTrechoRelevante(artigo.conteudo, termo);
-            trecho.innerHTML = destacarTexto(textoTrecho, termo);
+        conteudoResultado.appendChild(titulo);
+        conteudoResultado.appendChild(meta);
+        conteudoResultado.appendChild(trecho);
+        card.appendChild(numero);
+        card.appendChild(conteudoResultado);
 
-            conteudoResultado.appendChild(titulo);
-            conteudoResultado.appendChild(trecho);
-            card.appendChild(numero);
-            card.appendChild(conteudoResultado);
-
-            card.addEventListener("click", (event) => {
-                if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
-                event.preventDefault();
-                const abrirNaOcorrencia = !contemTodosOsTermos(artigo.titulo, termos);
-                abrirArtigo(artigo.titulo, artigo.conteudo, true, abrirNaOcorrencia ? termos : []);
-            });
-
-            subCardsContainer.appendChild(card);
+        card.addEventListener("click", (event) => {
+            if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
+            event.preventDefault();
+            const abrirNaOcorrencia = motivo.tipo !== "titulo" && motivo.tipo !== "alias";
+            abrirArtigo(artigo.titulo, artigo.conteudo, true, abrirNaOcorrencia ? termos : []);
         });
 
-        grupoDiv.appendChild(subCardsContainer);
-        containerResultados.appendChild(grupoDiv);
+        lista.appendChild(card);
     });
+
+    containerResultados.appendChild(lista);
 }
 
 function rotaDoArtigo(artigo) {
