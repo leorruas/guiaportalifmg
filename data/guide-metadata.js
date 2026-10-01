@@ -16,6 +16,7 @@ const perfilPorCategoria = {
 };
 
 const metadadosCanonicos = {
+    "00 - Comece aqui/04 - Mapa da estrutura do Portal": { id: "ref-portal-map", aliases: ["mapa do portal","grafo","estrutura do portal","arquitetura do portal"], tipo: "referencia", perfilMinimo: "todos" },
     "04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos": { id: "role-editor", aliases: ["editor","edição","criar conteúdo","atualizar conteúdo"], tipo: "visao", perfilMinimo: "editor", tituloCanonico: "01 - o papel do editor" },
     "03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos": { id: "role-moderator", aliases: ["moderador","moderação","revisão","aprovação"], tipo: "visao", perfilMinimo: "moderador", tituloCanonico: "08 - o papel do moderador" },
     "02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações": { id: "role-administrator", aliases: ["administrador","admin","configuração","acessos"], tipo: "visao", perfilMinimo: "administrador", tituloCanonico: "01 - o papel do administrador" },
