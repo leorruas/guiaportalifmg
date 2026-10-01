@@ -190,3 +190,13 @@
 - Removido o link circular de E15 para E16; a navegação final agora retorna à tarefa canônica de criar ou editar uma página.
 - Validados os wikilinks, anexos e a sintaxe atual do `script.js`.
 
+## 2026-10-01 — Consolidação editorial: revisão e publicação
+
+- Mantido `03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos.md` como visão do papel de moderador, com checklist e responsabilidades, sem repetir procedimentos completos nem apontar para páginas absorvidas.
+- Consolidada a revisão editorial em `03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação.md`, separando aprovação/devolução da ação técnica de alterar o estado público da página.
+- Consolidado `03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página.md` como referência canônica para publicação, despublicação, agendamento e expiração.
+- Reduzido `02 - Sou administrador/04 - Sou administrador e quero revisar e publicar conteúdo.md` a uma página de encaminhamento para as tarefas herdadas de moderador.
+- Reduzido `03 - Sou moderador/12 - Sou moderador e quero publicar uma notícia ou processo seletivo.md` a uma página de transição: criação aponta para as tarefas de editor; revisão e publicação apontam para M09 e M11.
+- Reforçada a distinção entre a pergunta editorial “o conteúdo está pronto?” e a decisão operacional “este conteúdo deve estar visível agora?”.
+- Validados wikilinks, anexos, ausência de referências absorvidas em M08 e sintaxe atual do `script.js`.
+
