@@ -220,3 +220,13 @@
 - Substituída a tabela inicial por seções, evitando conflito entre o separador `|` dos wikilinks e a sintaxe de tabelas Markdown no pipeline atual do site.
 - Validados wikilinks, anexos, ausência de referência a M12 absorvido, estado de E21 e sintaxe atual do `script.js`.
 
+## 2026-10-01 — Consolidação editorial: ciclo de edição e comentários
+
+- Reescrito `04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página.md` para tratar somente de verificação, status, pré-visualização, histórico e identificação do próximo responsável; título canônico passa a “Verificar e acompanhar uma página”.
+- Reescrito `04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página.md` para concentrar a correção de páginas devolvidas; título canônico passa a “Responder comentários e corrigir uma página”.
+- Reescrito `04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação.md` como etapa exclusiva de passagem do rascunho para a revisão, apontando para E18 antes do envio e E19 quando houver devolução.
+- Reescrito `03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico.md` como tarefa própria de registrar pendências e acompanhar correções; título canônico atualizado para refletir essa ação.
+- Ajustado `03 - Sou moderador/09` para encaminhar o registro de pendências ao fluxo canônico de comentários em M10, evitando repetir o procedimento dentro da revisão editorial.
+- Preservados os nomes físicos dos arquivos e suas rotas; a interface usa os novos títulos via `tituloCanonico`.
+- Validados wikilinks, anexos, títulos canônicos e sintaxe do `script.js`.
+
