@@ -68,4 +68,3 @@ Para o primeiro acesso e a solicitação de permissão, consulte [[04 - Governan
 
 **Como saber que deu certo:** a página aparece na posição esperada para quem visita o portal, não apenas na lista de edição.
 
-[[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/01 - Como utilizar este guia|Voltar a como utilizar este guia]]
