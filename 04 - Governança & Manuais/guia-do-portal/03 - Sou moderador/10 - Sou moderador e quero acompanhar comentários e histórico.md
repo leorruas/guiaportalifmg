@@ -1,6 +1,6 @@
-# Sou moderador e quero registrar pendências e acompanhar correções
+# Sou moderador e quero registrar correções e acompanhar uma página devolvida
 
-Use comentários para devolver uma orientação no ponto exato que precisa ser corrigido. Depois do reenvio, use o mesmo fluxo para conferir se a pendência foi atendida.
+Use esta tarefa quando, durante a revisão, você encontrou algo que o editor precisa corrigir. Registre a orientação no ponto certo da página e, quando ela voltar para moderação, confira se a pendência foi resolvida.
 
 O comentário registra **o que precisa mudar**; o histórico ajuda a entender **o que mudou ao longo do tempo**. Nenhum dos dois substitui a decisão editorial de aprovar ou devolver a página.
 
@@ -30,10 +30,10 @@ O comentário registra **o que precisa mudar**; o histórico ajuda a entender **
 
 Para aprovar ou devolver a entrega, use:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar um conteúdo e decidir se ele pode seguir para publicação]]
 
 O fluxo correspondente do editor está em:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Responder comentários e corrigir uma página]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Corrigir uma página devolvida pela moderação]]
 
 **Como saber que terminou:** a pendência tem uma orientação objetiva, a correção pode ser conferida no próprio fluxo e a decisão seguinte fica registrada na revisão.
