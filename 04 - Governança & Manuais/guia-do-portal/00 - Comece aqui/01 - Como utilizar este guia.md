@@ -10,14 +10,14 @@ Quando aparecer um termo do Wagtail, leia a explicação ao lado dele. Por exemp
 
 ## 1. Escolha seu papel
 
-Pense no papel como a permissão que você está usando agora, e não como o seu cargo. Por exemplo: uma pessoa da Comunicação pode agir como **editora** ao preparar uma notícia e como **moderadora** ao revisar uma notícia de outra pessoa, se tiver as duas permissões.
+Pense no papel como o nível de responsabilidade usado naquela ação, e não como o cargo da pessoa. As capacidades operacionais são cumulativas: **editor → moderador → administrador**. Moderador herda as tarefas de editor; administrador herda as tarefas de editor e moderador. **Gestor** fica fora dessa cadeia porque solicita e acompanha demandas sem precisar operar o Wagtail.
 
 - [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações|Sou administrador e quero gerir acessos e configurações]].
 - [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos|Sou moderador e quero revisar e aprovar conteúdos]].
 - [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Sou editor e quero criar e atualizar conteúdos]].
 - [[04 - Governança & Manuais/guia-do-portal/01 - Sou gestor/01 - Sou gestor e quero solicitar ou acompanhar uma atualização|Sou gestor e quero solicitar ou acompanhar uma atualização]].
 
-Se uma pessoa desempenha mais de um papel, consulte a página correspondente à ação que ela está realizando naquele momento.
+Ao abrir um perfil no guia, as tarefas herdadas já aparecem automaticamente. Use a visão do papel para entender limites e responsabilidades; use as tarefas para executar o trabalho.
 
 Para entender termos, encontrar respostas rápidas e aprender a navegar no Wagtail, consulte [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/02 - Glossário, perguntas frequentes e navegação no Wagtail|Glossário, perguntas frequentes e navegação no Wagtail]].
 
@@ -29,9 +29,9 @@ Se este é seu primeiro acesso, comece por [[04 - Governança & Manuais/guia-do-
 
 - Para editar a página inicial, acesse [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero editar a homepage|Sou administrador e quero editar a homepage]].
 - Para estruturar um campus ou uma pasta de processos seletivos, acesse [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus|criar ou editar um campus]] ou [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos|criar uma pasta de processos seletivos]].
-- Para criar uma página, curso, colegiado, link, programa ou projeto, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo|Criar cada tipo de conteúdo]].
-- Para publicar notícia ou processo seletivo, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|publicar uma notícia]] ou [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|publicar um processo seletivo]].
-- Para adicionar imagem, documento ou trabalhar com coleção, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/22 - Sou editor e quero gerenciar imagens, documentos e cadastros|gerenciar imagens, documentos e cadastros]].
+- Para escolher entre página institucional, notícia, processo seletivo, curso, projeto e outros tipos, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero escolher o tipo de página|Escolher o tipo de conteúdo]].
+- Para criar uma notícia, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|Criar e preparar uma notícia]]. Para uma seleção, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|Criar e atualizar um processo seletivo e seus documentos]].
+- Para mídia, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem|Adicionar ou atualizar uma imagem]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento|Adicionar ou atualizar um documento]] e [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]].
 
 ## 2. Identifique sua intenção
 
