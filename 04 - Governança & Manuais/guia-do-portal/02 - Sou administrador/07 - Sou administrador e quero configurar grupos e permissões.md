@@ -31,4 +31,3 @@ Imagine o grupo como um crachá: ele informa onde a pessoa pode entrar e o que e
 > [!WARNING]
 > Conceder acesso a uma página não concede automaticamente acesso às coleções. Revise os dois conjuntos de permissões.
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações|Voltar ao papel de administrador]]
