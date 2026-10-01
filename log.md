@@ -369,3 +369,15 @@
 - O leitor de artigos passa a remover o primeiro H1 do corpo quando ele corresponde ao título do documento já exibido no cabeçalho da interface, evitando repetição visual do título.
 - A verificação considera tanto o título canônico quanto o nome original do arquivo, preservando compatibilidade com artigos cujo título de exibição foi refinado sem renomear o Markdown.
 - Atualizadas as versões de cache de `guide-metadata.js` e `script.js`.
+
+## 2026-10-01 — Regressão automatizada da busca
+
+- Centralizado em `search.js` o pipeline completo de ranking por meio de `GuiaBusca.ranquearArtigos()`, incluindo exclusão de páginas absorvidas, cobertura de todos os termos, pontuação e desempate por título.
+- Atualizado `script.js` para consumir essa função diretamente; a interface e os testes deixam de manter implementações paralelas do ranking.
+- Mantido um fallback básico em `script.js` caso o módulo avançado de busca não carregue, preservando a inicialização da home.
+- Criado `scripts/test-search-regression.mjs`, que carrega os mesmos módulos usados pelo site, lê os 59 Markdown listados em `data/guide-index.json`, aplica os metadados canônicos e executa os casos de `data/search-regression.json`.
+- O teste verifica também IDs canônicos duplicados e falha com os três primeiros resultados e respectivas pontuações quando o topo esperado muda.
+- Criado `.github/workflows/validate-search.yml`, executado em mudanças nos artigos, índice, metadados, corpus de regressão, motor de busca, script principal, teste ou no próprio workflow.
+- A primeira execução real do GitHub Actions concluiu com sucesso: `14/14` consultas com o resultado esperado no topo e corpus de `59` artigos do índice publicado.
+- Atualizadas somente as versões de cache de `search.js` e `script.js` em `index.html`, preservando as versões concorrentes já existentes para metadados, navegação e a linha `titulo-unico` do script principal.
+
