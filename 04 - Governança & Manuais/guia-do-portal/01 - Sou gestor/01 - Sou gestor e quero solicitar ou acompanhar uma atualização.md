@@ -1,6 +1,6 @@
-# Sou gestor e quero solicitar ou acompanhar uma atualização
+# Sou gestor e quero solicitar uma atualização do Portal ou acompanhar o pedido
 
-Você é responsável por uma área, serviço, projeto ou informação institucional e quer divulgá-la, atualizá-la ou garantir que ela esteja correta no portal.
+Use esta tarefa quando você é responsável por uma área, serviço, projeto ou informação institucional e precisa **pedir uma criação, correção ou atualização no Portal** ou acompanhar o que já foi solicitado.
 
 No momento, o gestor encaminha a demanda a um editor, moderador ou administrador responsável pelo escopo. O gestor não precisa operar o Wagtail para solicitar ou acompanhar a atualização.
 
