@@ -9,27 +9,27 @@ Uma configuração administrativa pode afetar várias pessoas e áreas ao mesmo 
 
 ## O que você deve conseguir fazer
 
-- configurar grupos e permissões;
-- criar coleções e definir seus acessos;
-- organizar e reordenar estruturas de páginas;
+- reordenar páginas quando a sequência dentro de uma seção precisa mudar;
+- atualizar a página inicial quando essa responsabilidade estiver no seu escopo;
 - criar estruturas reservadas ao nível administrativo, como pasta de notícias;
-- manter cadastros auxiliares usados por processos e cursos;
-- editar a homepage quando essa responsabilidade estiver no seu escopo;
+- definir quais grupos podem editar páginas e usar coleções;
+- criar coleções e definir quem pode utilizá-las;
+- manter as opções administrativas usadas em processos seletivos e cursos;
 - identificar quando uma demanda é editorial, de moderação ou realmente administrativa.
 
 ## Tarefas próprias de administração
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções|Reordenar páginas dentro de uma seção]]
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero editar a homepage|Atualizar a página inicial do Portal]]
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções|Reordenar páginas e tratar estrutura]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias|Criar uma pasta para notícias]]
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos|Configurar cadastros de processos e cursos]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Definir quem pode editar páginas e usar coleções]]
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias|Criar uma pasta de notícias]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção de arquivos e definir quem pode usá-la]]
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/05 - Sou administrador e quero editar a homepage|Editar a homepage]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos|Criar ou atualizar opções usadas em processos seletivos e cursos]]
 
 ## Antes de alterar a configuração
 
