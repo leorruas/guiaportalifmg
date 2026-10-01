@@ -68,6 +68,16 @@ const guiaBuscaFallback = {
     calcularPontuacaoBusca() {
         return 0;
     },
+    ranquearArtigos(artigos, termoBusca) {
+        const termos = guiaBuscaFallback.termosDaBusca(termoBusca);
+        return artigos
+            .filter(artigo => artigo?.metadados?.estado !== "absorver")
+            .filter(artigo => guiaBuscaFallback.contemTodosOsTermos(
+                guiaBuscaFallback.textoIndexavelDoArtigo(artigo),
+                termos
+            ))
+            .sort((a, b) => a.titulo.localeCompare(b.titulo, "pt-BR", { numeric: true }));
+    },
     motivoCorrespondenciaBusca() {
         return { tipo: "conteudo", rotulo: "correspondência no conteúdo" };
     },
@@ -88,6 +98,7 @@ const {
     contemTodosOsTermos,
     textoIndexavelDoArtigo,
     calcularPontuacaoBusca,
+    ranquearArtigos,
     motivoCorrespondenciaBusca,
     rotuloPerfilMinimo
 } = window.GuiaBusca || guiaBuscaFallback;
@@ -409,18 +420,7 @@ function filtrarArtigos(termoBusca) {
         return;
     }
 
-    const filtrados = todosOsArtigos
-        .filter(artigo => artigo.metadados?.estado !== "absorver")
-        .filter(artigo => contemTodosOsTermos(textoIndexavelDoArtigo(artigo), termos))
-        .map(artigo => ({
-            artigo,
-            pontuacao: calcularPontuacaoBusca(artigo, termo, termos)
-        }))
-        .sort((a, b) => {
-            return b.pontuacao - a.pontuacao
-                || a.artigo.titulo.localeCompare(b.artigo.titulo, "pt-BR", { numeric: true });
-        })
-        .map(resultado => resultado.artigo);
+    const filtrados = ranquearArtigos(todosOsArtigos, termo);
 
     resultadosDaBuscaAtual = filtrados;
     filtroDePerfilAtivo = "";
