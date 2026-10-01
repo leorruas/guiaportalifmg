@@ -67,6 +67,7 @@
                     <input type="search" placeholder="ex.: estudantes" autocomplete="off">
                 </label>
                 <button type="button" class="portal-graph-depth-toggle" aria-pressed="false">mostrar distância da Home</button>
+                <button type="button" class="portal-graph-fullscreen" aria-pressed="false">tela cheia</button>
                 <button type="button" class="portal-graph-recenter">recentralizar</button>
                 <span class="portal-graph-stats">${data.nodes.length} páginas · ${data.edges.length} relações</span>
             </div>
@@ -82,6 +83,7 @@
         return {
             input: root.querySelector(".portal-graph-search input"),
             depthToggle: root.querySelector(".portal-graph-depth-toggle"),
+            fullscreen: root.querySelector(".portal-graph-fullscreen"),
             recenter: root.querySelector(".portal-graph-recenter"),
             visual: root.querySelector(".portal-graph-visual"),
             rings: root.querySelector(".portal-depth-rings"),
@@ -763,6 +765,46 @@
                     return;
                 }
                 cy.fit(cy.elements(), 72);
+            }
+
+            function atualizarControleTelaCheia() {
+                const ativo = document.fullscreenElement === root;
+                ui.fullscreen.setAttribute("aria-pressed", String(ativo));
+                ui.fullscreen.textContent = ativo ? "sair da tela cheia" : "tela cheia";
+            }
+
+            function reajustarAposTelaCheia() {
+                window.requestAnimationFrame(() => {
+                    cy.resize();
+                    reenquadrarModoAtual();
+                    if (modoDistancia) atualizarAneis();
+                });
+            }
+
+            async function alternarTelaCheia() {
+                try {
+                    if (document.fullscreenElement === root) {
+                        await document.exitFullscreen();
+                        return;
+                    }
+
+                    if (document.fullscreenElement) return;
+                    await root.requestFullscreen();
+                } catch (error) {
+                    console.warn("Não foi possível alternar a tela cheia do mapa:", error);
+                }
+            }
+
+            const suportaTelaCheia = Boolean(document.fullscreenEnabled && root.requestFullscreen);
+            if (!suportaTelaCheia) {
+                ui.fullscreen.hidden = true;
+            } else {
+                ui.fullscreen.addEventListener("click", alternarTelaCheia);
+                document.addEventListener("fullscreenchange", () => {
+                    atualizarControleTelaCheia();
+                    reajustarAposTelaCheia();
+                });
+                atualizarControleTelaCheia();
             }
 
             aplicarLayoutEstrutural();
