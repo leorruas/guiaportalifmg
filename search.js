@@ -122,6 +122,25 @@
         return pontos;
     }
 
+    function ranquearArtigos(artigos, termoBusca) {
+        const termo = String(termoBusca || "").trim();
+        const termos = termosDaBusca(termo);
+
+        return artigos
+            .filter(artigo => artigo?.metadados?.estado !== "absorver")
+            .filter(artigo => contemTodosOsTermos(textoIndexavelDoArtigo(artigo), termos))
+            .map(artigo => ({
+                artigo,
+                pontuacao: calcularPontuacaoBusca(artigo, termo, termos)
+            }))
+            .sort((a, b) => {
+                return b.pontuacao - a.pontuacao
+                    || a.artigo.titulo.localeCompare(b.artigo.titulo, "pt-BR", { numeric: true });
+            })
+            .map(resultado => resultado.artigo);
+    }
+
+
     function aliasCorrespondenteBusca(artigo, termoBusca) {
         const consulta = normalizarTextoParaBusca(termoBusca).trim();
         const termos = termosDaBusca(termoBusca);
@@ -180,6 +199,7 @@
         contemTodosOsTermos,
         textoIndexavelDoArtigo,
         calcularPontuacaoBusca,
+        ranquearArtigos,
         motivoCorrespondenciaBusca,
         rotuloPerfilMinimo
     });
