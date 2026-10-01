@@ -1,35 +1,50 @@
 # Sou moderador e quero publicar, despublicar ou agendar uma página
 
-Use as ações de publicação apenas nas páginas incluídas no escopo do seu grupo e depois da revisão editorial. Quando uma informação perde vigência, despublicar costuma ser mais seguro do que removê-la definitivamente.
+Use esta tarefa para controlar o **estado público** de uma página dentro do escopo do seu grupo. Ela deve acontecer depois da revisão editorial ou quando uma publicação já existente precisa mudar de vigência.
 
-Publicar deixa a informação visível; despublicar tira a página do acesso público, mas preserva o registro para uma decisão posterior. Remover apaga uma parte da história do portal e, por isso, deve ser a última opção.
+Revisar responde “o conteúdo está pronto?”. Publicar responde “este conteúdo deve estar visível agora?”. Manter essas decisões separadas reduz o risco de colocar no ar uma página apenas porque a edição terminou.
 
-## Publicar ou despublicar
+## Publicar
 
-1. Abra a página e confira a pré-visualização.
+1. Confirme que a revisão editorial foi concluída.
+2. Abra a página e confira o estado atual.
+3. Use **Pré-visualizar** uma última vez quando houver alteração recente.
 
-![[imagens/manual-ifrn/image36.png|Pré-visualização da página antes de publicar]]
+![[imagens/manual-ifrn/image36.png|Pré-visualização da página antes de alterar seu estado público]]
 
-2. Verifique se a página está no estado correto do fluxo de moderação.
-3. Use a ação de **Publicar** para tornar a página acessível ao público.
-4. Use **Despublicar** quando ela não deve mais estar disponível publicamente.
-5. Só use **Remover** quando tiver certeza: páginas removidas podem não ser recuperáveis.
+4. Use a ação de **Publicar** disponível no fluxo.
+5. Abra a página pública e confirme que o resultado corresponde à versão aprovada.
 
-## Agendar ou definir expiração
+## Despublicar
+
+Use **Despublicar** quando a informação não deve continuar disponível ao público, mas o registro ainda precisa ser preservado.
+
+Antes de despublicar, confira se:
+
+- existem links ou páginas que dependem daquele conteúdo;
+- a informação precisa ser substituída por outra página;
+- a página tem valor histórico ou precisa continuar acessível internamente.
+
+Evite remover definitivamente uma página quando despublicar ou redirecionar resolve o problema com menor risco.
+
+## Agendar publicação ou expiração
 
 1. Na edição da página, abra o indicador de **Status**.
 
-![[imagens/manual-ifrn/image16.png|Indicador de status e opções de publicação]]
+![[imagens/manual-ifrn/image16.png|Indicador de status e opções relacionadas à publicação]]
 
-2. Escolha a opção de agendamento, quando disponível.
-3. Informe a data de publicação ou expiração e salve.
+2. Escolha a opção de agendamento quando ela estiver disponível.
+3. Informe a data de publicação ou expiração confirmada.
 
 ![[imagens/manual-ifrn/image19.png|Formulário para agendar publicação ou expiração]]
 
-4. Registre o responsável por revisar a página antes de seu vencimento.
+4. Salve e confirme o estado agendado.
+5. Defina quem deve revisar a informação antes ou depois de seu vencimento.
 
-**Exemplo:** um comunicado sobre uma inscrição pode ser programado para sair na abertura e expirar após o prazo. Assim, ele não continua aparecendo como atual depois que perdeu a validade.
+**Exemplo:** um comunicado de inscrições pode entrar no ar na abertura do prazo e expirar depois do encerramento, evitando que permaneça visível como informação atual.
 
-**Como saber que terminou:** a página mostra o estado esperado — publicada, despublicada ou agendada — e há alguém responsável por revisar sua vigência.
+Para decidir se o conteúdo está pronto antes de alterar o estado público, use:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos|Voltar ao papel de moderador]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]]
+
+**Como saber que terminou:** a página mostra o estado esperado, publicada, despublicada ou agendada, e existe uma responsabilidade clara sobre sua vigência.
