@@ -169,7 +169,8 @@
         {
                 "id": "https://portal.ifmg.edu.br/servidores/mais/",
                 "url": "https://portal.ifmg.edu.br/servidores/mais/",
-                "title": "+ informações para servidores"
+                "title": "+ informações para servidores",
+                "hubLayout": "stack"
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/institucional/",
@@ -184,7 +185,8 @@
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
-                "title": "Participação Social"
+                "title": "Participação Social",
+                "hubLayout": "fan"
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/",
