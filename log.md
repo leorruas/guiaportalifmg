@@ -680,3 +680,15 @@
 - Validação geométrica confirmou erro radial máximo igual a `0.000000`, isto é, os nós ficam exatamente no raio correspondente ao número de cliques.
 - Atualizados os caches de `portal-graph.js` e `style.css`.
 
+## 2026-10-01 — Reorganização das tarefas do Editor
+
+- A ordem das tarefas deixa de depender exclusivamente do prefixo numérico do arquivo: `script.js` passa a respeitar o campo `ordem` dos metadados, mantendo o `sourcePath` como fallback.
+- As URLs e nomes físicos dos arquivos foram preservados para não quebrar links existentes.
+- O perfil Editor passa a seguir o fluxo real de trabalho: encontrar → escolher tipo → criar/editar → montar blocos → imagens → documentos → coleções → busca/navegação → conferir/status → enviar para revisão → corrigir devolução → procedimentos específicos.
+- Os artigos absorvidos continuam fora da lista principal.
+- Adicionado `descricaoLista` aos 20 procedimentos canônicos do Editor; a tela do perfil agora mostra uma frase curta explicando quando usar cada tarefa.
+- Renomeados na interface os títulos mais ambíguos, incluindo `Definir como a página aparece na busca e na navegação`, `Conferir uma página antes de enviar e acompanhar seu status`, `Enviar uma página pronta para revisão` e `Corrigir uma página devolvida pela moderação`.
+- O conteúdo dos artigos 17, 18, 19 e 20 e o artigo `O papel do editor` foram alinhados à nova nomenclatura e à sequência correta do fluxo.
+- A lista foi validada com 20 tarefas canônicas e 3 artigos absorvidos fora da navegação.
+- Atualizados os caches de `data/guide-metadata.js`, `script.js` e `style.css`.
+
