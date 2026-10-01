@@ -12,8 +12,8 @@ Moderar não é apenas corrigir escrita. É ler como alguém que não participou
 - revisar conteúdos enviados por editores;
 - aprovar ou devolver uma entrega com orientação objetiva;
 - verificar fonte, vigência, responsabilidade, acessibilidade e próxima ação;
-- acompanhar comentários e histórico quando houver pendências;
-- publicar, despublicar ou agendar conteúdo quando essa ação estiver disponível no escopo do grupo;
+- registrar pendências e acompanhar as correções quando uma página for devolvida;
+- publicar, agendar ou retirar conteúdo do ar quando essa ação estiver disponível no escopo do grupo;
 - reconhecer quando a demanda exige decisão administrativa, como mudança de permissão ou estrutura.
 
 ## Checklist de moderação
@@ -34,14 +34,14 @@ Moderar não é apenas corrigir escrita. É ler como alguém que não participou
 
 Para decidir se uma entrega está pronta:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar um conteúdo e decidir se ele pode seguir para publicação]]
 
 Para registrar pendências e acompanhar alterações:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Registrar pendências e acompanhar correções]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Registrar correções e acompanhar uma página devolvida]]
 
 Para controlar o estado público da página:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, despublicar ou agendar uma página]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, agendar ou retirar uma página do ar]]
 
 As tarefas de criação, edição, mídia, blocos e busca/menu são herdadas do editor e aparecem automaticamente no perfil de moderador.
