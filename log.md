@@ -542,3 +542,10 @@
 - O mapa passa de 52 para `59` páginas e de 55 para `63` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v8`.
 
+## 2026-10-01 — Ouvidoria abaixo de Acesso à Informação
+
+- Corrigida a hierarquia do mapa: o nó `Ouvidoria` passa a ser filho estrutural de `Acesso à Informação`.
+- Mantidas as quatro relações `redireciona` das entradas `Sugestões, Críticas e Elogios` para o mesmo nó Ouvidoria.
+- Como a URL atual da Ouvidoria no novo Portal não pôde ser confirmada automaticamente nesta etapa, foi preservada a URL já cadastrada no nó em vez de inferir uma nova rota.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v9`.
+
