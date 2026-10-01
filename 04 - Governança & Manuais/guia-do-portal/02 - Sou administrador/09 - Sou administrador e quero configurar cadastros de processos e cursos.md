@@ -1,6 +1,6 @@
-# Sou administrador e quero configurar cadastros de processos e cursos
+# Sou administrador e quero criar ou atualizar opções usadas em processos seletivos e cursos
 
-Cadastros auxiliares são as listas que aparecem nos formulários. Eles parecem pequenos, mas funcionam como etiquetas de um arquivo: se a etiqueta estiver errada, a pessoa pode guardar e procurar o conteúdo no lugar errado.
+Use esta tarefa quando precisar criar ou corrigir **opções que aparecem nos formulários** de processos seletivos e cursos. No Wagtail, essas listas são chamadas de cadastros auxiliares — por exemplo, tipo de processo, etapa, modalidade, eixo tecnológico ou categoria de curso.
 
 No Guia do Portal IFMG, só administradores — ou grupos aos quais eles delegarem explicitamente essa permissão — podem criar e alterar esses registros. Não use valores provisórios para resolver uma publicação urgente.
 
