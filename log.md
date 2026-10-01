@@ -332,3 +332,15 @@
 - Na home e nas páginas de perfil, “índice” continua apontando para o índice geral de perfis.
 - Atualizados `href`, `aria-label` e estado interno do link para manter navegação por clique e destino semântico coerentes.
 - Preservado o comportamento de abrir links modificados com teclado ou clique intermediário.
+
+## 2026-10-01 — Modularização conservadora: motor de busca
+
+- Criado `search.js` como módulo isolado para o motor de busca, encapsulado em IIFE e expondo somente `window.GuiaBusca`.
+- Movidas para o módulo as responsabilidades puras de normalização, tokenização, verificação de termos, texto indexável, pontuação ponderada, motivo da correspondência e rótulo de perfil mínimo.
+- Mantidos em `script.js` a renderização, os filtros, os event listeners, a abertura de artigos e toda a inicialização da interface; nenhuma lógica de DOM foi movida nesta etapa.
+- `script.js` passa a consumir uma API pequena de `window.GuiaBusca`, sem manter uma segunda implementação do ranking.
+- Adicionado fallback básico no `script.js`: se `search.js` não carregar, a home continua inicializando e a busca degrada para uma ordenação simples em vez de derrubar a página inteira.
+- Atualizado `index.html` para carregar `search.js` entre os metadados e o script principal. Uma versão de cache concorrente do script principal (`indice-contextual-v1`) foi preservada e apenas incrementada para `indice-contextual-v2`, sem sobrescrever essa linha de trabalho.
+- Validados sintaxe de `search.js` e `script.js`, ordem de carregamento, ausência das funções duplicadas no script principal, fallback não fatal e o corpus de regressão de 14 consultas, que permanece com 14/14 resultados esperados no topo em título/aliases.
+- Revalidados com conteúdo real os pares mais ambíguos (notícia/pasta de notícias, coleção/criar coleção, permissão/permissão de coleção e comentários de editor/moderação), sem alteração do ranking esperado.
+
