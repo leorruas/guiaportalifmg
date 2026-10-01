@@ -88,11 +88,9 @@ Use para agrupar seleções da mesma classificação. **Perfil mínimo: moderado
 
 ### Evento
 
-Use para atividade com data, local, público e participação. **Perfil mínimo: editor.** Ainda não há procedimento específico.
+Use para atividade com data ou período definido, em que o público precisa saber quando acontece e como participar. **Perfil mínimo: editor.**
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página|Criar ou editar uma página]]
-
-Ao criar um evento, deixe claros data, horário, local, público, forma de participação ou inscrição e responsável pelas informações.
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/23 - Sou editor e quero criar um evento|Criar um evento]]
 
 ## Quando a demanda chega como “comunicado”
 
