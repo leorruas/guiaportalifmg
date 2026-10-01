@@ -152,3 +152,11 @@
 - Mantidos fisicamente todos os Markdown atuais; nenhuma consolidação editorial ou exclusão de artigo foi realizada.
 - Durante a validação foi corrigido um erro de sintaxe nos templates da nova navegação de perfis.
 
+## 2026-10-01 — Consolidação editorial: criar e editar páginas
+
+- Consolidado o grupo de criação e edição de páginas em `04 - Sou editor/24 - Sou editor e quero criar ou editar uma página.md`, que passa a concentrar o procedimento comum herdado por editor, moderador e administrador.
+- Reduzidos os antigos procedimentos `03 - Sou moderador/02` e `02 - Sou administrador/03` a páginas curtas de encaminhamento para a tarefa canônica, preservando links antigos sem manter cópias do passo a passo.
+- Reescrito `04 - Sou editor/18` para focar em status, pré-visualização, verificações e acompanhamento do fluxo; o trecho de edição passa a apontar para a tarefa canônica.
+- Removidas de E18 as instruções de agendamento/publicação, mantendo essas ações na camada de moderação até validação específica das permissões reais do Portal IFMG.
+- Mantidos os arquivos absorvidos fisicamente no repositório como compatibilidade de navegação; eles continuam ocultos dos perfis e da busca pelo modelo canônico implementado na fase anterior.
+
