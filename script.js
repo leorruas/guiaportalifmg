@@ -338,6 +338,86 @@ function textoIndexavelDoArtigo(artigo) {
     return `${artigo.titulo} ${artigo.categoria} ${aliasesDoArtigo(artigo)} ${artigo.conteudo}`;
 }
 
+function extrairCamposDeBusca(artigo) {
+    const conteudo = removerFrontmatter(artigo.conteudo || "");
+    const linhas = conteudo.split("\n");
+    const headings = linhas
+        .filter(linha => /^#{2,6}\s+/.test(linha))
+        .map(linha => linha.replace(/^#{2,6}\s+/, ""))
+        .join(" ");
+
+    const corpoSemTitulo = linhas
+        .filter((linha, indice) => !(indice === 0 && /^#\s+/.test(linha)))
+        .join("\n");
+
+    const introducao = corpoSemTitulo
+        .replace(/!\[\[[^\]]+\]\]/g, " ")
+        .replace(/\[\[[^\]|]+(?:\|([^\]]+))?\]\]/g, "$1")
+        .replace(/[#*_`~>\[\]]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, 700);
+
+    const tituloAcao = tituloDaAcao(artigo.titulo);
+    const aliases = Array.isArray(artigo?.metadados?.aliases)
+        ? artigo.metadados.aliases
+        : [];
+
+    return {
+        titulo: normalizarTextoParaBusca(artigo.titulo),
+        tituloAcao: normalizarTextoParaBusca(tituloAcao),
+        aliases: aliases.map(normalizarTextoParaBusca),
+        aliasesTexto: normalizarTextoParaBusca(aliases.join(" ")),
+        categoria: normalizarTextoParaBusca(artigo.categoria),
+        headings: normalizarTextoParaBusca(headings),
+        introducao: normalizarTextoParaBusca(introducao),
+        corpo: normalizarTextoParaBusca(conteudo)
+    };
+}
+
+function somarPorTermos(textoNormalizado, termos, pesoPorTermo, limite) {
+    const encontrados = termos.filter(termo => textoNormalizado.includes(termo)).length;
+    return Math.min(encontrados * pesoPorTermo, limite);
+}
+
+function calcularPontuacaoBusca(artigo, termoBusca, termos) {
+    const consulta = normalizarTextoParaBusca(termoBusca).trim();
+    const campos = extrairCamposDeBusca(artigo);
+    let pontos = 0;
+
+    if (campos.tituloAcao === consulta) pontos += 140;
+    else if (campos.tituloAcao.includes(consulta)) pontos += 105;
+    else if (campos.titulo.includes(consulta)) pontos += 85;
+
+    if (campos.aliases.some(alias => alias === consulta)) pontos += 125;
+    else if (campos.aliases.some(alias => alias.includes(consulta))) pontos += 95;
+
+    if (contemTodosOsTermos(campos.tituloAcao, termos)) pontos += 70;
+    pontos += somarPorTermos(campos.tituloAcao, termos, 14, 56);
+
+    if (contemTodosOsTermos(campos.aliasesTexto, termos)) pontos += 62;
+    pontos += somarPorTermos(campos.aliasesTexto, termos, 12, 48);
+
+    if (campos.headings.includes(consulta)) pontos += 38;
+    if (contemTodosOsTermos(campos.headings, termos)) pontos += 28;
+    pontos += somarPorTermos(campos.headings, termos, 6, 24);
+
+    if (campos.introducao.includes(consulta)) pontos += 30;
+    if (contemTodosOsTermos(campos.introducao, termos)) pontos += 22;
+    pontos += somarPorTermos(campos.introducao, termos, 5, 20);
+
+    if (campos.categoria.includes(consulta)) pontos += 18;
+    if (contemTodosOsTermos(campos.categoria, termos)) pontos += 12;
+
+    // O corpo garante cobertura, mas tem peso baixo para não favorecer artigos longos.
+    if (campos.corpo.includes(consulta)) pontos += 10;
+    if (contemTodosOsTermos(campos.corpo, termos)) pontos += 6;
+
+    if (artigo.metadados?.tipo === "tarefa") pontos += 4;
+
+    return pontos;
+}
+
 function criarIndiceNormalizado(texto = "") {
     const caracteres = Array.from(String(texto));
     const origens = [];
@@ -388,21 +468,15 @@ function filtrarArtigos(termoBusca) {
     const filtrados = todosOsArtigos
         .filter(artigo => artigo.metadados?.estado !== "absorver")
         .filter(artigo => contemTodosOsTermos(textoIndexavelDoArtigo(artigo), termos))
+        .map(artigo => ({
+            artigo,
+            pontuacao: calcularPontuacaoBusca(artigo, termo, termos)
+        }))
         .sort((a, b) => {
-            const prioridade = (artigo) => {
-                const titulo = normalizarTextoParaBusca(artigo.titulo);
-                const categoria = normalizarTextoParaBusca(artigo.categoria);
-                const consulta = normalizarTextoParaBusca(termo);
-                if (titulo === consulta) return 0;
-                if (titulo.includes(consulta)) return 1;
-                if (contemTodosOsTermos(artigo.titulo, termos)) return 2;
-                if (contemTodosOsTermos(categoria, termos)) return 3;
-                return 4;
-            };
-            const prioridadeA = prioridade(a);
-            const prioridadeB = prioridade(b);
-            return prioridadeA - prioridadeB || a.titulo.localeCompare(b.titulo, "pt-BR", { numeric: true });
-        });
+            return b.pontuacao - a.pontuacao
+                || a.artigo.titulo.localeCompare(b.artigo.titulo, "pt-BR", { numeric: true });
+        })
+        .map(resultado => resultado.artigo);
 
     resultadosDaBuscaAtual = filtrados;
     filtroDePerfilAtivo = "";
