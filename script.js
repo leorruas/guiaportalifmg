@@ -202,6 +202,11 @@ function artigoVisivelNoFiltroDePerfil(artigo, categoria) {
 }
 
 function compararArtigosPorArquivo(a, b) {
+    const ordemA = Number.isFinite(a.metadados?.ordem) ? a.metadados.ordem : Number.POSITIVE_INFINITY;
+    const ordemB = Number.isFinite(b.metadados?.ordem) ? b.metadados.ordem : Number.POSITIVE_INFINITY;
+
+    if (ordemA !== ordemB) return ordemA - ordemB;
+
     return a.sourcePath.localeCompare(b.sourcePath, "pt-BR", {
         numeric: true,
         sensitivity: "base"
@@ -358,13 +363,10 @@ async function carregarTodosOsArtigos() {
         todasAsPastas[artigo.categoria].push(artigo);
     });
 
-    // A sequência de leitura acompanha os números e nomes reais dos arquivos
-    // do vault, sem manter uma ordem paralela no JavaScript.
+    // A sequência de leitura pode ser definida por metadado para refletir
+    // o fluxo real de trabalho. Sem ordem explícita, preserva o nome do arquivo.
     Object.values(todasAsPastas).forEach(artigos => {
-        artigos.sort((a, b) => a.sourcePath.localeCompare(b.sourcePath, "pt-BR", {
-            numeric: true,
-            sensitivity: "base"
-        }));
+        artigos.sort(compararArtigosPorArquivo);
     });
 
     // Renderiza a estrutura de pastas na página inicial
@@ -649,10 +651,13 @@ function atualizarIndiceDaNavbar(categoria = "") {
 
 function criarLinkDeAcaoDoPerfil(artigo, numero) {
     const acao = document.createElement("a");
+    const titulo = tituloDaAcao(artigo.titulo);
+    const descricao = artigo.metadados?.descricaoLista || "";
+
     acao.className = "perfil-acao";
     acao.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
-    acao.setAttribute("aria-label", tituloDaAcao(artigo.titulo));
-    acao.innerHTML = `<span class="perfil-acao-numero">${String(numero).padStart(2, "0")}</span><span class="perfil-acao-conteudo"><strong>${tituloDaAcao(artigo.titulo)}</strong></span>`;
+    acao.setAttribute("aria-label", descricao ? `${titulo}. ${descricao}` : titulo);
+    acao.innerHTML = `<span class="perfil-acao-numero">${String(numero).padStart(2, "0")}</span><span class="perfil-acao-conteudo"><strong>${escaparHtml(titulo)}</strong>${descricao ? `<small>${escaparHtml(descricao)}</small>` : ""}</span>`;
     acao.addEventListener("click", (event) => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
         event.preventDefault();
