@@ -26,20 +26,22 @@ async function walk(directory) {
 }
 
 function toPosix(relativePath) {
-    return relativePath.split(path.sep).join("/").normalize("NFC");
+    return relativePath.split(path.sep).join("/");
 }
 
 const absoluteGuideRoot = path.join(repoRoot, ...guideRoot.split("/"));
 const files = await walk(absoluteGuideRoot);
-const articles = files
-    .map(file => toPosix(path.relative(repoRoot, file)))
-    .sort((a, b) => a.localeCompare(b, "pt-BR", { numeric: true, sensitivity: "base" }));
+const rawArticles = files.map(file => toPosix(path.relative(repoRoot, file)));
 
-const nonNfc = articles.filter(article => article !== article.normalize("NFC"));
+const nonNfc = rawArticles.filter(article => article !== article.normalize("NFC"));
 if (nonNfc.length) {
     console.error("Há caminhos fora de NFC:", nonNfc);
     process.exit(1);
 }
+
+const articles = rawArticles
+    .map(article => article.normalize("NFC"))
+    .sort((a, b) => a.localeCompare(b, "pt-BR", { numeric: true, sensitivity: "base" }));
 
 const index = {
     version: 1,
