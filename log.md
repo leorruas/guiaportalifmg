@@ -549,3 +549,15 @@
 - Como a URL atual da Ouvidoria no novo Portal não pôde ser confirmada automaticamente nesta etapa, foi preservada a URL já cadastrada no nó em vez de inferir uma nova rota.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v9`.
 
+## 2026-10-01 — Consolidação canônica de Ouvidoria e Bibliotecas
+
+- O nó `https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/` passa a ser o destino canônico, com o título `Sugestões, críticas e elogios / Ouvidoria`.
+- Esse nó permanece como filho estrutural de `Acesso à Informação`.
+- Removido o nó separado `https://www.ifmg.edu.br/portal/ouvidoria`, evitando representar a Ouvidoria duas vezes.
+- As entradas `Sugestões, Críticas e Elogios` de Estudantes, Servidores e Comunidade passam a redirecionar para o nó canônico em Acesso à Informação.
+- `https://portal.ifmg.edu.br/comunidade/bibliotecas/` passa a ser o destino canônico de Bibliotecas.
+- A entrada `https://portal.ifmg.edu.br/estudantes/bibliotecas/` permanece no ramo Estudantes, mas passa a redirecionar para a Biblioteca de Comunidade.
+- As páginas `Institucional` e `Servidores` dentro de Acesso à Informação permanecem independentes dos ramos homônimos, pois representam conteúdos diferentes.
+- O mapa passa de 59 para `58` páginas e de 64 para `63` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v10`.
+
