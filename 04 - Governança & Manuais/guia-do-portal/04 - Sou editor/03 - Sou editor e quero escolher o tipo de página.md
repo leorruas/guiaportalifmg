@@ -52,9 +52,9 @@ Use para uma instância com composição, documentos, reuniões e contato. **Per
 
 ### Link
 
-Use como atalho para sistema, página, documento ou fonte oficial. **Perfil mínimo: editor.**
+Use quando a opção criada no Portal deve **redirecionar diretamente para outro endereço**, como um sistema, formulário, página, documento ou fonte oficial já existente. Se o público precisa de contexto antes de seguir para o destino, use uma página de conteúdo. **Perfil mínimo: editor.**
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/07 - Sou editor e quero criar um link|Criar um link]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/07 - Sou editor e quero criar um link|Criar um link de redirecionamento]]
 
 ### Programa
 
@@ -107,7 +107,7 @@ Use para atividade com data ou período definido, em que o público precisa sabe
 - Se organiza edital, etapas e resultados, é **Processo seletivo**.
 - Se anuncia uma atividade com data e participação, é **Evento**.
 - Se a demanda é chamada de **comunicado**, esse nome sozinho não define o tipo; escolha um dos tipos acima pela finalidade e pela duração da informação.
-- Se a finalidade é apenas levar a outro destino, use **Link**.
+- Se a finalidade é apenas levar diretamente a outro endereço, use **Link de redirecionamento**.
 - Se representa uma iniciativa contínua, considere **Programa**; se precisa de identidade e estrutura próprias, considere **Projeto**.
 
 **Teste simples:** complete a frase “a pessoa entra nesta página para...”. A resposta deve combinar com a finalidade do tipo escolhido.
