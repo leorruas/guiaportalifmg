@@ -38,6 +38,23 @@
 - Cada procedimento deve deixar explícitos o resultado esperado, o limite de permissão e o próximo passo quando a pessoa não puder concluir a ação sozinha.
 - Insira cada imagem imediatamente após o passo ou conceito que ela demonstra, com legenda que explique o que a pessoa deve observar. Não agrupe capturas em galeria, ao fim do artigo ou em seção separada quando elas puderem orientar uma ação específica no contexto.
 
+## Nomes e títulos das tarefas
+
+- O título de uma tarefa deve explicar **o que a pessoa quer conseguir fazer**, em linguagem compreensível mesmo para quem não conhece o Wagtail.
+- Evite usar como título principal apenas o nome de uma função, aba ou termo interno do sistema, como “Configurar busca”, “Acompanhar página”, “Grupos e permissões” ou “Cadastros”, quando isso não deixa claro o resultado esperado.
+- Prefira a forma **verbo + objeto + resultado ou contexto**, por exemplo: “Definir como a página aparece na busca e na navegação”, “Criar um link de redirecionamento” ou “Definir quem pode editar páginas e usar coleções”.
+- Termos do Wagtail continuam importantes, mas devem aparecer no corpo, em subtítulos, descrições e aliases de busca quando forem a linguagem real da interface. O título não deve depender de a pessoa já conhecer esse vocabulário.
+- O nome precisa fazer sentido **isoladamente na lista do perfil**, antes de o artigo ser aberto. Use `descricaoLista` para responder em uma frase “quando eu uso esta tarefa?”; não repita apenas o título com outras palavras.
+- Ao alterar o nome visível de uma tarefa, mantenha o mesmo sentido entre:
+  - o H1 do Markdown;
+  - `tituloCanonico` em `data/guide-metadata.js`;
+  - `descricaoLista`;
+  - rótulos de wikilinks que apontam para a tarefa;
+  - aliases e casos de regressão de busca relevantes.
+- O nome físico do arquivo e a rota **podem permanecer com a formulação antiga** quando renomeá-los quebraria links ou compatibilidade. Nesses casos, use `tituloCanonico` como nome exibido e preserve a rota até uma migração deliberada.
+- Não renomeie arquivos apenas para “fazer combinar” com o H1 se isso introduzir risco de quebra de links. A prioridade é manter a tarefa canônica estável e o nome exibido claro.
+- Antes de criar um novo artigo porque o título atual parece inadequado, verifique se basta renomear ou reescrever a tarefa canônica existente.
+
 ## Arquitetura canônica do guia
 
 - Cada tarefa operacional deve ter **uma única página canônica**. Antes de criar um novo procedimento, procure se a ação já existe em um perfil com menor privilégio ou em uma referência compartilhada.
