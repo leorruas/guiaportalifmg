@@ -381,3 +381,11 @@
 - A primeira execução real do GitHub Actions concluiu com sucesso: `14/14` consultas com o resultado esperado no topo e corpus de `59` artigos do índice publicado.
 - Atualizadas somente as versões de cache de `search.js` e `script.js` em `index.html`, preservando as versões concorrentes já existentes para metadados, navegação e a linha `titulo-unico` do script principal.
 
+## 2026-10-01 — Prompts de IA com verificação, imagens e blocos
+
+- Ampliado o artigo “Como usar uma IA como apoio para trabalhar com este guia” com uma regra transversal de não inferência: quando faltar informação necessária, a IA deve perguntar antes de continuar.
+- Todos os prompts passam a orientar pesquisa em fonte oficial ou confiável quando a informação puder ter mudado, com indicação de fonte, link e data quando disponíveis.
+- Adicionada a distinção entre informação confirmada no guia, confirmada em fonte externa e informação que ainda precisa de confirmação; quando a vigência não estiver clara, a IA deve apresentar a evidência e pedir confirmação ao usuário.
+- Adicionado um prompt para preparar imagens para publicação, explicando texto alternativo em linguagem simples, diferenciando descrição e legenda e tratando imagens complexas.
+- Adicionado um prompt para sugerir blocos do Wagtail a partir do conteúdo, usando apenas blocos documentados, justificando sua função e preservando texto simples como padrão quando não houver ganho claro.
+- Reforçada a orientação para que assistentes sem acesso à internet não afirmem ter pesquisado ou verificado informações externas.
