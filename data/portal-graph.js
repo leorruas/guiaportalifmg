@@ -237,12 +237,6 @@
                 "title": "Ferramentas e Aspectos Tecnológicos"
         },
         {
-                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
-                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
-                "title": "Sugestões, críticas e elogios / Ouvidoria",
-                "description": "Destino canônico para sugestões, críticas, elogios e acesso à Ouvidoria."
-        },
-        {
                 "id": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/processo-seletivo/",
                 "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/processo-seletivo/",
                 "title": "Processo Seletivo"
@@ -387,6 +381,26 @@
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/relatorio-de-gestao-do-ifmg/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/relatorio-de-gestao-do-ifmg/",
                 "title": "Relatório de Gestão do IFMG"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
+                "title": "Sugestões, críticas e elogios / Ouvidoria"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas/",
+                "title": "Audiências e consultas públicas"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/colegio-de-diregentes-codir/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/colegio-de-diregentes-codir/",
+                "title": "Colégio de Diregentes (CODIR)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/comissao-propria-de-avaliacao-cpa/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/comissao-propria-de-avaliacao-cpa/",
+                "title": "Comissão Própria de Avaliação (CPA)"
         }
 ];
 
@@ -622,11 +636,6 @@
                 "type": "estrutura"
         },
         {
-                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
-                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
-                "type": "estrutura"
-        },
-        {
                 "source": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
                 "target": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/processo-seletivo/",
                 "type": "estrutura"
@@ -685,21 +694,6 @@
                 "source": "https://portal.ifmg.edu.br/comunidade/",
                 "target": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
                 "type": "estrutura"
-        },
-        {
-                "source": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
-                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
-                "type": "redireciona"
-        },
-        {
-                "source": "https://portal.ifmg.edu.br/servidores/sugestoes-criticas-e-elogios/",
-                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
-                "type": "redireciona"
-        },
-        {
-                "source": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
-                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
-                "type": "redireciona"
         },
         {
                 "source": "https://portal.ifmg.edu.br/estudantes/bibliotecas/",
@@ -870,6 +864,41 @@
                 "source": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/",
                 "target": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/relatorio-de-gestao-do-ifmg/",
                 "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/colegio-de-diregentes-codir/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/comissao-propria-de-avaliacao-cpa/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/sugestoes-criticas-e-elogios/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
+                "type": "redireciona"
         }
 ];
 
