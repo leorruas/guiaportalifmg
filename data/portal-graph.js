@@ -615,6 +615,11 @@
                 "source": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
                 "target": "https://www.ifmg.edu.br/portal/ouvidoria",
                 "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
+                "target": "https://www.ifmg.edu.br/portal/ouvidoria",
+                "type": "estrutura"
         }
 ];
 
