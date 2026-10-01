@@ -262,6 +262,41 @@
                 "url": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
                 "title": "Como abrir um chamado (Solicitar ajuda • SUAP)",
                 "description": "Destino comum para suporte e abertura de chamados no SUAP."
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/hubs-de-inovacao-do-ifmg/",
+                "url": "https://portal.ifmg.edu.br/comunidade/hubs-de-inovacao-do-ifmg/",
+                "title": "Hubs de Inovação do IFMG"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/empresas-juniores-e-empreendedorismo/",
+                "url": "https://portal.ifmg.edu.br/comunidade/empresas-juniores-e-empreendedorismo/",
+                "title": "Empresas Juniores e Empreendedorismo"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/bibliotecas/",
+                "url": "https://portal.ifmg.edu.br/comunidade/bibliotecas/",
+                "title": "Bibliotecas"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/",
+                "url": "https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/",
+                "title": "+ IFMG • Cursos livres e gratuitos"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/espacosculturais/",
+                "url": "https://portal.ifmg.edu.br/comunidade/espacosculturais/",
+                "title": "Espaços Técnico-Culturais do IFMG"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/",
+                "url": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/",
+                "title": "Comunicação / Imprensa"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
+                "url": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
+                "title": "Sugestões, Críticas e Elogios"
         }
 ];
 
@@ -540,6 +575,46 @@
                 "source": "https://portal.ifmg.edu.br/comunidade/",
                 "target": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
                 "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/",
+                "target": "https://portal.ifmg.edu.br/comunidade/hubs-de-inovacao-do-ifmg/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/",
+                "target": "https://portal.ifmg.edu.br/comunidade/empresas-juniores-e-empreendedorismo/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/",
+                "target": "https://portal.ifmg.edu.br/comunidade/bibliotecas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/",
+                "target": "https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/",
+                "target": "https://portal.ifmg.edu.br/comunidade/espacosculturais/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/",
+                "target": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/",
+                "target": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
+                "target": "https://www.ifmg.edu.br/portal/ouvidoria",
+                "type": "redireciona"
         }
 ];
 
