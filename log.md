@@ -561,3 +561,15 @@
 - O mapa passa de 59 para `58` páginas e de 64 para `63` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v10`.
 
+## 2026-10-01 — Repulsão física entre nós do mapa
+
+- Mantido o posicionamento radial hierárquico como estado inicial do grafo.
+- Adicionada uma segunda etapa de relaxamento usando o layout `cose` do Cytoscape, com `randomize: false`, para preservar a estrutura radial em vez de recalcular o mapa do zero.
+- Home e os cinco ramos de primeiro nível são bloqueados durante o relaxamento e permanecem como âncoras dos 360°.
+- Somente relações do tipo `estrutura` participam da física do layout; relações `redireciona` continuam desenhadas no grafo, mas não puxam ramos diferentes uns em direção aos outros.
+- Ativado `nodeDimensionsIncludeLabels: true`, fazendo a repulsão considerar também o espaço ocupado pelos rótulos.
+- Configurados `nodeRepulsion: 9200`, `nodeOverlap: 34`, `idealEdgeLength: 145`, `componentSpacing: 110` e 700 iterações de relaxamento.
+- O botão “recentralizar” reaplica primeiro o radial e depois a repulsão física.
+- Mantidos os limites de zoom já definidos.
+- Atualizada a versão de cache de `portal-graph.js` para `portal-graph-v5`.
+
