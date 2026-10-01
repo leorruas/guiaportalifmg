@@ -107,7 +107,7 @@ const metadadosCanonicos = {
     "02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações": { id: "role-administrator", tipo: "visao", perfilMinimo: "administrador" },
 
     "04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página": { id: "task-page-find", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/03 - Sou editor e quero escolher o tipo de página": { id: "task-content-type-choose", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/03 - Sou editor e quero escolher o tipo de página": { id: "task-content-type-choose", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "03 - Sou editor e quero escolher o tipo de conteúdo" },
     "04 - Sou editor/04 - Sou editor e quero criar uma página institucional": { id: "task-page-institutional-create", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/05 - Sou editor e quero criar um curso": { id: "task-course-create", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/06 - Sou editor e quero criar um colegiado": { id: "task-collegiate-create", tipo: "tarefa", perfilMinimo: "editor" },
