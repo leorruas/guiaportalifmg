@@ -389,13 +389,16 @@ function calcularPontuacaoBusca(artigo, termoBusca, termos) {
     else if (campos.tituloAcao.includes(consulta)) pontos += 105;
     else if (campos.titulo.includes(consulta)) pontos += 85;
 
-    if (campos.aliases.some(alias => alias === consulta)) pontos += 125;
-    else if (campos.aliases.some(alias => alias.includes(consulta))) pontos += 95;
+    if (campos.aliases.some(alias => alias === consulta)) {
+        pontos += 200;
+    } else if (termos.length > 1 && campos.aliases.some(alias => alias.includes(consulta))) {
+        pontos += 95;
+    }
 
     if (contemTodosOsTermos(campos.tituloAcao, termos)) pontos += 70;
     pontos += somarPorTermos(campos.tituloAcao, termos, 14, 56);
 
-    if (contemTodosOsTermos(campos.aliasesTexto, termos)) pontos += 62;
+    if (termos.length > 1 && contemTodosOsTermos(campos.aliasesTexto, termos)) pontos += 62;
     pontos += somarPorTermos(campos.aliasesTexto, termos, 12, 48);
 
     if (campos.headings.includes(consulta)) pontos += 38;
