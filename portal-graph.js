@@ -111,164 +111,140 @@
         return filhos;
     }
 
-    function distribuirEmAneis(ids, centro, fase = 0) {
-        const posicoes = new Map();
-        const total = ids.length;
-        if (!total) return posicoes;
+    function angulosNoSetor(quantidade, centro, largura) {
+        if (quantidade <= 0) return [];
+        if (quantidade === 1) return [centro];
 
-        const aneis = total <= 8
-            ? [{ ids, raio: Math.max(165, total * 22) }]
-            : [
-                { ids: ids.slice(0, Math.ceil(total / 2)), raio: 175 },
-                { ids: ids.slice(Math.ceil(total / 2)), raio: 270 }
-            ];
+        const inicio = centro - (largura / 2);
+        const passo = largura / (quantidade - 1);
 
-        aneis.forEach((anel, indiceAnel) => {
-            const quantidade = anel.ids.length;
-            const deslocamento = fase + (indiceAnel * (Math.PI / Math.max(quantidade, 1)));
-
-            anel.ids.forEach((id, indice) => {
-                const angulo = deslocamento + ((Math.PI * 2 * indice) / quantidade);
-                posicoes.set(id, {
-                    x: centro.x + (Math.cos(angulo) * anel.raio),
-                    y: centro.y + (Math.sin(angulo) * anel.raio)
-                });
-            });
-        });
-
-        return posicoes;
+        return Array.from({ length: quantidade }, (_, indice) => inicio + (passo * indice));
     }
 
-    function separarSobreposicoes(posicoes, idsFixos, distanciaMinima = 104) {
-        const ids = [...posicoes.keys()];
-        const fixos = new Set(idsFixos);
-
-        for (let iteracao = 0; iteracao < 90; iteracao += 1) {
-            let houveAjuste = false;
-
-            for (let i = 0; i < ids.length; i += 1) {
-                for (let j = i + 1; j < ids.length; j += 1) {
-                    const idA = ids[i];
-                    const idB = ids[j];
-                    const a = posicoes.get(idA);
-                    const b = posicoes.get(idB);
-                    if (!a || !b) continue;
-
-                    let dx = b.x - a.x;
-                    let dy = b.y - a.y;
-                    let distancia = Math.hypot(dx, dy);
-
-                    if (distancia >= distanciaMinima) continue;
-                    if (fixos.has(idA) && fixos.has(idB)) continue;
-
-                    if (distancia < 0.001) {
-                        const semente = Math.abs(hash(`${idA}|${idB}`));
-                        const angulo = (semente % 360) * (Math.PI / 180);
-                        dx = Math.cos(angulo);
-                        dy = Math.sin(angulo);
-                        distancia = 1;
-                    }
-
-                    const excesso = (distanciaMinima - distancia) / 2;
-                    const ux = dx / distancia;
-                    const uy = dy / distancia;
-
-                    if (!fixos.has(idA)) {
-                        a.x -= ux * excesso;
-                        a.y -= uy * excesso;
-                    }
-                    if (!fixos.has(idB)) {
-                        b.x += ux * excesso;
-                        b.y += uy * excesso;
-                    }
-
-                    houveAjuste = true;
-                }
-            }
-
-            if (!houveAjuste) break;
-        }
-    }
-
-    function calcularPosicoesRadiais(data) {
+    function calcularLayoutSetorial(data) {
         const raiz = "https://portal.ifmg.edu.br/";
         const filhos = filhosEstruturais(data);
         const posicoes = new Map([[raiz, { x: 0, y: 0 }]]);
         const profundidades = new Map([[raiz, 0]]);
+        const angulos = new Map([[raiz, -Math.PI / 2]]);
+        const ramoPorId = new Map([[raiz, raiz]]);
         const filhosDaRaiz = filhos.get(raiz) || [];
 
-        const maiorGrupo = Math.max(
-            0,
-            ...filhosDaRaiz.map(id => (filhos.get(id) || []).length)
-        );
-        const raioRaiz = Math.max(600, 500 + (Math.max(0, maiorGrupo - 8) * 18));
-
-        filhosDaRaiz.forEach((id, indice) => {
-            const angulo = (-Math.PI / 2) + ((Math.PI * 2 * indice) / Math.max(filhosDaRaiz.length, 1));
-            posicoes.set(id, {
-                x: Math.cos(angulo) * raioRaiz,
-                y: Math.sin(angulo) * raioRaiz
-            });
-            profundidades.set(id, 1);
-        });
-
-        const fila = [...filhosDaRaiz];
-
-        while (fila.length) {
-            const pai = fila.shift();
-            const filhosDoPai = filhos.get(pai) || [];
-            const centro = posicoes.get(pai);
-            if (!centro || !filhosDoPai.length) continue;
-
-            const anguloPai = Math.atan2(centro.y, centro.x);
-            const locais = distribuirEmAneis(filhosDoPai, centro, anguloPai + (Math.PI / 7));
-
-            filhosDoPai.forEach(id => {
-                if (!posicoes.has(id)) posicoes.set(id, locais.get(id));
-                profundidades.set(id, (profundidades.get(pai) || 0) + 1);
-                fila.push(id);
-            });
+        if (!filhosDaRaiz.length) {
+            return { posicoes, profundidades, ramoPorId };
         }
 
-        const idsEstruturais = new Set(posicoes.keys());
-        const naoEstruturais = data.nodes
-            .map(node => node.id)
-            .filter(id => !idsEstruturais.has(id));
+        const passoSetor = (Math.PI * 2) / filhosDaRaiz.length;
+        const larguraUtilSetor = passoSetor * 0.78;
+        const raioPrimeiroNivel = 285;
+        const raiosSegundoNivel = [515, 690];
+        const raioTerceiroNivel = 875;
+        const incrementoProfundidade = 175;
 
-        naoEstruturais.forEach((id, indice) => {
-            const conexoes = data.edges
-                .filter(edge => edge.source === id || edge.target === id)
-                .map(edge => edge.source === id ? edge.target : edge.source)
-                .map(outroId => posicoes.get(outroId))
-                .filter(Boolean);
+        filhosDaRaiz.forEach((ramoId, indiceRamo) => {
+            const centroSetor = (-Math.PI / 2) + (passoSetor * indiceRamo);
+            const posicaoRamo = {
+                x: Math.cos(centroSetor) * raioPrimeiroNivel,
+                y: Math.sin(centroSetor) * raioPrimeiroNivel
+            };
 
-            let angulo;
-            if (conexoes.length) {
-                const centroide = conexoes.reduce(
-                    (acc, posicao) => ({ x: acc.x + posicao.x, y: acc.y + posicao.y }),
-                    { x: 0, y: 0 }
-                );
-                centroide.x /= conexoes.length;
-                centroide.y /= conexoes.length;
-                angulo = Math.atan2(centroide.y, centroide.x);
-            } else {
-                angulo = (-Math.PI / 2) + ((Math.PI * 2 * indice) / Math.max(naoEstruturais.length, 1));
-            }
+            posicoes.set(ramoId, posicaoRamo);
+            profundidades.set(ramoId, 1);
+            angulos.set(ramoId, centroSetor);
+            ramoPorId.set(ramoId, ramoId);
 
-            const raioExterno = raioRaiz + 390 + (indice * 70);
-            posicoes.set(id, {
-                x: Math.cos(angulo) * raioExterno,
-                y: Math.sin(angulo) * raioExterno
+            const filhosDiretos = filhos.get(ramoId) || [];
+            const quantidadePrimeiroAnel = filhosDiretos.length <= 8
+                ? filhosDiretos.length
+                : Math.ceil(filhosDiretos.length / 2);
+            const grupos = filhosDiretos.length <= 8
+                ? [filhosDiretos]
+                : [
+                    filhosDiretos.slice(0, quantidadePrimeiroAnel),
+                    filhosDiretos.slice(quantidadePrimeiroAnel)
+                ];
+
+            grupos.forEach((grupo, indiceAnel) => {
+                const raio = raiosSegundoNivel[indiceAnel] || (raiosSegundoNivel[1] + ((indiceAnel - 1) * 160));
+                const larguraAnel = indiceAnel === 0
+                    ? larguraUtilSetor * 0.9
+                    : larguraUtilSetor;
+                const angulosDoGrupo = angulosNoSetor(grupo.length, centroSetor, larguraAnel);
+
+                grupo.forEach((id, indice) => {
+                    const angulo = angulosDoGrupo[indice];
+                    posicoes.set(id, {
+                        x: Math.cos(angulo) * raio,
+                        y: Math.sin(angulo) * raio
+                    });
+                    profundidades.set(id, 2);
+                    angulos.set(id, angulo);
+                    ramoPorId.set(id, ramoId);
+                });
             });
+
+            const fila = filhosDiretos.map(id => ({
+                id,
+                profundidade: 2,
+                larguraLocal: Math.max(0.09, larguraUtilSetor / Math.max(filhosDiretos.length, 5))
+            }));
+
+            while (fila.length) {
+                const atual = fila.shift();
+                const filhosDoAtual = filhos.get(atual.id) || [];
+                if (!filhosDoAtual.length) continue;
+
+                const anguloPai = angulos.get(atual.id) ?? centroSetor;
+                const proximaProfundidade = atual.profundidade + 1;
+                const raio = raioTerceiroNivel + ((proximaProfundidade - 3) * incrementoProfundidade);
+                const larguraPermitida = Math.min(
+                    atual.larguraLocal * 1.7,
+                    larguraUtilSetor / 3
+                );
+                const angulosDosFilhos = angulosNoSetor(
+                    filhosDoAtual.length,
+                    anguloPai,
+                    larguraPermitida
+                );
+
+                filhosDoAtual.forEach((id, indice) => {
+                    const angulo = angulosDosFilhos[indice];
+                    posicoes.set(id, {
+                        x: Math.cos(angulo) * raio,
+                        y: Math.sin(angulo) * raio
+                    });
+                    profundidades.set(id, proximaProfundidade);
+                    angulos.set(id, angulo);
+                    ramoPorId.set(id, ramoId);
+                    fila.push({
+                        id,
+                        profundidade: proximaProfundidade,
+                        larguraLocal: Math.max(0.07, larguraPermitida / Math.max(filhosDoAtual.length, 2))
+                    });
+                });
+            }
         });
 
-        separarSobreposicoes(
-            posicoes,
-            [raiz, ...filhosDaRaiz],
-            104
-        );
+        const semPaiEstrutural = data.nodes
+            .map(node => node.id)
+            .filter(id => !posicoes.has(id));
 
-        return posicoes;
+        if (semPaiEstrutural.length) {
+            const raioExterno = raioTerceiroNivel + 220;
+            angulosNoSetor(semPaiEstrutural.length, Math.PI / 2, Math.PI * 1.6)
+                .forEach((angulo, indice) => {
+                    const id = semPaiEstrutural[indice];
+                    posicoes.set(id, {
+                        x: Math.cos(angulo) * raioExterno,
+                        y: Math.sin(angulo) * raioExterno
+                    });
+                    profundidades.set(id, 2);
+                    angulos.set(id, angulo);
+                    ramoPorId.set(id, "compartilhado");
+                });
+        }
+
+        return { posicoes, profundidades, ramoPorId };
     }
 
     async function renderizar(root) {
@@ -291,15 +267,20 @@
             const muted = estiloRaiz.getPropertyValue("--muted").trim() || "#a4a39e";
             const bg = estiloRaiz.getPropertyValue("--bg").trim() || "#101010";
 
-            const posicoesRadiais = calcularPosicoesRadiais(data);
+            const layoutSetorial = calcularLayoutSetorial(data);
             const elements = [
-                ...data.nodes.map(node => ({
-                    data: {
-                        ...node,
-                        branch: ramoDaUrl(node.url)
-                    },
-                    position: posicoesRadiais.get(node.id) || { x: 0, y: 0 }
-                })),
+                ...data.nodes.map(node => {
+                    const profundidade = layoutSetorial.profundidades.get(node.id) ?? 2;
+                    return {
+                        data: {
+                            ...node,
+                            branch: ramoDaUrl(node.url),
+                            graphDepth: profundidade
+                        },
+                        classes: profundidade <= 1 ? "portal-graph-major" : "",
+                        position: layoutSetorial.posicoes.get(node.id) || { x: 0, y: 0 }
+                    };
+                }),
                 ...data.edges.map((edge, index) => ({
                     data: {
                         id: `portal-edge-${index + 1}`,
@@ -338,7 +319,18 @@
                             "text-margin-y": 8,
                             "text-background-color": bg,
                             "text-background-opacity": 0.88,
-                            "text-background-padding": 3
+                            "text-background-padding": 3,
+                            "min-zoomed-font-size": 8
+                        }
+                    },
+                    {
+                        selector: ".portal-graph-major",
+                        style: {
+                            "min-zoomed-font-size": 0,
+                            "font-size": 12,
+                            "font-weight": 650,
+                            "width": 44,
+                            "height": 44
                         }
                     },
                     {
@@ -357,7 +349,7 @@
                         style: {
                             "width": 1.4,
                             "line-color": muted,
-                            "opacity": 0.45,
+                            "opacity": 0.28,
                             "curve-style": "bezier",
                             "target-arrow-shape": "none"
                         }
@@ -367,10 +359,21 @@
                         style: {
                             "line-style": "dashed",
                             "line-color": accent,
-                            "opacity": 0.8,
+                            "opacity": 0.14,
                             "target-arrow-shape": "triangle",
                             "target-arrow-color": accent,
-                            "arrow-scale": 0.75
+                            "arrow-scale": 0.65,
+                            "curve-style": "unbundled-bezier",
+                            "control-point-distances": 70,
+                            "control-point-weights": 0.5
+                        }
+                    },
+                    {
+                        selector: ".portal-graph-redirect-focus",
+                        style: {
+                            "opacity": 0.9,
+                            "width": 2.2,
+                            "arrow-scale": 0.85
                         }
                     },
                     {
@@ -391,50 +394,9 @@
             instanciaAtiva = cy;
 
             const rootNode = cy.getElementById("https://portal.ifmg.edu.br/");
-            const idsPrimeiroNivel = data.edges
-                .filter(edge => edge.type === "estrutura" && edge.source === "https://portal.ifmg.edu.br/")
-                .map(edge => edge.target);
-
-            const relaxarLayout = () => {
-                const ancoraIds = ["https://portal.ifmg.edu.br/", ...idsPrimeiroNivel];
-                const ancoras = cy.collection(
-                    ancoraIds
-                        .map(id => cy.getElementById(id))
-                        .filter(elemento => elemento.length)
-                );
-
-                ancoras.lock();
-
-                const elementosEstruturais = cy.nodes().union(
-                    cy.edges().filter(edge => edge.data("type") === "estrutura")
-                );
-
-                elementosEstruturais.layout({
-                    name: "cose",
-                    animate: false,
-                    fit: false,
-                    randomize: false,
-                    nodeDimensionsIncludeLabels: true,
-                    componentSpacing: 110,
-                    nodeRepulsion: 9200,
-                    nodeOverlap: 34,
-                    idealEdgeLength: 145,
-                    edgeElasticity: 90,
-                    nestingFactor: 1.15,
-                    gravity: 0.18,
-                    numIter: 700,
-                    initialTemp: 160,
-                    coolingFactor: 0.96,
-                    minTemp: 1
-                }).run();
-
-                ancoras.unlock();
-            };
-
             const rodarLayout = () => {
-                const posicoes = calcularPosicoesRadiais(data);
-                cy.nodes().positions(node => posicoes.get(node.id()) || node.position());
-                relaxarLayout();
+                const proximoLayout = calcularLayoutSetorial(data);
+                cy.nodes().positions(node => proximoLayout.posicoes.get(node.id()) || node.position());
                 cy.fit(cy.elements(), 72);
             };
 
@@ -447,11 +409,14 @@
             }
 
             cy.on("tap", "node", event => {
-                mostrarDetalhes(ui.details, event.target.data());
+                const node = event.target;
+                mostrarDetalhes(ui.details, node.data());
+                cy.edges('[type = "redireciona"]').removeClass("portal-graph-redirect-focus");
+                node.connectedEdges('[type = "redireciona"]').addClass("portal-graph-redirect-focus");
             });
 
             ui.recenter.addEventListener("click", () => {
-                cy.elements().removeClass("portal-graph-dimmed portal-graph-match");
+                cy.elements().removeClass("portal-graph-dimmed portal-graph-match portal-graph-redirect-focus");
                 ui.input.value = "";
                 rodarLayout();
             });
