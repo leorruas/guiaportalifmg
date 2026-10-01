@@ -514,3 +514,14 @@
 - O mapa passa de 50 para `51` páginas e de 49 para `52` relações.
 - Atualizadas as versões de cache de `data/portal-graph.js` e `portal-graph.js`.
 
+## 2026-10-01 — Layout radial e limites de zoom do mapa
+
+- Substituído o layout `breadthfirst` do Cytoscape por posicionamento radial hierárquico calculado pelo próprio `portal-graph.js`.
+- A Home fica fixa no centro e seus ramos de primeiro nível são distribuídos em 360° ao redor dela.
+- Filhos de cada ramo são distribuídos em anéis locais ao redor do respectivo nó-pai; grupos maiores usam dois anéis para reduzir colisão entre rótulos e nós.
+- Adicionada uma etapa iterativa de afastamento para evitar sobreposição entre nós, preservando Home e ramos de primeiro nível como âncoras fixas.
+- Nós sem pai estrutural, como destinos compartilhados de redirecionamento, são posicionados em uma faixa externa sem forçar uma hierarquia inexistente.
+- Configurados limites de zoom do Cytoscape: `minZoom: 0.28` e `maxZoom: 2.2`, além de sensibilidade de roda reduzida para `0.18`.
+- O botão “recentralizar” reaplica o layout radial e enquadra o grafo dentro desses limites.
+- Atualizada a versão de cache de `portal-graph.js` para `portal-graph-v4`.
+
