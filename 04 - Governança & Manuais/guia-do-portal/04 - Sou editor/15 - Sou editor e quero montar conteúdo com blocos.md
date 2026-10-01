@@ -1,12 +1,23 @@
 # Sou editor e quero montar conteúdo com blocos
 
-Na aba **Conteúdo**, adicione o bloco que corresponde à informação que precisa ser apresentada. Clique em **+** para incluir um bloco, use as setas para reordenar e a lixeira para remover. Pré-visualize sempre que combinar blocos diferentes.
+Na aba **Conteúdo**, use blocos para organizar a informação de acordo com o que a pessoa precisa entender, encontrar ou fazer. Esta é a referência canônica para editor, moderador e administrador.
 
-Blocos são peças da página: cada peça resolve uma necessidade de leitura. Um bloco de introdução apresenta o assunto; um de links aponta caminhos; um de coleção mostra arquivos. Em vez de tentar colocar tudo em um texto longo, escolha a peça que ajuda a pessoa a encontrar e entender aquela informação.
+Blocos são peças da página: cada peça resolve uma necessidade de leitura. Um bloco de introdução apresenta o assunto; um de links aponta caminhos; um de coleção mostra arquivos. Em vez de transformar toda a página em um texto longo, escolha a peça que melhor cumpre a função daquele conteúdo.
 
-Comece abrindo a aba **Conteúdo** e clicando em **+** no ponto em que a nova informação deve aparecer.
+## Adicionar, mover, duplicar ou remover um bloco
+
+1. Abra a página em edição e localize a aba **Conteúdo**.
+2. Clique em **+** acima ou abaixo do ponto em que a nova informação deve aparecer.
 
 ![[imagens/manual-ifrn/image33.png|Aba Conteúdo e seletor de blocos]]
+
+3. Escolha o tipo de bloco e preencha seus campos.
+4. Use as setas para alterar a posição do bloco quando a ordem de leitura precisar mudar.
+5. Duplique um bloco somente quando a estrutura realmente puder ser reaproveitada; revise o conteúdo copiado antes de salvar.
+6. Use a lixeira para remover um bloco somente depois de confirmar que a informação não é necessária em outro ponto da página.
+7. Pré-visualize sempre que combinar ou reorganizar blocos.
+
+**Regra prática:** primeiro defina o que a pessoa precisa compreender ou fazer; depois escolha o bloco. Não escolha um bloco apenas porque ele produz um destaque visual.
 
 ## Texto, imagens, links, vídeos e documentos
 
@@ -174,4 +185,4 @@ Use **Estatística** para destacar um número que ajuda a compreender o conteúd
 
 **Resultado esperado:** uma página que pode ser lida por partes, com cada bloco servindo a uma intenção clara. Se você não consegue explicar em uma frase por que um bloco está ali, provavelmente ele pode ser removido, dividido ou trocado.
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/16 - Sou editor e quero usar blocos para montar uma página|Voltar a usar blocos]]
+Para revisar a página completa antes de encaminhá-la, volte a [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página|Criar ou editar uma página]].
