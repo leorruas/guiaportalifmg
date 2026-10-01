@@ -1,6 +1,6 @@
-# Sou editor e quero verificar e acompanhar uma página
+# Sou editor e quero conferir uma página antes de enviar e acompanhar seu status
 
-Use esta tarefa depois de criar ou editar o conteúdo. Aqui o foco não é alterar a informação, mas conferir a versão, identificar seu estado no fluxo e entender quem precisa agir em seguida.
+Use esta tarefa quando a edição estiver quase concluída ou quando você precisar saber **em que etapa uma página está**. Você vai conferir a pré-visualização, as verificações, o status e o histórico para entender se a página está pronta para seguir e quem precisa agir depois.
 
 Para criar ou alterar conteúdo, use:
 
@@ -35,11 +35,11 @@ O estado da página deve responder à pergunta **“quem precisa agir agora?”*
 
 Se a página foi devolvida, use:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Responder comentários e corrigir uma página]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Corrigir uma página devolvida pela moderação]]
 
 Se a página está pronta para revisão, use:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar conteúdo para moderação]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar uma página pronta para revisão]]
 
 > [!NOTE]
 > Publicar, despublicar e agendar são ações tratadas na camada de moderação neste guia.
