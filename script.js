@@ -554,6 +554,22 @@ function rotaDoPerfil(categoria) {
     return `#/perfil/${encodeURIComponent(categoria)}`;
 }
 
+function atualizarIndiceDaNavbar(categoria = "") {
+    const linkIndice = document.getElementById("nav-link-pastas");
+    if (!linkIndice) return;
+
+    if (categoria) {
+        linkIndice.href = rotaDoPerfil(categoria);
+        linkIndice.dataset.perfil = categoria;
+        linkIndice.setAttribute("aria-label", `Abrir o índice de ${tituloDoIndice(categoria)}`);
+        return;
+    }
+
+    linkIndice.href = "#pastas-container";
+    delete linkIndice.dataset.perfil;
+    linkIndice.setAttribute("aria-label", "Abrir o índice geral do guia");
+}
+
 function criarLinkDeAcaoDoPerfil(artigo, numero) {
     const acao = document.createElement("a");
     acao.className = "perfil-acao";
@@ -593,6 +609,8 @@ function abrirPerfil(categoria, atualizarRota = true) {
     const perfil = perfilDaCategoria(categoria);
     const artigosDaCategoria = todasAsPastas[categoria] || [];
     if (!informacao || (!perfil && artigosDaCategoria.length === 0)) return;
+
+    atualizarIndiceDaNavbar("");
 
     if (window.GUIA_MOSTRAR_TRANSICAO) {
         window.GUIA_MOSTRAR_TRANSICAO("Abrindo perfil");
@@ -694,6 +712,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
         artigo.titulo === titulo && artigo.conteudo === conteudoMarkdown
     ) || todosOsArtigos.find(artigo => artigo.titulo === titulo) || null;
     artigoTitulo.textContent = tituloDaAcao(artigoAtual?.titulo || titulo);
+    atualizarIndiceDaNavbar(artigoAtual?.categoria || "");
 
     if (artigoAtual && atualizarRota) {
         const hash = `#/${rotaDoArtigo(artigoAtual).split("/").map(encodeURIComponent).join("/")}`;
@@ -1337,6 +1356,8 @@ window.addEventListener("scroll", () => {
 });
 
 function voltarParaHome(atualizarRota = true) {
+    atualizarIndiceDaNavbar("");
+
     if (window.GUIA_MOSTRAR_TRANSICAO) {
         window.GUIA_MOSTRAR_TRANSICAO("Abrindo início");
     }
@@ -1376,7 +1397,15 @@ if (mainTitle) {
 const navLinkPastas = document.getElementById("nav-link-pastas");
 if (navLinkPastas) {
     navLinkPastas.addEventListener("click", (e) => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
         e.preventDefault();
+
+        const perfilContextual = navLinkPastas.dataset.perfil;
+        if (perfilContextual) {
+            abrirPerfil(perfilContextual);
+            return;
+        }
+
         voltarParaHome(true);
         const pastasContainer = document.getElementById("pastas-container");
         if (pastasContainer) {

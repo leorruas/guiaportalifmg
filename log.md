@@ -324,3 +324,11 @@
 - Retirados rótulos como “Voltar às configurações administrativas”, “Voltar ao papel de administrador”, “Voltar ao papel de moderador”, “Voltar ao papel de editor” e equivalentes.
 - Mantidos links finais que representam próxima etapa real do fluxo, como enviar para moderação, revisar, reordenar ou continuar um procedimento relacionado.
 - Atualizado `AGENTS.md` para deixar a navegação de retorno sob responsabilidade da interface e evitar a reintrodução desses links nos Markdown.
+
+## 2026-10-01 — Índice contextual na navbar
+
+- Mantido “guia do portal” como retorno direto à página inicial.
+- O link “índice” da navbar passa a ser contextual: durante a leitura de um artigo, abre o perfil/categoria ao qual o artigo pertence.
+- Na home e nas páginas de perfil, “índice” continua apontando para o índice geral de perfis.
+- Atualizados `href`, `aria-label` e estado interno do link para manter navegação por clique e destino semântico coerentes.
+- Preservado o comportamento de abrir links modificados com teclado ou clique intermediário.
