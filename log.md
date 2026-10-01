@@ -573,3 +573,10 @@
 - Mantidos os limites de zoom já definidos.
 - Atualizada a versão de cache de `portal-graph.js` para `portal-graph-v5`.
 
+## 2026-10-01 — Identidade Visual abaixo de Comunicação / Imprensa
+
+- Adicionada a página `Identidade Visual e Manuais (Marca do IFMG)` como filha direta de `Comunicação / Imprensa`.
+- Registrada uma nova relação do tipo `estrutura` entre `https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/` e `https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/`.
+- O mapa passa de 58 para `59` páginas e de 63 para `64` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v11`.
+
