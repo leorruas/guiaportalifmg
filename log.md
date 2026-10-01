@@ -491,3 +491,10 @@
 - O mapa passa de 17 para `25` páginas e de 16 para `24` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` em `index.html`.
 
+## 2026-10-01 — Ramo Servidores no mapa do Portal
+
+- Adicionadas 11 páginas como filhas diretas de `https://portal.ifmg.edu.br/servidores/`: Normativas & Manuais, Licenças, Remoção & Redistribuição, Teletrabalho / Trabalho Remoto, Reconhecimento de Saberes e Competências (RSC) - TAE, CPPD, CIS, Notícias para servidores, Como abrir um chamado (Solicitar ajuda • SUAP), Sugestões, Críticas e Elogios e + informações para servidores.
+- Registradas 11 novas relações do tipo `estrutura`, todas partindo de Servidores.
+- O mapa passa de 25 para `36` páginas e de 24 para `35` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` em `index.html`.
+
