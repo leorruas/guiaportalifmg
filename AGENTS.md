@@ -96,3 +96,15 @@
 - Quando houver GitHub Actions correspondentes, confirme o resultado real do workflow. Não trate apenas uma checagem local de sintaxe como evidência de que a publicação está íntegra.
 - Se uma mudança afetar a inicialização da home, confirme também cache/versionamento e carregamento dos scripts antes de considerar a tarefa concluída.
 
+## Mapa da estrutura do Portal
+
+- A página `00 - Comece aqui/04 - Mapa da estrutura do Portal.md` é uma referência transversal e deve permanecer no bloco **Comece aqui**.
+- `data/portal-graph.js` é a fonte curada de páginas e relações exibidas no mapa. Use a URL canônica da página como identificador único do nó.
+- O mapa é incremental: a ausência de uma página não significa que ela não exista no Portal; significa apenas que ainda não foi mapeada.
+- Não inferir relações entre páginas apenas pelo formato da URL, proximidade temática ou posição aparente no site. Adicionar uma aresta somente quando a relação estrutural ou de link tiver sido informada pelo usuário ou confirmada por evidência verificável.
+- Cada relação deve declarar seu `type`. Use `estrutura` quando representar pertencimento/navegação estrutural e reserve outros tipos para relações diferentes que venham a ser documentadas.
+- Ao receber um novo link, primeiro verifique se a URL já existe no dataset para evitar nós duplicados. Atualize título ou descrição do nó existente quando necessário em vez de criar uma segunda entrada.
+- `portal-graph.js` é um módulo opcional da interface. Ele só deve inicializar quando existir `[data-portal-graph]` no artigo e deve manter tratamento de erro local; falha ao carregar Cytoscape ou o dataset não pode interromper a home, a busca ou a leitura dos demais artigos.
+- Cytoscape é carregado sob demanda apenas na página do mapa. Não transforme a biblioteca em dependência global obrigatória do guia.
+- Ao alterar `data/portal-graph.js`, `portal-graph.js` ou os estilos do componente, incremente a versão correspondente no `index.html` para evitar cache antigo no GitHub Pages.
+
