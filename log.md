@@ -209,3 +209,14 @@
 - Alterado o carregamento dos artigos para priorizar `tituloCanonico` quando disponível, sem mudar o `sourcePath` usado pelas rotas existentes.
 - Validados os wikilinks, anexos, títulos canônicos e a sintaxe atual do `script.js`.
 
+## 2026-10-01 — Consolidação editorial: escolha e catálogo de tipos
+
+- Consolidado `04 - Sou editor/03 - Sou editor e quero escolher o tipo de página.md` como referência canônica para escolher o tipo de conteúdo, com título canônico “Escolher o tipo de conteúdo”.
+- Incorporado a E03 o catálogo que antes estava duplicado em `04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo.md`, incluindo finalidade, perfil mínimo e destino para cada procedimento específico.
+- Reduzido E21 a uma página de encaminhamento para E03, preservando links antigos sem manter um segundo catálogo.
+- Mantidas e explicitadas as lacunas de documentação específica para Evento e Comunicado; enquanto não houver artigos próprios, E03 fornece orientação mínima e encaminha para o procedimento geral de criação/edição.
+- Atualizado `03 - Sou moderador/04` para apontar diretamente para a tarefa canônica de processo seletivo em vez da página M12 já absorvida.
+- Adicionado `tituloCanonico` para E03 sem alterar o nome físico do arquivo nem sua rota.
+- Substituída a tabela inicial por seções, evitando conflito entre o separador `|` dos wikilinks e a sintaxe de tabelas Markdown no pipeline atual do site.
+- Validados wikilinks, anexos, ausência de referência a M12 absorvido, estado de E21 e sintaxe atual do `script.js`.
+
