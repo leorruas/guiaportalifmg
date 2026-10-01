@@ -763,3 +763,14 @@
 - Se a Fullscreen API não estiver disponível no navegador, o controle é ocultado e o restante do mapa continua funcionando normalmente.
 - Atualizados os caches de `portal-graph.js` para `portal-graph-v9` e `style.css` para `portal-fullscreen-v1`.
 
+## 2026-10-01 — Microdescrições dos nós do mapa a partir do relatório de arquitetura
+
+- Usado como fonte o relatório `leorruas/novo-portal/03 - Arquitetura & Decisões/decisoes-design/01 - relatório-estratégico-arquitetura-informação-portal.md`, revisão de 08/09/2026.
+- Adicionadas ou revisadas microdescrições factuais em `45` dos 82 nós do mapa; as descrições têm no máximo 121 caracteres.
+- A cobertura é completa para Home e os 5 nós de primeiro clique.
+- No segundo clique, 31 de 49 nós possuem descrição sustentada pelo relatório.
+- Também foram descritos alguns nós mais profundos explicitamente cobertos pela fonte, entre eles Processo Seletivo, PDI, Relatório de Gestão, Ouvidoria, audiências/consultas, Identidade Visual e destinos do +IFMG.
+- Nós sem evidência suficiente no relatório permaneceram sem `description`; a sidebar continua exibindo o fallback genérico nesses casos.
+- O `AGENTS.md` passa a exigir microdescrições curtas baseadas em evidência e a proibir preenchimento por inferência quando a fonte não sustentar uma definição útil.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v21`.
+
