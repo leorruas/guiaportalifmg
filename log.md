@@ -591,3 +591,12 @@
 - Mantidos os limites de zoom e o botão de recentralização.
 - Atualizada a versão de cache de `portal-graph.js` para `portal-graph-v6`.
 
+## 2026-10-01 — Expansão de + informações para servidores
+
+- Adicionadas 10 páginas como filhas diretas de `https://portal.ifmg.edu.br/servidores/mais/`: Auxílios & Assistência, Wellhub / Gympass, Horário Especial para Servidores, Programa de Apoio Financeiro à Graduação e Pós-Graduação, Exames Médicos Periódicos, Licenças, +IFMG, Incentivo à Qualificação, Orientações para posse no IFMG e Registro de atestado médico ou odontológico.
+- A comparação por título normalizado encontrou apenas uma duplicação exata com o dataset existente: `Licenças`.
+- A entrada `https://portal.ifmg.edu.br/servidores/guia/licencas/` permanece no ramo “+ informações para servidores”, mas recebe relação `redireciona` para o nó canônico `https://portal.ifmg.edu.br/servidores/licencas/`.
+- `+IFMG` foi mantido separado de `+ IFMG • Cursos livres e gratuitos`, pois os títulos e contextos não são iguais e não há confirmação de que representem o mesmo destino.
+- O mapa passa de 59 para `69` páginas e de 64 para `75` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v12`.
+
