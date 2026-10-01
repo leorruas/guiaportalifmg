@@ -1,4 +1,4 @@
-# Sou administrador e quero reordenar páginas
+# Sou administrador e quero reordenar páginas dentro de uma seção
 
 Use esta tarefa quando a ordem das páginas-filhas precisa mudar dentro de uma seção do portal. Ela trata somente da **ordenação estrutural de páginas**; criação de coleções, permissões e metadados possuem tarefas próprias.
 
@@ -25,8 +25,8 @@ Confirme se:
 
 Para decidir onde uma página deve ficar, consulte [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da informação e encontrabilidade]].
 
-Se a necessidade for configurar slug, metadados ou presença em menu, use [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Configurar busca e menu de uma página]].
+Se a necessidade for configurar slug, metadados ou presença em menu, use [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Definir como a página aparece na busca e na navegação]].
 
-Se o problema envolver uma coleção, use [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]].
+Se o problema envolver uma coleção, use [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção de arquivos e definir quem pode usá-la]].
 
 **Como saber que terminou:** a nova ordem aparece no portal, melhora o caminho de navegação e não altera permissões, coleções ou metadados que pertencem a outras tarefas.
