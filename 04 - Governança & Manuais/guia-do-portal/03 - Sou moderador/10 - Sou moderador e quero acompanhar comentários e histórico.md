@@ -1,27 +1,39 @@
-# Sou moderador e quero acompanhar comentários e histórico
+# Sou moderador e quero registrar pendências e acompanhar correções
 
-Comentários permitem devolver uma página com uma indicação precisa do que precisa ser corrigido. O histórico ajuda a conferir decisões e alterações feitas ao longo do tempo.
+Use comentários para devolver uma orientação no ponto exato que precisa ser corrigido. Depois do reenvio, use o mesmo fluxo para conferir se a pendência foi atendida.
 
-Use comentários como bilhetes presos no ponto exato do problema. O histórico é o caderno de versões: ele mostra o que mudou, por quem e em que momento.
+O comentário registra **o que precisa mudar**; o histórico ajuda a entender **o que mudou ao longo do tempo**. Nenhum dos dois substitui a decisão editorial de aprovar ou devolver a página.
 
-## Comentar uma pendência
+## Registrar uma pendência
 
-1. Abra a página enviada para moderação.
+1. Abra a página durante a revisão.
 2. Ative o modo de **Comentários**.
 
 ![[imagens/manual-ifrn/image2.png|Atalho de comentários no Wagtail]]
 
-3. Passe o cursor pelo campo ou bloco que precisa de ajuste e adicione o comentário.
-4. Descreva a pendência, o motivo e a alteração esperada.
-5. Salve a página para registrar o comentário.
+3. Localize o campo ou bloco que precisa de ajuste.
+4. Adicione um comentário que informe o problema e o resultado esperado.
+5. Salve a página para registrar a orientação.
+
+**Prefira:** “Informe a data final da inscrição neste parágrafo.”
+
+**Evite:** “Melhorar texto.”
 
 ## Acompanhar a correção
 
-1. Quando o editor reenviar a página, leia as respostas e confira a alteração realizada.
-2. Resolva os comentários atendidos.
-3. Use o **Histórico** para conferir mudanças anteriores, quando necessário.
-4. Aprove ou devolva novamente a página conforme o resultado da revisão.
+1. Quando a página for reenviada, abra os comentários.
+2. Leia a resposta do editor quando houver.
+3. Confira a alteração na pré-visualização.
+4. Resolva os comentários atendidos.
+5. Use **Histórico** quando precisar confirmar alterações anteriores ou autoria de uma mudança.
+6. Retome a decisão editorial.
 
-**Como saber que resolveu:** o comentário foi respondido ou encerrado, a alteração aparece na pré-visualização e a decisão final foi registrada no fluxo.
+Para aprovar ou devolver a entrega, use:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Voltar a revisar uma publicação]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]]
+
+O fluxo correspondente do editor está em:
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Responder comentários e corrigir uma página]]
+
+**Como saber que terminou:** a pendência tem uma orientação objetiva, a correção pode ser conferida no próprio fluxo e a decisão seguinte fica registrada na revisão.
