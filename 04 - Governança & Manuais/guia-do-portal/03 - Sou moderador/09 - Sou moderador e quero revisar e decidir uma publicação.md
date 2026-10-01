@@ -13,7 +13,7 @@ A pergunta central é: **esta página já permite que uma pessoa de fora encontr
 
 3. Confirme fonte, responsável, vigência, clareza, acessibilidade, links, documentos, imagens, metadados e próxima ação.
 4. Verifique se documentos e imagens estão na versão e na coleção corretas.
-5. Use comentários quando precisar indicar o ponto exato que deve ser corrigido.
+5. Quando houver uma pendência específica, registre-a no fluxo de comentários. Consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Registrar pendências e acompanhar correções]].
 6. Escolha a ação disponível no fluxo para **aprovar** a entrega ou **devolver para ajuste**.
 
 ![[imagens/manual-ifrn/image14.png|Estado da página no fluxo de moderação]]
