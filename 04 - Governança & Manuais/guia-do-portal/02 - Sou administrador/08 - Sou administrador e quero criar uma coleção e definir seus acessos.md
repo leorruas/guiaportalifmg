@@ -1,4 +1,4 @@
-# Sou administrador e quero criar uma coleção e definir seus acessos
+# Sou administrador e quero criar uma coleção de arquivos e definir quem pode usá-la
 
 Use esta tarefa quando for necessário **criar a estrutura de uma coleção**, criar uma subcoleção ou alterar quais grupos podem trabalhar com seus documentos e imagens. O uso cotidiano de uma coleção já existente pertence às tarefas herdadas de editor.
 
@@ -43,8 +43,8 @@ A permissão de **coleção** não substitui a permissão de **página**. Uma pe
 
 O uso cotidiano dos arquivos deve seguir as tarefas herdadas de editor:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar imagens e documentos nas coleções permitidas]]
 
-Para revisar a configuração geral do grupo, use [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]].
+Para revisar a configuração geral do grupo, use [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Definir quem pode editar páginas e usar coleções]].
 
 **Como saber que terminou:** a coleção tem finalidade clara, está no ponto correto da hierarquia e somente os grupos necessários conseguem executar as ações previstas.
