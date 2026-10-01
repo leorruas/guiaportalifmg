@@ -1,4 +1,4 @@
-# Sou moderador e quero publicar, despublicar ou agendar uma página
+# Sou moderador e quero publicar, agendar ou retirar uma página do ar
 
 Use esta tarefa para controlar o **estado público** de uma página dentro do escopo do seu grupo. Ela deve acontecer depois da revisão editorial ou quando uma publicação já existente precisa mudar de vigência.
 
@@ -45,6 +45,6 @@ Evite remover definitivamente uma página quando despublicar ou redirecionar res
 
 Para decidir se o conteúdo está pronto antes de alterar o estado público, use:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar um conteúdo e decidir se ele pode seguir para publicação]]
 
 **Como saber que terminou:** a página mostra o estado esperado, publicada, despublicada ou agendada, e existe uma responsabilidade clara sobre sua vigência.
