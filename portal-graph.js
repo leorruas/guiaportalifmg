@@ -485,6 +485,7 @@
             const bg = estiloRaiz.getPropertyValue("--bg").trim() || "#101010";
 
             const layoutSetorial = calcularLayoutSetorial(data);
+            const layoutDistancia = calcularLayoutPorDistancia(data);
             const nodeDataById = new Map(data.nodes.map(node => [node.id, node]));
             const elements = [
                 ...data.nodes.map(node => {
@@ -498,7 +499,8 @@
                         data: {
                             ...node,
                             branch: ramoDaUrl(node.url),
-                            graphDepth: profundidade
+                            graphDepth: profundidade,
+                            clickDistance: layoutDistancia.distancias.get(node.id) ?? null
                         },
                         classes,
                         position: layoutSetorial.posicoes.get(node.id) || { x: 0, y: 0 }
@@ -658,14 +660,130 @@
             instanciaAtiva = cy;
 
             const rootNode = cy.getElementById("https://portal.ifmg.edu.br/");
-            const rodarLayout = () => {
+            let modoDistancia = false;
+
+            function limparAneis() {
+                ui.rings.innerHTML = "";
+                ui.rings.hidden = true;
+                root.classList.remove("portal-graph-depth-mode");
+            }
+
+            function atualizarAneis() {
+                if (!modoDistancia || !rootNode.length) {
+                    limparAneis();
+                    return;
+                }
+
+                const largura = ui.visual.clientWidth;
+                const altura = ui.visual.clientHeight;
+                if (!largura || !altura) return;
+
+                const centro = rootNode.renderedPosition();
+                const zoom = cy.zoom();
+                const passoRenderizado = layoutDistancia.passoRaio * zoom;
+                const profundidadeMaxima = layoutDistancia.profundidadeMaxima;
+
+                ui.rings.hidden = false;
+                ui.rings.setAttribute("viewBox", `0 0 ${largura} ${altura}`);
+                ui.rings.setAttribute("width", String(largura));
+                ui.rings.setAttribute("height", String(altura));
+
+                const bandas = [];
+                for (let profundidade = profundidadeMaxima; profundidade >= 1; profundidade -= 1) {
+                    const raio = profundidade * passoRenderizado;
+                    const larguraBanda = passoRenderizado * 0.94;
+                    const intensidade = Math.min(5 + (profundidade * 3), 20);
+
+                    bandas.push(`
+                        <circle
+                            class="portal-depth-band"
+                            cx="${centro.x.toFixed(2)}"
+                            cy="${centro.y.toFixed(2)}"
+                            r="${raio.toFixed(2)}"
+                            stroke-width="${larguraBanda.toFixed(2)}"
+                            style="stroke: color-mix(in srgb, var(--accent-blue) ${intensidade}%, transparent);"
+                        />
+                    `);
+                }
+
+                const limites = [];
+                for (let profundidade = 1; profundidade <= profundidadeMaxima; profundidade += 1) {
+                    const raio = profundidade * passoRenderizado;
+                    const anguloLegenda = -1.12;
+                    const xLegenda = centro.x + (Math.cos(anguloLegenda) * raio) + 8;
+                    const yLegenda = centro.y + (Math.sin(anguloLegenda) * raio) - 7;
+                    const rotulo = profundidade === 1
+                        ? "1 clique da Home"
+                        : `${profundidade} cliques da Home`;
+
+                    limites.push(`
+                        <circle
+                            class="portal-depth-boundary"
+                            cx="${centro.x.toFixed(2)}"
+                            cy="${centro.y.toFixed(2)}"
+                            r="${raio.toFixed(2)}"
+                        />
+                        <text
+                            class="portal-depth-label"
+                            x="${xLegenda.toFixed(2)}"
+                            y="${yLegenda.toFixed(2)}"
+                        >${rotulo}</text>
+                    `);
+                }
+
+                ui.rings.innerHTML = bandas.join("") + limites.join("");
+            }
+
+            function aplicarLayoutEstrutural() {
+                modoDistancia = false;
+                ui.depthToggle.setAttribute("aria-pressed", "false");
+                ui.depthToggle.textContent = "mostrar distância da Home";
+                limparAneis();
+
                 const proximoLayout = calcularLayoutSetorial(data);
                 cy.nodes().positions(node => proximoLayout.posicoes.get(node.id()) || node.position());
                 cy.fit(cy.elements(), 72);
-            };
+            }
 
-            rodarLayout();
-            window.setTimeout(rodarLayout, 40);
+            function aplicarLayoutDistancia() {
+                modoDistancia = true;
+                root.classList.add("portal-graph-depth-mode");
+                ui.depthToggle.setAttribute("aria-pressed", "true");
+                ui.depthToggle.textContent = "voltar à estrutura";
+
+                cy.nodes().positions(node => layoutDistancia.posicoes.get(node.id()) || node.position());
+                cy.fit(cy.nodes(), 72);
+                window.requestAnimationFrame(atualizarAneis);
+            }
+
+            function reenquadrarModoAtual() {
+                if (modoDistancia) {
+                    cy.fit(cy.nodes(), 72);
+                    window.requestAnimationFrame(atualizarAneis);
+                    return;
+                }
+                cy.fit(cy.elements(), 72);
+            }
+
+            aplicarLayoutEstrutural();
+            window.setTimeout(() => {
+                aplicarLayoutEstrutural();
+            }, 40);
+
+            cy.on("pan zoom", () => {
+                if (modoDistancia) atualizarAneis();
+            });
+
+            ui.depthToggle.addEventListener("click", () => {
+                cy.elements().removeClass("portal-graph-dimmed portal-graph-match portal-graph-redirect-focus portal-graph-secondary-focus");
+                ui.input.value = "";
+
+                if (modoDistancia) {
+                    aplicarLayoutEstrutural();
+                } else {
+                    aplicarLayoutDistancia();
+                }
+            });
 
             if (rootNode.length) {
                 mostrarDetalhes(ui.details, rootNode.data());
@@ -686,7 +804,12 @@
             ui.recenter.addEventListener("click", () => {
                 cy.elements().removeClass("portal-graph-dimmed portal-graph-match portal-graph-redirect-focus portal-graph-secondary-focus");
                 ui.input.value = "";
-                rodarLayout();
+
+                if (modoDistancia) {
+                    aplicarLayoutDistancia();
+                } else {
+                    aplicarLayoutEstrutural();
+                }
             });
 
             ui.input.addEventListener("input", () => {
@@ -694,7 +817,7 @@
                 cy.elements().removeClass("portal-graph-dimmed portal-graph-match");
 
                 if (!consulta) {
-                    cy.fit(cy.elements(), 54);
+                    reenquadrarModoAtual();
                     return;
                 }
 
