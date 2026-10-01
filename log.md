@@ -613,3 +613,14 @@
 - `Acesse a página do CONSUP` e `Saiba mais sobre o Estágio Probatório` foram fornecidos com destino `https://portal.ifmg.edu.br/` (Home). Como isso não identifica páginas próprias e os rótulos representam destinos distintos, esses dois links não foram consolidados nem convertidos em novos nós nesta etapa.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v14`.
 
+## 2026-10-01 — Expansão de + informações para estudantes
+
+- Adicionados links diretos de `+ informações para estudantes` para os nós canônicos já existentes de Assistência Estudantil, Hubs de Inovação do IFMG, Empresas Juniores e Empreendedorismo e Núcleos de Apoio.
+- Adicionado o destino externo `https://mais.ifmg.edu.br/maisifmg/` como nó próprio `+IFMG — cursos de curta duração`, ligado por relação `link` a `+ informações para estudantes`.
+- Adicionado `Conselho Superior (CONSUP)` na URL específica `https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/conselho-superior-consup/`, como filho estrutural de `Participação Social`.
+- `+ informações para estudantes` e `+ informações para servidores` passam a ter relação `link` para o mesmo nó canônico do CONSUP; isso resolve o destino pendente anteriormente informado no bloco de servidores.
+- Adicionadas quatro páginas `estudantes/guia/` como filhas estruturais de `+ informações para estudantes`: Empresas Juniores e Empreendedorismo, Hubs de Inovação do IFMG, +IFMG e Assistência Estudantil.
+- Essas quatro páginas do guia recebem relação `redireciona` para os nós canônicos já existentes: Empresas Juniores em Comunidade, Hubs em Comunidade, +IFMG na página do Portal de cursos livres e Assistência Estudantil em Estudantes.
+- O mapa passa de 69 para `75` páginas e de 78 para `94` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v15`.
+
