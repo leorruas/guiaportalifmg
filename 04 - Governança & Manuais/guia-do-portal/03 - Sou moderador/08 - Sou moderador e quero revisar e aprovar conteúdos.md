@@ -1,50 +1,47 @@
 # Sou moderador e quero revisar e aprovar conteúdos
 
-Você protege a qualidade, a coerência e a vigência das informações publicadas no seu escopo. Sua atuação é limitada às páginas e coleções atribuídas ao grupo do qual faz parte.
+Como moderador, você protege a qualidade, a coerência e a vigência das informações publicadas no escopo do seu grupo. Além das tarefas herdadas de editor, seu papel acrescenta duas responsabilidades próprias: **decidir se o conteúdo está pronto** e **controlar seu estado público quando essa ação fizer parte do fluxo**.
 
-Em palavras simples: você é a última pessoa a conferir se o público conseguirá entender e usar a informação. Não é apenas procurar erros de escrita; é verificar se a página está no lugar certo, diz a verdade, está atualizada e aponta o próximo passo.
-
-Pense na moderação como uma leitura feita por alguém que não participou da criação. Se essa pessoa não entende o que deve fazer, um visitante do portal provavelmente também não entenderá.
+Moderar não é apenas corrigir escrita. É ler como alguém que não participou da produção e verificar se a pessoa de fora consegue encontrar, compreender e usar a informação.
 
 > [!NOTE]
-> Seu acesso é cumulativo: além de revisar, devolver e aprovar, você pode executar as tarefas de editor dentro do escopo do seu grupo.
+> Seu acesso é cumulativo: todas as tarefas de editor disponíveis no seu escopo também fazem parte do trabalho de moderador. O procedimento editorial não precisa ser repetido em uma versão separada para este perfil.
 
 ## O que você deve conseguir fazer
 
-- Revisar conteúdos enviados por editores.
-- Aprovar, devolver para ajuste ou encaminhar casos que exigem outra validação.
-- Verificar tipo de conteúdo, fonte, vigência, responsabilidade, padrão editorial e acessibilidade.
-- Priorizar correções em páginas críticas, conteúdos vencidos e falhas de encontrabilidade.
-- Acompanhar sinais de busca, feedback e tarefas para propor ajustes.
+- revisar conteúdos enviados por editores;
+- aprovar ou devolver uma entrega com orientação objetiva;
+- verificar fonte, vigência, responsabilidade, acessibilidade e próxima ação;
+- acompanhar comentários e histórico quando houver pendências;
+- publicar, despublicar ou agendar conteúdo quando essa ação estiver disponível no escopo do grupo;
+- reconhecer quando a demanda exige decisão administrativa, como mudança de permissão ou estrutura.
 
 ## Checklist de moderação
 
-- [ ] O conteúdo é necessário, está no canal correto e não duplica uma fonte oficial?
-- [ ] A informação é clara, completa, acessível e tem próximo passo?
-- [ ] Datas, documentos, contatos e links estão vigentes e levam ao destino certo?
-- [ ] O título, o resumo e os metadados permitem encontrar e compreender o conteúdo?
-- [ ] Imagens têm texto alternativo adequado, legenda quando ela acrescenta contexto e não expõem dados pessoais sem justificativa?
-- [ ] Documentos e imagens têm nomes claros, sem abreviações obscuras ou versões ambíguas — por exemplo, `edital-monitoria-2026-retificado.pdf`, e não `edital-final-novo(2).pdf`? [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo|Veja como manter imagens e documentos do seu grupo]].
-- [ ] O arquivo publicado é a versão oficial, está na coleção correta e pode ser aberto no celular?
-- [ ] Requisitos, exceções, custos, prazos e consequências estão visíveis na página, e não apenas em um anexo?
-- [ ] Existe responsável para atualizar ou arquivar a publicação e uma data ou situação que dispara essa revisão?
-- [ ] Quando houver dado pessoal, informação sensível ou direito de terceiros, a publicação foi validada pelo setor responsável?
+- [ ] O conteúdo pertence ao local e ao tipo corretos?
+- [ ] A informação tem fonte oficial, responsável e vigência?
+- [ ] O título, o resumo e os metadados ajudam a encontrar e compreender a página?
+- [ ] A pessoa entende requisitos, exceções, custos, prazos e próxima ação sem depender apenas de um anexo?
+- [ ] Links, documentos e imagens levam à versão correta?
+- [ ] Imagens informativas têm texto alternativo adequado?
+- [ ] Documentos e imagens têm títulos claros e estão na coleção correta?
+- [ ] O conteúdo evita expor dados pessoais, informações sensíveis ou direitos de terceiros sem validação?
+- [ ] Há uma decisão clara sobre o que deve acontecer quando a informação perder a vigência?
 
-### O que observar nos nomes de arquivos e imagens
+**Como saber que pode aprovar:** sem recorrer ao conhecimento interno da equipe, você consegue responder o que é a página, para quem ela serve, o que a pessoa deve fazer e até quando a informação vale.
 
-O nome do arquivo também é informação de trabalho: ajuda quem mantém o portal a localizar, reutilizar e substituir o material certo. Ele deve dizer o que é o conteúdo e, quando necessário, o ano, a versão ou a situação. Evite nomes que só fazem sentido para quem criou o arquivo, como `imagem-whatsapp`, `versao-definitiva-final` ou `documento-3`.
+## Tarefas próprias de moderação
 
-Para imagens, confira ainda se o nome não revela dados desnecessários de pessoas retratadas. O texto alternativo explica a função da imagem para quem usa leitor de tela; ele não deve repetir apenas o nome do arquivo.
+Para decidir se uma entrega está pronta:
 
-**Como saber que pode aprovar:** você consegue responder, sem abrir outro sistema, “o que é isto?”, “para quem é?”, “o que a pessoa faz agora?”, “até quando esta informação vale?” e “qual arquivo é a versão oficial?”.
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]]
 
-## Procedimentos
+Para registrar pendências e acompanhar alterações:
 
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]].
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Acompanhar comentários e histórico]].
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, despublicar ou agendar uma página]].
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/02 - Sou moderador e quero criar ou atualizar uma página|Criar ou atualizar uma página]].
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/05 - Sou moderador e quero organizar documentos, imagens e coleções|Organizar documentos, imagens e coleções]].
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/07 - Sou moderador e quero configurar busca e menu de uma página|Configurar busca e menu de uma página]].
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/12 - Sou moderador e quero publicar uma notícia ou processo seletivo|Publicar uma notícia ou processo seletivo]].
-- [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero executar as tarefas de editor|Executar as tarefas de editor]].
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Acompanhar comentários e histórico]]
+
+Para controlar o estado público da página:
+
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, despublicar ou agendar uma página]]
+
+As tarefas de criação, edição, mídia, blocos e busca/menu são herdadas do editor e aparecem automaticamente no perfil de moderador.
