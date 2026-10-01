@@ -137,7 +137,7 @@ const metadadosCanonicos = {
     "02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões": { id: "task-groups-permissions", tipo: "tarefa", perfilMinimo: "administrador" },
     "02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos": { id: "task-collection-admin", tipo: "tarefa", perfilMinimo: "administrador" },
     "02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos": { id: "task-auxiliary-registers", tipo: "tarefa", perfilMinimo: "administrador" },
-    "02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções": { id: "task-page-reorder", tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções": { id: "task-page-reorder", tipo: "tarefa", perfilMinimo: "administrador", tituloCanonico: "10 - Sou administrador e quero reordenar páginas" },
 
     "03 - Sou moderador/01 - Sou moderador e quero executar as tarefas de editor": { tipo: "absorvido", estado: "absorver", destino: "role-moderator" },
     "02 - Sou administrador/02 - Sou administrador e quero executar as tarefas de editor e moderador": { tipo: "absorvido", estado: "absorver", destino: "role-administrator" },
