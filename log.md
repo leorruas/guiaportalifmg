@@ -525,3 +525,12 @@
 - O botão “recentralizar” reaplica o layout radial e enquadra o grafo dentro desses limites.
 - Atualizada a versão de cache de `portal-graph.js` para `portal-graph-v4`.
 
+## 2026-10-01 — Como ingressar e consolidação do nó SUAP
+
+- Adicionadas `Processo Seletivo` e `Reserva de Vagas (Cotas)` como filhas diretas de `Como ingressar no IFMG`.
+- Consolidado o suporte SUAP em um único nó canônico: `https://portal.ifmg.edu.br/comunidade/suporte-suap/`.
+- Removidos do dataset os nós específicos de Estudantes e Servidores que representavam acessos ao SUAP como se fossem páginas distintas.
+- Comunidade passa a ter relação `estrutura` com o nó SUAP; Estudantes e Servidores passam a apontar para o mesmo nó por relações `redireciona`.
+- O mapa passa de 51 para `52` páginas e de 52 para `55` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v7`.
+
