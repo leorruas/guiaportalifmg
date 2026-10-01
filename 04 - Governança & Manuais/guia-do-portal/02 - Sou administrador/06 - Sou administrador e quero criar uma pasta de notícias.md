@@ -1,4 +1,4 @@
-# Sou administrador e quero criar uma pasta de notícias
+# Sou administrador e quero criar uma pasta para notícias
 
 A pasta de notícias é o lugar que recebe apenas notícias. Ela mantém o conteúdo jornalístico separado de páginas institucionais, cursos e serviços — como uma editoria que ajuda o público a encontrar fatos recentes sem misturá-los a informações permanentes.
 
@@ -14,7 +14,7 @@ No Guia do Portal IFMG, criar essa estrutura é uma tarefa administrativa. Depoi
 
 ![[imagens/manual-ifrn/image12.png|Exemplo de criação de conteúdo dentro de uma pasta de Notícias]]
 
-6. Depois de criar a pasta, configure o acesso do grupo responsável pela manutenção usando [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]]. Conceda apenas a página e as coleções necessárias.
+6. Depois de criar a pasta, configure o acesso do grupo responsável pela manutenção usando [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Definir quem pode editar páginas e usar coleções]]. Conceda apenas a página e as coleções necessárias.
 
 ## Como escolher a ordenação
 
@@ -22,4 +22,4 @@ Use a ordem por data para uma cobertura que deve destacar o fato mais novo. Use 
 
 **Como conferir:** a pasta aparece no local esperado, recebe somente notícias e um editor autorizado consegue criar um rascunho sem ganhar acesso a outras áreas do portal.
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções|Reordenar páginas]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções|Reordenar páginas dentro de uma seção]]
