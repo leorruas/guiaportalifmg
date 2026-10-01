@@ -702,3 +702,13 @@
 - Mantidos os artigos absorvidos fora da navegação principal.
 - Atualizado o cache de `data/guide-metadata.js`.
 
+## 2026-10-01 — Reorganização das tarefas do Administrador
+
+- As tarefas exclusivas de administração passam a seguir uma ordem mental por responsabilidade: reordenar páginas → atualizar a Home → criar pasta para notícias → definir quem pode editar páginas e usar coleções → criar coleção e definir quem pode usá-la → criar ou atualizar opções usadas em processos seletivos e cursos.
+- Adicionados campos `ordem` e `descricaoLista` às 6 tarefas canônicas do Administrador e à visão do papel.
+- Títulos técnicos foram reescritos para explicitar o resultado esperado antes de abrir o artigo, mantendo termos como grupos, permissões e cadastros no corpo e nos aliases de busca.
+- Os artigos canônicos e `O papel do administrador` foram alinhados à nova nomenclatura e sequência.
+- As tarefas herdadas de Editor e Moderador continuam aparecendo antes das tarefas próprias do Administrador, sem procedimentos duplicados.
+- Mantidos os artigos absorvidos fora da navegação principal.
+- Atualizado o cache de `data/guide-metadata.js`.
+
