@@ -38,7 +38,7 @@ Para decidir se uma entrega está pronta:
 
 Para registrar pendências e acompanhar alterações:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Acompanhar comentários e histórico]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Registrar pendências e acompanhar correções]]
 
 Para controlar o estado público da página:
 
