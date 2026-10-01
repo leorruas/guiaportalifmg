@@ -1,28 +1,32 @@
-# Sou administrador e quero organizar páginas e coleções
+# Sou administrador e quero reordenar páginas
 
-Este conteúdo reúne duas decisões estruturais diferentes. A ordenação de páginas permanece aqui; a criação e os acessos de coleções têm uma referência administrativa própria.
+Use esta tarefa quando a ordem das páginas-filhas precisa mudar dentro de uma seção do portal. Ela trata somente da **ordenação estrutural de páginas**; criação de coleções, permissões e metadados possuem tarefas próprias.
+
+Reordenar uma página muda o caminho apresentado ao público. Antes de arrastar itens, confirme se a nova sequência realmente melhora a navegação e se não interfere em uma estrutura mantida por outra área.
 
 ## Reordenar páginas
 
 1. Em **Páginas**, abra a página-pai da seção que será organizada.
-2. Abra **Ações** e selecione a opção de ordenação de menu, quando disponível.
-3. Arraste as páginas pelo ícone de movimentação para definir a ordem.
-4. Confirme a nova ordem na visualização do portal.
+2. Abra **Ações** e selecione a opção de ordenação disponível.
+3. Arraste as páginas pelo ícone de movimentação para definir a nova sequência.
+4. Salve ou confirme a alteração quando o Wagtail solicitar.
+5. Abra a visualização do portal e confira o resultado.
 
-![[imagens/manual-ifrn/image28.png|Tela para reordenar páginas do menu]]
+![[imagens/manual-ifrn/image28.png|Tela para reordenar páginas]]
 
-Antes de mudar a posição, confirme se a nova ordem melhora o caminho para o público e se não altera uma estrutura usada por outras áreas sem necessidade.
+## Antes de mudar a ordem
 
-Para decidir onde a página deve ficar, consulte [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da informação e encontrabilidade]].
+Confirme se:
 
-## Organizar coleções
+- a sequência ajuda o público a reconhecer as opções mais importantes;
+- a página continua sob a página-pai correta;
+- a mudança não está tentando corrigir um problema que, na verdade, é de título, menu ou arquitetura;
+- outras áreas que dependem daquela estrutura não serão afetadas sem necessidade.
 
-A estrutura e as permissões das coleções são tratadas separadamente:
+Para decidir onde uma página deve ficar, consulte [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da informação e encontrabilidade]].
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]]
+Se a necessidade for configurar slug, metadados ou presença em menu, use [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Configurar busca e menu de uma página]].
 
-O uso cotidiano de documentos e imagens dentro de uma coleção já autorizada segue:
+Se o problema envolver uma coleção, use [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]].
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]]
-
-**Como saber que terminou:** as páginas aparecem na ordem esperada e qualquer necessidade relacionada a coleções foi tratada na tarefa específica, sem misturar estrutura de páginas com acesso a arquivos.
+**Como saber que terminou:** a nova ordem aparece no portal, melhora o caminho de navegação e não altera permissões, coleções ou metadados que pertencem a outras tarefas.
