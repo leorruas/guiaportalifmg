@@ -657,3 +657,12 @@
 - O mapa passa de 81 para `82` páginas e de 100 para `101` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v19`.
 
+## 2026-10-01 — Layouts locais para hubs problemáticos
+
+- Adicionados metadados `hubLayout` ao dataset apenas para dois nós: `Participação Social` usa `fan` e `+ informações para servidores` usa `stack`.
+- `Participação Social` organiza seus 5 filhos estruturais em um leque local voltado para fora do ramo, sem alterar o restante do setor de Acesso à Informação.
+- `+ informações para servidores` organiza seus 10 filhos estruturais em uma grade compacta de duas colunas por cinco linhas, orientada para fora do ramo de Servidores.
+- Links secundários que saem desses hubs recebem a classe `portal-graph-hub-secondary`, ficam quase invisíveis no panorama geral e ganham destaque ao selecionar o hub ou o nó conectado.
+- Os hubs recebem destaque visual discreto próprio, sem mudar o layout dos demais nós.
+- Atualizadas as versões de cache de `data/portal-graph.js` e `portal-graph.js`.
+
