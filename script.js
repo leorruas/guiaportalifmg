@@ -1042,7 +1042,8 @@ function renderizarNavegacaoSequencial(artigo) {
     if (!navegacao) return;
 
     navegacao.innerHTML = "";
-    const artigosDaCategoria = todasAsPastas[artigo.categoria] || [];
+    const artigosDaCategoria = (todasAsPastas[artigo.categoria] || [])
+        .filter(item => item.metadados?.estado !== "absorver");
     const indice = artigosDaCategoria.findIndex(item => item.sourcePath === artigo.sourcePath);
     const anterior = indice > 0 ? artigosDaCategoria[indice - 1] : null;
     const proximo = indice >= 0 && indice < artigosDaCategoria.length - 1
