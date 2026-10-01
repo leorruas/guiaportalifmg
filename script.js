@@ -608,8 +608,9 @@ function exibirResultados(artigos, termo = "") {
 
         const trecho = document.createElement("span");
         trecho.className = "resultado-trecho";
-        const textoTrecho = extrairTrechoRelevante(artigo.conteudo, motivo.tipo === "alias" ? "" : termo);
-        trecho.innerHTML = destacarTexto(textoTrecho, motivo.tipo === "alias" ? "" : termo);
+        const buscaSemOcorrenciaLiteral = ["alias", "aproximacao"].includes(motivo.tipo);
+        const textoTrecho = extrairTrechoRelevante(artigo.conteudo, buscaSemOcorrenciaLiteral ? "" : termo);
+        trecho.innerHTML = destacarTexto(textoTrecho, buscaSemOcorrenciaLiteral ? "" : termo);
 
         conteudoResultado.appendChild(titulo);
         conteudoResultado.appendChild(meta);
@@ -620,7 +621,7 @@ function exibirResultados(artigos, termo = "") {
         card.addEventListener("click", (event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
             event.preventDefault();
-            const abrirNaOcorrencia = motivo.tipo !== "titulo" && motivo.tipo !== "alias";
+            const abrirNaOcorrencia = !["titulo", "alias", "aproximacao"].includes(motivo.tipo);
             abrirArtigo(artigo.titulo, artigo.conteudo, true, abrirNaOcorrencia ? termos : []);
         });
 
