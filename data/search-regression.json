@@ -112,6 +112,18 @@
     {
       "query": "exibir nos menus",
       "expected_top_id": "task-page-search-menu"
+    },
+    {
+      "query": "bloquear edição",
+      "expected_top_id": "task-page-check"
+    },
+    {
+      "query": "privacidade",
+      "expected_top_id": "task-page-check"
+    },
+    {
+      "query": "visível para todos",
+      "expected_top_id": "task-page-check"
     }
   ]
 }
