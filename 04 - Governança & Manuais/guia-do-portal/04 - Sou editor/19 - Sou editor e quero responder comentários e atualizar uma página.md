@@ -1,10 +1,10 @@
-# Sou editor e quero responder comentários e corrigir uma página
+# Sou editor e quero corrigir uma página devolvida pela moderação
 
-Use esta tarefa quando uma página tiver sido devolvida com uma pendência. O objetivo é corrigir o ponto indicado, registrar o que mudou e devolver a nova versão ao fluxo de moderação.
+Use esta tarefa **depois que o moderador devolver uma página** com uma pendência. Você vai localizar o comentário, corrigir o ponto indicado e preparar a mesma página para ser enviada novamente.
 
 Um comentário funciona como uma orientação presa ao campo ou bloco que precisa de atenção. Faça a correção no próprio fluxo, em vez de depender de mensagens paralelas.
 
-## Responder e corrigir
+## Corrigir a devolução
 
 1. Abra a página devolvida em edição.
 2. Ative o modo de **Comentários**.
@@ -26,10 +26,10 @@ Pré-visualize a página e confirme se a correção resolveu a pendência sem cr
 
 Se precisar verificar o estado ou consultar versões anteriores, use:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Verificar e acompanhar uma página]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Conferir a página e acompanhar seu status]]
 
 Quando estiver pronta, encaminhe novamente:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar conteúdo para moderação]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar novamente para revisão]]
 
 **Como saber que resolveu:** a correção está salva, o comentário foi respondido ou resolvido e a nova versão está pronta para voltar à moderação.
