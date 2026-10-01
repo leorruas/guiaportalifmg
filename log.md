@@ -240,3 +240,14 @@
 - Atualizado `00 - Comece aqui/01 - Como utilizar este guia.md` para explicar a hierarquia cumulativa `editor → moderador → administrador`, manter gestor fora dessa cadeia e substituir atalhos para E21/E22 já absorvidos por tarefas canônicas atuais.
 - Validados wikilinks, anexos, ausência de referências a páginas absorvidas nessas portas de entrada, coerência do mapa de papéis e sintaxe atual do `script.js`.
 
+## 2026-10-01 — Consolidação editorial: estrutura administrativa
+
+- Revisadas as tarefas estruturais restantes de administrador e moderador: homepage, pasta de notícias, grupos/permissões, coleções, cadastros, ordenação de páginas, campus e pasta de processos seletivos.
+- Ajustado `02 - Sou administrador/05 - Sou administrador e quero editar a homepage.md` para remover o retorno a A02, já absorvido, e apontar para a visão canônica do administrador.
+- Ajustado `02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias.md` para separar criação da estrutura e configuração de acesso; permissões passam a apontar para A07.
+- Consolidado `02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções.md` como tarefa exclusiva de reordenação estrutural de páginas; o título canônico passa a “Reordenar páginas”. Coleções, metadados e permissões são encaminhados às tarefas próprias.
+- Ajustado `03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus.md` para não sugerir que o moderador crie estruturas reservadas ao administrador e para remover o retorno a M01, já absorvido.
+- Ajustado `03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos.md` para separar criação da pasta e configuração de permissões; eventuais ajustes de acesso passam a apontar para A07.
+- Mantidos A07, A08 e A09 como tarefas administrativas canônicas distintas: grupos/permissões, coleções/acessos e cadastros auxiliares.
+- Validados wikilinks, anexos, ausência de referências a páginas absorvidas nesse conjunto, metadados canônicos e sintaxe atual do `script.js`.
+
