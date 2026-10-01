@@ -292,3 +292,10 @@
 - Atualizadas as versões de cache de `style.css` e `script.js` em `index.html`.
 - Validada a sintaxe de `script.js`, a manutenção da ordem global e o corpus de regressão de 14 consultas, que continua com 14/14 casos esperados no topo em título/aliases.
 
+## 2026-10-01 — Correção de inicialização da home
+
+- Corrigida uma colisão de escopo global introduzida ao extrair os metadados para `data/guide-metadata.js`.
+- O arquivo de metadados declarava `niveisDePerfil`, `perfilPorCategoria` e `metadadosCanonicos` como `const` no escopo global; `script.js` declarava os mesmos identificadores ao consumir `window.GuiaMetadata`, causando erro de redeclaração no navegador e interrompendo a renderização dinâmica da home.
+- Encapsulado `data/guide-metadata.js` em uma IIFE, mantendo apenas `window.GuiaMetadata` como API pública para `script.js`.
+- Atualizada a versão de cache do arquivo de metadados em `index.html` para forçar o navegador a carregar a correção.
+
