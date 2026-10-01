@@ -125,3 +125,11 @@
 - 2026-08-31: Ajustada a disposição dos filtros de perfil para manter os cinco controles em uma única linha em telas amplas, com reorganização em duas colunas em telas compactas.
 - 2026-09-02: Wikilinks internos agora são convertidos em rotas reais do guia no GitHub Pages, preservando os mesmos vínculos no Obsidian e permitindo abrir, copiar ou navegar pelos artigos na web.
 - 2026-08-31: Os procedimentos de upload de imagens e documentos passaram a apontar para a orientação de nomes claros, versões identificáveis e organização de arquivos.
+
+## 2026-10-01 — Auditoria de conteúdo do Guia do Portal: fase 1
+
+- Criada a auditoria `04 - Governança & Manuais/auditoria-guia-do-portal-fase-1.md` com o inventário dos 59 artigos atuais do guia.
+- Classificados tarefa principal, perfil mínimo, sobreposições e encaminhamento preliminar de cada artigo.
+- Registrada a hierarquia operacional `editor → moderador → administrador` como critério da auditoria, sem alterar ainda os procedimentos publicados.
+- Identificados dez grupos prioritários de consolidação para a fase 2, incluindo criação/edição de páginas, busca/menu, mídia/coleções, blocos e revisão/publicação.
+
