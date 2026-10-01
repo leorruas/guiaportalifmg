@@ -469,3 +469,10 @@
 - GitHub Actions confirmou `guide-index OK: 61 artigos` e `25/25` consultas com o resultado esperado no topo.
 - Atualizado `AGENTS.md` com as regras de manutenção incremental do mapa: URL como identidade, relações somente confirmadas, tipos explícitos de aresta, prevenção de duplicatas e Cytoscape como dependência carregada sob demanda.
 
+## 2026-10-01 — Ajustes visuais do mapa do Portal
+
+- Ocultado o índice lateral “Neste artigo” apenas na página do mapa, liberando toda a largura do leitor para o grafo.
+- O layout do artigo do mapa passa a usar uma única coluna e o corpo deixa de limitar o grafo a 980 px.
+- Substituída a paleta multicolorida dos ramos por uma escala monocromática de verdes, mantendo a Home destacada pela cor de acento do manual.
+- Atualizadas as versões de cache de `style.css` e `portal-graph.js` em `index.html`.
+
