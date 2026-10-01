@@ -624,3 +624,10 @@
 - O mapa passa de 69 para `75` páginas e de 78 para `94` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v15`.
 
+## 2026-10-01 — PDI e Relatório de Gestão em Ações & Programas
+
+- Adicionadas `Plano de Desenvolvimento Institucional (PDI)` e `Relatório de Gestão do IFMG` como filhas diretas de `Ações & Programas`.
+- Registradas duas novas relações do tipo `estrutura` a partir de `https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/`.
+- O mapa passa de 75 para `77` páginas e de 94 para `96` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v16`.
+
