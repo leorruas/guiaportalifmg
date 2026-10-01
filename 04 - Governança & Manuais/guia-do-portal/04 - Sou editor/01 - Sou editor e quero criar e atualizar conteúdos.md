@@ -13,20 +13,20 @@ Você **não cria coleções nem define permissões** como parte do papel de edi
 - criar e atualizar páginas dentro do seu escopo;
 - montar conteúdo com blocos;
 - adicionar e atualizar documentos e imagens em coleções autorizadas;
-- configurar busca e presença em menu quando essas opções estiverem disponíveis;
+- definir como a página aparece na busca e na navegação quando essas opções estiverem disponíveis;
 - verificar a página antes do envio;
-- responder comentários e corrigir devoluções;
-- enviar uma versão pronta para moderação.
+- enviar uma versão pronta para moderação;
+- corrigir a mesma página se ela for devolvida com comentários.
 
 ## Fluxo do editor
 
 1. Encontre o local correto.
 2. Escolha o tipo de conteúdo.
 3. Crie ou edite a página.
-4. Organize blocos, documentos e imagens.
-5. Configure busca e menu quando necessário.
-6. Pré-visualize e verifique a versão.
-7. Envie para moderação.
+4. Monte o conteúdo com blocos e adicione imagens ou documentos quando necessário.
+5. Defina como a página aparece na busca e na navegação.
+6. Pré-visualize, rode as verificações e confira o status.
+7. Envie a página para revisão do moderador.
 8. Se houver devolução, corrija a mesma página e reenvie.
 
 ## Tarefas principais
@@ -37,15 +37,21 @@ Você **não cria coleções nem define permissões** como parte do papel de edi
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página|Criar ou editar uma página]]
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos|Montar conteúdo com blocos]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos|Montar uma página com blocos de conteúdo]]
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem|Adicionar ou atualizar uma imagem]]
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Configurar busca e menu]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento|Adicionar ou atualizar um documento]]
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Verificar e acompanhar uma página]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar imagens e documentos nas coleções permitidas]]
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar conteúdo para moderação]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Definir como a página aparece na busca e na navegação]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Conferir a página antes de enviar e acompanhar seu status]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar uma página pronta para revisão]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Corrigir uma página devolvida pela moderação]]
 
 ## Antes de encaminhar
 
