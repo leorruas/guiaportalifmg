@@ -377,6 +377,16 @@
                 "id": "https://portal.ifmg.edu.br/estudantes/guia/assistencia-estudantil/",
                 "url": "https://portal.ifmg.edu.br/estudantes/guia/assistencia-estudantil/",
                 "title": "Assistência Estudantil"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/plano-de-desenvolvimento-institucional-pdi/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/plano-de-desenvolvimento-institucional-pdi/",
+                "title": "Plano de Desenvolvimento Institucional (PDI)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/relatorio-de-gestao-do-ifmg/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/relatorio-de-gestao-do-ifmg/",
+                "title": "Relatório de Gestão do IFMG"
         }
 ];
 
@@ -850,6 +860,16 @@
                 "source": "https://portal.ifmg.edu.br/estudantes/guia/assistencia-estudantil/",
                 "target": "https://portal.ifmg.edu.br/estudantes/assistencia-estudantil/",
                 "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/plano-de-desenvolvimento-institucional-pdi/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/relatorio-de-gestao-do-ifmg/",
+                "type": "estrutura"
         }
 ];
 
