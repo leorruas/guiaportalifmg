@@ -85,6 +85,125 @@ let indiceDeBuscaPronto = false;
 let resultadosDaBuscaAtual = [];
 let filtroDePerfilAtivo = "";
 
+
+// Modelo transitório de arquitetura canônica.
+// Enquanto os metadados ainda não vivem nos próprios Markdown, esta camada
+// permite aplicar herança de perfis sem duplicar tarefas na interface.
+const niveisDePerfil = {
+    editor: 1,
+    moderador: 2,
+    administrador: 3
+};
+
+const perfilPorCategoria = {
+    "Sou editor": "editor",
+    "Sou moderador": "moderador",
+    "Sou administrador": "administrador"
+};
+
+const metadadosCanonicos = {
+    "04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos": { id: "role-editor", tipo: "visao", perfilMinimo: "editor" },
+    "03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos": { id: "role-moderator", tipo: "visao", perfilMinimo: "moderador" },
+    "02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações": { id: "role-administrator", tipo: "visao", perfilMinimo: "administrador" },
+
+    "04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página": { id: "task-page-find", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/03 - Sou editor e quero escolher o tipo de página": { id: "task-content-type-choose", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/04 - Sou editor e quero criar uma página institucional": { id: "task-page-institutional-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/05 - Sou editor e quero criar um curso": { id: "task-course-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/06 - Sou editor e quero criar um colegiado": { id: "task-collegiate-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/07 - Sou editor e quero criar um link": { id: "task-link-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/08 - Sou editor e quero criar um programa": { id: "task-program-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/09 - Sou editor e quero criar um projeto": { id: "task-project-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/10 - Sou editor e quero publicar uma notícia": { id: "task-news-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos": { id: "task-selection-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem": { id: "task-image-manage", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento": { id: "task-document-manage", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções": { id: "task-collection-use", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos": { id: "task-blocks-use", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página": { id: "task-page-search-menu", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página": { id: "task-page-check", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página": { id: "task-comments-respond", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação": { id: "task-submit-moderation", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/24 - Sou editor e quero criar ou editar uma página": { id: "task-page-create-edit", tipo: "tarefa", perfilMinimo: "editor" },
+
+    "03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus": { id: "task-campus-manage", tipo: "tarefa", perfilMinimo: "moderador" },
+    "03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos": { id: "task-selection-folder-create", tipo: "tarefa", perfilMinimo: "moderador" },
+    "03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação": { id: "task-publication-review", tipo: "tarefa", perfilMinimo: "moderador" },
+    "03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico": { id: "task-review-comments-history", tipo: "tarefa", perfilMinimo: "moderador" },
+    "03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página": { id: "task-publication-state", tipo: "tarefa", perfilMinimo: "moderador" },
+
+    "02 - Sou administrador/05 - Sou administrador e quero editar a homepage": { id: "task-homepage-edit", tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias": { id: "task-news-folder-create", tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões": { id: "task-groups-permissions", tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos": { id: "task-collection-admin", tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos": { id: "task-auxiliary-registers", tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções": { id: "task-page-reorder", tipo: "tarefa", perfilMinimo: "administrador" },
+
+    "03 - Sou moderador/01 - Sou moderador e quero executar as tarefas de editor": { tipo: "absorvido", estado: "absorver", destino: "role-moderator" },
+    "02 - Sou administrador/02 - Sou administrador e quero executar as tarefas de editor e moderador": { tipo: "absorvido", estado: "absorver", destino: "role-administrator" },
+    "03 - Sou moderador/02 - Sou moderador e quero criar ou atualizar uma página": { tipo: "absorvido", estado: "absorver", destino: "task-page-create-edit" },
+    "02 - Sou administrador/03 - Sou administrador e quero criar ou atualizar conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-page-create-edit" },
+    "02 - Sou administrador/04 - Sou administrador e quero revisar e publicar conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-publication-review" },
+    "03 - Sou moderador/05 - Sou moderador e quero organizar documentos, imagens e coleções": { tipo: "absorvido", estado: "absorver", destino: "task-collection-use" },
+    "03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo": { tipo: "absorvido", estado: "absorver", destino: "task-image-manage" },
+    "03 - Sou moderador/07 - Sou moderador e quero configurar busca e menu de uma página": { tipo: "absorvido", estado: "absorver", destino: "task-page-search-menu" },
+    "03 - Sou moderador/12 - Sou moderador e quero publicar uma notícia ou processo seletivo": { tipo: "absorvido", estado: "absorver", destino: "task-publication-review" },
+    "02 - Sou administrador/11 - Sou administrador e quero configurar busca, menus e ordem de páginas": { tipo: "absorvido", estado: "absorver", destino: "task-page-reorder" },
+    "02 - Sou administrador/12 - Sou administrador e quero gerenciar documentos e imagens": { tipo: "absorvido", estado: "absorver", destino: "task-collection-admin" },
+    "04 - Sou editor/16 - Sou editor e quero usar blocos para montar uma página": { tipo: "absorvido", estado: "absorver", destino: "task-blocks-use" },
+    "04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-content-type-choose" },
+    "04 - Sou editor/22 - Sou editor e quero gerenciar imagens, documentos e cadastros": { tipo: "absorvido", estado: "absorver", destino: "task-collection-use" }
+};
+
+function chaveCanonicaDoArtigo(sourcePath = "") {
+    return sourcePath
+        .replace(/^.*guia-do-portal\//, "")
+        .replace(/\.md$/i, "");
+}
+
+function perfilDaCategoria(categoria) {
+    return perfilPorCategoria[categoria] || "";
+}
+
+function obterMetadadosDoArtigo(sourcePath, categoria) {
+    const chave = chaveCanonicaDoArtigo(sourcePath);
+    const explicito = metadadosCanonicos[chave];
+    if (explicito) return { estado: "canonico", ...explicito };
+
+    if (categoria === "Comece aqui" || categoria === "Fundamentos") {
+        return { tipo: "referencia", estado: "canonico", perfilMinimo: "todos" };
+    }
+    if (categoria === "Sou gestor") {
+        return { tipo: "tarefa", estado: "canonico", perfilMinimo: "gestor" };
+    }
+
+    const perfilMinimo = perfilDaCategoria(categoria);
+    return { tipo: "tarefa", estado: "canonico", perfilMinimo };
+}
+
+function perfilPodeExecutar(perfil, perfilMinimo) {
+    if (!niveisDePerfil[perfil] || !niveisDePerfil[perfilMinimo]) return perfil === perfilMinimo;
+    return niveisDePerfil[perfil] >= niveisDePerfil[perfilMinimo];
+}
+
+function artigoVisivelNoFiltroDePerfil(artigo, categoria) {
+    const perfil = perfilDaCategoria(categoria);
+    if (!perfil) return artigo.categoria === categoria;
+
+    const meta = artigo.metadados || {};
+    if (meta.estado === "absorver") return false;
+    if (meta.tipo === "visao") return meta.perfilMinimo === perfil;
+    if (meta.tipo !== "tarefa") return false;
+    return perfilPodeExecutar(perfil, meta.perfilMinimo);
+}
+
+function compararArtigosPorArquivo(a, b) {
+    return a.sourcePath.localeCompare(b.sourcePath, "pt-BR", {
+        numeric: true,
+        sensitivity: "base"
+    });
+}
+
 const campoTexto = document.getElementById("main-search-input");
 const campoTextoNav = document.getElementById("nav-search-input");
 const btnPesquisar = document.getElementById("btn-pesquisar");
@@ -212,7 +331,8 @@ async function carregarTodosOsArtigos() {
                 path: item.path,
                 sourcePath: item.sourcePath,
                 categoria: categoria,
-                conteudo: texto
+                conteudo: texto,
+                metadados: obterMetadadosDoArtigo(item.sourcePath, categoria)
             };
         } catch (e) {
             console.error(`Erro ao carregar ${item.path}:`, e);
@@ -316,6 +436,7 @@ function filtrarArtigos(termoBusca) {
     }
 
     const filtrados = todosOsArtigos
+        .filter(artigo => artigo.metadados?.estado !== "absorver")
         .filter(artigo => contemTodosOsTermos(`${artigo.titulo} ${artigo.categoria} ${artigo.conteudo}`, termos))
         .sort((a, b) => {
             const prioridade = (artigo) => {
@@ -427,7 +548,7 @@ function exibirResultados(artigos, termo = "") {
         { valor: "Sou gestor", rotulo: "gestor" }
     ];
     const resultadosFiltrados = filtroDePerfilAtivo
-        ? artigos.filter(artigo => artigo.categoria === filtroDePerfilAtivo)
+        ? artigos.filter(artigo => artigoVisivelNoFiltroDePerfil(artigo, filtroDePerfilAtivo))
         : artigos;
 
     const filtros = document.createElement("div");
@@ -539,10 +660,45 @@ function rotaDoPerfil(categoria) {
     return `#/perfil/${encodeURIComponent(categoria)}`;
 }
 
+function criarLinkDeAcaoDoPerfil(artigo, numero) {
+    const acao = document.createElement("a");
+    acao.className = "perfil-acao";
+    acao.href = \`#/\${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}\`;
+    acao.setAttribute("aria-label", tituloDaAcao(artigo.titulo));
+    acao.innerHTML = \`<span class="perfil-acao-numero">\${String(numero).padStart(2, "0")}</span><span class="perfil-acao-conteudo"><strong>\${tituloDaAcao(artigo.titulo)}</strong></span>\`;
+    acao.addEventListener("click", (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
+        event.preventDefault();
+        abrirArtigo(artigo.titulo, artigo.conteudo);
+    });
+    return acao;
+}
+
+function adicionarGrupoAoPerfil(titulo, artigos) {
+    if (!artigos.length) return;
+
+    const grupo = document.createElement("section");
+    grupo.className = "perfil-grupo";
+
+    const cabecalho = document.createElement("h3");
+    cabecalho.className = "perfil-grupo-titulo";
+    cabecalho.textContent = titulo;
+
+    const lista = document.createElement("div");
+    lista.className = "perfil-grupo-lista";
+    artigos.forEach((artigo, indice) => {
+        lista.appendChild(criarLinkDeAcaoDoPerfil(artigo, indice + 1));
+    });
+
+    grupo.append(cabecalho, lista);
+    perfilAcoes.appendChild(grupo);
+}
+
 function abrirPerfil(categoria, atualizarRota = true) {
     const informacao = informacoesCategorias[categoria];
-    const artigos = todasAsPastas[categoria] || [];
-    if (!informacao || artigos.length === 0) return;
+    const perfil = perfilDaCategoria(categoria);
+    const artigosDaCategoria = todasAsPastas[categoria] || [];
+    if (!informacao || (!perfil && artigosDaCategoria.length === 0)) return;
 
     leitorDeArtigo.classList.add("escondido");
     divResultados.classList.add("escondido");
@@ -569,23 +725,34 @@ function abrirPerfil(categoria, atualizarRota = true) {
     atual.textContent = categoria;
     breadcrumbs.append(inicio, separador, atual);
 
-    perfilCabecalho.className = `perfil-cabecalho ${classeDoPerfil(categoria)}`;
-    perfilCabecalho.innerHTML = `<p class="perfil-rotulo">${categoria.startsWith("Sou ") ? "sou..." : "guia do portal ifmg"}</p><h2>${tituloDoIndice(categoria)}</h2>`;
-    perfilAcoes.className = `perfil-acoes ${classeDoPerfil(categoria)}`;
+    perfilCabecalho.className = \`perfil-cabecalho \${classeDoPerfil(categoria)}\`;
+    perfilCabecalho.innerHTML = \`<div><p class="perfil-rotulo">\${categoria.startsWith("Sou ") ? "sou..." : "guia do portal ifmg"}</p><h2>\${tituloDoIndice(categoria)}</h2><p>\${informacao.descricao}</p></div>\`;
+    perfilAcoes.className = \`perfil-acoes \${classeDoPerfil(categoria)}\`;
     perfilAcoes.innerHTML = "";
-    artigos.forEach((artigo) => {
-        const acao = document.createElement("a");
-        acao.className = "perfil-acao";
-        acao.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
-        acao.setAttribute("aria-label", tituloDaAcao(artigo.titulo));
-        acao.innerHTML = `<span class="perfil-acao-numero">${artigo.titulo.match(/^\d+/)?.[0] || "•"}</span><span class="perfil-acao-conteudo"><strong>${tituloDaAcao(artigo.titulo)}</strong></span>`;
-        acao.addEventListener("click", (event) => {
-            if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
-            event.preventDefault();
-            abrirArtigo(artigo.titulo, artigo.conteudo);
+
+    if (!perfil) {
+        adicionarGrupoAoPerfil("orientações", artigosDaCategoria.filter(artigo => artigo.metadados?.estado !== "absorver"));
+        leitorDePerfil.classList.remove("escondido");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+    }
+
+    const visaoDoPapel = todosOsArtigos
+        .filter(artigo => artigo.metadados?.tipo === "visao" && artigo.metadados?.perfilMinimo === perfil)
+        .sort(compararArtigosPorArquivo);
+    adicionarGrupoAoPerfil("sobre este perfil", visaoDoPapel);
+
+    ["editor", "moderador", "administrador"]
+        .filter(perfilMinimo => perfilPodeExecutar(perfil, perfilMinimo))
+        .forEach(perfilMinimo => {
+            const tarefas = todosOsArtigos
+                .filter(artigo => artigo.metadados?.estado !== "absorver")
+                .filter(artigo => artigo.metadados?.tipo === "tarefa")
+                .filter(artigo => artigo.metadados?.perfilMinimo === perfilMinimo)
+                .sort(compararArtigosPorArquivo);
+
+            adicionarGrupoAoPerfil(\`tarefas de \${perfilMinimo}\`, tarefas);
         });
-        perfilAcoes.appendChild(acao);
-    });
 
     leitorDePerfil.classList.remove("escondido");
     window.scrollTo({ top: 0, behavior: "smooth" });
