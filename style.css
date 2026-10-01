@@ -2553,7 +2553,19 @@ body:has(.leitor-artigo:not(.escondido)) .page-masthead { display: none; }
 }
 
 /* Mapa da estrutura do Portal: componente opcional dentro de um artigo. */
-.artigo-conteudo-wrapper:has(.portal-graph-root) .artigo-corpo { max-width: 980px; }
+.artigo-layout-container:has(.portal-graph-root) {
+    display: block;
+}
+.artigo-layout-container:has(.portal-graph-root) .artigo-toc-sidebar {
+    display: none;
+}
+.artigo-conteudo-wrapper:has(.portal-graph-root) {
+    width: 100%;
+}
+.artigo-conteudo-wrapper:has(.portal-graph-root) .artigo-corpo {
+    max-width: none;
+    width: 100%;
+}
 
 .portal-graph-root {
     margin: 34px 0 42px;
