@@ -1,31 +1,50 @@
 # Sou administrador e quero criar uma coleção e definir seus acessos
 
-Coleção é o espaço que organiza imagens e documentos e também controla quem pode trabalhar com eles. Pense em uma coleção como um armário da área: o nome indica o que há dentro e a permissão define quem pode abrir, acrescentar ou reorganizar os itens.
+Use esta tarefa quando for necessário **criar a estrutura de uma coleção**, criar uma subcoleção ou alterar quais grupos podem trabalhar com seus documentos e imagens. O uso cotidiano de uma coleção já existente pertence às tarefas herdadas de editor.
+
+Pense na coleção como um armário da área: o nome identifica o que deve ser guardado ali; a posição na hierarquia mostra a relação com outras coleções; as permissões definem quem pode abrir e manter esse armário.
 
 ## Antes de criar
 
-Defina três coisas: qual área responde pelos arquivos, quais grupos realmente precisam usá-los e se haverá subcoleções. Não crie uma coleção genérica para resolver uma urgência; depois ela vira um depósito difícil de manter.
+Confirme três pontos:
 
-**Exemplo de estrutura:** `Comunicação > Jornalismo > Imagens de notícias`. O caminho já mostra a área, o uso e o tipo de arquivo.
+1. qual área será responsável pelos arquivos;
+2. quais tipos de documento ou imagem a coleção reunirá;
+3. quais grupos precisam utilizá-la e com quais ações.
 
-## Como fazer
+Não crie uma coleção nova para resolver um único arquivo urgente quando uma coleção existente já atende à mesma finalidade.
+
+**Exemplo de estrutura:** `Comunicação > Jornalismo > Imagens de notícias`.
+
+## Criar a coleção
 
 1. Acesse **Configurações** > **Coleções**.
-2. Clique em **Adicionar uma coleção** e informe um nome claro.
+2. Clique em **Adicionar uma coleção**.
 
 ![[imagens/manual-ifrn/image26.png|Ação para criar uma coleção]]
 
-3. Se necessário, selecione a coleção-pai para criar uma subcoleção no lugar correto.
-4. Salve e abra as permissões da coleção.
-5. Conceda a cada grupo apenas as ações de que precisa sobre imagens e documentos.
-6. Adicione um item de teste ou peça a uma pessoa do grupo que valide o acesso.
+3. Dê um nome claro.
+4. Quando necessário, escolha a coleção-pai para posicionar a nova coleção na hierarquia.
+5. Salve.
 
-## Regra importante sobre herança
+## Definir acessos
 
-Uma permissão definida em uma coleção pode alcançar as coleções abaixo dela. Por isso, trate a coleção-pai como uma porta principal: se ela for aberta demais, as subcoleções também podem ficar expostas. Não torne a coleção raiz privada ou pública sem avaliar o efeito sobre todo o portal.
+1. Abra a configuração de grupos e localize o grupo que precisa utilizar a coleção.
+2. Conceda somente as ações necessárias sobre documentos e imagens.
+3. Revise o efeito da permissão sobre subcoleções antes de ampliar o acesso.
+4. Valide o resultado com uma pessoa do grupo quando possível.
 
-## Como conferir
+> [!WARNING]
+> Permissões aplicadas em níveis superiores da hierarquia podem afetar coleções abaixo deles. Evite liberar uma coleção-pai ampla quando a necessidade é restrita a uma subcoleção.
 
-O grupo consegue ver e usar somente os arquivos de sua área; outros grupos não recebem acesso indevido. Em seguida, valide também a permissão de **Páginas**: poder acessar o armário não significa poder publicar uma página, e o contrário também é verdadeiro.
+A permissão de **coleção** não substitui a permissão de **página**. Uma pessoa pode ter acesso aos arquivos e ainda não poder editar ou publicar a página em que eles aparecem.
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]]
+## Depois de criar
+
+O uso cotidiano dos arquivos deve seguir as tarefas herdadas de editor:
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]]
+
+Para revisar a configuração geral do grupo, use [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]].
+
+**Como saber que terminou:** a coleção tem finalidade clara, está no ponto correto da hierarquia e somente os grupos necessários conseguem executar as ações previstas.
