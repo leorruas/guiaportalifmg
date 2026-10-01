@@ -739,3 +739,16 @@
 - Adicionados 3 casos à regressão de busca: `link de redirecionamento`, `redirecionamento` e `exibir nos menus`.
 - Atualizado o cache de `data/guide-metadata.js` para `redirect-link-v1`.
 
+## 2026-10-01 — Bloqueio, privacidade e regras para títulos
+
+- O procedimento `Conferir uma página antes de enviar e acompanhar seu status` passa a documentar os controles exibidos no painel lateral de informações da página.
+- Explicado que `Bloquear` impede outras pessoas com permissão de editar a página enquanto o bloqueio estiver ativo, sem alterar quem consegue visualizar a versão publicada.
+- Documentadas as quatro opções de `Alterar privacidade`: público, privado com senha compartilhada, privado para qualquer usuário logado e privado para usuários de grupos específicos.
+- Adicionado alerta de que alterações de privacidade também se aplicam às subpáginas da página.
+- Diferenciada privacidade de publicação/despublicação: uma página pode estar online e ter acesso restrito.
+- Atualizados aliases da tarefa para bloqueio, privacidade, visibilidade e termos mostrados na interface.
+- Adicionados casos de regressão de busca para `bloquear edição`, `privacidade` e `visível para todos`.
+- O `AGENTS.md` recebeu uma seção específica sobre nomes e títulos de tarefas: nomes devem expressar a ação e o resultado em linguagem compreensível fora do Wagtail, com coerência entre H1, `tituloCanonico`, `descricaoLista`, wikilinks, aliases e regressão de busca.
+- O `AGENTS.md` também registra que filename e rota podem permanecer antigos para preservar compatibilidade; nesses casos, `tituloCanonico` define o nome exibido.
+- Atualizado o cache de `data/guide-metadata.js` para `page-controls-v1`.
+
