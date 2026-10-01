@@ -1,6 +1,6 @@
-# Sou administrador e quero editar a homepage
+# Sou administrador e quero atualizar a página inicial do Portal
 
-A homepage é a porta de entrada do portal. Ela precisa ajudar muita gente ao mesmo tempo; por isso, no Guia do Portal IFMG, somente administradores a editam.
+A página inicial (Home) é a porta de entrada do Portal. Ela precisa ajudar muita gente ao mesmo tempo; por isso, no Guia do Portal IFMG, somente administradores a editam.
 
 Pense nela como o quadro principal de avisos de um prédio: um destaque inadequado ou um link quebrado afeta quem chega, não apenas uma área. Antes de editar, confirme que a informação realmente precisa aparecer para o público amplo.
 
