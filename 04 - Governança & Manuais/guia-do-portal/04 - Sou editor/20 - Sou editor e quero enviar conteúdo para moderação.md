@@ -1,29 +1,38 @@
 # Sou editor e quero enviar conteúdo para moderação
 
-O editor prepara o conteúdo, mas não o aprova. Quando a página estiver pronta, envie-a para a moderação do escopo do seu grupo.
+Use esta tarefa quando a edição estiver concluída e a página estiver pronta para uma segunda leitura. O editor prepara o conteúdo; o moderador decide se ele está pronto e, quando for o caso, controla sua publicação.
 
-Moderação é uma segunda leitura antes de abrir a porta para o público. Ela não substitui seu cuidado ao editar: serve para verificar se outra pessoa consegue entender a informação, encontrar os links e confiar no que está publicado.
+## Antes de enviar
 
-## Como enviar
+Faça primeiro a verificação da versão:
 
-1. Salve a página e use **Pré-visualizar** para conferir a versão que será apresentada ao público.
-2. Faça as verificações de conteúdo, fonte, vigência, links, documentos, imagens e próxima ação.
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Verificar e acompanhar uma página]]
+
+Confirme especialmente fonte, vigência, links, documentos, imagens, acessibilidade e próxima ação.
+
+## Enviar para moderação
+
+1. Salve a página.
+2. Use **Pré-visualizar** para uma última conferência.
 3. No menu inferior da página, escolha **Enviar para moderação**.
-4. Aguarde a decisão do moderador.
-5. Se a página for devolvida, abra os comentários, corrija os pontos indicados e envie novamente para moderação.
+4. Confirme no estado da página que ela deixou o rascunho e passou a aguardar revisão.
 
 ![[imagens/manual-ifrn/image14.png|Exemplo de estado de uma página no fluxo de moderação]]
 
-O estado mostrado nessa área responde à pergunta “quem precisa agir agora?”. Se estiver aguardando moderação, a próxima decisão é do moderador; se foi devolvida, a próxima ação é sua.
+A partir desse momento, a próxima decisão pertence ao moderador.
+
+## Se a página for devolvida
+
+Não faça uma nova cópia e não resolva a pendência fora do fluxo. Abra os comentários, corrija a mesma página e envie novamente.
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Responder comentários e corrigir uma página]]
 
 ## O que cada ação significa
 
-- **Salvar rascunho**: preserva o trabalho sem enviar para revisão.
-- **Pré-visualizar**: mostra como a página ficará sem publicar.
-- **Enviar para moderação**: encaminha a página ao moderador responsável pelo seu escopo.
+- **Salvar rascunho**: preserva o trabalho sem encaminhá-lo.
+- **Pré-visualizar**: permite conferir a versão sem colocá-la no ar.
+- **Enviar para moderação**: transfere a próxima decisão ao moderador responsável.
 
-Se a opção de envio não aparecer, confirme com o administrador se há fluxo de moderação e permissões configurados para aquela área.
+Se a opção de envio não aparecer, confirme com o administrador se o fluxo e as permissões estão configurados para aquela área.
 
-**Como saber que terminou:** a página deixa de estar apenas no seu rascunho e passa a mostrar que aguarda revisão ou que foi devolvida com um comentário claro.
-
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos|Voltar ao papel de editor]]
+**Como saber que terminou:** o estado indica que a página aguarda moderação e não há uma pendência editorial conhecida que deveria ter sido resolvida antes do envio.
