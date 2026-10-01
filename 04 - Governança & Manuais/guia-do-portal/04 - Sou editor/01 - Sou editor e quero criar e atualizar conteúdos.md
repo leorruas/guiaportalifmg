@@ -1,30 +1,58 @@
 # Sou editor e quero criar e atualizar conteúdos
 
-Você prepara e atualiza conteúdos dentro da área ou do campus para o qual recebeu acesso. Pode criar e editar páginas, coleções, documentos e imagens no escopo atribuído ao seu grupo, mas não aprova conteúdo.
+Como editor, você prepara e atualiza conteúdos dentro das páginas e coleções já autorizadas para o seu grupo. Seu trabalho é deixar a informação correta, completa, acessível e fácil de encontrar antes de encaminhá-la para moderação.
 
-Em palavras simples: seu trabalho é deixar a informação certa, completa e fácil de encontrar para que outra pessoa possa revisá-la. Você prepara a entrega; quem modera decide se ela pode ir ao ar.
+Você pode criar e editar os tipos de conteúdo disponíveis no seu escopo, trabalhar com documentos e imagens nas coleções permitidas, configurar metadados e menus disponíveis para sua área, responder devoluções e enviar páginas para revisão.
 
-Exemplo: se a data de atendimento muda, você atualiza a página do serviço, confirma a fonte e deixa claro quando a mudança começa a valer. Você não precisa criar uma notícia para cada ajuste de rotina.
+Você **não cria coleções nem define permissões** como parte do papel de editor. Também não decide a publicação final quando o fluxo exige moderação.
 
 ## O que você deve conseguir fazer
 
-- Criar e editar os tipos de página disponíveis no local em que recebeu acesso.
-- Criar coleções e adicionar documentos e imagens quando a permissão do grupo permitir.
-- Salvar rascunhos e encaminhar conteúdos para revisão quando ela for necessária.
-- Atualizar informações recorrentes pelas fontes oficiais indicadas.
-- Corrigir conteúdo vencido, links, contatos e metadados dentro do seu escopo.
-- Acompanhar o retorno de uma publicação devolvida para ajuste.
+- encontrar a página correta antes de editar;
+- escolher o tipo de conteúdo pela finalidade da informação;
+- criar e atualizar páginas dentro do seu escopo;
+- montar conteúdo com blocos;
+- adicionar e atualizar documentos e imagens em coleções autorizadas;
+- configurar busca e presença em menu quando essas opções estiverem disponíveis;
+- verificar a página antes do envio;
+- responder comentários e corrigir devoluções;
+- enviar uma versão pronta para moderação.
 
-## Antes de encaminhar uma publicação
+## Fluxo do editor
 
-- [ ] A informação responde a uma necessidade ou tarefa concreta?
-- [ ] O conteúdo está atualizado, tem fonte oficial e responsável definido?
-- [ ] O título, os links e a próxima ação são claros?
-- [ ] Imagens, documentos e mídia estão acessíveis?
-- [ ] O tipo de conteúdo é adequado: notícia, página estável, edital, comunicado ou documento?
+1. Encontre o local correto.
+2. Escolha o tipo de conteúdo.
+3. Crie ou edite a página.
+4. Organize blocos, documentos e imagens.
+5. Configure busca e menu quando necessário.
+6. Pré-visualize e verifique a versão.
+7. Envie para moderação.
+8. Se houver devolução, corrija a mesma página e reenvie.
 
-Consulte: [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página|Acessar e encontrar uma página]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página|Criar ou editar uma página]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar conteúdo para moderação]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/16 - Sou editor e quero usar blocos para montar uma página|Usar blocos]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Configurar busca e menu]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Responder comentários e atualizar uma página]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero escolher o tipo de página|Escolher o tipo de página]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|Publicar uma notícia]] e [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|Publicar um processo seletivo]].
+## Tarefas principais
 
-Para o manual completo, consulte também [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo|Criar cada tipo de conteúdo]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos|Montar conteúdo com blocos]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Editar, verificar e acompanhar uma página]] e [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/22 - Sou editor e quero gerenciar imagens, documentos e cadastros|Gerenciar imagens, documentos e cadastros]]. Para tarefas específicas, abra [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/04 - Sou editor e quero criar uma página institucional|Página institucional]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/05 - Sou editor e quero criar um curso|Curso]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/06 - Sou editor e quero criar um colegiado|Colegiado]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/07 - Sou editor e quero criar um link|Link]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/08 - Sou editor e quero criar um programa|Programa]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/09 - Sou editor e quero criar um projeto|Projeto]], [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem|Imagem]] e [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento|Documento]].
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página|Encontrar e abrir uma página]]
 
-**Como saber que sua parte terminou:** a página tem fonte, responsável, vigência e uma próxima ação compreensível; a moderação tem tudo de que precisa para decidir sem adivinhar informações.
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero escolher o tipo de página|Escolher o tipo de conteúdo]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página|Criar ou editar uma página]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos|Montar conteúdo com blocos]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Configurar busca e menu]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Verificar e acompanhar uma página]]
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar conteúdo para moderação]]
+
+## Antes de encaminhar
+
+- [ ] A informação responde a uma necessidade concreta?
+- [ ] A fonte, a responsabilidade e a vigência estão confirmadas?
+- [ ] O tipo de conteúdo e o local da página estão corretos?
+- [ ] Título, links, documentos, imagens e próxima ação são compreensíveis?
+- [ ] A pré-visualização corresponde ao resultado esperado?
+
+**Como saber que sua parte terminou:** a página se sustenta sem explicação adicional e a moderação consegue decidir a próxima etapa sem precisar adivinhar informações.
