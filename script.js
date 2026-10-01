@@ -89,71 +89,10 @@ let filtroDePerfilAtivo = "";
 // Modelo transitório de arquitetura canônica.
 // Enquanto os metadados ainda não vivem nos próprios Markdown, esta camada
 // permite aplicar herança de perfis sem duplicar tarefas na interface.
-const niveisDePerfil = {
-    editor: 1,
-    moderador: 2,
-    administrador: 3
-};
-
-const perfilPorCategoria = {
-    "Sou editor": "editor",
-    "Sou moderador": "moderador",
-    "Sou administrador": "administrador"
-};
-
-const metadadosCanonicos = {
-    "04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos": { id: "role-editor", tipo: "visao", perfilMinimo: "editor" },
-    "03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos": { id: "role-moderator", tipo: "visao", perfilMinimo: "moderador" },
-    "02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações": { id: "role-administrator", tipo: "visao", perfilMinimo: "administrador" },
-
-    "04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página": { id: "task-page-find", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/03 - Sou editor e quero escolher o tipo de página": { id: "task-content-type-choose", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "03 - Sou editor e quero escolher o tipo de conteúdo" },
-    "04 - Sou editor/04 - Sou editor e quero criar uma página institucional": { id: "task-page-institutional-create", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/05 - Sou editor e quero criar um curso": { id: "task-course-create", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/06 - Sou editor e quero criar um colegiado": { id: "task-collegiate-create", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/07 - Sou editor e quero criar um link": { id: "task-link-create", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/08 - Sou editor e quero criar um programa": { id: "task-program-create", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/09 - Sou editor e quero criar um projeto": { id: "task-project-create", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/10 - Sou editor e quero publicar uma notícia": { id: "task-news-create", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "10 - Sou editor e quero criar e preparar uma notícia" },
-    "04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos": { id: "task-selection-create", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "11 - Sou editor e quero criar e atualizar um processo seletivo e seus documentos" },
-    "04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem": { id: "task-image-manage", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento": { id: "task-document-manage", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções": { id: "task-collection-use", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos": { id: "task-blocks-use", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página": { id: "task-page-search-menu", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página": { id: "task-page-check", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "18 - Sou editor e quero verificar e acompanhar uma página" },
-    "04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página": { id: "task-comments-respond", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "19 - Sou editor e quero responder comentários e corrigir uma página" },
-    "04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação": { id: "task-submit-moderation", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/24 - Sou editor e quero criar ou editar uma página": { id: "task-page-create-edit", tipo: "tarefa", perfilMinimo: "editor" },
-
-    "03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus": { id: "task-campus-manage", tipo: "tarefa", perfilMinimo: "moderador" },
-    "03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos": { id: "task-selection-folder-create", tipo: "tarefa", perfilMinimo: "moderador" },
-    "03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação": { id: "task-publication-review", tipo: "tarefa", perfilMinimo: "moderador" },
-    "03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico": { id: "task-review-comments-history", tipo: "tarefa", perfilMinimo: "moderador", tituloCanonico: "10 - Sou moderador e quero registrar pendências e acompanhar correções" },
-    "03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página": { id: "task-publication-state", tipo: "tarefa", perfilMinimo: "moderador" },
-
-    "02 - Sou administrador/05 - Sou administrador e quero editar a homepage": { id: "task-homepage-edit", tipo: "tarefa", perfilMinimo: "administrador" },
-    "02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias": { id: "task-news-folder-create", tipo: "tarefa", perfilMinimo: "administrador" },
-    "02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões": { id: "task-groups-permissions", tipo: "tarefa", perfilMinimo: "administrador" },
-    "02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos": { id: "task-collection-admin", tipo: "tarefa", perfilMinimo: "administrador" },
-    "02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos": { id: "task-auxiliary-registers", tipo: "tarefa", perfilMinimo: "administrador" },
-    "02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções": { id: "task-page-reorder", tipo: "tarefa", perfilMinimo: "administrador", tituloCanonico: "10 - Sou administrador e quero reordenar páginas" },
-
-    "03 - Sou moderador/01 - Sou moderador e quero executar as tarefas de editor": { tipo: "absorvido", estado: "absorver", destino: "role-moderator" },
-    "02 - Sou administrador/02 - Sou administrador e quero executar as tarefas de editor e moderador": { tipo: "absorvido", estado: "absorver", destino: "role-administrator" },
-    "03 - Sou moderador/02 - Sou moderador e quero criar ou atualizar uma página": { tipo: "absorvido", estado: "absorver", destino: "task-page-create-edit" },
-    "02 - Sou administrador/03 - Sou administrador e quero criar ou atualizar conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-page-create-edit" },
-    "02 - Sou administrador/04 - Sou administrador e quero revisar e publicar conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-publication-review" },
-    "03 - Sou moderador/05 - Sou moderador e quero organizar documentos, imagens e coleções": { tipo: "absorvido", estado: "absorver", destino: "task-collection-use" },
-    "03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo": { tipo: "absorvido", estado: "absorver", destino: "task-image-manage" },
-    "03 - Sou moderador/07 - Sou moderador e quero configurar busca e menu de uma página": { tipo: "absorvido", estado: "absorver", destino: "task-page-search-menu" },
-    "03 - Sou moderador/12 - Sou moderador e quero publicar uma notícia ou processo seletivo": { tipo: "absorvido", estado: "absorver", destino: "task-publication-review" },
-    "02 - Sou administrador/11 - Sou administrador e quero configurar busca, menus e ordem de páginas": { tipo: "absorvido", estado: "absorver", destino: "task-page-reorder" },
-    "02 - Sou administrador/12 - Sou administrador e quero gerenciar documentos e imagens": { tipo: "absorvido", estado: "absorver", destino: "task-collection-admin" },
-    "04 - Sou editor/16 - Sou editor e quero usar blocos para montar uma página": { tipo: "absorvido", estado: "absorver", destino: "task-blocks-use" },
-    "04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-content-type-choose" },
-    "04 - Sou editor/22 - Sou editor e quero gerenciar imagens, documentos e cadastros": { tipo: "absorvido", estado: "absorver", destino: "task-collection-use" }
-};
+if (!window.GuiaMetadata) {
+    throw new Error("Metadados do guia não foram carregados.");
+}
+const { niveisDePerfil, perfilPorCategoria, metadadosCanonicos } = window.GuiaMetadata;
 
 function chaveCanonicaDoArtigo(sourcePath = "") {
     return sourcePath
@@ -389,6 +328,16 @@ function contemTodosOsTermos(texto, termos) {
     return termos.every(termo => textoNormalizado.includes(termo));
 }
 
+function aliasesDoArtigo(artigo) {
+    return Array.isArray(artigo?.metadados?.aliases)
+        ? artigo.metadados.aliases.join(" ")
+        : "";
+}
+
+function textoIndexavelDoArtigo(artigo) {
+    return `${artigo.titulo} ${artigo.categoria} ${aliasesDoArtigo(artigo)} ${artigo.conteudo}`;
+}
+
 function criarIndiceNormalizado(texto = "") {
     const caracteres = Array.from(String(texto));
     const origens = [];
@@ -438,7 +387,7 @@ function filtrarArtigos(termoBusca) {
 
     const filtrados = todosOsArtigos
         .filter(artigo => artigo.metadados?.estado !== "absorver")
-        .filter(artigo => contemTodosOsTermos(`${artigo.titulo} ${artigo.categoria} ${artigo.conteudo}`, termos))
+        .filter(artigo => contemTodosOsTermos(textoIndexavelDoArtigo(artigo), termos))
         .sort((a, b) => {
             const prioridade = (artigo) => {
                 const titulo = normalizarTextoParaBusca(artigo.titulo);
