@@ -643,3 +643,10 @@
 - O mapa passa de 77 para `80` páginas e de 96 para `99` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v17`.
 
+## 2026-10-01 — Relação de setores abaixo de Auditorias
+
+- Adicionada a página `Relação de setores e cargos de gestão do IFMG - Reitoria` como filha direta de `Auditorias`.
+- Registrada uma nova relação do tipo `estrutura` a partir de `https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/`.
+- O mapa passa de 80 para `81` páginas e de 99 para `100` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v18`.
+
