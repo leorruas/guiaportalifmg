@@ -281,3 +281,14 @@
 - Validados com conteúdo real os principais pares ambíguos: notícia × pasta de notícias; processo seletivo × pasta de processos; coleção × criar coleção; permissão × permissão de coleção; menu × reordenar páginas; comentários do editor × comentários de moderação; envio para moderação × criação de notícia.
 - O corpus completo de 14 consultas também foi validado em título/aliases, e a sintaxe final de `script.js` permanece válida.
 
+## 2026-10-01 — Apresentação da relevância na busca
+
+- Alterada a apresentação dos resultados para preservar a ordem global calculada pelo ranking; a interface deixa de reagrupar os resultados por categoria depois da ordenação.
+- Cada resultado passa a exibir o perfil mínimo ou o tipo de referência e um motivo resumido da correspondência: título, termo relacionado/alias, seção, introdução, perfil ou conteúdo.
+- Consultas encontradas apenas por alias, como `pdf`, mostram o alias como motivo e usam o início do artigo como trecho, evitando um excerto sem correspondência visível.
+- A numeração dos resultados passa a refletir a posição global de relevância, sem reiniciar por perfil/categoria.
+- Os filtros por perfil continuam preservados e operam sobre a lista já ranqueada.
+- Atualizado o estilo da busca para mostrar metadados de relevância sem transformar os resultados em cartões ou pílulas.
+- Atualizadas as versões de cache de `style.css` e `script.js` em `index.html`.
+- Validada a sintaxe de `script.js`, a manutenção da ordem global e o corpus de regressão de 14 consultas, que continua com 14/14 casos esperados no topo em título/aliases.
+
