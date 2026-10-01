@@ -1,34 +1,28 @@
 # Sou administrador e quero organizar páginas e coleções
 
-Organize a estrutura do portal sem ultrapassar o escopo atribuído à sua administração. Alterações de estrutura afetam menus, permissões e a encontrabilidade do conteúdo.
-
-Pense na estrutura como o mapa do portal: mover uma página muda o caminho que o público percorre para encontrá-la. Uma coleção, por sua vez, é o armário de arquivos da área. Organize as duas coisas sem confundi-las.
+Este conteúdo reúne duas decisões estruturais diferentes. A ordenação de páginas permanece aqui; a criação e os acessos de coleções têm uma referência administrativa própria.
 
 ## Reordenar páginas
 
 1. Em **Páginas**, abra a página-pai da seção que será organizada.
 2. Abra **Ações** e selecione a opção de ordenação de menu, quando disponível.
 3. Arraste as páginas pelo ícone de movimentação para definir a ordem.
-4. Confirme a nova ordem na pré-visualização do site.
+4. Confirme a nova ordem na visualização do portal.
 
 ![[imagens/manual-ifrn/image28.png|Tela para reordenar páginas do menu]]
 
-## Criar ou ajustar uma coleção
+Antes de mudar a posição, confirme se a nova ordem melhora o caminho para o público e se não altera uma estrutura usada por outras áreas sem necessidade.
 
-1. Abra **Configurações** e acesse **Coleções**.
-2. Selecione **Adicionar uma coleção**.
+Para decidir onde a página deve ficar, consulte [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Arquitetura da informação e encontrabilidade]].
 
-![[imagens/manual-ifrn/image26.png|Ação para adicionar uma coleção]]
+## Organizar coleções
 
-3. Informe um nome claro e salve.
-4. Configure as permissões do grupo que poderá utilizar essa coleção.
-5. Dentro da coleção, adicione ou revise documentos e imagens conforme o escopo do grupo.
+A estrutura e as permissões das coleções são tratadas separadamente:
 
-![[imagens/manual-ifrn/image38.png|Adição de documentos ou imagens a uma coleção]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]]
 
-**Como saber que terminou:** o menu mostra a nova ordem e o grupo encontra os arquivos da sua área na coleção correta.
+O uso cotidiano de documentos e imagens dentro de uma coleção já autorizada segue:
 
-> [!NOTE]
-> Estrutura de páginas e permissões de coleções são configurações distintas. Sempre valide as duas antes de entregar o acesso a um grupo.
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]]
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Voltar a grupos e permissões]]
+**Como saber que terminou:** as páginas aparecem na ordem esperada e qualquer necessidade relacionada a coleções foi tratada na tarefa específica, sem misturar estrutura de páginas com acesso a arquivos.
