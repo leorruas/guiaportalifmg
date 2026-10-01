@@ -297,6 +297,56 @@
                 "id": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/",
                 "url": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/",
                 "title": "Identidade Visual e Manuais (Marca do IFMG)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/auxilios-assistencia/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/auxilios-assistencia/",
+                "title": "Auxílios & Assistência"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/wellhub-gympass/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/wellhub-gympass/",
+                "title": "Wellhub / Gympass"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/horario-especial-de-estudante-para-servidores/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/horario-especial-de-estudante-para-servidores/",
+                "title": "Horário Especial para Servidores"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/programa-de-apoio-financeiro-a-graduacao-e-pos-graduacao/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/programa-de-apoio-financeiro-a-graduacao-e-pos-graduacao/",
+                "title": "Programa de Apoio Financeiro à Graduação e Pós-Graduação"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/exames-medicos-periodicos/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/exames-medicos-periodicos/",
+                "title": "Exames Médicos Periódicos"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/licencas/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/licencas/",
+                "title": "Licenças"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/ifmg/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/ifmg/",
+                "title": "+IFMG"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/incentivo-a-qualificacao/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/incentivo-a-qualificacao/",
+                "title": "Incentivo à Qualificação"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/orientacoes-para-posse-no-ifmg/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/orientacoes-para-posse-no-ifmg/",
+                "title": "Orientações para posse no IFMG"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/servidores/guia/registro-de-atestado-medico-ou-odontologico/",
+                "url": "https://portal.ifmg.edu.br/servidores/guia/registro-de-atestado-medico-ou-odontologico/",
+                "title": "Registro de atestado médico ou odontológico"
         }
 ];
 
@@ -620,6 +670,61 @@
                 "source": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/",
                 "target": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/",
                 "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/auxilios-assistencia/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/wellhub-gympass/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/horario-especial-de-estudante-para-servidores/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/programa-de-apoio-financeiro-a-graduacao-e-pos-graduacao/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/exames-medicos-periodicos/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/licencas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/ifmg/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/incentivo-a-qualificacao/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/orientacoes-para-posse-no-ifmg/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/servidores/guia/registro-de-atestado-medico-ou-odontologico/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/guia/licencas/",
+                "target": "https://portal.ifmg.edu.br/servidores/licencas/",
+                "type": "redireciona"
         }
 ];
 
