@@ -666,3 +666,17 @@
 - Os hubs recebem destaque visual discreto próprio, sem mudar o layout dos demais nós.
 - Atualizadas as versões de cache de `data/portal-graph.js` e `portal-graph.js`.
 
+## 2026-10-01 — Modo “distância da Home”
+
+- Adicionado o controle opcional `mostrar distância da Home` à barra do grafo.
+- O modo calcula, por busca em largura dirigida, o menor número de cliques a partir da Home usando todas as relações navegáveis do dataset: `estrutura`, `link` e `redireciona`.
+- A distância radial representa estritamente o número mínimo de cliques; o setor angular continua sendo definido pela árvore estrutural, para atalhos não moverem páginas para o ramo errado.
+- No dataset atual, todos os 82 nós são alcançáveis: 1 Home, 5 páginas a 1 clique, 49 a 2 cliques e 27 a 3 cliques.
+- Adicionada camada SVG independente do Cytoscape para desenhar os anéis de profundidade sem criar nós artificiais nem interferir no `fit`, busca ou seleção.
+- Os anéis usam bandas verdes muito suaves que aumentam discretamente de intensidade conforme se afastam da Home, com limites tracejados e rótulos “1 clique da Home”, “2 cliques da Home” e assim por diante.
+- A camada acompanha pan e zoom do Cytoscape; ao desligar o modo, o grafo retorna ao layout setorial normal, incluindo os layouts especiais `fan` e `stack`.
+- Busca e botão de recentralização passam a respeitar o modo visual ativo.
+- Mantidos os limites de zoom existentes.
+- Validação geométrica confirmou erro radial máximo igual a `0.000000`, isto é, os nós ficam exatamente no raio correspondente ao número de cliques.
+- Atualizados os caches de `portal-graph.js` e `style.css`.
+
