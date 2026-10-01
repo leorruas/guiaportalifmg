@@ -1,15 +1,15 @@
-# Sou editor e quero publicar um processo seletivo e seus documentos
+# Sou editor e quero criar e atualizar um processo seletivo e seus documentos
 
-Organize documentos e etapas do processo seletivo antes de enviar a página para moderação. Use a pasta de processos seletivos e a coleção atribuídas ao seu grupo.
+Crie ou atualize o processo seletivo e organize seus documentos antes de enviar a página para moderação. Como editor, você prepara a seleção dentro da pasta e das coleções atribuídas ao seu grupo; a decisão de publicação pertence à moderação.
 
 Pense na página como a porta de entrada da seleção e na coleção como a pasta onde ficam os arquivos oficiais. A página explica prazos e etapas; a coleção entrega os documentos. Separar as duas coisas permite atualizar um edital sem perder a organização da página.
 
 ## Preparar documentos
 
-1. Abra **Coleções** ou a área de documentos disponível para o seu grupo.
-2. Crie ou selecione a coleção exclusiva do processo seletivo.
+1. Abra **Documentos** e localize a coleção já autorizada para o processo seletivo.
+2. Se a coleção necessária não existir ou não estiver disponível para seu grupo, solicite sua criação ou ajuste ao administrador; não crie um destino improvisado.
 3. Adicione o edital e os demais documentos na coleção correta.
-4. Dê nomes claros aos arquivos e confirme a vigência de cada documento.
+4. Dê títulos claros aos documentos e confirme a vigência de cada versão.
 
 **Exemplo de nome claro:** “Edital 12/2026 — seleção de bolsistas” é melhor que “edital-final-atualizado.pdf”. O título precisa continuar compreensível para alguém que encontrar o arquivo meses depois.
 
@@ -49,4 +49,4 @@ O processo é criado dentro de uma **Pasta de processos seletivos** do tipo corr
 - Se um documento for substituído, confirme que a nova versão é a oficial antes de salvar: a alteração pode refletir em outras páginas.
 - Ao fim do processo, siga a orientação de moderação para manter, arquivar ou despublicar a página.
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Voltar a documentos e coleções]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar conteúdo para moderação]]
