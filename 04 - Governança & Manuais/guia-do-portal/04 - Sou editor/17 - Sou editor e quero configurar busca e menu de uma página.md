@@ -1,6 +1,6 @@
-# Sou editor e quero configurar busca e menu de uma página
+# Sou editor e quero definir como a página aparece na busca e na navegação
 
-Use a aba **Promover** para preparar uma página para ser encontrada e, quando fizer sentido, incluí-la nos menus do portal. Este é o procedimento comum para editor, moderador e administrador.
+Use esta tarefa para decidir **como as pessoas encontram a página**: pelo resultado de uma busca e, quando fizer sentido, pelos menus do Portal. No Wagtail, essas opções ficam principalmente na aba **Promover**. Este é o procedimento comum para editor, moderador e administrador.
 
 Busca e menu resolvem problemas diferentes: a busca ajuda alguém que já sabe mais ou menos o que procura; o menu ajuda a explorar a estrutura do portal. Os dois dependem de títulos claros e de a página estar no lugar correto.
 
