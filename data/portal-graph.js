@@ -406,6 +406,12 @@
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/relacao-de-setores-e-cargos-de-gestao-do-ifmg-reitoria/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/relacao-de-setores-e-cargos-de-gestao-do-ifmg-reitoria/",
                 "title": "Relação de setores e cargos de gestão do IFMG - Reitoria"
+        },
+        {
+                "id": "https://dadosabertos.ifmg.edu.br/",
+                "url": "https://dadosabertos.ifmg.edu.br/",
+                "title": "Conjuntos de Dados Abertos Priorizados",
+                "description": "Destino externo acessado a partir da página Dados Abertos do Portal IFMG."
         }
 ];
 
@@ -909,6 +915,11 @@
                 "source": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/",
                 "target": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/relacao-de-setores-e-cargos-de-gestao-do-ifmg-reitoria/",
                 "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/dados-abertos/",
+                "target": "https://dadosabertos.ifmg.edu.br/",
+                "type": "link"
         }
 ];
 
