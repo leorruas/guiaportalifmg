@@ -24,4 +24,4 @@ O tipo da pasta limita os processos que podem ser criados dentro dela. Antes de 
 
 **Limite de permissão:** se o tipo ou subtipo ainda não existir no cadastro administrativo, não crie uma pasta com classificação provisória. Peça ao administrador para configurar o cadastro antes.
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/12 - Sou moderador e quero publicar uma notícia ou processo seletivo|Publicar uma notícia ou processo seletivo]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|Criar e atualizar um processo seletivo e seus documentos]]
