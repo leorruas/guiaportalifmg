@@ -1,4 +1,4 @@
-# Sou moderador e quero criar ou editar um campus
+# Sou moderador e quero criar ou editar a página de um campus
 
 Um campus é uma página estrutural: ela reúne conteúdos locais e orienta a navegação de estudantes, servidores e comunidade. No Guia do Portal IFMG, a criação e a edição ficam com o moderador responsável pelo escopo do campus; esse papel inclui as tarefas de editor e a decisão de publicação.
 
