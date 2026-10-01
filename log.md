@@ -483,3 +483,11 @@
 - O mapa passa de 6 para `17` páginas e de 5 para `16` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` em `index.html`.
 
+## 2026-10-01 — Ramo Estudantes no mapa do Portal
+
+- Adicionadas 8 páginas como filhas diretas de `https://portal.ifmg.edu.br/estudantes/`: Como ingressar no IFMG, Assistência Estudantil, Núcleos de Apoio, Egressos, Bibliotecas, Como abrir um chamado (Solicitar ajuda • SUAP), Sugestões, Críticas e Elogios e + informações para estudantes.
+- Registradas 8 novas relações do tipo `estrutura`, todas partindo de Estudantes.
+- A URL fornecida para o chamado SUAP foi preservada exatamente como informada, sem correção por inferência.
+- O mapa passa de 17 para `25` páginas e de 16 para `24` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` em `index.html`.
+
