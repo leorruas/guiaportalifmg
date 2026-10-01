@@ -75,6 +75,13 @@ Use **Tabela** apenas quando o público precisa comparar dados. Dê nome às col
 
 Use **Links** quando há mais de um próximo passo; use **Link único** quando uma ação é claramente a principal. Em ambos os casos, o texto deve dizer o destino, não “clique aqui”.
 
+> [!IMPORTANT]
+> Estes são **blocos dentro do conteúdo de uma página**. Eles não criam uma nova página ou rota na árvore do Portal. Se você precisa criar uma entrada na árvore que redireciona para outro endereço, use o tipo de página **Link** em [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/07 - Sou editor e quero criar um link|Criar um link de redirecionamento]].
+
+Ao configurar um item de link dentro de um bloco, informe o texto que a pessoa verá e escolha ou cole o destino correspondente.
+
+![[imagens/manual-ifrn/image22.png|Exemplo de link inserido dentro de um bloco de conteúdo, com título, destino e ícone]]
+
 No campo **Ícone** do bloco **Links**, siga o mesmo processo: escolha no Google Icons, abra o painel lateral direito e copie apenas o valor de **Icon name**. Prefira um ícone que reforce a ação, como `search` para busca ou `download` para baixar um arquivo; não escolha apenas por aparência.
 
 ![[imagens/manual-ifrn/image7.png|Configuração de um bloco de links]]
