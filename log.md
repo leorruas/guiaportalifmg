@@ -169,3 +169,15 @@
 - Mantida A10 sem consolidação adicional nesta etapa porque sua parte de coleções será tratada no bloco específico de mídia e coleções.
 - Validados os wikilinks dos arquivos alterados e confirmada a sintaxe atual do `script.js`.
 
+## 2026-10-01 — Consolidação editorial: imagens, documentos e coleções
+
+- Consolidada a manutenção de imagens em `04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem.md`, incluindo nomenclatura, acessibilidade, impacto de substituição e limite de coleção.
+- Mantido `04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento.md` como referência canônica de documentos, removendo a dependência de uma página de moderador para regras de nomenclatura e ligando criação/acesso de coleção à tarefa administrativa correta.
+- Reescrito `04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções.md` para tratar apenas do uso de coleções já autorizadas.
+- Reduzidos `03 - Sou moderador/05` e `03 - Sou moderador/06` a páginas de encaminhamento para as tarefas canônicas herdadas de editor.
+- Consolidada a administração de coleções em `02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos.md`, separando criação, hierarquia e permissões do uso cotidiano de mídia.
+- Ajustado `02 - Sou administrador/10` para manter a ordenação de páginas como procedimento próprio e encaminhar administração de coleções para A08.
+- Reduzido `02 - Sou administrador/12` a uma página de encaminhamento para imagem, documento, uso de coleção e administração de coleção.
+- Reescrito `04 - Sou editor/22` como página de transição que separa tarefas de mídia das configurações administrativas de cadastros, evitando sugerir que editor pode alterar cadastros auxiliares.
+- Validados os wikilinks dos nove arquivos alterados, eliminada a dependência das tarefas canônicas de mídia em páginas de moderador e confirmada a sintaxe do `script.js`.
+
