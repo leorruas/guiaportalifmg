@@ -1,22 +1,17 @@
 # Sou administrador e quero configurar busca, menus e ordem de páginas
 
-Como administrador, você pode ajustar metadados, menus e ordem de páginas, além de definir quem poderá fazê-lo no futuro.
+Este conteúdo reunia tarefas de níveis diferentes. Elas agora têm referências próprias para evitar repetir o mesmo procedimento em vários perfis.
 
-Busca e menu são sinais na estrada: eles ajudam a pessoa a chegar ao conteúdo, mas não corrigem um conteúdo que está no lugar errado. Primeiro confirme a estrutura; depois ajuste os sinais que levam até ela.
+Para configurar **slug, título de busca, descrição e exibição em menus**, use a tarefa herdada de editor:
 
-## Como fazer
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Configurar busca e menu de uma página]]
 
-1. Abra a página e revise **Promover**: slug, título de busca, meta descrição e exibição em menus.
-2. Para reorganizar páginas-filhas, abra a página-pai e selecione a ação de ordenação de menu disponível.
+Para **reordenar páginas** ou revisar uma mudança na estrutura, use a tarefa administrativa:
 
-![[imagens/manual-ifrn/image28.png|Tela para reordenar páginas no menu]]
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções|Organizar páginas e estrutura]]
 
-3. Arraste as páginas para a ordem desejada e confirme a alteração na visualização pública.
-4. Revise páginas-pai e páginas-filhas: a presença no menu pode depender da configuração das duas.
-5. Ajuste as permissões de grupo quando outra área precisar manter uma parte da estrutura.
+Para definir **quem pode manter uma parte do portal**, use:
 
-Antes de mudar URLs ou páginas-pai, avalie links existentes, redirecionamentos necessários e impacto na encontrabilidade.
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]]
 
-**Teste simples:** procure a página usando uma palavra que o público usaria — não a sigla interna do setor — e confirme se o menu também a apresenta onde as pessoas esperam encontrá-la.
-
-[[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/02 - Arquitetura da informação e encontrabilidade|Consultar fundamentos de arquitetura e encontrabilidade]]
+Antes de mudar uma URL ou a posição estrutural de uma página já publicada, avalie o impacto sobre links existentes e sobre os caminhos usados pelo público.
