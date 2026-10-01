@@ -85,6 +85,46 @@
                 "id": "https://portal.ifmg.edu.br/institucional/governanca/",
                 "url": "https://portal.ifmg.edu.br/institucional/governanca/",
                 "title": "Governança"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
+                "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
+                "title": "Como ingressar no IFMG"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/assistencia-estudantil/",
+                "url": "https://portal.ifmg.edu.br/estudantes/assistencia-estudantil/",
+                "title": "Assistência Estudantil"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/",
+                "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/",
+                "title": "Núcleos de Apoio"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/egressos/",
+                "url": "https://portal.ifmg.edu.br/estudantes/egressos/",
+                "title": "Egressos"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/bibliotecas/",
+                "url": "https://portal.ifmg.edu.br/estudantes/bibliotecas/",
+                "title": "Bibliotecas"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/httpsportaldesenvifmgedubrcomunidadesuporte-suap/",
+                "url": "https://portal.ifmg.edu.br/estudantes/httpsportaldesenvifmgedubrcomunidadesuporte-suap/",
+                "title": "Como abrir um chamado (Solicitar ajuda • SUAP)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
+                "url": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
+                "title": "Sugestões, Críticas e Elogios"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "url": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "title": "+ informações para estudantes"
         }
 ];
 
@@ -167,6 +207,46 @@
         {
                 "source": "https://portal.ifmg.edu.br/institucional/",
                 "target": "https://portal.ifmg.edu.br/institucional/governanca/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/assistencia-estudantil/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/egressos/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/bibliotecas/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/httpsportaldesenvifmgedubrcomunidadesuporte-suap/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
                 "type": "estrutura"
         }
 ];
