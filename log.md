@@ -505,3 +505,12 @@
 - O mapa passa de 36 para `50` páginas e de 35 para `49` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` em `index.html`.
 
+## 2026-10-01 — Convergência de Sugestões, Críticas e Elogios para Ouvidoria
+
+- Mantidas as três entradas “Sugestões, Críticas e Elogios” nos ramos Estudantes, Servidores e Acesso à Informação, porque elas existem como pontos distintos de navegação.
+- Adicionado um único nó de destino `Ouvidoria`, em `https://www.ifmg.edu.br/portal/ouvidoria`.
+- Registradas 3 relações do tipo `redireciona`, uma a partir de cada entrada “Sugestões, Críticas e Elogios” para o mesmo nó Ouvidoria.
+- Relações `redireciona` passam a aparecer tracejadas, em verde e com seta, diferenciando-as das relações estruturais.
+- O mapa passa de 50 para `51` páginas e de 49 para `52` relações.
+- Atualizadas as versões de cache de `data/portal-graph.js` e `portal-graph.js`.
+
