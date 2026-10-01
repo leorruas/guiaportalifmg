@@ -725,6 +725,11 @@
                 "source": "https://portal.ifmg.edu.br/servidores/guia/licencas/",
                 "target": "https://portal.ifmg.edu.br/servidores/licencas/",
                 "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/guia/ifmg/",
+                "target": "https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/",
+                "type": "redireciona"
         }
 ];
 
