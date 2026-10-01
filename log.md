@@ -133,3 +133,12 @@
 - Registrada a hierarquia operacional `editor → moderador → administrador` como critério da auditoria, sem alterar ainda os procedimentos publicados.
 - Identificados dez grupos prioritários de consolidação para a fase 2, incluindo criação/edição de páginas, busca/menu, mídia/coleções, blocos e revisão/publicação.
 
+## 2026-10-01 — Arquitetura canônica do Guia do Portal: fase 2
+
+- Criado `04 - Governança & Manuais/auditoria-guia-do-portal-fase-2-tarefas-canonicas.md` com a arquitetura canônica derivada da auditoria da fase 1.
+- Separadas visões de papel, tarefas canônicas e referências transversais.
+- Definida a herança `editor → moderador → administrador` sem duplicação de procedimentos nos perfis superiores.
+- Mapeados os artigos que serão absorvidos, divididos ou reduzidos na consolidação posterior.
+- Registradas duas lacunas de cobertura: procedimentos próprios para Evento e Comunicado.
+- Registradas pendências de permissão em agendamento e cadastros auxiliares para validação antes da consolidação editorial.
+
