@@ -725,3 +725,17 @@
 - `data/guide-index.json` permanece com 61 artigos.
 - Atualizado o cache final de `data/guide-metadata.js` para `task-flow-v1`.
 
+## 2026-10-01 — Link de redirecionamento e regra de exibição em menus
+
+- O procedimento canônico `Criar um link` foi reescrito como `Criar um link de redirecionamento`.
+- Explicado que o tipo `Link` cria uma entrada na árvore do Portal que encaminha diretamente para a URL informada, sem página de conteúdo intermediária.
+- Documentados os campos principais mostrados na aba `Conteúdo`: `Título`, usado para identificar o destino para o público, e `URL`, endereço para onde o Link redireciona.
+- Esclarecido que a indicação `Páginas usando Link` na escolha do tipo se refere a páginas existentes desse tipo e não define o destino.
+- Perfil mínimo mantido como `editor`: moderador e administrador herdam a tarefa; editor salva e envia para moderação antes da publicação.
+- O catálogo de tipos de conteúdo passou a descrever `Link` explicitamente como redirecionamento.
+- O procedimento `Definir como a página aparece na busca e na navegação` agora registra a regra geral: para uma página ou Link aparecer nos menus gerados automaticamente, abrir `Promover → Para menus de sites` e marcar `Exibir nos menus`.
+- A mesma regra foi reforçada no procedimento geral `Criar ou editar uma página`.
+- Atualizados aliases de busca para `link de redirecionamento`, `redirecionamento`, `exibir nos menus`, `aparecer no menu` e `para menus de sites`.
+- Adicionados 3 casos à regressão de busca: `link de redirecionamento`, `redirecionamento` e `exibir nos menus`.
+- Atualizado o cache de `data/guide-metadata.js` para `redirect-link-v1`.
+
