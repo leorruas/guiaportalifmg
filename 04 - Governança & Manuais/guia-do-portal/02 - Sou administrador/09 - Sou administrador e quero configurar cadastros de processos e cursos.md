@@ -38,4 +38,3 @@ Abra um formulário de curso ou processo seletivo como teste. A lista deve ofere
 
 **Limite de permissão:** um cadastro afeta diversas páginas e não é uma escolha editorial. Se a nomenclatura ou a regra ainda estiver em definição, mantenha o registro inativo ou aguarde a decisão responsável.
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações|Voltar às configurações administrativas]]
