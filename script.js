@@ -44,9 +44,44 @@ if (!window.GuiaMetadata) {
 }
 const { niveisDePerfil, perfilPorCategoria, metadadosCanonicos } = window.GuiaMetadata;
 
+const guiaBuscaFallback = {
+    normalizarTextoParaBusca(texto = "") {
+        return String(texto)
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLocaleLowerCase("pt-BR");
+    },
+    termosDaBusca(termoBusca) {
+        return guiaBuscaFallback.normalizarTextoParaBusca(termoBusca)
+            .replace(/[^\p{L}\p{N}]+/gu, " ")
+            .trim()
+            .split(/\s+/)
+            .filter(Boolean);
+    },
+    contemTodosOsTermos(texto, termos) {
+        const normalizado = guiaBuscaFallback.normalizarTextoParaBusca(texto);
+        return termos.every(termo => normalizado.includes(termo));
+    },
+    textoIndexavelDoArtigo(artigo) {
+        return `${artigo.titulo} ${artigo.categoria} ${artigo.conteudo}`;
+    },
+    calcularPontuacaoBusca() {
+        return 0;
+    },
+    motivoCorrespondenciaBusca() {
+        return { tipo: "conteudo", rotulo: "correspondência no conteúdo" };
+    },
+    rotuloPerfilMinimo(artigo) {
+        return artigo.metadados?.perfilMinimo
+            ? `perfil mínimo: ${artigo.metadados.perfilMinimo}`
+            : artigo.categoria.toLowerCase();
+    }
+};
+
 if (!window.GuiaBusca) {
-    throw new Error("Motor de busca do guia não foi carregado.");
+    console.warn("Motor de busca avançado não foi carregado; usando busca básica.");
 }
+
 const {
     normalizarTextoParaBusca,
     termosDaBusca,
@@ -55,7 +90,7 @@ const {
     calcularPontuacaoBusca,
     motivoCorrespondenciaBusca,
     rotuloPerfilMinimo
-} = window.GuiaBusca;
+} = window.GuiaBusca || guiaBuscaFallback;
 
 function chaveCanonicaDoArtigo(sourcePath = "") {
     return sourcePath
