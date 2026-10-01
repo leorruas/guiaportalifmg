@@ -839,6 +839,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
     processarLinksObsidian();
     aprimorarImagensDoArtigo();
     aprimorarBlocosDePrompt();
+    window.GuiaGrafoPortal?.renderizarSePresente(artigoCorpo);
 
     // Formata itens de lista de tarefas (Checkboxes / Study Roadmap)
     artigoCorpo.querySelectorAll('li input[type="checkbox"]').forEach(checkbox => {
