@@ -650,3 +650,10 @@
 - O mapa passa de 80 para `81` páginas e de 99 para `100` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v18`.
 
+## 2026-10-01 — Conjuntos de Dados Abertos Priorizados
+
+- Adicionado o nó externo `Conjuntos de Dados Abertos Priorizados` em `https://dadosabertos.ifmg.edu.br/`.
+- O nó é ligado à página `Dados Abertos` por relação `link`, pois é acessado a partir dela, mas pertence a outro domínio e não à árvore estrutural de `portal.ifmg.edu.br`.
+- O mapa passa de 81 para `82` páginas e de 100 para `101` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v19`.
+
