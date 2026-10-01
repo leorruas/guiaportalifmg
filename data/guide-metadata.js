@@ -1,0 +1,75 @@
+// Fonte única de metadados da arquitetura do Guia do Portal IFMG.
+// Este arquivo contém dados; comportamento e renderização permanecem em script.js.
+// Novos aliases devem representar formas reais de procurar a tarefa, não repetir o corpo do artigo.
+
+const niveisDePerfil = {
+    editor: 1,
+    moderador: 2,
+    administrador: 3
+};
+
+const perfilPorCategoria = {
+    "Sou editor": "editor",
+    "Sou moderador": "moderador",
+    "Sou administrador": "administrador"
+};
+
+const metadadosCanonicos = {
+    "04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos": { id: "role-editor", aliases: ["editor","edição","criar conteúdo","atualizar conteúdo"], tipo: "visao", perfilMinimo: "editor" },
+    "03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos": { id: "role-moderator", aliases: ["moderador","moderação","revisão","aprovação"], tipo: "visao", perfilMinimo: "moderador" },
+    "02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações": { id: "role-administrator", aliases: ["administrador","admin","configuração","acessos"], tipo: "visao", perfilMinimo: "administrador" },
+
+    "04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página": { id: "task-page-find", aliases: ["encontrar página","achar página","localizar página","buscar página"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/03 - Sou editor e quero escolher o tipo de página": { id: "task-content-type-choose", aliases: ["tipo de conteúdo","tipo de página","evento","comunicado","qual página criar"], tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "03 - Sou editor e quero escolher o tipo de conteúdo" },
+    "04 - Sou editor/04 - Sou editor e quero criar uma página institucional": { id: "task-page-institutional-create", aliases: ["página institucional","serviço","setor","orientação permanente"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/05 - Sou editor e quero criar um curso": { id: "task-course-create", aliases: ["curso","oferta formativa","graduação","técnico"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/06 - Sou editor e quero criar um colegiado": { id: "task-collegiate-create", aliases: ["colegiado","composição","reuniões","atas"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/07 - Sou editor e quero criar um link": { id: "task-link-create", aliases: ["link","atalho","url","encaminhamento"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/08 - Sou editor e quero criar um programa": { id: "task-program-create", aliases: ["programa","iniciativa contínua"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/09 - Sou editor e quero criar um projeto": { id: "task-project-create", aliases: ["projeto","iniciativa","identidade"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/10 - Sou editor e quero publicar uma notícia": { id: "task-news-create", aliases: ["notícia","noticia","matéria","jornalismo","publicar notícia"], tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "10 - Sou editor e quero criar e preparar uma notícia" },
+    "04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos": { id: "task-selection-create", aliases: ["processo seletivo","seleção","edital","publicar edital","documentos do processo"], tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "11 - Sou editor e quero criar e atualizar um processo seletivo e seus documentos" },
+    "04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem": { id: "task-image-manage", aliases: ["imagem","foto","fotografia","mídia visual"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento": { id: "task-document-manage", aliases: ["documento","arquivo","pdf","anexo","download"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções": { id: "task-collection-use", aliases: ["coleção","colecoes","pasta de arquivos","organizar arquivos","mídia"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos": { id: "task-blocks-use", aliases: ["blocos","componentes","montar página","conteúdo modular"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página": { id: "task-page-search-menu", aliases: ["busca","menu","seo","promover","metadados","slug","encontrabilidade"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página": { id: "task-page-check", aliases: ["status","pré-visualizar","preview","verificações","histórico","acompanhar página"], tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "18 - Sou editor e quero verificar e acompanhar uma página" },
+    "04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página": { id: "task-comments-respond", aliases: ["comentários","corrigir devolução","pendência","página devolvida"], tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "19 - Sou editor e quero responder comentários e corrigir uma página" },
+    "04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação": { id: "task-submit-moderation", aliases: ["enviar para moderação","submeter","enviar para revisão","revisão"], tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/24 - Sou editor e quero criar ou editar uma página": { id: "task-page-create-edit", aliases: ["criar página","editar página","alterar página","atualizar página"], tipo: "tarefa", perfilMinimo: "editor" },
+
+    "03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus": { id: "task-campus-manage", aliases: ["campus","página do campus","estrutura do campus"], tipo: "tarefa", perfilMinimo: "moderador" },
+    "03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos": { id: "task-selection-folder-create", aliases: ["pasta de processos seletivos","pasta de seleção","estrutura de processos"], tipo: "tarefa", perfilMinimo: "moderador" },
+    "03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação": { id: "task-publication-review", aliases: ["revisar","aprovar","devolver","revisão editorial","decidir publicação"], tipo: "tarefa", perfilMinimo: "moderador" },
+    "03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico": { id: "task-review-comments-history", aliases: ["comentário de revisão","pendência","acompanhar correção","histórico"], tipo: "tarefa", perfilMinimo: "moderador", tituloCanonico: "10 - Sou moderador e quero registrar pendências e acompanhar correções" },
+    "03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página": { id: "task-publication-state", aliases: ["publicar","despublicar","tirar do ar","agendar","programar publicação","expirar"], tipo: "tarefa", perfilMinimo: "moderador" },
+
+    "02 - Sou administrador/05 - Sou administrador e quero editar a homepage": { id: "task-homepage-edit", aliases: ["homepage","home","página inicial","início","destaques"], tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/06 - Sou administrador e quero criar uma pasta de notícias": { id: "task-news-folder-create", aliases: ["pasta de notícias","estrutura de notícias","notícias do campus"], tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões": { id: "task-groups-permissions", aliases: ["permissões","acesso","grupo","usuário","liberar acesso","restrição"], tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos": { id: "task-collection-admin", aliases: ["criar coleção","subcoleção","permissão de coleção","acesso à coleção"], tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos": { id: "task-auxiliary-registers", aliases: ["cadastros","subtipo","tipo de processo","modalidade","eixo tecnológico","categoria de curso"], tipo: "tarefa", perfilMinimo: "administrador" },
+    "02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções": { id: "task-page-reorder", aliases: ["reordenar páginas","ordem das páginas","ordenar menu","mover página"], tipo: "tarefa", perfilMinimo: "administrador", tituloCanonico: "10 - Sou administrador e quero reordenar páginas" },
+
+    "03 - Sou moderador/01 - Sou moderador e quero executar as tarefas de editor": { tipo: "absorvido", estado: "absorver", destino: "role-moderator" },
+    "02 - Sou administrador/02 - Sou administrador e quero executar as tarefas de editor e moderador": { tipo: "absorvido", estado: "absorver", destino: "role-administrator" },
+    "03 - Sou moderador/02 - Sou moderador e quero criar ou atualizar uma página": { tipo: "absorvido", estado: "absorver", destino: "task-page-create-edit" },
+    "02 - Sou administrador/03 - Sou administrador e quero criar ou atualizar conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-page-create-edit" },
+    "02 - Sou administrador/04 - Sou administrador e quero revisar e publicar conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-publication-review" },
+    "03 - Sou moderador/05 - Sou moderador e quero organizar documentos, imagens e coleções": { tipo: "absorvido", estado: "absorver", destino: "task-collection-use" },
+    "03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo": { tipo: "absorvido", estado: "absorver", destino: "task-image-manage" },
+    "03 - Sou moderador/07 - Sou moderador e quero configurar busca e menu de uma página": { tipo: "absorvido", estado: "absorver", destino: "task-page-search-menu" },
+    "03 - Sou moderador/12 - Sou moderador e quero publicar uma notícia ou processo seletivo": { tipo: "absorvido", estado: "absorver", destino: "task-publication-review" },
+    "02 - Sou administrador/11 - Sou administrador e quero configurar busca, menus e ordem de páginas": { tipo: "absorvido", estado: "absorver", destino: "task-page-reorder" },
+    "02 - Sou administrador/12 - Sou administrador e quero gerenciar documentos e imagens": { tipo: "absorvido", estado: "absorver", destino: "task-collection-admin" },
+    "04 - Sou editor/16 - Sou editor e quero usar blocos para montar uma página": { tipo: "absorvido", estado: "absorver", destino: "task-blocks-use" },
+    "04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo": { tipo: "absorvido", estado: "absorver", destino: "task-content-type-choose" },
+    "04 - Sou editor/22 - Sou editor e quero gerenciar imagens, documentos e cadastros": { tipo: "absorvido", estado: "absorver", destino: "task-collection-use" }
+};
+
+window.GuiaMetadata = Object.freeze({
+    niveisDePerfil,
+    perfilPorCategoria,
+    metadadosCanonicos
+});
