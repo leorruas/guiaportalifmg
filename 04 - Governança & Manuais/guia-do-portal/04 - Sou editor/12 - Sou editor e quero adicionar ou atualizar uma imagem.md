@@ -1,31 +1,41 @@
 # Sou editor e quero adicionar ou atualizar uma imagem
 
-Uma imagem no Wagtail é um item reutilizável. Isso é útil porque a mesma foto pode aparecer em mais de uma página; mas também exige cuidado, pois trocar o arquivo pode mudar todas essas aparições.
+Use **Imagens** para guardar e reutilizar fotos, ilustrações e outras imagens do portal. Esta é a tarefa canônica para editor, moderador e administrador; os perfis superiores herdam o mesmo procedimento.
+
+Uma imagem pode aparecer em várias páginas. Por isso, substituir o arquivo de um item existente pode alterar todos os lugares que usam aquela imagem.
 
 ## Adicionar uma imagem
 
 1. Abra **Imagens** no menu lateral e clique em **Adicionar imagem**.
-2. Antes de enviar, escolha a coleção autorizada para sua área.
-3. Antes do envio, consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo|como nomear arquivos e imagens]] para evitar nomes confusos, versões ambíguas ou abreviações obscuras.
-4. Envie o arquivo e escreva um título que explique a imagem em português comum.
+2. Escolha a coleção autorizada para sua área.
+3. Envie o arquivo.
+4. Dê à imagem um título claro, em linguagem natural, que permita reconhecê-la depois. Evite nomes como `IMG_9382`, abreviações internas ou títulos inteiros em caixa alta.
+
+**Exemplo:** “Estudantes na biblioteca do Campus Ouro Preto” é melhor que “IMG_9382”.
 
 ![[imagens/manual-ifrn/image38.png|Adição de uma imagem à coleção escolhida]]
 
-5. Use a imagem na página pelo bloco adequado ou pelo seletor de imagem disponível no campo.
-6. Informe texto alternativo quando a imagem trouxer informação. Se ela só decorar a página, marque-a como decorativa quando essa opção existir.
-7. Pré-visualize para conferir corte, legibilidade e relação com o texto ao redor.
-
-**Exemplo de título:** “Estudantes na biblioteca do Campus Ouro Preto” explica a foto; “IMG_9382” não.
+5. Use a imagem na página pelo bloco ou campo adequado.
+6. Informe **texto alternativo** quando a imagem trouxer informação necessária para compreender o conteúdo. Marque-a como decorativa somente quando ela não acrescentar informação.
+7. Pré-visualize a página para conferir corte, legibilidade e relação com o texto ao redor.
 
 ## Atualizar uma imagem existente
 
-1. Em **Imagens**, busque pelo título do item e abra-o.
-2. Confira em quais páginas ela é usada antes de trocar o arquivo associado.
-3. Substitua apenas quando a nova imagem puder aparecer corretamente em todos esses lugares.
-4. Salve e abra as páginas mais importantes na pré-visualização.
+1. Em **Imagens**, busque o item pelo título e abra-o.
+2. Confira onde a imagem é usada antes de substituir o arquivo.
+3. Substitua somente quando a nova versão puder aparecer corretamente em todos esses usos.
+4. Revise o título e os dados de acessibilidade quando necessário.
+5. Salve e pré-visualize as páginas mais importantes afetadas pela troca.
 
-**Como conferir:** o título identifica o conteúdo, a imagem está na coleção certa e a página continua compreensível mesmo para quem não pode vê-la.
+> [!WARNING]
+> Substituir o arquivo de uma imagem reutilizada pode alterar várias páginas ao mesmo tempo.
 
-**Limite de permissão:** você só envia e atualiza imagens nas coleções do seu grupo. Se a imagem for institucional compartilhada ou exigir uma coleção nova, peça ao administrador responsável.
+## Coleção e limite de permissão
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Voltar a documentos, imagens e coleções]]
+Use apenas coleções disponíveis para o seu grupo. Se a imagem pertence a outra área, exige uma coleção nova ou precisa de mudança de acesso, não improvise um destino.
+
+Consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]].
+
+Se a coleção precisar ser criada ou ter seus acessos modificados, um administrador deve usar [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]].
+
+**Como saber que terminou:** a imagem tem título compreensível, está na coleção correta, possui tratamento de acessibilidade adequado e continua funcionando nos lugares em que é reutilizada.
