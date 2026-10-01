@@ -442,3 +442,16 @@
 - Rótulo e título podem quebrar linha dentro do próprio cartão quando necessário.
 - No mobile, a coluna única também usa `minmax(0, 1fr)`.
 - Atualizada a versão de cache de `style.css` em `index.html`.
+
+## 2026-10-01 — Smoke test técnico do artefato publicado
+
+- Validado o workflow final `pages build and deployment`: etapas de build, relatório de status e deploy concluíram com sucesso.
+- Baixado e inspecionado o artefato `github-pages` gerado pelo próprio GitHub Pages, em vez de assumir que a árvore da branch correspondia ao pacote publicado.
+- Confirmada no artefato a presença de `index.html`, `style.css`, `script.js`, `search.js`, `navigation.js`, `data/guide-metadata.js` e `data/guide-index.json`.
+- Confirmados `60` artigos em `data/guide-index.json` e a presença do novo procedimento de Evento no índice publicado; os Markdown são lidos em tempo de execução do repositório bruto e não precisam integrar o artefato do Pages.
+- Validada a sintaxe dos JavaScripts publicados e a existência de todos os assets locais referenciados pelo `index.html`.
+- Executadas `240` verificações de rota/resolução de links para os `60` artigos publicados (caminho completo, caminho relativo, nome do arquivo e título), com `0` falhas; a rota de Evento e rota de perfil também foram verificadas.
+- Mantida como evidência complementar a validação automatizada anterior de busca: `23/23` consultas corretas sobre os `60` artigos.
+- Identificado um resíduo não funcional: `script.js` ainda procura o elemento `btn-pesquisar`, ausente do HTML atual, mas o listener é protegido por verificação de existência; não houve alteração apenas para remover esse código morto.
+- O ambiente de navegação utilizado nesta revisão não conseguiu acessar diretamente a URL pública do GitHub Pages; portanto, esta etapa é um smoke técnico do pacote publicado e dos workflows, não uma validação visual/interativa em navegador real.
+
