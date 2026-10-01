@@ -631,3 +631,15 @@
 - O mapa passa de 75 para `77` páginas e de 94 para `96` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v16`.
 
+## 2026-10-01 — Expansão de Participação Social e correção da Ouvidoria
+
+- A URL canônica da Ouvidoria passa a ser `https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/`.
+- O nó é exibido como `Sugestões, críticas e elogios / Ouvidoria`, preservando a nomenclatura definida no mapa.
+- A Ouvidoria passa a ser filha estrutural de `Participação Social`.
+- Removido o antigo nó canônico `https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/`.
+- As entradas `Sugestões, Críticas e Elogios` de Estudantes, Servidores e Comunidade passam a redirecionar para a nova URL canônica da Ouvidoria.
+- Adicionados como filhos diretos de `Participação Social`: Ouvidoria, Audiências e consultas públicas, Colégio de Diregentes (CODIR), Conselho Superior (CONSUP) e Comissão Própria de Avaliação (CPA).
+- O CONSUP já existia no dataset e foi reaproveitado, sem duplicação.
+- O mapa passa de 77 para `80` páginas e de 96 para `99` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` para `v17`.
+
