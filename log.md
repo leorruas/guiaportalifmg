@@ -269,3 +269,15 @@
 - Ajustado `04 - Sou editor/21 - Sou editor e quero criar cada tipo de conteúdo.md` para não registrar Comunicado como lacuna de procedimento.
 - Atualizada a auditoria da fase 2 para registrar apenas Evento como lacuna de cobertura e corrigir a decisão canônica sobre Comunicado.
 - Mantidos os links diretos já existentes do catálogo para os procedimentos específicos de Página institucional, Notícia, Processo seletivo, Curso, Colegiado, Link, Programa, Projeto, Campus e pastas estruturais.
+
+## 2026-10-01 — Ranking ponderado da busca
+
+- Substituído o ranking ordinal da busca por uma pontuação ponderada de relevância, mantendo a exigência de que todos os termos da consulta existam em algum ponto indexável do artigo.
+- O ranking passa a considerar, em ordem de força: correspondência no título da ação, aliases, headings, introdução, categoria e corpo; o corpo recebe peso baixo para evitar favorecer artigos longos por repetição.
+- Correspondências exatas de alias recebem peso alto, enquanto correspondência parcial em alias é usada apenas para consultas com duas ou mais palavras.
+- Mantidos ocultos os artigos marcados como absorvidos e preservados os filtros de perfil já existentes.
+- Criado `data/search-regression.json` com 14 consultas e o ID esperado em primeiro lugar, incluindo notícia, processo seletivo, imagem, PDF, menu, busca, tirar do ar, permissão, homepage, editar página, coleção, criar coleção, comentários e envio para moderação.
+- Um teste inicial revelou que a consulta genérica `coleção` priorizava indevidamente a tarefa administrativa `criar coleção`; os pesos de aliases curtos foram ajustados para diferenciar uso cotidiano de administração.
+- Validados com conteúdo real os principais pares ambíguos: notícia × pasta de notícias; processo seletivo × pasta de processos; coleção × criar coleção; permissão × permissão de coleção; menu × reordenar páginas; comentários do editor × comentários de moderação; envio para moderação × criação de notícia.
+- O corpus completo de 14 consultas também foi validado em título/aliases, e a sintaxe final de `script.js` permanece válida.
+
