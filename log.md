@@ -580,3 +580,14 @@
 - O mapa passa de 58 para `59` páginas e de 63 para `64` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v11`.
 
+## 2026-10-01 — Correção do layout após teste visual
+
+- Removida a etapa física `cose`, que no teste visual espalhava descendentes entre ramos e gerava muitas diagonais longas.
+- O mapa passa a usar layout setorial determinístico: Home no centro e cada um dos cinco ramos principais ocupa um setor angular exclusivo ao redor dela.
+- Descendentes de segundo nível são distribuídos em um ou dois arcos dentro do próprio setor; descendentes mais profundos avançam radialmente para fora sem invadir outros ramos.
+- Home e ramos principais permanecem legíveis no panorama geral; rótulos de páginas menores usam `min-zoomed-font-size` e aparecem conforme o usuário aproxima o zoom.
+- Relações estruturais ficaram mais discretas no panorama geral.
+- Relações `redireciona` ficam com baixa opacidade por padrão e ganham destaque quando um dos nós envolvidos é selecionado.
+- Mantidos os limites de zoom e o botão de recentralização.
+- Atualizada a versão de cache de `portal-graph.js` para `portal-graph-v6`.
+
