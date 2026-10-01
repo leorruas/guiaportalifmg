@@ -181,3 +181,12 @@
 - Reescrito `04 - Sou editor/22` como página de transição que separa tarefas de mídia das configurações administrativas de cadastros, evitando sugerir que editor pode alterar cadastros auxiliares.
 - Validados os wikilinks dos nove arquivos alterados, eliminada a dependência das tarefas canônicas de mídia em páginas de moderador e confirmada a sintaxe do `script.js`.
 
+## 2026-10-01 — Consolidação editorial: blocos de conteúdo
+
+- Consolidado o uso de blocos em `04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos.md`, que passa a ser a referência canônica herdada por editor, moderador e administrador.
+- Incorporados a E15 os procedimentos de adicionar, mover, duplicar e remover blocos que estavam repetidos em E16.
+- Mantidos em E15 os critérios de escolha, exemplos de configuração e visualização dos diferentes tipos de bloco.
+- Reduzido `04 - Sou editor/16 - Sou editor e quero usar blocos para montar uma página.md` a uma página de encaminhamento para E15, preservando links antigos sem manter uma segunda versão do procedimento.
+- Removido o link circular de E15 para E16; a navegação final agora retorna à tarefa canônica de criar ou editar uma página.
+- Validados os wikilinks, anexos e a sintaxe atual do `script.js`.
+
