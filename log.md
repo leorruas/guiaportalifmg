@@ -476,3 +476,10 @@
 - Substituída a paleta multicolorida dos ramos por uma escala monocromática de verdes, mantendo a Home destacada pela cor de acento do manual.
 - Atualizadas as versões de cache de `style.css` e `portal-graph.js` em `index.html`.
 
+## 2026-10-01 — Ramo Institucional no mapa do Portal
+
+- Adicionadas 11 páginas como filhas diretas de `https://portal.ifmg.edu.br/institucional/`: Quem somos, Ensino, Pesquisa & Inovação, Extensão, Educação a Distância, Internacional, Desenvolvimento Institucional, Gestão de Pessoas, Administração & Planejamento, Tecnologia da Informação e Governança.
+- Registradas 11 novas relações do tipo `estrutura`, todas partindo de Institucional.
+- O mapa passa de 6 para `17` páginas e de 5 para `16` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` em `index.html`.
+
