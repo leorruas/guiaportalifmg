@@ -774,3 +774,14 @@
 - O `AGENTS.md` passa a exigir microdescrições curtas baseadas em evidência e a proibir preenchimento por inferência quando a fonte não sustentar uma definição útil.
 - Atualizada a versão de cache de `data/portal-graph.js` para `v21`.
 
+## 2026-10-01 — Distinção entre página Link e blocos de link
+
+- Corrigida a mistura entre dois recursos diferentes do Wagtail.
+- `Link` como **tipo de página** passa a ser descrito explicitamente como uma entrada/rota na árvore que redireciona para outra URL.
+- `Links` e `Link único` permanecem documentados como **blocos dentro do conteúdo**, sem criação de nova rota.
+- A imagem `imagens/manual-ifrn/image22.png`, que mostra um link dentro de bloco de conteúdo, foi retirada do procedimento de redirecionamento e contextualizada no artigo de blocos.
+- Adicionada ao repositório a captura correta `imagens/guias-contextuais/link-redirecionamento-campos.webp`, proveniente da tela real enviada durante a documentação, mostrando os campos `Título` e `URL` do tipo de página Link.
+- O artigo de redirecionamento passou a usar o exemplo conceitual `/evento/` → `/evento/nome-do-evento/` para explicar a relação entre rota de acesso e destino.
+- Registrado que `portal.ifmg.edu.br` é o domínio atual de homologação e que o domínio público previsto é `ifmg.edu.br`; exemplos que não dependem do domínio devem preferir caminhos relativos.
+- O `AGENTS.md` passa a proibir a mistura entre página Link e blocos de link e registra a regra de domínio para exemplos do manual.
+
