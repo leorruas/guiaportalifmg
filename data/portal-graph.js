@@ -401,6 +401,11 @@
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/comissao-propria-de-avaliacao-cpa/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/comissao-propria-de-avaliacao-cpa/",
                 "title": "Comissão Própria de Avaliação (CPA)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/relacao-de-setores-e-cargos-de-gestao-do-ifmg-reitoria/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/relacao-de-setores-e-cargos-de-gestao-do-ifmg-reitoria/",
+                "title": "Relação de setores e cargos de gestão do IFMG - Reitoria"
         }
 ];
 
@@ -899,6 +904,11 @@
                 "source": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
                 "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
                 "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/relacao-de-setores-e-cargos-de-gestao-do-ifmg-reitoria/",
+                "type": "estrutura"
         }
 ];
 
