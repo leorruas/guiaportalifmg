@@ -1,6 +1,6 @@
-# Sou administrador e quero configurar grupos e permissões
+# Sou administrador e quero definir quem pode editar páginas e usar coleções
 
-No Wagtail, os grupos organizam quem pode agir em cada parte do portal. Configure cada grupo pelo setor, campus ou área que ele atende; evite permissões amplas quando uma permissão restrita atende à necessidade.
+Use esta tarefa para definir **quem pode trabalhar em cada parte do Portal e com quais arquivos**. No Wagtail, isso é feito por grupos e permissões: cada grupo deve representar o setor, campus ou área que ele atende, com acesso apenas ao necessário.
 
 Imagine o grupo como um crachá: ele informa onde a pessoa pode entrar e o que ela pode fazer ali. Páginas e coleções são portas diferentes; liberar uma não abre automaticamente a outra.
 
