@@ -1,4 +1,4 @@
-# Sou moderador e quero criar uma pasta de processos seletivos
+# Sou moderador e quero criar uma pasta para processos seletivos
 
 A pasta de processos seletivos organiza seleções do mesmo tipo antes que seus editais e etapas sejam publicados. Ela funciona como uma gaveta identificada: dentro dela entram somente processos compatíveis com a classificação escolhida.
 
