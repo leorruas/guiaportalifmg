@@ -344,3 +344,13 @@
 - Validados sintaxe de `search.js` e `script.js`, ordem de carregamento, ausência das funções duplicadas no script principal, fallback não fatal e o corpus de regressão de 14 consultas, que permanece com 14/14 resultados esperados no topo em título/aliases.
 - Revalidados com conteúdo real os pares mais ambíguos (notícia/pasta de notícias, coleção/criar coleção, permissão/permissão de coleção e comentários de editor/moderação), sem alteração do ranking esperado.
 
+## 2026-10-01 — Modularização conservadora: navegação e links internos
+
+- Criado `navigation.js` como módulo isolado de utilidades puras de navegação, encapsulado em IIFE e expondo somente `window.GuiaNavegacao`.
+- Extraídas de `script.js` as funções determinísticas de rota de artigo, rota de perfil, rota com seção, normalização de destinos Obsidian, geração de ID de seção e resolução de wikilinks.
+- Mantidos em `script.js` todos os efeitos de interface: `abrirArtigo`, `abrirPerfil`, `tratarRotaDaUrl`, `history.pushState`, `window.location`, scroll, listeners e manipulação do DOM.
+- A resolução de wikilinks no módulo recebe explicitamente a lista de artigos; `script.js` preserva um pequeno adaptador para fornecer `todosOsArtigos` sem acoplar o módulo ao estado global da interface.
+- Adicionado fallback básico de navegação em `script.js`; se `navigation.js` não carregar, rotas e links internos continuam funcionando em vez de interromper a inicialização da home.
+- Atualizado `index.html` para carregar os scripts na ordem `guide-metadata.js → search.js → navigation.js → script.js`, com incremento do cache do script principal para `indice-contextual-v3` e preservação da linha de trabalho concorrente do índice contextual.
+- Validadas sintaxe e ordem de carregamento e executados testes de rota/resolução para os 59 artigos do índice, usando caminho completo, caminho relativo, nome de arquivo e título exibido para cada um.
+
