@@ -6,7 +6,7 @@ Use **Documentos** para guardar e reutilizar arquivos oficiais, como editais, re
 
 1. Abra **Documentos** no menu lateral e escolha **Adicionar documento**.
 2. Selecione a coleção autorizada antes de enviar o arquivo.
-3. Consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/06 - Sou moderador e quero manter imagens e documentos do meu grupo|como nomear arquivos e imagens]] antes do upload, especialmente quando houver nova versão ou documento parecido na coleção.
+3. Antes do upload, defina um título que identifique o documento sem depender do nome original do arquivo, especialmente quando houver nova versão ou documento parecido na coleção.
 4. Envie o arquivo, preencha um título claro, confirme a coleção e acrescente tags que ajudem na busca.
 5. Salve o documento.
 6. Volte à página e selecione o documento no bloco ou campo correspondente.
@@ -88,6 +88,6 @@ O objetivo é que uma pessoa encontre uma única versão vigente para cada neces
 > [!attention] Um arquivo, vários usos
 > Substituir o arquivo no registro atualiza todas as páginas que apontam para ele. Se o novo documento vale apenas para um caso, crie um novo registro em vez de substituir o existente.
 
-**Limite de permissão:** não remova um documento que possa servir como registro histórico sem orientação de moderação. Se faltar acesso à coleção ou for necessário criar uma nova, peça ao administrador; não envie o arquivo para uma coleção de outra área.
+**Limite de permissão:** não remova um documento que possa servir como registro histórico sem orientação de moderação. Se faltar acesso à coleção ou for necessário criar uma nova, não envie o arquivo para uma coleção de outra área. Consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar documentos e imagens em coleções autorizadas]]. Para criar a coleção ou alterar seus acessos, o administrador deve usar [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção e definir seus acessos]].
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos|Usar documentos em processo seletivo]]
