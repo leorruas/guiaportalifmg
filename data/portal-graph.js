@@ -4,97 +4,115 @@
                 "id": "https://portal.ifmg.edu.br/",
                 "url": "https://portal.ifmg.edu.br/",
                 "title": "Home",
-                "description": "Página inicial do Portal IFMG."
+                "description": "Página inicial pensada para expor acessos prioritários, como ingresso, cursos, notícias, Unidades e busca."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/",
                 "url": "https://portal.ifmg.edu.br/institucional/",
-                "title": "Institucional"
+                "title": "Institucional",
+                "description": "Conteúdos estáveis sobre identidade, estrutura e atuação do IFMG, sem concentrar serviços de alta urgência."
         },
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/",
                 "url": "https://portal.ifmg.edu.br/estudantes/",
-                "title": "Estudantes"
+                "title": "Estudantes",
+                "description": "Área de serviços acadêmicos e permanência para resolver demandas da vida estudantil."
         },
         {
                 "id": "https://portal.ifmg.edu.br/servidores/",
                 "url": "https://portal.ifmg.edu.br/servidores/",
-                "title": "Servidores"
+                "title": "Servidores",
+                "description": "Área funcional para trabalho, carreira, normativas, sistemas e comunicação interna de servidores."
         },
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/",
                 "url": "https://portal.ifmg.edu.br/comunidade/",
-                "title": "Comunidade"
+                "title": "Comunidade",
+                "description": "Área de relação pública com pessoas, grupos e parceiros, reunindo extensão, cursos abertos, eventos, parcerias e contato."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/",
-                "title": "Acesso à Informação"
+                "title": "Acesso à Informação",
+                "description": "Área para fiscalizar e acessar informação pública, com transparência, participação, Ouvidoria, licitações e contratos."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/quem-somos/",
                 "url": "https://portal.ifmg.edu.br/institucional/quem-somos/",
-                "title": "Quem somos"
+                "title": "Quem somos",
+                "description": "Referência institucional sobre identidade e estrutura do IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/ensino/",
                 "url": "https://portal.ifmg.edu.br/institucional/ensino/",
-                "title": "Ensino"
+                "title": "Ensino",
+                "description": "Referência institucional sobre a atuação do IFMG em ensino."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/pesquisa-inovacao/",
                 "url": "https://portal.ifmg.edu.br/institucional/pesquisa-inovacao/",
-                "title": "Pesquisa & Inovação"
+                "title": "Pesquisa & Inovação",
+                "description": "Referência institucional sobre pesquisa e inovação no IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/extensao/",
                 "url": "https://portal.ifmg.edu.br/institucional/extensao/",
-                "title": "Extensão"
+                "title": "Extensão",
+                "description": "Referência institucional sobre extensão e relação do IFMG com a sociedade."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/educacao-a-distancia/",
                 "url": "https://portal.ifmg.edu.br/institucional/educacao-a-distancia/",
-                "title": "Educação a Distância"
+                "title": "Educação a Distância",
+                "description": "Referência institucional sobre a atuação do IFMG em Educação a Distância."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/internacional/",
                 "url": "https://portal.ifmg.edu.br/institucional/internacional/",
-                "title": "Internacional"
+                "title": "Internacional",
+                "description": "Referência institucional sobre internacionalização do IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/desenvolvimento-institucional/",
                 "url": "https://portal.ifmg.edu.br/institucional/desenvolvimento-institucional/",
-                "title": "Desenvolvimento Institucional"
+                "title": "Desenvolvimento Institucional",
+                "description": "Referência institucional sobre desenvolvimento institucional do IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/gestao-de-pessoas/",
                 "url": "https://portal.ifmg.edu.br/institucional/gestao-de-pessoas/",
-                "title": "Gestão de Pessoas"
+                "title": "Gestão de Pessoas",
+                "description": "Página setorial de referência sobre gestão de pessoas; as rotinas funcionais também aparecem na área Servidores."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/planejamento-e-infraestrutura/",
                 "url": "https://portal.ifmg.edu.br/institucional/planejamento-e-infraestrutura/",
-                "title": "Administração & Planejamento"
+                "title": "Administração & Planejamento",
+                "description": "Página setorial de referência sobre administração, planejamento e infraestrutura institucional."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/tecnologia-da-informacao/",
                 "url": "https://portal.ifmg.edu.br/institucional/tecnologia-da-informacao/",
-                "title": "Tecnologia da Informação"
+                "title": "Tecnologia da Informação",
+                "description": "Página setorial de referência de TI; o suporte deve continuar acessível também por rotas funcionais."
         },
         {
                 "id": "https://portal.ifmg.edu.br/institucional/governanca/",
                 "url": "https://portal.ifmg.edu.br/institucional/governanca/",
-                "title": "Governança"
+                "title": "Governança",
+                "description": "Referência institucional sobre governança e organização do IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
                 "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
-                "title": "Como ingressar no IFMG"
+                "title": "Como ingressar no IFMG",
+                "description": "Porta para a jornada de ingresso, conectando seleção, oferta de cursos e etapas posteriores como matrícula."
         },
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/assistencia-estudantil/",
                 "url": "https://portal.ifmg.edu.br/estudantes/assistencia-estudantil/",
-                "title": "Assistência Estudantil"
+                "title": "Assistência Estudantil",
+                "description": "Apoio à permanência estudantil e a necessidades de assistência, auxílio e bolsa."
         },
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/",
@@ -104,12 +122,14 @@
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/egressos/",
                 "url": "https://portal.ifmg.edu.br/estudantes/egressos/",
-                "title": "Egressos"
+                "title": "Egressos",
+                "description": "Acesso a informações voltadas a egressos dentro da área estudantil."
         },
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/bibliotecas/",
                 "url": "https://portal.ifmg.edu.br/estudantes/bibliotecas/",
-                "title": "Bibliotecas"
+                "title": "Bibliotecas",
+                "description": "Acesso às bibliotecas como serviço de apoio à vida acadêmica."
         },
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
@@ -119,12 +139,14 @@
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
                 "url": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
-                "title": "+ informações para estudantes"
+                "title": "+ informações para estudantes",
+                "description": "Acessos complementares para serviços acadêmicos e permanência estudantil."
         },
         {
                 "id": "https://portal.ifmg.edu.br/servidores/normativas-manuais/",
                 "url": "https://portal.ifmg.edu.br/servidores/normativas-manuais/",
-                "title": "Normativas & Manuais"
+                "title": "Normativas & Manuais",
+                "description": "Normas e manuais de apoio às rotinas de trabalho dos servidores."
         },
         {
                 "id": "https://portal.ifmg.edu.br/servidores/licencas/",
@@ -134,12 +156,14 @@
         {
                 "id": "https://portal.ifmg.edu.br/servidores/remocao-redistribuicao/",
                 "url": "https://portal.ifmg.edu.br/servidores/remocao-redistribuicao/",
-                "title": "Remoção & Redistribuição"
+                "title": "Remoção & Redistribuição",
+                "description": "Orientações sobre remoção, redistribuição e carreira, rota destacada após testes com servidores."
         },
         {
                 "id": "https://portal.ifmg.edu.br/servidores/teletrabalho-trabalho-remoto/",
                 "url": "https://portal.ifmg.edu.br/servidores/teletrabalho-trabalho-remoto/",
-                "title": "Teletrabalho / Trabalho Remoto"
+                "title": "Teletrabalho / Trabalho Remoto",
+                "description": "Informações sobre PGD, trabalho remoto e gestão do trabalho."
         },
         {
                 "id": "https://portal.ifmg.edu.br/servidores/reconhecimento-de-saberes-e-competencias-rsc-tae/",
@@ -159,7 +183,8 @@
         {
                 "id": "https://portal.ifmg.edu.br/servidores/noticias/",
                 "url": "https://portal.ifmg.edu.br/servidores/noticias/",
-                "title": "Notícias para servidores"
+                "title": "Notícias para servidores",
+                "description": "Espaço dedicado a comunicados e notícias internas, separado das notícias públicas da página inicial."
         },
         {
                 "id": "https://portal.ifmg.edu.br/servidores/sugestoes-criticas-e-elogios/",
@@ -170,7 +195,8 @@
                 "id": "https://portal.ifmg.edu.br/servidores/mais/",
                 "url": "https://portal.ifmg.edu.br/servidores/mais/",
                 "title": "+ informações para servidores",
-                "hubLayout": "stack"
+                "hubLayout": "stack",
+                "description": "Acessos funcionais complementares relacionados a trabalho, carreira e serviços de servidores."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/institucional/",
@@ -180,18 +206,21 @@
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/",
-                "title": "Ações & Programas"
+                "title": "Ações & Programas",
+                "description": "Ramo de transparência que reúne documentos públicos como o PDI e relatórios institucionais."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
                 "title": "Participação Social",
-                "hubLayout": "fan"
+                "hubLayout": "fan",
+                "description": "Canais e instâncias de participação pública dentro da área de transparência e controle."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/auditorias/",
-                "title": "Auditorias"
+                "title": "Auditorias",
+                "description": "Conteúdos de fiscalização e conformidade dentro da área de transparência e controle."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/convenios-e-transferencias/",
@@ -206,7 +235,8 @@
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/licitacoes-contratos/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/licitacoes-contratos/",
-                "title": "Licitações & Contratos"
+                "title": "Licitações & Contratos",
+                "description": "Acesso público a licitações e contratos para transparência e fiscalização."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/servidores/",
@@ -226,7 +256,8 @@
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/dados-abertos/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/dados-abertos/",
-                "title": "Dados Abertos"
+                "title": "Dados Abertos",
+                "description": "Acesso a dados abertos como parte da transparência pública do IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/sancoes-administrativas/",
@@ -241,7 +272,8 @@
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/processo-seletivo/",
                 "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/processo-seletivo/",
-                "title": "Processo Seletivo"
+                "title": "Processo Seletivo",
+                "description": "Jornada de seleção com editais, etapas, resultados e matrícula quando aplicável."
         },
         {
                 "id": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/",
@@ -252,12 +284,13 @@
                 "id": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
                 "url": "https://portal.ifmg.edu.br/comunidade/suporte-suap/",
                 "title": "Como abrir um chamado (Solicitar ajuda • SUAP)",
-                "description": "Destino comum para suporte e abertura de chamados no SUAP."
+                "description": "Acesso compartilhado para suporte e abertura de chamados, pensado para ser encontrado por mais de uma rota."
         },
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/hubs-de-inovacao-do-ifmg/",
                 "url": "https://portal.ifmg.edu.br/comunidade/hubs-de-inovacao-do-ifmg/",
-                "title": "Hubs de Inovação do IFMG"
+                "title": "Hubs de Inovação do IFMG",
+                "description": "Acesso a iniciativas de pesquisa, inovação e parcerias com a comunidade."
         },
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/empresas-juniores-e-empreendedorismo/",
@@ -267,12 +300,14 @@
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/bibliotecas/",
                 "url": "https://portal.ifmg.edu.br/comunidade/bibliotecas/",
-                "title": "Bibliotecas"
+                "title": "Bibliotecas",
+                "description": "Acesso às bibliotecas também como serviço disponível à comunidade."
         },
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/",
                 "url": "https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/",
-                "title": "+ IFMG • Cursos livres e gratuitos"
+                "title": "+ IFMG • Cursos livres e gratuitos",
+                "description": "Acesso a cursos de extensão e cursos abertos voltados à comunidade."
         },
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/espacosculturais/",
@@ -282,7 +317,8 @@
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/",
                 "url": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/",
-                "title": "Comunicação / Imprensa"
+                "title": "Comunicação / Imprensa",
+                "description": "Canal de relação pública para comunicação e imprensa."
         },
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/sugestoes-criticas-e-elogios/",
@@ -292,7 +328,8 @@
         {
                 "id": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/",
                 "url": "https://portal.ifmg.edu.br/comunidade/comunicacao-imprensa/identidade-visual-e-manuais-marca-do-ifmg/",
-                "title": "Identidade Visual e Manuais (Marca do IFMG)"
+                "title": "Identidade Visual e Manuais (Marca do IFMG)",
+                "description": "Materiais e orientações para uso da marca do IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/servidores/guia/auxilios-assistencia/",
@@ -347,7 +384,8 @@
         {
                 "id": "https://mais.ifmg.edu.br/maisifmg/",
                 "url": "https://mais.ifmg.edu.br/maisifmg/",
-                "title": "+IFMG — cursos de curta duração"
+                "title": "+IFMG — cursos de curta duração",
+                "description": "Oferta de cursos abertos e de curta duração voltada à comunidade."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/conselho-superior-consup/",
@@ -377,22 +415,26 @@
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/plano-de-desenvolvimento-institucional-pdi/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/plano-de-desenvolvimento-institucional-pdi/",
-                "title": "Plano de Desenvolvimento Institucional (PDI)"
+                "title": "Plano de Desenvolvimento Institucional (PDI)",
+                "description": "Documento público de planejamento institucional do IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/relatorio-de-gestao-do-ifmg/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/acoes-programas/relatorio-de-gestao-do-ifmg/",
-                "title": "Relatório de Gestão do IFMG"
+                "title": "Relatório de Gestão do IFMG",
+                "description": "Relatório público de gestão dentro da área de transparência do IFMG."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/ouvidoria/",
-                "title": "Sugestões, críticas e elogios / Ouvidoria"
+                "title": "Sugestões, críticas e elogios / Ouvidoria",
+                "description": "Canal público de participação para manifestações como sugestões, críticas e elogios."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas/",
-                "title": "Audiências e consultas públicas"
+                "title": "Audiências e consultas públicas",
+                "description": "Canal de participação pública por meio de audiências e consultas."
         },
         {
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/colegio-de-diregentes-codir/",
@@ -413,7 +455,7 @@
                 "id": "https://dadosabertos.ifmg.edu.br/",
                 "url": "https://dadosabertos.ifmg.edu.br/",
                 "title": "Conjuntos de Dados Abertos Priorizados",
-                "description": "Destino externo acessado a partir da página Dados Abertos do Portal IFMG."
+                "description": "Portal externo que reúne conjuntos de dados abertos priorizados pelo IFMG."
         }
 ];
 
