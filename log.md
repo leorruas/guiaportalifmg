@@ -752,3 +752,14 @@
 - O `AGENTS.md` também registra que filename e rota podem permanecer antigos para preservar compatibilidade; nesses casos, `tituloCanonico` define o nome exibido.
 - Atualizado o cache de `data/guide-metadata.js` para `page-controls-v1`.
 
+## 2026-10-01 — Tela cheia no mapa do Portal
+
+- Adicionado o controle `tela cheia` à barra do mapa.
+- O fullscreen é aplicado ao componente inteiro `.portal-graph-root`, preservando busca, modo de distância, recentralização, grafo e sidebar de detalhes do nó selecionado.
+- Enquanto ativo, o botão muda para `sair da tela cheia`; a tecla Esc do navegador também encerra o modo pelo comportamento nativo da Fullscreen API.
+- Ao entrar ou sair da tela cheia, o Cytoscape executa `resize()` e reenquadra o modo visual atual para aproveitar o novo espaço sem cortar o canvas.
+- No modo `distância da Home`, os anéis são recalculados após a mudança de viewport.
+- Em desktop, a sidebar permanece à direita e ganha largura de 320 px; em telas muito estreitas, ela passa para baixo do grafo para preservar legibilidade.
+- Se a Fullscreen API não estiver disponível no navegador, o controle é ocultado e o restante do mapa continua funcionando normalmente.
+- Atualizados os caches de `portal-graph.js` para `portal-graph-v9` e `style.css` para `portal-fullscreen-v1`.
+
