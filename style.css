@@ -1332,6 +1332,24 @@ html body #artigo-corpo h3::before {
 }
 
 .resultado-conteudo { display: grid; gap: 7px; min-width: 0; }
+.resultado-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    color: var(--accent-blue);
+    font-size: .7rem;
+    line-height: 1.25;
+    letter-spacing: .01em;
+}
+.resultado-meta mark {
+    background: transparent;
+    color: currentColor;
+    font-weight: 700;
+}
+.resultados-lista-relevancia {
+    border-top: 1px solid color-mix(in srgb, var(--text) 32%, transparent);
+}
 .resultado-conteudo strong {
     color: currentColor;
     font-size: 1.12rem;
