@@ -391,10 +391,51 @@
             instanciaAtiva = cy;
 
             const rootNode = cy.getElementById("https://portal.ifmg.edu.br/");
+            const idsPrimeiroNivel = data.edges
+                .filter(edge => edge.type === "estrutura" && edge.source === "https://portal.ifmg.edu.br/")
+                .map(edge => edge.target);
+
+            const relaxarLayout = () => {
+                const ancoraIds = ["https://portal.ifmg.edu.br/", ...idsPrimeiroNivel];
+                const ancoras = cy.collection(
+                    ancoraIds
+                        .map(id => cy.getElementById(id))
+                        .filter(elemento => elemento.length)
+                );
+
+                ancoras.lock();
+
+                const elementosEstruturais = cy.nodes().union(
+                    cy.edges().filter(edge => edge.data("type") === "estrutura")
+                );
+
+                elementosEstruturais.layout({
+                    name: "cose",
+                    animate: false,
+                    fit: false,
+                    randomize: false,
+                    nodeDimensionsIncludeLabels: true,
+                    componentSpacing: 110,
+                    nodeRepulsion: 9200,
+                    nodeOverlap: 34,
+                    idealEdgeLength: 145,
+                    edgeElasticity: 90,
+                    nestingFactor: 1.15,
+                    gravity: 0.18,
+                    numIter: 700,
+                    initialTemp: 160,
+                    coolingFactor: 0.96,
+                    minTemp: 1
+                }).run();
+
+                ancoras.unlock();
+            };
+
             const rodarLayout = () => {
                 const posicoes = calcularPosicoesRadiais(data);
                 cy.nodes().positions(node => posicoes.get(node.id()) || node.position());
-                cy.fit(cy.elements(), 68);
+                relaxarLayout();
+                cy.fit(cy.elements(), 72);
             };
 
             rodarLayout();
