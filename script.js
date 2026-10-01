@@ -92,6 +92,62 @@ const {
     rotuloPerfilMinimo
 } = window.GuiaBusca || guiaBuscaFallback;
 
+const guiaNavegacaoFallback = {
+    rotaDoArtigo(artigo) {
+        return String(artigo?.sourcePath || "")
+            .replace(/^.*guia-do-portal\//, "")
+            .replace(/\.md$/i, "");
+    },
+    rotaDoPerfil(categoria) {
+        return `#/perfil/${encodeURIComponent(categoria)}`;
+    },
+    rotaComSecao(artigo, secao) {
+        const rota = `#/${guiaNavegacaoFallback.rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
+        return secao ? `${rota}#${encodeURIComponent(secao)}` : rota;
+    },
+    resolverLinkObsidian(destino, artigos = []) {
+        const normalizar = (valor) => decodeURIComponent(String(valor || ""))
+            .trim()
+            .replace(/\\/g, "/")
+            .replace(/\.md$/i, "")
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLocaleLowerCase("pt-BR")
+            .replace(/:/g, " -")
+            .replace(/\s+/g, " ");
+        const [caminhoBruto, secaoBruta] = String(destino || "").split(/#(.+)/, 2);
+        const caminho = normalizar(caminhoBruto);
+        const artigo = artigos.find(item => {
+            const caminhoFonte = decodeURI(item.sourcePath || item.path || "").replace(/\.md$/i, "");
+            return [
+                item.titulo,
+                caminhoFonte,
+                caminhoFonte.replace(/^.*guia-do-portal\//, ""),
+                caminhoFonte.split("/").at(-1)
+            ].some(candidato => normalizar(candidato) === caminho);
+        });
+        if (!artigo) return null;
+        const secao = secaoBruta
+            ? normalizar(secaoBruta).replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-")
+            : "";
+        return { artigo, href: guiaNavegacaoFallback.rotaComSecao(artigo, secao) };
+    }
+};
+
+if (!window.GuiaNavegacao) {
+    console.warn("Utilidades de navegação não foram carregadas; usando fallback básico.");
+}
+
+const {
+    rotaDoArtigo,
+    rotaDoPerfil,
+    rotaComSecao
+} = window.GuiaNavegacao || guiaNavegacaoFallback;
+
+function resolverLinkObsidian(destino) {
+    return (window.GuiaNavegacao || guiaNavegacaoFallback).resolverLinkObsidian(destino, todosOsArtigos);
+}
+
 function chaveCanonicaDoArtigo(sourcePath = "") {
     return sourcePath
         .replace(/^.*guia-do-portal\//, "")
@@ -542,16 +598,6 @@ function exibirResultados(artigos, termo = "") {
     });
 
     containerResultados.appendChild(lista);
-}
-
-function rotaDoArtigo(artigo) {
-    return artigo.sourcePath
-        .replace(/^.*guia-do-portal\//, "")
-        .replace(/\.md$/i, "");
-}
-
-function rotaDoPerfil(categoria) {
-    return `#/perfil/${encodeURIComponent(categoria)}`;
 }
 
 function atualizarIndiceDaNavbar(categoria = "") {
@@ -1062,11 +1108,6 @@ function gerarTableOfContents() {
     iniciarScrollSpy(headings);
 }
 
-function rotaComSecao(artigo, secao) {
-    const rota = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
-    return secao ? `${rota}#${encodeURIComponent(secao)}` : rota;
-}
-
 function configurarFiltroDoSumario(lista, totalDeSecoes) {
     const container = document.getElementById("toc-filter-container");
     const campo = document.getElementById("toc-filter-input");
@@ -1168,44 +1209,6 @@ function processarCalloutsObsidian() {
             bq.replaceWith(divCallout);
         }
     });
-}
-
-function normalizarDestinoObsidian(valor) {
-    return decodeURIComponent(String(valor || ""))
-        .trim()
-        .replace(/\\/g, "/")
-        .replace(/\.md$/i, "")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLocaleLowerCase("pt-BR")
-        .replace(/:/g, " -")
-        .replace(/\s+/g, " ");
-}
-
-function idDaSecaoObsidian(secao) {
-    return normalizarDestinoObsidian(secao)
-        .replace(/[^a-z0-9\s-]/g, "")
-        .trim()
-        .replace(/\s+/g, "-");
-}
-
-function resolverLinkObsidian(destino) {
-    const [caminhoBruto, secaoBruta] = String(destino || "").split(/#(.+)/, 2);
-    const caminho = normalizarDestinoObsidian(caminhoBruto);
-    const artigo = todosOsArtigos.find(item => {
-        const caminhoFonte = decodeURI(item.sourcePath || item.path).replace(/\.md$/i, "");
-        const caminhosPossiveis = [
-            item.titulo,
-            caminhoFonte,
-            caminhoFonte.replace(/^.*guia-do-portal\//, ""),
-            caminhoFonte.split("/").at(-1)
-        ];
-        return caminhosPossiveis.some(candidato => normalizarDestinoObsidian(candidato) === caminho);
-    });
-
-    if (!artigo) return null;
-    const secao = secaoBruta ? idDaSecaoObsidian(secaoBruta) : "";
-    return { artigo, href: rotaComSecao(artigo, secao) };
 }
 
 function navegarParaLinkObsidian(nomeOuCaminho) {
