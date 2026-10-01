@@ -347,6 +347,36 @@
                 "id": "https://portal.ifmg.edu.br/servidores/guia/registro-de-atestado-medico-ou-odontologico/",
                 "url": "https://portal.ifmg.edu.br/servidores/guia/registro-de-atestado-medico-ou-odontologico/",
                 "title": "Registro de atestado médico ou odontológico"
+        },
+        {
+                "id": "https://mais.ifmg.edu.br/maisifmg/",
+                "url": "https://mais.ifmg.edu.br/maisifmg/",
+                "title": "+IFMG — cursos de curta duração"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/conselho-superior-consup/",
+                "url": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/conselho-superior-consup/",
+                "title": "Conselho Superior (CONSUP)"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/guia/empresas-juniores-e-empreendedorismo/",
+                "url": "https://portal.ifmg.edu.br/estudantes/guia/empresas-juniores-e-empreendedorismo/",
+                "title": "Empresas Juniores e Empreendedorismo"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/guia/hubs-de-inovacao-do-ifmg/",
+                "url": "https://portal.ifmg.edu.br/estudantes/guia/hubs-de-inovacao-do-ifmg/",
+                "title": "Hubs de Inovação do IFMG"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/guia/ifmg/",
+                "url": "https://portal.ifmg.edu.br/estudantes/guia/ifmg/",
+                "title": "+IFMG"
+        },
+        {
+                "id": "https://portal.ifmg.edu.br/estudantes/guia/assistencia-estudantil/",
+                "url": "https://portal.ifmg.edu.br/estudantes/guia/assistencia-estudantil/",
+                "title": "Assistência Estudantil"
         }
 ];
 
@@ -740,6 +770,86 @@
                 "source": "https://portal.ifmg.edu.br/servidores/mais/",
                 "target": "https://portal.ifmg.edu.br/servidores/cis-comissao-interna-de-supervisao-da-carreira-tae/",
                 "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/assistencia-estudantil/",
+                "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/comunidade/hubs-de-inovacao-do-ifmg/",
+                "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/comunidade/empresas-juniores-e-empreendedorismo/",
+                "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/",
+                "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://mais.ifmg.edu.br/maisifmg/",
+                "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/conselho-superior-consup/",
+                "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/conselho-superior-consup/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/mais/",
+                "target": "https://portal.ifmg.edu.br/acesso-a-informacao/participacao-social/conselho-superior-consup/",
+                "type": "link"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/guia/empresas-juniores-e-empreendedorismo/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/guia/hubs-de-inovacao-do-ifmg/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/guia/ifmg/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/-informacoes-para-estudantes/",
+                "target": "https://portal.ifmg.edu.br/estudantes/guia/assistencia-estudantil/",
+                "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/guia/empresas-juniores-e-empreendedorismo/",
+                "target": "https://portal.ifmg.edu.br/comunidade/empresas-juniores-e-empreendedorismo/",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/guia/hubs-de-inovacao-do-ifmg/",
+                "target": "https://portal.ifmg.edu.br/comunidade/hubs-de-inovacao-do-ifmg/",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/guia/ifmg/",
+                "target": "https://portal.ifmg.edu.br/comunidade/-ifmg-cursos-livres-e-gratuitos/",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/guia/assistencia-estudantil/",
+                "target": "https://portal.ifmg.edu.br/estudantes/assistencia-estudantil/",
+                "type": "redireciona"
         }
 ];
 
