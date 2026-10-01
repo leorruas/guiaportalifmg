@@ -114,8 +114,8 @@ const metadadosCanonicos = {
     "04 - Sou editor/07 - Sou editor e quero criar um link": { id: "task-link-create", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/08 - Sou editor e quero criar um programa": { id: "task-program-create", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/09 - Sou editor e quero criar um projeto": { id: "task-project-create", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/10 - Sou editor e quero publicar uma notícia": { id: "task-news-create", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos": { id: "task-selection-create", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/10 - Sou editor e quero publicar uma notícia": { id: "task-news-create", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "10 - Sou editor e quero criar e preparar uma notícia" },
+    "04 - Sou editor/11 - Sou editor e quero publicar um processo seletivo e seus documentos": { id: "task-selection-create", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "11 - Sou editor e quero criar e atualizar um processo seletivo e seus documentos" },
     "04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem": { id: "task-image-manage", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento": { id: "task-document-manage", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções": { id: "task-collection-use", tipo: "tarefa", perfilMinimo: "editor" },
@@ -326,13 +326,14 @@ async function carregarTodosOsArtigos() {
             const partes = caminhoDecodificado.replace("./", "").split("/");
             const categoria = item.categoria || (partes.length > 1 ? partes[0] : "Guia do Portal");
 
+            const metadados = obterMetadadosDoArtigo(item.sourcePath, categoria);
             return {
-                titulo: item.titulo,
+                titulo: metadados.tituloCanonico || item.titulo,
                 path: item.path,
                 sourcePath: item.sourcePath,
                 categoria: categoria,
                 conteudo: texto,
-                metadados: obterMetadadosDoArtigo(item.sourcePath, categoria)
+                metadados
             };
         } catch (e) {
             console.error(`Erro ao carregar ${item.path}:`, e);
