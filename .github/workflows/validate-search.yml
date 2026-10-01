@@ -1,0 +1,40 @@
+name: Validar busca do guia
+
+on:
+  pull_request:
+    paths:
+      - "04 - Governança & Manuais/guia-do-portal/**"
+      - "data/guide-index.json"
+      - "data/guide-metadata.js"
+      - "data/search-regression.json"
+      - "search.js"
+      - "script.js"
+      - "scripts/test-search-regression.mjs"
+      - ".github/workflows/validate-search.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "04 - Governança & Manuais/guia-do-portal/**"
+      - "data/guide-index.json"
+      - "data/guide-metadata.js"
+      - "data/search-regression.json"
+      - "search.js"
+      - "script.js"
+      - "scripts/test-search-regression.mjs"
+      - ".github/workflows/validate-search.yml"
+
+jobs:
+  search-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validar ranking da busca
+        run: node scripts/test-search-regression.mjs
