@@ -14,7 +14,7 @@ Antes de começar, confirme que a página pertence à estrutura institucional co
 
 4. Preencha o título, a imagem de destaque e os dados de endereço e contato confirmados pelo campus.
 5. Se houver destaques, complete todos os itens obrigatórios com imagem, título e destino revisado.
-6. Crie ou confira a estrutura inicial de páginas, como informações do campus, ensino, extensão, pesquisa, estudantes, servidores, contatos e notícias, conforme a arquitetura definida para o IFMG.
+6. Confira a estrutura inicial de páginas prevista para o campus, como informações institucionais, ensino, extensão, pesquisa, estudantes, servidores e contatos. Quando uma estrutura exigir uma tarefa administrativa específica, como criar uma pasta de notícias, encaminhe essa etapa ao administrador.
 7. Pré-visualize, valide com a área responsável e publique no seu escopo.
 
 ## Como editar sem desorganizar
@@ -25,4 +25,4 @@ Atualize primeiro os dados objetivos: endereço, telefone, redes oficiais e imag
 
 **Limite de permissão:** se o campus, a página-pai ou as coleções necessárias não estiverem no seu grupo, não crie uma cópia em outro local. Peça ao administrador responsável para conceder ou ajustar o acesso.
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/01 - Sou moderador e quero executar as tarefas de editor|Voltar às tarefas cumulativas do moderador]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos|Voltar ao papel de moderador]]
