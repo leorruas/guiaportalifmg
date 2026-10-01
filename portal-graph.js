@@ -121,6 +121,77 @@
         return Array.from({ length: quantidade }, (_, indice) => inicio + (passo * indice));
     }
 
+    function aplicarLayoutFan(hubId, filhosDoHub, posicoes, angulos) {
+        const hub = posicoes.get(hubId);
+        if (!hub || !filhosDoHub.length) return;
+
+        const direcaoExterna = Math.atan2(hub.y, hub.x);
+        const raioLocal = filhosDoHub.length <= 5 ? 300 : 340;
+        const largura = Math.min(1.65, 0.34 * Math.max(filhosDoHub.length - 1, 1));
+        const direcoes = angulosNoSetor(filhosDoHub.length, direcaoExterna, largura);
+
+        filhosDoHub.forEach((id, indice) => {
+            const angulo = direcoes[indice];
+            const posicao = {
+                x: hub.x + (Math.cos(angulo) * raioLocal),
+                y: hub.y + (Math.sin(angulo) * raioLocal)
+            };
+
+            posicoes.set(id, posicao);
+            angulos.set(id, Math.atan2(posicao.y, posicao.x));
+        });
+    }
+
+    function aplicarLayoutStack(hubId, filhosDoHub, posicoes, angulos) {
+        const hub = posicoes.get(hubId);
+        if (!hub || !filhosDoHub.length) return;
+
+        const direcaoExterna = Math.atan2(hub.y, hub.x);
+        const ux = Math.cos(direcaoExterna);
+        const uy = Math.sin(direcaoExterna);
+        const vx = -uy;
+        const vy = ux;
+        const colunas = filhosDoHub.length === 1 ? 1 : 2;
+        const espacamentoColuna = 210;
+        const espacamentoLinha = 128;
+        const avancarInicial = 190;
+
+        filhosDoHub.forEach((id, indice) => {
+            const linha = Math.floor(indice / colunas);
+            const coluna = indice % colunas;
+            const deslocamentoLateral = colunas === 1
+                ? 0
+                : (coluna === 0 ? -(espacamentoColuna / 2) : (espacamentoColuna / 2));
+            const avancar = avancarInicial + (linha * espacamentoLinha);
+
+            const posicao = {
+                x: hub.x + (ux * avancar) + (vx * deslocamentoLateral),
+                y: hub.y + (uy * avancar) + (vy * deslocamentoLateral)
+            };
+
+            posicoes.set(id, posicao);
+            angulos.set(id, Math.atan2(posicao.y, posicao.x));
+        });
+    }
+
+    function aplicarLayoutsEspeciais(data, filhos, posicoes, angulos) {
+        data.nodes.forEach(node => {
+            if (!node.hubLayout) return;
+
+            const filhosDoHub = filhos.get(node.id) || [];
+            if (!filhosDoHub.length) return;
+
+            if (node.hubLayout === "fan") {
+                aplicarLayoutFan(node.id, filhosDoHub, posicoes, angulos);
+                return;
+            }
+
+            if (node.hubLayout === "stack") {
+                aplicarLayoutStack(node.id, filhosDoHub, posicoes, angulos);
+            }
+        });
+    }
+
     function calcularLayoutSetorial(data) {
         const raiz = "https://portal.ifmg.edu.br/";
         const filhos = filhosEstruturais(data);
@@ -244,6 +315,8 @@
                 });
         }
 
+        aplicarLayoutsEspeciais(data, filhos, posicoes, angulos);
+
         return { posicoes, profundidades, ramoPorId };
     }
 
@@ -268,25 +341,39 @@
             const bg = estiloRaiz.getPropertyValue("--bg").trim() || "#101010";
 
             const layoutSetorial = calcularLayoutSetorial(data);
+            const nodeDataById = new Map(data.nodes.map(node => [node.id, node]));
             const elements = [
                 ...data.nodes.map(node => {
                     const profundidade = layoutSetorial.profundidades.get(node.id) ?? 2;
+                    const classes = [
+                        profundidade <= 1 ? "portal-graph-major" : "",
+                        node.hubLayout ? "portal-graph-hub" : ""
+                    ].filter(Boolean).join(" ");
+
                     return {
                         data: {
                             ...node,
                             branch: ramoDaUrl(node.url),
                             graphDepth: profundidade
                         },
-                        classes: profundidade <= 1 ? "portal-graph-major" : "",
+                        classes,
                         position: layoutSetorial.posicoes.get(node.id) || { x: 0, y: 0 }
                     };
                 }),
-                ...data.edges.map((edge, index) => ({
-                    data: {
-                        id: `portal-edge-${index + 1}`,
-                        ...edge
-                    }
-                }))
+                ...data.edges.map((edge, index) => {
+                    const origem = nodeDataById.get(edge.source);
+                    const classes = origem?.hubLayout && edge.type !== "estrutura"
+                        ? "portal-graph-hub-secondary"
+                        : "";
+
+                    return {
+                        data: {
+                            id: `portal-edge-${index + 1}`,
+                            ...edge
+                        },
+                        classes
+                    };
+                })
             ];
 
             const cy = cytoscape({
@@ -334,6 +421,17 @@
                         }
                     },
                     {
+                        selector: ".portal-graph-hub",
+                        style: {
+                            "width": 48,
+                            "height": 48,
+                            "border-width": 3,
+                            "border-color": accent,
+                            "font-weight": 700,
+                            "min-zoomed-font-size": 0
+                        }
+                    },
+                    {
                         selector: 'node[id = "https://portal.ifmg.edu.br/"]',
                         style: {
                             "width": 54,
@@ -377,6 +475,28 @@
                         }
                     },
                     {
+                        selector: ".portal-graph-hub-secondary",
+                        style: {
+                            "opacity": 0.025,
+                            "line-style": "dotted",
+                            "line-color": accent,
+                            "target-arrow-shape": "triangle",
+                            "target-arrow-color": accent,
+                            "arrow-scale": 0.55,
+                            "curve-style": "unbundled-bezier",
+                            "control-point-distances": 54,
+                            "control-point-weights": 0.5
+                        }
+                    },
+                    {
+                        selector: ".portal-graph-secondary-focus",
+                        style: {
+                            "opacity": 0.88,
+                            "width": 2,
+                            "arrow-scale": 0.8
+                        }
+                    },
+                    {
                         selector: ".portal-graph-dimmed",
                         style: { "opacity": 0.12 }
                     },
@@ -411,12 +531,16 @@
             cy.on("tap", "node", event => {
                 const node = event.target;
                 mostrarDetalhes(ui.details, node.data());
+
                 cy.edges('[type = "redireciona"]').removeClass("portal-graph-redirect-focus");
+                cy.edges(".portal-graph-hub-secondary").removeClass("portal-graph-secondary-focus");
+
                 node.connectedEdges('[type = "redireciona"]').addClass("portal-graph-redirect-focus");
+                node.connectedEdges(".portal-graph-hub-secondary").addClass("portal-graph-secondary-focus");
             });
 
             ui.recenter.addEventListener("click", () => {
-                cy.elements().removeClass("portal-graph-dimmed portal-graph-match portal-graph-redirect-focus");
+                cy.elements().removeClass("portal-graph-dimmed portal-graph-match portal-graph-redirect-focus portal-graph-secondary-focus");
                 ui.input.value = "";
                 rodarLayout();
             });
