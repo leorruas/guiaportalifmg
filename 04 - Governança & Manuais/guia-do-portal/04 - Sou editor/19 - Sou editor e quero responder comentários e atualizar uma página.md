@@ -1,28 +1,35 @@
-# Sou editor e quero responder comentários e atualizar uma página
+# Sou editor e quero responder comentários e corrigir uma página
 
-Uma página devolvida para ajuste deve ser corrigida no próprio fluxo de trabalho. Use comentários para entender e registrar o que foi solicitado.
+Use esta tarefa quando uma página tiver sido devolvida com uma pendência. O objetivo é corrigir o ponto indicado, registrar o que mudou e devolver a nova versão ao fluxo de moderação.
 
-Um comentário é um bilhete preso exatamente no ponto que precisa de atenção. Em vez de tentar lembrar uma orientação recebida por outra mensagem, abra o bilhete, corrija aquele trecho e deixe registrado o que mudou.
+Um comentário funciona como uma orientação presa ao campo ou bloco que precisa de atenção. Faça a correção no próprio fluxo, em vez de depender de mensagens paralelas.
 
-## Como responder e corrigir
+## Responder e corrigir
 
-1. Abra a página em edição.
-2. Clique no ícone de **Comentários** para ativar o modo de comentários.
+1. Abra a página devolvida em edição.
+2. Ative o modo de **Comentários**.
 
 ![[imagens/manual-ifrn/image2.png|Ícone para abrir comentários no Wagtail]]
 
-3. Abra o comentário associado ao campo ou bloco indicado pelo moderador.
-4. Corrija a informação na página e responda ao comentário se precisar esclarecer a alteração.
-5. Resolva o comentário quando a pendência estiver atendida.
-6. Salve a página: comentários e respostas só são preservados com o salvamento.
-7. Pré-visualize e envie a página novamente para moderação.
+3. Abra o comentário associado ao campo ou bloco indicado.
+4. Leia a pendência e confirme o resultado esperado antes de alterar o conteúdo.
+5. Faça a correção na página.
+6. Responda ao comentário quando isso ajudar a explicar o que foi alterado.
+7. Resolva o comentário quando a pendência estiver atendida.
+8. Salve a página para registrar conteúdo, comentário e resposta.
 
-## Consultar mudanças anteriores
+**Exemplo de resposta útil:** “Atualizei o prazo de inscrição para 18 de agosto e revisei o link do formulário.”
 
-Use o **Histórico** da página para conferir alterações anteriores e entender o que mudou. Antes de substituir um documento ou imagem, confira onde ele é utilizado: a substituição pode atualizar várias páginas ao mesmo tempo.
+## Conferir antes de reenviar
 
-**Como saber que resolveu:** o comentário foi respondido ou marcado como resolvido, a alteração está salva e a página foi reenviada para quem solicitou a revisão.
+Pré-visualize a página e confirme se a correção resolveu a pendência sem criar um novo problema em outro ponto.
 
-**Exemplo de resposta útil:** “Atualizei o prazo de inscrição para 18 de agosto e revisei o link do formulário.” Assim, o moderador sabe o que foi corrigido sem procurar a mudança às cegas.
+Se precisar verificar o estado ou consultar versões anteriores, use:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Voltar a enviar para moderação]]
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Verificar e acompanhar uma página]]
+
+Quando estiver pronta, encaminhe novamente:
+
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar conteúdo para moderação]]
+
+**Como saber que resolveu:** a correção está salva, o comentário foi respondido ou resolvido e a nova versão está pronta para voltar à moderação.
