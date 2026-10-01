@@ -250,6 +250,12 @@
                 "id": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
                 "url": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
                 "title": "Sugestões, Críticas e Elogios"
+        },
+        {
+                "id": "https://www.ifmg.edu.br/portal/ouvidoria",
+                "url": "https://www.ifmg.edu.br/portal/ouvidoria",
+                "title": "Ouvidoria",
+                "description": "Destino comum para sugestões, críticas e elogios."
         }
 ];
 
@@ -498,6 +504,21 @@
                 "source": "https://portal.ifmg.edu.br/acesso-a-informacao/",
                 "target": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
                 "type": "estrutura"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/estudantes/sugestoes-criticas-e-elogios/",
+                "target": "https://www.ifmg.edu.br/portal/ouvidoria",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/servidores/sugestoes-criticas-e-elogios/",
+                "target": "https://www.ifmg.edu.br/portal/ouvidoria",
+                "type": "redireciona"
+        },
+        {
+                "source": "https://portal.ifmg.edu.br/acesso-a-informacao/sugestoes-criticas-e-elogios/",
+                "target": "https://www.ifmg.edu.br/portal/ouvidoria",
+                "type": "redireciona"
         }
 ];
 
