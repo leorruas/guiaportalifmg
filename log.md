@@ -498,3 +498,10 @@
 - O mapa passa de 25 para `36` páginas e de 24 para `35` relações.
 - Atualizada a versão de cache de `data/portal-graph.js` em `index.html`.
 
+## 2026-10-01 — Ramo Acesso à Informação no mapa do Portal
+
+- Adicionadas 14 páginas como filhas diretas de `https://portal.ifmg.edu.br/acesso-a-informacao/`: Institucional, Ações & Programas, Participação Social, Auditorias, Convênios e Transferências, Receitas & Despesas, Licitações & Contratos, Servidores, Informações Classificadas, Serviço de Informação ao Cidadão (SIC), Dados Abertos, Sanções Administrativas, Ferramentas e Aspectos Tecnológicos e Sugestões, Críticas e Elogios.
+- Registradas 14 novas relações do tipo `estrutura`, todas partindo de Acesso à Informação.
+- O mapa passa de 36 para `50` páginas e de 35 para `49` relações.
+- Atualizada a versão de cache de `data/portal-graph.js` em `index.html`.
+
