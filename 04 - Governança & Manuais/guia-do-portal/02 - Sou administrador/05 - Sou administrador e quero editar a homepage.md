@@ -27,4 +27,3 @@ Abra a página inicial como visitante. Você deve conseguir identificar o assunt
 
 **Limite de permissão:** editor, moderador e gestor podem sinalizar uma necessidade de mudança, mas não alteram a homepage. Encaminhe a demanda a um administrador com o texto, o destino e a data de retirada, se houver.
 
-[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações|Voltar ao papel de administrador]]
