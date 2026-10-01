@@ -230,3 +230,13 @@
 - Preservados os nomes físicos dos arquivos e suas rotas; a interface usa os novos títulos via `tituloCanonico`.
 - Validados wikilinks, anexos, títulos canônicos e sintaxe do `script.js`.
 
+## 2026-10-01 — Consolidação editorial: visões de papel e herança
+
+- Consolidado `04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos.md` como visão única do papel de editor, corrigindo a regra de que editor usa coleções autorizadas e não cria coleções nem define permissões.
+- Reduzido `03 - Sou moderador/01 - Sou moderador e quero executar as tarefas de editor.md` a uma página de encaminhamento para a visão de moderador; a herança de tarefas passa a depender da arquitetura do guia, não de um procedimento duplicado.
+- Mantido `03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos.md` como visão canônica do moderador, com atualização do atalho para a tarefa canônica de pendências e correções.
+- Consolidado `02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações.md` como visão única do administrador, destacando apenas tarefas administrativas próprias e a herança de editor e moderador.
+- Reduzido `02 - Sou administrador/02 - Sou administrador e quero executar as tarefas de editor e moderador.md` a uma página de encaminhamento para a visão de administrador.
+- Atualizado `00 - Comece aqui/01 - Como utilizar este guia.md` para explicar a hierarquia cumulativa `editor → moderador → administrador`, manter gestor fora dessa cadeia e substituir atalhos para E21/E22 já absorvidos por tarefas canônicas atuais.
+- Validados wikilinks, anexos, ausência de referências a páginas absorvidas nessas portas de entrada, coerência do mapa de papéis e sintaxe atual do `script.js`.
+
