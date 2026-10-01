@@ -1,6 +1,6 @@
-# Sou moderador e quero revisar e decidir uma publicação
+# Sou moderador e quero revisar um conteúdo e decidir se ele pode seguir para publicação
 
-Use esta tarefa para decidir se um conteúdo está pronto ou se precisa voltar para ajuste. A revisão editorial é uma decisão diferente da ação técnica de publicar, despublicar ou agendar uma página.
+Use esta tarefa quando um conteúdo chega para moderação. O objetivo é decidir se ele pode seguir para publicação ou se precisa voltar ao editor com uma correção objetiva. Essa decisão editorial é diferente da ação técnica de colocar a página no ar.
 
 A pergunta central é: **esta página já permite que uma pessoa de fora encontre, entenda e use a informação sem depender de uma explicação adicional?**
 
@@ -13,7 +13,7 @@ A pergunta central é: **esta página já permite que uma pessoa de fora encontr
 
 3. Confirme fonte, responsável, vigência, clareza, acessibilidade, links, documentos, imagens, metadados e próxima ação.
 4. Verifique se documentos e imagens estão na versão e na coleção corretas.
-5. Quando houver uma pendência específica, registre-a no fluxo de comentários. Consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Registrar pendências e acompanhar correções]].
+5. Quando houver uma pendência específica, registre-a no fluxo de comentários. Consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico|Registrar correções e acompanhar uma página devolvida]].
 6. Escolha a ação disponível no fluxo para **aprovar** a entrega ou **devolver para ajuste**.
 
 ![[imagens/manual-ifrn/image14.png|Estado da página no fluxo de moderação]]
@@ -39,6 +39,6 @@ Evite comentários genéricos como “rever texto”, “melhorar” ou “corri
 
 Depois da decisão editorial, quando for necessário controlar o estado público da página, use:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, despublicar ou agendar uma página]]
+[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, agendar ou retirar uma página do ar]]
 
 **Resultado esperado:** a decisão fica registrada e, quando a página é devolvida, a pessoa responsável sabe exatamente o que precisa corrigir.
