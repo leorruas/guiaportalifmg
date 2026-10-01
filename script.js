@@ -121,15 +121,15 @@ const metadadosCanonicos = {
     "04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções": { id: "task-collection-use", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos": { id: "task-blocks-use", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página": { id: "task-page-search-menu", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página": { id: "task-page-check", tipo: "tarefa", perfilMinimo: "editor" },
-    "04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página": { id: "task-comments-respond", tipo: "tarefa", perfilMinimo: "editor" },
+    "04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página": { id: "task-page-check", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "18 - Sou editor e quero verificar e acompanhar uma página" },
+    "04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página": { id: "task-comments-respond", tipo: "tarefa", perfilMinimo: "editor", tituloCanonico: "19 - Sou editor e quero responder comentários e corrigir uma página" },
     "04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação": { id: "task-submit-moderation", tipo: "tarefa", perfilMinimo: "editor" },
     "04 - Sou editor/24 - Sou editor e quero criar ou editar uma página": { id: "task-page-create-edit", tipo: "tarefa", perfilMinimo: "editor" },
 
     "03 - Sou moderador/03 - Sou moderador e quero criar ou editar um campus": { id: "task-campus-manage", tipo: "tarefa", perfilMinimo: "moderador" },
     "03 - Sou moderador/04 - Sou moderador e quero criar uma pasta de processos seletivos": { id: "task-selection-folder-create", tipo: "tarefa", perfilMinimo: "moderador" },
     "03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação": { id: "task-publication-review", tipo: "tarefa", perfilMinimo: "moderador" },
-    "03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico": { id: "task-review-comments-history", tipo: "tarefa", perfilMinimo: "moderador" },
+    "03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico": { id: "task-review-comments-history", tipo: "tarefa", perfilMinimo: "moderador", tituloCanonico: "10 - Sou moderador e quero registrar pendências e acompanhar correções" },
     "03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página": { id: "task-publication-state", tipo: "tarefa", perfilMinimo: "moderador" },
 
     "02 - Sou administrador/05 - Sou administrador e quero editar a homepage": { id: "task-homepage-edit", tipo: "tarefa", perfilMinimo: "administrador" },
