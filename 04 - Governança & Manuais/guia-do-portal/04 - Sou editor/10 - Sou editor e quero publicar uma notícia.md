@@ -1,6 +1,6 @@
-# Sou editor e quero publicar uma notícia
+# Sou editor e quero criar e preparar uma notícia
 
-Publique uma notícia na pasta de notícias correta do campus, setor ou área. Antes de criar, confirme se a informação é realmente uma notícia e não uma página estável, comunicado, edital ou documento.
+Crie e prepare uma notícia na pasta correta do campus, setor ou área. Como editor, você organiza o conteúdo e o envia para moderação; a decisão de publicação pertence ao fluxo de moderação. Antes de criar, confirme se a informação é realmente uma notícia e não uma página estável, comunicado, edital ou documento.
 
 Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela ajuda a pessoa a entender o fato e decidir se precisa agir. Informações que continuam válidas por muito tempo, como um serviço ou um contato, devem ficar em uma página institucional — não escondidas em uma notícia antiga.
 
@@ -25,7 +25,7 @@ Evite títulos, chapéus, subtítulos e etiquetas inteiros em caixa alta, exceto
 7. Pré-visualize em computador e em dispositivos menores, quando a opção estiver disponível.
 8. Envie para moderação.
 
-**Resultado esperado:** a notícia aparece na pasta certa, explica o fato sem depender de contexto interno e chega à moderação com seus links e documentos verificados.
+**Resultado esperado:** a notícia fica preparada na pasta certa, explica o fato sem depender de contexto interno e chega à moderação com seus links e documentos verificados.
 
 ## Antes de enviar
 
