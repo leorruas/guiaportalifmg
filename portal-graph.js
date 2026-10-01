@@ -181,6 +181,17 @@
                         }
                     },
                     {
+                        selector: 'edge[type = "redireciona"]',
+                        style: {
+                            "line-style": "dashed",
+                            "line-color": accent,
+                            "opacity": 0.8,
+                            "target-arrow-shape": "triangle",
+                            "target-arrow-color": accent,
+                            "arrow-scale": 0.75
+                        }
+                    },
+                    {
                         selector: ".portal-graph-dimmed",
                         style: { "opacity": 0.12 }
                     },
