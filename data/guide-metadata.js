@@ -1,3 +1,4 @@
+(() => {
 // Fonte única de metadados da arquitetura do Guia do Portal IFMG.
 // Este arquivo contém dados; comportamento e renderização permanecem em script.js.
 // Novos aliases devem representar formas reais de procurar a tarefa, não repetir o corpo do artigo.
@@ -73,3 +74,5 @@ window.GuiaMetadata = Object.freeze({
     perfilPorCategoria,
     metadadosCanonicos
 });
+
+})();
