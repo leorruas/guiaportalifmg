@@ -251,3 +251,13 @@
 - Mantidos A07, A08 e A09 como tarefas administrativas canônicas distintas: grupos/permissões, coleções/acessos e cadastros auxiliares.
 - Validados wikilinks, anexos, ausência de referências a páginas absorvidas nesse conjunto, metadados canônicos e sintaxe atual do `script.js`.
 
+## 2026-10-01 — Metadados canônicos e aliases de busca
+
+- Criado `data/guide-metadata.js` como fonte única do modelo canônico do guia, retirando de `script.js` os mapas de hierarquia, categoria/perfil e metadados explícitos dos artigos.
+- Estruturados nos metadados os campos `id`, `tipo`, `perfilMinimo`, `estado`, `destino`, `tituloCanonico` e `aliases`, conforme aplicável.
+- Mantidos em `script.js` apenas os comportamentos que consomem esses dados, como herança de perfil, filtro de páginas absorvidas e renderização.
+- Atualizado `index.html` para carregar `data/guide-metadata.js` antes de `script.js`, com nova versão de cache.
+- A busca passa a considerar `aliases` no texto indexável sem alterar ainda o algoritmo de ranking. Foram adicionadas formas alternativas de procura como `pdf`, `tirar do ar`, `home`, `permissão`, `notícia` e `edital`.
+- Corrigido o alias singular `permissão` após teste de regressão mostrar que apenas a forma plural não cobria a consulta esperada.
+- Validados sintaxe dos dois arquivos JavaScript, ordem de carregamento, ausência do modelo canônico duplicado em `script.js`, IDs sem duplicação, aliases em formato consistente e consultas básicas de regressão.
+
