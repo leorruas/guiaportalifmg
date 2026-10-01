@@ -19,4 +19,3 @@ Use uma página institucional para uma informação que continua útil ao longo 
 
 **Limite de permissão:** você só cria páginas onde seu grupo tem permissão. Para publicar, aguarde a revisão de moderador ou administrador.
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero escolher o tipo de página|Voltar a escolher o tipo de página]]
