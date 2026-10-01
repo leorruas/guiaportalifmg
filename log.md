@@ -354,3 +354,10 @@
 - Atualizado `index.html` para carregar os scripts na ordem `guide-metadata.js → search.js → navigation.js → script.js`, com incremento do cache do script principal para `indice-contextual-v3` e preservação da linha de trabalho concorrente do índice contextual.
 - Validadas sintaxe e ordem de carregamento e executados testes de rota/resolução para os 59 artigos do índice, usando caminho completo, caminho relativo, nome de arquivo e título exibido para cada um.
 
+## 2026-10-01 — Ajustes de contraste e navegação sequencial
+
+- Corrigida a navegação entre artigos para usar uma única linha superior e uma linha inferior contínua na grade, evitando a quebra visual quando existe apenas “próximo artigo”.
+- Removida a mudança de fundo no hover e foco do campo de busca da navbar; o campo permanece transparente e mantém texto e placeholder legíveis.
+- Corrigido o contraste dos filtros de perfil da busca: o estado ativo e o hover usam a cor de destaque no fundo e a cor de fundo do tema no texto, inclusive no tema claro.
+- Em telas estreitas, o marcador vazio usado para posicionar um único “próximo artigo” deixa de ocupar uma linha própria.
+- Atualizada a versão de cache de `style.css` em `index.html`.
