@@ -15,15 +15,20 @@ Busca e menu resolvem problemas diferentes: a busca ajuda alguém que já sabe m
 
 **Exemplo:** prefira “Inscrição em estágio” a “Procedimento 04/2026”. O primeiro título descreve a tarefa; o segundo depende de a pessoa já conhecer uma classificação interna.
 
-## Incluir em um menu
+## Fazer uma página ou Link aparecer no menu
 
-1. Na mesma aba, localize a opção de exibição em menus.
-2. Marque **Exibir nos menus** somente quando a página deve funcionar como uma entrada de navegação.
+Uma página ou um **Link de redirecionamento não aparece automaticamente nos menus apenas porque existe na árvore do Portal**. Quando esse item deve fazer parte da navegação:
 
-![[imagens/guias-contextuais/exibir-nos-menus.png|Aba Promover: opção Exibir nos menus]]
+1. Abra a página ou Link em edição e selecione **Promover**.
+2. Vá até **Para menus de sites**.
+3. Marque **Exibir nos menus**.
 
-3. Confirme se as páginas-pai necessárias também fazem parte da navegação. Uma página pode estar marcada para aparecer no menu e continuar difícil de encontrar se o caminho até ela estiver incompleto.
-4. Pré-visualize o portal e confira se o rótulo e a posição ajudam a entender o caminho.
+![[imagens/guias-contextuais/exibir-nos-menus.png|Aba Promover, seção Para menus de sites, com a opção Exibir nos menus marcada]]
+
+4. Confirme se as páginas-pai necessárias também aparecem na navegação. Um item pode estar com **Exibir nos menus** marcado e ainda ficar difícil de alcançar se o caminho até ele estiver incompleto.
+5. Confira o Portal e verifique se o rótulo e a posição ajudam a entender o caminho.
+
+**Regra geral:** se uma página ou Link precisa aparecer em um menu gerado automaticamente pelo Portal, marque **Promover → Para menus de sites → Exibir nos menus**. Se não deve aparecer na navegação, deixe a opção desmarcada.
 
 Não use o menu para compensar uma arquitetura confusa. Se a página está na seção errada ou precisa mudar de posição entre páginas irmãs, trate primeiro a estrutura.
 
