@@ -36,7 +36,7 @@
 
     function corDoRamo(ramo, raiz) {
         if (ramo === "home") return raiz;
-        const paleta = ["#67b879", "#6fa8dc", "#d39b5f", "#a98ad4", "#d97979", "#6eb7b2"];
+        const paleta = ["#2f6f3c", "#3b8048", "#489156", "#57a265", "#68b475", "#7cc586"];
         return paleta[Math.abs(hash(ramo)) % paleta.length];
     }
 
