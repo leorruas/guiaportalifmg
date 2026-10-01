@@ -1622,7 +1622,19 @@ html body #artigo-corpo h3::before {
 .perfil-cabecalho p { margin: 0; color: var(--muted); font-size: .92em; line-height: 1.45; }
 .perfil-cabecalho .perfil-rotulo { color: var(--accent-blue); font-size: .68em; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 
-.perfil-acoes { display: grid; gap: 10px; }
+.perfil-acoes { display: grid; gap: 26px; }
+.perfil-grupo { display: grid; gap: 10px; }
+.perfil-grupo-titulo {
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--accent-blue-alpha-30);
+    color: var(--muted);
+    font-size: .72em;
+    font-weight: 650;
+    letter-spacing: .04em;
+    text-transform: lowercase;
+}
+.perfil-grupo-lista { display: grid; gap: 10px; }
 .perfil-acao {
     display: grid;
     grid-template-columns: 38px 1fr auto;
