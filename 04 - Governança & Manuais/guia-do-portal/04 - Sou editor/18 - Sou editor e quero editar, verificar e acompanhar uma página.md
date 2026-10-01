@@ -1,43 +1,36 @@
 # Sou editor e quero editar, verificar e acompanhar uma página
 
-Editar não significa publicar na hora. Pense na página como um documento em revisão: você prepara a nova versão em rascunho, confere como ela ficará e só então a envia para quem pode aprová-la. O status mostra em qual ponto desse caminho a página está.
+Use esta página para conferir uma alteração depois que o conteúdo já foi criado ou editado. O procedimento de edição fica em uma referência própria; aqui o foco é verificar a página e acompanhar seu estado no fluxo.
 
-## Editar uma página existente
-
-1. Encontre a página em **Páginas** ou **Busca**.
-2. Abra **Editar**.
-3. Atualize os campos necessários e salve como rascunho durante o trabalho.
-4. Use o menu de ações para copiar, mover ou remover apenas quando a permissão e o contexto permitirem.
-
-**Regra prática:** se você só precisa corrigir a informação, edite. Mova ou remova apenas quando tiver certeza de que o público deve encontrá-la em outro lugar ou não deve mais encontrá-la.
+[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página|Criar ou editar uma página]]
 
 ## Status, pré-visualização e verificações
 
-1. Abra **Status** para conferir a situação da página e, quando disponível, definir publicação ou expiração programada.
+1. Abra **Status** para conferir a situação atual da página e identificar em que ponto do fluxo ela está.
 
-![[imagens/manual-ifrn/image16.png|Status da página e acesso ao agendamento]]
+![[imagens/manual-ifrn/image16.png|Status da página]]
 
-Se precisar programar, escolha a ação de cronograma e informe a data confirmada.
-
-![[imagens/manual-ifrn/image19.png|Formulário para programar publicação ou expiração]]
-
-2. Use **Pré-visualizar** para conferir a página em desktop, tablet ou celular.
+2. Use **Pré-visualizar** para conferir como a página será apresentada.
 
 ![[imagens/manual-ifrn/image36.png|Pré-visualização da página em diferentes dispositivos]]
 
-3. Abra **Verificações** e corrija os problemas apontados antes de enviar para moderação.
+3. Abra **Verificações** e corrija os problemas apontados antes de enviar a página para moderação.
 
 ![[imagens/manual-ifrn/image41.png|Verificações disponíveis antes da publicação]]
 
-## Comentários, histórico e fluxo de moderação
+4. Abra **Histórico** quando precisar entender alterações anteriores ou confirmar o que mudou.
 
-1. Ative **Comentários** para ler ou responder uma solicitação de ajuste no campo ou bloco indicado.
-2. Salve a página para registrar comentários e respostas.
-3. Abra **Histórico** para consultar alterações anteriores.
-4. Envie para moderação quando a página estiver pronta; acompanhe o estado do fluxo e corrija as pendências quando ela for devolvida.
+## Acompanhar o fluxo
+
+Depois do envio para moderação, acompanhe o estado da página. Se ela for devolvida, consulte os comentários e faça as correções no próprio fluxo.
 
 ![[imagens/manual-ifrn/image14.png|Estado da página no fluxo de moderação]]
 
-**Resultado esperado:** a alteração fica registrada, foi conferida antes de ir ao ar e tem um próximo responsável claro quando ainda precisar de revisão.
+Para responder uma pendência, use [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Responder comentários e corrigir uma página]].
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Voltar a enviar conteúdo para moderação]]
+Para encaminhar uma versão pronta, use [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar conteúdo para moderação]].
+
+> [!NOTE]
+> Publicar, despublicar e programar a publicação são tratados como ações de moderação neste guia. Consulte [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, despublicar ou agendar uma página]] quando seu perfil tiver essa responsabilidade.
+
+**Como saber que terminou:** você identificou o estado atual da página, conferiu a versão apresentada ao público e sabe qual é o próximo responsável pelo fluxo.
