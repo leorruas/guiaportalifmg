@@ -401,3 +401,16 @@
 - A execução real do GitHub Actions concluiu com sucesso: `20/20` consultas com o resultado esperado no topo, avaliando os `59` artigos do índice publicado.
 - Atualizadas somente as versões de cache de `search.js` e `script.js` em `index.html`, preservando as linhas concorrentes `perfil-visao`, `navigation-module` e `titulo-unico`.
 
+## 2026-10-01 — Fechamento da lacuna editorial de Evento
+
+- Confirmado pela auditoria existente que apenas `Evento` era uma lacuna de procedimento; `Comunicado` não é um tipo de página do Portal e permanece tratado em E03 como finalidade editorial encaminhada para Notícia, Página institucional ou atualização de conteúdo existente.
+- Criado `04 - Sou editor/23 - Sou editor e quero criar um evento.md` como tarefa canônica `task-event-create`, ocupando o número livre 23 da sequência de editor.
+- O procedimento de Evento reutiliza a mecânica canônica de criação/edição de páginas e cobre apenas decisões específicas: quando usar Evento, informações mínimas para o público, confirmação da fonte, tratamento de data/local/participação, revisão e envio para moderação.
+- O texto evita inferir nomes ou existência de campos específicos do Wagtail: orienta usar os campos efetivamente apresentados pelo formulário e solicitar confirmação quando informações essenciais estiverem ausentes ou conflitantes.
+- Atualizado E03 para apontar diretamente ao novo procedimento e removida a indicação de que Evento não possuía orientação própria.
+- Movido o alias `evento` de `task-content-type-choose` para `task-event-create`; `comunicado` permanece como alias da tarefa de escolher o tipo de conteúdo.
+- Atualizados `data/guide-metadata.js`, `data/guide-index.json` e `data/search-regression.json`; o corpus agora inclui `evento`, `criar evento` e `comunicado`.
+- Validada a integridade dos wikilinks modificados e a correspondência exata do índice com a árvore do repositório.
+- GitHub Actions confirmou `guide-index OK: 60 artigos` e `23/23` consultas de busca com o resultado esperado no topo, avaliando os `60` artigos publicados.
+- Atualizada a versão de cache de `guide-metadata.js` em `index.html` para disponibilizar imediatamente o novo metadado de Evento.
+
