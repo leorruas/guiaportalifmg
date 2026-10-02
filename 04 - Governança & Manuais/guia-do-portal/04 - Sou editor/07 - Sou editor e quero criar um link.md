@@ -30,7 +30,7 @@ Na tela de escolha de tipo, a indicação **Páginas usando Link** se refere às
 
 6. Abra o endereço informado e confirme que ele leva ao destino correto, está disponível e corresponde ao título usado no Portal.
 
-![[imagens/guias-contextuais/link-redirecionamento-campos.webp|Tipo de página Link: campos Título e URL que definem o nome da entrada e o endereço para onde ela redireciona]]
+![[imagens/guias-contextuais/configuracao-pagina-link.webp|Preenchimento de formulário de página do tipo Link no Wagtail]]
 
 ## Fazer o Link aparecer no menu
 

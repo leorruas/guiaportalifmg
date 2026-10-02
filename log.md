@@ -3,6 +3,7 @@
 ## 2026-10-02
 
 - Adicionada a imagem contextual em formato WebP `imagens/guias-contextuais/configuracao-pagina-link.webp`, apresentando o formulário de preenchimento e configuração de página do tipo Link no Wagtail.
+- Substituída, no procedimento `Criar um link de redirecionamento`, a captura dos campos do Link pela imagem `configuracao-pagina-link.webp`, posicionada após as orientações de preenchimento de Título e URL.
 
 ## 2026-08-29
 
