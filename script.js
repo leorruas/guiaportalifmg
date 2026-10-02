@@ -1199,14 +1199,23 @@ function converterImagensObsidian(markdown) {
     });
 }
 
+function decodificarEntidadesHtml(texto = "") {
+    const textarea = document.createElement("textarea");
+    textarea.innerHTML = String(texto);
+    return textarea.value;
+}
+
 function processarLinksObsidian() {
     const htmlAtual = artigoCorpo.innerHTML;
     // Regex para substituir [[Caminho/Artigo|Texto]] ou [[Artigo]]
     const regexObsidian = /\[\[(?:([^\]\|]+)\|)?([^\]]+)\]\]/g;
 
     artigoCorpo.innerHTML = htmlAtual.replace(regexObsidian, (match, caminho, textoExibicao) => {
-        const destino = caminho || textoExibicao;
-        const rotulo = textoExibicao || destino;
+        // Depois da conversão Markdown -> HTML, caracteres como "&" podem
+        // aparecer como entidades (por exemplo, "&amp;"). Decodifique antes
+        // de resolver o caminho para não quebrar wikilinks válidos.
+        const destino = decodificarEntidadesHtml(caminho || textoExibicao);
+        const rotulo = decodificarEntidadesHtml(textoExibicao || destino);
         const resolvido = resolverLinkObsidian(destino);
         if (!resolvido) {
             return `<span class="obsidian-link-indisponivel" title="Destino não encontrado no guia">${escaparHtml(rotulo)}</span>`;
