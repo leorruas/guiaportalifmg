@@ -43,7 +43,8 @@ A permissão de **coleção** não substitui a permissão de **página**. Uma pe
 
 O uso cotidiano dos arquivos deve seguir as tarefas herdadas de editor:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar imagens e documentos nas coleções permitidas]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/14 - Sou editor e quero organizar documentos e imagens em coleções|Organizar imagens e documentos nas coleções permitidas]]
 
 Para revisar a configuração geral do grupo, use [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Definir quem pode editar páginas e usar coleções]].
 
