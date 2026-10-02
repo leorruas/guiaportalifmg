@@ -39,9 +39,15 @@ Quando a imagem tiver conteúdo informativo, escreva texto alternativo. Marque-a
 
 ## O que muda conforme o perfil
 
-Se você é **editor**, prepare a página e [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|envie o conteúdo para moderação]] quando estiver pronto.
+Se você é **editor**, prepare a página e, quando estiver pronta, encaminhe-a para moderação:
 
-Se você é **moderador**, primeiro termine a edição e depois faça a revisão como uma etapa separada. Use [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]].
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar o conteúdo para moderação]]
+
+Se você é **moderador**, primeiro termine a edição e depois faça a revisão como uma etapa separada:
+
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar e decidir uma publicação]]
 
 Se você é **administrador**, aplique o mesmo procedimento editorial. Quando a mudança também afetar página-pai, ordem, permissões ou estrutura compartilhada, trate essa decisão separadamente em [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/10 - Sou administrador e quero organizar páginas e coleções|Organizar páginas e estrutura]] ou [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Configurar grupos e permissões]].
 

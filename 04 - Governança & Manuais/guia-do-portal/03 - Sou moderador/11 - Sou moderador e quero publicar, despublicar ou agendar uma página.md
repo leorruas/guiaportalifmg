@@ -45,6 +45,7 @@ Evite remover definitivamente uma página quando despublicar ou redirecionar res
 
 Para decidir se o conteúdo está pronto antes de alterar o estado público, use:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar um conteúdo e decidir se ele pode seguir para publicação]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar um conteúdo e decidir se ele pode seguir para publicação]]
 
 **Como saber que terminou:** a página mostra o estado esperado, publicada, despublicada ou agendada, e existe uma responsabilidade clara sobre sua vigência.

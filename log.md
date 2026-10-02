@@ -6,6 +6,7 @@
 - Substituída, no procedimento `Criar um link de redirecionamento`, a captura dos campos do Link pela imagem `configuracao-pagina-link.webp`, posicionada após as orientações de preenchimento de Título e URL.
 - Criado o padrão de link de ação contextual com o callout `[!ACTION]`: links para executar outra tarefa podem aparecer como botão no ponto relevante do artigo; aplicado em `Criar um link de redirecionamento` para encaminhar à revisão, mantendo referências complementares como links de texto.
 - Corrigida a resolução de wikilinks após a conversão para HTML: entidades como `&amp;` agora são decodificadas antes de localizar o artigo, permitindo que botões de ação apontem corretamente para caminhos como `Governança & Manuais`.
+- Removida a borda lateral externa dos links de ação e feita uma varredura nos procedimentos do guia. O padrão `[!ACTION]` foi aplicado a 17 encaminhamentos operacionais em 13 artigos, incluindo envio para moderação, revisão, publicação, correção de devolução e ajustes de acesso; referências e aprofundamentos permaneceram como links de texto.
 
 ## 2026-08-29
 

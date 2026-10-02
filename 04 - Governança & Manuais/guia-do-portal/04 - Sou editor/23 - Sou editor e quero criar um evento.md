@@ -55,6 +55,9 @@ Use a pré-visualização e confirme:
 
 Se a atividade mudar de data, local, horário ou forma de participação, atualize o evento existente sempre que ele continuar representando a mesma atividade, em vez de criar uma página duplicada.
 
-Quando estiver pronto, [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|envie o conteúdo para moderação]].
+Quando estiver pronto, encaminhe o evento para a próxima etapa:
+
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar o conteúdo para moderação]]
 
 **Como saber que terminou:** a pré-visualização permite entender o que é a atividade, quando e onde acontece, para quem se destina e como participar; os dados vieram de uma fonte confirmada; e o conteúdo está encaminhado para a próxima etapa do fluxo.

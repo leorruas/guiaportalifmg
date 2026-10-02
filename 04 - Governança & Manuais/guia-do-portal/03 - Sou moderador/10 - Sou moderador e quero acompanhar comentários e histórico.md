@@ -30,7 +30,8 @@ O comentário registra **o que precisa mudar**; o histórico ajuda a entender **
 
 Para aprovar ou devolver a entrega, use:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar um conteúdo e decidir se ele pode seguir para publicação]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação|Revisar um conteúdo e decidir se ele pode seguir para publicação]]
 
 O fluxo correspondente do editor está em:
 

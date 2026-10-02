@@ -15,4 +15,5 @@ Use **Programa** para uma iniciativa institucional contínua, com objetivo, púb
 
 **Limite de permissão:** use dados institucionais confirmados pela unidade responsável. Metas, prazos e situação não devem ser estimados; se não forem informados, peça validação antes de publicar.
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar para moderação]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar para moderação]]

@@ -2860,3 +2860,22 @@ body:has(.leitor-artigo:not(.escondido)) .page-masthead { display: none; }
     }
 }
 
+
+
+/* Ação contextual: o botão é o único contorno; o callout externo não cria moldura lateral. */
+.obsidian-callout.callout-action {
+    margin: 26px 0;
+    padding: 0;
+    border: 0;
+    border-left: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+.obsidian-callout.callout-action .callout-header {
+    margin-bottom: 8px;
+}
+.obsidian-callout.callout-action .callout-content {
+    padding: 0;
+    background: transparent;
+}

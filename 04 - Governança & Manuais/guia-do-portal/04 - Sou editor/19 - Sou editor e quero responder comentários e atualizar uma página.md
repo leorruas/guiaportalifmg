@@ -30,6 +30,7 @@ Se precisar verificar o estado ou consultar versões anteriores, use:
 
 Quando estiver pronta, encaminhe novamente:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar novamente para revisão]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar novamente para revisão]]
 
 **Como saber que resolveu:** a correção está salva, o comentário foi respondido ou resolvido e a nova versão está pronta para voltar à moderação.

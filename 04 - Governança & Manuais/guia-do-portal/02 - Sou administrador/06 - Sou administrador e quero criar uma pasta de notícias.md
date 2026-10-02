@@ -14,7 +14,12 @@ No Guia do Portal IFMG, criar essa estrutura é uma tarefa administrativa. Depoi
 
 ![[imagens/manual-ifrn/image12.png|Exemplo de criação de conteúdo dentro de uma pasta de Notícias]]
 
-6. Depois de criar a pasta, configure o acesso do grupo responsável pela manutenção usando [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Definir quem pode editar páginas e usar coleções]]. Conceda apenas a página e as coleções necessárias.
+6. Depois de criar a pasta, configure o acesso do grupo responsável pela manutenção.
+
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Definir quem pode editar páginas e usar coleções]]
+
+Conceda apenas a página e as coleções necessárias.
 
 ## Como escolher a ordenação
 

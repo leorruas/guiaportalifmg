@@ -39,6 +39,7 @@ Evite comentários genéricos como “rever texto”, “melhorar” ou “corri
 
 Depois da decisão editorial, quando for necessário controlar o estado público da página, use:
 
-[[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, agendar ou retirar uma página do ar]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página|Publicar, agendar ou retirar uma página do ar]]
 
 **Resultado esperado:** a decisão fica registrada e, quando a página é devolvida, a pessoa responsável sabe exatamente o que precisa corrigir.

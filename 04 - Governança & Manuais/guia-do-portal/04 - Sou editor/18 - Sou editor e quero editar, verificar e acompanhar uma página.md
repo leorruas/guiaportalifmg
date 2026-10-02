@@ -62,11 +62,13 @@ O estado da página deve responder à pergunta **“quem precisa agir agora?”*
 
 Se a página foi devolvida, use:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Corrigir uma página devolvida pela moderação]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Corrigir uma página devolvida pela moderação]]
 
 Se a página está pronta para revisão, use:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar uma página pronta para revisão]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar uma página pronta para revisão]]
 
 > [!NOTE]
 > Publicar, despublicar e agendar são ações tratadas na camada de moderação neste guia.
