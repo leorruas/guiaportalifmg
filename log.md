@@ -4,6 +4,7 @@
 
 - Adicionada a imagem contextual em formato WebP `imagens/guias-contextuais/configuracao-pagina-link.webp`, apresentando o formulário de preenchimento e configuração de página do tipo Link no Wagtail.
 - Substituída, no procedimento `Criar um link de redirecionamento`, a captura dos campos do Link pela imagem `configuracao-pagina-link.webp`, posicionada após as orientações de preenchimento de Título e URL.
+- Criado o padrão de link de ação contextual com o callout `[!ACTION]`: links para executar outra tarefa podem aparecer como botão no ponto relevante do artigo; aplicado em `Criar um link de redirecionamento` para encaminhar à revisão, mantendo referências complementares como links de texto.
 
 ## 2026-08-29
 

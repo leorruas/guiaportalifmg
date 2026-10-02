@@ -1222,13 +1222,13 @@ function processarCalloutsObsidian() {
         const conteudo = bq.innerHTML;
         // Um título customizado só pode estar na mesma linha do marcador.
         // Assim, o texto do aviso não é promovido indevidamente a título.
-        const match = conteudo.match(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:[ \t]+([^\n<]+))?/i);
+        const match = conteudo.match(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION|ACTION)\](?:[ \t]+([^\n<]+))?/i);
         if (match) {
             const tipo = match[1].toUpperCase();
             const tituloCustomizado = match[2] ? match[2].trim() : '';
             
             // Remove a tag [!TIPO] e o título do conteúdo do parágrafo
-            let htmlLimpo = conteudo.replace(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:[ \t]+[^\n<]+)?/i, '');
+            let htmlLimpo = conteudo.replace(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION|ACTION)\](?:[ \t]+[^\n<]+)?/i, '');
             
             // Remove parágrafos vazios gerados na conversão
             htmlLimpo = htmlLimpo.replace(/<p>\s*<\/p>/g, '');
@@ -1238,7 +1238,8 @@ function processarCalloutsObsidian() {
                 'TIP': 'DICA',
                 'IMPORTANT': 'IMPORTANTE',
                 'WARNING': 'AVISO',
-                'CAUTION': 'ATENÇÃO'
+                'CAUTION': 'ATENÇÃO',
+                'ACTION': 'AÇÃO'
             };
 
             const tituloExibicao = tituloCustomizado || rotulos[tipo] || tipo;

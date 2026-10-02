@@ -29,6 +29,9 @@
 - Todo link deve usar um rótulo descritivo; não use URLs soltas como texto de navegação.
 - Antes de cada commit, valide que não há wikilinks sem destino e que links modificados continuam apontando para o conteúdo correto.
 - A navegação de retorno entre home, perfil e artigo é responsabilidade da interface. Não acrescente ao final dos Markdown links puramente navegacionais como “Voltar ao papel de…”, “Voltar às configurações…” ou equivalentes. Mantenha links finais apenas quando indicarem uma próxima etapa real do procedimento ou uma referência necessária.
+- Quando um link interno levar a pessoa a **executar outra tarefa mencionada naquele ponto do procedimento**, use um callout `> [!ACTION]` contendo um único wikilink com rótulo de ação. A interface o apresenta como botão contextual dentro do artigo.
+- O botão de ação não significa necessariamente “próximo passo” nem precisa ficar no fim da página. Use-o no ponto exato em que a outra tarefa passa a ser necessária.
+- Referências, conceitos relacionados, aprofundamentos e consultas opcionais permanecem como links comuns no texto; não os transforme em botões.
 
 ## Explicações do guia
 

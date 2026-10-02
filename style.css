@@ -1537,6 +1537,49 @@ html body #artigo-corpo h3::before {
 .callout-header { margin-bottom: 5px; }
 .callout-title { color: var(--text) !important; font-size: .8rem; letter-spacing: 0; text-transform: lowercase; }
 .callout-content, .obsidian-callout .callout-content, .obsidian-callout p { color: var(--text); }
+.callout-action {
+    margin: 26px 0;
+    padding: 0;
+    border-left: 0;
+}
+.callout-action .callout-header {
+    margin-bottom: 8px;
+}
+.callout-action .callout-title {
+    color: var(--muted) !important;
+}
+.callout-action .callout-content,
+.callout-action .callout-content p {
+    margin: 0;
+    padding: 0;
+}
+.callout-action .obsidian-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid var(--accent-blue);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--accent-blue);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease;
+}
+.callout-action .obsidian-link::after {
+    content: "→";
+    flex: 0 0 auto;
+}
+.callout-action .obsidian-link:hover,
+.callout-action .obsidian-link:focus-visible {
+    background: var(--accent-blue);
+    color: var(--bg);
+    outline: none;
+}
+
 .artigo-nav-cards { border-top-color: color-mix(in srgb, var(--text) 24%, transparent); }
 .artigo-nav-cards-grid { gap: 0; border-top: 1px solid color-mix(in srgb, var(--text) 42%, transparent); }
 .nav-card {

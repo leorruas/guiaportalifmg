@@ -52,7 +52,8 @@ O perfil mínimo para criar esse tipo é **editor**. Moderador e administrador t
 
 Se você é **editor**, salve o Link como rascunho e, depois de conferir título, destino e presença no menu, encaminhe-o para moderação:
 
-[[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar uma página pronta para revisão]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar uma página pronta para revisão]]
 
 Se você é **moderador** ou **administrador**, siga o fluxo de revisão e publicação correspondente ao seu perfil.
 
