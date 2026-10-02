@@ -1,5 +1,9 @@
 # Registro de mudanças
 
+## 2026-10-02
+
+- Adicionada a imagem contextual em formato WebP `imagens/guias-contextuais/configuracao-pagina-link.webp`, apresentando o formulário de preenchimento e configuração de página do tipo Link no Wagtail.
+
 ## 2026-08-29
 
 - Adicionada a busca global à lateral de leitura dos artigos. A busca da página inicial e a da sidebar agora permanecem sincronizadas, permitindo iniciar uma nova consulta sem voltar ao início.
