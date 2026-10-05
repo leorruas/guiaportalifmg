@@ -1,5 +1,9 @@
 # Registro de mudanças
 
+## 2026-10-05
+
+- Criada a auditoria interna `.github/audits/2026-10-05-lacunas-manual-ifrn.md`, comparando o Manual de Uso do Portal Institucional dos Institutos Federais com o conteúdo canônico atual do Guia do Portal IFMG. Foram registradas lacunas por prioridade, com destaque para republicação de notícias, integração com o SUAP, vigência automática de etapas de processos seletivos e estrutura de coleções. O arquivo foi mantido fora de `04 - Governança & Manuais/guia-do-portal/`, portanto não entra no índice nem na interface publicada do guia; nenhum artigo público foi alterado.
+
 ## 2026-10-02
 
 - Adicionada a imagem contextual em formato WebP `imagens/guias-contextuais/configuracao-pagina-link.webp`, apresentando o formulário de preenchimento e configuração de página do tipo Link no Wagtail.
