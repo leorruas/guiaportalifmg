@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Incluída no procedimento de busca e navegação a faixa de 140 a 155 caracteres, contando espaços, como recomendação editorial aprovada para meta descrição, com prioridade para clareza e fidelidade ao conteúdo. Atualizado o item 10 da auditoria IFRN x IFMG; regra de menus das páginas-pai permanece para confirmação.
+
 - Detalhados no procedimento de conferência de página os modos de pré-visualização em computador, tablet e celular e o uso dos avisos de Verificações para acessibilidade, com revisão manual complementar e encaminhamento por perfil. Recursos confirmados pelo usuário; registrado o item 9 da auditoria IFRN x IFMG como atendido.
 
 - Documentadas edição e remoção de comentários próprios pelo menu de três pontos, conforme confirmação do usuário, no procedimento canônico de correção de página. Incluído encaminhamento na tarefa de comentários do moderador, preservando a herança de procedimentos; diferenciadas remoção de mensagem, resolução de pendência e aprovação/publicação. Atualizado o item 8 da auditoria, mantendo notificações por e-mail sem confirmação.

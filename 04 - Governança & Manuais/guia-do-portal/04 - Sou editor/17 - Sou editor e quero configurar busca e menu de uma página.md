@@ -10,7 +10,7 @@ Busca e menu resolvem problemas diferentes: a busca ajuda alguém que já sabe m
 2. Revise o **slug**, a parte final da URL. Use palavras compreensíveis, em letras minúsculas e separadas por hífens.
 3. Evite mudar o slug de uma página já publicada sem avaliar o impacto. Links existentes podem deixar de funcionar e, em alguns casos, será necessário tratar o redirecionamento.
 4. Preencha a **tag de título** com uma frase que descreva o assunto ou a tarefa da página.
-5. Preencha a **meta descrição** com um resumo específico do que a pessoa encontrará ou conseguirá fazer.
+5. Preencha a **meta descrição** com um resumo específico do que a pessoa encontrará ou conseguirá fazer. Como referência editorial, procure escrever entre **140 e 155 caracteres, contando os espaços**. Essa faixa é uma recomendação, não uma exigência do sistema: priorize um resumo claro e fiel ao conteúdo, sem acrescentar palavras apenas para atingir a contagem.
 6. Use a linguagem que o público reconhece. Quando um termo oficial ou uma sigla forem necessários, faça uma ponte com a forma como as pessoas costumam procurar o assunto.
 
 **Exemplo:** prefira “Inscrição em estágio” a “Procedimento 04/2026”. O primeiro título descreve a tarefa; o segundo depende de a pessoa já conhecer uma classificação interna.

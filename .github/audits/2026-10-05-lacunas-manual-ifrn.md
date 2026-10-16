@@ -130,6 +130,10 @@ O guia atual cobre slug, tag de título, meta descrição e **Exibir nos menus**
 
 A segunda regra aparece no guia de forma mais geral, como necessidade de o caminho estar completo, mas pode ser tornada mais objetiva se o comportamento for confirmado.
 
+**Situação em 16/10/2026:** incluída no procedimento canônico de busca e navegação, com aprovação do usuário, a faixa de 140 a 155 caracteres (contando espaços) como recomendação editorial para meta descrição, priorizando clareza e fidelidade ao conteúdo.
+
+**Validação ainda pendente:** confirmar no IFMG a regra exata de Exibir nos menus nas páginas-pai antes de torná-la mais específica.
+
 ### 11. Coleções: risco da coleção raiz privada
 
 O guia atual já alerta que permissões em níveis superiores podem afetar subcoleções. O manual de referência vai além e avisa que tornar a coleção raiz privada pode tornar todos os documentos do site privados.
