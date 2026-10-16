@@ -77,13 +77,30 @@ Os arquivos abaixo **já existem no repositório** e serão aproveitados enquant
 
 ## Eu consigo adiantar — sem depender de novas capturas
 
-- [ ] **EU — Roteiro:** transformar a trilha Editor em demonstração contínua de uma **página institucional da Biblioteca**: árvore → Página → Conteúdo → blocos → Promover → prévia → enviar.
-- [ ] **EU — Escolha de imagens:** inventariar e selecionar as capturas existentes que já são legíveis, verificando se são de referência externa ou do ambiente IFMG.
-- [ ] **EU — Design:** preparar layouts com ampliação de campos e anotações discretas, sem imagem falsa apresentada como captura; manter **Archivo**, reservar **Archivo Black** à capa e deixar metadados pequenos.
-- [ ] **EU — Coerência de perfis:** manter criação de notícia e sua distribuição com jornalistas do módulo Moderador; usar a Biblioteca no Editor e o mesmo caso na revisão.
-- [ ] **EU — Coleções:** separar didaticamente **coleção de arquivos** de **bloco Coleção na página**, sem criar ainda a futura página específica sobre gerenciamento de coleções.
+- [x] **EU — Roteiro:** transformar a trilha Editor em demonstração contínua de uma **página institucional da Biblioteca**: árvore → Página → Conteúdo → blocos → Promover → prévia → enviar.
+- [x] **EU — Escolha de imagens:** inventariar e selecionar as capturas existentes que já são legíveis, verificando se são de referência externa ou do ambiente IFMG.
+- [x] **EU — Design:** preparar layouts com ampliação de campos e anotações discretas, sem imagem falsa apresentada como captura; manter **Archivo**, reservar **Archivo Black** à capa e deixar metadados pequenos.
+- [x] **EU — Coerência de perfis:** manter criação de notícia e sua distribuição com jornalistas do módulo Moderador; usar a Biblioteca no Editor e o mesmo caso na revisão.
+- [x] **EU — Coleções:** separar didaticamente **coleção de arquivos** de **bloco Coleção na página**, sem criar ainda a futura página específica sobre gerenciamento de coleções.
 - [ ] **EU — QA:** checar slides, índice, links, imagens, 16:9, modo tela cheia e regressões após cada lote de capturas.
 - [ ] **EU — Integração:** quando receber cada Wxx, conferir legibilidade, dados sensíveis e fidelidade; só então incorporar nos slides correspondentes e registrar a substituição no backlog e no `log.md`.
+
+## Entregas minhas já incorporadas — rodada 16/10/2026
+
+As melhorias abaixo foram feitas **sem novas capturas**, utilizando imagens que já estavam no repositório. Elas são referências do guia, **não confirmação visual de como a homologação está hoje**.
+
+| Etapa da Biblioteca | Tela(s) melhoradas | Referência existente | O que continua dependendo de você |
+| --- | --- | --- | --- |
+| 01 — Localizar | `editor-papel`: agora mostra a seleção de Página | `imagens/manual-ifrn/image21.png` | W01; W02 somente se diferente |
+| 02 — Preparar | `editor-planejar`: estrutura de informações do serviço | Comparação textual didática | D01 e W04 para o formulário real |
+| 03 — Montar conteúdo | `editor-adicionar-bloco`, Links, Tabela | `image33.png`, `image13.png` e referências de Links | W03; W15–W17 só se diferente |
+| 04 — Usar arquivos | `editor-arquivos`, `editor-imagens`, `editor-colecao`, Galeria | Cadastro de documento, imagem, `image5.png`, `image17.png` | W07, W08, W09, W10, W11; W13/W14 se preciso |
+| 05 — Busca e menus | `editor-menus`: duas capturas comparativas | `exibir-nos-menus.png`, `exibicao-menu-interno.png` | W04 e W18 se diferente |
+| 06 — Revisar e enviar | `editor-enviar`: estado de moderação e passos | `manual-ifrn/image14.png` | W05, W06, W12 |
+
+Também foi introduzido `treinamento/fluxo.js`, que identifica as **seis etapas** na informação acessória dos slides sem ampliar o deck de 44 telas. No rodapé das imagens, o texto diz **“Referência do guia · conferir na homologação”**, sem apresentar capturas antigas como tela atual do IFMG.
+
+**Próximas ações minhas:** integrar as capturas que você enviar, quando disponíveis e revisadas; conferir em navegador real o tamanho dos campos nas imagens projetadas; ajustar recortes de capturas sem inventar interface. A futura página detalhada sobre coleções **não foi criada** nesta rodada.
 
 ## Pendências de decisão — PRECISO DE VOCÊ
 

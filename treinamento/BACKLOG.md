@@ -15,6 +15,18 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Roteiro visual independente de novas capturas — rodada aplicada
+
+- [x] Identificar seis etapas do caso **Página da Biblioteca** em `treinamento/fluxo.js`, utilizando a faixa acessória de contexto do slide (44 telas mantidas).
+- [x] Trocar o caso introdutório do Editor por seleção do tipo **Página**, com captura existente do guia; caminho real na árvore aguarda W01.
+- [x] Substituir cartões abstratos em **Busca e menus** por uma comparação com as duas capturas já existentes de `Promover` e de menu interno.
+- [x] Integrar captura disponível ao slide **Salvar → Pré-visualizar → Enviar para moderação**.
+- [x] Integrar imagem do bloco **Coleção**, com distinção explícita entre **guardar arquivos em coleções** e **exibir arquivos no bloco**, incluindo Recursivo.
+- [x] Uniformizar exemplos de Tabela, Galeria, Links e documentos no caso da Biblioteca, sem afirmar a existência de pastas ou documentos reais.
+- [x] Identificar nas legendas as capturas reaproveitadas como **referências do guia a conferir** na homologação.
+- [ ] Substituir capturas de referência por W01–W24 somente após recebimento, revisão de privacidade e conferência da interface.
+- [ ] Avaliar legibilidade e cortes em navegador real e projeção; simulações automáticas não garantem qualidade visual.
+
 ## Direção definida
 
 - Público: equipes que trabalham no Portal IFMG, com uma parte comum e trilhas para editor, moderador e administrador.

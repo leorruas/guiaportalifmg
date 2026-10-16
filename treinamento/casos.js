@@ -33,13 +33,13 @@
       ]
     },
     'editor-papel': {
-      type:'scenario',title:'O editor prepara páginas institucionais',lead:'O editor cria ou atualiza uma Página e encaminha para moderação.',
-      scenario:'O campus precisa atualizar a página da Biblioteca com horários, serviços e contatos.',
+      type:'screen',title:'Comece pela página-pai autorizada',lead:'O exemplo é uma Página institucional da Biblioteca, não uma notícia.',
+      image:'manual-ifrn/image21.png',alt:'Referência visual do guia: seleção do tipo Página em Adicionar subpágina no Wagtail.',
       steps:[
-        ['LOCALIZAR','Em Páginas, abra a página-pai autorizada e, se precisar criar, use Adicionar subpágina → Página.'],
-        ['PREPARAR','Confirme os dados; organize introdução, serviços, instruções, contatos e links.'],
-        ['ENCAMINHAR','Revise Promover, pré-visualize e envie para moderação.']
-      ],note:'Notícias são criadas por jornalistas com perfil mínimo de Moderador. O editor trabalha com páginas do seu escopo.'
+        ['01 / LOCALIZAR','Abra Páginas e encontre a página-pai da área em que você tem permissão para editar.'],
+        ['02 / ESCOLHER','Para criar, use Adicionar subpágina → Página. Para atualizar, abra a página existente.'],
+        ['03 / PREPARAR','Confira título e responsabilidade; os conteúdos e metadados serão preparados nas próximas etapas.']
+      ],note:'Imagem de referência do guia. O caminho exato da árvore do IFMG ainda será confirmado pela captura W01.'
     },
     'editor-planejar': {
       type:'fields',title:'Antes de editar, confirme os dados do serviço',lead:'Exemplo de preparo da página institucional da Biblioteca.',
@@ -63,7 +63,7 @@
       type:'screen',title:'Cadastre documentos com títulos que expliquem o arquivo',lead:'Título, coleção e tags ajudam a encontrar a versão vigente.',
       image:'manual-ifrn/preenchimento-de-documento-colecao-tags.png',alt:'Campos de título, coleção e tags na tela de cadastro de documento no Wagtail.',
       steps:[
-        ['TÍTULO','“Horários de aula — Técnico Integrado em Informática — 2026 — Campus Ouro Branco”.'],
+        ['TÍTULO','Exemplo: “Regulamento de empréstimo da Biblioteca — [campus]”. Use o título real do documento vigente.'],
         ['COLEÇÃO','Escolha a coleção da finalidade do arquivo; um documento não justifica inventar uma coleção.'],
         ['ATUALIZAR','Substitua o documento existente se a nova versão deve valer em todos os usos; crie outro se o anterior precisa permanecer disponível.']
       ],note:'O título cadastrado é diferente do nome físico do PDF e do texto de um botão no conteúdo.'
@@ -199,7 +199,7 @@
       case 'cards':
         return '<div class="case-tiles">'+d.cards.map(item=>blockCard(...item)).join('')+'</div>'+note(d.note);
       case 'screen':
-        return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption>INTERFACE DO WAGTAIL / GUIA DO PORTAL</figcaption></figure>'+
+        return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption>REFERÊNCIA DO GUIA · CONFERIR NA HOMOLOGAÇÃO</figcaption></figure>'+
           '<div class="case-steps">'+d.steps.map(item=>'<section>'+kicker(item[0])+'<p>'+html(item[1])+'</p></section>').join('')+'</div></div>'+note(d.note);
       case 'scenario':
         return '<div class="case-scenario"><div class="case-prompt">'+kicker('SITUAÇÃO / EXEMPLO')+'<blockquote>'+html(d.scenario)+'</blockquote></div>'+
@@ -223,7 +223,7 @@
     const d=cases[scene.id];if(!d)return null;
     const t={comum:'COMECE AQUI',editor:'EDITOR',moderador:'MODERADOR',administrador:'ADMINISTRADOR'}[scene.track]||'TREINAMENTO';
     return '<article class="frame frame-case">'+
-      options.chromeTop(t+' / WAGTAIL','CONTEÚDO / EXEMPLO')+
+      options.chromeTop(t+' / WAGTAIL',window.TreinamentoFluxo?.label(scene.id)||'CONTEÚDO / EXEMPLO')+
       '<div class="case-heading"><h1 tabindex="-1">'+html(d.title)+'</h1><p>'+html(d.lead)+'</p></div>'+
       '<div class="case-body">'+content(d)+'</div>'+
       options.chromeFoot('PORTAL IFMG / TREINAMENTO',options.pad(index+1)+' / '+options.pad(options.total))+

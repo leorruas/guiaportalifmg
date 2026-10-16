@@ -39,7 +39,7 @@ const location={
   set hash(value){const v=String(value);hashValue=v.startsWith('#')?v:'#'+v;}
 };
 const context=vm.createContext({window,document,location});
-for(const f of ['treinamento/conteudo.js','data/portal-graph.js','treinamento/grafo-anterior.js','treinamento/mapas.js','treinamento/aulas.js','treinamento/casos.js','treinamento/treinamento.js']){
+for(const f of ['treinamento/conteudo.js','data/portal-graph.js','treinamento/grafo-anterior.js','treinamento/mapas.js','treinamento/fluxo.js','treinamento/aulas.js','treinamento/casos.js','treinamento/treinamento.js']){
   vm.runInContext(read(f),context,{filename:f,timeout:5000});
 }
 const items=window.TreinamentoConteudo,extra=window.TreinamentoAulas.extras;
@@ -47,12 +47,16 @@ const groups=['comum','editor','moderador','administrador'];
 const intro=['mapa-portal-anterior','estrutura-reitoria','mapa-reitoria','estrutura-campi','mapa-campi','caminho-tres-cliques'];
 const slides=['inicio',...intro,...groups.flatMap(t=>['trilha-'+t,...items.filter(s=>s.track===t).flatMap(s=>[s.id,...extra.filter(e=>e.after===s.id).map(e=>e.id)]),...(t==='comum'?['ia-prompts']:[])])];
 assert.equal(items.length,28);
+assert.equal(window.TreinamentoFluxo.etapas.length,6,'O caso da Biblioteca exige seis etapas');
+assert.ok(window.TreinamentoFluxo.label('editor-colecao').includes('04/06'),'Bloco Coleção não entrou na etapa de arquivos');
 assert.equal(slides.length,44);
 assert.equal(new Set(slides).size,44,'IDs repetidos');
 assert.ok(items.find(s=>s.id==='moderador-noticias'&&s.track==='moderador'));
 assert.ok(!items.some(s=>s.id==='editor-noticias'));
 assert.ok(items.every(s=>s.task&&s.check));
 assert.ok(items.find(s=>s.id==='editor-pratica').task.includes('Biblioteca'));
+assert.ok(!items.some(s=>s.track==='editor'&&s.id==='editor-noticias'));
+assert.ok(css.includes('.teach-dual{display:grid'),'Comparação visual de menus ausente');
 const index=node('chapterList').innerHTML;
 for(const id of slides.slice(1))assert.ok(index.includes('data-jump="'+id+'"'),'Índice sem '+id);
 for(const id of window.TreinamentoCasos.ids)assert.ok(slides.includes(id),'Caso órfão: '+id);

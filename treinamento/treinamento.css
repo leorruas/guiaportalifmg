@@ -268,3 +268,12 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .case-process{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2cqw;flex:1;min-height:0}
 .case-process section{border-top:3px solid var(--accent);padding:1.6cqw 1cqw 0 0}
 .case-process p{font-size:1.52cqw;line-height:1.35;margin:3cqw 0 0;font-weight:500}
+
+/* Demonstrações com capturas de referência: dois pontos de interface lado a lado.
+   O texto permanece na escala unificada dos outros slides; metadados são acessórios. */
+.teach-dual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2cqw;flex:1;min-height:0}
+.teach-visual-example{display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:.75cqw;min-height:0;min-width:0;border-top:2px solid var(--ink);padding:.8cqw .2cqw .4cqw 0}
+.teach-visual-example .teach-shot{min-height:0;overflow:hidden;padding:.7cqw}
+.teach-visual-example .teach-shot img{min-height:0;max-height:100%;object-fit:contain}
+.teach-visual-example p{font-size:var(--slide-body);line-height:1.34;margin:.3cqw 0 0}
+.teach-visual-example strong{font-weight:650}
