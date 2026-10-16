@@ -132,7 +132,7 @@ A segunda regra aparece no guia de forma mais geral, como necessidade de o camin
 
 **Situação em 16/10/2026:** incluída no procedimento canônico de busca e navegação, com aprovação do usuário, a faixa de 140 a 155 caracteres (contando espaços) como recomendação editorial para meta descrição, priorizando clareza e fidelidade ao conteúdo.
 
-**Validação ainda pendente:** confirmar no IFMG a regra exata de Exibir nos menus nas páginas-pai antes de torná-la mais específica.
+**Complemento em 16/10/2026:** usuário confirmou a necessidade de configurar a navegação das páginas-filhas e suas páginas-pai e apresentou o campo Exibição do menu interno, com opções Lateral, Cards e Links. Explicadas as duas configurações no procedimento de busca/menu, com captura atual. Incluída também a preparação conjunta de conteúdo, blocos e metadados no procedimento de criação/edição e nos prompts de revisão e estruturação com IA. Item 10 atendido.
 
 ### 11. Coleções: risco da coleção raiz privada
 

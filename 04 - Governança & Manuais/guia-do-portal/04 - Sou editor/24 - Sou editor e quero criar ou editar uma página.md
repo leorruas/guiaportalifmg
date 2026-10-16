@@ -8,6 +8,14 @@ Se você ainda não sabe qual tipo usar, consulte [[04 - Governança & Manuais/g
 
 **Limite de atuação e apoio:** Como editor, crie e edite somente no escopo autorizado e encaminhe a decisão de publicação ao moderador. Se faltar a página-pai ou houver dúvida sobre onde criar, procure o moderador responsável; para criar coleções ou ajustar permissões, procure o administrador. Não duplique a página em outro local para contornar uma restrição.
 
+## Preparar conteúdo, blocos e busca juntos
+
+Antes de preencher a página, prepare o título, o texto, a ordem dos blocos e os metadados de busca no mesmo rascunho. Assim, o resumo para a busca já acompanha o conteúdo que será inserido no Wagtail.
+
+Inclua uma sugestão de **tag de título**, **slug** e **meta descrição**. Para a meta descrição, procure escrever entre **140 e 155 caracteres, contando espaços**, como recomendação editorial; priorize clareza e fidelidade ao conteúdo. Depois, preencha esses campos na aba **Promover**, em vez de deixar a sugestão apenas no rascunho.
+
+Se usar IA para preparar o texto ou sugerir blocos, peça também esses metadados e revise tudo antes de inserir na página. Use os prompts de [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/03 - Como usar uma IA como apoio para trabalhar com este guia|Usar IA como apoio ao texto e à estrutura da página]]. Para conferir os campos e a navegação, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página|Definir como a página aparece na busca e na navegação]].
+
 ## Criar ou editar
 
 1. Em **Páginas**, abra a seção onde o conteúdo deve ficar.

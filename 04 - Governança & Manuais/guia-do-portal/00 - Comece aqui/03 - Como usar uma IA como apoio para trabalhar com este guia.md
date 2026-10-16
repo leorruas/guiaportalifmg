@@ -133,6 +133,7 @@ Antes de revisar:
 Quero que você devolva:
 - uma versão revisada em linguagem simples;
 - sugestões de título, resumo e etiquetas, quando fizer sentido;
+- tag de título, slug e uma meta descrição pronta para preencher na aba Promover, preferencialmente entre 140 e 155 caracteres contando espaços; informe a contagem e priorize clareza e fidelidade ao conteúdo;
 - pontos que precisam ser confirmados com a fonte oficial;
 - cuidados antes de enviar para moderação ou publicar.
 ```
@@ -253,6 +254,7 @@ Antes de sugerir a estrutura:
 - diferencie o que está confirmado no guia, o que veio de fonte externa e o que ainda precisa de confirmação.
 
 Depois, apresente:
+- título da página, tag de título, slug e meta descrição prontos para revisão e preenchimento na aba Promover; para a meta descrição, prefira 140 a 155 caracteres contando espaços, informe a contagem e priorize clareza e fidelidade ao conteúdo;
 - a ordem sugerida do conteúdo;
 - o bloco sugerido em cada ponto;
 - por que esse bloco ajuda a pessoa a entender, encontrar ou fazer algo;

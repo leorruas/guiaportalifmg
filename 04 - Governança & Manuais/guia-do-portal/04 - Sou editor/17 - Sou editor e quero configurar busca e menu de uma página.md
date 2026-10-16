@@ -25,12 +25,24 @@ Uma página ou um **Link de redirecionamento não aparece automaticamente nos me
 
 ![[imagens/guias-contextuais/exibir-nos-menus.png|Aba Promover, seção Para menus de sites, com a opção Exibir nos menus marcada]]
 
-4. Confirme se as páginas-pai necessárias também aparecem na navegação. Um item pode estar com **Exibir nos menus** marcado e ainda ficar difícil de alcançar se o caminho até ele estiver incompleto.
+4. Confira **Exibir nos menus** nas páginas-pai que precisam fazer parte do caminho de navegação. Repita a conferência até chegar à seção de entrada: marcar somente a página-filha pode deixar o caminho incompleto. Se não puder editar uma dessas páginas, peça ao moderador responsável pela área para verificar; ajustes de acesso devem ser encaminhados ao administrador.
 5. Confira o Portal e verifique se o rótulo e a posição ajudam a entender o caminho.
 
 **Regra geral:** se uma página ou Link precisa aparecer em um menu gerado automaticamente pelo Portal, marque **Promover → Para menus de sites → Exibir nos menus**. Se não deve aparecer na navegação, deixe a opção desmarcada.
 
 Não use o menu para compensar uma arquitetura confusa. Se a página está na seção errada ou precisa mudar de posição entre páginas irmãs, trate primeiro a estrutura.
+
+## Escolher como o menu interno aparece
+
+Na **página-pai**, a opção **Exibição do menu interno** define como as páginas internas marcadas para aparecer no menu serão apresentadas naquela página. A configuração tem duas partes: marcar **Exibir nos menus** nas páginas-filhas desejadas e escolher a apresentação do conjunto na página-pai.
+
+- **Lateral:** apresenta os caminhos em um menu lateral. Use quando a pessoa precisa consultar outras páginas da mesma seção durante a leitura.
+- **Cards:** apresenta os caminhos em cartões. Use quando a página-pai funciona como uma entrada para escolher entre conteúdos ou serviços.
+- **Links:** apresenta os caminhos como links. Use quando uma lista simples de destinos atende à navegação.
+
+![[imagens/guias-contextuais/exibicao-menu-interno.png|Exibição do menu interno na página-pai: a captura mostra a opção Cards selecionada]]
+
+Escolha a apresentação e confira a pré-visualização e o portal, inclusive em telas menores. Verifique se aparecem as páginas pretendidas e se os rótulos deixam claro o destino. O menu interno é gerado a partir das páginas-filhas; ele não é o bloco **Cards** nem o bloco **Links** inserido manualmente no conteúdo.
 
 ## Antes de concluir
 

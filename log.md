@@ -2,6 +2,9 @@
 
 ## 2026-10-16
 
+- Incluída a preparação conjunta de conteúdo, blocos, tag de título, slug e meta descrição no procedimento de criação/edição e nos prompts de revisão e estruturação com IA. Reforçado o preenchimento posterior na aba Promover.
+- Detalhadas a conferência de Exibir nos menus ao longo das páginas-pai e filhas e a escolha de Exibição do menu interno (Lateral, Cards e Links), conforme confirmação e captura do usuário. Diferenciado o menu gerado dos blocos manuais; registrado o item 10 da auditoria como atendido.
+
 - Incluída no procedimento de busca e navegação a faixa de 140 a 155 caracteres, contando espaços, como recomendação editorial aprovada para meta descrição, com prioridade para clareza e fidelidade ao conteúdo. Atualizado o item 10 da auditoria IFRN x IFMG; regra de menus das páginas-pai permanece para confirmação.
 
 - Detalhados no procedimento de conferência de página os modos de pré-visualização em computador, tablet e celular e o uso dos avisos de Verificações para acessibilidade, com revisão manual complementar e encaminhamento por perfil. Recursos confirmados pelo usuário; registrado o item 9 da auditoria IFRN x IFMG como atendido.
