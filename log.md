@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Documentada a privacidade dos documentos em coleções com duas capturas atuais fornecidas pelo usuário: botão de olho, opções, salvamento e conferência de acesso. Diferenciadas privacidade e permissões de gerenciamento; incluídos alcance sobre subcoleções, alerta sobre a raiz e limite de proteção a documentos, com referência oficial do Wagtail. Atualizado o item 11 da auditoria IFRN x IFMG.
+
 - Incluída a preparação conjunta de conteúdo, blocos, tag de título, slug e meta descrição no procedimento de criação/edição e nos prompts de revisão e estruturação com IA. Reforçado o preenchimento posterior na aba Promover.
 - Detalhadas a conferência de Exibir nos menus ao longo das páginas-pai e filhas e a escolha de Exibição do menu interno (Lateral, Cards e Links), conforme confirmação e captura do usuário. Diferenciado o menu gerado dos blocos manuais; registrado o item 10 da auditoria como atendido.
 

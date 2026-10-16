@@ -138,7 +138,7 @@ A segunda regra aparece no guia de forma mais geral, como necessidade de o camin
 
 O guia atual já alerta que permissões em níveis superiores podem afetar subcoleções. O manual de referência vai além e avisa que tornar a coleção raiz privada pode tornar todos os documentos do site privados.
 
-**Próximo passo:** se esse comportamento estiver ativo no IFMG, transformar em alerta explícito no procedimento administrativo.
+**Situação em 16/10/2026:** usuário confirmou o acesso pelo ícone de olho e forneceu capturas do botão e das quatro opções de privacidade no IFMG. Documentado o fluxo na tarefa administrativa de coleções, distinguindo visualização de documentos de permissões de gerenciamento. Incluído alerta sobre alcance nas subcoleções e risco de restringir todos os documentos pela raiz, conforme [documentação oficial do Wagtail](https://docs.wagtail.org/en/v4.0/editor_manual/documents_images_snippets/collections.html). A distinção de que a privacidade não protege imagens também foi explicitada. Não foi realizado teste de restrição da raiz no IFMG; o procedimento orienta conferir o acesso efetivo aos documentos. Item atendido na orientação preventiva.
 
 ### 12. Formatos de imagem dentro do editor de texto
 

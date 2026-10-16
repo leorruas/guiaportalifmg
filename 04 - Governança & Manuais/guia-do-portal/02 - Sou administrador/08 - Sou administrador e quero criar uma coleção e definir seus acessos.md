@@ -60,6 +60,34 @@ Escolha um nome estável antes de criar a coleção. Se precisar renomear uma co
 
 A permissão de **coleção** não substitui a permissão de **página**. Uma pessoa pode ter acesso aos arquivos e ainda não poder editar ou publicar a página em que eles aparecem.
 
+## Definir quem pode visualizar os documentos
+
+As permissões de grupos definem quem pode trabalhar com os arquivos no painel. A **privacidade da coleção** define quem pode visualizar seus documentos. São configurações diferentes: restringir a edição não torna um documento privado.
+
+1. Em **Configurações > Coleções**, abra a coleção desejada e confira sua posição na hierarquia.
+2. Acima do nome, clique no botão com o **ícone de olho** e a situação atual, como **Público**.
+
+![[imagens/guias-contextuais/colecao-botao-privacidade.png|Na edição da coleção, o botão Público com ícone de olho abre as opções de privacidade]]
+
+3. Escolha a opção adequada ao público dos documentos:
+
+- **Público:** permite acesso público aos documentos.
+- **Privado, acessível com uma senha compartilhada:** exige a senha definida para acesso.
+- **Privado, acessível a qualquer usuário logado:** exige autenticação.
+- **Privado, acessível a usuários em grupos específicos:** exige autenticação e participação nos grupos selecionados.
+
+![[imagens/guias-contextuais/colecao-opcoes-privacidade.png|Opções de privacidade dos documentos da coleção; a captura mostra Público selecionado]]
+
+> [!WARNING]
+> Uma restrição em uma coleção também alcança as subcoleções. **Tornar a coleção raiz (Root) privada pode restringir todos os documentos do portal.** Para uma necessidade de uma área, escolha a coleção específica em vez de alterar a raiz. Confira o alcance com o responsável antes de salvar.
+
+4. Complete as informações solicitadas pela opção escolhida e clique em **Salvar**.
+5. Confira o acesso a um documento da coleção com uma conta do público autorizado e em uma sessão sem login, conforme a regra escolhida. Verifique também documentos de subcoleções e páginas que usam esses arquivos.
+
+A privacidade de coleções se aplica a **documentos**, não às imagens. Não use essa configuração como proteção de imagens. Essa distinção e o alcance sobre subcoleções estão descritos na [documentação oficial de coleções do Wagtail](https://docs.wagtail.org/en/v4.0/editor_manual/documents_images_snippets/collections.html).
+
+**Limite de atuação:** no guia, alterações de privacidade de coleções são tratadas como tarefa administrativa. Se você é editor ou moderador, encaminhe ao administrador a coleção, os documentos envolvidos e quem precisa acessá-los. Se a regra salva não produzir o acesso esperado, solicite verificação à equipe responsável pelo portal.
+
 ## Depois de criar
 
 O uso cotidiano dos arquivos deve seguir as tarefas herdadas de editor:
