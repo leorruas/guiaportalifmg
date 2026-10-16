@@ -44,13 +44,13 @@ for(const f of ['treinamento/conteudo.js','data/portal-graph.js','treinamento/gr
 }
 const items=window.TreinamentoConteudo,extra=window.TreinamentoAulas.extras;
 const groups=['comum','editor','moderador','administrador'];
-const intro=['mapa-portal-anterior','estrutura-reitoria','mapa-reitoria','estrutura-campi','mapa-campi','caminho-tres-cliques'];
+const intro=['mapa-portal-anterior','mapa-reitoria','mapa-campi','caminho-tres-cliques'];
 const slides=['inicio',...intro,...groups.flatMap(t=>['trilha-'+t,...items.filter(s=>s.track===t).flatMap(s=>[s.id,...extra.filter(e=>e.after===s.id).map(e=>e.id)]),...(t==='comum'?['ia-prompts']:[])])];
 assert.equal(items.length,28);
 assert.equal(window.TreinamentoFluxo.etapas.length,6,'O caso da Biblioteca exige seis etapas');
 assert.ok(window.TreinamentoFluxo.label('editor-colecao').includes('04/06'),'Bloco Coleção não entrou na etapa de arquivos');
-assert.equal(slides.length,44);
-assert.equal(new Set(slides).size,44,'IDs repetidos');
+assert.equal(slides.length,42);
+assert.equal(new Set(slides).size,42,'IDs repetidos');
 assert.ok(items.find(s=>s.id==='moderador-noticias'&&s.track==='moderador'));
 assert.ok(!items.some(s=>s.id==='editor-noticias'));
 assert.ok(items.every(s=>s.task&&s.check));
@@ -75,6 +75,11 @@ for(let i=0;i<slides.length;i++){
 assert.ok(images>=10,'Capturas dos procedimentos não apareceram');
 const path=window.TreinamentoMapas.getView({type:'journey'}).html;
 assert.ok(path.includes('Reserva de Vagas (Cotas)')&&path.includes('03 CLIQUES'));
+const reitoria=window.TreinamentoMapas.getView({type:'map',map:'reitoria'}).html;
+const campi=window.TreinamentoMapas.getView({type:'map',map:'campi'}).html;
+assert.ok(reitoria.includes('Institucional')&&reitoria.includes('Estudantes')&&reitoria.includes('Acesso à Informação'),'Faltam cinco caminhos da Reitoria');
+assert.ok(campi.includes('Processos seletivos')&&campi.includes('Eventos')&&campi.includes('FIXO'),'Faltam menus fixos dos campi');
+location.hash='#estrutura-reitoria';listeners['window:hashchange']();assert.ok(node('app').innerHTML.includes('A Reitoria organiza a entrada'),'O antigo link deve seguir funcionando');
 location.hash='#administrador-colecoes';listeners['window:hashchange']();
 assert.ok(node('app').innerHTML.includes('Não renomeie coleções'));
 assert.ok(node('app').innerHTML.includes('Não exclua'));

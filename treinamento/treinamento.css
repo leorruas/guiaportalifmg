@@ -280,3 +280,13 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 
 /* O H1 recebe foco por script para orientar leitor de tela; não deve ganhar moldura visual decorativa. */
 .frame h1[tabindex="-1"]:focus{outline:none}
+
+/* Abertura condensada: as cinco áreas e os sete menus são mostrados junto ao grafo. */
+.map-shortcuts{display:grid;gap:.7cqw;min-width:0;flex:none;margin:-.35cqw 0 1.15cqw}
+.map-shortcuts.reitoria{grid-template-columns:repeat(5,minmax(0,1fr))}
+.map-shortcuts.campi{grid-template-columns:repeat(7,minmax(0,1fr))}
+.map-shortcuts>div{border-top:1.5px solid var(--rule);padding:.45cqw .35cqw 0 0;min-width:0;display:flex;flex-direction:column;gap:.3cqw}
+.map-shortcuts small{font-size:.73cqw;line-height:1.2;letter-spacing:.065em;color:var(--muted);font-weight:600}
+.map-shortcuts strong{font-size:1.11cqw;line-height:1.15;letter-spacing:-.02em;font-weight:600;overflow-wrap:break-word}
+.map-shortcuts .is-fixed{border-top-color:var(--accent)}
+.map-shortcuts .is-fixed small{color:var(--accent)}

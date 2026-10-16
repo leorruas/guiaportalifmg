@@ -8,12 +8,10 @@
     {key:'administrador',label:'Administrador',sub:'Organizar as condições de trabalho',desc:'Acessos, coleções e estruturas compartilhadas.'}
   ];
   const introScenes = [
-    {id:'mapa-portal-anterior',type:'map',map:'legacy',title:'De onde partimos',lead:'O grafo do portal anterior revela a quantidade de páginas e relações mapeadas.'},
-    {id:'estrutura-reitoria',type:'structure',model:'reitoria',title:'Uma organização por públicos',lead:'Cinco áreas principais organizam o acesso à informação a partir da Home.'},
-    {id:'mapa-reitoria',type:'map',map:'reitoria',title:'Mapa da Reitoria',lead:'O novo mapa representa as relações já registradas entre as páginas do portal.'},
-    {id:'estrutura-campi',type:'structure',model:'campi',title:'Um modelo para os campi',lead:'Sete entradas organizam a navegação. Três delas são menus fixos.'},
-    {id:'mapa-campi',type:'map',map:'campi',title:'Mapa dos campi',lead:'Um modelo de organização, sem assumir endereços ainda não mapeados.'},
-    {id:'caminho-tres-cliques',type:'journey',title:'Como encontrar informações sobre cotas',lead:'Home → Estudantes → Como ingressar no IFMG → Reserva de Vagas (Cotas).'}
+    {id:'mapa-portal-anterior',type:'map',map:'legacy',title:'Antes, a navegação refletia a estrutura institucional',lead:'Este grafo registra páginas e relações mapeadas no portal anterior. Não representa, sozinho, um indicador de qualidade.'},
+    {id:'mapa-reitoria',type:'map',map:'reitoria',title:'A Reitoria organiza a entrada por públicos',lead:'Institucional, Estudantes, Servidores, Comunidade e Acesso à Informação são os cinco caminhos principais a partir da Home.'},
+    {id:'mapa-campi',type:'map',map:'campi',title:'Nos campi, três entradas são fixas',lead:'O modelo tem sete entradas. Cursos, Processos seletivos e Eventos são fixos; as demais organizam conteúdos da unidade.'},
+    {id:'caminho-tres-cliques',type:'journey',title:'Uma necessidade, um caminho: política de cotas',lead:'Home → Estudantes → Como ingressar no IFMG → Reserva de Vagas (Cotas).'}
   ];
   const extraSlides = window.TreinamentoAulas?.extras || [];
   const featuredIds = window.TreinamentoAulas?.featuredIds || [];
@@ -140,7 +138,9 @@
     else render();
   }
   function render(){
-    const id=decodeURIComponent(location.hash.slice(1)) || 'inicio';
+    const requested=decodeURIComponent(location.hash.slice(1)) || 'inicio';
+    const legacyLinks={'estrutura-reitoria':'mapa-reitoria','estrutura-campi':'mapa-campi'};
+    const id=legacyLinks[requested]||requested;
     const idx=Math.max(0,scenes.findIndex(x=>x.id===id));
     const scene=scenes[idx];
     active=idx;

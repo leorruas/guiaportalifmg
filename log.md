@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Condensadas duas telas redundantes de estrutura da abertura, incorporando as cinco áreas da Reitoria e as sete entradas dos campi aos próprios grafos. A apresentação passa de 44 para 42 telas, mantendo os três grafos, as seis etapas da Biblioteca, os perfis e as práticas. Títulos da abertura e ressalvas metodológicas aprimorados; links antigos para telas removidas funcionam como aliases. Criado `treinamento/ROTEIRO-APRESENTADOR.md` com orientações por perfil. Atualizados cache, testes, checklist, backlog e AGENTS.
+
 - Recuperado o artefato com oito screenshots do Chromium da Action `38930870653` e inspecionada a composição da apresentação. Eliminado o contorno visual indevido do H1 programaticamente focado para acessibilidade. Removidos dos slides os códigos internos W01–W24, preservando-os no checklist; esclarecido que a captura de Promover mostra uma página do tipo Link como referência. Cache CSS/Aulas/Casos atualizado, backlog e AGENTS sincronizados. A leitura de campos pequenos em projeção continua pendente.
 
 - Corrigido o QA em navegador após a primeira execução bem-sucedida (`38930558828`): screenshots haviam sido gerados, mas não anexados pela Action por estarem em pasta oculta. Diretório alterado para `qa-training/` e sincronizado no workflow; a rotina agora aguarda o progresso exato antes das capturas de cada slide. Atualizado checklist com QA automatizado feito; revisão visual humana continua pendente.

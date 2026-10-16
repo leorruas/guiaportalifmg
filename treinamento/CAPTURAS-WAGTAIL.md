@@ -98,11 +98,11 @@ As melhorias abaixo foram feitas **sem novas capturas**, utilizando imagens que 
 | 05 — Busca e menus | `editor-menus`: duas capturas comparativas | `exibir-nos-menus.png`, `exibicao-menu-interno.png` | W04 e W18 se diferente |
 | 06 — Revisar e enviar | `editor-enviar`: estado de moderação e passos | `manual-ifrn/image14.png` | W05, W06, W12 |
 
-Também foi introduzido `treinamento/fluxo.js`, que identifica as **seis etapas** na informação acessória dos slides sem ampliar o deck de 44 telas. No rodapé das imagens, o texto diz **“Referência do guia · conferir na homologação”**, sem apresentar capturas antigas como tela atual do IFMG.
+Também foi introduzido `treinamento/fluxo.js`, que identifica as **seis etapas** na informação acessória dos slides sem ampliar o número de slides (42 telas após a condensação da abertura). No rodapé das imagens, o texto diz **“Referência do guia · conferir na homologação”**, sem apresentar capturas antigas como tela atual do IFMG.
 
 **Próximas ações minhas:** integrar as capturas que você enviar, quando disponíveis e revisadas; conferir em navegador real o tamanho dos campos nas imagens projetadas; ajustar recortes de capturas sem inventar interface. A futura página detalhada sobre coleções **não foi criada** nesta rodada.
 
-**QA automatizado:** a Action em Chromium abriu 44 telas em 1440×900, 1920×1080 e 1280×800, verificou o palco e o carregamento de imagens. Capturas de auditoria são geradas como **artefato do workflow**, não publicadas no guia. **Ainda falta inspeção visual humana em projeção e validação das capturas da homologação.**
+**QA automatizado:** a Action em Chromium abre 42 telas em 1440×900, 1920×1080 e 1280×800, verificou o palco e o carregamento de imagens. Capturas de auditoria são geradas como **artefato do workflow**, não publicadas no guia. **Ainda falta inspeção visual humana em projeção e validação das capturas da homologação.**
 
 ## Pendências de decisão — PRECISO DE VOCÊ
 

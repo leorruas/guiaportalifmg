@@ -9,7 +9,7 @@ const browserPath=['/usr/bin/google-chrome-stable','/usr/bin/google-chrome','/us
 assert.ok(browserPath,'Navegador Chromium não encontrado');
 const output=resolve(root,'qa-training');mkdirSync(output,{recursive:true});
 const browser=await chromium.launch({executablePath:browserPath,headless:true,args:['--no-sandbox','--allow-file-access-from-files']});
-const ids=['editor-papel','editor-adicionar-bloco','editor-links-exemplo','editor-colecao','editor-menus','editor-enviar','moderador-revisao'];
+const ids=['mapa-portal-anterior','mapa-reitoria','mapa-campi','caminho-tres-cliques','editor-papel','editor-adicionar-bloco','editor-links-exemplo','editor-colecao','editor-menus','editor-enviar','moderador-revisao'];
 const url=pathToFileURL(resolve(root,'treinamento/index.html')).href;
 let n=0;
 try{
@@ -19,13 +19,13 @@ try{
   await page.goto(url+'#inicio',{waitUntil:'load'});
   const slides=await page.evaluate(()=>{
    const t=['comum','editor','moderador','administrador'],c=window.TreinamentoConteudo,e=window.TreinamentoAulas.extras;
-   return ['inicio','mapa-portal-anterior','estrutura-reitoria','mapa-reitoria','estrutura-campi','mapa-campi','caminho-tres-cliques',
+   return ['inicio','mapa-portal-anterior','mapa-reitoria','mapa-campi','caminho-tres-cliques',
     ...t.flatMap(k=>['trilha-'+k,...c.filter(s=>s.track===k).flatMap(s=>[s.id,...e.filter(x=>x.after===s.id).map(x=>x.id)]),...(k==='comum'?['ia-prompts']:[])])];
   });
-  assert.equal(slides.length,44);
+  assert.equal(slides.length,42);
   for(const id of slides){
    await page.evaluate(id=>location.hash='#'+id,id);
-   await page.waitForFunction(expected=>document.querySelector('#progress')?.textContent===expected, String(slides.indexOf(id)+1).padStart(2,'0')+' / 44');
+   await page.waitForFunction(expected=>document.querySelector('#progress')?.textContent===expected, String(slides.indexOf(id)+1).padStart(2,'0')+' / 42');
    const state=await page.evaluate(async()=>{
     const imgs=[...document.querySelectorAll('#app img')];
     await Promise.all(imgs.map(x=>x.decode().catch(()=>null)));
@@ -55,5 +55,5 @@ try{
   assert.deepEqual(errors,[],'Erro JS no navegador');
   await page.close();
  }
- console.log('OK: 44 telas × 3 dimensões; '+n+' capturas de conferência.');
+ console.log('OK: 42 telas × 3 dimensões; '+n+' capturas de conferência.');
 }finally{await browser.close();}

@@ -30,6 +30,16 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [ ] Conferir em projeção a legibilidade de campos pequenos nas capturas antigas do Wagtail; a ampliação ou substituição por W01–W24 autorizados pode ser necessária.
 - [x] Rotina de QA em Chromium executada com sucesso na Action `38930558828`: 44 telas em três resoluções, imagens carregadas e palco dentro da viewport. Corrigido o caminho de upload; conferir o anexo dos screenshots na próxima execução. **Ainda falta inspeção humana em projeção.**
 
+## Ritmo e narrativa da abertura — aplicado em 16/10/2026
+
+- [x] Reduzir de seis para **quatro telas de arquitetura**: portal anterior, Reitoria, campi e caminho da política de cotas, mantendo todos os grafos.
+- [x] Incorporar as cinco áreas da Reitoria e sete entradas dos campi (três fixas) aos próprios slides dos respectivos grafos, retirando duas telas exclusivamente descritivas.
+- [x] Reescrever títulos e leads com interpretações da arquitetura, sem tratar números de grafos de coberturas diferentes como medida de melhoria.
+- [x] Preservar links antigos `#estrutura-reitoria` e `#estrutura-campi` direcionando para os grafos respectivos.
+- [x] Criar [ROTEIRO-APRESENTADOR.md](./ROTEIRO-APRESENTADOR.md) com condução da aula, exemplos e perguntas de transição.
+- [x] Atualizar índice, progresso, cache e testes para **42 telas**, mantendo exercícios, módulos e seis etapas da Biblioteca.
+- [ ] Inspecionar legibilidade das faixas de entradas sob os grafos em projeção; teste automatizado não garante leitura confortável.
+
 ## Direção definida
 
 - Público: equipes que trabalham no Portal IFMG, com uma parte comum e trilhas para editor, moderador e administrador.

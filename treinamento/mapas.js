@@ -94,6 +94,19 @@
     }).join('');
     return '<svg class="map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 438" role="img" aria-label="Grafo com '+dataset.nodes.length+' nós e '+dataset.edges.length+' relações. Passe o mouse sobre os nós para identificar as páginas.">'+lines+dots+'</svg>';
   }
+  function mapBranches(kind){
+    if(kind==='reitoria'){
+      const names=branches();
+      return '<div class="map-shortcuts reitoria" aria-label="Cinco áreas de entrada da Reitoria">'+
+        names.map((name,i)=>'<div><small>'+String(i+1).padStart(2,'0')+' / ÁREA</small><strong>'+text(name)+'</strong></div>').join('')+'</div>';
+    }
+    if(kind==='campi'){
+      const sections=current?.campusBlueprint?.sections||[];
+      return '<div class="map-shortcuts campi" aria-label="Sete áreas de entrada do modelo dos campi">'+
+        sections.map((s,i)=>'<div'+(s.fixed?' class="is-fixed"':'')+'><small>'+String(i+1).padStart(2,'0')+(s.fixed?' / FIXO':' / LOCAL')+'</small><strong>'+text(s.title)+'</strong></div>').join('')+'</div>';
+    }
+    return '';
+  }
   function mapHTML(scene){
     const g=graph(scene.map);
     if(!g)return '<div class="map-graphic"><p class="map-fallback">Os dados deste mapa não puderam ser carregados.</p></div>';
@@ -102,7 +115,7 @@
     const label=original?'MAPEAMENTO DO PORTAL ANTERIOR':campus?'MODELO DE NAVEGAÇÃO DOS CAMPI':'RECORTE DO NOVO PORTAL';
     const caveat=original?'Levantamento do portal anterior':campus?'Modelo de organização, não um campus publicado':'Mapa em construção, somente relações registradas';
     return '<div class="map-graphic" data-graph="'+scene.map+'"><span class="map-graphic-label">'+label+'</span><div class="map-canvas"></div></div>'+
-    '<div class="map-stats"><div><strong>'+g.nodes.length+'</strong><span>'+(campus?'itens do modelo':'páginas mapeadas')+'</span></div>'+
+    mapBranches(scene.map)+'<div class="map-stats"><div><strong>'+g.nodes.length+'</strong><span>'+(campus?'itens do modelo':'páginas mapeadas')+'</span></div>'+
     '<div><strong>'+g.edges.length+'</strong><span>relações</span></div>'+
     '<p>'+caveat+'. Os números dos grafos anterior e novo representam recortes diferentes.</p></div>';
   }
