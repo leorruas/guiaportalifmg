@@ -105,6 +105,18 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Reduzir os textos de navegação de topo e rodapé, como “Editor / conteúdo”, “01 DE 16” e “Portal IFMG · treinamento”, a uma escala acessória (0,78 cqw).
 - [ ] Realizar inspeção visual em projeção para garantir contraste e legibilidade da navegação acessória.
 
+## Pendência — orientação detalhada sobre coleções e arquivos [a fazer]
+
+- [ ] Criar uma **página de orientação específica**, acessível a editores e moderadores, sobre como encontrar e utilizar as coleções no painel Wagtail. **Não implementar nesta fase**: apenas registrar e planejar a produção.
+- [ ] Ensinar o **caminho de acesso pelo painel**, passo a passo, incluindo como chegar a **Imagens**, **Documentos**, seus seletores de coleção e a estrutura de coleções/subcoleções. Usar capturas reais do ambiente e anotações dos elementos a clicar.
+- [ ] Explicar como **encontrar o destino certo**, adicionar e pesquisar arquivos, identificar títulos, tags e versões, substituir sem prejudicar usos em outras páginas e distinguir coleções de pastas da árvore de páginas.
+- [ ] Mostrar com exemplos a diferença entre **guardar o arquivo na coleção** e **usar o bloco Coleção na página**, incluindo **Recursivo**, **Mostrar imagens** e **Mostrar documentos**.
+- [ ] Separar claramente **ações cotidianas de editor/moderador** das ações **administrativas** de criação, renomeação, hierarquia, privacidade e permissões de coleções. Não ensinar quem não é administrador a alterar a estrutura.
+- [ ] Reforçar: **não renomear coleções por conta própria**; diante de falhas, registrar e encaminhar, sem apagar/recriar como tentativa de conserto.
+- [ ] Depois de pronta, ligar a página detalhada aos procedimentos canônicos de editor/moderador, ao índice do guia e à apresentação do treinamento, evitando conteúdo operacional duplicado sem necessidade.
+
+**Critério de conclusão:** uma pessoa sem experiência consegue localizar a coleção correta, inserir ou atualizar um arquivo permitido, encontrá-lo e utilizá-lo em uma página, além de reconhecer o que depende do administrador.
+
 ## Histórico e próximos registros
 
 - **Concluído antes deste backlog:** deck 16:9 com 39 telas; estilo suíço; cores do guia e Archivo; redução do texto de apoio; atividades individuais separadas; seis slides iniciais de grafos e estruturas.

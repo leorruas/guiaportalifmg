@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Registrada em `treinamento/BACKLOG.md` uma pendência de orientação detalhada para editores e moderadores sobre acesso, navegação, uso e manutenção cotidiana de arquivos em coleções do Wagtail, com capturas e distinção de tarefas administrativas. Página ainda não criada.
+
 - Reforçado em `AGENTS.md` o padrão do treinamento: Archivo em títulos e textos, Archivo Black apenas na capa, escala uniforme nos slides e metadados menores. Corrigido o estado de hover do acesso ao treinamento no rodapé do guia, removendo variável de cor inexistente.
 
 - Revisão de conteúdo da apresentação: incluído `treinamento/casos.js`, com 22 slides reescritos em cenários, capturas do Wagtail, cartões de decisão, comparações e fluxos fundamentados no guia canônico. O índice usa os novos títulos. Padronizada a escala dos títulos, leads e corpo dos slides de conteúdo; metadados de navegação reduzidos; Archivo Black restrita à capa e Archivo usada nos demais títulos e textos. Mantidos 44 slides e atividades individuais separadas. Atualizados cache de CSS e JS, backlog e roteiro de validação.
