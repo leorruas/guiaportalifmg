@@ -1,7 +1,7 @@
 (() => {
     const CYTOSCAPE_URL = "https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js";
     let cytoscapePromise = null;
-    let instanciaAtiva = null;
+    const instanciasAtivas = new Map();
 
     function normalizar(texto = "") {
         return String(texto)
@@ -66,7 +66,7 @@
                     <span>buscar página</span>
                     <input type="search" placeholder="ex.: estudantes" autocomplete="off">
                 </label>
-                <button type="button" class="portal-graph-depth-toggle" aria-pressed="false">mostrar distância da Home</button>
+                <button type="button" class="portal-graph-depth-toggle" aria-pressed="false">mostrar distância ${data.rootId ? "do campus" : "da Home"}</button>
                 <button type="button" class="portal-graph-fullscreen" aria-pressed="false">tela cheia</button>
                 <button type="button" class="portal-graph-recenter">recentralizar</button>
                 <span class="portal-graph-stats">${data.nodes.length} páginas · ${data.edges.length} relações</span>
@@ -99,11 +99,10 @@
             : "<p>Página mapeada na estrutura do Portal.</p>";
 
         painel.innerHTML = `
-            <span class="portal-graph-details-kicker">${escaparHtml(ramoDaUrl(nodeData.url))}</span>
+            <span class="portal-graph-details-kicker">${escaparHtml(nodeData.kind || ramoDaUrl(nodeData.url))}</span>
             <h3>${escaparHtml(nodeData.title)}</h3>
             ${descricao}
-            <code>${escaparHtml(nodeData.url)}</code>
-            <a href="${escaparHtml(nodeData.url)}" target="_blank" rel="noopener noreferrer">abrir página no Portal ↗</a>
+            ${nodeData.url ? `<code>${escaparHtml(nodeData.url)}</code><a href="${escaparHtml(nodeData.url)}" target="_blank" rel="noopener noreferrer">abrir página no Portal ↗</a>` : `<p>Modelo de estrutura · endereço ainda não mapeado.</p>`}
         `;
     }
 
@@ -202,7 +201,7 @@
     }
 
     function calcularLayoutSetorial(data) {
-        const raiz = "https://portal.ifmg.edu.br/";
+        const raiz = data.rootId || "https://portal.ifmg.edu.br/";
         const filhos = filhosEstruturais(data);
         const posicoes = new Map([[raiz, { x: 0, y: 0 }]]);
         const profundidades = new Map([[raiz, 0]]);
@@ -330,7 +329,7 @@
     }
 
     function calcularDistanciasDaHome(data) {
-        const raiz = "https://portal.ifmg.edu.br/";
+        const raiz = data.rootId || "https://portal.ifmg.edu.br/";
         const idsValidos = new Set(data.nodes.map(node => node.id));
         const saidas = new Map();
 
@@ -359,7 +358,7 @@
     }
 
     function calcularRamosEstruturais(data) {
-        const raiz = "https://portal.ifmg.edu.br/";
+        const raiz = data.rootId || "https://portal.ifmg.edu.br/";
         const filhos = filhosEstruturais(data);
         const ramos = new Map([[raiz, raiz]]);
         const filhosDaRaiz = filhos.get(raiz) || [];
@@ -382,7 +381,7 @@
     }
 
     function calcularLayoutPorDistancia(data) {
-        const raiz = "https://portal.ifmg.edu.br/";
+        const raiz = data.rootId || "https://portal.ifmg.edu.br/";
         const distancias = calcularDistanciasDaHome(data);
         const { ramos, filhosDaRaiz } = calcularRamosEstruturais(data);
         const posicoes = new Map([[raiz, { x: 0, y: 0 }]]);
@@ -466,8 +465,7 @@
         };
     }
 
-    async function renderizar(root) {
-        const data = window.PortalGraphData;
+    async function renderizar(root, data = window.PortalGraphData) {
         if (!data?.nodes?.length) {
             root.innerHTML = '<p class="portal-graph-error">Ainda não há páginas mapeadas para exibir.</p>';
             return;
@@ -478,7 +476,12 @@
         try {
             const cytoscape = await carregarCytoscape();
             if (!document.body.contains(root)) return;
-            if (instanciaAtiva) instanciaAtiva.destroy();
+            for (const [elemento, instancia] of instanciasAtivas) {
+                if (!document.body.contains(elemento) || elemento === root) {
+                    instancia.destroy();
+                    instanciasAtivas.delete(elemento);
+                }
+            }
 
             const estiloRaiz = getComputedStyle(document.documentElement);
             const accent = estiloRaiz.getPropertyValue("--accent-blue").trim() || "#74b77b";
@@ -494,13 +497,14 @@
                     const profundidade = layoutSetorial.profundidades.get(node.id) ?? 2;
                     const classes = [
                         profundidade <= 1 ? "portal-graph-major" : "",
+                        node.id === (data.rootId || "https://portal.ifmg.edu.br/") ? "portal-graph-root-node" : "",
                         node.hubLayout ? "portal-graph-hub" : ""
                     ].filter(Boolean).join(" ");
 
                     return {
                         data: {
                             ...node,
-                            branch: ramoDaUrl(node.url),
+                            branch: node.branch || ramoDaUrl(node.url),
                             graphDepth: profundidade,
                             clickDistance: layoutDistancia.distancias.get(node.id) ?? null
                         },
@@ -580,7 +584,7 @@
                         }
                     },
                     {
-                        selector: 'node[id = "https://portal.ifmg.edu.br/"]',
+                        selector: ".portal-graph-root-node",
                         style: {
                             "width": 54,
                             "height": 54,
@@ -659,9 +663,9 @@
                 ]
             });
 
-            instanciaAtiva = cy;
+            instanciasAtivas.set(root, cy);
 
-            const rootNode = cy.getElementById("https://portal.ifmg.edu.br/");
+            const rootNode = cy.getElementById(data.rootId || "https://portal.ifmg.edu.br/");
             let modoDistancia = false;
 
             function limparAneis() {
@@ -715,8 +719,8 @@
                     const xLegenda = centro.x + (Math.cos(anguloLegenda) * raio) + 8;
                     const yLegenda = centro.y + (Math.sin(anguloLegenda) * raio) - 7;
                     const rotulo = profundidade === 1
-                        ? "1 clique da Home"
-                        : `${profundidade} cliques da Home`;
+                        ? `1 clique ${data.rootId ? "do campus" : "da Home"}`
+                        : `${profundidade} cliques ${data.rootId ? "do campus" : "da Home"}`;
 
                     limites.push(`
                         <circle
@@ -739,7 +743,7 @@
             function aplicarLayoutEstrutural() {
                 modoDistancia = false;
                 ui.depthToggle.setAttribute("aria-pressed", "false");
-                ui.depthToggle.textContent = "mostrar distância da Home";
+                ui.depthToggle.textContent = `mostrar distância ${data.rootId ? "do campus" : "da Home"}`;
                 limparAneis();
 
                 const proximoLayout = calcularLayoutSetorial(data);
@@ -889,65 +893,33 @@
         }
     }
 
-    function renderizarMapaCampus(container) {
-        const root = container.querySelector?.("[data-campus-map]");
+    function dadosDoGrafoCampus() {
         const modelo = window.PortalGraphData?.campusBlueprint;
-        if (!root || !modelo || root.dataset.rendered) return;
-        root.dataset.rendered = "true";
+        if (!modelo) return null;
+        const raiz = "modelo-campus";
+        const nodes = [{ id: raiz, title: modelo.title, description: "Estrutura-padrão dos campi; endereços e terceiro clique serão mapeados depois.", kind: "campus" }];
+        const edges = [];
         const tipos = { local: "no campus", reitoria: "link para a Reitoria", interno: "link dentro do campus", sistema: "sistema externo", link: "destino a mapear" };
-        root.innerHTML = `
-            <label class="campus-map-search">Buscar neste mapa<input type="search" placeholder="Ex.: bibliotecas, coordenações, Moodle"></label>
-            <p class="campus-map-root">${escaparHtml(modelo.title)}</p>
-            <p class="campus-map-legend">Menu fixo · Página ou conteúdo local · Link para a Reitoria · Link interno · Sistema externo</p>
-            <div class="campus-map-branches"></div>
-            <p class="campus-map-empty" hidden>Nenhum caminho encontrado neste recorte.</p>`;
-        const branches = root.querySelector(".campus-map-branches");
-        modelo.sections.forEach(section => {
-            const details = document.createElement("details");
-            details.className = "campus-map-branch";
-            details.open = true;
-            const summary = document.createElement("summary");
-            summary.textContent = section.title + (section.fixed ? " · menu fixo" : "");
-            const description = document.createElement("p");
-            description.textContent = section.description;
-            details.append(summary, description);
-            const list = document.createElement("ul");
-            section.items.forEach(item => {
-                const li = document.createElement("li");
-                const name = document.createElement("strong");
-                name.textContent = item.title;
-                const kind = document.createElement("span");
-                kind.className = "campus-map-kind";
-                kind.textContent = tipos[item.type] || item.type;
-                const text = document.createElement("p");
-                text.textContent = item.description;
-                li.append(name, kind, text);
-                list.appendChild(li);
-            });
-            details.appendChild(list);
-            branches.appendChild(details);
-        });
-        root.querySelector("input").addEventListener("input", event => {
-            const query = normalizar(event.target.value).trim();
-            let count = 0;
-            Array.from(branches.children).forEach((branch, index) => {
-                const section = modelo.sections[index];
-                const wholeBranch = normalizar(section.title + " " + section.description).includes(query);
-                let matches = 0;
-                branch.querySelectorAll("li").forEach(li => {
-                    li.hidden = !wholeBranch && !normalizar(li.textContent).includes(query);
-                    if (!li.hidden) matches++;
-                });
-                branch.hidden = !wholeBranch && !matches;
-                if (!branch.hidden) { count++; if (query) branch.open = true; }
-            });
-            root.querySelector(".campus-map-empty").hidden = count > 0;
-        });
+        for (const section of modelo.sections) {
+            nodes.push({ id: section.id, title: section.title, description: section.description, kind: section.fixed ? "menu fixo" : "menu do campus", branch: section.id });
+            edges.push({ source: raiz, target: section.id, type: "estrutura" });
+            for (const item of section.items) {
+                nodes.push({ id: item.id, title: item.title, description: item.description, kind: tipos[item.type], branch: section.id });
+                edges.push({ source: section.id, target: item.id, type: "estrutura" });
+            }
+        }
+        const atendimento = nodes.find(node => node.title === "Atendimento das coordenações de curso");
+        const contatos = nodes.find(node => node.title === "Servidores e contatos");
+        if (atendimento && contatos) edges.push({ source: atendimento.id, target: contatos.id, type: "redireciona" });
+        return { rootId: raiz, nodes, edges };
     }
 
     function renderizarSePresente(container = document) {
-        try { renderizarMapaCampus(container); }
-        catch (error) { console.error("Não foi possível montar o mapa dos campi:", error); }
+        const campusRoot = container.querySelector?.("[data-campus-map]");
+        if (campusRoot && campusRoot.dataset.graphRendered !== "true") {
+            campusRoot.dataset.graphRendered = "true";
+            renderizar(campusRoot, dadosDoGrafoCampus());
+        }
         const root = container.querySelector?.("[data-portal-graph]");
         if (!root || root.dataset.graphRendered === "true") return;
         root.dataset.graphRendered = "true";

@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Substituída a árvore recolhível dos campi por um grafo interativo no mesmo componente da Reitoria, conforme correção do usuário. Generalizada a raiz do grafo e mantidas instâncias independentes para os dois mapas, com zoom, arraste, busca, tela cheia e painel de detalhes. Nós do modelo não recebem URLs fictícias; vínculo interno de atendimento das coordenações aponta a Servidores e contatos. Atualizado cache do componente e estilos.
+
 - Acrescentado à página existente de mapa um segundo mapa, pesquisável e recolhível, com a estrutura dos campi informada pelo usuário: sete entradas, menus fixos, filtros de cursos/processos, conteúdos locais e links para Reitoria e sistemas. Modelo de organização separado dos nós de páginas com URLs reais; terceiro clique e destinos não confirmados preservados para detalhamento.
 - Ajustado o carregamento dos artigos para consultar o conteúdo atualizado sem reutilizar a cópia de cache, e habilitada leitura dos arquivos locais em localhost para validar alterações antes da publicação.
 - Atualizados a referência no procedimento de campus e o item 15 da auditoria IFRN x IFMG. Removida da explicação do mapa institucional a afirmação desatualizada de que conteria somente a Home e cinco caminhos. Atualizados os sufixos de cache dos dados, componente e estilos.

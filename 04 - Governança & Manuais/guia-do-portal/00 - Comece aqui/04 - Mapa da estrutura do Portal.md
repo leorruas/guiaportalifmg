@@ -22,9 +22,9 @@ A página do campus oferece sete entradas: **Campus**, **Cursos**, **Processos s
 
 **Vida acadêmica** corresponde aos caminhos para estudantes; **Vida funcional**, aos servidores; **Projetos**, à relação com a comunidade acadêmica interna ou externa. Em Campus, Vida acadêmica, Vida funcional e Projetos, mantenha a estrutura definida abaixo e acrescente os conteúdos do campus no escopo autorizado.
 
-Use a busca do mapa para encontrar um caminho. Abra ou recolha cada ramo pelo seu título. Os rótulos distinguem conteúdo local, links para a Reitoria, links dentro do campus e sistemas externos. Um link para a Reitoria aponta para a informação compartilhada, evitando criar uma cópia local do mesmo conteúdo.
+Use a busca do grafo para encontrar um caminho. Arraste o mapa, ajuste o zoom e clique nos nós para consultar suas descrições. O painel distingue conteúdo local, links para a Reitoria, links dentro do campus e sistemas externos. Um link para a Reitoria aponta para a informação compartilhada, evitando criar uma cópia local do mesmo conteúdo.
 
-<div data-campus-map class="campus-map"></div>
+<div data-campus-map class="portal-graph-root"></div>
 
 **Atendimento das coordenações de curso** aponta para a seção em **Campus > Servidores e contatos**. **Moodle** deve usar o destino específico do campus. Em Documentos acadêmicos, estão previstos links para PPC, matriz curricular, regimentos, planos de ensino, regulamentos e formulários do curso, cujos destinos serão detalhados depois.
 

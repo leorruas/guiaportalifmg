@@ -170,7 +170,7 @@ O guia atual menciona a estrutura essencial do campus em nível alto. O manual d
 
 **Situação:** provável conteúdo específico da arquitetura do IFRN.
 
-**Situação em 16/10/2026:** estrutura do IFMG informada diretamente pelo usuário e incorporada como segundo mapa na página existente Mapa da estrutura do Portal e como referência no procedimento de campus. Registradas as sete entradas, os menus fixos, os filtros por campus, os públicos e os conteúdos locais, links para Reitoria e sistemas. Não foi copiada a árvore do IFRN nem inventadas URLs. Terceiro clique e endereços permanecem para detalhamento. Confirmada uma única entrada para o SEI.
+**Situação em 16/10/2026:** estrutura do IFMG informada diretamente pelo usuário e incorporada como segundo mapa na página existente Mapa da estrutura do Portal e como referência no procedimento de campus. Registradas as sete entradas, os menus fixos, os filtros por campus, os públicos e os conteúdos locais, links para Reitoria e sistemas. Não foi copiada a árvore do IFRN nem inventadas URLs. Terceiro clique e endereços permanecem para detalhamento. Confirmada uma única entrada para o SEI. Após correção do usuário, o segundo mapa utiliza o mesmo grafo interativo da Reitoria, com instâncias independentes e nós conceituais sem URLs fictícias.
 
 ### 16. Tipos de páginas permitidos dentro de cada tipo
 
