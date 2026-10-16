@@ -61,6 +61,10 @@ Quando o bloco oferecer o campo **Ícone**, escolha o ícone no [Google Icons](h
 
 Use **Coleção** para mostrar os documentos ou imagens que já foram organizados na coleção correta. Antes de publicar, confira se a coleção escolhida é da área certa e se os arquivos estão vigentes.
 
+**Recursivo e Mostrar imagens/documentos respondem a perguntas diferentes.** Recursivo define **onde buscar**: só na coleção escolhida ou também nas subcoleções. Mostrar imagens e Mostrar documentos definem **quais tipos de arquivo exibir** nesses locais. Marcar Recursivo não escolhe o tipo de arquivo; você também precisa indicar se quer imagens, documentos ou ambos.
+
+**Exemplo com documentos:** imagine **Arcos • Notícias > 2027**. Os PDFs estão guardados dentro de **2027**. Se você selecionar **Arcos • Notícias** e marcar apenas **Mostrar documentos**, os PDFs da subcoleção não entram. Ao marcar também **Recursivo**, eles passam a fazer parte da seleção. Para incluir fotos, marque **Mostrar imagens**. Se quiser limitar tudo ao ano de 2027, escolha diretamente essa subcoleção.
+
 Configure cada opção pelo que você deseja mostrar ao público:
 
 - **Coleção:** escolhe de onde o bloco vai buscar os arquivos. Selecione a coleção da área e do assunto que a página precisa apresentar.
@@ -152,7 +156,24 @@ No estilo **Padrão**, o resultado publicado mostra somente o botão; a descriç
 
 Use **Cards** para oferecer caminhos relacionados, como serviços de uma área. Cada card precisa deixar claro o que a pessoa encontrará depois do clique.
 
-![[imagens/manual-ifrn/image24.png|Configuração de um bloco de cards]]
+No bloco **Cards**, configure a apresentação do conjunto e depois preencha cada item da **Lista**:
+
+- **Estilo do card:** escolhe a apresentação visual. Confira o efeito da opção escolhida na pré-visualização.
+- **Formato da capa:** define a apresentação da imagem de capa. Na captura, a opção selecionada é **Sem capa**. Confira esse campo antes de escolher uma imagem para os cartões.
+- **Lista:** reúne os cartões. Use **+** para acrescentar outro item; cada item tem seus próprios textos e destino.
+
+Em cada cartão, preencha:
+
+- **Título:** o nome do conteúdo ou serviço, como **SUAP Estudantil**.
+- **Chapéu:** o texto curto que aparece acima do título e indica o tema ou a categoria. Por exemplo, **Vida acadêmica** acima de **SUAP Estudantil**. Use-o para acrescentar contexto, sem repetir o título; na tela apresentada, ele é opcional.
+- **Descrição:** explica o que a pessoa encontrará ou poderá fazer no destino. Por exemplo: “Consulte suas informações acadêmicas no SUAP.”
+- **Texto do link:** é o rótulo da ação. Prefira algo descritivo, como **Acessar o SUAP**, em vez de “clique aqui”.
+- **Capa:** seleciona a imagem do cartão. Confira se o formato escolhido permite exibi-la e se o enquadramento ajuda a reconhecer o conteúdo.
+- **Página interna, Documento interno ou URL externa:** escolha o destino adequado. Use o seletor para páginas e documentos do portal ou informe o endereço completo de outro site. Preencha o destino que corresponde à ação do cartão.
+
+![[imagens/guias-contextuais/cards-campos-chapeu.png|Campos de Cards no Portal IFMG: configuração do conjunto e textos, capa e destino de cada cartão]]
+
+**Como conferir:** pré-visualize a página e verifique o chapéu acima do título, a clareza da descrição, a apresentação da capa e o destino do link. Os campos com asterisco são obrigatórios; os demais devem ser preenchidos quando ajudarem a pessoa a escolher o caminho.
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image48.png|Exemplo publicado de cards]]
 

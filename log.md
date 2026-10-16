@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Reforçada no artigo de blocos a distinção entre Recursivo (onde buscar) e Mostrar imagens/documentos (quais tipos mostrar), com exemplo combinado. Detalhados os campos de Cards usando captura atual fornecida pelo usuário, incluindo Chapéu como texto de tema acima do título, conforme confirmação. Atualizado o item 6 da auditoria.
+
 - Explicados no artigo de blocos os destinos Página, Documento e URL externa de Links e Link único, confirmados pelo usuário, com exemplos, orientação sobre seletores internos e encaminhamento em caso de restrição. Atualizado o item 6 da auditoria IFRN x IFMG.
 
 - Acrescentadas ao artigo de blocos as explicações de cabeçalhos e legenda de tabela, operações de linhas/colunas e colagem direta de células do Excel ou tabelas da internet, conforme confirmação do usuário; atualizado o item 6 da auditoria.

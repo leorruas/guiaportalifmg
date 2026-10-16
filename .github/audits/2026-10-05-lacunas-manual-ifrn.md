@@ -90,7 +90,9 @@ Detalhes ausentes ou pouco explícitos incluem: **Recursivo**, **Mostrar imagens
 
 **Destinos de links detalhados em 16/10/2026:** após confirmação do usuário sobre as três opções no IFMG, explicadas as escolhas de Página, Documento e URL externa em Links e Link único, com exemplos, preferência pelos seletores internos e conferência do destino.
 
-**Próximo passo:** revisar os campos de Cards, Linha do tempo e Calendário, sem transformar o guia em mera transcrição de formulário.
+**Cards detalhados em 16/10/2026:** incorporados os campos da captura atual fornecida pelo usuário: Estilo do card, Formato da capa, Lista, Título, Chapéu, Descrição, Texto do link, Capa e destinos. O usuário confirmou que Chapéu aparece acima do título; incluído exemplo de tema e título. Substituída a captura antiga do formulário de Cards pela atual, que inclui esses controles. Reforçada também em texto a diferença entre Recursivo (alcance nas subcoleções) e Mostrar imagens/documentos (tipos exibidos), com exemplo combinado.
+
+**Próximo passo:** revisar Linha do tempo e Calendário, sem transformar o guia em mera transcrição de formulário.
 
 ### 7. Ações em massa e controles da tela de exploração de páginas
 
