@@ -4,6 +4,8 @@ Use esta tarefa quando, durante a revisão, você encontrou algo que o editor pr
 
 O comentário registra **o que precisa mudar**; o histórico ajuda a entender **o que mudou ao longo do tempo**. Nenhum dos dois substitui a decisão editorial de aprovar ou devolver a página.
 
+**Limite de atuação e apoio:** Comentários e histórico servem para orientar e conferir alterações; não concedem acesso a outra área. Se não puder abrir ou revisar a página necessária, peça ao administrador para verificar as permissões. Se a correção depender de uma decisão administrativa, encaminhe essa necessidade ao administrador.
+
 ## Registrar uma pendência
 
 1. Abra a página durante a revisão.

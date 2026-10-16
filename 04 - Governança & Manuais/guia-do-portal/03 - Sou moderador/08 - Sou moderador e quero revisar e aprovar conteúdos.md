@@ -7,6 +7,12 @@ Moderar não é apenas corrigir escrita. É ler como alguém que não participou
 > [!NOTE]
 > Seu acesso é cumulativo: todas as tarefas de editor disponíveis no seu escopo também fazem parte do trabalho de moderador. O procedimento editorial não precisa ser repetido em uma versão separada para este perfil.
 
+## Quando encaminhar ao administrador
+
+O papel de moderador permite revisar e decidir a publicação dentro do escopo autorizado; não inclui administrar grupos e permissões, criar coleções e subcoleções, criar pastas de notícias ou alterar cadastros auxiliares. Encaminhe essas necessidades ao administrador responsável.
+
+Se a demanda envolver outra área ou uma estrutura compartilhada, combine a alteração com os responsáveis antes de agir. Se uma ação de revisão ou publicação não estiver disponível, solicite ao administrador a verificação do fluxo e do acesso. Informe o caminho da página, o resultado esperado e o impedimento encontrado.
+
 ## O que você deve conseguir fazer
 
 - revisar conteúdos enviados por editores;

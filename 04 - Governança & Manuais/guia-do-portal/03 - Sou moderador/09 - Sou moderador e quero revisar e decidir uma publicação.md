@@ -4,6 +4,8 @@ Use esta tarefa quando um conteúdo chega para moderação. O objetivo é decidi
 
 A pergunta central é: **esta página já permite que uma pessoa de fora encontre, entenda e use a informação sem depender de uma explicação adicional?**
 
+**Limite de atuação e apoio:** Revise e decida apenas sobre conteúdos do escopo autorizado. Se a pendência exigir mudar permissões, criar coleções ou alterar cadastros administrativos, encaminhe ao administrador antes de concluir a revisão. Para informação que dependa de validação da área de origem, peça confirmação ao responsável pelo conteúdo.
+
 ## Revisar a entrega
 
 1. Abra a página enviada para moderação.

@@ -2,6 +2,8 @@
 
 Use uma página institucional para uma informação que continua útil ao longo do tempo: um serviço, uma área, uma orientação ou um setor. Diferente de uma notícia, ela não nasce para expirar amanhã.
 
+**Limite de atuação e apoio:** Como editor, crie ou atualize a página institucional somente no escopo autorizado e encaminhe a publicação ao moderador. Se a estrutura necessária não existir, confirme o local com o moderador; mudanças de permissões devem ser solicitadas ao administrador.
+
 ## Como fazer
 
 1. Em **Páginas**, abra a página-pai da sua área.

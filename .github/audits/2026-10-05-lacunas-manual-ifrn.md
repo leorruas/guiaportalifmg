@@ -70,7 +70,9 @@ O guia atual cobre a diferença entre imagem de destaque e imagem interna, texto
 
 **Hierarquia de títulos definida em 16/10/2026:** incorporada ao artigo de notícias, com aprovação do usuário, a orientação de usar **Título 2 (H2)** nas seções principais e **Título 3 (H3)** nas subdivisões do corpo, aplicando o formato de título em vez de simular títulos apenas com negrito. Incluído exemplo de Inscrições e Documentos necessários.
 
-**Próximo passo:** avaliar separadamente os demais detalhes: formato Largura completa, rótulos de ação e siglas. Esses pontos ainda não foram validados como padrão do IFMG.
+**Links de ação definidos em 16/10/2026:** incorporados ao procedimento de notícias, com aprovação do usuário, rótulos descritivos como Acesse o edital, Faça sua inscrição e Ouça a entrevista, evitando “clique aqui”. Reforçado o bloco **Link único** no estilo **Cartão** para a CTA principal, com encaminhamento ao procedimento ilustrado já existente de blocos.
+
+**Próximo passo:** avaliar separadamente os demais detalhes: formato Largura completa e siglas. Esses pontos ainda não foram validados como padrão do IFMG.
 
 ### 6. Campos e controles exatos de cada bloco
 

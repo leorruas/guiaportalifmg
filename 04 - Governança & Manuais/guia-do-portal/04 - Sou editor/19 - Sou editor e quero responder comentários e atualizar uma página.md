@@ -4,6 +4,8 @@ Use esta tarefa **depois que o moderador devolver uma página** com uma pendênc
 
 Um comentário funciona como uma orientação presa ao campo ou bloco que precisa de atenção. Faça a correção no próprio fluxo, em vez de depender de mensagens paralelas.
 
+**Limite de atuação e apoio:** Corrigir ou resolver um comentário não substitui a aprovação do moderador. Se a orientação não estiver clara, peça esclarecimento ao moderador antes de alterar. Se a correção exigir uma coleção nova ou mudança de acesso, solicite ao administrador.
+
 ## Corrigir a devolução
 
 1. Abra a página devolvida em edição.

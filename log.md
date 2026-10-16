@@ -2,6 +2,9 @@
 
 ## 2026-10-16
 
+- Acrescentados ao procedimento de notícias rótulos descritivos para links e recomendação de Link único no estilo Cartão para a CTA principal, com link de ação para a referência ilustrada de blocos; atualizado o item 5 da auditoria IFRN x IFMG.
+- Explicitados nas páginas de papel de editor e moderador os limites e os responsáveis por apoio. Reforçados encaminhamentos em tarefas de localização, páginas institucionais, redirecionamentos, notícias, blocos, conferência, correções, criação/edição, revisão, comentários e publicação, preservando a herança entre perfis e os procedimentos existentes de processos seletivos.
+
 - Acrescentada ao artigo de notícias a orientação aprovada de usar Título 2 (H2) para seções principais e Título 3 (H3) para subdivisões, com exemplo e uso do formato de título em vez de apenas negrito. Atualizado o item 5 da auditoria IFRN x IFMG.
 
 - Definido nos artigos de notícias e criação de coleções o padrão de coleção de imagens por campus **[Nome do campus] • Notícias**, preferencialmente com subcoleções por ano, como **Arcos • Notícias > 2027**, conforme orientação do usuário. Atualizado o item 5 da auditoria; preservado o alerta sobre renomear coleções existentes.

@@ -4,6 +4,8 @@ Use esta tarefa para controlar o **estado público** de uma página dentro do es
 
 Revisar responde “o conteúdo está pronto?”. Publicar responde “este conteúdo deve estar visível agora?”. Manter essas decisões separadas reduz o risco de colocar no ar uma página apenas porque a edição terminou.
 
+**Limite de atuação e apoio:** Publique, agende ou retire do ar somente páginas do escopo autorizado. Se a ação não estiver disponível ou o estado não mudar como esperado, encaminhe ao administrador o caminho da página, o estado atual e a ação desejada. Não altere permissões nem crie outra página para contornar o impedimento.
+
 ## Publicar
 
 1. Confirme que a revisão editorial foi concluída.

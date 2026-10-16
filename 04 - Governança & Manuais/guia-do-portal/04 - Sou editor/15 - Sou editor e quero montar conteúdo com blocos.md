@@ -4,6 +4,8 @@ Na aba **Conteúdo**, use blocos para organizar a informação de acordo com o q
 
 Blocos são peças da página: cada peça resolve uma necessidade de leitura. Um bloco de introdução apresenta o assunto; um de links aponta caminhos; um de coleção mostra arquivos. Em vez de transformar toda a página em um texto longo, escolha a peça que melhor cumpre a função daquele conteúdo.
 
+**Limite de atuação e apoio:** Como editor, monte o conteúdo com os blocos disponíveis na página e envie o resultado para revisão do moderador. Se faltar um bloco ou uma configuração necessária, descreva a necessidade ao moderador; quando depender de configuração do sistema, encaminhe ao administrador. Não use outro tipo de página apenas para contornar a ausência.
+
 ## Adicionar, mover, duplicar ou remover um bloco
 
 1. Abra a página em edição e localize a aba **Conteúdo**.

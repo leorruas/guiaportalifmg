@@ -6,6 +6,8 @@ Antes de preencher qualquer campo, responda a duas perguntas: **onde uma pessoa 
 
 Se você ainda não sabe qual tipo usar, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero escolher o tipo de página|Escolher o tipo de conteúdo]].
 
+**Limite de atuação e apoio:** Como editor, crie e edite somente no escopo autorizado e encaminhe a decisão de publicação ao moderador. Se faltar a página-pai ou houver dúvida sobre onde criar, procure o moderador responsável; para criar coleções ou ajustar permissões, procure o administrador. Não duplique a página em outro local para contornar uma restrição.
+
 ## Criar ou editar
 
 1. Em **Páginas**, abra a seção onde o conteúdo deve ficar.

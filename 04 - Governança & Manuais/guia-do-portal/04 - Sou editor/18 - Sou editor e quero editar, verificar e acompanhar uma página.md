@@ -6,6 +6,8 @@ Para criar ou alterar conteúdo, use:
 
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/24 - Sou editor e quero criar ou editar uma página|Criar ou editar uma página]]
 
+**Limite de atuação e apoio:** Conferir o status não autoriza o editor a publicar, agendar ou retirar a página do ar. Encaminhe essas decisões ao moderador. Se houver restrição de acesso ou falha na configuração do fluxo, solicite a verificação ao administrador.
+
 ## Verificar a página
 
 1. Abra **Status** para identificar em que ponto do fluxo a página está.

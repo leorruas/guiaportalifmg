@@ -6,6 +6,13 @@ Você pode criar e editar os tipos de conteúdo disponíveis no seu escopo, trab
 
 Você **não cria coleções nem define permissões** como parte do papel de editor. Também não decide a publicação final quando o fluxo exige moderação.
 
+## Quando pedir apoio
+
+- **Ao moderador responsável pela área:** decisão de publicação, agendamento ou retirada do ar; dúvida sobre o tipo ou o local do conteúdo; criação ou edição da página de campus. Como editor, prepare o conteúdo e encaminhe a decisão que ultrapassa sua atuação.
+- **Ao administrador responsável:** criação de coleções e subcoleções, ajuste de grupos e permissões, criação de pasta de notícias e alteração de cadastros auxiliares. Informe a página ou coleção envolvida e o que precisa conseguir fazer.
+
+Se uma ação não aparecer, não crie uma cópia em outro local para contornar a restrição. Envie o caminho da página e uma descrição do impedimento ao responsável. Os acessos dependem do grupo e da área autorizada.
+
 ## O que você deve conseguir fazer
 
 - encontrar a página correta antes de editar;

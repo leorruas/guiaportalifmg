@@ -4,6 +4,8 @@ Crie e prepare uma notícia na pasta correta do campus, setor ou área. Como edi
 
 Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela ajuda a pessoa a entender o fato e decidir se precisa agir. Informações que continuam válidas por muito tempo, como um serviço ou um contato, devem ficar em uma página institucional — não escondidas em uma notícia antiga.
 
+**Limite de atuação e apoio:** Como editor, prepare a notícia e encaminhe a publicação ao moderador da área. A criação de uma pasta de notícias, de uma coleção ou de uma subcoleção deve ser solicitada ao administrador. Ao linkar uma notícia em outro destino, respeite a aprovação exigida pelo sistema; se não conseguir concluir, procure o responsável pela pasta de destino.
+
 ## Como criar
 
 1. Em **Páginas**, navegue até a pasta de notícias atribuída ao seu grupo.
@@ -15,6 +17,11 @@ Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela a
 
 **Exemplo:** em vez de “Atenção”, escreva “IFMG abre inscrições para monitoria até 18 de agosto”. A pessoa já entende o assunto e o prazo antes de abrir a notícia.
 4. Preencha o conteúdo com contexto, informação essencial, links e próxima ação. Se houver um material complementar, acrescente um bloco de link com um rótulo que explique o destino.
+
+Escreva links que expliquem a ação e o destino, como **Acesse o edital**, **Faça sua inscrição** ou **Ouça a entrevista**. Evite “clique aqui”. Para a chamada principal de ação (CTA), use o bloco **Link único** com o estilo **Cartão**, preenchendo o título do botão e uma descrição que explique o que a pessoa encontrará ou por que deve agir. Links complementares podem permanecer no texto.
+
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos|Configurar a chamada para ação com Link único no estilo Cartão]]
 
 ![[imagens/manual-ifrn/image22.png|Exemplo de bloco de link complementar em uma notícia]]
 

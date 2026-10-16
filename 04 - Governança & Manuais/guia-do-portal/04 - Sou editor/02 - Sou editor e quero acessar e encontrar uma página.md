@@ -2,6 +2,8 @@
 
 O Wagtail organiza o portal como uma árvore: as páginas mais gerais ficam no alto e as mais específicas ficam dentro delas. Antes de editar, encontre primeiro o galho certo. Assim, você evita atualizar a página errada ou criar uma cópia fora do lugar.
 
+**Limite de atuação e apoio:** Se a página não aparecer ou você não conseguir editá-la, confirme com o moderador da área se está procurando no lugar correto. Se for necessário alterar seu acesso, solicite o ajuste ao administrador. Não crie outra página para substituir uma à qual você não tem acesso.
+
 ## Entrar no Wagtail
 
 1. Acesse [portal.ifmg.edu.br/admin](https://portal.ifmg.edu.br/admin).

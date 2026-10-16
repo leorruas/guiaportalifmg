@@ -14,6 +14,8 @@ Use esse tipo também para levar a um sistema, formulário, página, documento o
 > [!NOTE]
 > O endereço `portal.ifmg.edu.br` é usado atualmente no ambiente de homologação. O domínio público previsto para o Portal é `ifmg.edu.br`. Por isso, quando o domínio não for importante para a instrução, este guia prefere exemplos por caminho, como `/evento/`, para que o procedimento continue válido após a mudança de domínio.
 
+**Limite de atuação e apoio:** Como editor, prepare o redirecionamento no local autorizado e encaminhe-o ao moderador para revisão. Se não houver acesso ao destino na árvore ou ao tipo Link, procure o moderador para conferir o local e o administrador quando for necessário ajustar permissões.
+
 ## Criar o Link
 
 1. Em **Páginas**, abra a página-pai em que o novo acesso deve aparecer.
