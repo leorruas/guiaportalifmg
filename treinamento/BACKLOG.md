@@ -2,6 +2,19 @@
 
 Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresentação publicada em `treinamento/index.html`.
 
+## Produção de capturas da homologação — trabalho paralelo
+
+**Checklist compartilhado:** [CAPTURAS-WAGTAIL.md](./CAPTURAS-WAGTAIL.md). Contém **24 telas identificadas W01–W24**, priorização em lotes, nomes dos arquivos, caminhos no painel, capturas já existentes, como entregar, segurança e campos **PRECISO DE VOCÊ** e **EU** para diferenciar responsabilidades.
+
+- [x] Conferir o material de captura disponível no repositório e evitar pedidos duplicados.
+- [x] Registrar as 12 capturas da primeira leva, as oito de complemento e as quatro administrativas condicionais ao acesso, com indicação do slide correspondente.
+- [x] Deixar no mesmo documento o que depende do acesso da pessoa à homologação e o trabalho que pode continuar com as referências existentes.
+- [ ] Receber e revisar W01–W12, marcando cada item no documento conforme as imagens chegarem. **Dependência do usuário:** somente capturas acessíveis e autorizadas; não modificar dados do portal para registrar imagens.
+- [ ] Receber ou dispensar W13–W24 conforme diferença em relação às imagens já disponíveis e permissões da pessoa.
+- [ ] Atualizar progressivamente os slides com capturas aprovadas, sem inserir dados restritos em repositório ou site público.
+
+**Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
+
 ## Direção definida
 
 - Público: equipes que trabalham no Portal IFMG, com uma parte comum e trilhas para editor, moderador e administrador.

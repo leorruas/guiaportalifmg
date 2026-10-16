@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Criado `treinamento/CAPTURAS-WAGTAIL.md` como checklist compartilhado de 24 capturas do Wagtail, priorizando 12 telas de criação de Página, blocos, coleções, documentos, imagens e moderação; oito complementares já apoiadas por imagens do guia; e quatro administrativas condicionais a acesso. Cada item informa caminho no painel, o que mostrar, destino nos slides e nome do arquivo. Incluídas instruções de privacidade para homologação, pendências explícitas **PRECISO DE VOCÊ** e tarefas paralelas **EU**. Vinculado em `treinamento/BACKLOG.md` e fixado em `AGENTS.md`. Não foram capturadas telas da homologação nem solicitadas ações de risco no portal.
+
 - Alinhada a devolutiva do Moderador ao exemplo institucional da Biblioteca (horários de sexta-feira) e corrigido o título da etapa de pré-visualização; atualizados `treinamento/aulas.js`, `casos.js`, `conteudo.js`, os caches e a prática individual. Confirmada a execução bem-sucedida do teste de regressão (GitHub Actions `38926160624`), sem confundir com inspeção visual em navegador, que permanece pendente.
 
 - Ajustada a simulação de `location.hash` em `scripts/test-training.mjs` para corresponder à normalização real do navegador, que acrescenta `#` aos fragmentos atribuídos sem prefixo. A primeira execução da Action falhou apenas na asserção de navegação por esse descompasso do simulador.

@@ -118,6 +118,7 @@
 ## Apresentação de treinamento e backlog
 
 - O arquivo `treinamento/BACKLOG.md` registra decisões, demandas pendentes, fases, critérios de conclusão e histórico da apresentação web.
+- A lista de capturas reais necessárias está em `treinamento/CAPTURAS-WAGTAIL.md`: usar seus identificadores W01–W24, marcar dependências de acesso **PRECISO DE VOCÊ** e trabalho independente **EU**, reaproveitar capturas existentes e não inventar imagens da homologação. Capturas contendo dados internos ou pessoais não devem ser incluídas no repositório ou no GitHub Pages sem anonimização e autorização.
 - Antes de alterar a apresentação, consulte esse backlog e acrescente novas decisões do usuário na fase correspondente. Ao implementar, marque os itens concluídos e registre a mudança em `log.md`.
 - O material de slides é **expositivo**; orientações práticas individuais devem permanecer em `treinamento/pratica.html`. Não intercale exercícios no roteiro sem nova decisão explícita.
 - Preserve o grid editorial, a fonte Archivo e os verdes do Guia do Portal, além dos controles de apresentação e dos procedimentos canônicos. Propostas de reorganização devem partir de um roteiro claro e de fontes já confirmadas.
