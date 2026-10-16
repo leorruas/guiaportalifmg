@@ -17,6 +17,9 @@
   const featuredIds = window.TreinamentoAulas?.featuredIds || [];
   const app = document.getElementById('app');
   const dialog = document.getElementById('chapters');
+  const imageZoom = document.getElementById('imageZoom');
+  const imageZoomImage = document.getElementById('imageZoomImage');
+  const imageZoomTitle = document.getElementById('imageZoomTitle');
   const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const pad = n => String(n).padStart(2,'0');
   const scenes = [{id:'inicio',type:'cover'},...introScenes];
@@ -171,6 +174,20 @@
     go(idx);
   });
   dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
+  document.addEventListener('click',e=>{
+    const trigger=e.target.closest('[data-zoom-image]');
+    if(!trigger)return;
+    const src=trigger.getAttribute('data-zoom-image')||'';
+    if(!/^\.\.\/imagens\/[\w\-./À-ÿ]+\.(?:png|jpe?g|webp)$/i.test(src)||src.includes('..',3))return;
+    imageZoomImage.setAttribute('src',src);
+    const alt=trigger.getAttribute('data-zoom-alt')||'Imagem de referência do Wagtail';
+    imageZoomImage.setAttribute('alt',alt);
+    imageZoomTitle.textContent=alt;
+    imageZoom.showModal();
+  });
+  document.getElementById('closeImageZoom').addEventListener('click',()=>imageZoom.close());
+  imageZoom.addEventListener('click',e=>{if(e.target===imageZoom)imageZoom.close();});
+  imageZoom.addEventListener('close',()=>imageZoomImage.removeAttribute('src'));
   document.getElementById('fullscreen').addEventListener('click',async()=>{
     try{
       if(document.fullscreenElement)await document.exitFullscreen();
@@ -181,7 +198,7 @@
     document.getElementById('fullscreen').textContent=document.fullscreenElement?'Sair da tela cheia':'Tela cheia ⛶';
   });
   document.addEventListener('keydown',e=>{
-    if(dialog.open || e.altKey || e.ctrlKey || e.metaKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;
+    if(dialog.open || imageZoom.open || e.altKey || e.ctrlKey || e.metaKey || /INPUT|TEXTAREA|SELECT|BUTTON/.test(e.target.tagName))return;
     if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();go(active+1);}
     if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(active-1);}
     if(e.key==='Home'){e.preventDefault();go(0);}

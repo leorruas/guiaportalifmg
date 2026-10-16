@@ -10,7 +10,7 @@
   const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const label=(value)=>'<span class="teach-label">'+escape(value)+'</span>';
   const card=(title,description,tag)=>'<div class="teach-card">'+label(tag)+'<h2>'+escape(title)+'</h2><p>'+escape(description)+'</p></div>';
-  const shot=(name,alt)=>'<figure class="teach-shot"><img src="../imagens/'+escape(name)+'" alt="'+escape(alt)+'"><figcaption>REFERÊNCIA DO GUIA · CONFERIR NA HOMOLOGAÇÃO</figcaption></figure>';
+  const shot=(name,alt)=>'<figure class="teach-shot"><img src="../imagens/'+escape(name)+'" alt="'+escape(alt)+'"><figcaption><span>REFERÊNCIA DO GUIA</span><button type="button" class="capture-zoom" data-zoom-image="../imagens/'+escape(name)+'" data-zoom-alt="'+escape(alt)+'" aria-label="Ampliar captura de referência: '+escape(alt)+'">Ampliar captura <span aria-hidden="true">↗</span></button></figcaption></figure>';
   const row=(title,desc)=>'<div class="teach-row"><strong>'+escape(title)+'</strong><p>'+escape(desc)+'</p></div>';
   function slideBody(id){
     switch(id){

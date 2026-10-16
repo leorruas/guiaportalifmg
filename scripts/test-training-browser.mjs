@@ -38,6 +38,16 @@ try{
    if(size[0]===1440&&ids.includes(id)){await page.screenshot({path:resolve(output,id+'.png')});n++;}
   }
   if(size[0]===1440){
+   for(const id of ['moderador-publicar','administrador-papel','administrador-privacidade']){
+    await page.evaluate(id=>location.hash='#'+id,id);
+    await page.waitForFunction(id=>location.hash==='#'+id&&!!document.querySelector('#app .capture-zoom'),id);
+    await page.locator('#app .capture-zoom').first().click();
+    assert.equal(await page.locator('#imageZoom').evaluate(el=>el.open),true,'Ampliação não abriu: '+id);
+    assert.ok(await page.locator('#imageZoomImage').evaluate(el=>el.naturalWidth)>0,'Imagem ampliada não carregou: '+id);
+    if(id==='administrador-privacidade'){await page.screenshot({path:resolve(output,'ampliacao-privacidade.png')});n++;}
+    await page.keyboard.press('Escape');
+    assert.equal(await page.locator('#imageZoom').evaluate(el=>el.open),false,'Escape não fecha ampliação: '+id);
+   }
    await page.evaluate(()=>location.hash='#editor-menus');
    await page.locator('#fullscreen').click();
    await page.waitForTimeout(200);

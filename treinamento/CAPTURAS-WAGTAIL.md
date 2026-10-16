@@ -112,6 +112,12 @@ Também foi introduzido `treinamento/fluxo.js`, que identifica as **seis etapas*
 
 **QA automatizado:** a Action em Chromium abre 42 telas em 1440×900, 1920×1080 e 1280×800, verificou o palco e o carregamento de imagens. Capturas de auditoria são geradas como **artefato do workflow**, não publicadas no guia. **Ainda falta inspeção visual humana em projeção e validação das capturas da homologação.**
 
+## Recurso de ampliação já disponível nos slides
+
+- [x] Capturas existentes do guia podem ser abertas no modo **Ampliar captura**, sem alterar os arquivos originais nem criar novas capturas supostamente oficiais.
+- [ ] Depois de receber as imagens W01–W24 autorizadas, substituir as referências desatualizadas e reavaliar quais detalhes ainda precisam de recorte específico.
+- [ ] Fazer teste de leitura em projetor. **Ampliar** não acrescenta resolução a uma imagem pequena.
+
 ## Pendências de decisão — PRECISO DE VOCÊ
 
 - [ ] **D01 — Exemplo real:** qual página institucional do seu escopo pode servir de exemplo de **Biblioteca** sem informação interna? Se nenhuma, usamos uma demonstração **explicitamente identificada como exemplo**, sem fingir que ela existe publicada.

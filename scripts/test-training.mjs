@@ -57,6 +57,7 @@ assert.ok(items.every(s=>s.task&&s.check));
 assert.ok(items.find(s=>s.id==='editor-pratica').task.includes('Biblioteca'));
 assert.ok(items.find(s=>s.id==='moderador-publicar').task.includes('Biblioteca'),'Moderação deve acompanhar o mesmo caso');
 assert.ok(items.find(s=>s.id==='moderador-pratica').points.join(' ').includes('Biblioteca'));
+assert.ok(html.includes('id="imageZoom"')&&html.includes('id="closeImageZoom"'),'Falta modal de ampliação acessível');
 assert.ok(read('treinamento/casos.js').includes("type:'dualScreen'")&&read('treinamento/casos.js').includes("type:'permission'"),'Faltam demonstrações visuais do Moderador e Administrador');
 assert.ok(!items.some(s=>s.track==='editor'&&s.id==='editor-noticias'));
 assert.ok(css.includes('.teach-dual{display:grid'),'Comparação visual de menus ausente');
@@ -69,7 +70,11 @@ for(let i=0;i<slides.length;i++){
   const output=node('app').innerHTML;
   assert.ok(output.includes('<h1'),'Slide sem título: '+id);
   assert.equal(Number(node('progressBar').attributes['aria-valuenow']),i+1,'Progresso: '+id);
-  for(const img of output.matchAll(/<img\b[^>]*src="([^"]+)"[^>]*>/g)){
+  for(const trigger of output.matchAll(/data-zoom-image="([^"]+)"/g)){
+    exists('treinamento/'+trigger[1]);
+    assert.ok(output.includes('Ampliar captura'),'Imagem sem controle de ampliação: '+id);
+  }
+  for(const img of output.matchAll(/<img\\b[^>]*src="([^"]+)"[^>]*>/g)){
     exists('treinamento/'+img[1].split('?')[0]);
     assert.ok(/\balt="[^"]+"/.test(img[0]),'Imagem sem alt em '+id);
     images++;

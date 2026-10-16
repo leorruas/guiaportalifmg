@@ -55,6 +55,15 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [ ] Revisar **legibilidade de campos pequenos em projeção**: capturas antigas de Status, Configurações e privacidade ainda têm controles pequenos e devem ser ampliadas/recortadas cuidadosamente ou substituídas por capturas atuais da homologação, quando disponíveis e autorizadas.
 - [ ] **Não criar nesta fase** a página de orientação detalhada sobre gerenciamento de coleções, ainda dependente de capturas e validação da interface.
 
+## Ampliar capturas para apresentação — 16/10/2026
+
+- [x] Adicionar botão **Ampliar captura** às imagens dos slides expositivos (telas de exemplo e demonstrações com duas capturas).
+- [x] Usar uma janela de visualização acessível, também no modo tela cheia, com indicação explícita de **imagem de referência do guia** e botão Fechar.
+- [x] Permitir fechar por **Esc**, suspender atalhos de navegação enquanto o detalhe estiver aberto e preservar os arquivos originais sem cortes permanentes.
+- [x] Incluir testes automáticos da abertura, carregamento e fechamento da ampliação para as telas Status, Configurações e Privacidade, além de gerar captura visual de QA.
+- [ ] Conferir os detalhes ampliados em projeção física: capturas pequenas de origem não ganham resolução apenas por serem ampliadas. Substituir ou recortar com segurança quando os novos prints de homologação chegarem.
+- [ ] Confirmar execução dos testes de regressão e implantação desta alteração.
+
 ## Direção definida
 
 - Público: equipes que trabalham no Portal IFMG, com uma parte comum e trilhas para editor, moderador e administrador.

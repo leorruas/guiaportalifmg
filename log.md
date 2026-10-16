@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Criado modo de ampliação de capturas nos slides de casos e aulas do treinamento. Cada imagem do guia pode ser aberta numa janela acessível que também funciona em tela cheia e se fecha por botão, clique externo ou Esc. Navegação por teclas é suspensa durante a ampliação; arquivos originais permanecem intactos e identificados como referência do guia. Incluídos testes da interação no Chromium em Status, Configurações e Privacidade e captura de QA, com estilos padronizados em Archivo e cache atualizado. Roteiro de apresentação, checklist, AGENTS e backlog sincronizados. Pendente conferência em projetor e confirmação da CI desta versão.
+
 - Inspecionado o artefato do teste de Chromium `38935949982`: capturas de moderador-revisao, moderador-publicar, administrador-papel, administrador-acessos, administrador-estrutura, administrador-privacidade e administrador-colecoes. Slides sem cortes aparentes; permissão conceitual legível, mas campos de capturas antigas continuam pequenos para possível projeção. Backlog atualizado sem confundir teste desktop com validação projetada.
 
 - Expandida a seleção de screenshots da Action Chromium para os slides alterados de Moderador e Administrador; a verificação se mantém em 42 telas × 3 resoluções.

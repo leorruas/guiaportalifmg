@@ -191,6 +191,7 @@
   };
   const html=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const kicker=x=>'<span class="case-kicker">'+html(x)+'</span>';
+  const zoomButton=(file,alt)=>'<button type="button" class="capture-zoom" data-zoom-image="../imagens/'+html(file)+'" data-zoom-alt="'+html(alt)+'" aria-label="Ampliar captura de referência: '+html(alt)+'">Ampliar captura <span aria-hidden="true">↗</span></button>';
   function blockCard(label,title,body){
     return '<section class="case-tile">'+kicker(label)+'<h2>'+html(title)+'</h2><p>'+html(body)+'</p></section>';
   }
@@ -201,14 +202,14 @@
         return '<div class="case-tiles">'+d.cards.map(item=>blockCard(...item)).join('')+'</div>'+note(d.note);
       case 'dualScreen':
         return '<div class="case-dual-screen">'+d.screens.map(s=>'<section class="case-dual-item">'+kicker(s.label)+
-          '<figure class="case-dual-shot"><img src="../imagens/'+html(s.image)+'" alt="'+html(s.alt)+'" loading="eager"><figcaption>REFERÊNCIA DO GUIA</figcaption></figure>'+
+          '<figure class="case-dual-shot"><img src="../imagens/'+html(s.image)+'" alt="'+html(s.alt)+'" loading="eager"><figcaption><span>REFERÊNCIA DO GUIA</span>'+zoomButton(s.image,s.alt)+'</figcaption></figure>'+
           '<p>'+html(s.description)+'</p></section>').join('')+'</div>'+note(d.note);
       case 'permission':
         return '<div class="case-permission">'+d.permissions.map(s=>'<section class="case-permission-path">'+kicker(s.label)+
           '<span class="case-permission-icon" aria-hidden="true">✓</span><h2>'+html(s.heading)+'</h2><p>'+html(s.description)+'</p></section>').join('')+
           '<div class="case-permission-conclusion"><strong>DUAS PERMISSÕES, UMA TAREFA</strong><p>'+html(d.result)+'</p></div></div>'+note(d.note);
       case 'screen':
-        return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption>REFERÊNCIA DO GUIA · CONFERIR NA HOMOLOGAÇÃO</figcaption></figure>'+
+        return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption><span>REFERÊNCIA DO GUIA</span>'+zoomButton(d.image,d.alt)+'</figcaption></figure>'+
           '<div class="case-steps">'+d.steps.map(item=>'<section>'+kicker(item[0])+'<p>'+html(item[1])+'</p></section>').join('')+'</div></div>'+note(d.note);
       case 'scenario':
         return '<div class="case-scenario"><div class="case-prompt">'+kicker('SITUAÇÃO / EXEMPLO')+'<blockquote>'+html(d.scenario)+'</blockquote></div>'+

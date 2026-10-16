@@ -57,6 +57,8 @@ Explicar que **permissão de página não concede permissão de coleção**. Con
 
 **Ao apresentar as permissões:** destaque que o esquema dos dois acessos é conceitual, não uma tela do Wagtail. Mostre a referência do menu Configurações e da opção Adicionar coleção, mas não execute operações administrativas. O alerta sobre renomeação continua na tela própria.
 
+**Dica para apresentação presencial:** nas capturas existentes do Wagtail, use **Ampliar captura** para mostrar campos ou ações que estejam pequenos. O detalhe abre sobre o slide (inclusive em tela cheia) e fecha pelo botão ou por **Esc**. Enquanto estiver aberto, as setas não avançam a apresentação. As imagens são **referências do guia**; a ampliação não as torna capturas recentes da homologação e não recupera nitidez ausente no original.
+
 ## Acompanhamento e pendências
 
 As [atividades individuais](./pratica.html) continuam fora dos slides. Para ações reais, consultar o Guia do Portal. A substituição das capturas existentes pelas imagens da homologação ocorre conforme o [checklist W01–W24](./CAPTURAS-WAGTAIL.md), após autorização e revisão de privacidade.
