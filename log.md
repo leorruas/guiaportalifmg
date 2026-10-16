@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Complementadas as orientações existentes de títulos de imagens e documentos: assunto/tipo, curso ou público quando aplicável, campus e ano/período confirmado. Preservado o padrão detalhado já documentado para arquivos de cursos; esclarecidos espaços no título do cadastro, distinção do nome do arquivo e uso normal de hífens/separadores. Atualizado o item 17 da auditoria.
+
 - Detalhados no procedimento de página institucional os campos Contatos (do Suap), Setor (Suap) e Exibir setores filhos, conforme captura do usuário. Diferenciados setores subordinados do SUAP e páginas-filhas do portal; incluídas conferência e orientação para dados divergentes. Atualizado o item 17 da auditoria.
 - Registrada no item 16 da auditoria a decisão do usuário de mapear tipos de páginas permitidos junto do terceiro clique dos campi.
 

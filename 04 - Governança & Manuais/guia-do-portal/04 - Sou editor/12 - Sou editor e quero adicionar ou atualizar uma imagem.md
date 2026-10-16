@@ -11,7 +11,11 @@ Uma imagem pode aparecer em várias páginas. Por isso, substituir o arquivo de 
 3. Envie o arquivo.
 4. Dê à imagem um título claro, em linguagem natural, que permita reconhecê-la depois. Evite nomes como `IMG_9382`, abreviações internas ou títulos inteiros em caixa alta.
 
-**Exemplo:** “Estudantes na biblioteca do Campus Ouro Preto” é melhor que “IMG_9382”.
+Inclua **assunto + nome do curso, quando aplicável + campus + ano ou período**, conforme as informações confirmadas da imagem. Esses dados ajudam a distinguir fotos parecidas e a encontrar o arquivo depois. Para uma imagem de uso geral, não acrescente um curso que ela não representa nem invente uma data desconhecida.
+
+**Exemplos:** “Aula prática de Técnico Integrado em Informática — Campus Ouro Branco — 2027” e “Estudantes na biblioteca — Campus Ouro Preto — 2027”.
+
+Escreva o **título no cadastro** com palavras separadas por espaços. Evite títulos como `aula_pratica_informatica_2027` ou `aula-pratica-informatica-2027`. A orientação se refere ao título preenchido no Wagtail; não exige renomear o arquivo no computador. Hífens que fazem parte da escrita normal e separadores entre informações, como nos exemplos, podem ser usados. O título ajuda a localizar a imagem; o texto alternativo deve descrever a informação relevante no contexto da página.
 
 ![[imagens/manual-ifrn/image38.png|Adição de uma imagem à coleção escolhida]]
 

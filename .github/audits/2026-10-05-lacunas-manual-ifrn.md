@@ -186,7 +186,9 @@ Esses itens são pequenos e devem ser validados antes de entrar no guia, princip
 
 **Situação em 16/10/2026:** campo Exibir setores filhos confirmado por captura atual do usuário. Incorporado ao procedimento de página institucional, com seleção de Setor (Suap), exibição automática de contatos e chefes conforme texto da interface, inclusão de setores subordinados e distinção em relação às páginas-filhas/menu interno. Incluída captura e orientação para divergências de dados.
 
-**Próximo passo:** revisar os demais detalhes de cadastro, sem tratar as convenções de títulos de arquivos como validações técnicas não confirmadas.
+**Títulos de imagens e documentos em 16/10/2026:** complementadas as orientações já existentes, conforme decisão do usuário, mantendo o padrão detalhado de documentos por tipo, curso/público, campus e período. Ampliados os exemplos de imagens com assunto, curso quando aplicável, campus e ano. Explicado o uso de espaços no título do cadastro, sem exigir renomeação do arquivo nem proibir hífens da escrita normal ou separadores.
+
+**Próximo passo:** regras de localização hierárquica de tipos, como Curso, serão retomadas junto do terceiro clique e do item 16.
 
 ## Conteúdo do documento que já está coberto
 

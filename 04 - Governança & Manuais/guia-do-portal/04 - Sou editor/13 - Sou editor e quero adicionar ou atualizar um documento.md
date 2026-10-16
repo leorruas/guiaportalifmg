@@ -29,6 +29,7 @@ O título deve dizer exatamente o que é o documento, para quem ele serve e, qua
 - Para documentos de curso, use obrigatoriamente: **tipo do documento + nome completo do curso + campus**. Acrescente o ano, período ou versão quando essa informação estiver disponível. Isso evita conflito entre cursos, períodos e unidades diferentes.
 - Para documentos que atendem mais de um curso, use: **tipo do documento + público ou nível + campus**. Acrescente o ano, período ou versão quando essa informação estiver disponível.
 - Escreva por extenso; não use códigos, abreviações ou nomes como `ADMINISTRACAO2026.2B.pdf`.
+- No título do cadastro, separe as palavras com espaços; evite títulos formados apenas por palavras ligadas por hífens ou underscores, como `calendario_academico_2027`. Isso não exige renomear o arquivo no computador. Hífens da escrita normal e separadores entre as partes do título, como nos exemplos abaixo, podem ser usados.
 - Exemplo: **Horários de aula — Bacharelado em Administração — 2º semestre de 2026 — Campus Ouro Branco**.
 
 | Tipo de documento | Padrão de título | Exemplo |
