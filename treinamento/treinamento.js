@@ -36,17 +36,25 @@
     const jumps = tracks.map((t,i) => '<button type="button" data-jump="trilha-'+t.key+'"><span>'+pad(i+1)+' / '+(slides.filter(s=>s.track===t.key).length)+' temas</span><strong>'+escape(t.label)+' ↗</strong></button>').join('');
     return '<article class="frame frame-cover">'+chromeTop('IFMG / Comunicação institucional','Apresentação · 2026')+
       '<div class="cover-title"><h1 tabindex="-1">Portal<br><em>IFMG</em><br>Treinamento</h1>'+
-      '<p>Organizar a informação.<br>Preparar o conteúdo.<br>Revisar antes de publicar.</p></div>'+
+      '</div>'+
       '<div class="cover-tracks">'+jumps+'</div>'+
-      chromeFoot('Quatro trilhas / uma experiência de publicação','Use → para avançar')+'</article>';
+      chromeFoot('Guia do Portal IFMG','Use → para avançar')+'</article>';
   }
   function section(scene){
     const t = tracks.find(x=>x.key===scene.track);
-    return '<article class="frame frame-section">'+chromeTop('TREINAMENTO / '+t.label,'SEÇÃO '+pad(scene.section))+
-      '<div class="section-block" aria-hidden="true"><strong>'+pad(scene.section)+'</strong></div>'+
-      '<div class="section-copy"><span class="mono">'+pad(scene.section)+' / '+pad(tracks.length)+'</span>'+
-      '<h1 tabindex="-1">'+escape(t.label)+'</h1><p>'+escape(t.sub)+'.</p></div>'+
-      chromeFoot('IFMG / GUIA DO PORTAL',t.desc)+'</article>';
+    const learning={
+      comum:['Páginas, árvore e coleções não são a mesma coisa','Editor, moderador e administrador têm decisões diferentes','O painel mostra a etapa de cada publicação'],
+      editor:['Adicionar blocos na aba Conteúdo e escolher o formato correto','Organizar imagens, documentos e metadados','Conferir a prévia e enviar para moderação'],
+      moderador:['Conferir fontes, prazos, links e acessibilidade','Devolver correções no trecho certo','Aprovar, agendar ou retirar do ar no escopo autorizado'],
+      administrador:['Separar permissões de páginas e de coleções','Organizar coleções sem renomeá-las por conta própria','Tratar falhas técnicas sem apagar arquivos ou coleções']
+    };
+    return '<article class="frame frame-section">'+
+      '<div class="module-rail"><span>PORTAL IFMG</span><strong>'+pad(scene.section)+'</strong><small>MÓDULO / '+pad(tracks.length)+'</small></div>'+
+      '<div class="module-main">'+
+      '<div class="module-meta"><span>TREINAMENTO / WAGTAIL</span><span>'+pad(scene.section)+' DE '+pad(tracks.length)+'</span></div>'+
+      '<div class="module-heading"><span>O QUE ESTE MÓDULO EXPLICA</span><h1 tabindex="-1">'+escape(t.label)+'</h1><p>'+escape(t.sub)+'</p></div>'+
+      '<div class="module-curriculum">'+learning[t.key].map(item=>'<p>'+escape(item)+'</p>').join('')+'</div>'+
+      '<div class="module-foot">IFMG / GUIA DO PORTAL</div></div></article>';
   }
   function points(s,mode) {
     return '<ol class="points '+(mode==='visual'?'points-visual':'points-grid')+'">'+

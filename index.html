@@ -157,7 +157,7 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="style.css?v=training-entry-v5">
+    <link rel="stylesheet" href="style.css?v=training-entry-v6">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
@@ -288,9 +288,19 @@
             </div>
         </div>
     </main>
-    <footer class="training-entry">
-        <p>Treinamento do Portal IFMG</p>
-        <a href="treinamento/">Entrar na apresentação — editor, moderador e administrador →</a>
+    <footer class="training-entry" aria-label="Treinamento do Portal IFMG">
+        <div class="training-entry__inner">
+            <div class="training-entry__content">
+                <span class="training-entry__eyebrow">GUIA DO PORTAL / FORMAÇÃO</span>
+                <h2>Do guia<br>à publicação</h2>
+                <p>Uma apresentação sobre a estrutura do Portal IFMG, os blocos de conteúdo e as responsabilidades de cada perfil no Wagtail.</p>
+            </div>
+            <a class="training-entry__action" href="treinamento/" aria-label="Abrir apresentação de treinamento do Portal IFMG">
+                <span>APRESENTAÇÃO / TREINAMENTO</span>
+                <strong>Abrir os slides <span aria-hidden="true">↗</span></strong>
+                <small>Editor · Moderador · Administrador</small>
+            </a>
+        </div>
     </footer>
 
     <script src="data/guide-metadata.js?v=collection-table-search-v2"></script>

@@ -105,3 +105,22 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .support-end{display:grid;grid-template-columns:1fr auto;gap:2.3cqw;align-items:end;border-top:1px solid var(--rule);padding:1.2cqw 0 1.25cqw}
 .support-end p{font-size:1cqw;line-height:1.35;color:var(--muted);margin:0;max-width:51ch}
 .support-end a{font-size:1.1cqw;color:var(--accent);font-weight:750;text-align:right;text-decoration-thickness:1px}
+
+/* Fase 1: capa limpa e separadores de módulo como abertura editorial, não cartaz numerado. */
+.frame-cover .cover-title{display:flex;align-items:flex-end;justify-content:flex-start;flex:1;padding-bottom:1.6cqw}
+.frame-cover .cover-title h1{font-size:8.7cqw;line-height:.89;margin:0;letter-spacing:-.085em}
+.frame-section{background:var(--paper);color:var(--ink);padding:0;display:grid;grid-template-columns:25% minmax(0,1fr)}
+.module-rail{background:var(--accent);color:#fff;padding:3.35cqw 2.4cqw;display:flex;flex-direction:column;gap:1.5cqw}
+.module-rail>span,.module-rail>small{font-size:1.05cqw;font-weight:700;letter-spacing:.09em}
+.module-rail>strong{font-size:17cqw;line-height:.8;font-weight:900;letter-spacing:-.13em;margin:auto 0}
+.module-rail>small{margin-top:auto}
+.module-main{min-width:0;padding:3.35cqw 4.5cqw 3cqw 3.4cqw;display:flex;flex-direction:column}
+.module-meta,.module-foot{font-size:.92cqw;font-weight:700;letter-spacing:.06em}
+.module-meta{display:flex;justify-content:space-between;border-bottom:1px solid var(--rule);padding-bottom:1.2cqw}
+.module-heading{margin:3.2cqw 0 0}
+.module-heading>span{font-size:.93cqw;font-weight:750;color:var(--accent);letter-spacing:.06em}
+.module-heading h1{font-size:6.3cqw;line-height:.96;letter-spacing:-.085em;font-weight:900;margin:1.3cqw 0 1.15cqw;overflow-wrap:anywhere}
+.module-heading p{font-size:1.5cqw;line-height:1.25;margin:0;max-width:45ch;color:var(--muted)}
+.module-curriculum{margin:auto 0 2cqw;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25cqw}
+.module-curriculum p{border-top:1.5px solid var(--ink);padding:1.1cqw .6cqw 0 0;margin:0;font-size:1.22cqw;line-height:1.28;font-weight:550}
+.module-foot{border-top:1px solid var(--rule);padding-top:1.2cqw}

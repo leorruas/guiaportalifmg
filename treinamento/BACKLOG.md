@@ -62,6 +62,40 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Aceite:** navegação íntegra e nenhuma informação essencial cortada.
 
+## Solicitações de 16/10/2026: apresentação mais didática
+
+### Fase 1: capa, acesso pelo guia e abertura dos módulos
+
+- [x] Retirar da capa as três frases “Organizar a informação / Preparar o conteúdo / Revisar antes de publicar”.
+- [x] Retirar a frase “Quatro trilhas / uma experiência de publicação”.
+- [x] Substituir o link isolado no rodapé da home do guia por uma chamada editorial própria para o treinamento, com título, contexto e ação.
+- [x] Substituir o separador de módulo com número gigante sobre fundo preto por uma abertura editorial em Archivo e verde com **temas concretos** do módulo.
+- [ ] Conferir visualmente o comportamento do novo rodapé em telas pequenas e nos dois temas do guia.
+
+### Fase 2: ensinar o sistema por exemplos [em implementação]
+
+- [ ] Desfazer o formato repetitivo de três textinhos numerados, priorizando diagramas, comparações, capturas e decisões.
+- [ ] Mostrar como inserir e reorganizar blocos na aba **Conteúdo** (botão **+**, setas, duplicação e lixeira), incluindo pré-visualização.
+- [ ] Distinguir os blocos **Introdução**, **Informação**, **Links**, **Link único**, **Cards**, **Tabela**, **Coleção** e **Galeria** com contexto de uso.
+- [ ] Explicar as diferenças entre bloco **Links**, bloco **Link único** (estilo **Cartão** versus **Padrão**) e **Link** como tipo de página na árvore.
+- [ ] Ensinar configuração de **Coleção**: coleção escolhida, **Recursivo**, **Mostrar imagens/documentos** e ordenação de documentos por upload.
+- [ ] Ensinar publicação e revisão pelo percurso real no Wagtail, não por jargões abstratos.
+- [ ] Substituir ou reenquadrar os slides chamados “Entrega final”, mantendo as tarefas em `pratica.html`.
+
+### Fase 3: segurança de coleções [pendente]
+
+- [ ] Dar destaque visível ao aviso **Não renomeie coleções por conta própria**: alterações de nome, em especial as que mudam a ordem alfabética, podem causar falhas ao criar novas.
+- [ ] Em caso de falha, orientar a conferir se já foi criada, registrar erro, nome e coleção-pai e encaminhar à equipe com acesso de manutenção; **não excluir nem recriar coleções como tentativa de correção**.
+- [ ] Diferenciar administração do Wagtail de manutenção técnica de código/banco.
+- [ ] Conferir redação com o procedimento canônico de coleções, evitando afirmar que toda renomeação sempre causa erro.
+
+### Fase 4: refinamento final [pendente]
+
+- [ ] Revisar um a um os demais slides para retirar abstrações e repetir menos o guia; incluir capturas reais nos pontos que exigem demonstração.
+- [ ] Avaliar se o deck deve ser dividido por encontros/audiências para não ficar longo.
+- [ ] Testar leitura em projeção 16:9, teclado, links, índice, grafos e responsividade.
+- [ ] Confirmar publicação do GitHub Pages e versões de cache após cada implantação.
+
 ## Histórico e próximos registros
 
 - **Concluído antes deste backlog:** deck 16:9 com 39 telas; estilo suíço; cores do guia e Archivo; redução do texto de apoio; atividades individuais separadas; seis slides iniciais de grafos e estruturas.
