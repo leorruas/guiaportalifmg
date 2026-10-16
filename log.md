@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Sincronizados os exercícios de Editor sobre a página da Biblioteca e a síntese de revisão do Moderador: hierarquia H2/H3, Link único para catálogo, imagens, horários de atendimento, comentários e reenvio. Os casos da apresentação foram alinhados às práticas. Atualizados caches de `conteudo.js` e `casos.js`; aberta a etapa de regressão automatizada no backlog. Confirmado sucesso da publicação da correção fullscreen anterior.
+
 - Corrigido o layout fullscreen do treinamento: o antigo grid conservava três linhas após ocultar as barras, deixando o slide sujeito a posicionamento em uma faixa de altura zero. No modo de tela cheia, `.deck` agora usa flex centralizado e `.stage` preserva 16:9 limitado pela viewport; atualizado cache CSS para v9 na apresentação e na prática. Teste visual em navegador permanece pendente, registrado em `treinamento/BACKLOG.md`.
 
 - Corrigida a apresentação conforme a organização de perfis: jornalistas com perfil mínimo Moderador criam notícias, enquanto a trilha Editor ensina a criar/editar páginas institucionais, exemplificando a página da Biblioteca. A distribuição de notícias entre pastas passou à trilha Moderador; atividades, índices, exemplos e cache foram sincronizados. O percurso de três cliques agora demonstra o acesso a Reserva de Vagas (Cotas), conforme o mapa da Reitoria. Registrada revisão futura do artigo canônico antigo sobre notícias no backlog.

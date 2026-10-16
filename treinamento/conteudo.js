@@ -111,8 +111,8 @@ window.TreinamentoConteudo = [
       "Use H2 para seções principais e H3 para subdivisões.",
       "Na primeira menção, escreva o nome completo e a sigla. Evite simular títulos com negrito."
     ],
-    "task": "Divida o rascunho em “Inscrições” e “Documentos necessários”.",
-    "check": "A subdivisão usa H3 dentro de uma seção H2.",
+    "task": "Organize o conteúdo da Biblioteca usando H2 “Serviços” e H3 “Empréstimo de livros”.",
+    "check": "A subdivisão usa H3 dentro da seção H2 e não foi simulada apenas com negrito.",
     "ref": "blocos",
     "img": "barra-edicao-flutuante.png",
     "limits": null
@@ -127,8 +127,8 @@ window.TreinamentoConteudo = [
       "Tabela: comparação de dados; é possível colar células do Excel ou de outra tabela.",
       "Cards: caminhos relacionados. Chapéu é o texto de tema acima do título."
     ],
-    "task": "Escolha um bloco para a inscrição na oficina e explique por que ele ajuda.",
-    "check": "A chamada tem texto descritivo, como “Faça sua inscrição”, e destino conferido.",
+    "task": "Escolha o bloco para a ação principal “Acessar o catálogo” na página da Biblioteca.",
+    "check": "Use Link único no estilo Cartão com descrição do catálogo, rótulo de ação e destino conferido.",
     "ref": "blocos",
     "img": "link-unico-cartao-publicado.png",
     "limits": null
@@ -162,8 +162,8 @@ window.TreinamentoConteudo = [
       "Imagem informativa precisa de texto alternativo; marque decorativa somente quando não acrescentar informação.",
       "Título da imagem, texto alternativo e legenda têm funções diferentes. Confira o contexto e o enquadramento."
     ],
-    "task": "Escolha uma foto e escreva o texto alternativo para a página da oficina.",
-    "check": "A descrição explica o que importa, sem depender de a pessoa ver a imagem.",
+    "task": "Selecione uma imagem informativa da Biblioteca e descreva o que ela comunica naquele contexto.",
+    "check": "O texto alternativo informa o essencial, o título ajuda a encontrar a imagem no painel e o enquadramento foi conferido.",
     "ref": "imagens",
     "img": "imagem-formatos-texto.png",
     "limits": null
@@ -229,8 +229,8 @@ window.TreinamentoConteudo = [
       "Corrija, responda quando necessário, salve e reenvie.",
       "Editar/remover comentários próprios é diferente de resolver uma pendência; nenhuma dessas ações publica a página."
     ],
-    "task": "Responda: “Informe até quando as inscrições ficam abertas”.",
-    "check": "O prazo aparece no conteúdo e a resposta informa o que foi corrigido.",
+    "task": "Responda à devolução: “Confirme e informe o horário de atendimento às sextas-feiras”.",
+    "check": "O horário confirmado aparece na mesma página; a resposta identifica a correção e a página foi reenviada.",
     "ref": "corrigir",
     "img": null,
     "limits": null
@@ -241,9 +241,9 @@ window.TreinamentoConteudo = [
     "title": "A página da Biblioteca está pronta para revisão?",
     "lead": "Síntese de uma página institucional de serviço.",
     "points": [
-      "Título, fonte, público, prazo e responsável definidos.",
-      "Texto organizado, arquivos identificados e chamada de inscrição funcionando.",
-      "Metadados preenchidos, prévia conferida e página enviada para revisão."
+      "Título, serviços, horários, contatos e responsável institucional confirmados.",
+      "Seções e blocos organizados, links úteis e documentos vigentes conferidos.",
+      "Metadados preenchidos, prévia revisada e página enviada para moderação."
     ],
     "task": "Prepare a página da Biblioteca, com serviços, horários, contatos e links.",
     "check": "A Página foi pré-visualizada, tem informações confirmadas e está em moderação.",
@@ -296,8 +296,8 @@ window.TreinamentoConteudo = [
       "Revise clareza, títulos, links, imagens, documentos e metadados.",
       "Percorra a prévia e confira a ação principal em telas menores."
     ],
-    "task": "Receba o rascunho da oficina e encontre três pontos que precisam de revisão.",
-    "check": "Cada problema está ligado a uma necessidade do público ou a uma informação confirmada.",
+    "task": "Revise a página da Biblioteca recebida do editor: encontre horários ou contatos não confirmados.",
+    "check": "As pendências indicam exatamente o trecho, a informação a confirmar e o resultado esperado.",
     "ref": "revisar",
     "img": null,
     "limits": null
@@ -312,8 +312,8 @@ window.TreinamentoConteudo = [
       "Evite “Melhorar texto”, que não explica o que corrigir.",
       "Quando a página voltar, confira a mudança e registre a decisão seguinte."
     ],
-    "task": "Escreva uma devolução sobre uma inscrição sem prazo.",
-    "check": "O editor sabe o que alterar e você sabe como conferir a correção.",
+    "task": "Registre uma devolução caso a página da Biblioteca não informe o horário de atendimento às sextas-feiras.",
+    "check": "O editor sabe onde corrigir e qual dado precisa confirmar com o campus.",
     "ref": "comentarios",
     "img": null,
     "limits": null
@@ -363,8 +363,8 @@ window.TreinamentoConteudo = [
       "Registre uma pendência específica e confira a nova entrega.",
       "Decida o estado e combine quem acompanhará a vigência."
     ],
-    "task": "Revise uma Página institucional enviada pelo editor e registre uma pendência verificável.",
-    "check": "A decisão está registrada e a próxima responsabilidade está clara.",
+    "task": "Revise a página da Biblioteca enviada pelo editor, devolva uma correção objetiva e confira a resposta.",
+    "check": "A correção foi conferida na mesma página e a decisão editorial ficou registrada.",
     "ref": "revisar",
     "img": null,
     "limits": null

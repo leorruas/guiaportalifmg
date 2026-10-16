@@ -137,6 +137,14 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Trocar o percurso para **Home → Estudantes → Como ingressar no IFMG → Reserva de Vagas (Cotas)**, preservando o título existente do nó mapeado.
 - [ ] Conferir visualmente a composição em projeção. O exemplo não promete três cliques para qualquer informação.
 
+## Qualidade e regressões — 16/10/2026
+
+- [x] Confirmar que a correção do modo de tela cheia publicada em `e40917b` foi implantada com sucesso no GitHub Pages.
+- [x] Unificar os casos da Biblioteca nos exercícios de Editor e no roteiro de revisão do Moderador, sem apresentar produção de notícias como tarefa do Editor.
+- [ ] Validar automaticamente integridade dos roteiros, 44 slides, índice, referências, imagens, caminho de cotas e tratamento das coleções com `scripts/test-training.mjs`.
+- [ ] Conferir manualmente a apresentação em navegador real e projeção: uma validação por simulação de DOM e por cálculos CSS **não substitui** esta etapa.
+- [ ] Verificar o rodapé do guia nos modos claro/escuro e em telas pequenas no navegador.
+
 ## Histórico e próximos registros
 
 - **Concluído antes deste backlog:** deck 16:9 com 39 telas; estilo suíço; cores do guia e Archivo; redução do texto de apoio; atividades individuais separadas; seis slides iniciais de grafos e estruturas.

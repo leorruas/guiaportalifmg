@@ -55,7 +55,7 @@
       image:'guias-contextuais/barra-edicao-flutuante.png',alt:'Barra flutuante de edição de texto no Wagtail, com controles de formatação e fixação.',
       steps:[
         ['BARRA','Selecione um trecho para mostrar as ferramentas; o alfinete fixa a barra no campo.'],
-        ['H2','Use Título 2 nas principais partes, como Inscrições e Documentos necessários.'],
+        ['H2','Use Título 2 nas principais partes, como Serviços e Atendimento.'],
         ['H3','Use Título 3 nas subdivisões; confira a sequência na pré-visualização.']
       ]
     },
@@ -137,13 +137,13 @@
       ],note:'Dados de servidores, setores e eventos podem vir da integração com SUAP. Confira a origem antes de cadastrar cópias.'
     },
     'moderador-pratica': {
-      type:'scenario',title:'Uma aprovação precisa deixar a decisão registrada',lead:'Síntese de uma revisão de notícia de inscrição.',
-      scenario:'A notícia chegou sem a data final de inscrição.',
+      type:'scenario',title:'Uma aprovação precisa deixar a decisão registrada',lead:'Síntese da revisão da página da Biblioteca enviada pelo Editor.',
+      scenario:'A página da Biblioteca chegou sem o horário de atendimento às sextas-feiras.',
       steps:[
-        ['DEVOLVER','Registre a pendência no trecho certo: “Informe a data final de inscrição”.'],
-        ['RECONFERIR','Leia a correção na mesma página e revise links, fonte e vigência.'],
-        ['DECIDIR','Aprove ou encaminhe à publicação conforme o estado, a data e seu acesso.']
-      ],note:'Não resolva o fluxo por mensagem paralela: os comentários e o estado devem ficar associados à página.'
+        ['DEVOLVER','No trecho de horários, peça a confirmação e a inclusão da informação com a fonte responsável.'],
+        ['RECONFERIR','Leia a correção na mesma página, confira contatos, links e funcionamento do serviço.'],
+        ['DECIDIR','Registre a aprovação ou encaminhe à publicação conforme a revisão e seu acesso.']
+      ],note:'As correções e a decisão devem permanecer associadas à página e ao fluxo de moderação.'
     },
     'administrador-papel': {
       type:'cards',title:'Administrador mantém o trabalho possível e seguro',lead:'A configuração do painel não substitui a manutenção técnica do sistema.',
