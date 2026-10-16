@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Detalhados os controles do bloco Coleção na referência de blocos: origem dos arquivos, inclusão de subcoleções, exibição de imagens/documentos e ordenação documental por data de upload. Incluídos exemplo por campus e ano, conferência da lista e encaminhamento administrativo para criação/acessos. Atualizado o item 6 da auditoria IFRN x IFMG, preservando os demais blocos para revisão posterior.
+
 - Acrescentada ao artigo de notícias a preferência aprovada por Largura completa nas imagens do corpo, permitindo alinhamento lateral quando ajudar na leitura e orientando conferir em telas menores. Registrado o item 5 da auditoria IFRN x IFMG como atendido pelas decisões editoriais incorporadas ao guia.
 
 - Incluída no artigo de notícias a orientação aprovada de apresentar o nome completo seguido da sigla na primeira menção no texto e usar a sigla nas seguintes, com exemplo do IFMG. Atualizado o item 5 da auditoria IFRN x IFMG.

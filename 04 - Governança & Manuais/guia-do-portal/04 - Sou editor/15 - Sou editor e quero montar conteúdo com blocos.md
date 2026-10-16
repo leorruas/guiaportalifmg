@@ -61,7 +61,19 @@ Quando o bloco oferecer o campo **Ícone**, escolha o ícone no [Google Icons](h
 
 Use **Coleção** para mostrar os documentos ou imagens que já foram organizados na coleção correta. Antes de publicar, confira se a coleção escolhida é da área certa e se os arquivos estão vigentes.
 
+Configure cada opção pelo que você deseja mostrar ao público:
+
+- **Coleção:** escolhe de onde o bloco vai buscar os arquivos. Selecione a coleção da área e do assunto que a página precisa apresentar.
+- **Recursivo:** inclui também os arquivos das subcoleções, ou seja, das coleções que ficam dentro da escolhida. Desmarcado, considera somente os arquivos diretamente na coleção selecionada.
+- **Mostrar imagens:** inclui as imagens da coleção no bloco. Deixe desmarcado se a intenção for apresentar apenas documentos.
+- **Mostrar documentos:** inclui os documentos da coleção no bloco. Deixe desmarcado se quiser mostrar apenas imagens. Marque as duas opções quando precisar dos dois tipos de arquivo.
+- **Ordenar documentos por data de upload:** usa a data de envio do arquivo ao portal em vez da ordem alfabética. Essa data não é necessariamente a data de publicação ou de vigência do documento. Confira a sequência na pré-visualização antes de publicar.
+
 ![[imagens/manual-ifrn/image5.png|Configuração de um bloco de coleção]]
+
+**Exemplo:** ao escolher **Arcos • Notícias** e marcar **Recursivo** e **Mostrar imagens**, o bloco inclui as imagens das subcoleções anuais, como **2027**. Para mostrar somente as imagens de 2027, selecione diretamente essa subcoleção. Sem Recursivo, escolher a coleção-pai não inclui as imagens guardadas dentro das subcoleções dos anos.
+
+**Como conferir:** pré-visualize a página e verifique se aparecem somente os arquivos, tipos e anos desejados. Se a lista estiver vazia, confira a coleção selecionada, os tipos marcados e se os arquivos estão em uma subcoleção. Essas opções controlam a apresentação do bloco; não substituem as permissões de acesso. Para criar uma coleção ou ajustar seus acessos, procure o administrador responsável.
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image35.png|Exemplo publicado de bloco de coleção]]
 

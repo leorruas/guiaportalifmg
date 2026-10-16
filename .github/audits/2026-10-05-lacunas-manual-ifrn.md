@@ -84,7 +84,9 @@ O guia atual explica muito bem **quando usar** Introdução, Informação, Cole�
 
 Detalhes ausentes ou pouco explícitos incluem: **Recursivo**, **Mostrar imagens**, **Mostrar documentos** e ordenação no bloco Coleção; cabeçalho e legenda da Tabela; definição de página/documento/URL em Links; campos de Cards; campos exatos de Linha do tempo e Calendário; e operações de linha/coluna na tabela.
 
-**Próximo passo:** acrescentar os controles que mudam o resultado ou costumam gerar dúvida, sem transformar o guia em mera transcrição de formulário.
+**Situação em 16/10/2026:** bloco Coleção detalhado na referência canônica de blocos após o usuário confirmar a presença dos controles no IFMG. Explicados Coleção, Recursivo, Mostrar imagens, Mostrar documentos e Ordenar documentos por data de upload, com exemplo de coleção por campus e ano. Os rótulos e textos de ajuda foram conferidos na captura `imagens/manual-ifrn/image5.png` já existente. Não foi presumida a direção da ordenação por data; a orientação pede conferir a sequência na pré-visualização.
+
+**Próximo passo:** revisar os controles dos demais blocos, começando por cabeçalho, legenda e operações de linha/coluna na Tabela, sem transformar o guia em mera transcrição de formulário.
 
 ### 7. Ações em massa e controles da tela de exploração de páginas
 
