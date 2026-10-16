@@ -1,0 +1,25 @@
+name: Validar treinamento do Portal IFMG
+on:
+  push:
+    paths:
+      - 'treinamento/**'
+      - 'data/portal-graph.js'
+      - 'data/guide-index.json'
+      - 'scripts/test-training.mjs'
+      - '.github/workflows/validate-training.yml'
+  pull_request:
+    paths:
+      - 'treinamento/**'
+      - 'data/portal-graph.js'
+      - 'data/guide-index.json'
+      - 'scripts/test-training.mjs'
+      - '.github/workflows/validate-training.yml'
+jobs:
+  test-training:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/test-training.mjs

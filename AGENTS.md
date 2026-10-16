@@ -125,6 +125,8 @@
 - O suporte com IA remete ao procedimento canônico `00 - Comece aqui/03 - Como usar uma IA como apoio para trabalhar com este guia.md` e não substitui validação institucional ou autorização para publicar.
 - Para este treinamento, notícias são produzidas por **jornalistas com perfil mínimo de Moderador**. Exemplos do Editor devem mostrar páginas institucionais, enquanto Copiar, Alias e Linkar notícias ficam na trilha Moderador. O backlog registra revisão futura do artigo canônico antigo sobre notícias.
 
+- Ao alterar `treinamento/`, `data/portal-graph.js` ou as fontes do treinamento, execute `node scripts/test-training.mjs`. O workflow `validate-training.yml` também cobre mudanças relevantes; confira seu resultado no GitHub Actions. O teste não substitui a inspeção visual em navegador e projeção.
+
 ## Validação antes de encerrar
 
 - Para mudanças editoriais, valide wikilinks e anexos alterados, ausência de referências indevidas a páginas absorvidas e coerência com a hierarquia de perfis.

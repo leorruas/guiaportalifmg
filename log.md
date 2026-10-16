@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Criado `scripts/test-training.mjs` (Node puro) para verificar 44 telas, índice, exemplos, imagens existentes, atividades, cotas, coleções, prompts, navegação por setas e CSS fullscreen. Incluído workflow `.github/workflows/validate-training.yml` para executar o teste em alterações do treinamento; `AGENTS.md` e backlog atualizados. Resultado da execução na Action precisa ser conferido após a publicação.
+
 - Sincronizados os exercícios de Editor sobre a página da Biblioteca e a síntese de revisão do Moderador: hierarquia H2/H3, Link único para catálogo, imagens, horários de atendimento, comentários e reenvio. Os casos da apresentação foram alinhados às práticas. Atualizados caches de `conteudo.js` e `casos.js`; aberta a etapa de regressão automatizada no backlog. Confirmado sucesso da publicação da correção fullscreen anterior.
 
 - Corrigido o layout fullscreen do treinamento: o antigo grid conservava três linhas após ocultar as barras, deixando o slide sujeito a posicionamento em uma faixa de altura zero. No modo de tela cheia, `.deck` agora usa flex centralizado e `.stage` preserva 16:9 limitado pela viewport; atualizado cache CSS para v9 na apresentação e na prática. Teste visual em navegador permanece pendente, registrado em `treinamento/BACKLOG.md`.
