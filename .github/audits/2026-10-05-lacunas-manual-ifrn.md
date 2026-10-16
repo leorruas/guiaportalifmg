@@ -176,13 +176,17 @@ O guia atual menciona a estrutura essencial do campus em nível alto. O manual d
 
 O documento enumera explicitamente os tipos de filhos permitidos para Homepage, Página, Campus, Pasta de notícias e Pasta de processos seletivos. O guia atual explica que o Wagtail só oferece tipos permitidos e documenta as tarefas principais, mas não mantém uma matriz completa de relações.
 
-**Próximo passo:** decidir se a matriz ajudaria administradores e moderadores ou se o Mapa da estrutura do Portal já é a fonte mais adequada.
+**Situação em 16/10/2026:** por decisão do usuário, o mapeamento de tipos permitidos será retomado junto do terceiro clique dos campi. Não foi criada uma matriz antecipada.
 
 ### 17. Pequenas regras de cadastro que ficaram implícitas
 
 Exemplos: o campo de página para **Exibir setores filhos**, a proibição de títulos de imagens/documentos formados por palavras separadas apenas por hífen ou underscore e algumas regras de localização hierárquica de tipos, como Curso.
 
 Esses itens são pequenos e devem ser validados antes de entrar no guia, principalmente quando vierem de uma implementação específica do IFRN.
+
+**Situação em 16/10/2026:** campo Exibir setores filhos confirmado por captura atual do usuário. Incorporado ao procedimento de página institucional, com seleção de Setor (Suap), exibição automática de contatos e chefes conforme texto da interface, inclusão de setores subordinados e distinção em relação às páginas-filhas/menu interno. Incluída captura e orientação para divergências de dados.
+
+**Próximo passo:** revisar os demais detalhes de cadastro, sem tratar as convenções de títulos de arquivos como validações técnicas não confirmadas.
 
 ## Conteúdo do documento que já está coberto
 

@@ -2,6 +2,9 @@
 
 ## 2026-10-16
 
+- Detalhados no procedimento de página institucional os campos Contatos (do Suap), Setor (Suap) e Exibir setores filhos, conforme captura do usuário. Diferenciados setores subordinados do SUAP e páginas-filhas do portal; incluídas conferência e orientação para dados divergentes. Atualizado o item 17 da auditoria.
+- Registrada no item 16 da auditoria a decisão do usuário de mapear tipos de páginas permitidos junto do terceiro clique dos campi.
+
 - Substituída a árvore recolhível dos campi por um grafo interativo no mesmo componente da Reitoria, conforme correção do usuário. Generalizada a raiz do grafo e mantidas instâncias independentes para os dois mapas, com zoom, arraste, busca, tela cheia e painel de detalhes. Nós do modelo não recebem URLs fictícias; vínculo interno de atendimento das coordenações aponta a Servidores e contatos. Atualizado cache do componente e estilos.
 
 - Acrescentado à página existente de mapa um segundo mapa, pesquisável e recolhível, com a estrutura dos campi informada pelo usuário: sete entradas, menus fixos, filtros de cursos/processos, conteúdos locais e links para Reitoria e sistemas. Modelo de organização separado dos nós de páginas com URLs reais; terceiro clique e destinos não confirmados preservados para detalhamento.
