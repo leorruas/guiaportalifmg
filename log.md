@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Refinada a hierarquia tipográfica dos slides de treinamento: reduzidos textos explicativos, subtítulos, itens dos três blocos, legendas de perfis e rótulos para ganhar respiro sem alterar os títulos principais, o conteúdo ou as atividades individuais. Atualizada a versão do CSS para v4.
+
 - Alinhadas as cores da apresentação e do material de prática à paleta do Guia do Portal: verde escuro `#216b35` em superfícies claras e verde `#78c981` nos slides escuros, com fundos claros do guia. Padronizada exclusivamente a família Archivo em títulos, corpo, rótulos e navegação; atualizada a versão do CSS para evitar cache antigo.
 
 - Reformulada a apresentação de treinamento em `treinamento/` como deck expositivo em proporção 16:9, com estética Swiss Design, capa tipográfica, aberturas para quatro trilhas, hierarquia editorial, capturas do Wagtail e navegação por índice/teclado/tela cheia. As 28 atividades e critérios de conferência foram mantidos em `treinamento/pratica.html`, fora dos slides, para estudo individual. Conteúdo e procedimentos canônicos não foram alterados.
