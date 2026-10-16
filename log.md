@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Acrescentada ao artigo de notícias a orientação aprovada de usar Título 2 (H2) para seções principais e Título 3 (H3) para subdivisões, com exemplo e uso do formato de título em vez de apenas negrito. Atualizado o item 5 da auditoria IFRN x IFMG.
+
 - Definido nos artigos de notícias e criação de coleções o padrão de coleção de imagens por campus **[Nome do campus] • Notícias**, preferencialmente com subcoleções por ano, como **Arcos • Notícias > 2027**, conforme orientação do usuário. Atualizado o item 5 da auditoria; preservado o alerta sobre renomear coleções existentes.
 
 - Incluídas no artigo de notícias as recomendações editoriais iniciais de 1080 × 1080 pixels para destaque e 1080 × 540 pixels para imagens no corpo, aceitas pelo usuário, sem apresentá-las como requisito técnico. Atualizado o item 5 da auditoria como parcialmente coberto.

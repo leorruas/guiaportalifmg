@@ -68,7 +68,9 @@ O guia atual cobre a diferença entre imagem de destaque e imagem interna, texto
 
 **Organização de imagens definida em 16/10/2026:** cada campus terá sua própria coleção de imagens de notícias, preferencialmente dividida por ano. Padrão incorporado aos artigos de notícias e de criação de coleções: **[Nome do campus] • Notícias > [Ano]**, por exemplo **Arcos • Notícias > 2027**. O ano é uma subcoleção, e a orientação evita criar outra coleção do campus quando já existe uma adequada.
 
-**Próximo passo:** avaliar separadamente os demais detalhes: formato Largura completa, hierarquia H2/H3, rótulos de ação e siglas. Esses pontos ainda não foram validados como padrão do IFMG.
+**Hierarquia de títulos definida em 16/10/2026:** incorporada ao artigo de notícias, com aprovação do usuário, a orientação de usar **Título 2 (H2)** nas seções principais e **Título 3 (H3)** nas subdivisões do corpo, aplicando o formato de título em vez de simular títulos apenas com negrito. Incluído exemplo de Inscrições e Documentos necessários.
+
+**Próximo passo:** avaliar separadamente os demais detalhes: formato Largura completa, rótulos de ação e siglas. Esses pontos ainda não foram validados como padrão do IFMG.
 
 ### 6. Campos e controles exatos de cada bloco
 

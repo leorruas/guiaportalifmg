@@ -18,6 +18,8 @@ Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela a
 
 ![[imagens/manual-ifrn/image22.png|Exemplo de bloco de link complementar em uma notícia]]
 
+Quando precisar dividir o corpo da notícia em seções, use **Título 2 (H2)** para os títulos das seções principais e **Título 3 (H3)** para suas subdivisões. Por exemplo: **Inscrições** como Título 2 e **Documentos necessários** como Título 3 dentro dessa seção. Aplique o formato de título no editor, em vez de usar apenas negrito para simular um título. Essa hierarquia ajuda na leitura e na navegação com leitores de tela.
+
 5. Se utilizar imagem, diferencie os dois usos: a **imagem de destaque** aparece na lista de notícias; a imagem inserida no conteúdo aparece dentro da notícia. Selecione-as na coleção permitida e informe texto alternativo quando trouxerem informação.
 
 **Onde guardar as imagens:** cada campus deve ter sua própria coleção de imagens de notícias, preferencialmente organizada em subcoleções por ano para facilitar a localização dos arquivos. Use o padrão **[Nome do campus] • Notícias > [Ano]**; por exemplo: **Arcos • Notícias > 2027**. O símbolo `>` indica que **2027** é uma subcoleção de **Arcos • Notícias**.
