@@ -121,6 +121,7 @@
 - Antes de alterar a apresentação, consulte esse backlog e acrescente novas decisões do usuário na fase correspondente. Ao implementar, marque os itens concluídos e registre a mudança em `log.md`.
 - O material de slides é **expositivo**; orientações práticas individuais devem permanecer em `treinamento/pratica.html`. Não intercale exercícios no roteiro sem nova decisão explícita.
 - Preserve o grid editorial, a fonte Archivo e os verdes do Guia do Portal, além dos controles de apresentação e dos procedimentos canônicos. Propostas de reorganização devem partir de um roteiro claro e de fontes já confirmadas.
+- Nos slides, use **Archivo** nos títulos e textos e reserve **Archivo Black apenas à capa**. Títulos dos slides de conteúdo seguem uma única escala; textos explicativos também. Metadados de navegação de topo e rodapé devem ser menores e visivelmente acessórios. Registre mudanças de hierarquia tipográfica no backlog.
 - O suporte com IA remete ao procedimento canônico `00 - Comece aqui/03 - Como usar uma IA como apoio para trabalhar com este guia.md` e não substitui validação institucional ou autorização para publicar.
 
 ## Validação antes de encerrar
