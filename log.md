@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Documentado o atalho Páginas usando… no procedimento de escolha do tipo de conteúdo, após confirmação de presença no IFMG pelo usuário. Incluídos consulta de exemplos, avaliação de finalidade/localização e encaminhamento em caso de dúvida ou restrição. Registrado o item 14 da auditoria IFRN x IFMG como atendido.
+
 - Incluídos no artigo de acesso e localização os dois quadros de fluxo de trabalho e revisão da tela inicial confirmados pela captura do usuário. Explicados o estado de aprovação pendente, o acompanhamento e a atuação conforme perfil, com imagem junto da orientação. Atualizado o item 13 da auditoria; contadores e páginas bloqueadas permanecem sem confirmação no recorte.
 
 - Explicados no artigo de blocos a abertura e a fixação/desfixação da barra de edição pelo alfinete e os formatos de imagem Largura completa, Alinhado à esquerda e Alinhado à direita. Incluídas três capturas atuais do usuário junto dos passos, orientação de texto alternativo e conferência em telas menores. Atualizado o item 12 da auditoria IFRN x IFMG.

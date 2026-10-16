@@ -16,6 +16,17 @@ Faça estas perguntas:
 
 ![[imagens/manual-ifrn/image21.png|Lista de tipos disponíveis ao adicionar uma subpágina]]
 
+## Consultar exemplos com Páginas usando…
+
+Na tela de escolha do tipo, o atalho **Páginas usando…** permite consultar páginas existentes daquele tipo. Use-o quando precisar entender como esse tipo já está sendo utilizado antes de criar uma página.
+
+1. Clique em **Adicionar subpágina** no local correto da árvore.
+2. Localize o tipo que está avaliando e abra **Páginas usando…**.
+3. Consulte os exemplos disponíveis para seu acesso. Confira o assunto, a página-pai e a finalidade de cada exemplo.
+4. Depois da consulta, volte ao local onde pretende criar a página e escolha o tipo adequado à sua necessidade.
+
+Um exemplo existente ajuda a entender o uso, mas não garante que seu conteúdo esteja atualizado nem que o mesmo tipo possa ser criado em qualquer lugar. Não copie uma estrutura apenas pela aparência. Se continuar em dúvida, procure o moderador responsável pela área; se faltar acesso ao local correto, solicite a verificação ao administrador.
+
 ## Tipos de conteúdo e procedimentos
 
 Quando houver um procedimento próprio, o link direto aparece logo abaixo da descrição do tipo.

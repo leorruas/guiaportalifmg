@@ -162,6 +162,8 @@ O manual lista contadores de páginas, imagens e documentos, itens aguardando mo
 
 O documento explica o atalho **Páginas usando…** para listar páginas existentes de determinado tipo. O guia atual não documenta esse recurso.
 
+**Situação em 16/10/2026:** presença confirmada pelo usuário no IFMG. Documentado o uso para consultar exemplos existentes no procedimento canônico de escolha do tipo de conteúdo, com conferência de finalidade, localização e limites de acesso. Item atendido.
+
 ### 15. Estrutura-padrão completa de um campus
 
 O guia atual menciona a estrutura essencial do campus em nível alto. O manual de referência enumera uma árvore mais detalhada, com Documentos institucionais, Boletins de Serviços, Normas internas, Biblioteca, Calendário Acadêmico e Secretaria Acadêmica, além de Ensino, Extensão, Pesquisa, Estudantes e Servidores.
