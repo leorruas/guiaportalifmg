@@ -2,7 +2,7 @@
 
 ## 2026-10-16
 
-- Incluídas no artigo de notícias as recomendações editoriais iniciais de 1080 × 1080 pixels para destaque e 1080 × 540 pixels para imagens no corpo, aceitas pelo usuário, sem apresentá-las como requisito técnico. Atualizado o item 5 da auditoria como parcialmente coberto e registrado o item 4 como pendente de definição da estrutura de processos seletivos.
+- Incluídas no artigo de notícias as recomendações editoriais iniciais de 1080 × 1080 pixels para destaque e 1080 × 540 pixels para imagens no corpo, aceitas pelo usuário, sem apresentá-las como requisito técnico. Atualizado o item 5 da auditoria como parcialmente coberto.
 
 - Registrado o item 3 da auditoria IFRN x IFMG (visibilidade automática das etapas de processo seletivo) como pendente, por decisão do usuário enquanto o comportamento no IFMG não for confirmado. Nenhuma regra de vigência foi acrescentada ao guia.
 
