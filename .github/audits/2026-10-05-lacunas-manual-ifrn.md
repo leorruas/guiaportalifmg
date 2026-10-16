@@ -112,6 +112,10 @@ O manual de referência explica que o menu dos comentários permite resolver, ed
 
 O guia atual cobre adicionar, responder e resolver comentários, além de histórico, mas não trata das notificações por e-mail nem da edição/remoção de comentários.
 
+**Situação em 16/10/2026:** edição e remoção de comentários próprios confirmadas pelo usuário e documentadas no procedimento canônico de correção de página, com encaminhamento na tarefa de comentários do moderador. Explicitada a diferença entre remover uma mensagem, resolver uma pendência e aprovar/publicar uma página.
+
+**Validação ainda pendente:** notificações por e-mail. O usuário não encontrou essa opção no IFMG; o guia não foi ampliado com instruções para um controle não confirmado.
+
 ### 9. Pré-visualização e verificações
 
 O documento explicita modos de prévia em smartphone, tablet e desktop e relaciona a seção **Verificações** diretamente à acessibilidade.

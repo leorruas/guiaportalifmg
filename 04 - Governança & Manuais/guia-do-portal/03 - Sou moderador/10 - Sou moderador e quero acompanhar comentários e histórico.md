@@ -40,3 +40,10 @@ O fluxo correspondente do editor está em:
 [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Corrigir uma página devolvida pela moderação]]
 
 **Como saber que terminou:** a pendência tem uma orientação objetiva, a correção pode ser conferida no próprio fluxo e a decisão seguinte fica registrada na revisão.
+
+## Corrigir um comentário de sua autoria
+
+Se precisar ajustar ou remover uma mensagem que você escreveu, use o mesmo procedimento disponível ao editor. Remover uma mensagem não equivale a resolver a pendência nem substitui a decisão de revisão.
+
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página|Editar ou remover um comentário próprio]]

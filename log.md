@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Documentadas edição e remoção de comentários próprios pelo menu de três pontos, conforme confirmação do usuário, no procedimento canônico de correção de página. Incluído encaminhamento na tarefa de comentários do moderador, preservando a herança de procedimentos; diferenciadas remoção de mensagem, resolução de pendência e aprovação/publicação. Atualizado o item 8 da auditoria, mantendo notificações por e-mail sem confirmação.
+
 - Substituído o exemplo renderizado do Calendário pela captura atual do Portal IFMG fornecida pelo usuário, com explicação da posição de Data, Dia da Semana e Atividade.
 - Documentado o procedimento geral de ações em massa no artigo de acesso e localização de páginas, após confirmação de funcionamento pelo usuário. Incluídas conferência da seleção e da ação, validação do resultado e limites por perfil; atualizado o item 7 da auditoria IFRN x IFMG.
 

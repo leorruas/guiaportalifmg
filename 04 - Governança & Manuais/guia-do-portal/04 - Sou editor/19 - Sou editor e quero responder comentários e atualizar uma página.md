@@ -22,6 +22,20 @@ Um comentário funciona como uma orientação presa ao campo ou bloco que precis
 
 **Exemplo de resposta útil:** “Atualizei o prazo de inscrição para 18 de agosto e revisei o link do formulário.”
 
+## Editar ou remover um comentário seu
+
+Use estas opções para corrigir a redação de um comentário que você escreveu ou remover uma mensagem inserida por engano. Editor, moderador e administrador seguem o mesmo procedimento para seus próprios comentários.
+
+1. Com **Comentários** aberto, localize o comentário de sua autoria.
+2. Abra o menu de **três pontos** do comentário.
+3. Para corrigir a mensagem, escolha **Editar**, ajuste o texto e salve a alteração.
+4. Para retirar uma mensagem sua, escolha **Remover** e confira o comentário antes de confirmar, se o sistema pedir confirmação.
+5. Salve a página e confira se o texto foi atualizado ou se a mensagem foi removida.
+
+**Remover e resolver são ações diferentes:** remover retira uma mensagem; resolver indica que a pendência foi atendida. Para registrar uma correção concluída, responda e resolva a conversa, em vez de apagar a orientação que explica o trabalho realizado.
+
+**Limite de atuação:** estas opções se referem aos seus próprios comentários. Se a orientação foi escrita por outra pessoa e precisa ser esclarecida ou revista, responda na conversa e procure seu autor. Editar, remover ou resolver um comentário não aprova nem publica a página.
+
 ## Conferir antes de reenviar
 
 Pré-visualize a página e confirme se a correção resolveu a pendência sem criar um novo problema em outro ponto.
