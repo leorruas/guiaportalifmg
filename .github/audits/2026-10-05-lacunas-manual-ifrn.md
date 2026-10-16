@@ -88,7 +88,9 @@ Detalhes ausentes ou pouco explícitos incluem: **Recursivo**, **Mostrar imagens
 
 **Tabela detalhada em 16/10/2026:** explicados cabeçalhos, legenda e inserção/remoção de linhas e colunas, após confirmação do usuário sobre a presença dos controles. Incorporada a possibilidade relatada de colar diretamente células do Excel ou tabelas de outra página da internet, com conferência dos dados e da pré-visualização.
 
-**Próximo passo:** revisar os controles dos demais blocos: destinos em Links, campos de Cards, Linha do tempo e Calendário, sem transformar o guia em mera transcrição de formulário.
+**Destinos de links detalhados em 16/10/2026:** após confirmação do usuário sobre as três opções no IFMG, explicadas as escolhas de Página, Documento e URL externa em Links e Link único, com exemplos, preferência pelos seletores internos e conferência do destino.
+
+**Próximo passo:** revisar os campos de Cards, Linha do tempo e Calendário, sem transformar o guia em mera transcrição de formulário.
 
 ### 7. Ações em massa e controles da tela de exploração de páginas
 

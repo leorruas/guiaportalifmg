@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Explicados no artigo de blocos os destinos Página, Documento e URL externa de Links e Link único, confirmados pelo usuário, com exemplos, orientação sobre seletores internos e encaminhamento em caso de restrição. Atualizado o item 6 da auditoria IFRN x IFMG.
+
 - Acrescentadas ao artigo de blocos as explicações de cabeçalhos e legenda de tabela, operações de linhas/colunas e colagem direta de células do Excel ou tabelas da internet, conforme confirmação do usuário; atualizado o item 6 da auditoria.
 - Incluídos aliases para Recursivo, coleção recursiva, exibição de imagens/documentos e colagem de tabela do Excel na tarefa canônica de blocos. Adicionadas quatro consultas de regressão e atualizado o versionamento dos metadados no HTML. A consulta recursivo já passava no corpus local; a correção amplia a recuperação e renova o cache dos metadados.
 

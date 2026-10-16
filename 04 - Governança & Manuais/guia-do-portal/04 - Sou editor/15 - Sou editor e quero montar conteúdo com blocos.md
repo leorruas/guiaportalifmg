@@ -105,6 +105,16 @@ Use **Links** quando há mais de um próximo passo; use **Link único** quando u
 
 Ao configurar um item de link dentro de um bloco, informe o texto que a pessoa verá e escolha ou cole o destino correspondente.
 
+Escolha o tipo de destino conforme o que a pessoa precisa abrir:
+
+- **Página:** selecione uma página do próprio portal pelo seletor. Por exemplo, a página de um curso ou de um serviço.
+- **Documento:** selecione um arquivo cadastrado em **Documentos**, como um edital ou regulamento. Confira se é a versão oficial e vigente.
+- **URL externa:** informe o endereço completo de outro site, como um formulário de inscrição. Copie o endereço da página de destino e confira se ele abre o conteúdo correto.
+
+Para páginas e documentos do portal, prefira os seletores correspondentes em vez de colar seus endereços como URL externa. O texto do link deve explicar o destino ou a ação, como **Consultar o curso**, **Acesse o edital** ou **Faça sua inscrição**.
+
+Depois de configurar, confira o destino na pré-visualização. Se a página ou o documento não aparecer no seletor, confirme se já existe no local correto. Peça apoio ao moderador responsável pela área e, se houver restrição de acesso, ao administrador; não crie uma cópia apenas para conseguir inserir o link.
+
 ![[imagens/manual-ifrn/image22.png|Exemplo de link inserido dentro de um bloco de conteúdo, com título, destino e ícone]]
 
 No campo **Ícone** do bloco **Links**, siga o mesmo processo: escolha no Google Icons, abra o painel lateral direito e copie apenas o valor de **Icon name**. Prefira um ícone que reforce a ação, como `search` para busca ou `download` para baixar um arquivo; não escolha apenas por aparência.
