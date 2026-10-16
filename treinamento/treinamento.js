@@ -1,52 +1,131 @@
 (() => {
+  'use strict';
   const slides = window.TreinamentoConteudo || [];
-  const labels = {comum:'Comece aqui',editor:'Editor',moderador:'Moderador',administrador:'Administrador'};
-  const refs = {
-    '24':'04 - Sou editor/24 - Sou editor e quero criar ou editar uma página',
-    'mapa':'00 - Comece aqui/04 - Mapa da estrutura do Portal',
-    'encontrar':'04 - Sou editor/02 - Sou editor e quero acessar e encontrar uma página',
-    'papel-editor':'04 - Sou editor/01 - Sou editor e quero criar e atualizar conteúdos',
-    'blocos':'04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos',
-    'documentos':'04 - Sou editor/13 - Sou editor e quero adicionar ou atualizar um documento',
-    'imagens':'04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem',
-    'noticias':'04 - Sou editor/10 - Sou editor e quero publicar uma notícia',
-    'menus':'04 - Sou editor/17 - Sou editor e quero configurar busca e menu de uma página',
-    'enviar':'04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação',
-    'corrigir':'04 - Sou editor/19 - Sou editor e quero responder comentários e atualizar uma página',
-    'papel-moderador':'03 - Sou moderador/08 - Sou moderador e quero revisar e aprovar conteúdos',
-    'revisar':'03 - Sou moderador/09 - Sou moderador e quero revisar e decidir uma publicação',
-    'comentarios':'03 - Sou moderador/10 - Sou moderador e quero acompanhar comentários e histórico',
-    'publicar':'03 - Sou moderador/11 - Sou moderador e quero publicar, despublicar ou agendar uma página',
-    'papel-admin':'02 - Sou administrador/01 - Sou administrador e quero gerir acessos e configurações',
-    'permissoes':'02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões',
-    'colecao':'02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos'
-  };
-  const app=document.getElementById('app');
-  const controls=document.getElementById('controls');
-  const escape = text => String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  function guide(ref){const path=refs[ref];return path?'../#/'+path.split('/').map(encodeURIComponent).join('/'): '../';}
-  function menu(){
-    controls.hidden=true;
-    app.innerHTML=`<p class="eyebrow">Treinamento • Portal IFMG</p><h1>Aprenda o trabalho do seu perfil</h1><p class="lead">Conheça o fluxo comum ou entre direto na sua trilha. Em cada capítulo: orientação, prática e uma forma de conferir o resultado.</p><div class="tracks">${Object.entries(labels).map(([key,label])=>{const first=slides.find(s=>s.track===key);return `<section class="track"><h2>${label}</h2><p>${{comum:'Estrutura, responsabilidades e primeiros passos.',editor:'Preparar conteúdo e encaminhar para revisão.',moderador:'Revisar, orientar e decidir a publicação.',administrador:'Configurar acessos, coleções e estruturas.'}[key]}</p><a href="#${first.id}">Entrar →</a></section>`}).join('')}</div><p class="note">Use as setas do teclado ou os botões para avançar. O menu permite trocar de trilha a qualquer momento. A disponibilidade das ações no Wagtail depende do grupo e da área autorizada.</p><div class="chapters">${Object.entries(labels).map(([key,label])=>`<section><h2>${label}</h2><ol>${slides.filter(s=>s.track===key).map(s=>`<li><a href="#${s.id}">${escape(s.title)}</a></li>`).join('')}</ol></section>`).join('')}</div><p class="note">Práticas de publicação, exclusão e acesso devem acontecer em ambiente de treinamento. Fluxos de processos seletivos ainda não confirmados ficam fora desta apresentação. <a href="../">Consultar o guia completo</a></p>`;
+  const tracks = [
+    {key:'comum',label:'Comece aqui',sub:'O portal como serviço de informação',desc:'Estrutura, responsabilidades e primeiros passos.'},
+    {key:'editor',label:'Editor',sub:'Transformar demandas em páginas úteis',desc:'Conteúdo, organização, arquivos e revisão.'},
+    {key:'moderador',label:'Moderador',sub:'Garantir a qualidade antes de publicar',desc:'Revisão, devolutivas e decisões de publicação.'},
+    {key:'administrador',label:'Administrador',sub:'Organizar as condições de trabalho',desc:'Acessos, coleções e estruturas compartilhadas.'}
+  ];
+  const app = document.getElementById('app');
+  const dialog = document.getElementById('chapters');
+  const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const pad = n => String(n).padStart(2,'0');
+  const scenes = [{id:'inicio',type:'cover'}];
+  tracks.forEach((t,i) => {
+    scenes.push({id:'trilha-'+t.key,type:'section',track:t.key,section:i+1});
+    slides.filter(s => s.track === t.key).forEach(s => scenes.push({id:s.id,type:'concept',track:t.key,slide:s}));
+  });
+  let active = -1;
+  function chromeTop(left,right) {
+    return '<div class="frame-top"><span>'+escape(left)+'</span><span>'+escape(right)+'</span></div>';
+  }
+  function chromeFoot(left,right) {
+    return '<div class="frame-foot"><span>'+escape(left)+'</span><span>'+escape(right)+'</span></div>';
+  }
+  function cover() {
+    const jumps = tracks.map((t,i) => '<button type="button" data-jump="trilha-'+t.key+'"><span>'+pad(i+1)+' / '+(slides.filter(s=>s.track===t.key).length)+' temas</span><strong>'+escape(t.label)+' ↗</strong></button>').join('');
+    return '<article class="frame frame-cover">'+chromeTop('IFMG / Comunicação institucional','Apresentação · 2026')+
+      '<div class="cover-title"><h1 tabindex="-1">Portal<br><em>IFMG</em><br>Treinamento<span class="red">.</span></h1>'+
+      '<p>Organizar a informação.<br>Preparar o conteúdo.<br>Revisar antes de publicar.</p></div>'+
+      '<div class="cover-tracks">'+jumps+'</div>'+
+      chromeFoot('Quatro trilhas / uma experiência de publicação','Use → para avançar')+'</article>';
+  }
+  function section(scene){
+    const t = tracks.find(x=>x.key===scene.track);
+    return '<article class="frame frame-section">'+chromeTop('TREINAMENTO / '+t.label,'SEÇÃO '+pad(scene.section))+
+      '<div class="section-block" aria-hidden="true"><strong>'+pad(scene.section)+'</strong></div>'+
+      '<div class="section-copy"><span class="mono">'+pad(scene.section)+' / '+pad(tracks.length)+'</span>'+
+      '<h1 tabindex="-1">'+escape(t.label)+'</h1><p>'+escape(t.sub)+'.</p></div>'+
+      chromeFoot('IFMG / GUIA DO PORTAL',t.desc)+'</article>';
+  }
+  function points(s,mode) {
+    return '<ol class="points '+(mode==='visual'?'points-visual':'points-grid')+'">'+
+      s.points.map((p,i)=>'<li><span class="point-num">'+pad(i+1)+'</span><p class="point-text">'+escape(p)+'</p></li>').join('')+'</ol>';
+  }
+  function roles(s){
+    const names=['Editor','Moderador','Administrador'];
+    return '<div class="role-flow">'+s.points.map((p,i)=>'<div><small>'+pad(i+1)+' / '+(i===0?'PREPARA':i===1?'REVISA':'CONFIGURA')+'</small><strong>'+names[i]+'</strong><span>'+escape(p)+'</span></div>').join('')+'</div>';
+  }
+  function concept(scene,number){
+    const s=scene.slide;
+    const t=tracks.find(x=>x.key===s.track);
+    const inTrack=slides.filter(x=>x.track===s.track).indexOf(s)+1;
+    const hasImage=!!s.img;
+    const isRoles=s.id==='comum-papeis';
+    const titleClass=s.title.length>47?' long-title':'';
+    const imgSrc=hasImage?'../imagens/guias-contextuais/'+s.img:'';
+    const body=isRoles?roles(s):hasImage?
+      '<div class="visual-body">'+points(s,'visual')+'<figure><img src="'+escape(imgSrc)+'" alt="Captura de tela do Wagtail relacionada ao tema '+escape(s.title)+'"></figure></div>':
+      points(s,'grid');
+    const leadClass=hasImage?'content-heading visual-heading':'content-heading';
+    return '<article class="frame frame-concept'+(hasImage?' has-image':'')+(isRoles?' frame-roles':'')+titleClass+'">'+
+      chromeTop(t.label+' / conteúdo',pad(inTrack)+' DE '+pad(slides.filter(x=>x.track===s.track).length))+
+      '<div class="'+leadClass+'"><h1 tabindex="-1">'+escape(s.title)+'</h1><p class="lead">'+escape(s.lead)+'</p></div>'+
+      body+chromeFoot('Portal IFMG · treinamento',pad(number+1)+' / '+pad(scenes.length))+'</article>';
+  }
+  function buildIndex(){
+    document.getElementById('chapterList').innerHTML = tracks.map((t,i)=>{
+      const list=slides.filter(s=>s.track===t.key);
+      return '<section class="index-section"><h3><span>'+pad(i+1)+'</span>'+escape(t.label)+'</h3>'+
+        '<button type="button" data-jump="trilha-'+t.key+'"><span>ABERTURA</span>'+escape(t.sub)+'</button>'+
+        list.map((s,j)=>'<button type="button" data-jump="'+escape(s.id)+'"><span>'+pad(j+1)+'</span>'+escape(s.title)+'</button>').join('')+'</section>';
+    }).join('');
+  }
+  function go(index){
+    if(index<0 || index>=scenes.length)return;
+    const id=scenes[index].id;
+    if(location.hash.slice(1)!==id)location.hash=id;
+    else render();
   }
   function render(){
-    const id=decodeURIComponent(location.hash.slice(1));const slide=slides.find(s=>s.id===id);
-    if(!slide){menu();return;}
-    const track=slides.filter(s=>s.track===slide.track),index=track.indexOf(slide);
-    controls.hidden=false;
-    document.getElementById('progress').textContent=`${labels[slide.track]} · ${index+1} de ${track.length}`;
-    const list=`<ul class="points">${slide.points.map(p=>`<li>${escape(p)}</li>`).join('')}</ul>`;
-    const aside=slide.img?`<figure><img src="../imagens/guias-contextuais/${escape(slide.img)}" alt="Exemplo do Wagtail: ${escape(slide.title)}"><figcaption>Consulte o procedimento no guia para acompanhar os passos.</figcaption></figure>`:slide.limits?`<aside class="limits"><h2>Limites e apoio</h2><ul>${slide.limits.map(l=>`<li>${escape(l)}</li>`).join('')}</ul></aside>`:'';
-    app.innerHTML=`<article class="slide"><p class="eyebrow">${labels[slide.track]} · capítulo ${index+1}</p><h1 tabindex="-1">${escape(slide.title)}</h1><p class="lead">${escape(slide.lead)}</p><div class="slide-body"${!slide.img&&!slide.limits?' style="grid-template-columns:1fr;max-width:1000px"':''}><div>${list}<a class="guide-link" href="${guide(slide.ref)}" target="_blank" rel="noopener">Abrir o procedimento no guia ↗</a></div>${aside}</div><section class="exercise"><strong>Agora faça você</strong><p>${escape(slide.task)}</p><details><summary>Como conferir</summary><p>${escape(slide.check)}</p></details></section>${index===track.length-1?`<p class="note">Trilha concluída. <a href="#">Escolher outra trilha ou consultar os capítulos →</a></p>`:''}</article>`;
-    document.getElementById('prev').disabled=index===0;
-    document.getElementById('prev').onclick=()=>{if(index>0)location.hash=track[index-1].id;};
-    document.getElementById('next').textContent=index===track.length-1?'Menu de trilhas →':'Próximo →';
-    document.getElementById('next').onclick=()=>{location.hash=index===track.length-1?'':track[index+1].id;};
-    window.scrollTo(0,0);app.querySelector('h1').focus({preventScroll:true});
+    const id=decodeURIComponent(location.hash.slice(1)) || 'inicio';
+    const idx=Math.max(0,scenes.findIndex(x=>x.id===id));
+    const scene=scenes[idx];
+    active=idx;
+    app.innerHTML=scene.type==='cover'?cover():scene.type==='section'?section(scene):concept(scene,idx);
+    document.getElementById('prev').disabled=idx===0;
+    document.getElementById('next').disabled=idx===scenes.length-1;
+    document.getElementById('progress').textContent=pad(idx+1)+' / '+pad(scenes.length);
+    const bar=document.getElementById('progressBar');
+    bar.setAttribute('aria-valuemax',String(scenes.length));
+    bar.setAttribute('aria-valuenow',String(idx+1));
+    document.getElementById('progressFill').style.width=((idx+1)/scenes.length*100)+'%';
+    document.querySelectorAll('#chapterList [data-jump]').forEach(b=>{
+      if(b.dataset.jump===scene.id)b.setAttribute('aria-current','page');
+      else b.removeAttribute('aria-current');
+    });
+    app.querySelector('h1')?.focus({preventScroll:true});
   }
-  document.getElementById('menu').onclick=()=>{location.hash='';};
-  document.getElementById('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{document.getElementById('fullscreen').textContent='Use o modo de tela cheia do navegador';}};
-  document.addEventListener('fullscreenchange',()=>document.getElementById('fullscreen').textContent=document.fullscreenElement?'Sair da tela cheia':'Tela cheia');
-  document.addEventListener('keydown',e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||e.altKey||e.ctrlKey||e.metaKey)return;if(e.key==='ArrowRight'&&!controls.hidden){e.preventDefault();document.getElementById('next').click();}if(e.key==='ArrowLeft'&&!controls.hidden){e.preventDefault();document.getElementById('prev').click();}});
-  window.addEventListener('hashchange',render);render();
+  document.getElementById('prev').addEventListener('click',()=>go(active-1));
+  document.getElementById('next').addEventListener('click',()=>go(active+1));
+  document.getElementById('menu').addEventListener('click',()=>dialog.showModal());
+  document.getElementById('closeIndex').addEventListener('click',()=>dialog.close());
+  document.addEventListener('click',e=>{
+    const target=e.target.closest('[data-jump]');
+    if(!target)return;
+    if(dialog.open)dialog.close();
+    const idx=scenes.findIndex(x=>x.id===target.dataset.jump);
+    go(idx);
+  });
+  dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
+  document.getElementById('fullscreen').addEventListener('click',async()=>{
+    try{
+      if(document.fullscreenElement)await document.exitFullscreen();
+      else await document.documentElement.requestFullscreen();
+    }catch{document.getElementById('fullscreen').textContent='Ative tela cheia no navegador';}
+  });
+  document.addEventListener('fullscreenchange',()=>{
+    document.getElementById('fullscreen').textContent=document.fullscreenElement?'Sair da tela cheia':'Tela cheia ⛶';
+  });
+  document.addEventListener('keydown',e=>{
+    if(dialog.open || e.altKey || e.ctrlKey || e.metaKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();go(active+1);}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(active-1);}
+    if(e.key==='Home'){e.preventDefault();go(0);}
+    if(e.key==='End'){e.preventDefault();go(scenes.length-1);}
+  });
+  buildIndex();
+  window.addEventListener('hashchange',render);
+  render();
 })();

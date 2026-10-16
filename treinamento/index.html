@@ -1,3 +1,37 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Treinamento • Guia do Portal IFMG</title><link rel="stylesheet" href="treinamento.css?v=1"></head>
-<body><header><a href="../">guia do portal <span>IFMG</span></a><div><button id="menu" type="button">Menu de capítulos</button><button id="fullscreen" type="button">Tela cheia</button></div></header><main id="app"></main><footer id="controls" hidden><button id="prev" type="button">← Anterior</button><span id="progress" aria-live="polite"></span><button id="next" type="button">Próximo →</button></footer><script src="conteudo.js?v=1"></script><script src="treinamento.js?v=1"></script></body></html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e8e7e3">
+  <meta name="description" content="Apresentação de treinamento sobre o Portal IFMG para editores, moderadores e administradores.">
+  <title>Treinamento | Portal IFMG</title>
+  <link rel="stylesheet" href="treinamento.css?v=2">
+</head>
+<body>
+  <div class="deck">
+    <header class="chrome" aria-label="Barra da apresentação">
+      <a class="brand" href="../" aria-label="Voltar ao Guia do Portal IFMG"><strong>IFMG</strong><span> / TREINAMENTO</span></a>
+      <nav aria-label="Opções da apresentação">
+        <button id="menu" type="button" aria-haspopup="dialog" aria-controls="chapters">Índice <span aria-hidden="true">☷</span></button>
+        <button id="fullscreen" type="button">Tela cheia <span aria-hidden="true">⛶</span></button>
+      </nav>
+    </header>
+    <main class="stage" id="app" aria-label="Slides da apresentação"></main>
+    <footer class="transport" aria-label="Navegação da apresentação">
+      <div class="transport-buttons">
+        <button id="prev" type="button" aria-label="Slide anterior">← <span>Anterior</span></button>
+        <button id="next" type="button" aria-label="Próximo slide"><span>Próximo</span> →</button>
+      </div>
+      <div class="transport-info"><span id="progress" aria-live="polite"></span><div class="progress-track" id="progressBar" role="progressbar" aria-label="Progresso da apresentação" aria-valuemin="1" aria-valuemax="33" aria-valuenow="1"><span id="progressFill"></span></div></div>
+    </footer>
+  </div>
+  <dialog id="chapters" aria-labelledby="chapters-title">
+    <div class="dialog-head"><div><p class="mono">NAVEGAÇÃO / IFMG</p><h2 id="chapters-title">Índice</h2></div><button id="closeIndex" type="button" aria-label="Fechar índice">Fechar ×</button></div>
+    <div id="chapterList" class="dialog-body"></div>
+    <div class="dialog-foot"><a href="pratica.html">Atividades para realizar individualmente ↗</a><a href="../">Consultar o guia completo ↗</a></div>
+  </dialog>
+  <script src="conteudo.js?v=1"></script>
+  <script src="treinamento.js?v=2"></script>
+</body>
+</html>
