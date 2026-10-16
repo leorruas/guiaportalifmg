@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Acrescentado QA em navegador real via Chromium/Playwright Core na Action de treinamento: percorre as 44 telas em três resoluções, verifica imagem carregada e palco dentro da viewport, testa tela cheia quando suportada e anexa capturas de referência para conferência. Criado \`scripts/test-training-browser.mjs\` e atualizado workflow; execução ainda pendente de resultado.
+
 - Executadas as tarefas independentes do checklist `treinamento/CAPTURAS-WAGTAIL.md`: criada a identificação de seis etapas do caso da Biblioteca em `treinamento/fluxo.js`; tela de seleção de tipo Página com imagem de referência; comparativo de Promover vs menu interno com duas capturas; apresentação do estado de envio para moderação com imagem; bloco Coleção ilustrado distinguindo armazenamento de exibição e Recursivo. Harmonizados Tabela, Galeria, Links e documento com o exemplo da Biblioteca, sem inventar dados da homologação. Capturas existentes agora trazem legenda de referência sujeita a confirmação. Atualizados CSS, caches, testes, backlog e checklist; imagens W01–W24 continuam dependendo de envio e revisão.
 
 - Criado `treinamento/CAPTURAS-WAGTAIL.md` como checklist compartilhado de 24 capturas do Wagtail, priorizando 12 telas de criação de Página, blocos, coleções, documentos, imagens e moderação; oito complementares já apoiadas por imagens do guia; e quatro administrativas condicionais a acesso. Cada item informa caminho no painel, o que mostrar, destino nos slides e nome do arquivo. Incluídas instruções de privacidade para homologação, pendências explícitas **PRECISO DE VOCÊ** e tarefas paralelas **EU**. Vinculado em `treinamento/BACKLOG.md` e fixado em `AGENTS.md`. Não foram capturadas telas da homologação nem solicitadas ações de risco no portal.

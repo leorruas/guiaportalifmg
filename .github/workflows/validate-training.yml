@@ -6,6 +6,7 @@ on:
       - 'data/portal-graph.js'
       - 'data/guide-index.json'
       - 'scripts/test-training.mjs'
+      - 'scripts/test-training-browser.mjs'
       - '.github/workflows/validate-training.yml'
   pull_request:
     paths:
@@ -13,6 +14,7 @@ on:
       - 'data/portal-graph.js'
       - 'data/guide-index.json'
       - 'scripts/test-training.mjs'
+      - 'scripts/test-training-browser.mjs'
       - '.github/workflows/validate-training.yml'
 jobs:
   test-training:
@@ -23,3 +25,11 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/test-training.mjs
+      - run: npm install --no-save --no-package-lock playwright-core
+      - run: node scripts/test-training-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: capturas-qa-treinamento
+          path: .qa-training/*.png
+          if-no-files-found: ignore
