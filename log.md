@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Inspecionado o artefato do teste de Chromium `38935949982`: capturas de moderador-revisao, moderador-publicar, administrador-papel, administrador-acessos, administrador-estrutura, administrador-privacidade e administrador-colecoes. Slides sem cortes aparentes; permissão conceitual legível, mas campos de capturas antigas continuam pequenos para possível projeção. Backlog atualizado sem confundir teste desktop com validação projetada.
+
 - Expandida a seleção de screenshots da Action Chromium para os slides alterados de Moderador e Administrador; a verificação se mantém em 42 telas × 3 resoluções.
 
 - Melhorados Moderador e Administrador sem novas capturas da homologação: duas referências (fila e prévia) no slide de revisão, indicador de Status no slide de publicação, menu Configurações e ação Adicionar coleção nas tarefas administrativas. Inserido esquema didático de acesso independente para páginas e coleções, sem simular imagem real do painel. Atividades de moderação/prazo sincronizadas com página da Biblioteca; atualizados CSS, caches da apresentação e prática, testes, checklist, roteiro, AGENTS e backlog. 42 telas preservadas; inspeção em projetor pendente.

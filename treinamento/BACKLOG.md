@@ -51,7 +51,8 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Substituir o slide abstrato de permissões por um **esquema explicitamente conceitual** que diferencia o acesso às páginas do acesso às coleções.
 - [x] Alinhar a atividade sobre publicação e a síntese de revisão à mesma página institucional da Biblioteca, sem atribuir notícias a Editores.
 - [x] Preservar escala Archivo, metadados menores, alerta de renomeação e 42 telas; exercícios individuais continuam separados.
-- [ ] Revisar legibilidade das capturas em projeção e substituir por capturas atuais da homologação quando disponíveis e autorizadas.
+- [x] Inspecionar capturas produzidas pelo Chromium para **Moderador e Administrador**: ausência de cortes, composição e esquema de permissões conferidos em desktop; teste de 42 telas × 3 resoluções passou.
+- [ ] Revisar **legibilidade de campos pequenos em projeção**: capturas antigas de Status, Configurações e privacidade ainda têm controles pequenos e devem ser ampliadas/recortadas cuidadosamente ou substituídas por capturas atuais da homologação, quando disponíveis e autorizadas.
 - [ ] **Não criar nesta fase** a página de orientação detalhada sobre gerenciamento de coleções, ainda dependente de capturas e validação da interface.
 
 ## Direção definida
