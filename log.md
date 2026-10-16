@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Detalhado o bloco Calendário no artigo de blocos com a captura atual fornecida pelo usuário: Data, Dia da Semana, Atividade, adição e organização de itens e conferência da programação. Registrado o item 6 da auditoria IFRN x IFMG como atendido pelas explicações incorporadas à referência canônica.
+
 - Detalhado o bloco Linha do Tempo no artigo de blocos a partir da captura atual fornecida pelo usuário: campos de cada Evento, adição e organização dos marcos, duplicação, remoção e conferência. Incluída a imagem junto da explicação e atualizado o item 6 da auditoria IFRN x IFMG; Calendário permanece para a próxima revisão.
 
 - Busca passa a informar a seção correspondente e abrir diretamente seu subtítulo, inclusive H3–H6 e correspondências no corpo como Recursivo na seção Coleção. Mantida a abertura no início para consultas gerais do título e o fallback quando não houver seção. Âncoras incluídas no endereço para compartilhar e abrir em outra aba; ranking de artigos preservado e versões de cache atualizadas.

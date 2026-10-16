@@ -216,7 +216,23 @@ Para montar a sequência:
 
 Use **Calendário** quando a pessoa precisa consultar datas e atividades. Revise dia, mês e ano antes de enviar para moderação.
 
-![[imagens/manual-ifrn/image42.png|Configuração de um bloco de calendário]]
+Cada item chamado **Evento** representa uma atividade ou data do calendário. Ele é um item deste bloco, separado da página do tipo Evento.
+
+- **Data:** informa quando a atividade acontece. É obrigatória. Use uma indicação clara e inclua o ano para evitar dúvidas sobre a vigência.
+- **Dia da Semana:** informa o dia correspondente, como **segunda-feira**. Na tela apresentada, é opcional. Se preencher, confira se corresponde à data; não presuma que será calculado automaticamente.
+- **Atividade:** explica o que acontece naquela data. É obrigatória. Escreva o nome da atividade e as informações necessárias para compreendê-la, como horário ou local quando forem relevantes e estiverem confirmados.
+
+![[imagens/guias-contextuais/calendario-campos.png|Cada Evento do Calendário tem Data e Atividade obrigatórias e Dia da Semana opcional]]
+
+Para preencher o calendário:
+
+1. Use **+** dentro do Calendário para adicionar um **Evento**.
+2. Preencha Data e Atividade. Acrescente Dia da Semana se ajudar na consulta.
+3. Repita para as demais datas e organize a sequência com as setas ou o controle de arrastar de cada item. Não presuma que o campo Data ordena os itens automaticamente.
+4. Se duplicar um item, revise a data, o dia da semana e a atividade. Antes de usar a lixeira, confira qual item será removido.
+5. Pré-visualize, inclusive em telas menores, e confira se a sequência é compreensível, se as datas estão corretas e se as atividades correspondem à programação oficial.
+
+**Exemplo de preenchimento:** Data **15/03/2027**, Dia da Semana **segunda-feira** e Atividade **Abertura das inscrições para a oficina, às 9h**. O exemplo é ilustrativo; use as informações confirmadas pela área responsável. Se houver dúvida sobre uma data ou atividade, peça validação antes de enviar a página para moderação.
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image23.png|Exemplo publicado de calendário]]
 

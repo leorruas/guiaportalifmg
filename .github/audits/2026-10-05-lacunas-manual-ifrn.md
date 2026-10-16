@@ -94,7 +94,9 @@ Detalhes ausentes ou pouco explícitos incluem: **Recursivo**, **Mostrar imagens
 
 **Linha do tempo detalhada em 16/10/2026:** incorporada captura atual fornecida pelo usuário, com explicação dos campos Data e Descrição obrigatórios e Texto opcional de cada Evento. Documentados adição, organização cronológica com os controles do item, duplicação, remoção e conferência. A captura mostra datas escritas como Até 2008; não foi presumida ordenação automática pelo campo.
 
-**Próximo passo:** revisar os campos de Calendário, sem transformar o guia em mera transcrição de formulário.
+**Calendário detalhado em 16/10/2026:** incorporada captura atual fornecida pelo usuário, com Data e Atividade obrigatórias e Dia da Semana opcional. Documentados adição e organização dos itens, duplicação, remoção, conferência das datas e exemplo ilustrativo. Não foram presumidos cálculo automático do dia da semana ou ordenação automática.
+
+**Resultado:** item 6 atendido com as explicações de Coleção, Tabela, destinos de links, Cards, Linha do Tempo e Calendário incorporadas à referência canônica de blocos, conforme evidências e confirmações registradas acima.
 
 ### 7. Ações em massa e controles da tela de exploração de páginas
 
