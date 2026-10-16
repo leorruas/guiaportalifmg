@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Acrescentada ao artigo de notícias a preferência aprovada por Largura completa nas imagens do corpo, permitindo alinhamento lateral quando ajudar na leitura e orientando conferir em telas menores. Registrado o item 5 da auditoria IFRN x IFMG como atendido pelas decisões editoriais incorporadas ao guia.
+
 - Incluída no artigo de notícias a orientação aprovada de apresentar o nome completo seguido da sigla na primeira menção no texto e usar a sigla nas seguintes, com exemplo do IFMG. Atualizado o item 5 da auditoria IFRN x IFMG.
 
 - Acrescentados ao procedimento de notícias rótulos descritivos para links e recomendação de Link único no estilo Cartão para a CTA principal, com link de ação para a referência ilustrada de blocos; atualizado o item 5 da auditoria IFRN x IFMG.

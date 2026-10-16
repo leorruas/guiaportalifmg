@@ -29,6 +29,8 @@ Quando precisar dividir o corpo da notícia em seções, use **Título 2 (H2)** 
 
 5. Se utilizar imagem, diferencie os dois usos: a **imagem de destaque** aparece na lista de notícias; a imagem inserida no conteúdo aparece dentro da notícia. Selecione-as na coleção permitida e informe texto alternativo quando trouxerem informação.
 
+Para imagens inseridas no corpo da notícia, prefira o formato **Largura completa**. Use alinhamento lateral quando ele ajudar a relacionar a imagem ao texto. Confira o resultado na pré-visualização, inclusive em telas menores, para garantir que a imagem e o texto continuem fáceis de ler.
+
 **Onde guardar as imagens:** cada campus deve ter sua própria coleção de imagens de notícias, preferencialmente organizada em subcoleções por ano para facilitar a localização dos arquivos. Use o padrão **[Nome do campus] • Notícias > [Ano]**; por exemplo: **Arcos • Notícias > 2027**. O símbolo `>` indica que **2027** é uma subcoleção de **Arcos • Notícias**.
 
 Ao enviar uma imagem, selecione a coleção do campus e, quando disponível, a subcoleção do ano da notícia. Coleções organizam os arquivos; a pasta de notícias organiza as páginas. Se a coleção ou a subcoleção necessária ainda não existir, solicite sua criação ao administrador responsável, seguindo o padrão acima.

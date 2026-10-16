@@ -74,7 +74,9 @@ O guia atual cobre a diferença entre imagem de destaque e imagem interna, texto
 
 **Uso de siglas definido em 16/10/2026:** incluída no artigo de notícias, com aprovação do usuário, a orientação de apresentar o nome completo seguido da sigla entre parênteses na primeira menção no texto e usar a sigla nas seguintes, com o exemplo Instituto Federal de Minas Gerais (IFMG).
 
-**Próximo passo:** avaliar o formato Largura completa nas imagens de notícias. Esse ponto ainda não foi validado como padrão do IFMG.
+**Formato de imagens definido em 16/10/2026:** incluída no artigo de notícias, com aprovação do usuário, a preferência por **Largura completa** nas imagens do corpo. O alinhamento lateral permanece uma opção quando ajudar na leitura, com conferência em telas menores.
+
+**Resultado:** item 5 atendido pelas decisões editoriais registradas acima e incorporadas ao procedimento canônico de notícias. As dimensões e os formatos são recomendações editoriais, não requisitos técnicos do sistema.
 
 ### 6. Campos e controles exatos de cada bloco
 
