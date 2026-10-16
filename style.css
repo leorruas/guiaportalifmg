@@ -2879,3 +2879,7 @@ body:has(.leitor-artigo:not(.escondido)) .page-masthead { display: none; }
     padding: 0;
     background: transparent;
 }
+
+.training-entry { max-width: 1100px; margin: 3rem auto 0; padding: 2rem 1.5rem 3rem; border-top: 1px solid var(--muted); color: var(--text); }
+.training-entry p { color: var(--muted); margin-bottom: .6rem; }
+.training-entry a { color: var(--accent-blue); text-underline-offset: 4px; }
