@@ -20,6 +20,10 @@ Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela a
 
 5. Se utilizar imagem, diferencie os dois usos: a **imagem de destaque** aparece na lista de notícias; a imagem inserida no conteúdo aparece dentro da notícia. Selecione-as na coleção permitida e informe texto alternativo quando trouxerem informação.
 
+**Onde guardar as imagens:** cada campus deve ter sua própria coleção de imagens de notícias, preferencialmente organizada em subcoleções por ano para facilitar a localização dos arquivos. Use o padrão **[Nome do campus] • Notícias > [Ano]**; por exemplo: **Arcos • Notícias > 2027**. O símbolo `>` indica que **2027** é uma subcoleção de **Arcos • Notícias**.
+
+Ao enviar uma imagem, selecione a coleção do campus e, quando disponível, a subcoleção do ano da notícia. Coleções organizam os arquivos; a pasta de notícias organiza as páginas. Se a coleção ou a subcoleção necessária ainda não existir, solicite sua criação ao administrador responsável, seguindo o padrão acima.
+
 **Dimensões recomendadas para começar:** use **1080 × 1080 pixels** (quadrada) para a imagem de destaque e **1080 × 540 pixels** (horizontal) para imagens no corpo da notícia. São recomendações editoriais iniciais do guia, não uma exigência do sistema. Confira o resultado na pré-visualização, inclusive em telas menores, e ajuste o enquadramento para preservar a informação importante. Ao preparar a imagem, mantenha suas proporções para não deformá-la.
 
 Evite títulos, chapéus, subtítulos e etiquetas inteiros em caixa alta, exceto siglas que precisam ser escritas assim. O público lê melhor “Processo seletivo” do que “PROCESSO SELETIVO”.

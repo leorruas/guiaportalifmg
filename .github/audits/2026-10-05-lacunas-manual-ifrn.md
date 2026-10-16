@@ -66,7 +66,9 @@ O guia atual cobre a diferença entre imagem de destaque e imagem interna, texto
 
 **Situação em 16/10/2026:** cobertura parcial. O usuário considerou adequadas as dimensões do manual de referência. Incluídas no artigo canônico de notícias como recomendações editoriais iniciais: **1080 × 1080 pixels** para destaque e **1080 × 540 pixels** para imagens no corpo. O texto distingue recomendação de exigência do sistema e orienta conferir o enquadramento na pré-visualização.
 
-**Próximo passo:** avaliar separadamente os demais detalhes: coleção de imagens de notícias, formato Largura completa, hierarquia H2/H3, rótulos de ação e siglas. Esses pontos ainda não foram validados como padrão do IFMG.
+**Organização de imagens definida em 16/10/2026:** cada campus terá sua própria coleção de imagens de notícias, preferencialmente dividida por ano. Padrão incorporado aos artigos de notícias e de criação de coleções: **[Nome do campus] • Notícias > [Ano]**, por exemplo **Arcos • Notícias > 2027**. O ano é uma subcoleção, e a orientação evita criar outra coleção do campus quando já existe uma adequada.
+
+**Próximo passo:** avaliar separadamente os demais detalhes: formato Largura completa, hierarquia H2/H3, rótulos de ação e siglas. Esses pontos ainda não foram validados como padrão do IFMG.
 
 ### 6. Campos e controles exatos de cada bloco
 

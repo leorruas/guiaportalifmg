@@ -16,6 +16,12 @@ Não crie uma coleção nova para resolver um único arquivo urgente quando uma 
 
 **Exemplo de estrutura:** `Comunicação > Jornalismo > Imagens de notícias`.
 
+### Coleções de imagens de notícias por campus
+
+Crie uma coleção própria para as imagens de notícias de cada campus, com o nome **[Nome do campus] • Notícias**. Prefira organizar os arquivos em subcoleções por ano, como **Arcos • Notícias > 2027**: a coleção-pai é **Arcos • Notícias**, e **2027** é uma coleção criada dentro dela. Essa divisão facilita encontrar imagens de notícias de cada período.
+
+Antes de criar, confira se a coleção do campus já existe e se basta acrescentar a subcoleção do ano. Se o nome de uma coleção existente precisar mudar para seguir esse padrão, observe o cuidado sobre renomeação descrito abaixo.
+
 ## Criar a coleção
 
 1. Acesse **Configurações** > **Coleções**.
