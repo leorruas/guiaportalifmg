@@ -2,10 +2,10 @@
   'use strict';
   const cases = {
     'comum-objetivo': {
-      type:'contrast',title:'Uma notícia precisa dizer o que aconteceu',lead:'Título e primeira frase devem permitir reconhecer a informação e a ação.',
-      left:{label:'NÃO INFORMA',title:'Atenção',text:'Sem assunto, público ou prazo, quem procura a informação precisa abrir a notícia para descobrir.'},
-      right:{label:'EXEMPLO DE REDAÇÃO',title:'IFMG abre inscrições para monitoria até 18 de agosto',text:'Assunto, ação e prazo ficam visíveis. Data e condições são ilustrativas e precisam de confirmação antes de publicar.'},
-      note:'No caso real, confirme fonte institucional, período de inscrição, documento vigente e canal de atendimento.'
+      type:'contrast',title:'O título indica o serviço da página',lead:'O título precisa orientar quem busca atendimento.',
+      left:{label:'GENÉRICO',title:'Informações importantes',text:'A pessoa não sabe qual serviço encontrará.'},
+      right:{label:'ESPECÍFICO',title:'Biblioteca: horários e serviços de empréstimo',text:'O assunto e a informação disponível ficam claros antes de abrir a página.'},
+      note:'Antes de publicar, confirme horários, serviços e contatos com a área institucional.'
     },
     'comum-estrutura': {
       type:'cards',title:'Páginas, blocos e coleções são coisas diferentes',lead:'No Wagtail, cada uma dessas estruturas cumpre uma função.',
@@ -33,22 +33,22 @@
       ]
     },
     'editor-papel': {
-      type:'scenario',title:'O editor prepara a notícia, não a publica sozinho',lead:'Um caso de notícia de campus ajuda a identificar o limite do trabalho.',
-      scenario:'Uma oficina do campus abrirá inscrições na próxima semana.',
+      type:'scenario',title:'O editor prepara páginas institucionais',lead:'O editor cria ou atualiza uma Página e encaminha para moderação.',
+      scenario:'O campus precisa atualizar a página da Biblioteca com horários, serviços e contatos.',
       steps:[
-        ['CRIAR','Abra a pasta de notícias autorizada e escolha Adicionar subpágina → Notícia.'],
-        ['PREPARAR','Preencha título, resumo, corpo, imagens, links e metadados com dados confirmados.'],
-        ['ENCAMINHAR','Pré-visualize e envie para moderação; a publicação é decidida no fluxo de revisão.']
-      ],note:'Pasta de notícias, coleção e novas permissões dependem de administração. Não improvise uma cópia em outro lugar.'
+        ['LOCALIZAR','Em Páginas, abra a página-pai autorizada e, se precisar criar, use Adicionar subpágina → Página.'],
+        ['PREPARAR','Confirme os dados; organize introdução, serviços, instruções, contatos e links.'],
+        ['ENCAMINHAR','Revise Promover, pré-visualize e envie para moderação.']
+      ],note:'Notícias são criadas por jornalistas com perfil mínimo de Moderador. O editor trabalha com páginas do seu escopo.'
     },
     'editor-planejar': {
-      type:'fields',title:'Antes de abrir o editor, identifique quatro dados',lead:'Exemplo de preparo para uma notícia sobre uma oficina de extensão.',
+      type:'fields',title:'Antes de editar, confirme os dados do serviço',lead:'Exemplo de preparo da página institucional da Biblioteca.',
       fields:[
-        ['QUEM','Público da oficina','Quem pode participar? Confirme a regra com a área responsável.'],
-        ['QUANDO','Período de inscrição','Data de abertura, encerramento e condições precisam de fonte oficial.'],
-        ['COMO','Destino da inscrição','Verifique edital, formulário e o próximo passo de quem lê.'],
-        ['ONDE ENCONTRAR','Busca e metadados','Prepare título, slug, tag de título e meta descrição na aba Promover.']
-      ],note:'A meta descrição pode usar 140–155 caracteres como referência, mas o conteúdo correto vem primeiro.'
+        ['PÚBLICO','Quem utiliza?','Confirme a quem o serviço se destina.'],
+        ['ATENDIMENTO','Quando funciona?','Confirme dias e horários de atendimento com a unidade.'],
+        ['SERVIÇOS','Como acessar?','Informe local, serviços, contatos e próximos passos.'],
+        ['BUSCA','Como encontrar?','Prepare título, slug, tag de título e meta descrição na aba Promover.']
+      ],note:'A referência de 140–155 caracteres para meta descrição não é uma exigência do sistema.'
     },
     'editor-texto': {
       type:'screen',title:'O editor de texto tem hierarquia, não só formatação',lead:'Use o controle de títulos para organizar seções; negrito não substitui H2 e H3.',
@@ -72,13 +72,13 @@
       type:'screen',title:'Imagem publicada precisa de formato e descrição',lead:'O contexto determina a escolha de enquadramento e texto alternativo.',
       image:'guias-contextuais/imagem-formatos-texto.png',alt:'Seleção de formato e opções de acessibilidade ao inserir imagem no texto do Wagtail.',
       steps:[
-        ['FORMATO','No corpo da notícia, prefira Largura completa; use alinhamento lateral só quando favorecer a leitura.'],
+        ['FORMATO','Em páginas institucionais, escolha o formato pela função da imagem e confira o resultado na prévia.'],
         ['DESCRIÇÃO','A imagem informativa exige texto alternativo; marque decorativa apenas se não acrescentar informação.'],
         ['PRÉVIA','Confira corte e legibilidade em computador, tablet e celular.']
-      ],note:'No guia: destaque quadrado 1080 × 1080 e corpo 1080 × 540 são referências editoriais, não regras do sistema.'
+      ],note:'Título, texto alternativo e legenda têm funções diferentes. Confira o contexto da imagem.'
     },
-    'editor-noticias': {
-      type:'screen',title:'Uma notícia em outra pasta não precisa virar cópia',lead:'Copiar, criar Alias e Linkar em outra pasta produzem efeitos diferentes.',
+    'moderador-noticias': {
+      type:'screen',title:'Jornalistas distribuem notícias entre pastas',lead:'Na trilha Moderador: Copiar, Alias e Linkar em outra pasta produzem resultados diferentes.',
       image:'guias-contextuais/noticia-escolher-pastas.png',alt:'Seleção de pastas de destino para distribuição de uma notícia no Wagtail.',
       steps:[
         ['COPIAR','Sem Alias: cria outra página, que pode seguir independente da original.'],
@@ -95,13 +95,13 @@
       ],note:'Resolver um comentário não significa publicar. A próxima decisão continua com a moderação.'
     },
     'editor-pratica': {
-      type:'scenario',title:'O que uma notícia pronta deve entregar',lead:'Síntese de uma notícia de oficina preparada para revisão.',
-      scenario:'Notícia do campus com inscrições, edital e formulário.',
+      type:'scenario',title:'A página da Biblioteca está pronta para revisão?',lead:'Síntese de uma página institucional de serviço.',
+      scenario:'Página da Biblioteca com horários, serviços, contatos e links úteis.',
       steps:[
-        ['ENCONTROU?','A notícia está na pasta correta e apresenta o fato, o prazo e o público.'],
-        ['ENTENDEU?','Título, texto, documentos e imagens explicam o que mudou, sem siglas obscuras.'],
-        ['CONSEGUE AGIR?','O link de inscrição funciona; a prévia foi conferida e a página enviada para moderação.']
-      ],note:'As atividades individuais e a conferência de resultados ficam na página separada de prática.'
+        ['ENCONTRAR','A página está na seção correta e apresenta os serviços disponíveis.'],
+        ['COMPREENDER','Horários, contatos e instruções são claros e confirmados.'],
+        ['AGIR','Os links foram conferidos, a prévia foi revisada e a página foi enviada para moderação.']
+      ],note:'As atividades individuais permanecem na página separada de prática.'
     },
     'moderador-papel': {
       type:'cards',title:'Revisar conteúdo não é o mesmo que colocá-lo no ar',lead:'O moderador responde tanto pela decisão editorial quanto pela vigência.',
@@ -173,14 +173,14 @@
     'administrador-estrutura': {
       type:'cards',title:'Estruturas compartilhadas exigem checagem de alcance',lead:'Mudanças administrativas podem afetar várias páginas e equipes.',
       cards:[
-        ['PASTA DE NOTÍCIAS','Onde editor cria','Uma pasta específica organiza as notícias do setor ou campus.'],
+        ['PASTA DE NOTÍCIAS','Onde jornalistas criam','Jornalistas com perfil Moderador ou superior utilizam a pasta autorizada para criar notícias.'],
         ['CADASTROS','Dados oficiais','Use classificações e cadastros confirmados; não duplique uma fonte de sistema.'],
         ['HOME E ÁRVORE','Navegação compartilhada','Antes de mudar ordem, menus ou páginas-pai, verifique dependências e permissões.']
       ],note:'Renomeação de coleções exige cuidado especial e é abordada no alerta dedicado deste módulo.'
     },
     'administrador-pratica': {
       type:'scenario',title:'A configuração está pronta quando cada perfil consegue agir',lead:'Síntese do que deve funcionar antes de uma entrega editorial.',
-      scenario:'Editor, moderador e administrador trabalham na mesma notícia.',
+      scenario:'Editor, moderador e administrador trabalham na mesma página institucional.',
       steps:[
         ['EDITOR','Encontra a pasta correta, seleciona arquivos autorizados e envia a página.'],
         ['MODERADOR','Recebe, revisa e consegue decidir a publicação no fluxo definido.'],

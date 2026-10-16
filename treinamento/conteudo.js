@@ -69,15 +69,15 @@ window.TreinamentoConteudo = [
   {
     "id": "editor-papel",
     "track": "editor",
-    "title": "Seu papel como editor",
-    "lead": "Prepare uma entrega que outra pessoa consiga revisar sem adivinhar informações.",
+    "title": "O editor prepara páginas institucionais",
+    "lead": "Prepare páginas de serviço no seu escopo e envie para moderação.",
     "points": [
       "Crie e edite páginas na área autorizada.",
       "Use blocos e arquivos das coleções permitidas.",
       "Configure os campos de busca/menu disponíveis, responda correções e envie para moderação."
     ],
-    "task": "Uma página está pronta, mas precisa entrar no ar hoje. Qual é seu próximo passo?",
-    "check": "Encaminhar ao moderador, com a necessidade e o prazo.",
+    "task": "Planeje a página institucional da Biblioteca a partir da página-pai autorizada.",
+    "check": "A Página está na seção correta, contém informações confirmadas e aguarda revisão.",
     "ref": "papel-editor",
     "img": null,
     "limits": [
@@ -89,14 +89,14 @@ window.TreinamentoConteudo = [
     "id": "editor-planejar",
     "track": "editor",
     "title": "Prepare conteúdo e busca juntos",
-    "lead": "Antes de preencher o Wagtail, organize o que a página precisa entregar.",
+    "lead": "Planeje a página institucional da Biblioteca antes de usar o Wagtail.",
     "points": [
       "Defina público, fonte, responsável e ação principal.",
       "Prepare título, texto, ordem dos blocos, links e arquivos.",
       "Prepare tag de título, slug e meta descrição; use 140–155 caracteres como referência editorial."
     ],
-    "task": "Rascunhe uma página de oficina: texto, ação de inscrição e meta descrição.",
-    "check": "O resumo descreve a página com clareza; os metadados serão preenchidos em Promover.",
+    "task": "Prepare serviços, horários, contatos e metadados da página da Biblioteca.",
+    "check": "Informações confirmadas e título, estrutura e metadados compreensíveis.",
     "ref": "24",
     "img": null,
     "limits": null
@@ -158,9 +158,9 @@ window.TreinamentoConteudo = [
     "title": "Imagem, enquadramento e acessibilidade",
     "lead": "A imagem precisa funcionar no contexto em que será lida.",
     "points": [
-      "Prefira Largura completa em notícias; confira alinhamentos laterais em telas menores.",
+      "Nas páginas institucionais, escolha formato e alinhamento conforme a leitura e confira o resultado em telas menores.",
       "Imagem informativa precisa de texto alternativo; marque decorativa somente quando não acrescentar informação.",
-      "Referência para notícias: destaque 1080 × 1080; corpo 1080 × 540. Confira o enquadramento."
+      "Título da imagem, texto alternativo e legenda têm funções diferentes. Confira o contexto e o enquadramento."
     ],
     "task": "Escolha uma foto e escreva o texto alternativo para a página da oficina.",
     "check": "A descrição explica o que importa, sem depender de a pessoa ver a imagem.",
@@ -185,22 +185,6 @@ window.TreinamentoConteudo = [
     "limits": null
   },
   {
-    "id": "editor-noticias",
-    "track": "editor",
-    "title": "Uma notícia pode circular em várias áreas",
-    "lead": "Escolha o fluxo conforme a finalidade.",
-    "points": [
-      "Copiar sem Alias: página independente.",
-      "Copiar com Alias: página vinculada às alterações futuras da original.",
-      "Linkar em outra pasta: distribuição entre pastas de notícias, acompanhada em Solicitações."
-    ],
-    "task": "A mesma notícia interessa a outro campus. Qual fluxo do guia você consulta?",
-    "check": "Linkar em outra pasta; confira se a vinculação é imediata ou depende de aprovação.",
-    "ref": "noticias",
-    "img": "noticia-escolher-pastas.png",
-    "limits": null
-  },
-  {
     "id": "editor-menus",
     "track": "editor",
     "title": "Busca e menus precisam de conferência",
@@ -210,7 +194,7 @@ window.TreinamentoConteudo = [
       "Confira o caminho pelas páginas-pai.",
       "Na página-pai, escolha Exibição do menu interno: Lateral, Cards ou Links."
     ],
-    "task": "Confira se a oficina pode ser encontrada pela navegação planejada.",
+    "task": "Confira como a página institucional da Biblioteca pode ser encontrada.",
     "check": "O caminho está completo e os rótulos explicam os destinos.",
     "ref": "menus",
     "img": "exibicao-menu-interno.png",
@@ -226,7 +210,7 @@ window.TreinamentoConteudo = [
       "Leia os avisos de Verificações e revise acessibilidade manualmente.",
       "Salve e envie para moderação; confirme o estado."
     ],
-    "task": "Envie a oficina para revisão no ambiente de treinamento.",
+    "task": "Envie a página institucional da Biblioteca para moderação.",
     "check": "A página aguarda moderação, com links, datas, imagens e fonte conferidos.",
     "ref": "enviar",
     "img": null,
@@ -254,15 +238,15 @@ window.TreinamentoConteudo = [
   {
     "id": "editor-pratica",
     "track": "editor",
-    "title": "O que uma página pronta precisa ter",
-    "lead": "Uma entrega de exemplo: oficina com período de inscrição e formulário confirmado.",
+    "title": "A página da Biblioteca está pronta para revisão?",
+    "lead": "Síntese de uma página institucional de serviço.",
     "points": [
       "Título, fonte, público, prazo e responsável definidos.",
       "Texto organizado, arquivos identificados e chamada de inscrição funcionando.",
       "Metadados preenchidos, prévia conferida e página enviada para revisão."
     ],
-    "task": "Execute o caso completo em ambiente de treinamento, usando dados fictícios identificados como exemplo.",
-    "check": "Seu trabalho termina com a página pronta para decisão do moderador, não apenas salva como rascunho.",
+    "task": "Prepare a página da Biblioteca, com serviços, horários, contatos e links.",
+    "check": "A Página foi pré-visualizada, tem informações confirmadas e está em moderação.",
     "ref": "enviar",
     "img": null,
     "limits": null
@@ -285,6 +269,22 @@ window.TreinamentoConteudo = [
       "Você não administra grupos, permissões, coleções, privacidade de coleções ou cadastros auxiliares.",
       "Procure o administrador para esses ajustes e para impedimentos de configuração."
     ]
+  },
+  {
+    "id": "moderador-noticias",
+    "track": "moderador",
+    "title": "Distribuir notícias em outras pastas",
+    "lead": "Jornalistas com perfil Moderador ou superior escolhem como distribuir notícias.",
+    "points": [
+      "Copiar sem Alias: página independente.",
+      "Copiar com Alias: página vinculada às alterações futuras da original.",
+      "Linkar em outra pasta: distribuição entre pastas de notícias, acompanhada em Solicitações."
+    ],
+    "task": "Como jornalista Moderador, compare Copiar, Alias e Linkar em outra pasta.",
+    "check": "O destino e o fluxo de distribuição estão corretos e foram conferidos no Wagtail.",
+    "ref": "noticias",
+    "img": "noticia-escolher-pastas.png",
+    "limits": null
   },
   {
     "id": "moderador-revisao",
@@ -363,7 +363,7 @@ window.TreinamentoConteudo = [
       "Registre uma pendência específica e confira a nova entrega.",
       "Decida o estado e combine quem acompanhará a vigência."
     ],
-    "task": "Conclua o caso no ambiente de treinamento e explique o motivo da decisão.",
+    "task": "Revise uma Página institucional enviada pelo editor e registre uma pendência verificável.",
     "check": "A decisão está registrada e a próxima responsabilidade está clara.",
     "ref": "revisar",
     "img": null,
@@ -445,7 +445,7 @@ window.TreinamentoConteudo = [
     "title": "Configurações que afetam várias páginas",
     "lead": "Trate estruturas compartilhadas separadamente da edição do conteúdo.",
     "points": [
-      "Pasta de notícias organiza onde editores podem criar notícias.",
+      "A pasta de notícias organiza onde jornalistas com perfil Moderador ou superior criam notícias.",
       "Cadastros auxiliares devem usar classificações institucionais confirmadas.",
       "Homepage, ordem de páginas e acessos exigem avaliação do alcance da mudança."
     ],

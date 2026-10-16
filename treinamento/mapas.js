@@ -122,7 +122,7 @@
   }
   function threeClicks(){
     if(!current)return '<p class="map-fallback">Dados indisponíveis.</p>';
-    const target=current.nodes.find(n=>n.title==='Processo Seletivo'&&n.id.includes('estudantes/'))?.id;
+    const target=current.nodes.find(n=>n.title==='Reserva de Vagas (Cotas)'&&n.id.includes('estudantes/'))?.id;
     const parents=new Map(current.edges.filter(e=>e.type==='estrutura').map(e=>[e.target,e.source]));
     const byId=new Map(current.nodes.map(n=>[n.id,n]));
     const path=[],seen=new Set();let here=target;
@@ -133,7 +133,7 @@
     return '<div class="journey-track">'+path.map((name,i)=>
       '<div class="journey-item"><span>'+(i===0?'INÍCIO':String(i).padStart(2,'0')+' CLIQUE'+(i>1?'S':''))+'</span><strong>'+text(name)+'</strong></div>'
     ).join('')+'</div>'+
-    '<p class="map-caption">Este percurso foi identificado nas relações estruturais mapeadas. Três cliques são um exemplo de navegação, não um limite garantido para todas as páginas.</p>';
+    '<p class="map-caption">Este exemplo leva às informações sobre política de cotas. O destino mapeado chama-se Reserva de Vagas (Cotas). O percurso de três cliques não é uma garantia para todas as páginas.</p>';
   }
   function getView(scene){
     if(scene.type==='map')return {html:mapHTML(scene)};

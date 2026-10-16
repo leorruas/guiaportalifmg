@@ -117,6 +117,19 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de conclusão:** uma pessoa sem experiência consegue localizar a coleção correta, inserir ou atualizar um arquivo permitido, encontrá-lo e utilizá-lo em uma página, além de reconhecer o que depende do administrador.
 
+## Decisão editorial — perfis e exemplos de páginas [aplicada]
+
+- **Notícias são criadas por jornalistas com perfil mínimo de Moderador.** Na apresentação, a trilha Editor trata de **páginas institucionais e de serviço**, não de criar notícias.
+- [x] Trocar a demonstração do Editor por uma Página institucional da Biblioteca, seguindo `Páginas → página-pai autorizada → Adicionar subpágina → Página → Conteúdo → Promover → pré-visualização → moderação`.
+- [x] Transferir a demonstração de **Copiar, Alias e Linkar em outra pasta** para a trilha Moderador no contexto de jornalistas.
+- [x] Atualizar os exemplos e as atividades individuais de Editor para a página da Biblioteca.
+- [ ] Fazer futuramente a revisão do artigo canônico antigo de Editor sobre notícias e de seus metadados/aliases, sem quebrar o índice do guia. **Não executar nesta alteração**.
+
+## Percurso de três cliques — política de cotas [atualizado]
+
+- [x] Trocar o percurso para **Home → Estudantes → Como ingressar no IFMG → Reserva de Vagas (Cotas)**, preservando o título existente do nó mapeado.
+- [ ] Conferir visualmente a composição em projeção. O exemplo não promete três cliques para qualquer informação.
+
 ## Histórico e próximos registros
 
 - **Concluído antes deste backlog:** deck 16:9 com 39 telas; estilo suíço; cores do guia e Archivo; redução do texto de apoio; atividades individuais separadas; seis slides iniciais de grafos e estruturas.

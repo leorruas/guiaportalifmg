@@ -37,7 +37,7 @@
           card('Links','Bloco no corpo da página para mais de um destino, como edital, inscrição e resultados.','NO CONTEÚDO')+
           card('Link único','Bloco para uma ação principal. Em Cartão, a descrição acompanha o botão; em Padrão, só o botão aparece.','NO CONTEÚDO')+
           card('Link','Tipo de página criado na árvore do Wagtail, com rota que redireciona para outro endereço.','NA ÁRVORE')+
-          '</div><div class="teach-bottom-panel"><strong>EXEMPLO / PROCESSO SELETIVO</strong><p>“Acesse o formulário de inscrição” pode ser um Link único. Uma lista de edital, cronograma e resultados pede Links. Não crie uma página Link para simular um botão dentro do texto.</p></div>';
+          '</div><div class="teach-bottom-panel"><strong>EXEMPLO / PÁGINA DA BIBLIOTECA</strong><p>“Acessar o catálogo” pode ser um Link único. Uma lista de horários, regulamentos e serviços pede Links. Não crie uma página Link para simular um botão dentro do texto.</p></div>';
       case 'editor-tabela-exemplo':
         return '<div class="teach-split narrow">'+
           '<div class="teach-steps">'+

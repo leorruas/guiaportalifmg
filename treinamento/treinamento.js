@@ -13,7 +13,7 @@
     {id:'mapa-reitoria',type:'map',map:'reitoria',title:'Mapa da Reitoria',lead:'O novo mapa representa as relações já registradas entre as páginas do portal.'},
     {id:'estrutura-campi',type:'structure',model:'campi',title:'Um modelo para os campi',lead:'Sete entradas organizam a navegação. Três delas são menus fixos.'},
     {id:'mapa-campi',type:'map',map:'campi',title:'Mapa dos campi',lead:'Um modelo de organização, sem assumir endereços ainda não mapeados.'},
-    {id:'caminho-tres-cliques',type:'journey',title:'A distância da Home',lead:'Um exemplo de como navegar de uma necessidade até a informação.'}
+    {id:'caminho-tres-cliques',type:'journey',title:'Como encontrar informações sobre cotas',lead:'Home → Estudantes → Como ingressar no IFMG → Reserva de Vagas (Cotas).'}
   ];
   const extraSlides = window.TreinamentoAulas?.extras || [];
   const featuredIds = window.TreinamentoAulas?.featuredIds || [];
