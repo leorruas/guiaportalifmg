@@ -11,7 +11,7 @@
     {id:'mapa-portal-anterior',type:'map',map:'legacy',title:'Antes, a navegação refletia a estrutura institucional',lead:'Este grafo registra páginas e relações mapeadas no portal anterior. Não representa, sozinho, um indicador de qualidade.'},
     {id:'mapa-reitoria',type:'map',map:'reitoria',title:'A Reitoria organiza a entrada por públicos',lead:'Institucional, Estudantes, Servidores, Comunidade e Acesso à Informação são os cinco caminhos principais a partir da Home.'},
     {id:'mapa-campi',type:'map',map:'campi',title:'Nos campi, três entradas são fixas',lead:'O modelo tem sete entradas. Cursos, Processos seletivos e Eventos são fixos; as demais organizam conteúdos da unidade.'},
-    {id:'caminho-tres-cliques',type:'journey',title:'Uma necessidade, um caminho: política de cotas',lead:'Home → Estudantes → Como ingressar no IFMG → Reserva de Vagas (Cotas).'}
+    {id:'caminho-tres-cliques',type:'journey',title:'Uma necessidade, um caminho: política de cotas',lead:'A sequência revela como encontrar a informação sem depender da organização interna dos setores.'}
   ];
   const extraSlides = window.TreinamentoAulas?.extras || [];
   const featuredIds = window.TreinamentoAulas?.featuredIds || [];

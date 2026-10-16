@@ -290,3 +290,10 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .map-shortcuts strong{font-size:1.11cqw;line-height:1.15;letter-spacing:-.02em;font-weight:600;overflow-wrap:break-word}
 .map-shortcuts .is-fixed{border-top-color:var(--accent)}
 .map-shortcuts .is-fixed small{color:var(--accent)}
+
+/* Revisão visual dos grafos: ampliar sem esconder nós nem aumentar os metadados. */
+.map-graphic[data-graph="reitoria"] .map-svg{transform:scale(1.10);transform-origin:center}
+.map-graphic[data-graph="campi"] .map-svg{transform:scale(1.30);transform-origin:center}
+.map-shortcuts strong{font-size:1.17cqw}
+.frame-journey .journey-item::after{top:42%;bottom:auto}
+.frame-journey .journey-track{margin:3cqw 0 3.6cqw}

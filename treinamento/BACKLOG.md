@@ -38,6 +38,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Preservar links antigos `#estrutura-reitoria` e `#estrutura-campi` direcionando para os grafos respectivos.
 - [x] Criar [ROTEIRO-APRESENTADOR.md](./ROTEIRO-APRESENTADOR.md) com condução da aula, exemplos e perguntas de transição.
 - [x] Atualizar índice, progresso, cache e testes para **42 telas**, mantendo exercícios, módulos e seis etapas da Biblioteca.
+- [x] Inspecionar as capturas do Chromium da abertura condensada: ajustar a escala dos grafos da Reitoria e dos campi e aproximar as setas dos rótulos no percurso de cotas.
 - [ ] Inspecionar legibilidade das faixas de entradas sob os grafos em projeção; teste automatizado não garante leitura confortável.
 
 ## Direção definida
