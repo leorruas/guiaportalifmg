@@ -52,9 +52,9 @@ As lacunas restantes se concentram em comportamentos específicos do sistema, re
 
 **No guia atual:** o artigo exige a coleção correta e menciona ao menos a área de documentos publicados, mas não documenta a estrutura completa.
 
-**Situação:** cobertura parcial.
+**Situação em 16/10/2026:** pendente de definição. O usuário informou que o IFMG ainda não definiu um padrão e que a parte de processos seletivos ainda não foi trabalhada. A estrutura do IFRN não foi adotada como padrão do IFMG.
 
-**Próximo passo:** confirmar se o IFMG usa essa mesma taxonomia. Se usar, explicitar a estrutura; se não usar, registrar a estrutura oficial do IFMG para evitar coleções improvisadas.
+**Próximo passo:** retomar os itens 3 e 4 quando os fluxos de processos seletivos forem definidos e registrar a estrutura aprovada para o IFMG.
 
 ## Prioridade média
 
@@ -64,7 +64,9 @@ O documento de referência traz detalhes que não aparecem no artigo atual: suge
 
 O guia atual cobre a diferença entre imagem de destaque e imagem interna, texto alternativo e caixa alta, mas deixa essas regras específicas de fora.
 
-**Próximo passo:** separar o que é requisito técnico atual do que é apenas padrão editorial do IFRN e incorporar somente o que for válido para o IFMG.
+**Situação em 16/10/2026:** cobertura parcial. O usuário considerou adequadas as dimensões do manual de referência. Incluídas no artigo canônico de notícias como recomendações editoriais iniciais: **1080 × 1080 pixels** para destaque e **1080 × 540 pixels** para imagens no corpo. O texto distingue recomendação de exigência do sistema e orienta conferir o enquadramento na pré-visualização.
+
+**Próximo passo:** avaliar separadamente os demais detalhes: coleção de imagens de notícias, formato Largura completa, hierarquia H2/H3, rótulos de ação e siglas. Esses pontos ainda não foram validados como padrão do IFMG.
 
 ### 6. Campos e controles exatos de cada bloco
 

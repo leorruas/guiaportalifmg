@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Incluídas no artigo de notícias as recomendações editoriais iniciais de 1080 × 1080 pixels para destaque e 1080 × 540 pixels para imagens no corpo, aceitas pelo usuário, sem apresentá-las como requisito técnico. Atualizado o item 5 da auditoria como parcialmente coberto e registrado o item 4 como pendente de definição da estrutura de processos seletivos.
+
 - Registrado o item 3 da auditoria IFRN x IFMG (visibilidade automática das etapas de processo seletivo) como pendente, por decisão do usuário enquanto o comportamento no IFMG não for confirmado. Nenhuma regra de vigência foi acrescentada ao guia.
 
 - Acrescentada ao artigo de criação e edição de campus a relação observada entre o objeto Campus do SUAP e servidores, eventos e setores, com orientação para conferir a integração antes de duplicar cadastros. Atualizado o item 2 da auditoria IFRN x IFMG como parcialmente coberto; mantidos como pendentes o procedimento exato de vinculação, a frequência, as regras de edição e outras integrações.

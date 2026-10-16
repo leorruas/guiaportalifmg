@@ -20,6 +20,8 @@ Uma notícia conta algo que aconteceu, está acontecendo ou vai acontecer. Ela a
 
 5. Se utilizar imagem, diferencie os dois usos: a **imagem de destaque** aparece na lista de notícias; a imagem inserida no conteúdo aparece dentro da notícia. Selecione-as na coleção permitida e informe texto alternativo quando trouxerem informação.
 
+**Dimensões recomendadas para começar:** use **1080 × 1080 pixels** (quadrada) para a imagem de destaque e **1080 × 540 pixels** (horizontal) para imagens no corpo da notícia. São recomendações editoriais iniciais do guia, não uma exigência do sistema. Confira o resultado na pré-visualização, inclusive em telas menores, e ajuste o enquadramento para preservar a informação importante. Ao preparar a imagem, mantenha suas proporções para não deformá-la.
+
 Evite títulos, chapéus, subtítulos e etiquetas inteiros em caixa alta, exceto siglas que precisam ser escritas assim. O público lê melhor “Processo seletivo” do que “PROCESSO SELETIVO”.
 6. Na aba **Promover**, revise URL, título de busca e descrição.
 7. Pré-visualize em computador e em dispositivos menores, quando a opção estiver disponível.
