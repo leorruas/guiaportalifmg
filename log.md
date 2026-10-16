@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Corrigido o QA em navegador após a primeira execução bem-sucedida (`38930558828`): screenshots haviam sido gerados, mas não anexados pela Action por estarem em pasta oculta. Diretório alterado para `qa-training/` e sincronizado no workflow; a rotina agora aguarda o progresso exato antes das capturas de cada slide. Atualizado checklist com QA automatizado feito; revisão visual humana continua pendente.
+
 - Acrescentado QA em navegador real via Chromium/Playwright Core na Action de treinamento: percorre as 44 telas em três resoluções, verifica imagem carregada e palco dentro da viewport, testa tela cheia quando suportada e anexa capturas de referência para conferência. Criado \`scripts/test-training-browser.mjs\` e atualizado workflow; execução ainda pendente de resultado.
 
 - Executadas as tarefas independentes do checklist `treinamento/CAPTURAS-WAGTAIL.md`: criada a identificação de seis etapas do caso da Biblioteca em `treinamento/fluxo.js`; tela de seleção de tipo Página com imagem de referência; comparativo de Promover vs menu interno com duas capturas; apresentação do estado de envio para moderação com imagem; bloco Coleção ilustrado distinguindo armazenamento de exibição e Recursivo. Harmonizados Tabela, Galeria, Links e documento com o exemplo da Biblioteca, sem inventar dados da homologação. Capturas existentes agora trazem legenda de referência sujeita a confirmação. Atualizados CSS, caches, testes, backlog e checklist; imagens W01–W24 continuam dependendo de envio e revisão.

@@ -7,7 +7,7 @@ import {chromium} from 'playwright-core';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const browserPath=['/usr/bin/google-chrome-stable','/usr/bin/google-chrome','/usr/bin/chromium'].find(existsSync);
 assert.ok(browserPath,'Navegador Chromium não encontrado');
-const output=resolve(root,'.qa-training');mkdirSync(output,{recursive:true});
+const output=resolve(root,'qa-training');mkdirSync(output,{recursive:true});
 const browser=await chromium.launch({executablePath:browserPath,headless:true,args:['--no-sandbox','--allow-file-access-from-files']});
 const ids=['editor-papel','editor-adicionar-bloco','editor-links-exemplo','editor-colecao','editor-menus','editor-enviar','moderador-revisao'];
 const url=pathToFileURL(resolve(root,'treinamento/index.html')).href;
@@ -25,7 +25,7 @@ try{
   assert.equal(slides.length,44);
   for(const id of slides){
    await page.evaluate(id=>location.hash='#'+id,id);
-   await page.waitForFunction(id=>location.hash==='#'+id&&!!document.querySelector('#app h1'),id);
+   await page.waitForFunction(expected=>document.querySelector('#progress')?.textContent===expected, String(slides.indexOf(id)+1).padStart(2,'0')+' / 44');
    const state=await page.evaluate(async()=>{
     const imgs=[...document.querySelectorAll('#app img')];
     await Promise.all(imgs.map(x=>x.decode().catch(()=>null)));

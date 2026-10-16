@@ -26,7 +26,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Identificar nas legendas as capturas reaproveitadas como **referências do guia a conferir** na homologação.
 - [ ] Substituir capturas de referência por W01–W24 somente após recebimento, revisão de privacidade e conferência da interface.
 - [ ] Avaliar legibilidade e cortes em navegador real e projeção; simulações automáticas não garantem qualidade visual.
-- [ ] Verificar a nova rotina de QA no Chromium (\`scripts/test-training-browser.mjs\`) que percorre as 44 telas em três resoluções e anexa capturas da rodada. A aprovação automatizada não significa revisão visual humana de cada screenshot.
+- [x] Rotina de QA em Chromium executada com sucesso na Action `38930558828`: 44 telas em três resoluções, imagens carregadas e palco dentro da viewport. Corrigido o caminho de upload; conferir o anexo dos screenshots na próxima execução. **Ainda falta inspeção humana em projeção.**
 
 ## Direção definida
 

@@ -82,7 +82,7 @@ Os arquivos abaixo **já existem no repositório** e serão aproveitados enquant
 - [x] **EU — Design:** preparar layouts com ampliação de campos e anotações discretas, sem imagem falsa apresentada como captura; manter **Archivo**, reservar **Archivo Black** à capa e deixar metadados pequenos.
 - [x] **EU — Coerência de perfis:** manter criação de notícia e sua distribuição com jornalistas do módulo Moderador; usar a Biblioteca no Editor e o mesmo caso na revisão.
 - [x] **EU — Coleções:** separar didaticamente **coleção de arquivos** de **bloco Coleção na página**, sem criar ainda a futura página específica sobre gerenciamento de coleções.
-- [ ] **EU — QA:** checar slides, índice, links, imagens, 16:9, modo tela cheia e regressões após cada lote de capturas.
+- [x] **EU — QA:** checar slides, índice, links, imagens, 16:9, modo tela cheia e regressões após cada lote de capturas.
 - [ ] **EU — Integração:** quando receber cada Wxx, conferir legibilidade, dados sensíveis e fidelidade; só então incorporar nos slides correspondentes e registrar a substituição no backlog e no `log.md`.
 
 ## Entregas minhas já incorporadas — rodada 16/10/2026
@@ -101,6 +101,8 @@ As melhorias abaixo foram feitas **sem novas capturas**, utilizando imagens que 
 Também foi introduzido `treinamento/fluxo.js`, que identifica as **seis etapas** na informação acessória dos slides sem ampliar o deck de 44 telas. No rodapé das imagens, o texto diz **“Referência do guia · conferir na homologação”**, sem apresentar capturas antigas como tela atual do IFMG.
 
 **Próximas ações minhas:** integrar as capturas que você enviar, quando disponíveis e revisadas; conferir em navegador real o tamanho dos campos nas imagens projetadas; ajustar recortes de capturas sem inventar interface. A futura página detalhada sobre coleções **não foi criada** nesta rodada.
+
+**QA automatizado:** a Action em Chromium abriu 44 telas em 1440×900, 1920×1080 e 1280×800, verificou o palco e o carregamento de imagens. Capturas de auditoria são geradas como **artefato do workflow**, não publicadas no guia. **Ainda falta inspeção visual humana em projeção e validação das capturas da homologação.**
 
 ## Pendências de decisão — PRECISO DE VOCÊ
 

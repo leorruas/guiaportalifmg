@@ -31,5 +31,5 @@ jobs:
         if: always()
         with:
           name: capturas-qa-treinamento
-          path: .qa-training/*.png
+          path: qa-training/*.png
           if-no-files-found: ignore
