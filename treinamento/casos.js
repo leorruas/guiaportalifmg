@@ -39,7 +39,7 @@
         ['01 / LOCALIZAR','Abra Páginas e encontre a página-pai da área em que você tem permissão para editar.'],
         ['02 / ESCOLHER','Para criar, use Adicionar subpágina → Página. Para atualizar, abra a página existente.'],
         ['03 / PREPARAR','Confira título e responsabilidade; os conteúdos e metadados serão preparados nas próximas etapas.']
-      ],note:'Imagem de referência do guia. O caminho exato da árvore do IFMG ainda será confirmado pela captura W01.'
+      ],note:'Se a página institucional já existe, atualize-a em vez de criar outra. A imagem mostra uma interface de referência do guia.'
     },
     'editor-planejar': {
       type:'fields',title:'Antes de editar, confirme os dados do serviço',lead:'Exemplo de preparo da página institucional da Biblioteca.',

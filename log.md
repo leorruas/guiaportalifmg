@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Recuperado o artefato com oito screenshots do Chromium da Action `38930870653` e inspecionada a composição da apresentação. Eliminado o contorno visual indevido do H1 programaticamente focado para acessibilidade. Removidos dos slides os códigos internos W01–W24, preservando-os no checklist; esclarecido que a captura de Promover mostra uma página do tipo Link como referência. Cache CSS/Aulas/Casos atualizado, backlog e AGENTS sincronizados. A leitura de campos pequenos em projeção continua pendente.
+
 - Corrigido o QA em navegador após a primeira execução bem-sucedida (`38930558828`): screenshots haviam sido gerados, mas não anexados pela Action por estarem em pasta oculta. Diretório alterado para `qa-training/` e sincronizado no workflow; a rotina agora aguarda o progresso exato antes das capturas de cada slide. Atualizado checklist com QA automatizado feito; revisão visual humana continua pendente.
 
 - Acrescentado QA em navegador real via Chromium/Playwright Core na Action de treinamento: percorre as 44 telas em três resoluções, verifica imagem carregada e palco dentro da viewport, testa tela cheia quando suportada e anexa capturas de referência para conferência. Criado \`scripts/test-training-browser.mjs\` e atualizado workflow; execução ainda pendente de resultado.

@@ -277,3 +277,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .teach-visual-example .teach-shot img{min-height:0;max-height:100%;object-fit:contain}
 .teach-visual-example p{font-size:var(--slide-body);line-height:1.34;margin:.3cqw 0 0}
 .teach-visual-example strong{font-weight:650}
+
+/* O H1 recebe foco por script para orientar leitor de tela; não deve ganhar moldura visual decorativa. */
+.frame h1[tabindex="-1"]:focus{outline:none}

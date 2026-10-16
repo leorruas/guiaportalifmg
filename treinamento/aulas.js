@@ -65,16 +65,16 @@
           row('Recursivo','Ative somente quando precisar incluir arquivos de subcoleções da coleção escolhida.')+
           row('Mostrar arquivos','Escolha documentos, imagens ou ambos conforme a finalidade da página.')+
           '</div>'+shot('manual-ifrn/image5.png','Configuração de referência do bloco Coleção no Wagtail')+'</div>'+
-          '<p class="teach-note">A coleção do painel não é a árvore de páginas. O bloco não cria, não renomeia e não altera permissões de uma coleção. Capturas W07, W08 e W11 ainda precisam confirmar o percurso no IFMG.</p>';
+          '<p class="teach-note">A coleção do painel não é a árvore de páginas. O bloco não cria, não renomeia e não altera permissões de uma coleção. Para mudar a estrutura, procure a equipe administradora.</p>';
       case 'editor-menus':
         return '<div class="teach-dual">'+
           '<section class="teach-visual-example">'+label('01 / EXIBIR NOS MENUS')+
-          shot('guias-contextuais/exibir-nos-menus.png','Aba Promover com a opção Exibir nos menus no Wagtail')+
+          shot('guias-contextuais/exibir-nos-menus.png','Aba Promover de uma página do tipo Link, com Exibir nos menus')+
           '<p>Em <strong>Promover</strong>, a visibilidade no menu depende da configuração da página.</p></section>'+
           '<section class="teach-visual-example">'+label('02 / APRESENTAR AS FILHAS')+
           shot('guias-contextuais/exibicao-menu-interno.png','Opções de exibição do menu interno na página-pai')+
           '<p>Na página-pai, <strong>Lateral, Cards ou Links</strong> determinam a apresentação do menu interno.</p></section>'+
-          '</div><p class="teach-note">Uma configuração não substitui a outra: menu interno não é bloco Cards ou Links inserido no Conteúdo. W04/W18 confirmarão a interface atual.</p>';
+          '</div><p class="teach-note">Uma configuração não substitui a outra: menu interno não é bloco Cards ou Links inserido no Conteúdo. A captura de Promover usa uma página do tipo Link como exemplo.</p>';
       case 'editor-enviar':
         return '<div class="teach-split narrow">'+
           '<div class="teach-steps">'+label('FLUXO DA PÁGINA DA BIBLIOTECA')+
@@ -82,7 +82,7 @@
           row('Salvar','O rascunho mantém as alterações em edição.')+
           row('Pré-visualizar','Confira horários, contatos, links, imagens e a apresentação em telas menores.')+
           row('Enviar','Selecione Enviar para moderação e confira o estado da página no fluxo.')+
-          '<p class="teach-note">Enviar não publica. W06 confirmará os nomes dos comandos disponíveis ao Editor no IFMG.</p>'+
+          '<p class="teach-note">Enviar não publica. Caso a opção não esteja disponível, confirme seu escopo e o fluxo com a equipe responsável.</p>'+
           '</div>'+shot('manual-ifrn/image14.png','Referência do guia: estado de uma página no fluxo de moderação')+'</div>';
       case 'moderador-devolver':
         return '<div class="teach-compare">'+
