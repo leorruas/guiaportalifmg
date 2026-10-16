@@ -30,9 +30,10 @@ Na página-pai, abra **Promover** e marque **Exibir nos menus**, quando essa op�
 
 ### Como solicitar a publicação de uma notícia em outro campus ou página?
 
-Encaminhe a solicitação ao editor ou moderador responsável pela pasta de notícias de destino. Informe a notícia de origem, o destino desejado, o motivo da republicação e a vigência. Não crie uma cópia concorrente sem confirmar o fluxo da área.
+Use **Linkar em outra pasta**, no menu da notícia, e acompanhe o resultado em **Solicitações**. A vinculação pode ser imediata ou depender de aprovação, conforme seu acesso. **Copiar** também oferece a opção **Alias**, que mantém a nova página atualizada; confira as diferenças antes de escolher.
 
-![[imagens/manual-ifrn/image30.png|Exemplo de solicitação para publicar uma notícia em outra área]]
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/10 - Sou editor e quero publicar uma notícia|Divulgar uma notícia em outra pasta e entender Copiar e Alias]]
 
 ## Entrar e se orientar no Wagtail
 

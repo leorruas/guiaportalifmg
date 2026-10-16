@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Atualizados o artigo de criação de notícias e a FAQ com o fluxo de **Linkar em outra pasta**, acompanhamento em **Solicitações** e distinção entre cópia independente e **Copiar com Alias**. Incluídas cinco capturas do Portal IFMG fornecidas pelo usuário, junto dos passos correspondentes. Atualizado o item 1 da auditoria IFRN x IFMG, separando evidências confirmadas de testes ainda pendentes sobre permissões e atualização do vínculo.
+
 - Atualizado o artigo existente `02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos.md` com orientação não técnica sobre o risco de renomear coleções, especialmente quando muda a ordem alfabética, e os passos para acionar a equipe responsável se a criação falhar. Preservados título, caminho e procedimento existente; a orientação trata o risco como possibilidade, com base no [relato oficial do Wagtail sobre falha após renomear coleções](https://github.com/wagtail/wagtail/issues/9208), sem incluir comandos de manutenção no artigo.
 
 ## 2026-10-05

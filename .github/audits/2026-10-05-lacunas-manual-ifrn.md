@@ -22,9 +22,9 @@ As lacunas restantes se concentram em comportamentos específicos do sistema, re
 
 **No guia atual:** a FAQ orienta encaminhar a demanda ao editor ou moderador responsável pela pasta de destino. O fluxo nativo de solicitação não está documentado.
 
-**Situação:** divergência funcional, não apenas falta de detalhe.
+**Situação em 16/10/2026:** orientação atualizada no artigo canônico de notícias e na FAQ, com capturas fornecidas pelo usuário no Portal IFMG. Confirmadas a ação **Linkar em outra pasta**, a seleção de destinos, o aviso de vinculação imediata para a conta apresentada, o menu **Solicitações** e vínculos com situação **APROVADA**. Documentada também a diferença entre cópia independente e **Copiar com Alias**, cuja tela informa atualização por alterações futuras.
 
-**Próximo passo:** validar no Portal IFMG se a ação e o menu de solicitações existem e funcionam dessa forma. Se existirem, substituir a orientação manual pelo fluxo do sistema.
+**Validação ainda pendente:** testar com uma conta sem permissão no destino o envio, a aprovação e a recusa. As capturas não comprovam como alterações posteriores na original se refletem no vínculo de **Linkar em outra pasta**, nem se ele usa Alias internamente. O guia não presume equivalência técnica entre os recursos.
 
 ### 2. Integração do Portal com o SUAP além do login
 

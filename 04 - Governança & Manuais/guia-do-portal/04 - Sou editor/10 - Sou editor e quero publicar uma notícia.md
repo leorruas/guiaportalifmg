@@ -36,3 +36,39 @@ Evite títulos, chapéus, subtítulos e etiquetas inteiros em caixa alta, exceto
 
 > [!ACTION]
 > [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/20 - Sou editor e quero enviar conteúdo para moderação|Enviar para moderação]]
+
+## Divulgar a notícia em outra pasta
+
+Use **Linkar em outra pasta** quando a mesma notícia também precisar aparecer nas notícias de outro campus, setor ou público. Por exemplo: uma notícia das notícias gerais pode interessar também à pasta de Arcos e à de Servidores.
+
+1. Em **Páginas**, abra a pasta onde está a notícia original.
+2. No menu de três pontos da notícia, escolha **Linkar em outra pasta**.
+
+![[imagens/guias-contextuais/noticia-menu-linkar.png|No menu da notícia, Linkar em outra pasta aparece separado da ação Copiar]]
+
+3. Confira a notícia e a pasta de origem. Marque as pastas de destino em **Pastas para linkar**.
+4. Leia o aviso antes de salvar. Na conta mostrada no exemplo, a vinculação é imediata e dispensa aprovação. Conforme seu acesso, a vinculação pode depender de aprovação dos responsáveis pelo destino.
+
+![[imagens/guias-contextuais/noticia-escolher-pastas.png|Selecione os destinos e confira o aviso sobre aprovação antes de salvar]]
+
+5. Clique em **Salvar** e abra **Solicitações** no menu lateral para acompanhar a situação.
+
+![[imagens/guias-contextuais/noticia-menu-solicitacoes.png|A entrada Solicitações abre o acompanhamento dos vínculos de notícias]]
+
+6. Confira a pasta de origem, a pasta de destino e a situação de cada solicitação. No exemplo, os vínculos com Arcos e Servidores aparecem como **APROVADA**.
+
+![[imagens/guias-contextuais/noticia-solicitacoes-situacao.png|Cada linha identifica um destino e a situação da solicitação de vínculo]]
+
+**Como conferir:** depois da aprovação, abra a pasta de notícias de destino no portal e verifique se a notícia aparece. Se a opção não estiver disponível ou você não conseguir concluir, procure o responsável pela pasta de destino e informe a notícia de origem e onde ela precisa aparecer.
+
+### Qual é a diferença entre linkar, copiar e usar Alias?
+
+- **Linkar em outra pasta:** distribui a notícia para outras pastas de notícias e permite acompanhar os vínculos em **Solicitações**, com aprovação conforme o acesso.
+- **Copiar sem Alias:** cria uma página independente, que pode ser editada separadamente. Alterações futuras na original não atualizam essa cópia.
+- **Copiar com Alias:** cria uma página vinculada à original para acompanhar suas alterações futuras. Use quando a intenção for manter o conteúdo sincronizado, em vez de preparar uma versão independente.
+
+Na tela de **Copiar**, confira título, **slug** (trecho final do endereço) e **Nova página raiz**, que é a página sob a qual a cópia ficará. Revise também **Publicar página copiada** antes de confirmar e marque **Alias** somente se quiser manter o vínculo com as alterações futuras da original.
+
+![[imagens/guias-contextuais/noticia-copiar-alias.png|A opção Alias mantém a nova página atualizada com alterações futuras da original; publicar a cópia é uma opção separada]]
+
+Para divulgar uma notícia entre pastas de notícias, siga o procedimento **Linkar em outra pasta** acima. A opção Alias também mantém conteúdo atualizado, mas possui outro fluxo de criação; não presuma que as duas ações tenham as mesmas regras de aprovação ou de endereço.
