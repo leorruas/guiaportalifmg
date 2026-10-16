@@ -14,6 +14,21 @@ Na tela inicial, verifique suas alterações recentes e os grupos aos quais voc�
 
 ![[imagens/manual-ifrn/image8.png|Entrada Páginas no menu lateral do Wagtail]]
 
+## Entender os quadros da tela inicial
+
+A tela inicial do painel ajuda a acompanhar o trabalho em andamento. Os quadros disponíveis dependem do seu acesso e dos conteúdos que estão no fluxo de revisão.
+
+- **Suas páginas e snippets em um fluxo de trabalho:** reúne seus conteúdos que estão passando por um fluxo de revisão. “Snippets” são conteúdos reutilizáveis do sistema. Leia a situação de cada item para saber qual é a etapa atual. No exemplo, **Aguardando Moderators approval** indica que o conteúdo aguarda a aprovação dos moderadores.
+- **Aguardando sua revisão:** reúne conteúdos encaminhados para uma revisão que você pode realizar. Se você atua como moderador naquele escopo, abra o item e confira a entrega antes de decidir se ela pode seguir para publicação.
+
+![[imagens/guias-contextuais/tela-inicial-fluxo-revisao.png|Tela inicial com um conteúdo no fluxo de trabalho e o mesmo conteúdo aguardando revisão]]
+
+A mesma página pode aparecer nos dois quadros quando está no seu acompanhamento e você também participa da revisão. Isso não significa que existam duas cópias da página. Confira sempre o estado do item antes de agir.
+
+**Como saber quem precisa agir:** se o conteúdo aguarda aprovação, ele ainda depende da decisão de revisão. Como editor, acompanhe a situação; como moderador, revise apenas no escopo autorizado. Se uma tarefa esperada não aparecer, confirme com o responsável pela área e solicite ao administrador a verificação do fluxo ou do acesso quando necessário.
+
+Para conferir os estados e o próximo responsável, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/18 - Sou editor e quero editar, verificar e acompanhar uma página|Conferir uma página e acompanhar seu status]].
+
 ## Encontrar uma página
 
 1. Abra **Páginas** na barra lateral para navegar pela estrutura do site.

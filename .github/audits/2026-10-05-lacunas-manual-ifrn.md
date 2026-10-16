@@ -154,6 +154,10 @@ O guia atual manda escolher o formato, mas não explica o efeito visual de cada 
 
 O manual lista contadores de páginas, imagens e documentos, itens aguardando moderação, páginas bloqueadas, alterações recentes e grupos. O guia atual cita alterações recentes e grupos, mas não os demais elementos.
 
+**Situação em 16/10/2026:** captura atual do usuário confirma os quadros Suas páginas e snippets em um fluxo de trabalho e Aguardando sua revisão. Incorporados ao artigo de acesso e localização, com explicação de acompanhamento versus revisão, estado de aprovação pendente e limites por perfil.
+
+**Validação ainda pendente:** contadores e quadro de páginas bloqueadas não aparecem no recorte fornecido. Não foram descritos como presentes no IFMG sem confirmação.
+
 ### 14. “Páginas usando…” na escolha do tipo
 
 O documento explica o atalho **Páginas usando…** para listar páginas existentes de determinado tipo. O guia atual não documenta esse recurso.

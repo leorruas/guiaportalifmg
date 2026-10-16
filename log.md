@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Incluídos no artigo de acesso e localização os dois quadros de fluxo de trabalho e revisão da tela inicial confirmados pela captura do usuário. Explicados o estado de aprovação pendente, o acompanhamento e a atuação conforme perfil, com imagem junto da orientação. Atualizado o item 13 da auditoria; contadores e páginas bloqueadas permanecem sem confirmação no recorte.
+
 - Explicados no artigo de blocos a abertura e a fixação/desfixação da barra de edição pelo alfinete e os formatos de imagem Largura completa, Alinhado à esquerda e Alinhado à direita. Incluídas três capturas atuais do usuário junto dos passos, orientação de texto alternativo e conferência em telas menores. Atualizado o item 12 da auditoria IFRN x IFMG.
 
 - Documentada a privacidade dos documentos em coleções com duas capturas atuais fornecidas pelo usuário: botão de olho, opções, salvamento e conferência de acesso. Diferenciadas privacidade e permissões de gerenciamento; incluídos alcance sobre subcoleções, alerta sobre a raiz e limite de proteção a documentos, com referência oficial do Wagtail. Atualizado o item 11 da auditoria IFRN x IFMG.
