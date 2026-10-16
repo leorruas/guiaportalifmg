@@ -112,21 +112,20 @@
       ],note:'O moderador pode editar páginas, mas não administra grupos nem coleções. Solicite esses ajustes ao administrador.'
     },
     'moderador-revisao': {
-      type:'screen',title:'Revise a página na pré-visualização',lead:'Pré-visualizar mostra o que alguém de fora da equipe encontrará.',
-      image:'manual-ifrn/image36.png',alt:'Tela de pré-visualização de página no Wagtail.',
-      steps:[
-        ['INFORMAÇÃO','Confirme título, fonte, vigência, documentos oficiais e a ação principal.'],
-        ['LEITURA','Percorra a página: links e botões explicam seus destinos? Os títulos organizam o texto?'],
-        ['DISPOSITIVOS','Teste a prévia em computador, tablet e celular; observe tabelas, cards e imagens.']
-      ]
+      type:'dualScreen',title:'A revisão começa na fila e continua na prévia',lead:'Receber uma solicitação e conferir o resultado são ações distintas.',
+      screens:[
+        {label:'01 / LOCALIZAR',image:'guias-contextuais/tela-inicial-fluxo-revisao.png',alt:'Referência do guia: fila de revisão no painel Wagtail.',description:'Identifique no painel o conteúdo que aguarda uma decisão editorial.'},
+        {label:'02 / CONFERIR',image:'manual-ifrn/image36.png',alt:'Referência do guia: pré-visualização da página no Wagtail.',description:'Abra a prévia; confira horários, documentos, links, leitura e próxima ação.'}
+      ],note:'No exemplo da Biblioteca, confirme as informações com a unidade. A fila depende das permissões do perfil.'
     },
     'moderador-publicar': {
-      type:'cards',title:'Publicar, agendar e despublicar não são sinônimos',lead:'Cada decisão altera quando a página ficará acessível.',
-      cards:[
-        ['PUBLICAR','Disponibilizar agora','Após revisão, use a ação de publicação e confira a página no portal.'],
-        ['AGENDAR','Definir uma data','Em Status, escolha o agendamento, informe a data confirmada e confira o estado.'],
-        ['DESPUBLICAR','Retirar a versão do ar','Considere links dependentes, substituição e valor histórico antes de despublicar.']
-      ],note:'Privacidade responde quem pode ver; publicação responde se a versão está no ar. São configurações diferentes.'
+      type:'screen',title:'Publicar ou agendar depende do estado da página',lead:'Revisar e colocar no ar são decisões diferentes.',
+      image:'manual-ifrn/image16.png',alt:'Referência do guia: indicador de Status no Wagtail.',
+      steps:[
+        ['PUBLICAR','Após a aprovação, use a ação disponível e confira a página no portal.'],
+        ['AGENDAR','No Status, configure data de publicação ou expiração confirmada; confira o estado.'],
+        ['DESPUBLICAR','Antes de retirar do ar, revise links dependentes, substituições e valor histórico.']
+      ],note:'Imagem de referência do Status, não comprovação de publicação. Privacidade e disponibilidade pública são controles distintos.'
     },
     'moderador-campus': {
       type:'cards',title:'O campus tem menus próprios e menus fixos',lead:'Não recrie localmente as estruturas que o modelo já fornece.',
@@ -146,20 +145,21 @@
       ],note:'As correções e a decisão devem permanecer associadas à página e ao fluxo de moderação.'
     },
     'administrador-papel': {
-      type:'cards',title:'Administrador mantém o trabalho possível e seguro',lead:'A configuração do painel não substitui a manutenção técnica do sistema.',
-      cards:[
-        ['PÁGINAS','Permissões de edição','Defina onde cada grupo pode criar, editar, revisar ou publicar.'],
-        ['COLEÇÕES','Permissões de arquivos','Determine quem organiza imagens e documentos, respeitando subcoleções.'],
-        ['SUPORTE TÉCNICO','Falhas persistentes','Registre a ação, a mensagem de erro e o contexto; código e banco exigem equipe técnica.']
-      ],note:'Herda as tarefas dos outros perfis, mas mantém o escopo e a responsabilidade da área.'
+      type:'screen',title:'Grupos e coleções ficam na administração',lead:'É no painel que o Administrador configura os acessos permitidos.',
+      image:'manual-ifrn/image4.png',alt:'Referência do guia: menu Configurações do Wagtail.',
+      steps:[
+        ['LOCALIZAR','Abra Configurações, quando autorizado, e identifique Grupos e Coleções.'],
+        ['CONFIGURAR','Defina somente páginas e coleções necessárias à equipe, respeitando cada área.'],
+        ['ENCAMINHAR','Falhas de código, banco ou integração exigem registro e suporte técnico.']
+      ],note:'A disponibilidade desse menu depende do perfil. Não altere configurações apenas para demonstrar a tela.'
     },
     'administrador-acessos': {
-      type:'cards',title:'Acesso à página não concede acesso ao arquivo',lead:'Página e coleção têm permissões independentes no Wagtail.',
-      cards:[
-        ['PÁGINA','Quem pode editar?','Verifique o grupo, o nível da árvore e o alcance sobre subpáginas.'],
-        ['COLEÇÃO','Quem pode usar arquivos?','Confira ações autorizadas e alcance sobre subcoleções de imagens e documentos.'],
-        ['CONFERÊNCIA','Teste com quem usa','Se o editor acessa a página mas não encontra o PDF, verifique a coleção e suas permissões.']
-      ],note:'Amplie apenas o acesso necessário. Evite liberar uma coleção-pai ampla quando a demanda é local.'
+      type:'permission',title:'Acesso à página não libera automaticamente o documento',lead:'O Editor abre a Página da Biblioteca, mas não consegue selecionar o PDF.',
+      permissions:[
+        {label:'PERMISSÃO DE PÁGINAS',heading:'Editar a Biblioteca',description:'O grupo precisa das ações permitidas sobre a seção correta da árvore.'},
+        {label:'PERMISSÃO DE COLEÇÕES',heading:'Usar o arquivo',description:'O mesmo grupo precisa de acesso à coleção em que o PDF foi armazenado.'}
+      ],result:'A tarefa depende dos dois acessos. Confirme ambos com uma pessoa do grupo, sem liberar páginas ou coleções-pai de outras áreas.',
+      note:'Esquema conceitual — não é uma captura do Wagtail. O checklist prevê captura da configuração real.'
     },
     'administrador-privacidade': {
       type:'screen',title:'Privacidade dos documentos é diferente de permissão de edição',lead:'O botão com ícone de olho define quem pode visualizar documentos da coleção.',
@@ -171,12 +171,13 @@
       ]
     },
     'administrador-estrutura': {
-      type:'cards',title:'Estruturas compartilhadas exigem checagem de alcance',lead:'Mudanças administrativas podem afetar várias páginas e equipes.',
-      cards:[
-        ['PASTA DE NOTÍCIAS','Onde jornalistas criam','Jornalistas com perfil Moderador ou superior utilizam a pasta autorizada para criar notícias.'],
-        ['CADASTROS','Dados oficiais','Use classificações e cadastros confirmados; não duplique uma fonte de sistema.'],
-        ['HOME E ÁRVORE','Navegação compartilhada','Antes de mudar ordem, menus ou páginas-pai, verifique dependências e permissões.']
-      ],note:'Renomeação de coleções exige cuidado especial e é abordada no alerta dedicado deste módulo.'
+      type:'screen',title:'Coleção nova precisa de finalidade recorrente',lead:'Não altere a hierarquia para acomodar um único arquivo.',
+      image:'manual-ifrn/image26.png',alt:'Referência do guia: ação de adicionar coleção no Wagtail.',
+      steps:[
+        ['ANTES','Verifique se a coleção adequada já existe e atende ao mesmo tipo de arquivo.'],
+        ['ESTRUTURA','Confirme área responsável, finalidade, coleção-pai, nome e grupos que a usarão.'],
+        ['DISTINÇÃO','Coleções organizam imagens e documentos; páginas de notícias pertencem à árvore de páginas.']
+      ],note:'Criação é tarefa de Administrador. O cuidado com renomeações está no alerta específico do módulo.'
     },
     'administrador-pratica': {
       type:'scenario',title:'A configuração está pronta quando cada perfil consegue agir',lead:'Síntese do que deve funcionar antes de uma entrega editorial.',
@@ -198,6 +199,14 @@
     switch(d.type){
       case 'cards':
         return '<div class="case-tiles">'+d.cards.map(item=>blockCard(...item)).join('')+'</div>'+note(d.note);
+      case 'dualScreen':
+        return '<div class="case-dual-screen">'+d.screens.map(s=>'<section class="case-dual-item">'+kicker(s.label)+
+          '<figure class="case-dual-shot"><img src="../imagens/'+html(s.image)+'" alt="'+html(s.alt)+'" loading="eager"><figcaption>REFERÊNCIA DO GUIA</figcaption></figure>'+
+          '<p>'+html(s.description)+'</p></section>').join('')+'</div>'+note(d.note);
+      case 'permission':
+        return '<div class="case-permission">'+d.permissions.map(s=>'<section class="case-permission-path">'+kicker(s.label)+
+          '<span class="case-permission-icon" aria-hidden="true">✓</span><h2>'+html(s.heading)+'</h2><p>'+html(s.description)+'</p></section>').join('')+
+          '<div class="case-permission-conclusion"><strong>DUAS PERMISSÕES, UMA TAREFA</strong><p>'+html(d.result)+'</p></div></div>'+note(d.note);
       case 'screen':
         return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption>REFERÊNCIA DO GUIA · CONFERIR NA HOMOLOGAÇÃO</figcaption></figure>'+
           '<div class="case-steps">'+d.steps.map(item=>'<section>'+kicker(item[0])+'<p>'+html(item[1])+'</p></section>').join('')+'</div></div>'+note(d.note);

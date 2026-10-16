@@ -41,6 +41,17 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Inspecionar as capturas do Chromium da abertura condensada: ajustar a escala dos grafos da Reitoria e dos campi e aproximar as setas dos rótulos no percurso de cotas.
 - [ ] Inspecionar legibilidade das faixas de entradas sob os grafos em projeção; teste automatizado não garante leitura confortável.
 
+## Moderador e Administrador — demonstração visual (16/10/2026)
+
+- [x] Mostrar o caminho **fila de revisão → pré-visualização** no módulo Moderador, com duas capturas já existentes e identificadas como referências do guia.
+- [x] Exibir a referência do indicador **Status** no slide Publicar/Agendar/Despublicar, sem confundir com aprovação editorial.
+- [x] Mostrar **Configurações** e a ação **Adicionar coleção** no módulo Administrador, sem exigir mudanças reais no ambiente.
+- [x] Substituir o slide abstrato de permissões por um **esquema explicitamente conceitual** que diferencia o acesso às páginas do acesso às coleções.
+- [x] Alinhar a atividade sobre publicação e a síntese de revisão à mesma página institucional da Biblioteca, sem atribuir notícias a Editores.
+- [x] Preservar escala Archivo, metadados menores, alerta de renomeação e 42 telas; exercícios individuais continuam separados.
+- [ ] Revisar legibilidade das capturas em projeção e substituir por capturas atuais da homologação quando disponíveis e autorizadas.
+- [ ] **Não criar nesta fase** a página de orientação detalhada sobre gerenciamento de coleções, ainda dependente de capturas e validação da interface.
+
 ## Direção definida
 
 - Público: equipes que trabalham no Portal IFMG, com uma parte comum e trilhas para editor, moderador e administrador.

@@ -49,9 +49,13 @@ Continue com a mesma página da Biblioteca: está faltando o horário confirmado
 
 A distribuição de notícias (Copiar, Alias e Linkar em outra pasta) é um **exemplo separado do trabalho dos jornalistas**. Diferenciar aprovar, publicar, agendar e despublicar.
 
+**Ao apresentar os slides de revisão:** a primeira captura indica onde o Moderador encontra as solicitações; a segunda mostra a pré-visualização. O Status é outra etapa, que responde quando o conteúdo fica público. Não fazer publicação real durante a exposição. A mudança de horários da Biblioteca é um exemplo didático, não uma atualização confirmada de um campus.
+
 ## Administrador — configuração e limites
 
 Explicar que **permissão de página não concede permissão de coleção**. Configurar os grupos apenas para o escopo necessário. Não renomear coleções por conta própria nem tentar resolver erros excluindo/recriando; registrar e encaminhar à manutenção técnica.
+
+**Ao apresentar as permissões:** destaque que o esquema dos dois acessos é conceitual, não uma tela do Wagtail. Mostre a referência do menu Configurações e da opção Adicionar coleção, mas não execute operações administrativas. O alerta sobre renomeação continua na tela própria.
 
 ## Acompanhamento e pendências
 

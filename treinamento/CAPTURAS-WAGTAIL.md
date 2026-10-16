@@ -85,6 +85,14 @@ Os arquivos abaixo **já existem no repositório** e serão aproveitados enquant
 - [x] **EU — QA:** checar slides, índice, links, imagens, 16:9, modo tela cheia e regressões após cada lote de capturas.
 - [ ] **EU — Integração:** quando receber cada Wxx, conferir legibilidade, dados sensíveis e fidelidade; só então incorporar nos slides correspondentes e registrar a substituição no backlog e no `log.md`.
 
+## Trabalho independente — revisão de Moderador e Administrador
+
+- [x] Os slides de revisão passaram a apresentar **fila e pré-visualização** lado a lado, usando referências existentes.
+- [x] O slide de publicação mostra **Status**; as atividades e os comentários seguem o caso da Biblioteca.
+- [x] Os slides administrativos mostram **Configurações**, **Adicionar coleção** e um esquema didático das duas permissões.
+- [ ] Confirmar a interface real da homologação por W19–W23, somente se o perfil e a divulgação forem autorizados.
+- [ ] Conferir leitura das capturas antigas em projetor; ampliar os detalhes em nova rodada se necessário.
+
 ## Entregas minhas já incorporadas — rodada 16/10/2026
 
 As melhorias abaixo foram feitas **sem novas capturas**, utilizando imagens que já estavam no repositório. Elas são referências do guia, **não confirmação visual de como a homologação está hoje**.

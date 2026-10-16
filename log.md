@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Melhorados Moderador e Administrador sem novas capturas da homologação: duas referências (fila e prévia) no slide de revisão, indicador de Status no slide de publicação, menu Configurações e ação Adicionar coleção nas tarefas administrativas. Inserido esquema didático de acesso independente para páginas e coleções, sem simular imagem real do painel. Atividades de moderação/prazo sincronizadas com página da Biblioteca; atualizados CSS, caches da apresentação e prática, testes, checklist, roteiro, AGENTS e backlog. 42 telas preservadas; inspeção em projetor pendente.
+
 - Revisadas capturas reais da abertura em Chromium após condensar o roteiro. Ampliados os grafos de Reitoria e campi com escala moderada, aumentado discretamente o texto das áreas e aproximadas as setas das etapas no exemplo de cotas; o subtítulo desse slide deixou de repetir o percurso inteiro. Atualizados cache de CSS e JS, backlog e testes de implantação.
 
 - Condensadas duas telas redundantes de estrutura da abertura, incorporando as cinco áreas da Reitoria e as sete entradas dos campi aos próprios grafos. A apresentação passa de 44 para 42 telas, mantendo os três grafos, as seis etapas da Biblioteca, os perfis e as práticas. Títulos da abertura e ressalvas metodológicas aprimorados; links antigos para telas removidas funcionam como aliases. Criado `treinamento/ROTEIRO-APRESENTADOR.md` com orientações por perfil. Atualizados cache, testes, checklist, backlog e AGENTS.

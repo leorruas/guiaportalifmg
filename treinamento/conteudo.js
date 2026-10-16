@@ -290,7 +290,7 @@ window.TreinamentoConteudo = [
     "id": "moderador-revisao",
     "track": "moderador",
     "title": "Revise como alguém de fora da equipe",
-    "lead": "A página deve se sustentar sem explicação de quem a escreveu.",
+    "lead": "Localize a solicitação e depois confira a página em pré-visualização.",
     "points": [
       "Confira fonte, finalidade, localização e vigência.",
       "Revise clareza, títulos, links, imagens, documentos e metadados.",
@@ -328,8 +328,8 @@ window.TreinamentoConteudo = [
       "Agendar: preparar a publicação para a data definida.",
       "Despublicar: retirar a versão do ar conforme orientação de vigência."
     ],
-    "task": "A oficina deve ser divulgada na próxima semana. Explique o encaminhamento.",
-    "check": "O estado e as datas estão corretos; confirme a página pública quando a publicação ocorrer.",
+    "task": "Os horários da Biblioteca mudarão na próxima semana. O que verificar antes de publicar ou agendar a atualização?",
+    "check": "Revisão concluída, data de vigência confirmada e estado de publicação adequado à decisão.",
     "ref": "publicar",
     "img": null,
     "limits": [
@@ -359,9 +359,9 @@ window.TreinamentoConteudo = [
     "title": "Como a decisão editorial é registrada",
     "lead": "A página pode ser aprovada, devolvida para ajuste ou encaminhada para publicação.",
     "points": [
-      "Receba a oficina preparada pelo editor.",
-      "Registre uma pendência específica e confira a nova entrega.",
-      "Decida o estado e combine quem acompanhará a vigência."
+      "Receba a página institucional da Biblioteca e confira informação, links e documentos.",
+      "Registre a pendência do horário de sexta-feira no trecho correto e confirme a atualização.",
+      "Aprove ou encaminhe a página, mantendo a decisão editorial registrada."
     ],
     "task": "Revise a página da Biblioteca enviada pelo editor, devolva uma correção objetiva e confira a resposta.",
     "check": "A correção foi conferida na mesma página e a decisão editorial ficou registrada.",
@@ -392,7 +392,7 @@ window.TreinamentoConteudo = [
     "id": "administrador-acessos",
     "track": "administrador",
     "title": "Conceda o acesso necessário à tarefa",
-    "lead": "Página e coleção têm permissões próprias.",
+    "lead": "Permissões de páginas e de coleções são independentes.",
     "points": [
       "Confirme a equipe, a área, as páginas e as ações necessárias.",
       "Configure o grupo e confira o alcance sobre subpáginas e subcoleções.",
@@ -443,7 +443,7 @@ window.TreinamentoConteudo = [
     "id": "administrador-estrutura",
     "track": "administrador",
     "title": "Configurações que afetam várias páginas",
-    "lead": "Trate estruturas compartilhadas separadamente da edição do conteúdo.",
+    "lead": "Uma coleção nova exige finalidade e responsabilidade definidas.",
     "points": [
       "A pasta de notícias organiza onde jornalistas com perfil Moderador ou superior criam notícias.",
       "Cadastros auxiliares devem usar classificações institucionais confirmadas.",
