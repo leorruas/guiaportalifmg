@@ -92,7 +92,9 @@ Detalhes ausentes ou pouco explícitos incluem: **Recursivo**, **Mostrar imagens
 
 **Cards detalhados em 16/10/2026:** incorporados os campos da captura atual fornecida pelo usuário: Estilo do card, Formato da capa, Lista, Título, Chapéu, Descrição, Texto do link, Capa e destinos. O usuário confirmou que Chapéu aparece acima do título; incluído exemplo de tema e título. Substituída a captura antiga do formulário de Cards pela atual, que inclui esses controles. Reforçada também em texto a diferença entre Recursivo (alcance nas subcoleções) e Mostrar imagens/documentos (tipos exibidos), com exemplo combinado.
 
-**Próximo passo:** revisar Linha do tempo e Calendário, sem transformar o guia em mera transcrição de formulário.
+**Linha do tempo detalhada em 16/10/2026:** incorporada captura atual fornecida pelo usuário, com explicação dos campos Data e Descrição obrigatórios e Texto opcional de cada Evento. Documentados adição, organização cronológica com os controles do item, duplicação, remoção e conferência. A captura mostra datas escritas como Até 2008; não foi presumida ordenação automática pelo campo.
+
+**Próximo passo:** revisar os campos de Calendário, sem transformar o guia em mera transcrição de formulário.
 
 ### 7. Ações em massa e controles da tela de exploração de páginas
 

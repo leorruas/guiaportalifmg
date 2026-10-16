@@ -193,7 +193,22 @@ Use **Citação** apenas quando a autoria, a fala e o contexto puderem ser confi
 
 Use **Linha do tempo** quando as etapas precisam ser compreendidas em ordem. Uma etapa por vez é mais clara do que um parágrafo cheio de datas.
 
-![[imagens/manual-ifrn/image44.png|Configuração de uma linha do tempo]]
+Cada item chamado **Evento** representa um marco da sequência. Esse item pertence ao bloco; não é necessário criar uma página do tipo Evento para preenchê-lo.
+
+- **Data:** informa quando o marco ocorreu. O campo aceita uma indicação escrita, como **Até 2008** ou **2008**, conforme a captura. Use uma forma clara e consistente ao longo da sequência.
+- **Descrição:** resume o que aconteceu naquele marco. Escreva uma frase curta que permita entender o fato sem depender dos outros itens.
+- **Texto:** permite acrescentar detalhes quando a descrição não for suficiente. Na tela apresentada, ele é opcional; deixe vazio quando não houver informação complementar necessária.
+
+![[imagens/guias-contextuais/linha-do-tempo-campos.png|Cada Evento da Linha do Tempo tem Data e Descrição obrigatórias e Texto opcional; as setas permitem reorganizar os itens]]
+
+Para montar a sequência:
+
+1. Use **+** dentro da Linha do Tempo para adicionar um **Evento**.
+2. Preencha Data e Descrição e, quando necessário, Texto.
+3. Repita para cada marco. Por exemplo: **2027 — Início do projeto** e **2028 — Ampliação das atividades**. Use somente datas e fatos confirmados pela fonte responsável.
+4. Organize os itens em ordem cronológica com as setas ou o controle de arrastar do próprio Evento. Não presuma que o campo Data reorganiza a sequência automaticamente.
+5. Se duplicar um item para aproveitar sua estrutura, revise todos os campos. Antes de usar a lixeira, confira qual Evento será removido.
+6. Pré-visualize e confira a ordem, as datas e se cada descrição explica um marco diferente, inclusive em uma tela menor.
 
 *Como este elemento renderiza no site:*![[imagens/manual-ifrn/image37.png|Exemplo publicado de linha do tempo]]
 
