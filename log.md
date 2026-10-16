@@ -1,5 +1,9 @@
 # Registro de mudanças
 
+## 2026-10-16
+
+- Atualizado o artigo existente `02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos.md` com orientação não técnica sobre o risco de renomear coleções, especialmente quando muda a ordem alfabética, e os passos para acionar a equipe responsável se a criação falhar. Preservados título, caminho e procedimento existente; a orientação trata o risco como possibilidade, com base no [relato oficial do Wagtail sobre falha após renomear coleções](https://github.com/wagtail/wagtail/issues/9208), sem incluir comandos de manutenção no artigo.
+
 ## 2026-10-05
 
 - Criada a auditoria interna `.github/audits/2026-10-05-lacunas-manual-ifrn.md`, comparando o Manual de Uso do Portal Institucional dos Institutos Federais com o conteúdo canônico atual do Guia do Portal IFMG. Foram registradas lacunas por prioridade, com destaque para republicação de notícias, integração com o SUAP, vigência automática de etapas de processos seletivos e estrutura de coleções. O arquivo foi mantido fora de `04 - Governança & Manuais/guia-do-portal/`, portanto não entra no índice nem na interface publicada do guia; nenhum artigo público foi alterado.

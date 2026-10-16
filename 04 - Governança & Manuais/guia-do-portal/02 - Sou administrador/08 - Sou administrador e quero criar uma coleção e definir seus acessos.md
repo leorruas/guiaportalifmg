@@ -27,6 +27,21 @@ Não crie uma coleção nova para resolver um único arquivo urgente quando uma 
 4. Quando necessário, escolha a coleção-pai para posicionar a nova coleção na hierarquia.
 5. Salve.
 
+## Cuidado ao renomear coleções
+
+> [!WARNING]
+> Renomear uma coleção pode provocar falhas ao criar novas coleções, especialmente quando o novo nome muda sua posição na ordem alfabética entre as coleções da mesma coleção-pai. Por exemplo: trocar “Comunicação” por “Notícias” pode mudar sua posição na lista.
+
+Escolha um nome estável antes de criar a coleção. Se precisar renomear uma coleção existente, combine a alteração com a equipe responsável pelo portal. Esse cuidado não significa que toda mudança de nome causará uma falha.
+
+## Se não conseguir criar uma coleção
+
+1. Confira na lista de **Coleções** se a coleção chegou a ser criada antes de tentar novamente.
+2. Se a criação falhou, não exclua coleções nem renomeie outras para tentar resolver. Parar de renomear também pode não resolver uma falha que já começou.
+3. Registre a mensagem de erro ou uma captura da tela, o nome da coleção que tentou criar e a coleção-pai escolhida. Informe também se alguma coleção foi renomeada recentemente.
+4. Encaminhe essas informações à equipe responsável pelo portal e solicite a verificação da organização das coleções. Essa correção depende da equipe com acesso à manutenção do sistema, mesmo que você seja administrador no painel.
+5. Depois que a equipe confirmar a correção, tente criar a coleção novamente e confira se ela aparece sob a coleção-pai correta.
+
 ## Definir acessos
 
 1. Abra a configuração de grupos e localize o grupo que precisa utilizar a coleção.
