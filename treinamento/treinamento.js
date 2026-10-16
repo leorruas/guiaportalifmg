@@ -23,6 +23,7 @@
   tracks.forEach((t,i) => {
     scenes.push({id:'trilha-'+t.key,type:'section',track:t.key,section:i+1});
     slides.filter(s => s.track === t.key).forEach(s => scenes.push({id:s.id,type:'concept',track:t.key,slide:s}));
+    if(t.key==='comum')scenes.push({id:'ia-prompts',type:'support',track:'comum'});
   });
   let active = -1;
   function chromeTop(left,right) {
@@ -34,7 +35,7 @@
   function cover() {
     const jumps = tracks.map((t,i) => '<button type="button" data-jump="trilha-'+t.key+'"><span>'+pad(i+1)+' / '+(slides.filter(s=>s.track===t.key).length)+' temas</span><strong>'+escape(t.label)+' ↗</strong></button>').join('');
     return '<article class="frame frame-cover">'+chromeTop('IFMG / Comunicação institucional','Apresentação · 2026')+
-      '<div class="cover-title"><h1 tabindex="-1">Portal<br><em>IFMG</em><br>Treinamento<span class="accent">.</span></h1>'+
+      '<div class="cover-title"><h1 tabindex="-1">Portal<br><em>IFMG</em><br>Treinamento</h1>'+
       '<p>Organizar a informação.<br>Preparar o conteúdo.<br>Revisar antes de publicar.</p></div>'+
       '<div class="cover-tracks">'+jumps+'</div>'+
       chromeFoot('Quatro trilhas / uma experiência de publicação','Use → para avançar')+'</article>';
@@ -72,6 +73,30 @@
       '<div class="'+leadClass+'"><h1 tabindex="-1">'+escape(s.title)+'</h1><p class="lead">'+escape(s.lead)+'</p></div>'+
       body+chromeFoot('Portal IFMG · treinamento',pad(number+1)+' / '+pad(scenes.length))+'</article>';
   }
+
+  function support(number){
+    const ref='../#/'+[
+      '00 - Comece aqui',
+      '03 - Como usar uma IA como apoio para trabalhar com este guia'
+    ].map(encodeURIComponent).join('/');
+    const examples=[
+      ['01 / CONSULTAR','Entender uma tarefa','Identificar o procedimento certo para seu papel e transformar uma demanda em passos.'],
+      ['02 / REVISAR','Preparar uma publicação','Revisar linguagem, título, resumo, acessibilidade e metadados antes de enviar.'],
+      ['03 / ORGANIZAR','Planejar imagens e blocos','Preparar texto alternativo e escolher apenas os blocos documentados no guia.']
+    ];
+    return '<article class="frame frame-support">'+
+      chromeTop('COMECE AQUI / FERRAMENTAS DE APOIO','IA / PROMPTS ORIENTADOS')+
+      '<div class="support-head"><span class="support-kicker">APOIO AO TRABALHO NO PORTAL</span>'+
+      '<h1 tabindex="-1">IA para consultar<br>o guia</h1>'+
+      '<p>O guia reúne prompts prontos para orientar tarefas no Wagtail e preparar conteúdos para revisão.</p></div>'+
+      '<div class="support-grid">'+examples.map(item=>
+        '<section><small>'+escape(item[0])+'</small><h2>'+escape(item[1])+'</h2><p>'+escape(item[2])+'</p></section>'
+      ).join('')+'</div>'+
+      '<div class="support-end"><p>Informe seu papel e o contexto. Confira as fontes e valide o resultado antes de publicar. Não compartilhe dados restritos.</p>'+
+      '<a href="'+ref+'" target="_blank" rel="noopener">Acessar prompts completos no Guia do Portal ↗</a></div>'+
+      chromeFoot('Ferramentas de apoio / decisão humana',pad(number+1)+' / '+pad(scenes.length))+
+      '</article>';
+  }
   function intro(scene,number){
     const view = window.TreinamentoMapas?.getView(scene) || {html:'<p class="map-fallback">Os dados do mapa estão indisponíveis.</p>'};
     const extraClass=scene.type==='map'?'frame-map':scene.type==='structure'?'frame-structure':'frame-journey';
@@ -87,7 +112,7 @@
       const list=slides.filter(s=>s.track===t.key);
       return '<section class="index-section"><h3><span>'+pad(i+1)+'</span>'+escape(t.label)+'</h3>'+
         '<button type="button" data-jump="trilha-'+t.key+'"><span>ABERTURA</span>'+escape(t.sub)+'</button>'+
-        list.map((s,j)=>'<button type="button" data-jump="'+escape(s.id)+'"><span>'+pad(j+1)+'</span>'+escape(s.title)+'</button>').join('')+'</section>';
+        list.map((s,j)=>'<button type="button" data-jump="'+escape(s.id)+'"><span>'+pad(j+1)+'</span>'+escape(s.title)+'</button>').join('')+(t.key==='comum'?'<button type="button" data-jump="ia-prompts"><span>SUPORTE</span>IA para consultar o guia</button>':'')+'</section>';
     }).join('');
   }
   function go(index){
@@ -101,7 +126,7 @@
     const idx=Math.max(0,scenes.findIndex(x=>x.id===id));
     const scene=scenes[idx];
     active=idx;
-    app.innerHTML=scene.type==='cover'?cover():scene.type==='section'?section(scene):scene.type==='concept'?concept(scene,idx):intro(scene,idx);
+    app.innerHTML=scene.type==='cover'?cover():scene.type==='section'?section(scene):scene.type==='concept'?concept(scene,idx):scene.type==='support'?support(idx):intro(scene,idx);
     if(scene.type==='map')window.TreinamentoMapas?.draw(scene,app);
     document.getElementById('prev').disabled=idx===0;
     document.getElementById('next').disabled=idx===scenes.length-1;

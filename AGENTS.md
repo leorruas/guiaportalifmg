@@ -115,6 +115,14 @@
 - Se for necessário pesquisar comportamento atual do Portal ou do Wagtail, use uma fonte oficial ou claramente identificada, mostre a referência e trate a informação como sujeita a atualização quando apropriado.
 - Diferencie finalidade editorial de tipo de conteúdo. Um nome usado pela área solicitante não deve virar automaticamente um novo tipo de página; confirme primeiro se o tipo existe de fato no Portal.
 
+## Apresentação de treinamento e backlog
+
+- O arquivo `treinamento/BACKLOG.md` registra decisões, demandas pendentes, fases, critérios de conclusão e histórico da apresentação web.
+- Antes de alterar a apresentação, consulte esse backlog e acrescente novas decisões do usuário na fase correspondente. Ao implementar, marque os itens concluídos e registre a mudança em `log.md`.
+- O material de slides é **expositivo**; orientações práticas individuais devem permanecer em `treinamento/pratica.html`. Não intercale exercícios no roteiro sem nova decisão explícita.
+- Preserve o grid editorial, a fonte Archivo e os verdes do Guia do Portal, além dos controles de apresentação e dos procedimentos canônicos. Propostas de reorganização devem partir de um roteiro claro e de fontes já confirmadas.
+- O suporte com IA remete ao procedimento canônico `00 - Comece aqui/03 - Como usar uma IA como apoio para trabalhar com este guia.md` e não substitui validação institucional ou autorização para publicar.
+
 ## Validação antes de encerrar
 
 - Para mudanças editoriais, valide wikilinks e anexos alterados, ausência de referências indevidas a páginas absorvidas e coerência com a hierarquia de perfis.

@@ -90,3 +90,18 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .journey-item span{font-size:1cqw;color:var(--accent);font-weight:750;letter-spacing:.02em}
 .journey-item strong{font-size:2.1cqw;line-height:1.06;letter-spacing:-.06em;font-weight:800}
 .map-fallback{font-size:1.5cqw;color:var(--muted);margin:auto}
+
+/* Slide expositivo de apoio com IA: destaque editorial, sem apresentar prompts extensos na tela. */
+.frame-support .support-head{margin:1.95cqw 0 0;flex:none}
+.support-kicker{display:block;color:var(--accent);font-size:.93cqw;font-weight:750;letter-spacing:.065em}
+.support-head h1{font-size:5.35cqw;line-height:.95;letter-spacing:-.075em;font-weight:850;margin:.8cqw 0 1.15cqw}
+.support-head>p{font-size:1.45cqw;line-height:1.28;margin:0;max-width:56cqw}
+.support-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:auto 0 1.6cqw}
+.support-grid section{border-top:1.5px solid var(--ink);min-width:0;padding:1cqw 1.6cqw .6cqw 0}
+.support-grid section+section{border-left:1px solid var(--rule);padding-left:1.6cqw}
+.support-grid small{font-size:.9cqw;letter-spacing:.04em;font-weight:700;color:var(--accent)}
+.support-grid h2{font-size:2cqw;line-height:1.05;letter-spacing:-.055em;margin:1.25cqw 0 .8cqw}
+.support-grid p{font-size:1.23cqw;line-height:1.28;margin:0;max-width:28ch}
+.support-end{display:grid;grid-template-columns:1fr auto;gap:2.3cqw;align-items:end;border-top:1px solid var(--rule);padding:1.2cqw 0 1.25cqw}
+.support-end p{font-size:1cqw;line-height:1.35;color:var(--muted);margin:0;max-width:51ch}
+.support-end a{font-size:1.1cqw;color:var(--accent);font-weight:750;text-align:right;text-decoration-thickness:1px}

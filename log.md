@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Criado `treinamento/BACKLOG.md` com decisões consolidadas, fases e critérios para revisar a narrativa, o conteúdo e a composição dos slides. Na fase 0, removido o ponto final da capa e acrescentado slide de apoio com IA depois dos conteúdos comuns, com exemplos de uso e link ao artigo canônico de prompts; atualizado `AGENTS.md` para manter o backlog nas próximas alterações. Apresentação passa a 40 telas. Cache de CSS e JS incrementado.
+
 - Reintegradas à abertura da apresentação web seis telas expositivas sobre a arquitetura da informação: grafo do portal anterior (dataset de `leorruas/sitedoifmggrafo`), cinco áreas da Reitoria, grafo curado da Reitoria, sete entradas dos campi, grafo do modelo de campus e exemplo de percurso de três cliques. Os grafos são desenhados nos slides a partir dos datasets versionados; o conteúdo de editor, moderador e administrador permanece intacto. Legendas distinguem recortes de cobertura diferente e o modelo ainda não publicado. Atualizadas versões de cache para JS e CSS.
 
 - Refinada a hierarquia tipográfica dos slides de treinamento: reduzidos textos explicativos, subtítulos, itens dos três blocos, legendas de perfis e rótulos para ganhar respiro sem alterar os títulos principais, o conteúdo ou as atividades individuais. Atualizada a versão do CSS para v4.
