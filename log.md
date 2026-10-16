@@ -2,6 +2,9 @@
 
 ## 2026-10-16
 
+- Acrescentadas ao artigo de blocos as explicações de cabeçalhos e legenda de tabela, operações de linhas/colunas e colagem direta de células do Excel ou tabelas da internet, conforme confirmação do usuário; atualizado o item 6 da auditoria.
+- Incluídos aliases para Recursivo, coleção recursiva, exibição de imagens/documentos e colagem de tabela do Excel na tarefa canônica de blocos. Adicionadas quatro consultas de regressão e atualizado o versionamento dos metadados no HTML. A consulta recursivo já passava no corpus local; a correção amplia a recuperação e renova o cache dos metadados.
+
 - Detalhados os controles do bloco Coleção na referência de blocos: origem dos arquivos, inclusão de subcoleções, exibição de imagens/documentos e ordenação documental por data de upload. Incluídos exemplo por campus e ano, conferência da lista e encaminhamento administrativo para criação/acessos. Atualizado o item 6 da auditoria IFRN x IFMG, preservando os demais blocos para revisão posterior.
 
 - Acrescentada ao artigo de notícias a preferência aprovada por Largura completa nas imagens do corpo, permitindo alinhamento lateral quando ajudar na leitura e orientando conferir em telas menores. Registrado o item 5 da auditoria IFRN x IFMG como atendido pelas decisões editoriais incorporadas ao guia.

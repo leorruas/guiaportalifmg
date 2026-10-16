@@ -86,7 +86,9 @@ Detalhes ausentes ou pouco explícitos incluem: **Recursivo**, **Mostrar imagens
 
 **Situação em 16/10/2026:** bloco Coleção detalhado na referência canônica de blocos após o usuário confirmar a presença dos controles no IFMG. Explicados Coleção, Recursivo, Mostrar imagens, Mostrar documentos e Ordenar documentos por data de upload, com exemplo de coleção por campus e ano. Os rótulos e textos de ajuda foram conferidos na captura `imagens/manual-ifrn/image5.png` já existente. Não foi presumida a direção da ordenação por data; a orientação pede conferir a sequência na pré-visualização.
 
-**Próximo passo:** revisar os controles dos demais blocos, começando por cabeçalho, legenda e operações de linha/coluna na Tabela, sem transformar o guia em mera transcrição de formulário.
+**Tabela detalhada em 16/10/2026:** explicados cabeçalhos, legenda e inserção/remoção de linhas e colunas, após confirmação do usuário sobre a presença dos controles. Incorporada a possibilidade relatada de colar diretamente células do Excel ou tabelas de outra página da internet, com conferência dos dados e da pré-visualização.
+
+**Próximo passo:** revisar os controles dos demais blocos: destinos em Links, campos de Cards, Linha do tempo e Calendário, sem transformar o guia em mera transcrição de formulário.
 
 ### 7. Ações em massa e controles da tela de exploração de páginas
 

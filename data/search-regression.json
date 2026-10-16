@@ -124,6 +124,22 @@
     {
       "query": "visível para todos",
       "expected_top_id": "task-page-check"
+    },
+    {
+      "query": "recursivo",
+      "expected_top_id": "task-blocks-use"
+    },
+    {
+      "query": "coleção recursiva",
+      "expected_top_id": "task-blocks-use"
+    },
+    {
+      "query": "mostrar documentos",
+      "expected_top_id": "task-blocks-use"
+    },
+    {
+      "query": "colar tabela do Excel",
+      "expected_top_id": "task-blocks-use"
     }
   ]
 }

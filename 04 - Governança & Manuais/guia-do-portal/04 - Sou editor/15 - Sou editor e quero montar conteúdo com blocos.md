@@ -81,7 +81,18 @@ Configure cada opção pelo que você deseja mostrar ao público:
 
 Use **Tabela** apenas quando o público precisa comparar dados. Dê nome às colunas e evite transformar um texto curto em tabela.
 
+- **Cabeçalhos de tabela:** identifica quais células apresentam os nomes das colunas ou linhas, como Curso, Turno e Vagas. Escolha a configuração que corresponde à organização dos dados; não use apenas negrito para simular cabeçalhos.
+- **Legenda da tabela:** informa o assunto geral, como “Vagas por curso e turno em 2027”. Ela ajuda a compreender a tabela e é útil para quem usa leitor de tela.
+
 ![[imagens/manual-ifrn/image13.png|Configuração de um bloco de tabela]]
+
+Para preencher e ajustar a tabela:
+
+1. Digite nas células ou copie um conjunto de células do **Excel** ou uma **tabela de outra página da internet**. Clique na célula inicial da tabela do bloco e cole diretamente ali.
+2. Confira se os valores ficaram nas linhas e colunas corretas. Revise especialmente cabeçalhos, datas e números; não presuma que a formatação da origem será preservada.
+3. Para acrescentar ou remover linhas e colunas, selecione uma célula e use os controles da tabela para inserir ou excluir a linha ou coluna correspondente. Antes de excluir, confira quais dados serão removidos.
+4. Ajuste os cabeçalhos e a legenda depois de colar ou reorganizar os dados.
+5. Pré-visualize, inclusive em uma tela menor, e confira se a tabela continua compreensível.
 
 **Exemplo:** compare modalidades, horários e vagas em uma tabela; para explicar como solicitar um serviço, use texto em passos.
 
