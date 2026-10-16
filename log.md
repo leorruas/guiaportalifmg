@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Reintegradas à abertura da apresentação web seis telas expositivas sobre a arquitetura da informação: grafo do portal anterior (dataset de `leorruas/sitedoifmggrafo`), cinco áreas da Reitoria, grafo curado da Reitoria, sete entradas dos campi, grafo do modelo de campus e exemplo de percurso de três cliques. Os grafos são desenhados nos slides a partir dos datasets versionados; o conteúdo de editor, moderador e administrador permanece intacto. Legendas distinguem recortes de cobertura diferente e o modelo ainda não publicado. Atualizadas versões de cache para JS e CSS.
+
 - Refinada a hierarquia tipográfica dos slides de treinamento: reduzidos textos explicativos, subtítulos, itens dos três blocos, legendas de perfis e rótulos para ganhar respiro sem alterar os títulos principais, o conteúdo ou as atividades individuais. Atualizada a versão do CSS para v4.
 
 - Alinhadas as cores da apresentação e do material de prática à paleta do Guia do Portal: verde escuro `#216b35` em superfícies claras e verde `#78c981` nos slides escuros, com fundos claros do guia. Padronizada exclusivamente a família Archivo em títulos, corpo, rótulos e navegação; atualizada a versão do CSS para evitar cache antigo.

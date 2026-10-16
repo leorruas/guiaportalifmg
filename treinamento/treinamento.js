@@ -7,11 +7,19 @@
     {key:'moderador',label:'Moderador',sub:'Garantir a qualidade antes de publicar',desc:'Revisão, devolutivas e decisões de publicação.'},
     {key:'administrador',label:'Administrador',sub:'Organizar as condições de trabalho',desc:'Acessos, coleções e estruturas compartilhadas.'}
   ];
+  const introScenes = [
+    {id:'mapa-portal-anterior',type:'map',map:'legacy',title:'De onde partimos',lead:'O grafo do portal anterior revela a quantidade de páginas e relações mapeadas.'},
+    {id:'estrutura-reitoria',type:'structure',model:'reitoria',title:'Uma organização por públicos',lead:'Cinco áreas principais organizam o acesso à informação a partir da Home.'},
+    {id:'mapa-reitoria',type:'map',map:'reitoria',title:'Mapa da Reitoria',lead:'O novo mapa representa as relações já registradas entre as páginas do portal.'},
+    {id:'estrutura-campi',type:'structure',model:'campi',title:'Um modelo para os campi',lead:'Sete entradas organizam a navegação. Três delas são menus fixos.'},
+    {id:'mapa-campi',type:'map',map:'campi',title:'Mapa dos campi',lead:'Um modelo de organização, sem assumir endereços ainda não mapeados.'},
+    {id:'caminho-tres-cliques',type:'journey',title:'A distância da Home',lead:'Um exemplo de como navegar de uma necessidade até a informação.'}
+  ];
   const app = document.getElementById('app');
   const dialog = document.getElementById('chapters');
   const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const pad = n => String(n).padStart(2,'0');
-  const scenes = [{id:'inicio',type:'cover'}];
+  const scenes = [{id:'inicio',type:'cover'},...introScenes];
   tracks.forEach((t,i) => {
     scenes.push({id:'trilha-'+t.key,type:'section',track:t.key,section:i+1});
     slides.filter(s => s.track === t.key).forEach(s => scenes.push({id:s.id,type:'concept',track:t.key,slide:s}));
@@ -64,8 +72,18 @@
       '<div class="'+leadClass+'"><h1 tabindex="-1">'+escape(s.title)+'</h1><p class="lead">'+escape(s.lead)+'</p></div>'+
       body+chromeFoot('Portal IFMG · treinamento',pad(number+1)+' / '+pad(scenes.length))+'</article>';
   }
+  function intro(scene,number){
+    const view = window.TreinamentoMapas?.getView(scene) || {html:'<p class="map-fallback">Os dados do mapa estão indisponíveis.</p>'};
+    const extraClass=scene.type==='map'?'frame-map':scene.type==='structure'?'frame-structure':'frame-journey';
+    return '<article class="frame '+extraClass+'">'+
+      chromeTop('PORTAL IFMG / ARQUITETURA','CONTEXTO '+pad(number)+' / '+pad(introScenes.length))+
+      '<div class="map-intro"><h1 tabindex="-1">'+escape(scene.title)+'</h1><p>'+escape(scene.lead)+'</p></div>'+
+      view.html+
+      chromeFoot('Estrutura do Portal IFMG',pad(number+1)+' / '+pad(scenes.length))+
+      '</article>';
+  }
   function buildIndex(){
-    document.getElementById('chapterList').innerHTML = tracks.map((t,i)=>{
+    document.getElementById('chapterList').innerHTML = '<section class="index-section"><h3><span>00</span>Estrutura do portal</h3>'+introScenes.map((s,i)=>'<button type="button" data-jump="'+escape(s.id)+'"><span>'+pad(i+1)+'</span>'+escape(s.title)+'</button>').join('')+'</section>'+tracks.map((t,i)=>{
       const list=slides.filter(s=>s.track===t.key);
       return '<section class="index-section"><h3><span>'+pad(i+1)+'</span>'+escape(t.label)+'</h3>'+
         '<button type="button" data-jump="trilha-'+t.key+'"><span>ABERTURA</span>'+escape(t.sub)+'</button>'+
@@ -83,7 +101,8 @@
     const idx=Math.max(0,scenes.findIndex(x=>x.id===id));
     const scene=scenes[idx];
     active=idx;
-    app.innerHTML=scene.type==='cover'?cover():scene.type==='section'?section(scene):concept(scene,idx);
+    app.innerHTML=scene.type==='cover'?cover():scene.type==='section'?section(scene):scene.type==='concept'?concept(scene,idx):intro(scene,idx);
+    if(scene.type==='map')window.TreinamentoMapas?.draw(scene,app);
     document.getElementById('prev').disabled=idx===0;
     document.getElementById('next').disabled=idx===scenes.length-1;
     document.getElementById('progress').textContent=pad(idx+1)+' / '+pad(scenes.length);
