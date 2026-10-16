@@ -26,7 +26,7 @@
   function cover() {
     const jumps = tracks.map((t,i) => '<button type="button" data-jump="trilha-'+t.key+'"><span>'+pad(i+1)+' / '+(slides.filter(s=>s.track===t.key).length)+' temas</span><strong>'+escape(t.label)+' ↗</strong></button>').join('');
     return '<article class="frame frame-cover">'+chromeTop('IFMG / Comunicação institucional','Apresentação · 2026')+
-      '<div class="cover-title"><h1 tabindex="-1">Portal<br><em>IFMG</em><br>Treinamento<span class="red">.</span></h1>'+
+      '<div class="cover-title"><h1 tabindex="-1">Portal<br><em>IFMG</em><br>Treinamento<span class="accent">.</span></h1>'+
       '<p>Organizar a informação.<br>Preparar o conteúdo.<br>Revisar antes de publicar.</p></div>'+
       '<div class="cover-tracks">'+jumps+'</div>'+
       chromeFoot('Quatro trilhas / uma experiência de publicação','Use → para avançar')+'</article>';

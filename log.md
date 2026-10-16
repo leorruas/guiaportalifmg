@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Alinhadas as cores da apresentação e do material de prática à paleta do Guia do Portal: verde escuro `#216b35` em superfícies claras e verde `#78c981` nos slides escuros, com fundos claros do guia. Padronizada exclusivamente a família Archivo em títulos, corpo, rótulos e navegação; atualizada a versão do CSS para evitar cache antigo.
+
 - Reformulada a apresentação de treinamento em `treinamento/` como deck expositivo em proporção 16:9, com estética Swiss Design, capa tipográfica, aberturas para quatro trilhas, hierarquia editorial, capturas do Wagtail e navegação por índice/teclado/tela cheia. As 28 atividades e critérios de conferência foram mantidos em `treinamento/pratica.html`, fora dos slides, para estudo individual. Conteúdo e procedimentos canônicos não foram alterados.
 - Criada a apresentação web de treinamento em `treinamento/`, com início comum e trilhas de editor, moderador e administrador, menu de capítulos, navegação por teclado, tela cheia e links para os procedimentos canônicos. Incluídos limites de atuação, responsáveis por apoio, exercícios e critérios de conferência, usando capturas existentes do guia. Processos seletivos não confirmados ficaram fora das práticas.
 - Adicionado ao final da página do guia o acesso à apresentação e atualizado o cache dos estilos.
