@@ -53,8 +53,28 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .dialog-foot{display:flex;gap:16px;flex-wrap:wrap;padding:20px 34px 28px;font-size:12px;font-weight:700}
 @media (max-width:650px){.deck{padding:0 8px;grid-template-rows:44px minmax(0,1fr) 52px}.chrome,.transport{width:calc(100vw - 16px)}.stage{width:calc(100vw - 16px);max-height:calc(100dvh - 110px)}.brand span{font-size:9px}.chrome button{padding:6px}.chrome button span{display:none}.transport-buttons button span{display:none}.progress-track{width:60px}.dialog-head{padding:20px}.dialog-body{padding:10px 20px}.dialog-foot{padding:18px 20px}}
 @media (max-width:500px) and (orientation:portrait){.stage{align-self:center}.deck{background:var(--workspace)}.transport-info{gap:7px}.chrome,.transport{font-size:10px}}
-:root:fullscreen body,:root:fullscreen .deck{background:#111}:root:fullscreen .deck{grid-template-rows:0 minmax(0,1fr) 0;padding:0}:root:fullscreen .chrome,:root:fullscreen .transport{display:none}
-:root:fullscreen .stage{width:min(100vw,calc(100dvh * 16/9));max-height:100dvh;box-shadow:none}
+/* Em tela cheia, barras ocultas saem do fluxo; o slide é centralizado sem linhas vazias do grid. */
+:root:fullscreen body,:root:fullscreen .deck{background:#111}
+:root:fullscreen .deck{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:100vw;
+  height:100dvh;
+  min-height:0;
+  padding:0;
+  overflow:hidden;
+}
+:root:fullscreen .chrome,:root:fullscreen .transport{display:none}
+:root:fullscreen .stage{
+  flex:0 0 auto;
+  width:min(100vw,calc(100dvh * 16/9));
+  height:auto;
+  aspect-ratio:16/9;
+  max-height:100dvh;
+  box-shadow:none;
+}
 @media(prefers-reduced-motion:reduce){.progress-track>span{transition:none}}
 
 /* Abertura: os mapas usam o mesmo grid e tipografia dos demais slides. */

@@ -52,6 +52,13 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Aceite:** cada slide possui um foco visual compreensível durante uma apresentação oral.
 
+## Correção de tela cheia — 16/10/2026
+
+- [x] Corrigir o layout: antes, ao ocultar o cabeçalho e a barra inferior, o grid de três linhas mantinha a primeira faixa com altura zero e podia cortar o slide.
+- [x] Em tela cheia, usar um contêiner flex centralizado e palco dimensionado em proporção 16:9, limitado pela largura e altura reais da janela.
+- [x] Atualizar o cache do CSS tanto na apresentação quanto nas atividades individuais.
+- [ ] Fazer conferência visual real em tela cheia no navegador utilizado no IFMG, inclusive em proporções 16:9, 16:10 e ultrawide. Testar entrada/saída com o botão e a tecla Esc; nenhuma parte do slide pode desaparecer.
+
 ## Fase 4: revisão técnica e teste da apresentação [pendente]
 
 - [ ] Verificar visualmente os slides em 16:9, tela cheia e larguras menores, com atenção a cortes e quebras de linhas.

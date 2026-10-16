@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Corrigido o layout fullscreen do treinamento: o antigo grid conservava três linhas após ocultar as barras, deixando o slide sujeito a posicionamento em uma faixa de altura zero. No modo de tela cheia, `.deck` agora usa flex centralizado e `.stage` preserva 16:9 limitado pela viewport; atualizado cache CSS para v9 na apresentação e na prática. Teste visual em navegador permanece pendente, registrado em `treinamento/BACKLOG.md`.
+
 - Corrigida a apresentação conforme a organização de perfis: jornalistas com perfil mínimo Moderador criam notícias, enquanto a trilha Editor ensina a criar/editar páginas institucionais, exemplificando a página da Biblioteca. A distribuição de notícias entre pastas passou à trilha Moderador; atividades, índices, exemplos e cache foram sincronizados. O percurso de três cliques agora demonstra o acesso a Reserva de Vagas (Cotas), conforme o mapa da Reitoria. Registrada revisão futura do artigo canônico antigo sobre notícias no backlog.
 
 - Registrada em `treinamento/BACKLOG.md` uma pendência de orientação detalhada para editores e moderadores sobre acesso, navegação, uso e manutenção cotidiana de arquivos em coleções do Wagtail, com capturas e distinção de tarefas administrativas. Página ainda não criada.
