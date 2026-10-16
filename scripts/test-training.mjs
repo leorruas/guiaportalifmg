@@ -33,7 +33,11 @@ function node(id){
   return el.get(id);
 }
 const document={getElementById:node,querySelectorAll(){return[];},addEventListener(k,fn){listeners['document:'+k]=fn;}};
-const location={hash:'#inicio'};
+let hashValue='#inicio';
+const location={
+  get hash(){return hashValue;},
+  set hash(value){const v=String(value);hashValue=v.startsWith('#')?v:'#'+v;}
+};
 const context=vm.createContext({window,document,location});
 for(const f of ['treinamento/conteudo.js','data/portal-graph.js','treinamento/grafo-anterior.js','treinamento/mapas.js','treinamento/aulas.js','treinamento/casos.js','treinamento/treinamento.js']){
   vm.runInContext(read(f),context,{filename:f,timeout:5000});

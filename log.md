@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Ajustada a simulação de `location.hash` em `scripts/test-training.mjs` para corresponder à normalização real do navegador, que acrescenta `#` aos fragmentos atribuídos sem prefixo. A primeira execução da Action falhou apenas na asserção de navegação por esse descompasso do simulador.
+
 - Criado `scripts/test-training.mjs` (Node puro) para verificar 44 telas, índice, exemplos, imagens existentes, atividades, cotas, coleções, prompts, navegação por setas e CSS fullscreen. Incluído workflow `.github/workflows/validate-training.yml` para executar o teste em alterações do treinamento; `AGENTS.md` e backlog atualizados. Resultado da execução na Action precisa ser conferido após a publicação.
 
 - Sincronizados os exercícios de Editor sobre a página da Biblioteca e a síntese de revisão do Moderador: hierarquia H2/H3, Link único para catálogo, imagens, horários de atendimento, comentários e reenvio. Os casos da apresentação foram alinhados às práticas. Atualizados caches de `conteudo.js` e `casos.js`; aberta a etapa de regressão automatizada no backlog. Confirmado sucesso da publicação da correção fullscreen anterior.
