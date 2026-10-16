@@ -15,6 +15,8 @@
     {id:'mapa-campi',type:'map',map:'campi',title:'Mapa dos campi',lead:'Um modelo de organização, sem assumir endereços ainda não mapeados.'},
     {id:'caminho-tres-cliques',type:'journey',title:'A distância da Home',lead:'Um exemplo de como navegar de uma necessidade até a informação.'}
   ];
+  const extraSlides = window.TreinamentoAulas?.extras || [];
+  const featuredIds = window.TreinamentoAulas?.featuredIds || [];
   const app = document.getElementById('app');
   const dialog = document.getElementById('chapters');
   const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -22,7 +24,10 @@
   const scenes = [{id:'inicio',type:'cover'},...introScenes];
   tracks.forEach((t,i) => {
     scenes.push({id:'trilha-'+t.key,type:'section',track:t.key,section:i+1});
-    slides.filter(s => s.track === t.key).forEach(s => scenes.push({id:s.id,type:'concept',track:t.key,slide:s}));
+    slides.filter(s => s.track === t.key).forEach(s => {
+      scenes.push({id:s.id,type:'concept',track:t.key,slide:s});
+      extraSlides.filter(extra=>extra.after===s.id).forEach(extra=>scenes.push({id:extra.id,type:'concept',track:t.key,slide:extra}));
+    });
     if(t.key==='comum')scenes.push({id:'ia-prompts',type:'support',track:'comum'});
   });
   let active = -1;
@@ -33,7 +38,7 @@
     return '<div class="frame-foot"><span>'+escape(left)+'</span><span>'+escape(right)+'</span></div>';
   }
   function cover() {
-    const jumps = tracks.map((t,i) => '<button type="button" data-jump="trilha-'+t.key+'"><span>'+pad(i+1)+' / '+(slides.filter(s=>s.track===t.key).length)+' temas</span><strong>'+escape(t.label)+' ↗</strong></button>').join('');
+    const jumps = tracks.map((t,i) => '<button type="button" data-jump="trilha-'+t.key+'"><span>'+pad(i+1)+' / '+(scenes.filter(s=>s.track===t.key && s.type==='concept').length)+' temas</span><strong>'+escape(t.label)+' ↗</strong></button>').join('');
     return '<article class="frame frame-cover">'+chromeTop('IFMG / Comunicação institucional','Apresentação · 2026')+
       '<div class="cover-title"><h1 tabindex="-1">Portal<br><em>IFMG</em><br>Treinamento</h1>'+
       '</div>'+
@@ -57,17 +62,20 @@
       '<div class="module-foot">IFMG / GUIA DO PORTAL</div></div></article>';
   }
   function points(s,mode) {
-    return '<ol class="points '+(mode==='visual'?'points-visual':'points-grid')+'">'+
-      s.points.map((p,i)=>'<li><span class="point-num">'+pad(i+1)+'</span><p class="point-text">'+escape(p)+'</p></li>').join('')+'</ol>';
+    return '<ul class="points '+(mode==='visual'?'points-visual':'points-grid')+'">'+
+      s.points.map(p=>'<li><p class="point-text">'+escape(p)+'</p></li>').join('')+'</ul>';
   }
   function roles(s){
     const names=['Editor','Moderador','Administrador'];
-    return '<div class="role-flow">'+s.points.map((p,i)=>'<div><small>'+pad(i+1)+' / '+(i===0?'PREPARA':i===1?'REVISA':'CONFIGURA')+'</small><strong>'+names[i]+'</strong><span>'+escape(p)+'</span></div>').join('')+'</div>';
+    return '<div class="role-flow">'+s.points.map((p,i)=>'<div><small>'+(i===0?'PREPARA':i===1?'REVISA':'CONFIGURA')+'</small><strong>'+names[i]+'</strong><span>'+escape(p)+'</span></div>').join('')+'</div>';
   }
   function concept(scene,number){
+    const special=window.TreinamentoAulas?.render(scene,number,{chromeTop,chromeFoot,pad,total:scenes.length});
+    if(special)return special;
     const s=scene.slide;
     const t=tracks.find(x=>x.key===s.track);
-    const inTrack=slides.filter(x=>x.track===s.track).indexOf(s)+1;
+    const trackItems=scenes.filter(x=>x.type==='concept'&&x.track===s.track);
+    const inTrack=trackItems.findIndex(x=>x.id===s.id)+1;
     const hasImage=!!s.img;
     const isRoles=s.id==='comum-papeis';
     const titleClass=s.title.length>47?' long-title':'';
@@ -77,7 +85,7 @@
       points(s,'grid');
     const leadClass=hasImage?'content-heading visual-heading':'content-heading';
     return '<article class="frame frame-concept'+(hasImage?' has-image':'')+(isRoles?' frame-roles':'')+titleClass+'">'+
-      chromeTop(t.label+' / conteúdo',pad(inTrack)+' DE '+pad(slides.filter(x=>x.track===s.track).length))+
+      chromeTop(t.label+' / conteúdo',pad(inTrack)+' DE '+pad(trackItems.length))+
       '<div class="'+leadClass+'"><h1 tabindex="-1">'+escape(s.title)+'</h1><p class="lead">'+escape(s.lead)+'</p></div>'+
       body+chromeFoot('Portal IFMG · treinamento',pad(number+1)+' / '+pad(scenes.length))+'</article>';
   }
@@ -117,7 +125,7 @@
   }
   function buildIndex(){
     document.getElementById('chapterList').innerHTML = '<section class="index-section"><h3><span>00</span>Estrutura do portal</h3>'+introScenes.map((s,i)=>'<button type="button" data-jump="'+escape(s.id)+'"><span>'+pad(i+1)+'</span>'+escape(s.title)+'</button>').join('')+'</section>'+tracks.map((t,i)=>{
-      const list=slides.filter(s=>s.track===t.key);
+      const list=scenes.filter(s=>s.type==='concept'&&s.track===t.key).map(s=>s.slide);
       return '<section class="index-section"><h3><span>'+pad(i+1)+'</span>'+escape(t.label)+'</h3>'+
         '<button type="button" data-jump="trilha-'+t.key+'"><span>ABERTURA</span>'+escape(t.sub)+'</button>'+
         list.map((s,j)=>'<button type="button" data-jump="'+escape(s.id)+'"><span>'+pad(j+1)+'</span>'+escape(s.title)+'</button>').join('')+(t.key==='comum'?'<button type="button" data-jump="ia-prompts"><span>SUPORTE</span>IA para consultar o guia</button>':'')+'</section>';

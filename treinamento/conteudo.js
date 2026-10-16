@@ -254,8 +254,8 @@ window.TreinamentoConteudo = [
   {
     "id": "editor-pratica",
     "track": "editor",
-    "title": "Entrega final do editor",
-    "lead": "Prepare a oficina e passe a responsabilidade de forma clara.",
+    "title": "O que uma página pronta precisa ter",
+    "lead": "Uma entrega de exemplo: oficina com período de inscrição e formulário confirmado.",
     "points": [
       "Título, fonte, público, prazo e responsável definidos.",
       "Texto organizado, arquivos identificados e chamada de inscrição funcionando.",
@@ -356,8 +356,8 @@ window.TreinamentoConteudo = [
   {
     "id": "moderador-pratica",
     "track": "moderador",
-    "title": "Entrega final do moderador",
-    "lead": "Revise, devolva um ajuste e confira a correção no mesmo caso.",
+    "title": "Como a decisão editorial é registrada",
+    "lead": "A página pode ser aprovada, devolvida para ajuste ou encaminhada para publicação.",
     "points": [
       "Receba a oficina preparada pelo editor.",
       "Registre uma pendência específica e confira a nova entrega.",
@@ -458,8 +458,8 @@ window.TreinamentoConteudo = [
   {
     "id": "administrador-pratica",
     "track": "administrador",
-    "title": "Entrega final do administrador",
-    "lead": "Prepare o ambiente para a oficina sem ampliar acessos por conveniência.",
+    "title": "O ambiente preparado para a equipe",
+    "lead": "O editor precisa encontrar a página e os arquivos certos; a moderação deve funcionar.",
     "points": [
       "Confirme páginas e coleções necessárias ao editor e ao moderador.",
       "Valide o acesso com os perfis envolvidos.",

@@ -124,3 +124,70 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .module-curriculum{margin:auto 0 2cqw;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25cqw}
 .module-curriculum p{border-top:1.5px solid var(--ink);padding:1.1cqw .6cqw 0 0;margin:0;font-size:1.22cqw;line-height:1.28;font-weight:550}
 .module-foot{border-top:1px solid var(--rule);padding-top:1.2cqw}
+
+/* Fase 2: slides didáticos com captura, comparação, configuração e alerta. */
+.points-grid li::before{content:'';display:block;width:1.1cqw;height:.25cqw;background:var(--accent);margin-bottom:1.45cqw}
+.visual-body .points li{display:block;padding:1.05cqw 0}
+.visual-body .points li::before{content:'';display:block;width:1cqw;height:.22cqw;background:var(--accent);margin-bottom:.6cqw}
+.frame-teaching{padding:2.65cqw 4.6cqw 2.5cqw}
+.teaching-heading{margin:1.6cqw 0 .7cqw;flex:none}
+.teaching-heading h1{font-size:4.1cqw;font-weight:850;line-height:1.01;letter-spacing:-.07em;margin:0 0 .75cqw}
+.teaching-heading p{font-size:1.34cqw;line-height:1.28;margin:0;max-width:62ch}
+.teaching-body{display:flex;flex-direction:column;flex:1;min-height:0;margin:1.1cqw 0 .7cqw}
+.teach-label{font-size:.95cqw;font-weight:800;letter-spacing:.08em;color:var(--accent)}
+.teach-grid{display:grid;gap:1cqw;flex:1;min-height:0}
+.teach-grid.three{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr))}
+.teach-grid.three:has(.teach-card:nth-child(3):last-child){grid-template-rows:1fr}
+.teach-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.teach-card{min-width:0;border-top:2px solid var(--ink);padding:1.15cqw 1.5cqw .4cqw 0;display:flex;flex-direction:column}
+.teach-card h2{font-size:2.1cqw;line-height:1.04;letter-spacing:-.055em;margin:1.05cqw 0 .65cqw}
+.teach-card p{font-size:1.26cqw;line-height:1.3;margin:0;max-width:35ch;color:var(--muted)}
+.teach-note{font-size:1.11cqw;line-height:1.3;margin:1cqw 0 0;color:var(--muted);padding-top:.7cqw;border-top:1px solid var(--rule)}
+.teach-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:3cqw;flex:1;min-height:0}
+.teach-split.narrow{grid-template-columns:minmax(0,1fr) minmax(0,.93fr)}
+.teach-steps{min-height:0;display:flex;flex-direction:column}
+.teach-route{font-size:2.45cqw;line-height:1.06;letter-spacing:-.06em;margin:1.1cqw 0 1.5cqw;overflow-wrap:anywhere}
+.teach-route span{color:var(--accent)}
+.teach-route b{display:inline-grid;place-items:center;background:var(--accent);color:#fff;padding:.15cqw .6cqw}
+.teach-row{border-top:1px solid var(--rule);padding:.8cqw 0;display:grid;grid-template-columns:10cqw 1fr;gap:1cqw;align-items:baseline}
+.teach-row strong{font-size:1.18cqw;line-height:1.2}
+.teach-row p{font-size:1.14cqw;line-height:1.25;margin:0;color:var(--muted)}
+.teach-shot{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:0;padding:1.1cqw;background:#fff;border:1px solid var(--rule)}
+.teach-shot img{width:100%;height:100%;object-fit:contain;min-height:0}
+.teach-shot figcaption{font-size:.84cqw;line-height:1.2;margin-top:.5cqw;color:var(--muted);font-weight:700;align-self:flex-end}
+.teach-bottom-panel{display:grid;grid-template-columns:20cqw 1fr;gap:1.3cqw;background:#e5eee3;padding:1.25cqw 1.5cqw;margin-top:1.4cqw}
+.teach-bottom-panel strong{color:var(--accent);font-size:1.1cqw}
+.teach-bottom-panel p{font-size:1.22cqw;line-height:1.28;margin:0}
+.teach-collection{display:grid;grid-template-columns:1fr 1.1fr;gap:3cqw;flex:1}
+.teach-tree{border-top:2px solid var(--ink);display:flex;flex-direction:column;padding:1.25cqw 1cqw 0 0}
+.teach-tree>span,.teach-child>span{font-size:.94cqw;color:var(--accent);letter-spacing:.065em;font-weight:750}
+.teach-tree>strong{font-size:2.55cqw;line-height:1.05;margin:1cqw 0}
+.teach-child{margin:1.65cqw 0 0 3.5cqw;padding:1.4cqw 1.8cqw;background:#e5eee3;border-left:.4cqw solid var(--accent)}
+.teach-child strong{font-size:2.7cqw;display:block;margin:.6cqw 0}
+.teach-child p{font-size:1.15cqw;margin:0}
+.teach-settings{border-top:2px solid var(--ink);padding:1.1cqw 0 0}
+.teach-setting{display:grid;grid-template-columns:1fr auto;gap:.3cqw 1cqw;padding:.85cqw 0;border-bottom:1px solid var(--rule)}
+.teach-setting span{font-size:1.35cqw;font-weight:700}
+.teach-setting strong{font-size:1.13cqw;color:var(--accent)}
+.teach-setting small{grid-column:1/-1;font-size:.95cqw;color:var(--muted)}
+.teach-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2cqw;align-items:stretch;flex:1}
+.teach-flow>div{background:#e5eee3;padding:1.5cqw 1.4cqw;display:flex;flex-direction:column;gap:1.7cqw;position:relative}
+.teach-flow>div:not(:last-child)::after{content:'→';color:var(--accent);position:absolute;top:42%;right:-1.4cqw;font-size:2.5cqw;z-index:2}
+.teach-flow span{font-size:.92cqw;color:var(--accent);font-weight:750}
+.teach-flow strong{font-size:2.2cqw;line-height:1.08;letter-spacing:-.06em}
+.teach-flow p{font-size:1.17cqw;line-height:1.27;margin:auto 0 0}
+.teach-compare{display:grid;grid-template-columns:1fr 1.3fr;gap:2cqw;flex:1}
+.teach-compare>div{border-top:3px solid var(--ink);padding:1.4cqw;display:flex;flex-direction:column;gap:1.2cqw;background:#e8ece7}
+.teach-compare>.teach-good{background:#e0eee0;border-color:var(--accent)}
+.teach-compare span{font-size:.98cqw;color:var(--accent);font-weight:750}
+.teach-compare blockquote{font-size:2.22cqw;line-height:1.13;letter-spacing:-.04em;font-weight:700;margin:auto 0}
+.teach-compare p{font-size:1.15cqw;line-height:1.3;color:var(--muted);margin:0}
+.teach-warning{display:grid;grid-template-columns:10cqw 1fr;gap:2cqw;background:var(--ink);color:#fff;padding:2cqw 2.4cqw 1.7cqw}
+.teach-warning .teach-label{color:var(--accent-on-dark)}
+.teach-warning-sign{font-weight:900;font-size:8.8cqw;line-height:.85;color:var(--accent-on-dark)}
+.teach-warning h2{font-size:3cqw;line-height:1.06;letter-spacing:-.07em;margin:.5cqw 0 1cqw}
+.teach-warning p{font-size:1.2cqw;line-height:1.3;margin:0;max-width:65ch}
+.teach-warning-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2cqw;margin-top:1.3cqw}
+.teach-warning-steps .teach-row{display:block;padding:1cqw 0 0;border-top:2px solid var(--accent)}
+.teach-warning-steps .teach-row strong{display:block;margin:0 0 .55cqw;font-size:1.23cqw}
+.teach-warning-steps .teach-row p{font-size:1.1cqw;line-height:1.28}

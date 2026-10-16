@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Fases 2 e 3 do treinamento: criado `treinamento/aulas.js` com quatro demonstrações e seis telas de ensino aplicadas aos slides existentes, inclusive alerta destacado sobre não renomear coleções e tratamento de falhas. Removidos os números decorativos dos tópicos genéricos; mantidos os exercícios em página separada e substituídos títulos “Entrega final” por sínteses. Atualizados `treinamento/conteudo.js`, CSS, index e backlog; deck passa a 44 telas com versões de cache incrementadas.
+
 - Fase 1 de revisão do treinamento: capa sem frases decorativas e sem o slogan das trilhas; rodapé do Guia transformado em chamada editorial contextualizada; capas de módulos refeitas em layout de duas colunas com resultados concretos, sem antigo cartaz com número gigante. Criadas novas fases do backlog para ensino de blocos e alerta sobre renomeação de coleções. Alterados `treinamento/treinamento.js`, `treinamento/treinamento.css`, `index.html`, `style.css` e `treinamento/BACKLOG.md`.
 
 - Criado `treinamento/BACKLOG.md` com decisões consolidadas, fases e critérios para revisar a narrativa, o conteúdo e a composição dos slides. Na fase 0, removido o ponto final da capa e acrescentado slide de apoio com IA depois dos conteúdos comuns, com exemplos de uso e link ao artigo canônico de prompts; atualizado `AGENTS.md` para manter o backlog nas próximas alterações. Apresentação passa a 40 telas. Cache de CSS e JS incrementado.

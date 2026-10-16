@@ -72,22 +72,22 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Substituir o separador de módulo com número gigante sobre fundo preto por uma abertura editorial em Archivo e verde com **temas concretos** do módulo.
 - [ ] Conferir visualmente o comportamento do novo rodapé em telas pequenas e nos dois temas do guia.
 
-### Fase 2: ensinar o sistema por exemplos [em implementação]
+### Fase 2: ensinar o sistema por exemplos [primeira rodada concluída]
 
-- [ ] Desfazer o formato repetitivo de três textinhos numerados, priorizando diagramas, comparações, capturas e decisões.
-- [ ] Mostrar como inserir e reorganizar blocos na aba **Conteúdo** (botão **+**, setas, duplicação e lixeira), incluindo pré-visualização.
-- [ ] Distinguir os blocos **Introdução**, **Informação**, **Links**, **Link único**, **Cards**, **Tabela**, **Coleção** e **Galeria** com contexto de uso.
-- [ ] Explicar as diferenças entre bloco **Links**, bloco **Link único** (estilo **Cartão** versus **Padrão**) e **Link** como tipo de página na árvore.
-- [ ] Ensinar configuração de **Coleção**: coleção escolhida, **Recursivo**, **Mostrar imagens/documentos** e ordenação de documentos por upload.
-- [ ] Ensinar publicação e revisão pelo percurso real no Wagtail, não por jargões abstratos.
-- [ ] Substituir ou reenquadrar os slides chamados “Entrega final”, mantendo as tarefas em `pratica.html`.
+- [x] Retirar a numeração decorativa dos três tópicos e adotar variação de comparação, captura, fluxo, grade e alerta nos slides de ensino. A revisão integral dos outros conceitos permanece na Fase 4.
+- [x] Mostrar como inserir e reorganizar blocos na aba **Conteúdo** (botão **+**, setas, duplicação e lixeira), incluindo pré-visualização.
+- [x] Distinguir os blocos **Introdução**, **Informação**, **Links**, **Link único**, **Cards**, **Tabela**, **Coleção** e **Galeria** com contexto de uso.
+- [x] Explicar as diferenças entre bloco **Links**, bloco **Link único** (estilo **Cartão** versus **Padrão**) e **Link** como tipo de página na árvore.
+- [x] Ensinar configuração de **Coleção**: coleção escolhida, **Recursivo**, **Mostrar imagens/documentos** e ordenação de documentos por upload.
+- [x] Ensinar publicação e revisão pelo percurso real no Wagtail, não por jargões abstratos.
+- [x] Substituir os títulos “Entrega final” por sínteses expositivas, mantendo as tarefas em `pratica.html`.
 
-### Fase 3: segurança de coleções [pendente]
+### Fase 3: segurança de coleções [concluída]
 
-- [ ] Dar destaque visível ao aviso **Não renomeie coleções por conta própria**: alterações de nome, em especial as que mudam a ordem alfabética, podem causar falhas ao criar novas.
-- [ ] Em caso de falha, orientar a conferir se já foi criada, registrar erro, nome e coleção-pai e encaminhar à equipe com acesso de manutenção; **não excluir nem recriar coleções como tentativa de correção**.
-- [ ] Diferenciar administração do Wagtail de manutenção técnica de código/banco.
-- [ ] Conferir redação com o procedimento canônico de coleções, evitando afirmar que toda renomeação sempre causa erro.
+- [x] Dar destaque visível ao aviso **Não renomeie coleções por conta própria**: alterações de nome, em especial as que mudam a ordem alfabética, podem causar falhas ao criar novas.
+- [x] Em caso de falha, orientar a conferir se já foi criada, registrar erro, nome e coleção-pai e encaminhar à equipe com acesso de manutenção; **não excluir nem recriar coleções como tentativa de correção**.
+- [x] Diferenciar administração do Wagtail de manutenção técnica de código/banco.
+- [x] Conferir redação com o procedimento canônico de coleções, evitando afirmar que toda renomeação sempre causa erro.
 
 ### Fase 4: refinamento final [pendente]
 
@@ -95,6 +95,8 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [ ] Avaliar se o deck deve ser dividido por encontros/audiências para não ficar longo.
 - [ ] Testar leitura em projeção 16:9, teclado, links, índice, grafos e responsividade.
 - [ ] Confirmar publicação do GitHub Pages e versões de cache após cada implantação.
+
+- **16/10/2026, fases 2 e 3:** introduzidas quatro telas para demonstração de blocos, links, tabela e galeria; substituídos seis slides de tópicos genéricos por exemplos de escolha do bloco, configuração de coleção, menu, envio para moderação, comentário de revisão e aviso sobre renomeação. A apresentação passa a 44 telas. Repertório dos outros slides ainda precisa de refinamento completo.
 
 ## Histórico e próximos registros
 
