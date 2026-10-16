@@ -17,6 +17,14 @@ Antes de começar, confirme que a página pertence à estrutura institucional co
 6. Confira a estrutura inicial de páginas prevista para o campus, como informações institucionais, ensino, extensão, pesquisa, estudantes, servidores e contatos. Quando uma estrutura exigir uma tarefa administrativa específica, como criar uma pasta de notícias, encaminhe essa etapa ao administrador.
 7. Pré-visualize, valide com a área responsável e publique no seu escopo.
 
+## Dados associados ao campus no SUAP
+
+A página do campus pode ser vinculada ao cadastro correspondente no SUAP, chamado **objeto Campus**. No uso observado no Portal IFMG, essa vinculação traz servidores, eventos e setores associados ao campus.
+
+Antes de cadastrar essas informações manualmente, confira se elas já aparecem pela integração e se correspondem ao campus correto. Se houver dados ausentes ou incorretos, procure a equipe responsável pelo portal para verificar a vinculação e a origem da informação antes de criar um cadastro duplicado.
+
+A frequência de atualização e a possibilidade de corrigir cada informação pelo portal ainda precisam ser confirmadas com a equipe responsável. Não use a atualização diária descrita em outros manuais como prazo garantido para o IFMG.
+
 ## Como editar sem desorganizar
 
 Atualize primeiro os dados objetivos: endereço, telefone, redes oficiais e imagem. Depois revise os links internos e o menu. Não renomeie ou mova páginas-filhas sem verificar o impacto em links, menus e permissões.

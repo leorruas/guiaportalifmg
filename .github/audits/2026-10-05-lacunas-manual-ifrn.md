@@ -32,9 +32,9 @@ As lacunas restantes se concentram em comportamentos específicos do sistema, re
 
 **No guia atual:** o SUAP aparece no login e em usos pontuais, como contatos de setor. Não há uma explicação sobre quais dados vêm automaticamente do SUAP, a frequência da sincronização, quais páginas são automáticas nem o que não deve ser editado manualmente.
 
-**Situação:** lacuna de funcionamento e governança de dados.
+**Situação em 16/10/2026:** cobertura parcial acrescentada ao artigo canônico de campus. Segundo observação relatada pelo usuário no Portal IFMG, a vinculação da página de campus ao objeto Campus do SUAP traz servidores, eventos e setores associados. A orientação recomenda conferir a integração antes de cadastrar informações em duplicidade e encaminhar divergências à equipe responsável.
 
-**Próximo passo:** mapear quais integrações estão realmente ativas no IFMG e criar uma referência curta para evitar retrabalho e edição manual de informação sincronizada.
+**Validação ainda pendente:** confirmar o campo e o procedimento exatos de vinculação, a frequência de atualização, quais dados podem ser editados no portal e se existem outras integrações ativas. Não foi confirmado o prazo diário do manual IFRN nem a integração de cursos, projetos ou terceirizados.
 
 ### 3. Regra de visibilidade automática das etapas de processo seletivo
 
