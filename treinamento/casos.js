@@ -112,7 +112,7 @@
       ],note:'O moderador pode editar páginas, mas não administra grupos nem coleções. Solicite esses ajustes ao administrador.'
     },
     'moderador-revisao': {
-      type:'screen',title:'Revise o resultado publicado, não só o formulário',lead:'Pré-visualizar mostra o que alguém de fora da equipe encontrará.',
+      type:'screen',title:'Revise a página na pré-visualização',lead:'Pré-visualizar mostra o que alguém de fora da equipe encontrará.',
       image:'manual-ifrn/image36.png',alt:'Tela de pré-visualização de página no Wagtail.',
       steps:[
         ['INFORMAÇÃO','Confirme título, fonte, vigência, documentos oficiais e a ação principal.'],

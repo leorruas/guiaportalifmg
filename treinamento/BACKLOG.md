@@ -64,7 +64,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [ ] Verificar visualmente os slides em 16:9, tela cheia e larguras menores, com atenção a cortes e quebras de linhas.
 - [ ] Testar navegação por teclado, índice, retorno, links para o guia, imagens e grafos.
 - [ ] Confirmar que `treinamento/pratica.html` mantém as atividades individuais e os critérios de conferência.
-- [ ] Validar scripts e dados, confirmar publicação do GitHub Pages após a mudança e registrar o resultado real.
+- [x] Validar scripts, dados, índice e recursos em CI e confirmar sucesso da Action de Pages da correção de tela cheia. A implantação da última mudança segue monitorada por sua execução.
 - [ ] Verificar se a apresentação funciona mesmo quando fontes externas ou imagens não carregam; preservar mensagens de erro adequadas.
 
 **Aceite:** navegação íntegra e nenhuma informação essencial cortada.
@@ -101,7 +101,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Revisar os 22 slides restantes do conteúdo comum e dos três perfis: usar cenários, comparações, capturas, decisões e textos concretos sustentados no Guia. Conferir visualmente os resultados em navegador ainda é pendência.
 - [ ] Avaliar se o deck deve ser dividido por encontros/audiências para não ficar longo.
 - [ ] Testar leitura em projeção 16:9, teclado, links, índice, grafos e responsividade.
-- [ ] Confirmar publicação do GitHub Pages e versões de cache após cada implantação.
+- [x] Confirmar sucesso da implantação da correção de tela cheia, execução da regressão e versões sincronizadas de cache entre slides e atividades individuais. Verificar separadamente a implantação da última revisão.
 
 - **16/10/2026, fases 2 e 3:** introduzidas quatro telas para demonstração de blocos, links, tabela e galeria; substituídos seis slides de tópicos genéricos por exemplos de escolha do bloco, configuração de coleção, menu, envio para moderação, comentário de revisão e aviso sobre renomeação. A apresentação passa a 44 telas. Repertório dos outros slides ainda precisa de refinamento completo.
 
@@ -141,7 +141,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 - [x] Confirmar que a correção do modo de tela cheia publicada em `e40917b` foi implantada com sucesso no GitHub Pages.
 - [x] Unificar os casos da Biblioteca nos exercícios de Editor e no roteiro de revisão do Moderador, sem apresentar produção de notícias como tarefa do Editor.
-- [x] Criar o teste automatizado `scripts/test-training.mjs`, abrangendo roteiros, 44 slides, índice, referências, imagens, cotas, coleções, prompts, navegação de teclado e a regra CSS fullscreen. A execução da nova Action precisa ser conferida.
+- [x] Criar e executar `scripts/test-training.mjs` para conferir 44 slides, índice, referências, imagens, cotas, coleções, prompts, navegação por teclado e CSS fullscreen. Action bem-sucedida: `38926160624`.
 - [ ] Conferir manualmente a apresentação em navegador real e projeção: uma validação por simulação de DOM e por cálculos CSS **não substitui** esta etapa.
 - [ ] Verificar o rodapé do guia nos modos claro/escuro e em telas pequenas no navegador.
 

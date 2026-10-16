@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Alinhada a devolutiva do Moderador ao exemplo institucional da Biblioteca (horários de sexta-feira) e corrigido o título da etapa de pré-visualização; atualizados `treinamento/aulas.js`, `casos.js`, `conteudo.js`, os caches e a prática individual. Confirmada a execução bem-sucedida do teste de regressão (GitHub Actions `38926160624`), sem confundir com inspeção visual em navegador, que permanece pendente.
+
 - Ajustada a simulação de `location.hash` em `scripts/test-training.mjs` para corresponder à normalização real do navegador, que acrescenta `#` aos fragmentos atribuídos sem prefixo. A primeira execução da Action falhou apenas na asserção de navegação por esse descompasso do simulador.
 
 - Criado `scripts/test-training.mjs` (Node puro) para verificar 44 telas, índice, exemplos, imagens existentes, atividades, cotas, coleções, prompts, navegação por setas e CSS fullscreen. Incluído workflow `.github/workflows/validate-training.yml` para executar o teste em alterações do treinamento; `AGENTS.md` e backlog atualizados. Resultado da execução na Action precisa ser conferido após a publicação.

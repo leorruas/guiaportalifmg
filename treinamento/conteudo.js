@@ -308,9 +308,9 @@ window.TreinamentoConteudo = [
     "title": "Devolva com uma orientação que possa ser atendida",
     "lead": "Diga o problema e o resultado esperado no ponto correspondente.",
     "points": [
-      "Prefira “Informe a data final da inscrição neste parágrafo”.",
-      "Evite “Melhorar texto”, que não explica o que corrigir.",
-      "Quando a página voltar, confira a mudança e registre a decisão seguinte."
+      "Prefira “Na seção Atendimento, confirme o horário de funcionamento às sextas-feiras”.",
+      "Evite “Melhorar texto”: a orientação deve indicar o campo e o resultado esperado.",
+      "Quando a página voltar, confira o horário confirmado e registre a decisão."
     ],
     "task": "Registre uma devolução caso a página da Biblioteca não informe o horário de atendimento às sextas-feiras.",
     "check": "O editor sabe onde corrigir e qual dado precisa confirmar com o campus.",

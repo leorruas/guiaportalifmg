@@ -79,7 +79,7 @@
       case 'moderador-devolver':
         return '<div class="teach-compare">'+
           '<div class="teach-bad"><span>COMENTÁRIO QUE NÃO AJUDA</span><blockquote>“Melhorar texto.”</blockquote><p>Não indica o ponto do problema nem o resultado esperado.</p></div>'+
-          '<div class="teach-good"><span>COMENTÁRIO QUE ORIENTA</span><blockquote>“No primeiro parágrafo, informe a data final da inscrição e substitua ‘acesse aqui’ por ‘Acesse o formulário de inscrição’.”</blockquote><p>O editor sabe onde corrigir. Depois, o moderador confere a nova versão e registra a decisão.</p></div>'+
+          '<div class="teach-good"><span>COMENTÁRIO QUE ORIENTA</span><blockquote>“Na seção Atendimento, confirme e informe o horário de funcionamento às sextas-feiras.”</blockquote><p>O editor sabe onde corrigir. Depois, o moderador confere a nova versão e registra a decisão.</p></div>'+
           '</div>';
       case 'administrador-colecoes':
         return '<div class="teach-warning"><div class="teach-warning-sign" aria-hidden="true">!</div><div>'+
