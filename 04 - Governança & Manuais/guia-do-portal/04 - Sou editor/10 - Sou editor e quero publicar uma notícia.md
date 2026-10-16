@@ -36,6 +36,9 @@ Ao enviar uma imagem, selecione a coleção do campus e, quando disponível, a s
 **Dimensões recomendadas para começar:** use **1080 × 1080 pixels** (quadrada) para a imagem de destaque e **1080 × 540 pixels** (horizontal) para imagens no corpo da notícia. São recomendações editoriais iniciais do guia, não uma exigência do sistema. Confira o resultado na pré-visualização, inclusive em telas menores, e ajuste o enquadramento para preservar a informação importante. Ao preparar a imagem, mantenha suas proporções para não deformá-la.
 
 Evite títulos, chapéus, subtítulos e etiquetas inteiros em caixa alta, exceto siglas que precisam ser escritas assim. O público lê melhor “Processo seletivo” do que “PROCESSO SELETIVO”.
+
+Na primeira menção no texto, escreva o nome completo seguido da sigla entre parênteses, como **Instituto Federal de Minas Gerais (IFMG)**. Nas menções seguintes, use **IFMG**. Aplique o mesmo cuidado a órgãos, programas e projetos para que a pessoa entenda o texto sem precisar conhecer as siglas.
+
 6. Na aba **Promover**, revise URL, título de busca e descrição.
 7. Pré-visualize em computador e em dispositivos menores, quando a opção estiver disponível.
 8. Envie para moderação.

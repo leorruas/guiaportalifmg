@@ -72,7 +72,9 @@ O guia atual cobre a diferença entre imagem de destaque e imagem interna, texto
 
 **Links de ação definidos em 16/10/2026:** incorporados ao procedimento de notícias, com aprovação do usuário, rótulos descritivos como Acesse o edital, Faça sua inscrição e Ouça a entrevista, evitando “clique aqui”. Reforçado o bloco **Link único** no estilo **Cartão** para a CTA principal, com encaminhamento ao procedimento ilustrado já existente de blocos.
 
-**Próximo passo:** avaliar separadamente os demais detalhes: formato Largura completa e siglas. Esses pontos ainda não foram validados como padrão do IFMG.
+**Uso de siglas definido em 16/10/2026:** incluída no artigo de notícias, com aprovação do usuário, a orientação de apresentar o nome completo seguido da sigla entre parênteses na primeira menção no texto e usar a sigla nas seguintes, com o exemplo Instituto Federal de Minas Gerais (IFMG).
+
+**Próximo passo:** avaliar o formato Largura completa nas imagens de notícias. Esse ponto ainda não foi validado como padrão do IFMG.
 
 ### 6. Campos e controles exatos de cada bloco
 

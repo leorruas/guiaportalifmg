@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Incluída no artigo de notícias a orientação aprovada de apresentar o nome completo seguido da sigla na primeira menção no texto e usar a sigla nas seguintes, com exemplo do IFMG. Atualizado o item 5 da auditoria IFRN x IFMG.
+
 - Acrescentados ao procedimento de notícias rótulos descritivos para links e recomendação de Link único no estilo Cartão para a CTA principal, com link de ação para a referência ilustrada de blocos; atualizado o item 5 da auditoria IFRN x IFMG.
 - Explicitados nas páginas de papel de editor e moderador os limites e os responsáveis por apoio. Reforçados encaminhamentos em tarefas de localização, páginas institucionais, redirecionamentos, notícias, blocos, conferência, correções, criação/edição, revisão, comentários e publicação, preservando a herança entre perfis e os procedimentos existentes de processos seletivos.
 
