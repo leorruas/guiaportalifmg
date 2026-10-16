@@ -70,6 +70,8 @@
     return '<div class="role-flow">'+s.points.map((p,i)=>'<div><small>'+(i===0?'PREPARA':i===1?'REVISA':'CONFIGURA')+'</small><strong>'+names[i]+'</strong><span>'+escape(p)+'</span></div>').join('')+'</div>';
   }
   function concept(scene,number){
+    const detailed=window.TreinamentoCasos?.render(scene,number,{chromeTop,chromeFoot,pad,total:scenes.length});
+    if(detailed)return detailed;
     const special=window.TreinamentoAulas?.render(scene,number,{chromeTop,chromeFoot,pad,total:scenes.length});
     if(special)return special;
     const s=scene.slide;
@@ -128,7 +130,7 @@
       const list=scenes.filter(s=>s.type==='concept'&&s.track===t.key).map(s=>s.slide);
       return '<section class="index-section"><h3><span>'+pad(i+1)+'</span>'+escape(t.label)+'</h3>'+
         '<button type="button" data-jump="trilha-'+t.key+'"><span>ABERTURA</span>'+escape(t.sub)+'</button>'+
-        list.map((s,j)=>'<button type="button" data-jump="'+escape(s.id)+'"><span>'+pad(j+1)+'</span>'+escape(s.title)+'</button>').join('')+(t.key==='comum'?'<button type="button" data-jump="ia-prompts"><span>SUPORTE</span>IA para consultar o guia</button>':'')+'</section>';
+        list.map((s,j)=>'<button type="button" data-jump="'+escape(s.id)+'"><span>'+pad(j+1)+'</span>'+escape(window.TreinamentoCasos?.getTitle(s.id)||s.title)+'</button>').join('')+(t.key==='comum'?'<button type="button" data-jump="ia-prompts"><span>SUPORTE</span>IA para consultar o guia</button>':'')+'</section>';
     }).join('');
   }
   function go(index){

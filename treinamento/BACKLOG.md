@@ -89,14 +89,21 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Diferenciar administração do Wagtail de manutenção técnica de código/banco.
 - [x] Conferir redação com o procedimento canônico de coleções, evitando afirmar que toda renomeação sempre causa erro.
 
-### Fase 4: refinamento final [pendente]
+### Fase 4: refinamento final [conteúdo revisado; teste visual pendente]
 
-- [ ] Revisar um a um os demais slides para retirar abstrações e repetir menos o guia; incluir capturas reais nos pontos que exigem demonstração.
+- [x] Revisar os 22 slides restantes do conteúdo comum e dos três perfis: usar cenários, comparações, capturas, decisões e textos concretos sustentados no Guia. Conferir visualmente os resultados em navegador ainda é pendência.
 - [ ] Avaliar se o deck deve ser dividido por encontros/audiências para não ficar longo.
 - [ ] Testar leitura em projeção 16:9, teclado, links, índice, grafos e responsividade.
 - [ ] Confirmar publicação do GitHub Pages e versões de cache após cada implantação.
 
 - **16/10/2026, fases 2 e 3:** introduzidas quatro telas para demonstração de blocos, links, tabela e galeria; substituídos seis slides de tópicos genéricos por exemplos de escolha do bloco, configuração de coleção, menu, envio para moderação, comentário de revisão e aviso sobre renomeação. A apresentação passa a 44 telas. Repertório dos outros slides ainda precisa de refinamento completo.
+
+## Padrão tipográfico do treinamento — decisão de 16/10/2026
+
+- [x] Padronizar o tamanho dos títulos, leads e corpo nos slides de conteúdo, incluindo capturas, comparações, estruturas e apoio com IA.
+- [x] Usar a família **Archivo** em todos os slides. Reservar **Archivo Black** para o título principal da capa, sem aplicá-la nos títulos dos módulos nem dos slides.
+- [x] Reduzir os textos de navegação de topo e rodapé, como “Editor / conteúdo”, “01 DE 16” e “Portal IFMG · treinamento”, a uma escala acessória (0,78 cqw).
+- [ ] Realizar inspeção visual em projeção para garantir contraste e legibilidade da navegação acessória.
 
 ## Histórico e próximos registros
 

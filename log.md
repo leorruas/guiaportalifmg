@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Revisão de conteúdo da apresentação: incluído `treinamento/casos.js`, com 22 slides reescritos em cenários, capturas do Wagtail, cartões de decisão, comparações e fluxos fundamentados no guia canônico. O índice usa os novos títulos. Padronizada a escala dos títulos, leads e corpo dos slides de conteúdo; metadados de navegação reduzidos; Archivo Black restrita à capa e Archivo usada nos demais títulos e textos. Mantidos 44 slides e atividades individuais separadas. Atualizados cache de CSS e JS, backlog e roteiro de validação.
+
 - Sincronizada a versão de cache de `conteudo.js` também em `treinamento/pratica.html`, para refletir a mudança de títulos das sínteses de cada perfil na página de atividades individuais.
 
 - Fases 2 e 3 do treinamento: criado `treinamento/aulas.js` com quatro demonstrações e seis telas de ensino aplicadas aos slides existentes, inclusive alerta destacado sobre não renomear coleções e tratamento de falhas. Removidos os números decorativos dos tópicos genéricos; mantidos os exercícios em página separada e substituídos títulos “Entrega final” por sínteses. Atualizados `treinamento/conteudo.js`, CSS, index e backlog; deck passa a 44 telas com versões de cache incrementadas.

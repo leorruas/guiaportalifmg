@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
-:root{--paper:#f4f8f2;--workspace:#e9f2e8;--ink:#142419;--muted:#536258;--rule:#b4c8ba;--accent:#216b35;--accent-on-dark:#78c981;--white:#fff;--mono:'Archivo',Arial,sans-serif;--sans:'Archivo',Arial,sans-serif;color-scheme:light}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Black&display=swap');
+:root{--paper:#f4f8f2;--workspace:#e9f2e8;--ink:#142419;--muted:#536258;--rule:#b4c8ba;--accent:#216b35;--accent-on-dark:#78c981;--white:#fff;--mono:'Archivo',Arial,sans-serif;--sans:'Archivo',Arial,sans-serif;--black:'Archivo Black','Archivo',Arial,sans-serif;--slide-title:3.7cqw;--slide-lead:1.4cqw;--slide-body:1.19cqw;--slide-meta:.78cqw;color-scheme:light}
 *{box-sizing:border-box}html,body{min-height:100%}body{margin:0;background:var(--workspace);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
 button{cursor:pointer;font:inherit}button:disabled{opacity:.25;cursor:default}
 a{color:inherit;text-underline-offset:.2em}a:hover{color:var(--accent)}
@@ -10,7 +10,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .chrome nav{display:flex;gap:6px}.chrome button,.transport button,#closeIndex{border:0;border-radius:0;background:none;padding:8px 10px;color:var(--ink);font-weight:650;font-size:12px}.chrome button:hover,.transport button:hover:not(:disabled),#closeIndex:hover{color:var(--accent)}.chrome button span{margin-left:8px}
 .stage{position:relative;overflow:hidden;container-type:inline-size;aspect-ratio:16/9;width:min(calc(100vw - 40px),calc((100dvh - 128px)*16/9));max-height:calc(100dvh - 128px);background:var(--paper);box-shadow:0 12px 38px #00000010}
 .frame{position:absolute;inset:0;display:flex;flex-direction:column;padding:3.7cqw 4.7cqw 3.1cqw;overflow:hidden}
-.frame-top,.frame-foot{flex:none;display:flex;justify-content:space-between;align-items:center;gap:2cqw;font:600 .92cqw/1.25 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.frame-top,.frame-foot{flex:none;display:flex;justify-content:space-between;align-items:center;gap:2cqw;font:500 var(--slide-meta)/1.3 var(--mono);letter-spacing:.075em;text-transform:uppercase;color:var(--muted)}
 .frame-top{padding-bottom:1.25cqw;border-bottom:1px solid var(--ink)}.frame-foot{margin-top:auto;padding-top:1.2cqw;border-top:1px solid var(--ink)}.accent{color:var(--accent)}
 .frame-cover .cover-title{display:grid;grid-template-columns:1.4fr .6fr;gap:2.5cqw;align-items:end;flex:1}
 .cover-title h1{font-size:8.1cqw;line-height:.86;letter-spacing:-.09em;font-weight:900;margin:0 0 2cqw}.cover-title h1 em{font-style:normal;color:var(--accent)}
@@ -191,3 +191,60 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var
 .teach-warning-steps .teach-row{display:block;padding:1cqw 0 0;border-top:2px solid var(--accent)}
 .teach-warning-steps .teach-row strong{display:block;margin:0 0 .55cqw;font-size:1.23cqw}
 .teach-warning-steps .teach-row p{font-size:1.1cqw;line-height:1.28}
+
+/* Sistema tipográfico: todos os slides de conteúdo têm o mesmo título, lead, corpo e metadados.
+   Archivo Black fica restrita à capa; aberturas e conteúdos usam Archivo com peso moderado. */
+.frame-cover .cover-title h1{font-family:var(--black);font-weight:400;letter-spacing:-.075em}
+.frame-cover .cover-tracks button strong{font-weight:650}
+.module-rail>strong{font-family:var(--sans);font-weight:600;font-size:10.5cqw;letter-spacing:-.09em}
+.module-heading h1{font-family:var(--sans);font-weight:700;font-size:5.6cqw;letter-spacing:-.06em}
+.module-rail>span,.module-rail>small,.module-meta,.module-foot{font-weight:500;font-size:var(--slide-meta)}
+.frame-top,.frame-foot{font:500 var(--slide-meta)/1.3 var(--sans);letter-spacing:.075em;color:var(--muted)}
+.frame-top,.frame-foot{border-color:var(--rule)}
+.frame-cover .frame-top,.frame-cover .frame-foot{color:var(--muted)}
+.content-heading h1,.visual-heading h1,.frame-concept.long-title .content-heading h1,.frame-roles .content-heading h1,
+.teaching-heading h1,.case-heading h1,.map-intro h1,.support-head h1{
+  font-family:var(--sans);font-weight:700;font-size:var(--slide-title);letter-spacing:-.055em;line-height:1.04;
+}
+.content-heading .lead,.visual-heading .lead,.teaching-heading p,.case-heading p,.map-intro p,.support-head>p{
+  font-family:var(--sans);font-size:var(--slide-lead);font-weight:400;line-height:1.32;letter-spacing:0;
+}
+.point-text,.visual-body .point-text,.role-flow span,.teach-card p,.teach-row p,.teach-flow p,
+.case-tile p,.case-steps p,.case-fields p,.case-process p,.case-note,.teach-compare p,.teach-note{
+  font-family:var(--sans);font-size:var(--slide-body);font-weight:400;line-height:1.34;letter-spacing:0;
+}
+.teach-card h2,.teach-grid h2,.support-grid h2,.role-flow strong{font-weight:650}
+.teach-label,.case-kicker,.support-kicker{font-size:.89cqw;font-weight:600;letter-spacing:.07em}
+.case-heading{flex:none;margin:1.65cqw 0 1.3cqw}
+.case-heading h1{margin:0 0 .75cqw}
+.case-heading p{margin:0;max-width:65ch}
+.frame-case{padding:2.65cqw 4.6cqw 2.5cqw}
+.case-body{display:flex;flex-direction:column;flex:1;min-height:0;margin:.8cqw 0 1.25cqw}
+.case-kicker{display:block;color:var(--accent);text-transform:uppercase;letter-spacing:.09em}
+.case-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.45cqw;flex:1;min-height:0}
+.case-tile{border-top:2px solid var(--ink);padding:1.4cqw .8cqw 1cqw 0;display:flex;flex-direction:column;gap:.9cqw;min-width:0}
+.case-tile h2{font-size:2.6cqw;font-weight:650;line-height:1.05;letter-spacing:-.055em;margin:1.25cqw 0 .65cqw}
+.case-tile p{color:var(--ink);margin:0}
+.case-note{padding:1cqw 0 0;border-top:1px solid var(--rule);color:var(--muted);margin:1.1cqw 0 0}
+.case-screen,.case-scenario{display:grid;grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr);gap:2.6cqw;flex:1;min-height:0}
+.case-shot{margin:0;padding:1cqw;background:#fff;border:1px solid var(--rule);min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.case-shot img{display:block;min-height:0;width:100%;height:100%;object-fit:contain}
+.case-shot figcaption{font-size:.75cqw;letter-spacing:.06em;color:var(--muted);font-weight:600;align-self:flex-end;padding-top:.5cqw}
+.case-steps{display:flex;flex-direction:column;justify-content:space-evenly;min-height:0;gap:.6cqw}
+.case-steps section{border-top:1px solid var(--rule);padding:1.05cqw .5cqw .4cqw 0}
+.case-steps p{margin:.85cqw 0 0}
+.case-scenario{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+.case-prompt{background:#e1ece1;padding:2.15cqw;display:flex;flex-direction:column;gap:2cqw}
+.case-prompt blockquote{font-size:3.1cqw;line-height:1.11;letter-spacing:-.055em;font-weight:650;margin:auto 0}
+.case-contrast{display:grid;grid-template-columns:1fr 1.2fr;gap:2cqw;flex:1;min-height:0}
+.case-contrast section{padding:2cqw;display:flex;flex-direction:column;border-top:3px solid var(--ink);background:#e7ebe6}
+.case-contrast .case-positive{background:#e0ece0;border-color:var(--accent)}
+.case-contrast blockquote{font-size:3.2cqw;line-height:1.14;letter-spacing:-.06em;font-weight:650;margin:auto 0}
+.case-contrast p{font-size:var(--slide-body);line-height:1.34;margin:1.4cqw 0 0}
+.case-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:1.5cqw;flex:1;min-height:0}
+.case-fields section{border-top:2px solid var(--ink);padding:1.2cqw 1.3cqw 0 0;display:flex;flex-direction:column;gap:1cqw}
+.case-fields h2{font-size:2.35cqw;font-weight:650;letter-spacing:-.05em;line-height:1.08;margin:.2cqw 0}
+.case-fields p{font-size:var(--slide-body);margin:0;line-height:1.34}
+.case-process{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2cqw;flex:1;min-height:0}
+.case-process section{border-top:3px solid var(--accent);padding:1.6cqw 1cqw 0 0}
+.case-process p{font-size:1.52cqw;line-height:1.35;margin:3cqw 0 0;font-weight:500}
