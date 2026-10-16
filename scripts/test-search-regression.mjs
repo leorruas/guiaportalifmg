@@ -154,3 +154,15 @@ if (falhas.length) {
 
 console.log(`Busca OK: ${regression.queries.length}/${regression.queries.length} consultas com o resultado esperado no topo.`);
 console.log(`Corpus avaliado: ${artigos.length} artigos do índice publicado.`);
+
+// Consultas específicas devem abrir a seção que realmente contém a resposta.
+const blocos = artigos.find(artigo => artigo.metadados.id === 'task-blocks-use');
+for (const [consulta, titulo] of [['recursivo', 'Coleção'], ['chapéu', 'Cards'], ['colar', 'Tabela'], ['Link único como chamada para ação', 'Link único como chamada para ação']]) {
+    const secao = GuiaBusca.encontrarSecaoBusca(blocos, consulta);
+    if (secao?.titulo !== titulo) throw new Error(`Seção incorreta para ${consulta}: ${secao?.titulo}`);
+}
+if (GuiaBusca.encontrarSecaoBusca(blocos, 'montar uma página')) throw new Error('Busca geral deve abrir o início');
+if (GuiaBusca.encontrarSecaoBusca(blocos, 'inexistentezz')) throw new Error('Busca sem seção deve manter fallback');
+const repetidas = GuiaBusca.extrairSecoesBusca('## A\ntexto\n### A\nresposta\n```md\n## falso\n```');
+if (repetidas.length !== 2 || repetidas[1].id !== 'a-2') throw new Error('Âncoras duplicadas ou bloco de código incorretos');
+console.log('Busca por seção OK: corpo, subtítulos, início, fallback e âncoras únicas.');

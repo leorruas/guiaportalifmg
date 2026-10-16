@@ -313,6 +313,48 @@
         return { tipo: "conteudo", rotulo: "correspondência no conteúdo" };
     }
 
+    function extrairSecoesBusca(markdown = "") {
+        const secoes = [];
+        const ids = new Set();
+        let cerca = null;
+        for (const linha of removerFrontmatterBusca(markdown).split("\n")) {
+            const codigo = linha.match(/^\s*(`{3,}|~{3,})/);
+            if (codigo) {
+                if (!cerca) cerca = codigo[1][0];
+                else if (codigo[1][0] === cerca) cerca = null;
+                continue;
+            }
+            if (cerca) continue;
+            const heading = linha.match(/^(#{2,6})\s+(.+?)(?:\s+#+)?$/);
+            if (heading) {
+                const titulo = heading[2].replace(/[*_`]/g, "").trim();
+                const base = normalizarTextoParaBusca(titulo)
+                    .replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-")
+                    || `secao-${secoes.length + 1}`;
+                let id = base;
+                let numero = 2;
+                while (ids.has(id)) id = `${base}-${numero++}`;
+                ids.add(id);
+                secoes.push({ titulo, id, nivel: heading[1].length, conteudo: "" });
+            } else if (secoes.length) {
+                // Imagens e seus caminhos não são texto de orientação.
+                secoes.at(-1).conteudo += ` ${linha.replace(/!\[\[[^\]]+\]\]/g, " ")}`;
+            }
+        }
+        return secoes;
+    }
+
+    function encontrarSecaoBusca(artigo, consulta) {
+        const termos = termosDaBusca(consulta);
+        if (!termos.length) return null;
+        const secoes = extrairSecoesBusca(artigo.conteudo);
+        const titulo = secoes.find(secao => contemTodosOsTermos(secao.titulo, termos));
+        if (titulo) return titulo;
+        // Uma busca pelo assunto geral do artigo deve continuar abrindo o início.
+        if (contemTodosOsTermos(tituloDaAcaoBusca(artigo.titulo), termos)) return null;
+        return secoes.find(secao => contemTodosOsTermos(`${secao.titulo} ${secao.conteudo}`, termos)) || null;
+    }
+
     function rotuloPerfilMinimo(artigo) {
         const meta = artigo.metadados || {};
         if (meta.tipo === "referencia" || meta.perfilMinimo === "todos") return "referência";
@@ -329,6 +371,8 @@
         calcularPontuacaoBusca,
         ranquearArtigos,
         motivoCorrespondenciaBusca,
-        rotuloPerfilMinimo
+        rotuloPerfilMinimo,
+        extrairSecoesBusca,
+        encontrarSecaoBusca
     });
 })();

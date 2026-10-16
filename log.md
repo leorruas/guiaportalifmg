@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Busca passa a informar a seção correspondente e abrir diretamente seu subtítulo, inclusive H3–H6 e correspondências no corpo como Recursivo na seção Coleção. Mantida a abertura no início para consultas gerais do título e o fallback quando não houver seção. Âncoras incluídas no endereço para compartilhar e abrir em outra aba; ranking de artigos preservado e versões de cache atualizadas.
+
 - Reforçada no artigo de blocos a distinção entre Recursivo (onde buscar) e Mostrar imagens/documentos (quais tipos mostrar), com exemplo combinado. Detalhados os campos de Cards usando captura atual fornecida pelo usuário, incluindo Chapéu como texto de tema acima do título, conforme confirmação. Atualizado o item 6 da auditoria.
 
 - Explicados no artigo de blocos os destinos Página, Documento e URL externa de Links e Link único, confirmados pelo usuário, com exemplos, orientação sobre seletores internos e encaminhamento em caso de restrição. Atualizado o item 6 da auditoria IFRN x IFMG.

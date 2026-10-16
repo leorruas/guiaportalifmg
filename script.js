@@ -590,7 +590,9 @@ function exibirResultados(artigos, termo = "") {
     resultadosFiltrados.forEach((artigo, indice) => {
         const card = document.createElement("a");
         card.className = "resultado-item";
-        card.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
+        const secaoBusca = window.GuiaBusca?.encontrarSecaoBusca?.(artigo, termo);
+        card.href = secaoBusca ? rotaComSecao(artigo, secaoBusca.id)
+            : `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
 
         const numero = document.createElement("span");
         numero.className = "resultado-numero";
@@ -610,12 +612,18 @@ function exibirResultados(artigos, termo = "") {
 
         const trecho = document.createElement("span");
         trecho.className = "resultado-trecho";
-        const buscaSemOcorrenciaLiteral = ["alias", "aproximacao"].includes(motivo.tipo);
-        const textoTrecho = extrairTrechoRelevante(artigo.conteudo, buscaSemOcorrenciaLiteral ? "" : termo);
+        const buscaSemOcorrenciaLiteral = !secaoBusca && ["alias", "aproximacao"].includes(motivo.tipo);
+        const textoTrecho = extrairTrechoRelevante(secaoBusca?.conteudo || artigo.conteudo, buscaSemOcorrenciaLiteral ? "" : termo);
         trecho.innerHTML = destacarTexto(textoTrecho, buscaSemOcorrenciaLiteral ? "" : termo);
 
         conteudoResultado.appendChild(titulo);
         conteudoResultado.appendChild(meta);
+        if (secaoBusca) {
+            const destino = document.createElement("span");
+            destino.className = "resultado-meta";
+            destino.textContent = `Ir para: ${secaoBusca.titulo}`;
+            conteudoResultado.appendChild(destino);
+        }
         conteudoResultado.appendChild(trecho);
         card.appendChild(numero);
         card.appendChild(conteudoResultado);
@@ -624,7 +632,7 @@ function exibirResultados(artigos, termo = "") {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
             event.preventDefault();
             const abrirNaOcorrencia = !["titulo", "alias", "aproximacao"].includes(motivo.tipo);
-            abrirArtigo(artigo.titulo, artigo.conteudo, true, abrirNaOcorrencia ? termos : []);
+            abrirArtigo(artigo.titulo, artigo.conteudo, true, abrirNaOcorrencia ? termos : [], secaoBusca?.id);
         });
 
         lista.appendChild(card);
@@ -778,7 +786,17 @@ function encontrarAlvoDaBuscaNoArtigo(termos) {
         .find(elemento => contemTodosOsTermos(elemento.textContent, termos)) || null;
 }
 
-function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca = []) {
+async function rolarParaSecao(alvo) {
+    if (!alvo) return;
+    const imagensAnteriores = Array.from(artigoCorpo.querySelectorAll("img"))
+        .filter(imagem => imagem.compareDocumentPosition(alvo) & Node.DOCUMENT_POSITION_FOLLOWING);
+    await Promise.all(imagensAnteriores.map(imagem => imagem.decode().catch(() => {})));
+    if (!artigoCorpo.contains(alvo)) return;
+    const deslocamento = (document.getElementById("sticky-nav")?.offsetHeight || 0) + 20;
+    window.scrollTo({ top: alvo.getBoundingClientRect().top + window.scrollY - deslocamento, behavior: "smooth" });
+}
+
+function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca = [], secaoDestino = "") {
     if (window.GUIA_MOSTRAR_TRANSICAO) {
         window.GUIA_MOSTRAR_TRANSICAO("Abrindo artigo");
     }
@@ -900,11 +918,18 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
         }, 50);
     }
 
+    const secoesBusca = window.GuiaBusca?.extrairSecoesBusca?.(conteudoMarkdown) || [];
+    artigoCorpo.querySelectorAll("h2, h3, h4, h5, h6").forEach((heading, indice) => {
+        if (secoesBusca[indice]) heading.id = secoesBusca[indice].id;
+    });
     gerarTableOfContents();
     leitorDeArtigo.classList.remove("escondido");
-    const alvoDaBusca = encontrarAlvoDaBuscaNoArtigo(termosBusca);
+    const alvoDaBusca = secaoDestino ? document.getElementById(secaoDestino) : encontrarAlvoDaBuscaNoArtigo(termosBusca);
+    if (secaoDestino && artigoAtual && atualizarRota) {
+        history.replaceState({ rota: rotaDoArtigo(artigoAtual), secao: secaoDestino }, "", rotaComSecao(artigoAtual, secaoDestino));
+    }
     if (alvoDaBusca) {
-        window.setTimeout(() => alvoDaBusca.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+        rolarParaSecao(alvoDaBusca);
     } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -1298,7 +1323,7 @@ function tratarRotaDaUrl() {
         abrirArtigo(artigo.titulo, artigo.conteudo, false);
         if (secaoCodificada) {
             const secao = decodeURIComponent(secaoCodificada);
-            window.setTimeout(() => document.getElementById(secao)?.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+            rolarParaSecao(document.getElementById(secao));
         }
     }
 }
