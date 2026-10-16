@@ -27,3 +27,16 @@ Na tela inicial, verifique suas alterações recentes e os grupos aos quais voc�
 
 **Como saber se encontrou o lugar certo:** o caminho de navegação mostra a página-pai e o nome da seção corresponde ao campus, setor ou tema que você recebeu para cuidar.
 
+## Selecionar várias páginas e usar ações em massa
+
+Use ações em massa quando precisar aplicar a mesma ação a várias páginas. Elas poupam trabalho, mas exigem conferir todo o conjunto antes de confirmar.
+
+1. Em **Páginas**, abra a seção onde estão os itens desejados e confira o caminho da página-pai.
+2. Marque as caixas de seleção das páginas que devem receber a ação. Se usar a caixa de seleção do cabeçalho, confira quais itens ficaram marcados; não presuma que a seleção inclui outras páginas da listagem.
+3. Escolha uma das ações em massa oferecidas pela tela. As opções disponíveis dependem do seu acesso e das páginas selecionadas.
+4. Antes de confirmar, confira a quantidade e os títulos dos itens selecionados, a ação e qualquer destino ou aviso apresentado. Desmarque as páginas que não devem ser afetadas.
+5. Confirme somente quando todo o conjunto estiver correto. Depois, confira o resultado na listagem e, se a ação afetar a exibição pública, no portal.
+
+**Limite de atuação e apoio:** selecionar várias páginas não amplia suas permissões. Como editor, encaminhe decisões de publicação, agendamento ou retirada do ar ao moderador. Se faltar acesso ou uma ação necessária não aparecer, solicite ao administrador a verificação das permissões e do fluxo. Evite aplicar a mesma ação a páginas de áreas diferentes sem combinar com os responsáveis.
+
+**Como saber que terminou:** somente as páginas pretendidas receberam a ação, e o resultado corresponde ao que foi confirmado.

@@ -104,7 +104,7 @@ O documento mostra seleção por checkbox e ações em massa, além de detalhar 
 
 O guia atual cobre busca, caminho, adicionar subpágina, editar, mover e ordenar, mas não documenta as ações em massa.
 
-**Próximo passo:** documentar apenas se forem usadas no IFMG e se houver casos reais em que poupam trabalho ou trazem risco.
+**Situação em 16/10/2026:** funcionamento das ações em massa confirmado pelo usuário. Documentado o procedimento geral no artigo canônico de acesso e localização de páginas: seleção por caixas, conferência do conjunto e da ação, confirmação e validação do resultado, com limites por perfil. A lista exata de ações não foi presumida: o guia orienta usar as opções disponíveis conforme acesso e seleção.
 
 ### 8. Comentários: notificações e manutenção da conversa
 

@@ -234,7 +234,9 @@ Para preencher o calendário:
 
 **Exemplo de preenchimento:** Data **15/03/2027**, Dia da Semana **segunda-feira** e Atividade **Abertura das inscrições para a oficina, às 9h**. O exemplo é ilustrativo; use as informações confirmadas pela área responsável. Se houver dúvida sobre uma data ou atividade, peça validação antes de enviar a página para moderação.
 
-*Como este elemento renderiza no site:*![[imagens/manual-ifrn/image23.png|Exemplo publicado de calendário]]
+No exemplo abaixo, cada item mostra a **Data** em destaque, o **Dia da Semana** ao lado e a **Atividade** abaixo. Os textos são ilustrativos.
+
+![[imagens/guias-contextuais/calendario-renderizado.png|Calendário renderizado no Portal IFMG: data e dia da semana acima da descrição de cada atividade]]
 
 ### FAQ
 

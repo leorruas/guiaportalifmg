@@ -2,6 +2,9 @@
 
 ## 2026-10-16
 
+- Substituído o exemplo renderizado do Calendário pela captura atual do Portal IFMG fornecida pelo usuário, com explicação da posição de Data, Dia da Semana e Atividade.
+- Documentado o procedimento geral de ações em massa no artigo de acesso e localização de páginas, após confirmação de funcionamento pelo usuário. Incluídas conferência da seleção e da ação, validação do resultado e limites por perfil; atualizado o item 7 da auditoria IFRN x IFMG.
+
 - Detalhado o bloco Calendário no artigo de blocos com a captura atual fornecida pelo usuário: Data, Dia da Semana, Atividade, adição e organização de itens e conferência da programação. Registrado o item 6 da auditoria IFRN x IFMG como atendido pelas explicações incorporadas à referência canônica.
 
 - Detalhado o bloco Linha do Tempo no artigo de blocos a partir da captura atual fornecida pelo usuário: campos de cada Evento, adição e organização dos marcos, duplicação, remoção e conferência. Incluída a imagem junto da explicação e atualizado o item 6 da auditoria IFRN x IFMG; Calendário permanece para a próxima revisão.
