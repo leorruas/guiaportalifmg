@@ -122,6 +122,8 @@ O documento explicita modos de prévia em smartphone, tablet e desktop e relacio
 
 O guia atual manda usar a pré-visualização e corrigir verificações, com captura de diferentes dispositivos, mas não explica os modos nem deixa tão clara a relação entre os avisos e a acessibilidade.
 
+**Situação em 16/10/2026:** recursos confirmados pelo usuário e explicados no procedimento canônico de conferência de página. Documentados os modos de computador, tablet e celular, o que observar em cada um, a relação de Verificações com acessibilidade, a revisão manual complementar e o encaminhamento ao moderador ou administrador quando a pessoa não conseguir corrigir. Item atendido.
+
 ### 10. Aba Promover: recomendações finas
 
 O guia atual cobre slug, tag de título, meta descrição e **Exibir nos menus**. O manual de referência acrescenta duas regras que não estão explícitas: meta descrição ideal entre 140 e 155 caracteres e necessidade de as páginas-pai também estarem configuradas para aparecer nos menus.
