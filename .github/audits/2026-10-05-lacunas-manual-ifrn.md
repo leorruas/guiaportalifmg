@@ -42,9 +42,9 @@ As lacunas restantes se concentram em comportamentos específicos do sistema, re
 
 **No guia atual:** o procedimento ensina a cadastrar tipo, início, fim e campi das etapas, mas não explica esse efeito automático nem a regra dos três dias.
 
-**Situação:** lacuna que pode causar erro de vigência e surpresa na publicação.
+**Situação em 16/10/2026:** pendente de confirmação. O usuário informou que ainda não conhece esse comportamento no Portal IFMG e decidiu manter o item em aberto. A regra dos três dias não foi incorporada ao guia.
 
-**Próximo passo:** validar a regra no Portal IFMG e, se confirmada, explicá-la no procedimento de processo seletivo.
+**Próximo passo:** validar a regra no Portal IFMG com a equipe responsável ou por teste controlado e, somente se confirmada, explicá-la no procedimento de processo seletivo.
 
 ### 4. Estrutura completa das coleções de processos seletivos
 

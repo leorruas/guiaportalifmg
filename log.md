@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Registrado o item 3 da auditoria IFRN x IFMG (visibilidade automática das etapas de processo seletivo) como pendente, por decisão do usuário enquanto o comportamento no IFMG não for confirmado. Nenhuma regra de vigência foi acrescentada ao guia.
+
 - Acrescentada ao artigo de criação e edição de campus a relação observada entre o objeto Campus do SUAP e servidores, eventos e setores, com orientação para conferir a integração antes de duplicar cadastros. Atualizado o item 2 da auditoria IFRN x IFMG como parcialmente coberto; mantidos como pendentes o procedimento exato de vinculação, a frequência, as regras de edição e outras integrações.
 
 - Atualizados o artigo de criação de notícias e a FAQ com o fluxo de **Linkar em outra pasta**, acompanhamento em **Solicitações** e distinção entre cópia independente e **Copiar com Alias**. Incluídas cinco capturas do Portal IFMG fornecidas pelo usuário, junto dos passos correspondentes. Atualizado o item 1 da auditoria IFRN x IFMG, separando evidências confirmadas de testes ainda pendentes sobre permissões e atualização do vínculo.
