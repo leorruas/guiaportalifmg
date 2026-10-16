@@ -35,6 +35,39 @@ O bloco de texto é o lugar para explicar uma ideia em sequência, como esta pr�
 
 **Teste do texto:** retire os termos internos e leia a primeira frase. Se uma pessoa de fora não entender o assunto, reescreva antes de adicionar mais blocos.
 
+### Abrir e fixar a barra de edição
+
+No campo de texto, selecione um trecho para fazer a barra de edição aparecer. Ela reúne comandos de formatação e inserção, como negrito, itálico, títulos H2/H3/H4, listas, links, documentos e imagens.
+
+1. Selecione um trecho dentro do campo de texto.
+2. Para manter a barra disponível no topo do campo durante a edição, clique no **ícone de alfinete**, na extremidade direita da barra.
+
+![[imagens/guias-contextuais/barra-edicao-flutuante.png|A barra aparece ao selecionar texto; o alfinete à direita permite fixá-la]]
+
+3. Com a barra fixada, use seus comandos sem precisar selecionar texto apenas para fazê-la aparecer. Para formatar um trecho específico, continue selecionando o trecho que deve receber a formatação.
+4. Para voltar ao modo flutuante, clique novamente no controle de fixação, à direita.
+
+![[imagens/guias-contextuais/barra-edicao-fixa.png|Barra fixada no topo do campo, com o controle para desafixá-la à direita]]
+
+Fixar a barra facilita a edição; essa escolha não muda a apresentação da página publicada.
+
+### Escolher o formato de uma imagem no texto
+
+1. Posicione o cursor onde a imagem deve entrar e use o **ícone de imagem** da barra de edição. Se a barra não estiver visível, selecione um trecho ou fixe-a conforme explicado acima; depois reposicione o cursor no local da inserção.
+2. Escolha a imagem da coleção autorizada.
+3. Na tela **Escolha um formato**, selecione a apresentação:
+
+- **Largura completa:** apresenta a imagem na largura do conteúdo, com texto antes e depois dela. É a preferência para imagens no corpo de notícias.
+- **Alinhado à esquerda:** posiciona a imagem à esquerda, permitindo que o texto ocupe o espaço ao lado.
+- **Alinhado à direita:** posiciona a imagem à direita, permitindo que o texto ocupe o espaço ao lado.
+
+Use alinhamento lateral quando a relação entre imagem e texto ajudar na leitura. Confira o tamanho efetivo e a disposição na pré-visualização; em telas menores, o espaço disponível pode mudar a organização.
+
+![[imagens/guias-contextuais/imagem-formatos-texto.png|Escolha um formato: Largura completa, Alinhado à esquerda ou Alinhado à direita, com opções de acessibilidade abaixo]]
+
+4. Se a imagem transmitir informação, preencha **Texto alternativo** com uma descrição do que importa naquele contexto. Use **A imagem é decorativa** somente quando ela não acrescentar informação ao conteúdo.
+5. Clique em **Inserir imagem** e pré-visualize a página em computador, tablet e celular. Confira se a imagem preserva a informação importante e se o texto continua legível.
+
 ## Blocos de estrutura e informação
 
 ### Introdução

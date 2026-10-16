@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Explicados no artigo de blocos a abertura e a fixação/desfixação da barra de edição pelo alfinete e os formatos de imagem Largura completa, Alinhado à esquerda e Alinhado à direita. Incluídas três capturas atuais do usuário junto dos passos, orientação de texto alternativo e conferência em telas menores. Atualizado o item 12 da auditoria IFRN x IFMG.
+
 - Documentada a privacidade dos documentos em coleções com duas capturas atuais fornecidas pelo usuário: botão de olho, opções, salvamento e conferência de acesso. Diferenciadas privacidade e permissões de gerenciamento; incluídos alcance sobre subcoleções, alerta sobre a raiz e limite de proteção a documentos, com referência oficial do Wagtail. Atualizado o item 11 da auditoria IFRN x IFMG.
 
 - Incluída a preparação conjunta de conteúdo, blocos, tag de título, slug e meta descrição no procedimento de criação/edição e nos prompts de revisão e estruturação com IA. Reforçado o preenchimento posterior na aba Promover.

@@ -146,6 +146,8 @@ O documento descreve **Largura completa**, **Alinhado à esquerda** e **Alinhado
 
 O guia atual manda escolher o formato, mas não explica o efeito visual de cada opção.
 
+**Situação em 16/10/2026:** três formatos confirmados em captura atual do IFMG e explicados no artigo canônico de blocos. Incluídos inserção pelo ícone de imagem, descrição de Largura completa e alinhamentos laterais, texto alternativo e conferência em telas menores. Documentada também, conforme relato e capturas do usuário, a barra que aparece na seleção e sua fixação/desfixação pelo alfinete. Não foram presumidas proporções exatas nem duas imagens lado a lado. Item atendido com o comportamento confirmado.
+
 ## Prioridade baixa ou de validação estrutural
 
 ### 13. Tela de boas-vindas do Wagtail
