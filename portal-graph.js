@@ -889,7 +889,65 @@
         }
     }
 
+    function renderizarMapaCampus(container) {
+        const root = container.querySelector?.("[data-campus-map]");
+        const modelo = window.PortalGraphData?.campusBlueprint;
+        if (!root || !modelo || root.dataset.rendered) return;
+        root.dataset.rendered = "true";
+        const tipos = { local: "no campus", reitoria: "link para a Reitoria", interno: "link dentro do campus", sistema: "sistema externo", link: "destino a mapear" };
+        root.innerHTML = `
+            <label class="campus-map-search">Buscar neste mapa<input type="search" placeholder="Ex.: bibliotecas, coordenações, Moodle"></label>
+            <p class="campus-map-root">${escaparHtml(modelo.title)}</p>
+            <p class="campus-map-legend">Menu fixo · Página ou conteúdo local · Link para a Reitoria · Link interno · Sistema externo</p>
+            <div class="campus-map-branches"></div>
+            <p class="campus-map-empty" hidden>Nenhum caminho encontrado neste recorte.</p>`;
+        const branches = root.querySelector(".campus-map-branches");
+        modelo.sections.forEach(section => {
+            const details = document.createElement("details");
+            details.className = "campus-map-branch";
+            details.open = true;
+            const summary = document.createElement("summary");
+            summary.textContent = section.title + (section.fixed ? " · menu fixo" : "");
+            const description = document.createElement("p");
+            description.textContent = section.description;
+            details.append(summary, description);
+            const list = document.createElement("ul");
+            section.items.forEach(item => {
+                const li = document.createElement("li");
+                const name = document.createElement("strong");
+                name.textContent = item.title;
+                const kind = document.createElement("span");
+                kind.className = "campus-map-kind";
+                kind.textContent = tipos[item.type] || item.type;
+                const text = document.createElement("p");
+                text.textContent = item.description;
+                li.append(name, kind, text);
+                list.appendChild(li);
+            });
+            details.appendChild(list);
+            branches.appendChild(details);
+        });
+        root.querySelector("input").addEventListener("input", event => {
+            const query = normalizar(event.target.value).trim();
+            let count = 0;
+            Array.from(branches.children).forEach((branch, index) => {
+                const section = modelo.sections[index];
+                const wholeBranch = normalizar(section.title + " " + section.description).includes(query);
+                let matches = 0;
+                branch.querySelectorAll("li").forEach(li => {
+                    li.hidden = !wholeBranch && !normalizar(li.textContent).includes(query);
+                    if (!li.hidden) matches++;
+                });
+                branch.hidden = !wholeBranch && !matches;
+                if (!branch.hidden) { count++; if (query) branch.open = true; }
+            });
+            root.querySelector(".campus-map-empty").hidden = count > 0;
+        });
+    }
+
     function renderizarSePresente(container = document) {
+        try { renderizarMapaCampus(container); }
+        catch (error) { console.error("Não foi possível montar o mapa dos campi:", error); }
         const root = container.querySelector?.("[data-portal-graph]");
         if (!root || root.dataset.graphRendered === "true") return;
         root.dataset.graphRendered = "true";

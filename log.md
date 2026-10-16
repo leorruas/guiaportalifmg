@@ -2,6 +2,10 @@
 
 ## 2026-10-16
 
+- Acrescentado à página existente de mapa um segundo mapa, pesquisável e recolhível, com a estrutura dos campi informada pelo usuário: sete entradas, menus fixos, filtros de cursos/processos, conteúdos locais e links para Reitoria e sistemas. Modelo de organização separado dos nós de páginas com URLs reais; terceiro clique e destinos não confirmados preservados para detalhamento.
+- Ajustado o carregamento dos artigos para consultar o conteúdo atualizado sem reutilizar a cópia de cache, e habilitada leitura dos arquivos locais em localhost para validar alterações antes da publicação.
+- Atualizados a referência no procedimento de campus e o item 15 da auditoria IFRN x IFMG. Removida da explicação do mapa institucional a afirmação desatualizada de que conteria somente a Home e cinco caminhos. Atualizados os sufixos de cache dos dados, componente e estilos.
+
 - Documentado o atalho Páginas usando… no procedimento de escolha do tipo de conteúdo, após confirmação de presença no IFMG pelo usuário. Incluídos consulta de exemplos, avaliação de finalidade/localização e encaminhamento em caso de dúvida ou restrição. Registrado o item 14 da auditoria IFRN x IFMG como atendido.
 
 - Incluídos no artigo de acesso e localização os dois quadros de fluxo de trabalho e revisão da tela inicial confirmados pela captura do usuário. Explicados o estado de aprovação pendente, o acompanhamento e a atuação conforme perfil, com imagem junto da orientação. Atualizado o item 13 da auditoria; contadores e páginas bloqueadas permanecem sem confirmação no recorte.

@@ -14,8 +14,15 @@ Antes de começar, confirme que a página pertence à estrutura institucional co
 
 4. Preencha o título, a imagem de destaque e os dados de endereço e contato confirmados pelo campus.
 5. Se houver destaques, complete todos os itens obrigatórios com imagem, título e destino revisado.
-6. Confira a estrutura inicial de páginas prevista para o campus, como informações institucionais, ensino, extensão, pesquisa, estudantes, servidores e contatos. Quando uma estrutura exigir uma tarefa administrativa específica, como criar uma pasta de notícias, encaminhe essa etapa ao administrador.
+6. Confira a estrutura-padrão do campus: **Campus**, **Cursos**, **Processos seletivos**, **Vida acadêmica**, **Vida funcional**, **Projetos** e **Eventos**. Cursos, Processos seletivos e Eventos são menus fixos; Cursos e Processos seletivos filtram os dados daquele campus. Para os conteúdos locais e links compartilhados, siga o [mapa dos campi](#mapa-dos-campi). Quando uma estrutura exigir uma tarefa administrativa específica, como criar uma pasta de notícias, encaminhe essa etapa ao administrador.
 7. Pré-visualize, valide com a área responsável e publique no seu escopo.
+
+## Mapa dos campi
+
+Consulte o modelo antes de montar ou revisar a estrutura. Preserve os links para a Reitoria e para os sistemas, em vez de duplicar o conteúdo no campus.
+
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/04 - Mapa da estrutura do Portal|Consultar a estrutura-padrão dos campi no mapa do Portal]]
 
 ## Dados associados ao campus no SUAP
 

@@ -967,8 +967,226 @@
         }
 ];
 
+    // Modelo de organização, sem representar URLs de páginas já publicadas.
+    const campusBlueprint = {
+    "title": "Página do campus",
+    "source": "Estrutura informada pelo responsável pelo guia em 16/10/2026.",
+    "sections": [
+        {
+            "id": "campus-modelo-1",
+            "title": "Campus",
+            "description": "Apresentação e informações institucionais da unidade.",
+            "fixed": false,
+            "type": "estrutura",
+            "items": [
+                {
+                    "id": "campus-modelo-1-1",
+                    "title": "Apresentação do campus",
+                    "type": "local",
+                    "description": "Apresenta a unidade."
+                },
+                {
+                    "id": "campus-modelo-1-2",
+                    "title": "Horários de funcionamento",
+                    "type": "local",
+                    "description": "Horários do campus."
+                },
+                {
+                    "id": "campus-modelo-1-3",
+                    "title": "Servidores e contatos",
+                    "type": "local",
+                    "description": "Reúne contatos e a seção de atendimento das coordenações de curso."
+                },
+                {
+                    "id": "campus-modelo-1-4",
+                    "title": "Conselho acadêmico",
+                    "type": "local",
+                    "description": "Página do conselho do campus."
+                },
+                {
+                    "id": "campus-modelo-1-5",
+                    "title": "Comissão Própria de Avaliação (CPA)",
+                    "type": "reitoria",
+                    "description": "Link para a CPA na Reitoria; vínculo recíproco previsto, com endereços a mapear."
+                }
+            ]
+        },
+        {
+            "id": "campus-modelo-2",
+            "title": "Cursos",
+            "description": "Filtro dos cursos do campus específico.",
+            "fixed": true,
+            "type": "estrutura",
+            "items": []
+        },
+        {
+            "id": "campus-modelo-3",
+            "title": "Processos seletivos",
+            "description": "Filtro dos processos seletivos do campus específico.",
+            "fixed": true,
+            "type": "estrutura",
+            "items": []
+        },
+        {
+            "id": "campus-modelo-4",
+            "title": "Vida acadêmica",
+            "description": "Caminhos voltados aos estudantes.",
+            "fixed": false,
+            "type": "estrutura",
+            "items": [
+                {
+                    "id": "campus-modelo-4-1",
+                    "title": "Horários de aulas",
+                    "type": "local",
+                    "description": "Consulta dos horários de aulas."
+                },
+                {
+                    "id": "campus-modelo-4-2",
+                    "title": "Calendário acadêmico",
+                    "type": "local",
+                    "description": "Consulta do calendário acadêmico."
+                },
+                {
+                    "id": "campus-modelo-4-3",
+                    "title": "Moodle do campus",
+                    "type": "sistema",
+                    "description": "Link para o Moodle específico da unidade."
+                },
+                {
+                    "id": "campus-modelo-4-4",
+                    "title": "SUAP",
+                    "type": "sistema",
+                    "description": "Link para o sistema acadêmico."
+                },
+                {
+                    "id": "campus-modelo-4-5",
+                    "title": "Bibliotecas",
+                    "type": "reitoria",
+                    "description": "Link para a área de bibliotecas na Reitoria."
+                },
+                {
+                    "id": "campus-modelo-4-6",
+                    "title": "Atendimento das coordenações de curso",
+                    "type": "interno",
+                    "description": "Link para a seção em Campus > Servidores e contatos."
+                },
+                {
+                    "id": "campus-modelo-4-7",
+                    "title": "Documentos acadêmicos",
+                    "type": "local",
+                    "description": "Links para PPC, matriz curricular, regimentos, planos de ensino, regulamentos e formulários do curso. Destinos a detalhar no próximo mapeamento."
+                },
+                {
+                    "id": "campus-modelo-4-8",
+                    "title": "Comitê disciplinar",
+                    "type": "local",
+                    "description": "Página do comitê disciplinar."
+                },
+                {
+                    "id": "campus-modelo-4-9",
+                    "title": "Núcleo de Apoio ao Estudante",
+                    "type": "reitoria",
+                    "description": "Link para a referência mantida na Reitoria."
+                },
+                {
+                    "id": "campus-modelo-4-10",
+                    "title": "Assistência estudantil",
+                    "type": "reitoria",
+                    "description": "Link para a referência mantida na Reitoria."
+                },
+                {
+                    "id": "campus-modelo-4-11",
+                    "title": "Mais informações para estudantes",
+                    "type": "reitoria",
+                    "description": "Link para a área de estudantes na Reitoria."
+                },
+                {
+                    "id": "campus-modelo-4-12",
+                    "title": "Estágios",
+                    "type": "link",
+                    "description": "Acesso a formulários e orientações para estágios externos; destino a mapear."
+                }
+            ]
+        },
+        {
+            "id": "campus-modelo-5",
+            "title": "Vida funcional",
+            "description": "Caminhos voltados aos servidores.",
+            "fixed": false,
+            "type": "estrutura",
+            "items": [
+                {
+                    "id": "campus-modelo-5-1",
+                    "title": "Atos normativos",
+                    "type": "local",
+                    "description": "Atos normativos da unidade."
+                },
+                {
+                    "id": "campus-modelo-5-2",
+                    "title": "Assuntos institucionais de comunicação",
+                    "type": "local",
+                    "description": "Informações institucionais de comunicação."
+                },
+                {
+                    "id": "campus-modelo-5-3",
+                    "title": "Visitas técnicas e participação em eventos",
+                    "type": "local",
+                    "description": "Informações sobre visitas técnicas e participação em eventos."
+                },
+                {
+                    "id": "campus-modelo-5-4",
+                    "title": "Bibliotecas",
+                    "type": "reitoria",
+                    "description": "Link para a área de bibliotecas na Reitoria."
+                },
+                {
+                    "id": "campus-modelo-5-5",
+                    "title": "Gestão de pessoas",
+                    "type": "local",
+                    "description": "Página da gestão de pessoas do próprio campus."
+                },
+                {
+                    "id": "campus-modelo-5-6",
+                    "title": "SUAP",
+                    "type": "sistema",
+                    "description": "Link para o sistema utilizado pelos servidores."
+                },
+                {
+                    "id": "campus-modelo-5-7",
+                    "title": "SEI",
+                    "type": "sistema",
+                    "description": "Link para o sistema de processos."
+                },
+                {
+                    "id": "campus-modelo-5-8",
+                    "title": "Mais informações para servidores",
+                    "type": "reitoria",
+                    "description": "Link para a área de servidores na Reitoria."
+                }
+            ]
+        },
+        {
+            "id": "campus-modelo-6",
+            "title": "Projetos",
+            "description": "Projetos do campus com interface com a comunidade acadêmica, interna ou externa. Corresponde ao caminho de Comunidade no recorte dos campi.",
+            "fixed": false,
+            "type": "estrutura",
+            "items": []
+        },
+        {
+            "id": "campus-modelo-7",
+            "title": "Eventos",
+            "description": "Menu fixo de eventos.",
+            "fixed": true,
+            "type": "estrutura",
+            "items": []
+        }
+    ]
+};
+
     window.PortalGraphData = Object.freeze({
-        version: 1,
+        version: 2,
+        campusBlueprint,
         nodes: Object.freeze(nodes),
         edges: Object.freeze(edges)
     });

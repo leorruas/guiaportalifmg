@@ -2879,3 +2879,18 @@ body:has(.leitor-artigo:not(.escondido)) .page-masthead { display: none; }
     padding: 0;
     background: transparent;
 }
+
+/* Modelo dos campi: árvore de caminhos, independente das URLs do mapa da Reitoria. */
+.campus-map-search { display: grid; gap: .5rem; max-width: 36rem; }
+.campus-map-search input { padding: .8rem; border: 1px solid currentColor; border-radius: .5rem; background: transparent; color: inherit; font: inherit; }
+.campus-map-root { border: 2px solid #57a265; padding: 1rem; text-align: center; font-weight: 700; border-radius: .5rem; }
+.campus-map-legend { font-size: .85em; }
+.campus-map-branches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; align-items: start; }
+.campus-map-branch { border: 1px solid #57a265; border-radius: .5rem; padding: 1rem; min-width: 0; }
+.campus-map-branch summary { cursor: pointer; font-weight: 700; }
+.campus-map-branch ul { list-style: none; border-left: 2px solid #57a265; padding-left: 1rem; }
+.campus-map-branch li { padding: .7rem 0; }
+.campus-map-kind { display: block; font-size: .8em; color: #57a265; }
+.campus-map-branch li p { font-size: .9em; margin: .3rem 0; }
+.campus-map-branch[hidden], .campus-map-branch li[hidden], .campus-map-empty[hidden] { display: none; }
+@media (max-width: 700px) { .campus-map-branches { grid-template-columns: 1fr; } }

@@ -20,7 +20,9 @@ async function obterListaDeArquivos() {
             titulo: partes.at(-1).replace(/\.md$/i, ""),
             // O conteúdo continua vindo do endereço bruto do mesmo repositório,
             // sem depender da API do GitHub em tempo de execução.
-            path: encodeURI(`https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/${sourcePath}`),
+            path: encodeURI(["localhost", "127.0.0.1"].includes(window.location.hostname)
+                ? sourcePath
+                : `https://raw.githubusercontent.com/leorruas/guiaportalifmg/main/${sourcePath}`),
             sourcePath,
             categoria: partes[indiceGuia + 1].replace(/^\d+\s*-\s*/, "")
         };
@@ -326,7 +328,7 @@ async function carregarTodosOsArtigos() {
     // Promessas paralelas para ler o conteúdo Markdown de cada arquivo
     const promessas = lista.map(async (item) => {
         try {
-            const res = await fetch(item.path);
+            const res = await fetch(item.path, { cache: "no-store" });
             if (!res.ok) return null;
             const texto = await res.text();
             
