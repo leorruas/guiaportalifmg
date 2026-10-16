@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Ampliação de capturas validada no Chromium: 42 telas em três resoluções, abertura e fechamento por Esc em Status, Configurações e Privacidade, e captura ampliada de privacidade inspecionada visualmente. Actions de validação `38937213032` e Pages `38937212233` concluídas com sucesso. A pendência real restante é conferir leitura no projetor e receber imagens atuais da homologação.
+
 - Corrigida a expressão regular da verificação de imagens em `scripts/test-training.mjs`, que havia passado a procurar uma barra invertida literal e zerado a contagem das capturas. O problema estava no teste, não no carregamento das imagens dos slides. Nova Action acionada para validar a ampliação.
 
 - Criado modo de ampliação de capturas nos slides de casos e aulas do treinamento. Cada imagem do guia pode ser aberta numa janela acessível que também funciona em tela cheia e se fecha por botão, clique externo ou Esc. Navegação por teclas é suspensa durante a ampliação; arquivos originais permanecem intactos e identificados como referência do guia. Incluídos testes da interação no Chromium em Status, Configurações e Privacidade e captura de QA, com estilos padronizados em Archivo e cache atualizado. Roteiro de apresentação, checklist, AGENTS e backlog sincronizados. Pendente conferência em projetor e confirmação da CI desta versão.
