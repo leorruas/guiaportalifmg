@@ -62,7 +62,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Permitir fechar por **Esc**, suspender atalhos de navegação enquanto o detalhe estiver aberto e preservar os arquivos originais sem cortes permanentes.
 - [x] Incluir testes automáticos da abertura, carregamento e fechamento da ampliação para as telas Status, Configurações e Privacidade, além de gerar captura visual de QA.
 - [ ] Conferir os detalhes ampliados em projeção física: capturas pequenas de origem não ganham resolução apenas por serem ampliadas. Substituir ou recortar com segurança quando os novos prints de homologação chegarem.
-- [ ] Confirmar execução dos testes de regressão e implantação desta alteração.
+- [ ] Confirmar execução dos testes de regressão e implantação desta alteração (a primeira Action identificou um erro no reconhecedor de imagens do teste, corrigido sem alterar os slides).
 
 ## Direção definida
 

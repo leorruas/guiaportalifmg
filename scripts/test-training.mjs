@@ -74,7 +74,7 @@ for(let i=0;i<slides.length;i++){
     exists('treinamento/'+trigger[1]);
     assert.ok(output.includes('Ampliar captura'),'Imagem sem controle de ampliação: '+id);
   }
-  for(const img of output.matchAll(/<img\\b[^>]*src="([^"]+)"[^>]*>/g)){
+  for(const img of output.matchAll(/<img\b[^>]*src="([^"]+)"[^>]*>/g)){
     exists('treinamento/'+img[1].split('?')[0]);
     assert.ok(/\balt="[^"]+"/.test(img[0]),'Imagem sem alt em '+id);
     images++;
