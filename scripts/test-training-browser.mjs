@@ -9,7 +9,7 @@ const browserPath=['/usr/bin/google-chrome-stable','/usr/bin/google-chrome','/us
 assert.ok(browserPath,'Navegador Chromium não encontrado');
 const output=resolve(root,'qa-training');mkdirSync(output,{recursive:true});
 const browser=await chromium.launch({executablePath:browserPath,headless:true,args:['--no-sandbox','--allow-file-access-from-files']});
-const ids=['mapa-portal-anterior','mapa-reitoria','mapa-campi','caminho-tres-cliques','editor-papel','editor-adicionar-bloco','editor-links-exemplo','editor-colecao','editor-menus','editor-enviar','moderador-revisao'];
+const ids=['mapa-portal-anterior','mapa-reitoria','mapa-campi','caminho-tres-cliques','editor-papel','editor-adicionar-bloco','editor-links-exemplo','editor-colecao','editor-menus','editor-enviar','moderador-revisao','moderador-publicar','administrador-papel','administrador-acessos','administrador-estrutura','administrador-privacidade','administrador-colecoes'];
 const url=pathToFileURL(resolve(root,'treinamento/index.html')).href;
 let n=0;
 try{

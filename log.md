@@ -2,6 +2,8 @@
 
 ## 2026-10-16
 
+- Expandida a seleção de screenshots da Action Chromium para os slides alterados de Moderador e Administrador; a verificação se mantém em 42 telas × 3 resoluções.
+
 - Melhorados Moderador e Administrador sem novas capturas da homologação: duas referências (fila e prévia) no slide de revisão, indicador de Status no slide de publicação, menu Configurações e ação Adicionar coleção nas tarefas administrativas. Inserido esquema didático de acesso independente para páginas e coleções, sem simular imagem real do painel. Atividades de moderação/prazo sincronizadas com página da Biblioteca; atualizados CSS, caches da apresentação e prática, testes, checklist, roteiro, AGENTS e backlog. 42 telas preservadas; inspeção em projetor pendente.
 
 - Revisadas capturas reais da abertura em Chromium após condensar o roteiro. Ampliados os grafos de Reitoria e campi com escala moderada, aumentado discretamente o texto das áreas e aproximadas as setas das etapas no exemplo de cotas; o subtítulo desse slide deixou de repetir o percurso inteiro. Atualizados cache de CSS e JS, backlog e testes de implantação.
