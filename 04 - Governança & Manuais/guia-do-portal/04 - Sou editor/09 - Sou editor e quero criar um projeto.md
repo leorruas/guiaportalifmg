@@ -2,6 +2,8 @@
 
 Use **Projeto** quando uma iniciativa precisa de identidade e página próprias. Esse tipo costuma ter apresentação visual diferenciada e pode reunir cursos, processos seletivos, endereço e redes oficiais.
 
+A página do tipo **Projeto** serve para apresentar uma iniciativa específica. Ela é diferente da [listagem de projetos de pesquisa e extensão](https://portal.ifmg.edu.br/projetos/), que recebe registros do SUAP e permite filtrar por campus. Consulte essa listagem antes de criar conteúdo paralelo. Uma página própria continua fazendo sentido quando a iniciativa precisa de apresentação, identidade e informações adicionais.
+
 ## Como fazer
 
 1. Abra a página-pai que seu grupo pode administrar e selecione **Adicionar subpágina** > **Projeto**.
