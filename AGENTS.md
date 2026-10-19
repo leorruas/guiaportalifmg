@@ -48,6 +48,15 @@
 - Ao escrever, revisar ou escolher imagens para o guia, nunca use exemplos de blocos de link para ilustrar o tipo de página Link, nem o contrário.
 - `portal.ifmg.edu.br` é o domínio do ambiente atual de homologação. O domínio público previsto é `ifmg.edu.br`. Em exemplos procedimentais que não dependem do domínio, prefira caminhos relativos como `/evento/` e `/evento/nome-do-evento/` para evitar que o manual fique preso ao endereço de homologação.
 
+## Cadastro de cursos e eixos tecnológicos
+
+- Na documentação de cursos, separar claramente **tipo de página** do Wagtail, **nível**, **tipo/grau de curso**, **articulação do curso técnico com ensino médio**, **EJA**, **modalidade/formato de oferta**, **categoria de curso** e **eixo tecnológico**. Não presumir que os rótulos do formulário coincidem com a classificação normativa.
+- O **eixo tecnológico é campo obrigatório** no cadastro de cursos do Portal IFMG. A lista de opções é composta pelas **13 denominações do MEC**; conferir em [CNCT](https://cnct.mec.gov.br/) e [CNCST](https://cncst.mec.gov.br/). Não excluir um eixo do cadastro só porque não há curso nele atualmente.
+- Cursos técnicos e superiores de tecnologia seguem, quando aplicável, os eixos dos catálogos oficiais. Para bacharelados, licenciaturas e pós-graduações, um eixo escolhido por obrigação do Wagtail é **aproximação editorial do IFMG**, nunca classificação oficial desses graus pelo MEC.
+- **Medicina Veterinária Bacharelado = Ambiente e Saúde** no cadastro, por decisão editorial. Técnico em Meio Ambiente Integrado/Subsequente = Ambiente e Saúde. Não misturar forma Integrado/Subsequente com formato Presencial/EaD, nem grau Bacharelado/Licenciatura com tipo de página Curso.
+- Os procedimentos canônicos de referência são `04 - Sou editor/05 - Sou editor e quero criar um curso.md` (preenchimento) e `02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos.md` (criação e manutenção das opções). Os demais artigos remetem a eles sem duplicar a lista de eixos.
+- Não inventar campos do Wagtail, valores de listas locais, vínculos entre campi ou informações acadêmicas. Quando a semântica de uma opção não estiver comprovada, orientar validação com a área responsável.
+
 ## Nomes e títulos das tarefas
 
 - O título de uma tarefa deve explicar **o que a pessoa quer conseguir fazer**, em linguagem compreensível mesmo para quem não conhece o Wagtail.
