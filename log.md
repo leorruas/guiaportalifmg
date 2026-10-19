@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-19 — Links do SUAP nos procedimentos do manual
+
+- Acrescentados os sete links de listagens integradas à API do SUAP no procedimento canônico de criação de links de redirecionamento, incluindo o filtro por campus, o limite de registros de terceirizados da Reitoria e a distinção entre homologação e produção.
+- Incluídas referências contextuais ao SUAP nos procedimentos de escolha do tipo de página, página institucional, projetos, eventos e página de campus. Diferenciadas as listagens automáticas dos tipos individuais de páginas criadas no Wagtail.
+- Preservados os endereços de homologação informados pelo responsável; a disponibilidade pública não foi verificada. Não houve alteração em cadastro, permissões ou integração do SUAP.
+
 ## 2026-10-19 — Referência às listagens integradas ao SUAP
 
 - Documentadas no Mapa da estrutura do Portal as sete listagens integradas à API do SUAP: eventos, projetos de pesquisa e extensão, docentes, servidores com função gratificada, terceirizados, setores e memoriais RSC, com os endereços de homologação fornecidos e filtro por campus.
