@@ -16,6 +16,12 @@ Faça estas perguntas:
 
 ![[imagens/manual-ifrn/image21.png|Lista de tipos disponíveis ao adicionar uma subpágina]]
 
+## Verificar se a informação já vem do SUAP
+
+Antes de criar páginas ou repetir cadastros de eventos, projetos, pessoas e setores, confira se o Portal já oferece uma listagem integrada ao SUAP. Essas páginas de consulta, com filtro por campus, não são novos tipos de conteúdo do menu **Adicionar subpágina**.
+
+Por exemplo, a [listagem de eventos](https://portal.ifmg.edu.br/eventos/) e a [listagem de projetos de pesquisa e extensão](https://portal.ifmg.edu.br/projetos/) são diferentes das páginas individuais dos tipos **Evento** e **Projeto**. Quando o objetivo é dar acesso a registros já existentes, consulte os [sete destinos integrados e como criar um link para eles](https://github.com/leorruas/guiaportalifmg/blob/main/04%20-%20Governan%C3%A7a%20%26%20Manuais/guia-do-portal/04%20-%20Sou%20editor/07%20-%20Sou%20editor%20e%20quero%20criar%20um%20link.md). Para apresentar uma iniciativa ou atividade específica com conteúdo próprio, avalie o tipo de página adequado.
+
 ## Consultar exemplos com Páginas usando…
 
 Na tela de escolha do tipo, o atalho **Páginas usando…** permite consultar páginas existentes daquele tipo. Use-o quando precisar entender como esse tipo já está sendo utilizado antes de criar uma página.
