@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-19 — Referência às listagens integradas ao SUAP
+
+- Documentadas no Mapa da estrutura do Portal as sete listagens integradas à API do SUAP: eventos, projetos de pesquisa e extensão, docentes, servidores com função gratificada, terceirizados, setores e memoriais RSC, com os endereços de homologação fornecidos e filtro por campus.
+- Registrada a limitação observada em terceirizados: apenas dados da Reitoria aparecem porque a vinculação de prestadores aos contratos está sendo feita apenas pela Reitoria; a falta de registros no filtro não comprova falta de pessoal terceirizado no campus.
+- Acrescentado atalho na introdução do guia; preservados o índice de artigos e os cadastros existentes.
+
 ## 2026-10-19 — Cadastro de cursos, modalidades e eixos tecnológicos
 
 - Ampliados os procedimentos canônicos de editor (`04 - Sou editor/05`) e de administrador (`02 - Sou administrador/09`) com as definições operacionais de nível, tipo/grau de curso, modalidade/formato, articulação técnica com ensino médio, EJA, categoria, eixo, campus, carga horária, duração, turno e PPC.
