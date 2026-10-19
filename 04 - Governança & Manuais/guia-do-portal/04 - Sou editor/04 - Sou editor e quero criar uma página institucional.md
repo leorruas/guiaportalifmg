@@ -21,6 +21,8 @@ Use uma página institucional para uma informação que continua útil ao longo 
 
 **Limite de permissão:** você só cria páginas onde seu grupo tem permissão. Para publicar, aguarde a revisão de moderador ou administrador.
 
+Antes de criar uma página apenas para repetir nomes de setores, confira a [listagem de setores integrada ao SUAP](https://portal.ifmg.edu.br/setores/), que permite filtrar por campus. Ela é uma página de consulta e não substitui o campo **Setor (Suap)** usado para associar contatos à página institucional.
+
 ## Exibir contatos do SUAP e setores filhos
 
 Quando a página apresentar os contatos de um setor, use **Contatos (do Suap)** para associar o cadastro correto. O campo **Setor (Suap)** informa que a página exibirá automaticamente os contatos e os chefes do setor relacionado.
