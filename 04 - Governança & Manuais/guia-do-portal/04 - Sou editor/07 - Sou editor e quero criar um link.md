@@ -11,6 +11,24 @@ Por exemplo: se a página que você quer destacar está em `/evento/nome-do-even
 
 Use esse tipo também para levar a um sistema, formulário, página, documento ou outra fonte oficial já existente. Se a pessoa precisa ler explicações, requisitos ou orientações antes de seguir para outro lugar, crie ou atualize uma página de conteúdo em vez de usar apenas um Link.
 
+## Links para listagens integradas ao SUAP
+
+O Portal IFMG já oferece páginas de consulta que recebem informações da API do SUAP. Se uma área precisa oferecer acesso a esses dados, use a listagem existente como destino de um Link, em vez de copiar os registros manualmente para uma nova página.
+
+No ambiente de homologação, os endereços são:
+
+- [Consultar eventos](https://portal.ifmg.edu.br/eventos/): listagem de eventos.
+- [Consultar projetos de pesquisa e extensão](https://portal.ifmg.edu.br/projetos/): listagem de projetos.
+- [Consultar docentes](https://portal.ifmg.edu.br/docentes/): listagem de docentes.
+- [Consultar servidores com função gratificada](https://portal.ifmg.edu.br/servidores/): listagem de servidores com função gratificada.
+- [Consultar terceirizados](https://portal.ifmg.edu.br/terceirizados/): listagem de terceirizados.
+- [Consultar setores](https://portal.ifmg.edu.br/setores/): listagem de setores.
+- [Consultar memoriais RSC](https://portal.ifmg.edu.br/memoriais_rsc/): listagem de memoriais de Reconhecimento de Saberes e Competências.
+
+**Todas essas listagens oferecem filtro por campus.** Na listagem de terceirizados, porém, foram observados apenas registros da Reitoria: segundo a informação recebida, somente essa unidade está vinculando os prestadores de serviço aos contratos no SUAP. Assim, a ausência de registros para um campus não comprova ausência de terceirizados nessa unidade.
+
+Esses são os endereços informados para a **homologação**. Antes de publicar um redirecionamento, confira o destino e a disponibilidade da listagem no ambiente em uso. Para ver essas páginas no contexto da arquitetura do Portal, consulte [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/04 - Mapa da estrutura do Portal|Mapa da estrutura do Portal]].
+
 > [!NOTE]
 > O endereço `portal.ifmg.edu.br` é usado atualmente no ambiente de homologação. O domínio público previsto para o Portal é `ifmg.edu.br`. Por isso, quando o domínio não for importante para a instrução, este guia prefere exemplos por caminho, como `/evento/`, para que o procedimento continue válido após a mudança de domínio.
 
