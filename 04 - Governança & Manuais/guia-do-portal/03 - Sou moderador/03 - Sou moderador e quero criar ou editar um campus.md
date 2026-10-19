@@ -30,6 +30,8 @@ A página do campus pode ser vinculada ao cadastro correspondente no SUAP, chama
 
 Antes de cadastrar essas informações manualmente, confira se elas já aparecem pela integração e se correspondem ao campus correto. Se houver dados ausentes ou incorretos, procure a equipe responsável pelo portal para verificar a vinculação e a origem da informação antes de criar um cadastro duplicado.
 
+Para consultar as informações integradas por unidade, use os filtros por campus das listagens de [eventos](https://portal.ifmg.edu.br/eventos/), [projetos de pesquisa e extensão](https://portal.ifmg.edu.br/projetos/), [docentes](https://portal.ifmg.edu.br/docentes/), [servidores com função gratificada](https://portal.ifmg.edu.br/servidores/) e [setores](https://portal.ifmg.edu.br/setores/). A página de servidores com função gratificada não equivale a um cadastro de todos os servidores. Os outros endereços integrados e a ressalva sobre terceirizados estão reunidos em [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/07 - Sou editor e quero criar um link|Criar um link para as listagens do SUAP]].
+
 A frequência de atualização e a possibilidade de corrigir cada informação pelo portal ainda precisam ser confirmadas com a equipe responsável. Não use a atualização diária descrita em outros manuais como prazo garantido para o IFMG.
 
 ## Como editar sem desorganizar
