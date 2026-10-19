@@ -49,6 +49,8 @@ Os fundamentos não substituem o procedimento; eles explicam os critérios que o
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/04 - KPIs, métricas e analytics|KPIs, métricas e analytics]] — para acompanhar desempenho e priorizar melhorias.
 - [[04 - Governança & Manuais/guia-do-portal/05 - Fundamentos/07 - Comunicação pública, transparência e participação|Comunicação pública, transparência e participação]] — para publicar informações orientadas a direitos, autonomia e participação.
 
+Para consultar a organização do Portal e os endereços das listagens integradas ao SUAP, incluindo os filtros por campus, veja [[04 - Governança & Manuais/guia-do-portal/00 - Comece aqui/04 - Mapa da estrutura do Portal|Mapa da estrutura do Portal]].
+
 ## 4. Antes de concluir uma ação
 
 - Confirme a fonte oficial, a pessoa responsável e a vigência da informação.
