@@ -4,6 +4,8 @@ Use este procedimento quando a informação principal for uma **atividade com da
 
 Se a demanda for apenas um aviso sem atividade marcada, não use Evento por conveniência. Consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/03 - Sou editor e quero escolher o tipo de página|Escolher o tipo de conteúdo]].
 
+Antes de criar um novo evento, consulte a [listagem de eventos integrada ao SUAP](https://portal.ifmg.edu.br/eventos/), que permite filtrar por campus. Ela reúne registros para consulta e é diferente da página individual do tipo **Evento**. Confira se a atividade já está apresentada no Portal e se existe uma necessidade real de página própria.
+
 ## Antes de começar
 
 Confirme com a área responsável as informações que permitem ao público agir sem precisar procurar outra fonte:
