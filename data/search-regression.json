@@ -140,6 +140,18 @@
     {
       "query": "colar tabela do Excel",
       "expected_top_id": "task-blocks-use"
+    },
+    {
+      "query": "cadastrar curso",
+      "expected_top_id": "task-course-create"
+    },
+    {
+      "query": "eixo tecnológico",
+      "expected_top_id": "task-auxiliary-registers"
+    },
+    {
+      "query": "tipo de curso",
+      "expected_top_id": "task-auxiliary-registers"
     }
   ]
 }

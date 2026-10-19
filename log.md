@@ -1,5 +1,13 @@
 # Registro de mudanças
 
+## 2026-10-19 — Cadastro de cursos, modalidades e eixos tecnológicos
+
+- Ampliados os procedimentos canônicos de editor (`04 - Sou editor/05`) e de administrador (`02 - Sou administrador/09`) com as definições operacionais de nível, tipo/grau de curso, modalidade/formato, articulação técnica com ensino médio, EJA, categoria, eixo, campus, carga horária, duração, turno e PPC.
+- Incluída a lista das 13 denominações de eixos tecnológicos, com referências diretas ao [CNCT](https://cnct.mec.gov.br/) e [CNCST](https://cncst.mec.gov.br/) do MEC; o eixo Militar permanece disponível mesmo sem uso no catálogo atual.
+- Registrada a distinção entre eixo oficial de técnico/tecnólogo e classificação editorial obrigatória para bacharelados, licenciaturas e pós-graduações. Medicina Veterinária Bacharelado foi exemplificada em Ambiente e Saúde. Foram preservadas as atribuições de editor e administrador, com links entre procedimentos.
+- Atualizados aliases de busca e regras do AGENTS. A edição documenta o preenchimento no Wagtail e não altera os cadastros do sistema.
+
+
 ## 2026-10-16
 
 - Ampliação de capturas validada no Chromium: 42 telas em três resoluções, abertura e fechamento por Esc em Status, Configurações e Privacidade, e captura ampliada de privacidade inspecionada visualmente. Actions de validação `38937213032` e Pages `38937212233` concluídas com sucesso. A pendência real restante é conferir leitura no projetor e receber imagens atuais da homologação.
