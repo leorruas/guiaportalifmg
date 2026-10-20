@@ -19,7 +19,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 - [x] Incorporar W10a/W10b ao slide `editor-imagens`, preservando os PNGs originais e identificando homologação real.
 - [x] Explicar diferença entre título e descrição acessível e remeter ao prompt existente de descrição de imagens, com contexto e revisão humana. O título automático e a descrição vazia são estados anteriores à revisão.
-- [ ] W10 original (listagem/filtros) e W14 (inserção na página) continuam separados do cadastro documentado nesta rodada.
+- [x] W10 original anonimizada e integrada; W14 continua separada, pois trata da inserção na página.
 
 ## Cadastro de documentos — 20/10/2026
 
@@ -30,7 +30,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 ## Localizar e adicionar arquivos — 20/10/2026
 
 - [x] Registrar busca e filtros de Imagens/Documentos e o caminho preferido pelo responsável: Configurações → Coleções → destino → Imagem/Documento, condicionado ao acesso do perfil. Orientação no roteiro e slides de arquivos/imagens.
-- [ ] Anonimizar W10 antes de publicação; original recebido mostra identificação do usuário.
+- [x] Anonimizar W10 por recorte inferior autorizado e inserir listagem em `editor-imagens`, com W10b; W10a de envio preservada no roteiro. W10 concluída.
 - [ ] Receber painel de filtros aberto para evidenciar coleção e tag; distinguir relato confirmado de controles efetivamente mostrados.
 
 ## Coleções e Documentos — 20/10/2026

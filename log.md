@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Listagem de Imagens anonimizada e W10 concluída
+
+- Recortados 75 pixels inferiores da listagem conforme autorização do responsável, removendo identificação; preservados pixels restantes sem redimensionamento (1885 × 840). Original com identificação não publicado.
+- Inserida listagem em `editor-imagens`, com busca por nome/tag, filtros e coleção. W10b de cadastro mantida no slide, W10a de envio preservada no roteiro.
+- Concluída W10; substituição de arquivos permanece separada para próximas evidências. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Cadastro de imagens e descrição acessível
 
 - Incorporados W10a/W10b originais, revisados sem dados pessoais ou restritos identificados, ao slide `editor-imagens`. Documentados envio imediato e Título, Descrição, Coleção e Tags.

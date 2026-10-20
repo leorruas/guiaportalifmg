@@ -69,7 +69,7 @@
     'editor-imagens': {
       type:'dualScreen',title:'Dê um título e uma descrição acessível à imagem',lead:'O título ajuda a encontrar a imagem; a descrição permite compreender sua informação sem vê-la.',
       screens:[
-        {label:'01 / ENVIAR A IMAGEM',image:'capturas-wagtail/W10a-adicionar-imagens.png',alt:'Homologação IFMG: Adicionar imagens com área de arraste, escolha do computador e coleção.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Confira a coleção escolhida. Arraste a imagem ou use Ou escolha do seu computador; isso inicia o carregamento imediatamente.'},
+        {label:'01 / LOCALIZAR A IMAGEM',image:'capturas-wagtail/W10-lista-imagens-colecao.png',alt:'Homologação IFMG: listagem de Imagens com busca, botão de filtros e Adicionar uma imagem; identificação removida por recorte.',source:'HOMOLOGAÇÃO IFMG · RECORTE SEM IDENTIFICAÇÃO',description:'Procure pelo nome ou por tag, use os filtros ou navegue pela coleção conhecida. Antes de cadastrar outra imagem, confira se ela já existe.'},
         {label:'02 / TÍTULO E DESCRIÇÃO',image:'capturas-wagtail/W10b-imagem-titulo-descricao-tags.png',alt:'Homologação IFMG: cadastro de imagem com aviso de acessibilidade, Título, Descrição, Coleção e Tags.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Troque o título automático por um nome claro. Preencha Descrição com a informação relevante da imagem, confirme Coleção e acrescente tags úteis.'}
       ],note:'Use o prompt de descrição de imagens em “Como usar uma IA como apoio para trabalhar com este guia”. Informe o contexto, revise o resultado e não invente informações. Descrição não é legenda; confira o texto alternativo e a prévia ao inserir a imagem na página. O cadastro mostrado ainda não foi revisado.'
     },

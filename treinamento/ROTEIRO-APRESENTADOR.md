@@ -81,11 +81,15 @@ Para incluir um arquivo, **Adicionar uma imagem** ou **Adicionar um documento** 
 
 Como caminho preferido pelo responsável, quem tiver acesso pode abrir **Configurações → Coleções**, navegar até a coleção da unidade/finalidade/ano e usar **Imagem** ou **Documento** na própria linha. Isso permite começar pelo destino, evitando percorrer primeiro a listagem geral. Se Configurações ou a ação não estiver disponível, use o caminho permitido ao seu perfil ou confirme o acesso com a administração. Essa orientação não exige criar uma coleção nova.
 
-A captura de Imagens recebida em 20/10/2026 não foi publicada: contém identificação do usuário conectado. Busca, filtros, coleção e tags devem ser demonstrados com captura anonimizada; os campos de cadastro ainda precisam de evidência própria.
+A captura da listagem de Imagens foi anonimizada por recorte inferior autorizado, preservando busca, botão de filtros e Adicionar uma imagem. Está no slide `editor-imagens`, com o cadastro W10b. Para encontrar uma imagem já cadastrada, procure pelo nome ou por tag, use os filtros ou navegue pela coleção conhecida, conforme orientação do responsável. O painel de filtros não está aberto nesta captura.
+
+![Envio de imagens com escolha de arquivo e coleção](../imagens/capturas-wagtail/W10a-adicionar-imagens.png)
+
+*Homologação IFMG: confira a coleção e arraste ou escolha o arquivo; isso inicia o carregamento imediatamente. Esta tela de envio permanece no roteiro após a listagem ocupar seu lugar no slide.*
 
 ### Cadastrar imagens com descrição para acessibilidade
 
-As capturas W10a/W10b, usadas em `editor-imagens`, mostram o envio e o cadastro com **Título**, **Descrição**, **Coleção** e **Tags**. Confira a coleção antes de arrastar ou escolher o arquivo: o carregamento começa imediatamente. O título automático é apenas um ponto de partida e precisa ser substituído por um nome claro.
+As capturas W10a (neste roteiro) e W10b (no slide `editor-imagens`) mostram o envio e o cadastro com **Título**, **Descrição**, **Coleção** e **Tags**. Confira a coleção antes de arrastar ou escolher o arquivo: o carregamento começa imediatamente. O título automático é apenas um ponto de partida e precisa ser substituído por um nome claro.
 
 A **Descrição** comunica a informação da imagem para quem não consegue vê-la. Use o prompt já existente na seção **Para descrever uma imagem e avaliar se precisa de legenda** do [procedimento de apoio com IA](../04%20-%20Governança%20%26%20Manuais/guia-do-portal/00%20-%20Comece%20aqui/03%20-%20Como%20usar%20uma%20IA%20como%20apoio%20para%20trabalhar%20com%20este%20guia.md). Forneça a imagem e seu contexto, revise a proposta e não aceite detalhes inventados. Descrição e legenda têm funções diferentes; confira o texto alternativo no contexto em que a imagem será inserida. A captura mostra o aviso de descrição ausente, não um cadastro pronto para servir de modelo final.
 
