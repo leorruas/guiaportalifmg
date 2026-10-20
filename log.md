@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Caminhos para localizar e adicionar arquivos
+
+- Registrada W10 recebida sem publicar a imagem, por conter identificação do usuário conectado.
+- Incorporados ao roteiro e às orientações dos slides os caminhos Imagens/Documentos com busca/filtros e Configurações → Coleções → destino → Imagem/Documento, conforme confirmação e preferência do responsável, respeitando acesso do perfil.
+- Checklist distingue botão de filtros visível de filtros por coleção/tag relatados, ainda sem captura do painel aberto. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Coleções de notícias de Ouro Branco
 
 - Incorporados W08e/W08f preservando PNGs originais, após revisão visual sem dados pessoais ou restritos identificados. Inseridas ambas no roteiro e descrito o caminho no slide administrativo existente.

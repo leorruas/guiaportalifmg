@@ -73,6 +73,16 @@ A distribuição de notícias (Copiar, Alias e Linkar em outra pasta) é um **ex
 
 **Ao apresentar os slides de revisão:** a primeira captura indica onde o Moderador encontra as solicitações; a segunda mostra a pré-visualização. O Status é outra etapa, que responde quando o conteúdo fica público. Não fazer publicação real durante a exposição. A mudança de horários da Biblioteca é um exemplo didático, não uma atualização confirmada de um campus.
 
+### Localizar ou adicionar imagens e documentos
+
+**Imagens** e **Documentos** mostram os arquivos acessíveis ao perfil. Use a busca ou o botão de filtros para localizar o que já existe. O responsável confirmou filtros por **coleção** e **tag**; a captura recebida mostra o botão, mas não o painel de filtros aberto.
+
+Para incluir um arquivo, **Adicionar uma imagem** ou **Adicionar um documento** leva às coleções, conforme demonstração relatada pelo responsável. Escolha o destino adequado antes do cadastro.
+
+Como caminho preferido pelo responsável, quem tiver acesso pode abrir **Configurações → Coleções**, navegar até a coleção da unidade/finalidade/ano e usar **Imagem** ou **Documento** na própria linha. Isso permite começar pelo destino, evitando percorrer primeiro a listagem geral. Se Configurações ou a ação não estiver disponível, use o caminho permitido ao seu perfil ou confirme o acesso com a administração. Essa orientação não exige criar uma coleção nova.
+
+A captura de Imagens recebida em 20/10/2026 não foi publicada: contém identificação do usuário conectado. Busca, filtros, coleção e tags devem ser demonstrados com captura anonimizada; os campos de cadastro ainda precisam de evidência própria.
+
 ### Encontrar arquivos de notícias de um campus
 
 A estrutura real de Ouro Branco confirma o caminho **Coleção → U_01 Ouro Branco → Notícias_OuroBranco → 2026**. Use a seta à direita para entrar no próximo nível e confira o caminho no topo. Não confunda esse destino com **Coleção → Notícias → 2026**, que pertence à coleção geral.

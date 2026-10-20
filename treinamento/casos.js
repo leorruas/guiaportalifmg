@@ -66,7 +66,7 @@
         ['TÍTULO','Exemplo: “Regulamento de empréstimo da Biblioteca — [campus]”. Use o título real do documento vigente.'],
         ['COLEÇÃO','Escolha a coleção da finalidade do arquivo; um documento não justifica inventar uma coleção.'],
         ['ATUALIZAR','Substitua o documento existente se a nova versão deve valer em todos os usos; crie outro se o anterior precisa permanecer disponível.']
-      ],note:'O título cadastrado é diferente do nome físico do PDF e do texto de um botão no conteúdo.'
+      ],note:'Localize por Documentos e busca ou filtros. Quem tiver acesso pode adicionar por Configurações → Coleções → destino → Documento. O título cadastrado é diferente do nome físico do PDF.'
     },
     'editor-imagens': {
       type:'screen',title:'Imagem publicada precisa de formato e descrição',lead:'O contexto determina a escolha de enquadramento e texto alternativo.',
@@ -75,7 +75,7 @@
         ['FORMATO','Em páginas institucionais, escolha o formato pela função da imagem e confira o resultado na prévia.'],
         ['DESCRIÇÃO','A imagem informativa exige texto alternativo; marque decorativa apenas se não acrescentar informação.'],
         ['PRÉVIA','Confira corte e legibilidade em computador, tablet e celular.']
-      ],note:'Título, texto alternativo e legenda têm funções diferentes. Confira o contexto da imagem.'
+      ],note:'Para localizar, use Imagens e a busca ou filtros. Para adicionar, quem tiver acesso pode começar por Configurações → Coleções → destino → Imagem. Título, texto alternativo e legenda têm funções diferentes.'
     },
     'moderador-noticias': {
       type:'screen',title:'Jornalistas distribuem notícias entre pastas',lead:'Na trilha Moderador: Copiar, Alias e Linkar em outra pasta produzem resultados diferentes.',

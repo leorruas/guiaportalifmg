@@ -15,6 +15,12 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Localizar e adicionar arquivos — 20/10/2026
+
+- [x] Registrar busca e filtros de Imagens/Documentos e o caminho preferido pelo responsável: Configurações → Coleções → destino → Imagem/Documento, condicionado ao acesso do perfil. Orientação no roteiro e slides de arquivos/imagens.
+- [ ] Anonimizar W10 antes de publicação; original recebido mostra identificação do usuário.
+- [ ] Receber painel de filtros aberto para evidenciar coleção e tag; distinguir relato confirmado de controles efetivamente mostrados.
+
 ## Coleções e Documentos — 20/10/2026
 
 - [x] Preservar e incorporar W08a/W08b em `administrador-estrutura`, como evidência também de W22: seta abre subcoleções, com ações Documento, Imagem e Sub-coleção.
