@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — PNGs reais de navegação Wagtail
+
+- Incorporados os três PNGs originais W01a, W01b e W02 em `imagens/capturas-wagtail/`, sem recompressão e após revisão visual: não identificados dados pessoais, credenciais ou conteúdo interno restrito; divulgação solicitada pelo responsável.
+- Documentados no roteiro do apresentador o menu Páginas, seta, nome/pasta, lápis, + junto à página-pai e os oito tipos oferecidos por Institucional. Imagens posicionadas após os passos correspondentes.
+- Backlog distingue integração ao roteiro da adaptação visual ainda pendente do slide. O status de incorporação no checklist será atualizado após confirmação do commit remoto.
+
+
 ## 2026-10-20 — Galerias nas páginas de cursos
 
 - Atualizado o procedimento de criação de cursos com **Estilo: Com bordas**, orientação para imagens provisórias e exigência de substituição por fotografias fornecidas pela coordenação antes da publicação.

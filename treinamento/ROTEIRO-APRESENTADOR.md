@@ -2,7 +2,7 @@
 
 **16/10/2026** · [Slides](./index.html) · [Prática](./pratica.html) · [Capturas pendentes](./CAPTURAS-WAGTAIL.md)
 
-Este roteiro é um **apoio para apresentação oral**, não substitui os procedimentos canônicos do Guia do Portal nem permite executar tarefas no Wagtail sem autorização. Capturas existentes são referências do guia, não comprovação da interface da homologação atual.
+Este roteiro é um **apoio para apresentação oral**, não substitui os procedimentos canônicos do Guia do Portal nem permite executar tarefas no Wagtail sem autorização. As três capturas de navegação e escolha do tipo abaixo são da homologação IFMG em 20/10/2026. As demais capturas reaproveitadas continuam sendo referências do guia a conferir.
 
 ## Ideia central
 
@@ -42,6 +42,28 @@ O Editor prepara, o Moderador revisa e decide, e o Administrador configura condi
 | 06 Revisar e enviar | Está pronto para a moderação? | Salvar, pré-visualizar em diferentes dispositivos, enviar para moderação. Enviar **não publica**. |
 
 Não ensinar a criação de notícias como ação do Editor. No fluxo institucional, **notícias são produzidas por jornalistas, com perfil mínimo Moderador**.
+
+### Localizar e criar uma subpágina — homologação de 20/10/2026
+
+1. Clique em **Páginas** para abrir o menu lateral. Use a **seta** para expandir a árvore de **Home**. Clicar no **nome ou ícone da pasta** abre a listagem de subpáginas; o **lápis** edita a própria página; a **seta** expande a árvore lateral.
+
+![Menu lateral Páginas com Home expandida e entradas Institucional, Cursos e outras áreas](../imagens/capturas-wagtail/W01a-arvore-paginas-home.png)
+
+*Captura real da homologação: observe os controles diferentes para navegar, expandir e editar.*
+
+2. Clique no nome ou pasta **Institucional** para abrir suas subpáginas. Para criar uma subpágina, clique no **ícone + próximo ao título Institucional**, no topo da listagem.
+
+![Listagem de subpáginas de Institucional com o ícone de mais junto ao título](../imagens/capturas-wagtail/W01b-lista-institucional.png)
+
+*Captura real da homologação: o + ao lado do título cria uma página dentro da página-pai aberta.*
+
+3. Após clicar no +, a tela **Crie uma página a partir de Institucional** oferece **Campus, Colegiado, Curso, Link, Pasta de notícias, Programa, Projeto e Página**. Para uma página institucional comum, escolha **Página**. Essa lista foi observada em Institucional; não presume opções idênticas em outros locais ou perfis.
+
+![Escolha do tipo de página a partir de Institucional com oito opções](../imagens/capturas-wagtail/W02-tipo-pagina.png)
+
+*Captura real da homologação: Página é a última opção; Link é um tipo de página, diferente de blocos de links.*
+
+Use somente a página-pai autorizada para seu perfil. Se a ação não estiver disponível, solicite a conferência de acesso à equipe administradora. O exemplo Biblioteca continua ilustrativo; estas capturas não comprovam uma página de Biblioteca publicada.
 
 ## Moderador — correção e decisão
 

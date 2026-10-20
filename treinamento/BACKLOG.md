@@ -15,6 +15,12 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Capturas reais de navegação — 20/10/2026
+
+- [x] Revisar visualmente os três anexos W01/W02: somente menus, tipos e títulos institucionais, sem dados pessoais ou credenciais identificados. Incorporação autorizada pelo responsável nesta solicitação.
+- [x] Preservar os PNGs originais, sem redimensionamento ou recompressão, em `imagens/capturas-wagtail/` e contextualizar os três no roteiro do apresentador.
+- [ ] Adaptar a composição do slide `editor-papel` para as novas capturas e validar em navegador/projeção. O slide ainda usa a referência externa, identificada como tal.
+
 ## Roteiro visual independente de novas capturas — rodada aplicada
 
 - [x] Identificar seis etapas do caso **Página da Biblioteca** em `treinamento/fluxo.js`, utilizando a faixa acessória de contexto do slide (44 telas mantidas).
