@@ -1,5 +1,10 @@
 # Registro de mudanças
 
+## 2026-10-20 — Confirmação da incorporação W01/W02
+
+- Confirmado no GitHub o commit `dcbf0ff983fed76637acb4334c946e821c203061`, contendo os três PNGs originais. Atualizado o checklist existente para incorporação efetiva, preservando os demais itens e a pendência específica de adaptação do slide.
+
+
 ## 2026-10-20 — PNGs reais de navegação Wagtail
 
 - Incorporados os três PNGs originais W01a, W01b e W02 em `imagens/capturas-wagtail/`, sem recompressão e após revisão visual: não identificados dados pessoais, credenciais ou conteúdo interno restrito; divulgação solicitada pelo responsável.
