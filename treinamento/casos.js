@@ -33,13 +33,13 @@
       ]
     },
     'editor-papel': {
-      type:'screen',title:'Comece pela página-pai autorizada',lead:'O exemplo é uma Página institucional da Biblioteca, não uma notícia.',
-      image:'manual-ifrn/image21.png',alt:'Referência visual do guia: seleção do tipo Página em Adicionar subpágina no Wagtail.',
+      type:'screen',title:'Comece pela página-pai autorizada',lead:'Abra a seção correta e escolha o tipo Página para o exemplo institucional da Biblioteca.',
+      image:'capturas-wagtail/W02-tipo-pagina.png',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',alt:'Escolha do tipo a partir de Institucional com Campus, Colegiado, Curso, Link, Pasta de notícias, Programa, Projeto e Página.',
       steps:[
-        ['01 / LOCALIZAR','Abra Páginas e encontre a página-pai da área em que você tem permissão para editar.'],
-        ['02 / ESCOLHER','Para criar, use Adicionar subpágina → Página. Para atualizar, abra a página existente.'],
-        ['03 / PREPARAR','Confira título e responsabilidade; os conteúdos e metadados serão preparados nas próximas etapas.']
-      ],note:'Se a página institucional já existe, atualize-a em vez de criar outra. A imagem mostra uma interface de referência do guia.'
+        ['01 / LOCALIZAR','Páginas abre o menu lateral; a seta expande Home. Nome ou pasta abre as subpáginas; lápis edita a própria página.'],
+        ['02 / CRIAR','Na listagem, o + junto ao título da página-pai inicia uma subpágina. Em Institucional, escolha Página.'],
+        ['03 / CONFERIR','Confira local e permissão. Se o conteúdo já existe, atualize-o. Use as capturas Árvore e Página-pai abaixo para acompanhar o caminho.']
+      ],note:'As capturas são reais de Institucional; Biblioteca é o exemplo didático. Os tipos disponíveis variam por local e permissão.'
     },
     'editor-planejar': {
       type:'fields',title:'Antes de editar, confirme os dados do serviço',lead:'Exemplo de preparo da página institucional da Biblioteca.',
@@ -64,14 +64,14 @@
       screens:[
         {label:'01 / ESCOLHER O ARQUIVO',image:'capturas-wagtail/W09a-adicionar-documentos.png',alt:'Homologação IFMG: Adicionar documentos com área de arraste, escolha do computador e Adicionar a coleção.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'A coleção vem do destino escolhido; confira Adicionar a coleção antes do envio. Arraste o arquivo ou use Ou escolha do seu computador.'},
         {label:'02 / REVISAR O CADASTRO',image:'capturas-wagtail/W09b-documento-titulo-colecao-tags.png',alt:'Homologação IFMG: documento enviado com Título e Coleção obrigatórios, Tags e botões Atualizar e Remover.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Depois do envio, substitua o título automático por um nome claro, confirme Coleção, acrescente tags úteis e clique em Atualizar.'}
-      ],note:'Siga o manual: diga o que é o documento, público e período quando necessário; escreva por extenso e com espaços. Para documentos de curso: tipo + nome completo do curso + campus, com ano/versão quando disponível. O título automático mostrado na captura ainda precisa de revisão. Para substituir um registro existente: abra sua edição → Alterar documento → escolha a nova versão → Salvar; revise título e tags. O roteiro mostra essa tela.'
+      ],note:'Siga o padrão de título do manual; para documentos de curso: tipo + curso completo + campus, com período/versão disponível. O título automático ainda precisa de revisão. Use Substituir documento para conferir a troca de arquivo no registro existente.'
     },
     'editor-imagens': {
       type:'dualScreen',title:'Dê um título e uma descrição acessível à imagem',lead:'O título ajuda a encontrar a imagem; a descrição permite compreender sua informação sem vê-la.',
       screens:[
         {label:'01 / LOCALIZAR A IMAGEM',image:'capturas-wagtail/W10-lista-imagens-colecao.png',alt:'Homologação IFMG: listagem de Imagens com busca, botão de filtros e Adicionar uma imagem; identificação removida por recorte.',source:'HOMOLOGAÇÃO IFMG · RECORTE SEM IDENTIFICAÇÃO',description:'Procure pelo nome ou por tag, use os filtros ou navegue pela coleção conhecida. Antes de cadastrar outra imagem, confira se ela já existe.'},
         {label:'02 / TÍTULO E DESCRIÇÃO',image:'capturas-wagtail/W10b-imagem-titulo-descricao-tags.png',alt:'Homologação IFMG: cadastro de imagem com aviso de acessibilidade, Título, Descrição, Coleção e Tags.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Troque o título automático por um nome claro. Preencha Descrição com a informação relevante da imagem, confirme Coleção e acrescente tags úteis.'}
-      ],note:'Use o prompt de descrição de imagens em “Como usar uma IA como apoio para trabalhar com este guia”. Informe o contexto, revise o resultado e não invente informações. Descrição não é legenda; confira o texto alternativo e a prévia ao inserir a imagem na página. O cadastro mostrado ainda não foi revisado. Ao editar uma imagem, arraste uma caixa em Ponto focal para marcar a região importante e confira os recortes na prévia; o roteiro demonstra esse ajuste.'
+      ],note:'Use o prompt de descrição de imagens do guia, informe o contexto e revise sem inventar detalhes. Descrição não é legenda. Use Editar imagem e Área focal para conferir o cadastro e a região prioritária dos recortes; valide o resultado na prévia.'
     },
     'moderador-noticias': {
       type:'screen',title:'Jornalistas distribuem notícias entre pastas',lead:'Na trilha Moderador: Copiar, Alias e Linkar em outra pasta produzem resultados diferentes.',
@@ -168,7 +168,7 @@
       type:'dualScreen',title:'Escolha a coleção pela unidade, finalidade e ano',lead:'A seta à direita abre as subcoleções; o caminho no topo mostra onde você está.',
       screens:[
         {label:'01 / UNIDADE E FINALIDADE',image:'capturas-wagtail/W08c-estrutura-atual-colecoes.png',alt:'Homologação IFMG: Coleção com U_01 Ouro Branco, cursos, servidores, 2026, Acesso à informação e Notícias.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Unidades usam número e nome, como U_01 Ouro Branco. Há destinos para cursos, servidores e acesso à informação. A coleção 2026 deste nível reúne arquivos institucionais, conforme orientação do responsável.'},
-        {label:'02 / NOTÍCIAS POR ANO',image:'capturas-wagtail/W08d-noticias-por-ano.png',alt:'Homologação IFMG: dentro da coleção Notícias, subcoleções 2026 e 2027.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Dentro de Notícias, escolha o ano, como 2026 ou 2027. No campus, o caminho confirmado é U_01 Ouro Branco → Notícias_OuroBranco → 2026; o roteiro mostra essas duas telas.'}
+        {label:'02 / NOTÍCIAS POR ANO',image:'capturas-wagtail/W08d-noticias-por-ano.png',alt:'Homologação IFMG: dentro da coleção Notícias, subcoleções 2026 e 2027.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Dentro de Notícias, escolha o ano, como 2026 ou 2027. No campus, o caminho confirmado é U_01 Ouro Branco → Notícias_OuroBranco → 2026; use Coleções do campus e Ano no campus para ver essas telas.'}
       ],note:'Coleção → 2026 (arquivos institucionais) e Coleção → Notícias → 2026 (arquivos de notícias) são destinos diferentes. Coleções guardam arquivos; a árvore de páginas organiza o conteúdo do portal. Use o destino autorizado e confirme com a administração quando faltar uma coleção adequada.'
     },
     'administrador-pratica': {
@@ -184,6 +184,14 @@
   const html=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const kicker=x=>'<span class="case-kicker">'+html(x)+'</span>';
   const zoomButton=(file,alt)=>'<button type="button" class="capture-zoom" data-zoom-image="../imagens/'+html(file)+'" data-zoom-alt="'+html(alt)+'" aria-label="Ampliar captura de referência: '+html(alt)+'">Ampliar captura <span aria-hidden="true">↗</span></button>';
+  const related = {
+    'capturas-wagtail/W02-tipo-pagina.png':[['W01a-arvore-paginas-home','Árvore de páginas'],['W01b-lista-institucional','Página-pai e +']],
+    'capturas-wagtail/W09b-documento-titulo-colecao-tags.png':[['W07-lista-documentos-colecoes','Localizar documento'],['W13-editar-substituir-documento','Substituir documento']],
+    'capturas-wagtail/W10b-imagem-titulo-descricao-tags.png':[['W10a-adicionar-imagens','Enviar imagem'],['imagem-editar-arquivo-descricao','Editar imagem'],['imagem-area-focal','Área focal']],
+    'capturas-wagtail/W08c-estrutura-atual-colecoes.png':[['W08a-colecoes-raiz','Coleção-pai'],['W08e-colecoes-ouro-branco','Coleções do campus']],
+    'capturas-wagtail/W08d-noticias-por-ano.png':[['W08f-noticias-ouro-branco-ano','Ano no campus']]
+  };
+  const relatedButtons=file=>(related[file]||[]).map(([name,label])=>'<button type="button" class="capture-zoom" data-zoom-image="../imagens/capturas-wagtail/'+html(name)+'.png" data-zoom-alt="Homologação IFMG: '+html(label)+'" aria-label="Abrir captura complementar: '+html(label)+'">'+html(label)+' ↗</button>').join('');
   function blockCard(label,title,body){
     return '<section class="case-tile">'+kicker(label)+'<h2>'+html(title)+'</h2><p>'+html(body)+'</p></section>';
   }
@@ -194,14 +202,14 @@
         return '<div class="case-tiles">'+d.cards.map(item=>blockCard(...item)).join('')+'</div>'+note(d.note);
       case 'dualScreen':
         return '<div class="case-dual-screen">'+d.screens.map(s=>'<section class="case-dual-item">'+kicker(s.label)+
-          '<figure class="case-dual-shot"><img src="../imagens/'+html(s.image)+'" alt="'+html(s.alt)+'" loading="eager"><figcaption><span>'+html(s.source||'REFERÊNCIA DO GUIA')+'</span>'+zoomButton(s.image,s.alt)+'</figcaption></figure>'+
+          '<figure class="case-dual-shot"><img src="../imagens/'+html(s.image)+'" alt="'+html(s.alt)+'" loading="eager"><figcaption><span>'+html(s.source||'REFERÊNCIA DO GUIA')+'</span>'+zoomButton(s.image,s.alt)+relatedButtons(s.image)+'</figcaption></figure>'+
           '<p>'+html(s.description)+'</p></section>').join('')+'</div>'+note(d.note);
       case 'permission':
         return '<div class="case-permission">'+d.permissions.map(s=>'<section class="case-permission-path">'+kicker(s.label)+
           '<span class="case-permission-icon" aria-hidden="true">✓</span><h2>'+html(s.heading)+'</h2><p>'+html(s.description)+'</p></section>').join('')+
           '<div class="case-permission-conclusion"><strong>DUAS PERMISSÕES, UMA TAREFA</strong><p>'+html(d.result)+'</p></div></div>'+note(d.note);
       case 'screen':
-        return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption><span>'+html(d.source||'REFERÊNCIA DO GUIA')+'</span>'+zoomButton(d.image,d.alt)+'</figcaption></figure>'+
+        return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption><span>'+html(d.source||'REFERÊNCIA DO GUIA')+'</span>'+zoomButton(d.image,d.alt)+relatedButtons(d.image)+'</figcaption></figure>'+
           '<div class="case-steps">'+d.steps.map(item=>'<section>'+kicker(item[0])+'<p>'+html(item[1])+'</p></section>').join('')+'</div></div>'+note(d.note);
       case 'scenario':
         return '<div class="case-scenario"><div class="case-prompt">'+kicker('SITUAÇÃO / EXEMPLO')+'<blockquote>'+html(d.scenario)+'</blockquote></div>'+

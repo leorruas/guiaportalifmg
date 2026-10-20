@@ -4,20 +4,34 @@ Use **Documentos** para guardar e reutilizar arquivos oficiais, como editais, re
 
 ## Adicionar um documento
 
-1. Abra **Documentos** no menu lateral e escolha **Adicionar documento**.
-2. Selecione a coleção autorizada antes de enviar o arquivo.
-3. Antes do upload, defina um título que identifique o documento sem depender do nome original do arquivo, especialmente quando houver nova versão ou documento parecido na coleção.
-4. Envie o arquivo, preencha um título claro, confirme a coleção e acrescente tags que ajudem na busca.
-5. Salve o documento.
-6. Volte à página e selecione o documento no bloco ou campo correspondente.
+1. Abra **Documentos** no menu lateral. Procure o arquivo pelo nome, tags, filtros ou coleção conhecida antes de criar outro registro.
 
-![[imagens/manual-ifrn/image38.png|Adição de documento a uma coleção]]
+![[imagens/capturas-wagtail/W07-lista-documentos-colecoes.png|Listagem de Documentos com busca e coluna Coleção]]
+
+*Homologação IFMG, 20/10/2026: identificação removida por recorte; Adicionar um documento leva à escolha do destino em Coleções.*
+
+2. Clique em **Adicionar um documento**, navegue até a coleção autorizada e use **Documento** nessa coleção. Se tiver acesso, também pode começar por **Configurações → Coleções → destino → Documento**.
+3. Antes do envio, defina um título que identifique o documento sem depender do nome original do arquivo, especialmente quando houver versões ou documentos parecidos.
+4. Confira **Adicionar a coleção** e arraste o arquivo ou escolha-o do computador. Isso inicia o envio imediatamente.
+
+![[imagens/capturas-wagtail/W09a-adicionar-documentos.png|Tela de envio de documentos]]
+
+*Homologação IFMG, 20/10/2026: confira o destino antes de escolher o arquivo no computador ou arrastá-lo para a área de envio.*
+
+5. Após o envio, preencha o título planejado, confirme a coleção e acrescente tags que ajudem na busca.
+6. Depois do envio, revise os dados e clique em **Atualizar**.
+7. Volte à página e selecione o documento no bloco ou campo correspondente.
+
+
 
 ## Preencher título, coleção e tags
 
 Preencha esses campos antes de salvar. Eles definem como a equipe encontra o documento e em que páginas ele pode aparecer.
 
-![[imagens/manual-ifrn/preenchimento-de-documento-colecao-tags.png|Preenchimento do título, da coleção e das tags de um documento]]
+![[imagens/capturas-wagtail/W09b-documento-titulo-colecao-tags.png|Cadastro após envio, com Título, Coleção, Tags e Atualizar]]
+
+*Homologação IFMG, 20/10/2026: o título automático mostrado ainda precisa ser revisado; use o padrão abaixo antes de Atualizar.*
+
 
 *Observe que o título explica o documento, a coleção informa onde ele pertence e as tags ajudam a encontrá-lo depois.*
 
@@ -45,7 +59,7 @@ O título do documento não é o mesmo texto do botão em uma página. Em um CTA
 
 ### Escolha a coleção correta
 
-Escolha a coleção pela finalidade do documento, não pela facilidade de encontrá-la no menu. Por exemplo, um horário de aula do Campus Ouro Branco deve ficar em `U_Ouro Branco → Agenda acadêmica → Horários de aula`.
+Escolha a coleção pela finalidade do documento, não pela facilidade de encontrá-la no menu. Use um destino existente confirmado pela área; não presuma que uma hierarquia ilustrativa já esteja cadastrada.
 
 Se não houver uma coleção adequada, procure primeiro se há outra coleção com documentos do mesmo tipo. **Editores não criam coleções:** solicite a criação a um administrador, explicando o objetivo, o público atendido e quais documentos entrarão nela. Uma coleção nova só deve ser criada quando atender um conjunto recorrente de documentos, não um arquivo isolado.
 
@@ -83,7 +97,12 @@ O objetivo é que uma pessoa encontre uma única versão vigente para cada neces
 
 1. Busque o documento pelo título e abra o registro existente.
 2. Antes de substituir o arquivo, confirme que a nova versão deve valer em todas as páginas onde o documento aparece.
-3. Substitua o arquivo associado, mantenha o título atualizado e salve.
+3. Em **Alterar documento**, escolha a nova versão no computador. Revise título e tags, confira a coleção e clique em **Salvar**.
+
+![[imagens/capturas-wagtail/W13-editar-substituir-documento.png|Edição com arquivo atual e Alterar documento]]
+
+*Homologação IFMG, 20/10/2026: identificação removida por recorte; Arquivo mostra a versão atual e Alterar documento seleciona sua substituta.*
+
 4. Abra a página pública ou a pré-visualização para conferir se o download disponibiliza a versão esperada.
 
 > [!attention] Um arquivo, vários usos

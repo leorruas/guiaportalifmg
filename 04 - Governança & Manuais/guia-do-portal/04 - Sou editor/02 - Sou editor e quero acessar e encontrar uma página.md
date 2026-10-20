@@ -31,8 +31,18 @@ Para conferir os estados e o próximo responsável, consulte [[04 - Governança 
 
 ## Encontrar uma página
 
-1. Abra **Páginas** na barra lateral para navegar pela estrutura do site.
-2. Use o nome da página, as setas e o caminho de navegação para chegar à seção correta.
+1. Clique em **Páginas** para abrir o menu lateral e use a **seta de Home** para expandir a árvore.
+
+![[imagens/capturas-wagtail/W01a-arvore-paginas-home.png|Menu Páginas com Home expandida]]
+
+*Homologação IFMG, 20/10/2026: a seta expande a árvore; o nome ou pasta abre a listagem de subpáginas, enquanto o lápis edita a própria página.*
+
+2. Clique no **nome ou pasta Institucional** para abrir suas subpáginas na área principal.
+
+![[imagens/capturas-wagtail/W01b-lista-institucional.png|Listagem de Institucional com + junto ao título]]
+
+*Homologação IFMG, 20/10/2026: confira a página-pai no título. O + ao lado de Institucional cria uma subpágina nesse local.*
+
 3. Use **Busca** na barra lateral quando souber parte do nome da página.
 4. Abra a edição somente se a página estiver dentro do escopo do seu grupo.
 

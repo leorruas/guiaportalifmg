@@ -15,7 +15,12 @@ Confirme especialmente fonte, vigência, links, documentos, imagens, acessibilid
 
 1. Salve a página.
 2. Use **Pré-visualizar** para uma última conferência.
-3. No menu inferior da página, escolha **Enviar para moderação**.
+3. No final da edição, abra a **seta junto a Salvar rascunho** e escolha **Enviar para Moderators approval**, rótulo de envio para moderação observado na homologação.
+
+![[imagens/capturas-wagtail/W06-salvar-enviar-moderacao.png|Menu de Salvar rascunho com envio para moderação]]
+
+*Homologação IFMG, 20/10/2026: Publicar depende de permissão; Despublicar aparece quando a página já está publicada. O menu mostrado não representa necessariamente todas as opções de um Editor.*
+
 4. Confirme no estado da página que ela deixou o rascunho e passou a aguardar revisão.
 
 ![[imagens/manual-ifrn/image14.png|Exemplo de estado de uma página no fluxo de moderação]]

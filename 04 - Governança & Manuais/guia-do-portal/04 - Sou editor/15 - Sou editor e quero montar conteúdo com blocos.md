@@ -11,11 +11,18 @@ Blocos são peças da página: cada peça resolve uma necessidade de leitura. Um
 1. Abra a página em edição e localize a aba **Conteúdo**.
 2. Clique em **+** acima ou abaixo do ponto em que a nova informação deve aparecer.
 
-![[imagens/manual-ifrn/image33.png|Aba Conteúdo e seletor de blocos]]
+![[imagens/capturas-wagtail/W03a-conteudo-adicionar-bloco.png|Botão + na seção Conteúdo]]
+
+*Homologação IFMG, 20/10/2026: o + indica onde inserir um bloco; a lista ainda está fechada.*
+
+![[imagens/capturas-wagtail/W03b-seletor-controles-blocos.png|Lista de blocos aberta e controles de movimentação]]
+
+*Homologação IFMG, 20/10/2026: escolha o bloco na lista. Na linha do bloco existente, as setas e a alça de pontos movem; duas folhas duplicam e a lixeira exclui.*
+
 
 3. Escolha o tipo de bloco e preencha seus campos.
-4. Use as setas para alterar a posição do bloco quando a ordem de leitura precisar mudar.
-5. Duplique um bloco somente quando a estrutura realmente puder ser reaproveitada; revise o conteúdo copiado antes de salvar.
+4. Arraste pela **alça de pontos** ou use as **setas** para mudar a posição do bloco.
+5. Use o **ícone de duas folhas** para duplicar um bloco somente quando a estrutura realmente puder ser reaproveitada; revise o conteúdo copiado antes de salvar.
 6. Use a lixeira para remover um bloco somente depois de confirmar que a informação não é necessária em outro ponto da página.
 7. Pré-visualize sempre que combinar ou reorganizar blocos.
 

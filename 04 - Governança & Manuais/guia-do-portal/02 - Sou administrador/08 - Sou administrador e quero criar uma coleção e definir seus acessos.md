@@ -18,16 +18,19 @@ Não crie uma coleção nova para resolver um único arquivo urgente quando uma 
 
 ### Coleções de imagens de notícias por campus
 
-Crie uma coleção própria para as imagens de notícias de cada campus, com o nome **[Nome do campus] • Notícias**. Prefira organizar os arquivos em subcoleções por ano, como **Arcos • Notícias > 2027**: a coleção-pai é **Arcos • Notícias**, e **2027** é uma coleção criada dentro dela. Essa divisão facilita encontrar imagens de notícias de cada período.
+Use a coleção existente do campus e organize os arquivos de notícias em subcoleções por ano. O caminho confirmado de Ouro Branco é **Coleção → U_01 Ouro Branco → Notícias_OuroBranco → 2026**; a coleção geral **Notícias** também possui anos. Não renomeie coleções existentes para adequá-las a um exemplo. Essa divisão facilita encontrar imagens e documentos de cada período.
 
 Antes de criar, confira se a coleção do campus já existe e se basta acrescentar a subcoleção do ano. Se o nome de uma coleção existente precisar mudar para seguir esse padrão, observe o cuidado sobre renomeação descrito abaixo.
 
 ## Criar a coleção
 
 1. Acesse **Configurações** > **Coleções**.
-2. Clique em **Adicionar uma coleção**.
+2. Na coleção-pai autorizada, use **Sub-coleção** para iniciar a criação nesse destino.
 
-![[imagens/manual-ifrn/image26.png|Ação para criar uma coleção]]
+![[imagens/capturas-wagtail/W08c-estrutura-atual-colecoes.png|Estrutura com ação Sub-coleção]]
+
+*Homologação IFMG, 20/10/2026: confira a coleção-pai antes de criar um novo nível; Documento e Imagem são ações distintas.*
+
 
 3. Dê um nome claro.
 4. Quando necessário, escolha a coleção-pai para posicionar a nova coleção na hierarquia.

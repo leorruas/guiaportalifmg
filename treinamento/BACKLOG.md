@@ -15,6 +15,14 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Integração ao guia e conclusão das capturas nos slides — 20/10/2026
+
+- [x] Atualizar dez artigos canônicos com capturas reais junto aos passos: páginas/tipos, blocos, Promover, prévia, envio, documentos, imagens, coleções e estrutura administrativa. Preservar versões anonimizadas e imagens externas onde não há substituta real.
+- [x] Integrar W01/W02 em `editor-papel` e disponibilizar capturas antes restritas ao roteiro nos slides correspondentes, por botões de ampliação com rótulos de ação. Mantidas 42 telas e prática separada.
+- [x] Alinhar padrão de coleções de notícias à estrutura confirmada de Ouro Branco, sem recomendar renomeação para seguir exemplo antigo.
+- [x] Consolidar quadro de destinos no checklist, distinguindo guia, imagem principal do slide e captura complementar.
+- [ ] Pendências reais de captação continuam abertas, incluindo bloco Coleção W11 e demais telas ainda não recebidas; não substituir por imagens de outra tarefa.
+
 ## Editar imagem e área focal — 20/10/2026
 
 - [x] Incorporar duas capturas com identificação do remetente removida por cobertura opaca; imagens no roteiro e orientação textual em `editor-imagens`.
@@ -85,7 +93,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 - [x] Revisar visualmente os três anexos W01/W02: somente menus, tipos e títulos institucionais, sem dados pessoais ou credenciais identificados. Incorporação autorizada pelo responsável nesta solicitação.
 - [x] Preservar os PNGs originais, sem redimensionamento ou recompressão, em `imagens/capturas-wagtail/` e contextualizar os três no roteiro do apresentador.
-- [ ] Adaptar a composição do slide `editor-papel` para as novas capturas e validar em navegador/projeção. O slide ainda usa a referência externa, identificada como tal.
+- [x] Integrar W01/W02 a `editor-papel`: tipo real e capturas complementares de árvore e página-pai, sem aumentar o número de telas. Teste de projeção continua validação presencial.
 
 ## Roteiro visual independente de novas capturas — rodada aplicada
 

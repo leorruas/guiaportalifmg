@@ -14,7 +14,12 @@ Faça estas perguntas:
 4. Onde o público procuraria essa informação?
 5. Seu perfil pode criar esse tipo nessa parte do portal?
 
-![[imagens/manual-ifrn/image21.png|Lista de tipos disponíveis ao adicionar uma subpágina]]
+Na listagem da página-pai, clique no **+ junto ao título**. Em Institucional, a tela observada oferece **Campus, Colegiado, Curso, Link, Pasta de notícias, Programa, Projeto e Página**. Para uma página institucional comum, escolha **Página**. A lista depende do local e do perfil; estes oito tipos não são uma garantia para qualquer seção.
+
+![[imagens/capturas-wagtail/W02-tipo-pagina.png|Tipos disponíveis a partir de Institucional]]
+
+*Homologação IFMG, 20/10/2026: Página é a última opção; Link é um tipo de página, diferente dos blocos de links.*
+
 
 ## Verificar se a informação já vem do SUAP
 

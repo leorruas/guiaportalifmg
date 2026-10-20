@@ -14,7 +14,12 @@ Para criar ou alterar conteúdo, use:
 
 ![[imagens/manual-ifrn/image16.png|Status da página]]
 
-2. Use **Pré-visualizar** para conferir como a versão atual será apresentada.
+2. Clique no **ícone de celular no topo da edição** para abrir a pré-visualização, se o painel estiver recolhido.
+
+![[imagens/capturas-wagtail/W05b-previa-recolhida.png|Edição com prévia recolhida]]
+
+*Homologação IFMG, 20/10/2026: o ícone de celular na barra superior abre a prévia sem publicar a página.*
+
 
 Na pré-visualização, alterne entre os modos de **computador**, **tablet** e **celular** para conferir a página em diferentes larguras de tela. Eles ajudam a perceber problemas que podem passar despercebidos na tela em que você está editando.
 
@@ -24,7 +29,10 @@ Na pré-visualização, alterne entre os modos de **computador**, **tablet** e *
 
 Use os controles da prévia para mudar o modo e percorra a página inteira. Depois de corrigir um problema, confira novamente o trecho afetado.
 
-![[imagens/manual-ifrn/image36.png|Pré-visualização da página em diferentes dispositivos]]
+![[imagens/capturas-wagtail/W05a-previa-aberta-dispositivos.png|Prévia aberta com modos de dispositivo]]
+
+*Homologação IFMG, 20/10/2026: escolha celular, tablet ou computador. O ícone de abrir externamente mostra a prévia no navegador; ele não publica nem garante acesso sem autenticação.*
+
 
 3. Abra **Verificações** e resolva os problemas apontados antes de encaminhar a página.
 

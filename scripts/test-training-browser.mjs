@@ -9,7 +9,7 @@ const browserPath=['/usr/bin/google-chrome-stable','/usr/bin/google-chrome','/us
 assert.ok(browserPath,'Navegador Chromium não encontrado');
 const output=resolve(root,'qa-training');mkdirSync(output,{recursive:true});
 const browser=await chromium.launch({executablePath:browserPath,headless:true,args:['--no-sandbox','--allow-file-access-from-files']});
-const ids=['mapa-portal-anterior','mapa-reitoria','mapa-campi','caminho-tres-cliques','editor-papel','editor-adicionar-bloco','editor-links-exemplo','editor-colecao','editor-menus','editor-enviar','moderador-revisao','moderador-publicar','administrador-papel','administrador-acessos','administrador-estrutura','administrador-privacidade','administrador-colecoes'];
+const ids=['mapa-portal-anterior','mapa-reitoria','mapa-campi','caminho-tres-cliques','editor-papel','editor-arquivos','editor-imagens','editor-adicionar-bloco','editor-links-exemplo','editor-colecao','editor-menus','editor-enviar','moderador-revisao','moderador-publicar','administrador-papel','administrador-acessos','administrador-estrutura','administrador-privacidade','administrador-colecoes'];
 const url=pathToFileURL(resolve(root,'treinamento/index.html')).href;
 let n=0;
 try{
@@ -35,6 +35,18 @@ try{
    assert.ok(Math.abs(state.ratio-16/9)<.02,'Formato incorreto: '+id);
    assert.ok(state.x>=-1&&state.y>=-1&&state.right<=size[0]+1&&state.bottom<=size[1]+1,'Palco cortado: '+id);
    assert.ok(state.images.every(x=>x>0),'Imagem ausente: '+id);
+   if(size[0]===1440){
+    const count=await page.locator('#app [data-zoom-image]').count();
+    for(let i=0;i<count;i++){
+     const trigger=page.locator('#app [data-zoom-image]').nth(i);
+     const src=await trigger.getAttribute('data-zoom-image');
+     await trigger.click();
+     await page.waitForFunction(()=>document.querySelector('#imageZoomImage')?.naturalWidth>0);
+     assert.equal(await page.locator('#imageZoomImage').getAttribute('src'),src,'Captura complementar incorreta: '+id);
+     await page.keyboard.press('Escape');
+     assert.equal(await page.locator('#imageZoom').evaluate(el=>el.open),false,'Escape não fecha captura: '+id);
+    }
+   }
    if(size[0]===1440&&ids.includes(id)){await page.screenshot({path:resolve(output,id+'.png')});n++;}
   }
   if(size[0]===1440){

@@ -10,7 +10,12 @@
   const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const label=(value)=>'<span class="teach-label">'+escape(value)+'</span>';
   const card=(title,description,tag)=>'<div class="teach-card">'+label(tag)+'<h2>'+escape(title)+'</h2><p>'+escape(description)+'</p></div>';
-  const shot=(name,alt,source='REFERÊNCIA DO GUIA')=>'<figure class="teach-shot"><img src="../imagens/'+escape(name)+'" alt="'+escape(alt)+'"><figcaption><span>'+escape(source)+'</span><button type="button" class="capture-zoom" data-zoom-image="../imagens/'+escape(name)+'" data-zoom-alt="'+escape(alt)+'" aria-label="Ampliar captura de referência: '+escape(alt)+'">Ampliar captura <span aria-hidden="true">↗</span></button></figcaption></figure>';
+  const shot=(name,alt,source='REFERÊNCIA DO GUIA')=>'<figure class="teach-shot"><img src="../imagens/'+escape(name)+'" alt="'+escape(alt)+'"><figcaption><span>'+escape(source)+'</span><button type="button" class="capture-zoom" data-zoom-image="../imagens/'+escape(name)+'" data-zoom-alt="'+escape(alt)+'" aria-label="Ampliar captura de referência: '+escape(alt)+'">Ampliar captura <span aria-hidden="true">↗</span></button>'+relatedButtons(name)+'</figcaption></figure>';
+  const related={
+    'capturas-wagtail/W03b-seletor-controles-blocos.png':[['W03a-conteudo-adicionar-bloco','Antes do +']],
+    'manual-ifrn/image5.png':[['colecao-menu-ver-arquivos','Menu da coleção'],['colecao-documentos-filtrados','Ver Documentos'],['colecao-imagens-filtradas','Ver Imagens']]
+  };
+  const relatedButtons=name=>(related[name]||[]).map(([file,label])=>'<button type="button" class="capture-zoom" data-zoom-image="../imagens/capturas-wagtail/'+escape(file)+'.png" data-zoom-alt="Homologação IFMG: '+escape(label)+'" aria-label="Abrir captura complementar: '+escape(label)+'">'+escape(label)+' ↗</button>').join('');
   const row=(title,desc)=>'<div class="teach-row"><strong>'+escape(title)+'</strong><p>'+escape(desc)+'</p></div>';
   function slideBody(id){
     switch(id){

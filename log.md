@@ -1,5 +1,13 @@
 # Registro de mudanças
 
+## 2026-10-20 — Capturas reais no guia e na apresentação
+
+- Integradas as capturas revisadas em dez artigos canônicos: navegação/tipos de página, blocos, busca/menus, prévia, envio, documentos, imagens, coleções e estrutura administrativa. Imagens ficam junto à ação demonstrada; preservadas referências externas para telas ainda não recebidas.
+- Substituída a referência de tipos em `editor-papel` por W02 e adicionadas W01a/W01b como capturas complementares. Capturas antes apenas no roteiro agora abrem nos slides de arquivos, imagens, blocos e coleções pelo mesmo diálogo acessível, fechável por Esc.
+- Alinhada a orientação administrativa à organização anual de Notícias confirmada pelo responsável. Consolidado checklist por destino e mantidas pendências de captação reais, sem reabrir itens concluídos.
+- Validações aprovadas: 42 telas em três dimensões no navegador, abertura/fechamento de todas as capturas, inspeção visual dos slides alterados, 112 wikilinks/anexos alterados sem destino quebrado, índice de 61 artigos e 38 consultas de busca. Atualizadas versões dos módulos e espaçamento das legendas para manter botões dentro das figuras.
+
+
 ## 2026-10-20 — Edição de imagem e área focal
 
 - Incorporadas duas capturas do Campus Sabará com identificação de quem enviou removida por cobertura opaca, após inspeção visual; originais identificados não publicados.

@@ -7,6 +7,11 @@ Busca e menu resolvem problemas diferentes: a busca ajuda alguém que já sabe m
 ## Configurar a busca
 
 1. Abra a página em edição e selecione **Promover**.
+
+![[imagens/capturas-wagtail/W04-promover-metadados.png|Aba Promover com Slug, Tag de título, Meta descrição e Exibir nos menus]]
+
+*Homologação IFMG, 20/10/2026: a captura mostra os campos vazios e Exibir nos menus desmarcado; preencha e escolha a visibilidade conforme a finalidade da página.*
+
 2. Revise o **slug**, a parte final da URL. Use palavras compreensíveis, em letras minúsculas e separadas por hífens.
 3. Evite mudar o slug de uma página já publicada sem avaliar o impacto. Links existentes podem deixar de funcionar e, em alguns casos, será necessário tratar o redirecionamento.
 4. Preencha a **tag de título** com uma frase que descreva o assunto ou a tarefa da página.
