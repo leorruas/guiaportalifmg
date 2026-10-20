@@ -212,7 +212,13 @@ Em cada cartão, preencha:
 
 ### Galeria
 
-Use **Galeria** quando as imagens precisam ser vistas em conjunto, como o registro visual de um evento ou espaço do campus. Organize as fotos com legendas objetivas e confirme que todas possuem texto alternativo preenchido.
+Use **Galeria** quando as imagens precisam ser vistas em conjunto, como o registro visual de um evento, uma atividade do curso ou um espaço do campus.
+
+Para as **páginas de cursos**, selecione **Estilo: Com bordas**. Adicione as imagens relacionadas à experiência e confira o título de cada uma no cadastro de imagens do Wagtail: **esse título é usado como legenda na galeria**. Não procure um campo adicional de legenda no roteiro do curso nem copie uma legenda inventada. O título da imagem é um dado do acervo, diferente do nome do arquivo salvo no computador. Confira também o texto alternativo.
+
+Se as fotos da experiência ainda não estiverem disponíveis, utilize uma imagem provisória apenas para a montagem, sem apresentá-la como registro real. A coordenação do curso deve fornecer a foto correspondente e a imagem provisória deve ser substituída antes da publicação. Confira no modo de pré-visualização a apresentação das bordas, a sequência das fotos e as legendas.
+
+Para o procedimento completo no contexto do cadastro de cursos, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/05 - Sou editor e quero criar um curso|Criar um curso]]. Para corrigir o nome/legenda da foto, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem|Adicionar ou atualizar uma imagem]].
 
 ![[imagens/manual-ifrn/image17.png|Configuração de um bloco de galeria]]
 

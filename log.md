@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-20 — Galerias nas páginas de cursos
+
+- Atualizado o procedimento de criação de cursos com **Estilo: Com bordas**, orientação para imagens provisórias e exigência de substituição por fotografias fornecidas pela coordenação antes da publicação.
+- Esclarecido que a legenda exibida na galeria é o **título cadastrado da imagem no Wagtail**, e não um campo de legenda a copiar nem necessariamente o nome do arquivo local.
+- Alinhadas a referência de blocos e a tarefa de cadastro de imagens; registrada a regra no AGENTS e preservados os caminhos canônicos.
+
 ## 2026-10-20 — Primeiro acesso ao Wagtail com SUAP
 
 - Atualizado o procedimento de primeiro acesso para indicar o botão **Login com SUAP** e a diferença entre ele e os campos exclusivos a administradores de TI.

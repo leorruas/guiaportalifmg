@@ -17,6 +17,8 @@ Inclua **assunto + nome do curso, quando aplicável + campus + ano ou período**
 
 Escreva o **título no cadastro** com palavras separadas por espaços. Evite títulos como `aula_pratica_informatica_2027` ou `aula-pratica-informatica-2027`. A orientação se refere ao título preenchido no Wagtail; não exige renomear o arquivo no computador. Hífens que fazem parte da escrita normal e separadores entre informações, como nos exemplos, podem ser usados. O título ajuda a localizar a imagem; o texto alternativo deve descrever a informação relevante no contexto da página.
 
+**Nas galerias das páginas de cursos, esse título cadastrado será apresentado como legenda da foto.** Revise-o antes de incluir a imagem na galeria, sobretudo quando a foto ainda for provisória. A legenda não deve ser inventada para preencher uma lacuna: substitua a foto provisória pela imagem definitiva da atividade, enviada pela coordenação, antes da publicação.
+
 ![[imagens/manual-ifrn/image38.png|Adição de uma imagem à coleção escolhida]]
 
 5. Use a imagem na página pelo bloco ou campo adequado.

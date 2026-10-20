@@ -64,6 +64,13 @@
 - Os procedimentos canônicos de referência são `04 - Sou editor/05 - Sou editor e quero criar um curso.md` (preenchimento) e `02 - Sou administrador/09 - Sou administrador e quero configurar cadastros de processos e cursos.md` (criação e manutenção das opções). Os demais artigos remetem a eles sem duplicar a lista de eixos.
 - Não inventar campos do Wagtail, valores de listas locais, vínculos entre campi ou informações acadêmicas. Quando a semântica de uma opção não estiver comprovada, orientar validação com a área responsável.
 
+## Galerias nas páginas de cursos (20/10/2026)
+
+- No procedimento canônico de criação de cursos, indicar **Estilo: Com bordas** para cada bloco **Galeria**.
+- A **legenda é derivada do título cadastrado para a imagem no Wagtail**. Diferenciar o título do acervo do nome do arquivo local. O roteiro de cursos não traz campo independente de legenda a preencher; orientar a revisão do título no cadastro de imagens.
+- Quando faltarem as fotos reais de experiências, permitir imagem provisória somente para estruturar a página, nunca apresentá-la como registro da atividade. A coordenação deve fornecer a foto correta, substituída antes da publicação. Não inventar imagem, URL, legenda ou atribuição.
+- Manter coerência entre o artigo **Criar um curso**, a referência **Montar conteúdo com blocos**, a orientação de **Adicionar ou atualizar uma imagem** e o guia de cópia dos cursos.
+
 ## Nomes e títulos das tarefas
 
 - O título de uma tarefa deve explicar **o que a pessoa quer conseguir fazer**, em linguagem compreensível mesmo para quem não conhece o Wagtail.

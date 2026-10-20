@@ -6,8 +6,8 @@ A criação de páginas depende das permissões do seu grupo e do local da árvo
 
 ## Como fazer
 
-1. Em **Páginas**, abra o local autorizado para receber a página de curso.
-2. Clique em **Adicionar subpágina** e escolha **Curso**.
+1. No menu **Páginas**, localize **Cursos**. Clique **no nome da página Cursos** para abrir sua lista de subpáginas, e não no lápis, que abre a edição da página atual.
+2. Dentro de **Cursos**, clique no botão **+** no topo da lista e escolha o tipo de página **Curso**.
 3. Preencha os dados de identificação e classificação conforme os campos apresentados no formulário.
 4. Informe campi, forma de oferta, duração, carga horária e demais dados acadêmicos com base no cadastro e no PPC correspondente. Não generalize dados de um campus para os demais.
 5. Prepare os blocos de conteúdo: apresentação, formação, experiências acadêmicas, continuidade dos estudos, ingresso e atuação profissional, conforme o modelo da página.
@@ -48,12 +48,26 @@ Para **bacharelados e licenciaturas**, os catálogos tecnológicos não atribuem
 
 **Exemplo de leitura de dados:** “Técnico em Administração | Integrado ao ensino médio | Presencial | Gestão e Negócios” distingue nome, forma de articulação, formato de oferta e eixo.
 
+## Como configurar a galeria do curso
+
+As experiências acadêmicas descritas na página podem ter um bloco **Galeria** próprio. Mesmo quando as fotografias definitivas ainda não foram enviadas, é importante orientar a montagem do bloco sem inventar imagens nem legendas.
+
+1. Na aba **Conteúdo**, adicione o bloco **Galeria** no ponto correspondente à experiência descrita.
+2. No campo **Estilo**, selecione **Com bordas**.
+3. Escolha as fotografias dessa experiência na biblioteca de imagens. **Se as imagens definitivas ainda não estiverem disponíveis**, pode-se inserir uma imagem provisória apenas para montar a página. Ela deve ser substituída por uma foto da experiência, fornecida pela coordenação, **antes da publicação**. Não apresente uma foto provisória como registro verdadeiro da atividade.
+4. **A legenda exibida na galeria vem do título (nome) cadastrado para cada imagem no Wagtail.** Não há uma legenda independente para copiar do roteiro de cursos nesse preenchimento. Ao escolher uma imagem, confira o título dela; se estiver genérico ou incorreto, atualize o cadastro da imagem antes de usá-la. O título não é necessariamente o nome do arquivo no computador.
+5. Revise também o **texto alternativo** da imagem e pré-visualize a galeria para conferir bordas, fotos, ordem e legendas. Se a coordenação ainda não forneceu as fotos, mantenha essa substituição como pendência antes da aprovação.
+
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/12 - Sou editor e quero adicionar ou atualizar uma imagem|Cadastrar ou corrigir o título de uma imagem]]
+
 ## Antes de enviar para moderação
 
 - Confira nome, nível, tipo ou grau, classificação e modalidade nos documentos da oferta.
 - Verifique a distinção entre cursos **integrados, concomitantes, subsequentes e integrados à EJA**, quando aplicável.
 - Confira por campus turno, duração, carga horária, e-mail da coordenação e PPC vigente. Dados ausentes não devem ser inventados.
 - Verifique se o eixo tecnológico foi selecionado e se corresponde à referência do MEC ou à convenção editorial adotada pelo IFMG.
+- Nas galerias, confirme **Estilo: Com bordas**, títulos adequados das imagens (que serão usados como legendas), textos alternativos e substituição de eventuais fotos provisórias antes da publicação.
 - Confira como o curso aparece na pré-visualização e se o texto orienta a pessoa a encontrar informações reais de ingresso.
 
 **Como conferir:** a pessoa entende a formação, os campi, a organização do curso e as informações de ingresso. Os campos estão coerentes entre si, e a moderação pode verificar a origem dos dados.
