@@ -87,6 +87,14 @@ A captura da listagem de Imagens foi anonimizada por recorte inferior autorizado
 
 *Homologação IFMG: confira a coleção e arraste ou escolha o arquivo; isso inicia o carregamento imediatamente. Esta tela de envio permanece no roteiro após a listagem ocupar seu lugar no slide.*
 
+### Substituir um documento existente
+
+Localize o documento e abra sua edição. **Arquivo** mostra o arquivo atual. Em **Alterar documento**, escolha a nova versão no computador; revise o **Título** e as **Tags**, confirme a coleção e clique em **Salvar**. Esse percurso atualiza o registro existente, em vez de criar outro documento. Confira a versão resultante antes de encerrar.
+
+![Edição de documento com arquivo atual, Alterar documento, Título, Coleção, Tags e Salvar](../imagens/capturas-wagtail/W13-editar-substituir-documento.png)
+
+*Homologação IFMG: recorte do formulário sem a lateral com identificação do remetente. A captura mostra onde selecionar a nova versão; não foi realizada substituição para esta integração.*
+
 ### Cadastrar imagens com descrição para acessibilidade
 
 As capturas W10a (neste roteiro) e W10b (no slide `editor-imagens`) mostram o envio e o cadastro com **Título**, **Descrição**, **Coleção** e **Tags**. Confira a coleção antes de arrastar ou escolher o arquivo: o carregamento começa imediatamente. O título automático é apenas um ponto de partida e precisa ser substituído por um nome claro.

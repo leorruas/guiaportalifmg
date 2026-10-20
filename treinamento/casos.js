@@ -64,7 +64,7 @@
       screens:[
         {label:'01 / ESCOLHER O ARQUIVO',image:'capturas-wagtail/W09a-adicionar-documentos.png',alt:'Homologação IFMG: Adicionar documentos com área de arraste, escolha do computador e Adicionar a coleção.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'A coleção vem do destino escolhido; confira Adicionar a coleção antes do envio. Arraste o arquivo ou use Ou escolha do seu computador.'},
         {label:'02 / REVISAR O CADASTRO',image:'capturas-wagtail/W09b-documento-titulo-colecao-tags.png',alt:'Homologação IFMG: documento enviado com Título e Coleção obrigatórios, Tags e botões Atualizar e Remover.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Depois do envio, substitua o título automático por um nome claro, confirme Coleção, acrescente tags úteis e clique em Atualizar.'}
-      ],note:'Siga o manual: diga o que é o documento, público e período quando necessário; escreva por extenso e com espaços. Para documentos de curso: tipo + nome completo do curso + campus, com ano/versão quando disponível. O título automático mostrado na captura ainda precisa de revisão.'
+      ],note:'Siga o manual: diga o que é o documento, público e período quando necessário; escreva por extenso e com espaços. Para documentos de curso: tipo + nome completo do curso + campus, com ano/versão quando disponível. O título automático mostrado na captura ainda precisa de revisão. Para substituir um registro existente: abra sua edição → Alterar documento → escolha a nova versão → Salvar; revise título e tags. O roteiro mostra essa tela.'
     },
     'editor-imagens': {
       type:'dualScreen',title:'Dê um título e uma descrição acessível à imagem',lead:'O título ajuda a encontrar a imagem; a descrição permite compreender sua informação sem vê-la.',

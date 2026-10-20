@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Substituição de documento W13
+
+- Incorporado recorte do formulário de edição, removendo identificação lateral de quem enviou; original não publicado. Campos preservados sem redimensionamento e revisão visual concluída.
+- Documentados arquivo atual, Alterar documento, nova versão e Salvar, com edição de título/tags, conforme confirmação do responsável. Imagem no roteiro e orientação textual em `editor-arquivos`.
+- Concluída W13 no checklist e backlog; nenhuma substituição executada no portal. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Consultar arquivos pelo menu da coleção
 
 - Incorporados três PNGs originais, revisados sem dados pessoais ou restritos identificados, ao roteiro: menu Ver Documentos/Ver Imagens e respectivas listagens com filtro de coleção aplicado.
