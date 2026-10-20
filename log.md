@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Cadastro de imagens e descrição acessível
+
+- Incorporados W10a/W10b originais, revisados sem dados pessoais ou restritos identificados, ao slide `editor-imagens`. Documentados envio imediato e Título, Descrição, Coleção e Tags.
+- Referenciado o prompt existente para descrição de imagens no guia de apoio com IA, com contexto e revisão humana. Cadastro mostrado identificado como ainda não revisado.
+- Checklist distingue cadastro do acervo de listagem/filtros e das opções de inserção W14. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Cadastro real de documentos W09
 
 - Incorporados W09a/W09b originais, revisados sem dados pessoais ou restritos identificados, e inseridos em `editor-arquivos`; W07 preservada no roteiro.

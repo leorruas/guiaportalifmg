@@ -83,6 +83,12 @@ Como caminho preferido pelo responsável, quem tiver acesso pode abrir **Configu
 
 A captura de Imagens recebida em 20/10/2026 não foi publicada: contém identificação do usuário conectado. Busca, filtros, coleção e tags devem ser demonstrados com captura anonimizada; os campos de cadastro ainda precisam de evidência própria.
 
+### Cadastrar imagens com descrição para acessibilidade
+
+As capturas W10a/W10b, usadas em `editor-imagens`, mostram o envio e o cadastro com **Título**, **Descrição**, **Coleção** e **Tags**. Confira a coleção antes de arrastar ou escolher o arquivo: o carregamento começa imediatamente. O título automático é apenas um ponto de partida e precisa ser substituído por um nome claro.
+
+A **Descrição** comunica a informação da imagem para quem não consegue vê-la. Use o prompt já existente na seção **Para descrever uma imagem e avaliar se precisa de legenda** do [procedimento de apoio com IA](../04%20-%20Governança%20%26%20Manuais/guia-do-portal/00%20-%20Comece%20aqui/03%20-%20Como%20usar%20uma%20IA%20como%20apoio%20para%20trabalhar%20com%20este%20guia.md). Forneça a imagem e seu contexto, revise a proposta e não aceite detalhes inventados. Descrição e legenda têm funções diferentes; confira o texto alternativo no contexto em que a imagem será inserida. A captura mostra o aviso de descrição ausente, não um cadastro pronto para servir de modelo final.
+
 ### Cadastrar o documento após escolher a coleção
 
 A coleção é definida no percurso anterior e aparece no cadastro. Confira **Adicionar a coleção** antes de arrastar o arquivo ou usar **Ou escolha do seu computador**: a tela avisa que isso envia imediatamente. Após o envio, revise **Título**, confirme **Coleção**, acrescente **Tags** e use **Atualizar**. A captura mostra um título derivado do arquivo, ainda não adequado como exemplo final.

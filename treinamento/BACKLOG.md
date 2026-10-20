@@ -15,6 +15,12 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Cadastro de imagens e acessibilidade — 20/10/2026
+
+- [x] Incorporar W10a/W10b ao slide `editor-imagens`, preservando os PNGs originais e identificando homologação real.
+- [x] Explicar diferença entre título e descrição acessível e remeter ao prompt existente de descrição de imagens, com contexto e revisão humana. O título automático e a descrição vazia são estados anteriores à revisão.
+- [ ] W10 original (listagem/filtros) e W14 (inserção na página) continuam separados do cadastro documentado nesta rodada.
+
 ## Cadastro de documentos — 20/10/2026
 
 - [x] W09 concluída com duas capturas reais: escolher/enviar e revisar título, coleção e tags. Inseridas em `editor-arquivos`; W07 preservada no roteiro.

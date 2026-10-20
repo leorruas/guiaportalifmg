@@ -118,6 +118,12 @@ Este quadro distingue arquivo recebido, imagem no repositório, roteiro e slide 
 
 | W09a/W09b — envio e cadastro | PNGs originais incorporados sem recompressão | Procedimento e regra de título descritos | Ambas inseridas em `editor-arquivos`; W09 concluída |
 
+| W10a/W10b — envio e cadastro de imagens | PNGs originais incorporados sem recompressão; revisão sem dados pessoais ou restritos identificados | Referência ao prompt existente para descrição acessível | Ambas inseridas em `editor-imagens`; listagem/filtros originais de W10 permanecem pendentes |
+
+### Complemento de W10 — cadastro e acessibilidade
+
+Recebidas em 20/10/2026: [W10a — envio de imagens](../imagens/capturas-wagtail/W10a-adicionar-imagens.png), original `Screenshot 2026-10-20 at 13.19.12.png`; [W10b — título e descrição](../imagens/capturas-wagtail/W10b-imagem-titulo-descricao-tags.png), original `Screenshot 2026-10-20 at 13.19.32.png`. Mostram carregamento imediato, coleção, título, descrição para acessibilidade e tags. Captura inclui aviso de descrição ausente e título automático ainda não revisado. Prompt existente do guia referenciado no roteiro e no slide; revisão humana mantida. **Não concluir W14:** estas telas são de cadastro do acervo, não das opções de texto alternativo/formato/decorativa ao inserir imagem numa página. **W10 original continua pendente** quanto à listagem anonimizada e painel de filtros aberto; cadastro agora documentado.
+
 ## Eu consigo adiantar — sem depender de novas capturas
 
 - [x] **EU — Roteiro:** transformar a trilha Editor em demonstração contínua de uma **página institucional da Biblioteca**: árvore → Página → Conteúdo → blocos → Promover → prévia → enviar.

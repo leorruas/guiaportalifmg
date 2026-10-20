@@ -67,13 +67,11 @@
       ],note:'Siga o manual: diga o que é o documento, público e período quando necessário; escreva por extenso e com espaços. Para documentos de curso: tipo + nome completo do curso + campus, com ano/versão quando disponível. O título automático mostrado na captura ainda precisa de revisão.'
     },
     'editor-imagens': {
-      type:'screen',title:'Imagem publicada precisa de formato e descrição',lead:'O contexto determina a escolha de enquadramento e texto alternativo.',
-      image:'guias-contextuais/imagem-formatos-texto.png',alt:'Seleção de formato e opções de acessibilidade ao inserir imagem no texto do Wagtail.',
-      steps:[
-        ['FORMATO','Em páginas institucionais, escolha o formato pela função da imagem e confira o resultado na prévia.'],
-        ['DESCRIÇÃO','A imagem informativa exige texto alternativo; marque decorativa apenas se não acrescentar informação.'],
-        ['PRÉVIA','Confira corte e legibilidade em computador, tablet e celular.']
-      ],note:'Para localizar, use Imagens e a busca ou filtros. Para adicionar, quem tiver acesso pode começar por Configurações → Coleções → destino → Imagem. Título, texto alternativo e legenda têm funções diferentes.'
+      type:'dualScreen',title:'Dê um título e uma descrição acessível à imagem',lead:'O título ajuda a encontrar a imagem; a descrição permite compreender sua informação sem vê-la.',
+      screens:[
+        {label:'01 / ENVIAR A IMAGEM',image:'capturas-wagtail/W10a-adicionar-imagens.png',alt:'Homologação IFMG: Adicionar imagens com área de arraste, escolha do computador e coleção.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Confira a coleção escolhida. Arraste a imagem ou use Ou escolha do seu computador; isso inicia o carregamento imediatamente.'},
+        {label:'02 / TÍTULO E DESCRIÇÃO',image:'capturas-wagtail/W10b-imagem-titulo-descricao-tags.png',alt:'Homologação IFMG: cadastro de imagem com aviso de acessibilidade, Título, Descrição, Coleção e Tags.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Troque o título automático por um nome claro. Preencha Descrição com a informação relevante da imagem, confirme Coleção e acrescente tags úteis.'}
+      ],note:'Use o prompt de descrição de imagens em “Como usar uma IA como apoio para trabalhar com este guia”. Informe o contexto, revise o resultado e não invente informações. Descrição não é legenda; confira o texto alternativo e a prévia ao inserir a imagem na página. O cadastro mostrado ainda não foi revisado.'
     },
     'moderador-noticias': {
       type:'screen',title:'Jornalistas distribuem notícias entre pastas',lead:'Na trilha Moderador: Copiar, Alias e Linkar em outra pasta produzem resultados diferentes.',
