@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-20 — Botão de entrada para Alterar privacidade
+
+- Atualizado `administrador-privacidade` para mostrar botão Público com olho antes da janela de opções, lado a lado, com caminho de acesso e ampliação. Reutilizadas capturas de referência já presentes no guia, sem alegar nova homologação.
+- Mantidos avisos de alcance sobre subcoleções/Root e distinção entre privacidade de documentos e permissão de edição. W23 real continua pendente. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Carregamento da imagem da barra de edição
 
 - Investigada imagem ausente em `editor-texto`: PNG original íntegro e HTTP 200 na conferência; causa da falha relatada não determinada.

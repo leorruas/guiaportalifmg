@@ -15,6 +15,11 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Caminho para Alterar privacidade — 20/10/2026
+
+- [x] Mostrar lado a lado o botão Público com ícone de olho e a janela Alterar privacidade em `administrador-privacidade`, usando referências já existentes do guia.
+- [x] Explicitar Configurações → Coleções → menu da coleção → Editar coleção → Público; manter limites de permissão, alcance sobre subcoleções e distinção documentos/imagens. W23 real continua pendente.
+
 ## Carregamento da barra de texto — 20/10/2026
 
 - [x] Investigar falha relatada em `editor-texto`: arquivo original íntegro e disponível com HTTP 200 no momento da conferência; causa inicial não determinada.
