@@ -15,6 +15,12 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Editar imagem e área focal — 20/10/2026
+
+- [x] Incorporar duas capturas com identificação do remetente removida por cobertura opaca; imagens no roteiro e orientação textual em `editor-imagens`.
+- [x] Explicar edição de título, descrição e tags, troca de arquivo e seleção da área focal por arraste, com conferência na prévia. Coleção exibe seletor, sem confirmação de alteração nem generalização das permissões.
+- [ ] W14 de inserção na página continua distinta do formulário de edição do acervo.
+
 ## Substituir documento — 20/10/2026
 
 - [x] W13 recebida e anonimizada por recorte da identificação lateral; formulário preservado e inserido no roteiro. Orientação de Alterar documento → escolher versão → Salvar em `editor-arquivos`, incluindo revisão de título e tags.

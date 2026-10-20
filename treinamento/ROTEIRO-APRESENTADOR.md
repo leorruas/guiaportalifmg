@@ -87,6 +87,22 @@ A captura da listagem de Imagens foi anonimizada por recorte inferior autorizado
 
 *Homologação IFMG: confira a coleção e arraste ou escolha o arquivo; isso inicia o carregamento imediatamente. Esta tela de envio permanece no roteiro após a listagem ocupar seu lugar no slide.*
 
+### Editar imagem e definir a área focal
+
+Abra uma imagem existente para revisar **Título**, **Descrição** e **Tags**. O campo **Altere o arquivo de imagem** permite escolher outro arquivo para o registro; confira os dados e use **Salvar**. A tela também mostra **Coleção** com seta de seleção, mas não foi demonstrada uma mudança de coleção: confirme a ação disponível no seu perfil, sem presumir que o campo seja apenas informativo ou que todos possam alterá-lo.
+
+![Formulário de edição da imagem Campus Sabará, com arquivo, descrição, coleção e tags](../imagens/capturas-wagtail/imagem-editar-arquivo-descricao.png)
+
+*Homologação IFMG: identificação de quem enviou removida por cobertura opaca; restante do formulário preservado.*
+
+Em **Ponto focal (opcional)**, arraste uma caixa sobre a região mais importante da foto. Essa região orienta o enquadramento nos recortes que usam a área focal, por exemplo na imagem de destaque no topo da página. Salve e confira a prévia em diferentes tamanhos; a seleção não garante que toda a foto fique visível em qualquer formato.
+
+![Imagem Campus Sabará com retângulo de área focal selecionado sobre o prédio](../imagens/capturas-wagtail/imagem-area-focal.png)
+
+*Homologação IFMG: a caixa marca a região prioritária; **Remover área focal** limpa essa definição. Identificação de quem enviou removida por cobertura opaca.*
+
+Não confunda área focal com descrição acessível: uma orienta o enquadramento, a outra comunica a informação da imagem. Nenhum arquivo ou ajuste foi alterado no portal para incorporar estas capturas ao treinamento.
+
 ### Substituir um documento existente
 
 Localize o documento e abra sua edição. **Arquivo** mostra o arquivo atual. Em **Alterar documento**, escolha a nova versão no computador; revise o **Título** e as **Tags**, confirme a coleção e clique em **Salvar**. Esse percurso atualiza o registro existente, em vez de criar outro documento. Confira a versão resultante antes de encerrar.

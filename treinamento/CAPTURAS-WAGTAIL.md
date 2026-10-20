@@ -132,6 +132,12 @@ Originais recebidos: `Screenshot 2026-10-20 at 13.23.33.png` ([menu da coleção
 
 | W13 — substituir documento | Recorte anonimizado incorporado; original com identificação não publicado | Imagem após os passos de substituição | Orientação textual em `editor-arquivos`; imagem no roteiro |
 
+| Edição de imagem e área focal | Duas versões anonimizadas incorporadas; originais com identificação não publicados | Ambas inseridas junto aos passos de edição e área focal | Orientação textual em `editor-imagens`; W14 de inserção na página permanece distinta |
+
+### Editar/substituir imagem e definir área focal — 20/10/2026
+
+Originais `Screenshot 2026-10-20 at 13.26.46.png` e `Screenshot 2026-10-20 at 13.27.19.png`: [edição da imagem](../imagens/capturas-wagtail/imagem-editar-arquivo-descricao.png) e [área focal](../imagens/capturas-wagtail/imagem-area-focal.png). Publicadas somente versões com bloco de identificação de quem enviou coberto de forma opaca, revisadas visualmente. Campos visíveis: Título, Arquivo, Altere o arquivo de imagem, Descrição, Coleção, Tags e Salvar. **Coleção mostra seta de seleção**, mas alteração não foi demonstrada nem generalizada a todos os perfis. Arrastar caixa em Ponto focal define região importante; Remover área focal limpa a definição. Conferir resultado na prévia em diferentes tamanhos, especialmente no destaque do topo. Isso não comprova as opções de inserção de imagem na página previstas em W14; não concluir W14 por estas telas.
+
 ## Eu consigo adiantar — sem depender de novas capturas
 
 - [x] **EU — Roteiro:** transformar a trilha Editor em demonstração contínua de uma **página institucional da Biblioteca**: árvore → Página → Conteúdo → blocos → Promover → prévia → enviar.

@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Edição de imagem e área focal
+
+- Incorporadas duas capturas do Campus Sabará com identificação de quem enviou removida por cobertura opaca, após inspeção visual; originais identificados não publicados.
+- Imagens no roteiro e orientação em `editor-imagens`: edição do cadastro, troca de arquivo, área focal por arraste e conferência na prévia. Distinguida área focal de descrição acessível.
+- Campo Coleção registrado como seletor visível, sem alegar mudança comprovada ou permissões universais. W14 continua distinta. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Substituição de documento W13
 
 - Incorporado recorte do formulário de edição, removendo identificação lateral de quem enviou; original não publicado. Campos preservados sem redimensionamento e revisão visual concluída.
