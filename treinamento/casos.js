@@ -160,7 +160,7 @@
       screens:[
         {label:'01 / ABRIR AS OPÇÕES',image:'guias-contextuais/colecao-botao-privacidade.png',alt:'Referência do guia: botão Público com ícone de olho acima do nome da coleção.',description:'Na edição da coleção autorizada, clique no botão com ícone de olho e situação atual, como Público, acima do campo Nome.'},
         {label:'02 / ALTERAR PRIVACIDADE',image:'guias-contextuais/colecao-opcoes-privacidade.png',alt:'Referência do guia: janela Alterar privacidade dos documentos da coleção.',description:'A janela oferece Público, senha compartilhada, usuários logados ou grupos específicos. Escolha e salve somente quando houver autorização para mudar o acesso.'}
-      ],note:'Privacidade define quem vê documentos; permissões definem quem edita. Uma restrição alcança subcoleções; tornar Root privada pode restringir todos os documentos. Isso não protege imagens. Teste com e sem login. Capturas de referência do guia; interface atual ainda depende de W23.'
+      ],note:'Privacidade define quem vê documentos; permissões definem quem edita. Uma restrição alcança subcoleções; tornar Root privada pode restringir todos os documentos. Isso não protege imagens. Teste com e sem login. Capturas de referência do guia; confira a interface do seu ambiente.'
     },
     'administrador-estrutura': {
       type:'dualScreen',title:'Escolha a coleção pela unidade, finalidade e ano',lead:'A seta à direita abre as subcoleções; o caminho no topo mostra onde você está.',
