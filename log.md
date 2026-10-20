@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Consultar arquivos pelo menu da coleção
+
+- Incorporados três PNGs originais, revisados sem dados pessoais ou restritos identificados, ao roteiro: menu Ver Documentos/Ver Imagens e respectivas listagens com filtro de coleção aplicado.
+- Orientação de consulta inserida em `editor-colecao`, preservando a distinção entre acervo do painel e bloco de conteúdo. W11 permanece pendente de captura do bloco real.
+- Registrados resultados apenas do exemplo, sem inferir ausência em outros níveis. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Listagem de Imagens anonimizada e W10 concluída
 
 - Recortados 75 pixels inferiores da listagem conforme autorização do responsável, removendo identificação; preservados pixels restantes sem redimensionamento (1885 × 840). Original com identificação não publicado.

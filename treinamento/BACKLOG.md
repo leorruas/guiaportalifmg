@@ -15,6 +15,12 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Consultar o acervo de uma coleção — 20/10/2026
+
+- [x] Incorporar três capturas reais ao roteiro: menu de ações, Documentos filtrados e Imagens filtradas. Atualizar orientação textual em `editor-colecao`, distinguindo consulta do acervo do bloco inserido em página.
+- [x] Confirmar visualmente filtro de coleção aplicado nas duas listagens; exemplo tem zero documentos e uma imagem.
+- [ ] W11 permanece pendente: estas telas não mostram bloco Coleção, Recursivo, Mostrar imagens ou Mostrar documentos.
+
 ## Cadastro de imagens e acessibilidade — 20/10/2026
 
 - [x] Incorporar W10a/W10b ao slide `editor-imagens`, preservando os PNGs originais e identificando homologação real.

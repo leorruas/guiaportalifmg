@@ -61,7 +61,7 @@
         return '<div class="teach-split narrow">'+
           '<div class="teach-steps">'+label('DUAS AÇÕES DIFERENTES')+
           '<h2 class="teach-route">Guardar o arquivo <span>≠</span> mostrá-lo na página.</h2>'+
-          row('Documentos / Imagens','Use a coleção autorizada para armazenar e localizar o arquivo no painel.')+
+          row('Consultar o acervo','No menu da linha da coleção, junto a Sub-coleção, use Ver Documentos ou Ver Imagens. Confira o filtro da coleção na listagem.')+
           row('Bloco Coleção','Na página em edição, selecione quais arquivos já cadastrados serão exibidos.')+
           row('Recursivo','Ative somente quando precisar incluir arquivos de subcoleções da coleção escolhida.')+
           row('Mostrar arquivos','Escolha documentos, imagens ou ambos conforme a finalidade da página.')+

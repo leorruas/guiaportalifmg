@@ -103,6 +103,28 @@ Siga a regra do manual: título que explique documento, público e período quan
 
 *Referência real de acesso à listagem, preservada no roteiro; o slide agora apresenta a sequência de cadastro W09a/W09b.*
 
+### Ver os arquivos de uma coleção
+
+Na linha da coleção, abra a **seta do menu de ações junto a Sub-coleção**. Ela é diferente da seta à direita que entra no próximo nível. Escolha **Ver Documentos** ou **Ver Imagens**.
+
+![Menu da coleção com Editar coleção, Ver Documentos e Ver Imagens](../imagens/capturas-wagtail/colecao-menu-ver-arquivos.png)
+
+*Homologação IFMG: o menu de ações permite consultar os arquivos da coleção sem alterar sua estrutura.*
+
+Em **Ver Documentos**, confira o filtro **Coleção: Coleção**. Neste exemplo, a listagem informa que não foram adicionados documentos nessa coleção; isso não comprova ausência de documentos em outras coleções ou níveis.
+
+![Documentos filtrados pela coleção, sem documentos no resultado demonstrado](../imagens/capturas-wagtail/colecao-documentos-filtrados.png)
+
+*Homologação IFMG: o filtro identifica o destino consultado e a mensagem informa o resultado dessa consulta.*
+
+Em **Ver Imagens**, o mesmo filtro identifica a coleção consultada. Neste exemplo há uma correspondência, **FOX.png**. Use a busca dentro da listagem conforme necessário.
+
+![Imagens filtradas pela coleção com uma correspondência chamada FOX.png](../imagens/capturas-wagtail/colecao-imagens-filtradas.png)
+
+*Homologação IFMG: resultado da consulta de imagens da coleção demonstrada, sem presumir o conteúdo de outros destinos.*
+
+Esse procedimento consulta o acervo no painel. **W11 trata de outra tarefa:** inserir o bloco Coleção no conteúdo de uma página para exibir arquivos, com as opções Recursivo, Mostrar imagens e Mostrar documentos. As três capturas acima não mostram esse bloco.
+
 ### Encontrar arquivos de notícias de um campus
 
 A estrutura real de Ouro Branco confirma o caminho **Coleção → U_01 Ouro Branco → Notícias_OuroBranco → 2026**. Use a seta à direita para entrar no próximo nível e confira o caminho no topo. Não confunda esse destino com **Coleção → Notícias → 2026**, que pertence à coleção geral.
