@@ -20,9 +20,10 @@
           label('CAMINHO NO PAINEL')+
           '<h2 class="teach-route">Editar página <span>→</span> Conteúdo <span>→</span> <b>+</b></h2>'+
           row('Adicionar','Clique em + no ponto em que o conteúdo precisa entrar e escolha o tipo adequado.')+
-          row('Reordenar e revisar','Use as setas para mover. Duplique apenas o que puder reaproveitar. Confirme antes de usar a lixeira.')+
+          row('Mover','Arraste pela alça de pontos ou use as setas para mudar a posição do bloco.')+
+          row('Duplicar ou excluir','O ícone de duas folhas duplica o bloco; a lixeira exclui. Confira antes de excluir.')+
           row('Conferir','Pré-visualize depois de inserir ou mudar a ordem dos blocos.')+
-          '</div>'+shot('capturas-wagtail/W03a-conteudo-adicionar-bloco.png','Homologação IFMG: formulário Página, aba Conteúdo, com botão + para adicionar um bloco; seletor ainda fechado','HOMOLOGAÇÃO IFMG · 20/10/2026')+'</div>';
+          '</div>'+shot('capturas-wagtail/W03b-seletor-controles-blocos.png','Homologação IFMG: lista de blocos aberta e controles de setas, alça de arrastar, duplicar e lixeira no bloco','HOMOLOGAÇÃO IFMG · 20/10/2026')+'</div>';
       case 'editor-blocos':
         return '<div class="teach-grid three">'+
           card('Introdução','Apresenta de imediato o assunto da página.','APRESENTAR')+

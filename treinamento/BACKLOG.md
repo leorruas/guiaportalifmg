@@ -30,7 +30,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 - [x] Receber e revisar W03a, preservando o PNG original e usando-o no slide `editor-adicionar-bloco`, com identificação de homologação e ampliação disponível.
 - [x] Acrescentar ao checklist quadro por captura com destino e estado no repositório, roteiro e apresentação.
-- [ ] Receber complemento W03 com lista de blocos aberta; a captura atual mostra o botão + antes do clique.
+- [x] Receber complemento W03b com lista aberta e controles; inserido em `editor-adicionar-bloco`. W03 completa. Arrastar pela alça de pontos ou usar setas move; duas folhas duplica; lixeira exclui.
 
 ## Capturas reais de navegação — 20/10/2026
 

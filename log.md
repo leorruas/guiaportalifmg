@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — W03 completa: seletor e controles
+
+- Preservado o PNG original W03b, após revisão visual sem dados pessoais ou restritos identificados, e inserido no slide `editor-adicionar-bloco` no lugar de W03a.
+- Documentados mover por arraste na alça de pontos ou pelas setas, duplicar pelo ícone de duas folhas e excluir pela lixeira, conforme confirmação do responsável.
+- Concluída W03 no checklist e backlog, mantendo W03a como registro anterior ao clique. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Prévia aberta e recolhida na apresentação
 
 - Incorporados os PNGs originais W05a/W05b, após revisão visual sem dados pessoais ou restritos identificados, preservando os bytes.
