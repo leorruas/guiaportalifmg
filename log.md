@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-20 — Primeiro acesso ao Wagtail com SUAP
+
+- Atualizado o procedimento de primeiro acesso para indicar o botão **Login com SUAP** e a diferença entre ele e os campos exclusivos a administradores de TI.
+- Incluída captura do botão de autenticação enviada pelo responsável e explicada a mensagem **You do not have permission to access the admin.**, com orientação para solicitar liberação pelo painel a um administrador do Portal.
+- Registrada no AGENTS a distinção entre autenticação institucional, acesso ao Wagtail e permissões para páginas e coleções. A captura da mensagem de erro ainda não está disponível como arquivo no repositório; seu texto exato foi documentado.
+
 ## 2026-10-19 — Links do SUAP nos procedimentos do manual
 
 - Acrescentados os sete links de listagens integradas à API do SUAP no procedimento canônico de criação de links de redirecionamento, incluindo o filtro por campus, o limite de registros de terceirizados da Reitoria e a distinção entre homologação e produção.

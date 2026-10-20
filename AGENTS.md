@@ -41,6 +41,13 @@
 - Cada procedimento deve deixar explícitos o resultado esperado, o limite de permissão e o próximo passo quando a pessoa não puder concluir a ação sozinha.
 - Insira cada imagem imediatamente após o passo ou conceito que ela demonstra, com legenda que explique o que a pessoa deve observar. Não agrupe capturas em galeria, ao fim do artigo ou em seção separada quando elas puderem orientar uma ação específica no contexto.
 
+## Acesso ao painel Wagtail pelo SUAP
+
+- No procedimento de primeiro acesso, indicar explicitamente o botão **Login com SUAP** como caminho de autenticação de editores, moderadores e demais usuários comuns.
+- Os campos **Usuário** e **Password**, sob o aviso **Exclusivo para administradores de TI**, não são a entrada de usuários comuns e não devem ser recomendados para quem utiliza credenciais institucionais.
+- Se, após o SUAP, surgir a mensagem **You do not have permission to access the admin.**, orientar a pessoa a solicitar a liberação a um administrador do Portal pelo painel do Wagtail. Diferenciar autenticação no SUAP, acesso ao painel e permissões para páginas/coleções.
+- Manter a captura do botão imediatamente após o passo de clique, com legenda explicativa; não apresentar capturas simuladas como telas reais da homologação.
+
 ## Termos que não podem ser confundidos
 
 - **Link (tipo de página)** é uma entrada na árvore do Wagtail que possui uma rota no Portal e redireciona para outra URL. O procedimento canônico é `Criar um link de redirecionamento`.
