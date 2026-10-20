@@ -69,12 +69,12 @@
       case 'editor-menus':
         return '<div class="teach-dual">'+
           '<section class="teach-visual-example">'+label('01 / EXIBIR NOS MENUS')+
-          shot('guias-contextuais/exibir-nos-menus.png','Aba Promover de uma página do tipo Link, com Exibir nos menus')+
+          shot('capturas-wagtail/W04-promover-metadados.png','Homologação IFMG: aba Promover de Página com Slug, Tag de título, Meta descrição e Exibir nos menus','HOMOLOGAÇÃO IFMG · 20/10/2026')+
           '<p>Em <strong>Promover</strong>, a visibilidade no menu depende da configuração da página.</p></section>'+
           '<section class="teach-visual-example">'+label('02 / APRESENTAR AS FILHAS')+
           shot('guias-contextuais/exibicao-menu-interno.png','Opções de exibição do menu interno na página-pai')+
           '<p>Na página-pai, <strong>Lateral, Cards ou Links</strong> determinam a apresentação do menu interno.</p></section>'+
-          '</div><p class="teach-note">Uma configuração não substitui a outra: menu interno não é bloco Cards ou Links inserido no Conteúdo. A captura de Promover usa uma página do tipo Link como exemplo.</p>';
+          '</div><p class="teach-note">Uma configuração não substitui a outra: menu interno não é bloco Cards ou Links inserido no Conteúdo. A captura de Promover é do tipo Página na homologação; a imagem das opções do menu interno continua como referência do guia.</p>';
       case 'editor-enviar':
         return '<div class="teach-split narrow">'+
           '<div class="teach-steps">'+label('FLUXO DA PÁGINA DA BIBLIOTECA')+

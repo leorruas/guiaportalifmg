@@ -15,6 +15,11 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Promover — 20/10/2026
+
+- [x] Receber e revisar W04: campos vazios, sem dados pessoais ou restritos identificados; preservar PNG original e inserir no slide `editor-menus`, com legenda de homologação e ampliação.
+- [x] Manter W18 separada: a segunda captura do slide continua referência do guia, sem alegar que as opções do menu interno foram confirmadas por W04.
+
 ## Conteúdo e botão de inserir bloco — 20/10/2026
 
 - [x] Receber e revisar W03a, preservando o PNG original e usando-o no slide `editor-adicionar-bloco`, com identificação de homologação e ampliação disponível.

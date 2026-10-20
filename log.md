@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Promover real na apresentação
+
+- Incorporado o PNG original W04 após revisão visual do formulário vazio, sem dados pessoais ou restritos identificados, preservando seus bytes.
+- Substituída a referência externa de Promover no slide `editor-menus`; legenda identifica homologação IFMG, mantém ampliação e distingue a referência ainda usada para menu interno. Atualizado cache do módulo.
+- Checklist e backlog registram campos comprovados, destino efetivo no slide e distinção em relação a W18.
+
+
 ## 2026-10-20 — Confirmação de W03a
 
 - Confirmado o envio do commit `4d3bfb6` e registrado no quadro de destinos. O aviso da ampliação agora orienta conferir a origem na legenda, distinguindo homologação real de referências antigas.
