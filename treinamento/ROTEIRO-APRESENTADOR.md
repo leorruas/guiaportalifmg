@@ -73,6 +73,20 @@ A distribuição de notícias (Copiar, Alias e Linkar em outra pasta) é um **ex
 
 **Ao apresentar os slides de revisão:** a primeira captura indica onde o Moderador encontra as solicitações; a segunda mostra a pré-visualização. O Status é outra etapa, que responde quando o conteúdo fica público. Não fazer publicação real durante a exposição. A mudança de horários da Biblioteca é um exemplo didático, não uma atualização confirmada de um campus.
 
+### Encontrar arquivos de notícias de um campus
+
+A estrutura real de Ouro Branco confirma o caminho **Coleção → U_01 Ouro Branco → Notícias_OuroBranco → 2026**. Use a seta à direita para entrar no próximo nível e confira o caminho no topo. Não confunda esse destino com **Coleção → Notícias → 2026**, que pertence à coleção geral.
+
+![Coleções de Ouro Branco: Conselho Acadêmico, Notícias_OuroBranco, Projetos, Vida Acadêmica e Vida funcional](../imagens/capturas-wagtail/W08e-colecoes-ouro-branco.png)
+
+*Homologação IFMG, 20/10/2026: dentro de U_01 Ouro Branco, entre em Notícias_OuroBranco para localizar os arquivos de notícias do campus.*
+
+![Coleção Notícias_OuroBranco com subcoleção 2026](../imagens/capturas-wagtail/W08f-noticias-ouro-branco-ano.png)
+
+*Homologação IFMG, 20/10/2026: escolha o ano dentro da coleção de notícias do campus. A imagem comprova 2026; a continuidade por anos foi confirmada pelo responsável.*
+
+Essa é uma árvore de coleções de arquivos, diferente da árvore de páginas. O acesso e as ações disponíveis dependem das permissões. Se faltar o destino adequado, confirme com a administração antes de criar ou alterar coleções. A estrutura de outros campi precisa ser conferida no respectivo escopo.
+
 ## Administrador — configuração e limites
 
 Explicar que **permissão de página não concede permissão de coleção**. Configurar os grupos apenas para o escopo necessário. Não renomear coleções por conta própria nem tentar resolver erros excluindo/recriando; registrar e encaminhar à manutenção técnica.

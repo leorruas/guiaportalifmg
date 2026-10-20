@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Coleções de notícias de Ouro Branco
+
+- Incorporados W08e/W08f preservando PNGs originais, após revisão visual sem dados pessoais ou restritos identificados. Inseridas ambas no roteiro e descrito o caminho no slide administrativo existente.
+- Confirmado Coleção → U_01 Ouro Branco → Notícias_OuroBranco → 2026, distinguindo a coleção geral de notícias do escopo do campus. Não generalizada a estrutura aos demais campi.
+- Checklist e backlog distinguem imagens no roteiro, orientação no slide e seletor de inclusão ainda pendente. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Estrutura atual e Notícias por ano
 
 - Incorporados os PNGs originais W08c/W08d, após revisão visual sem dados pessoais ou restritos identificados, substituindo no slide `administrador-estrutura` as capturas anteriores, preservadas como histórico.

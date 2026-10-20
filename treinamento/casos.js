@@ -172,7 +172,7 @@
       type:'dualScreen',title:'Escolha a coleção pela unidade, finalidade e ano',lead:'A seta à direita abre as subcoleções; o caminho no topo mostra onde você está.',
       screens:[
         {label:'01 / UNIDADE E FINALIDADE',image:'capturas-wagtail/W08c-estrutura-atual-colecoes.png',alt:'Homologação IFMG: Coleção com U_01 Ouro Branco, cursos, servidores, 2026, Acesso à informação e Notícias.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Unidades usam número e nome, como U_01 Ouro Branco. Há destinos para cursos, servidores e acesso à informação. A coleção 2026 deste nível reúne arquivos institucionais, conforme orientação do responsável.'},
-        {label:'02 / NOTÍCIAS POR ANO',image:'capturas-wagtail/W08d-noticias-por-ano.png',alt:'Homologação IFMG: dentro da coleção Notícias, subcoleções 2026 e 2027.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Dentro de Notícias, escolha o ano dos arquivos, como 2026 ou 2027. Mantenha documentos e imagens organizados por ano para facilitar sua localização.'}
+        {label:'02 / NOTÍCIAS POR ANO',image:'capturas-wagtail/W08d-noticias-por-ano.png',alt:'Homologação IFMG: dentro da coleção Notícias, subcoleções 2026 e 2027.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Dentro de Notícias, escolha o ano, como 2026 ou 2027. No campus, o caminho confirmado é U_01 Ouro Branco → Notícias_OuroBranco → 2026; o roteiro mostra essas duas telas.'}
       ],note:'Coleção → 2026 (arquivos institucionais) e Coleção → Notícias → 2026 (arquivos de notícias) são destinos diferentes. Coleções guardam arquivos; a árvore de páginas organiza o conteúdo do portal. Use o destino autorizado e confirme com a administração quando faltar uma coleção adequada.'
     },
     'administrador-pratica': {
