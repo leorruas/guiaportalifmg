@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Menu de salvar e enviar na apresentação
+
+- Incorporado o PNG original W06 após revisão visual sem dados pessoais ou restritos identificados; preservados os bytes.
+- Atualizado `editor-enviar` com captura real, ampliação e abertura pela seta junto a Salvar rascunho. Registrado o rótulo Enviar para Moderators approval e a dependência de estado/permissão de Publicar e Despublicar, conforme confirmação do responsável.
+- Checklist e backlog distinguem W06 concluída de W20 ainda pendente. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — W03 completa: seletor e controles
 
 - Preservado o PNG original W03b, após revisão visual sem dados pessoais ou restritos identificados, e inserido no slide `editor-adicionar-bloco` no lugar de W03a.

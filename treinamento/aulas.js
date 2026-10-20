@@ -82,9 +82,10 @@
           '<h2 class="teach-route">Rascunho <span>→</span> revisão.</h2>'+
           row('Salvar','O rascunho mantém as alterações em edição.')+
           row('Pré-visualizar','Confira horários, contatos, links, imagens e a apresentação em telas menores.')+
-          row('Enviar','Selecione Enviar para moderação e confira o estado da página no fluxo.')+
-          '<p class="teach-note">Enviar não publica. Caso a opção não esteja disponível, confirme seu escopo e o fluxo com a equipe responsável.</p>'+
-          '</div>'+shot('manual-ifrn/image14.png','Referência do guia: estado de uma página no fluxo de moderação')+'</div>';
+          row('Abrir as ações','No final da página, clique na seta junto a Salvar rascunho para abrir o menu.')+
+          row('Enviar','Selecione Enviar para Moderators approval para encaminhar à moderação e confira o estado no fluxo.')+
+          '<p class="teach-note">Enviar não publica. Publicar exige permissão de publicação; sem ela, encaminhe à moderação. Despublicar aparece quando a página já está publicada. Se faltar uma ação necessária, confirme seu escopo com a equipe responsável.</p>'+
+          '</div>'+shot('capturas-wagtail/W06-salvar-enviar-moderacao.png','Homologação IFMG: menu junto a Salvar rascunho com Despublicar, Publicar e Enviar para Moderators approval','HOMOLOGAÇÃO IFMG · 20/10/2026')+'</div>';
       case 'moderador-devolver':
         return '<div class="teach-compare">'+
           '<div class="teach-bad"><span>COMENTÁRIO QUE NÃO AJUDA</span><blockquote>“Melhorar texto.”</blockquote><p>Não indica o ponto do problema nem o resultado esperado.</p></div>'+
