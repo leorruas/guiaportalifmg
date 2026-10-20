@@ -61,7 +61,7 @@
     },
     'editor-arquivos': {
       type:'screen',title:'Cadastre documentos com títulos que expliquem o arquivo',lead:'Título, coleção e tags ajudam a encontrar a versão vigente.',
-      image:'manual-ifrn/preenchimento-de-documento-colecao-tags.png',alt:'Campos de título, coleção e tags na tela de cadastro de documento no Wagtail.',
+      image:'capturas-wagtail/W07-lista-documentos-colecoes.png',source:'HOMOLOGAÇÃO IFMG · RECORTE SEM IDENTIFICAÇÃO',alt:'Homologação IFMG: listagem de Documentos com busca, botão de filtros, coluna Coleção e Adicionar um documento; faixa inferior removida para privacidade.',
       steps:[
         ['TÍTULO','Exemplo: “Regulamento de empréstimo da Biblioteca — [campus]”. Use o título real do documento vigente.'],
         ['COLEÇÃO','Escolha a coleção da finalidade do arquivo; um documento não justifica inventar uma coleção.'],
@@ -205,7 +205,7 @@
           '<span class="case-permission-icon" aria-hidden="true">✓</span><h2>'+html(s.heading)+'</h2><p>'+html(s.description)+'</p></section>').join('')+
           '<div class="case-permission-conclusion"><strong>DUAS PERMISSÕES, UMA TAREFA</strong><p>'+html(d.result)+'</p></div></div>'+note(d.note);
       case 'screen':
-        return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption><span>REFERÊNCIA DO GUIA</span>'+zoomButton(d.image,d.alt)+'</figcaption></figure>'+
+        return '<div class="case-screen"><figure class="case-shot"><img src="../imagens/'+html(d.image)+'" alt="'+html(d.alt)+'" loading="eager"><figcaption><span>'+html(d.source||'REFERÊNCIA DO GUIA')+'</span>'+zoomButton(d.image,d.alt)+'</figcaption></figure>'+
           '<div class="case-steps">'+d.steps.map(item=>'<section>'+kicker(item[0])+'<p>'+html(item[1])+'</p></section>').join('')+'</div></div>'+note(d.note);
       case 'scenario':
         return '<div class="case-scenario"><div class="case-prompt">'+kicker('SITUAÇÃO / EXEMPLO')+'<blockquote>'+html(d.scenario)+'</blockquote></div>'+

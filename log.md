@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — W07 com identificação removida
+
+- Recortados os 72 pixels inferiores da captura de Documentos, conforme solicitação do responsável, removendo a identificação do usuário. Preservados sem redimensionamento os pixels da área restante (1875 × 850), conferidos contra o original.
+- Publicado somente o recorte, inserido em `editor-arquivos` com legenda de origem/recorte e ampliação. Original com identificação mantido fora do repositório.
+- Concluída anonimização no checklist e backlog; painel de filtros aberto e formulário de cadastro permanecem evidências separadas. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Caminhos para localizar e adicionar arquivos
 
 - Registrada W10 recebida sem publicar a imagem, por conter identificação do usuário conectado.
