@@ -15,6 +15,12 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Cadastro de documentos — 20/10/2026
+
+- [x] W09 concluída com duas capturas reais: escolher/enviar e revisar título, coleção e tags. Inseridas em `editor-arquivos`; W07 preservada no roteiro.
+- [x] Explicar envio imediato ao arrastar/escolher, conferência da coleção e Atualizar após revisão. Título automático é exemplo ainda não revisado, não recomendação de nome.
+- [x] Vincular à regra existente do manual, sem inventar campus, curso ou tags do documento demonstrado.
+
 ## Localizar e adicionar arquivos — 20/10/2026
 
 - [x] Registrar busca e filtros de Imagens/Documentos e o caminho preferido pelo responsável: Configurações → Coleções → destino → Imagem/Documento, condicionado ao acesso do perfil. Orientação no roteiro e slides de arquivos/imagens.

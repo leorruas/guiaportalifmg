@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Cadastro real de documentos W09
+
+- Incorporados W09a/W09b originais, revisados sem dados pessoais ou restritos identificados, e inseridos em `editor-arquivos`; W07 preservada no roteiro.
+- Documentados envio imediato, coleção do destino e campos Título, Coleção e Tags, com Atualizar. Título automático identificado como pendente de revisão segundo regra existente do manual.
+- Concluída W09 no checklist e backlog; atualizado cache do módulo.
+
+
 ## 2026-10-20 — Correção do aceite de W08
 
 - Concluída W08 após reafirmação da sequência já fornecida pelo responsável: Documentos → lista → Adicionar um documento → Coleções → destino → Documento/Imagem.

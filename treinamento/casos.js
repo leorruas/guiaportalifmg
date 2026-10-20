@@ -60,13 +60,11 @@
       ]
     },
     'editor-arquivos': {
-      type:'screen',title:'Cadastre documentos com títulos que expliquem o arquivo',lead:'Título, coleção e tags ajudam a encontrar a versão vigente.',
-      image:'capturas-wagtail/W07-lista-documentos-colecoes.png',source:'HOMOLOGAÇÃO IFMG · RECORTE SEM IDENTIFICAÇÃO',alt:'Homologação IFMG: listagem de Documentos com busca, botão de filtros, coluna Coleção e Adicionar um documento; faixa inferior removida para privacidade.',
-      steps:[
-        ['TÍTULO','Exemplo: “Regulamento de empréstimo da Biblioteca — [campus]”. Use o título real do documento vigente.'],
-        ['COLEÇÃO','Escolha a coleção da finalidade do arquivo; um documento não justifica inventar uma coleção.'],
-        ['ATUALIZAR','Substitua o documento existente se a nova versão deve valer em todos os usos; crie outro se o anterior precisa permanecer disponível.']
-      ],note:'Localize por Documentos e busca ou filtros. Quem tiver acesso pode adicionar por Configurações → Coleções → destino → Documento. O título cadastrado é diferente do nome físico do PDF.'
+      type:'dualScreen',title:'Envie o arquivo e revise seu cadastro',lead:'Confira a coleção antes de escolher o arquivo: arrastar ou selecionar já inicia o envio.',
+      screens:[
+        {label:'01 / ESCOLHER O ARQUIVO',image:'capturas-wagtail/W09a-adicionar-documentos.png',alt:'Homologação IFMG: Adicionar documentos com área de arraste, escolha do computador e Adicionar a coleção.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'A coleção vem do destino escolhido; confira Adicionar a coleção antes do envio. Arraste o arquivo ou use Ou escolha do seu computador.'},
+        {label:'02 / REVISAR O CADASTRO',image:'capturas-wagtail/W09b-documento-titulo-colecao-tags.png',alt:'Homologação IFMG: documento enviado com Título e Coleção obrigatórios, Tags e botões Atualizar e Remover.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Depois do envio, substitua o título automático por um nome claro, confirme Coleção, acrescente tags úteis e clique em Atualizar.'}
+      ],note:'Siga o manual: diga o que é o documento, público e período quando necessário; escreva por extenso e com espaços. Para documentos de curso: tipo + nome completo do curso + campus, com ano/versão quando disponível. O título automático mostrado na captura ainda precisa de revisão.'
     },
     'editor-imagens': {
       type:'screen',title:'Imagem publicada precisa de formato e descrição',lead:'O contexto determina a escolha de enquadramento e texto alternativo.',

@@ -83,6 +83,16 @@ Como caminho preferido pelo responsável, quem tiver acesso pode abrir **Configu
 
 A captura de Imagens recebida em 20/10/2026 não foi publicada: contém identificação do usuário conectado. Busca, filtros, coleção e tags devem ser demonstrados com captura anonimizada; os campos de cadastro ainda precisam de evidência própria.
 
+### Cadastrar o documento após escolher a coleção
+
+A coleção é definida no percurso anterior e aparece no cadastro. Confira **Adicionar a coleção** antes de arrastar o arquivo ou usar **Ou escolha do seu computador**: a tela avisa que isso envia imediatamente. Após o envio, revise **Título**, confirme **Coleção**, acrescente **Tags** e use **Atualizar**. A captura mostra um título derivado do arquivo, ainda não adequado como exemplo final.
+
+Siga a regra do manual: título que explique documento, público e período quando necessário, por extenso e com espaços; para documentos de curso, **tipo + nome completo do curso + campus**, com ano/período/versão disponível. Consulte o [procedimento de adicionar ou atualizar documentos](../04%20-%20Governança%20%26%20Manuais/guia-do-portal/04%20-%20Sou%20editor/13%20-%20Sou%20editor%20e%20quero%20adicionar%20ou%20atualizar%20um%20documento.md) para exemplos e tags. As duas telas reais estão no slide de documentos.
+
+![Listagem de Documentos com identificação removida por recorte](../imagens/capturas-wagtail/W07-lista-documentos-colecoes.png)
+
+*Referência real de acesso à listagem, preservada no roteiro; o slide agora apresenta a sequência de cadastro W09a/W09b.*
+
 ### Encontrar arquivos de notícias de um campus
 
 A estrutura real de Ouro Branco confirma o caminho **Coleção → U_01 Ouro Branco → Notícias_OuroBranco → 2026**. Use a seta à direita para entrar no próximo nível e confira o caminho no topo. Não confunda esse destino com **Coleção → Notícias → 2026**, que pertence à coleção geral.
