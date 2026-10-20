@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Navegação real entre coleções
+
+- Incorporados dois PNGs originais de coleções e subcoleções, revisados sem dados pessoais ou restritos identificados, em `administrador-estrutura`, com ampliação e legenda de homologação.
+- Registrados seta de navegação, caminho Root → Coleção e botões Documento, Imagem e Sub-coleção. W22 atendida; W08 permanece parcial quanto ao seletor no formulário.
+- W07 recebida mas não publicada por conter identificação do usuário; não foi adicionada ao repositório. Estrutura de Notícias permanece em confirmação; nenhuma coleção foi alterada.
+
+
 ## 2026-10-20 — Menu de salvar e enviar na apresentação
 
 - Incorporado o PNG original W06 após revisão visual sem dados pessoais ou restritos identificados; preservados os bytes.

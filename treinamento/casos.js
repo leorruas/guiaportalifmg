@@ -169,13 +169,11 @@
       ]
     },
     'administrador-estrutura': {
-      type:'screen',title:'Coleção nova precisa de finalidade recorrente',lead:'Não altere a hierarquia para acomodar um único arquivo.',
-      image:'manual-ifrn/image26.png',alt:'Referência do guia: ação de adicionar coleção no Wagtail.',
-      steps:[
-        ['ANTES','Verifique se a coleção adequada já existe e atende ao mesmo tipo de arquivo.'],
-        ['ESTRUTURA','Confirme área responsável, finalidade, coleção-pai, nome e grupos que a usarão.'],
-        ['DISTINÇÃO','Coleções organizam imagens e documentos; páginas de notícias pertencem à árvore de páginas.']
-      ],note:'Criação é tarefa de Administrador. O cuidado com renomeações está no alerta específico do módulo.'
+      type:'dualScreen',title:'Navegue pela coleção antes de criar um destino',lead:'Use a seta à direita para abrir as subcoleções da coleção escolhida.',
+      screens:[
+        {label:'01 / COLEÇÃO-PAI',image:'capturas-wagtail/W08a-colecoes-raiz.png',alt:'Homologação IFMG: lista de coleções com seta de navegação e botões Documento, Imagem e Sub-coleção.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Na coleção autorizada, a seta à direita abre o próximo nível. Documento e Imagem iniciam a inclusão de arquivos; Sub-coleção permite criar um destino quando houver permissão.'},
+        {label:'02 / SUBCOLEÇÕES',image:'capturas-wagtail/W08b-subcolecoes.png',alt:'Homologação IFMG: subcoleções de Coleção, com campus, cursos, servidores e outras áreas.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'O caminho Root → Coleção indica o nível atual. Escolha o destino existente conforme área e finalidade; coleções de arquivos são diferentes da árvore de páginas.'}
+      ],note:'Estrutura observada em 20/10/2026, ainda em revisão. Os destinos de Notícias e documentos de notícias precisam de confirmação; não são um padrão definitivo. Não exclua, renomeie ou crie coleções para reproduzir este exemplo. Confirme com a administração o destino e as permissões.'
     },
     'administrador-pratica': {
       type:'scenario',title:'A configuração está pronta quando cada perfil consegue agir',lead:'Síntese do que deve funcionar antes de uma entrega editorial.',

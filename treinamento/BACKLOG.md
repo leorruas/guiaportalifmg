@@ -15,6 +15,13 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Coleções e Documentos — 20/10/2026
+
+- [x] Preservar e incorporar W08a/W08b em `administrador-estrutura`, como evidência também de W22: seta abre subcoleções, com ações Documento, Imagem e Sub-coleção.
+- [ ] Anonimizar W07 antes de publicar: listagem de Documentos mostra nome do usuário conectado. Original não incorporado ao repositório.
+- [ ] Confirmar seleção da coleção no formulário de inclusão de documento (W08 parcial) e receber estrutura interna dos campi.
+- [ ] Confirmar organização de Notícias, Notícias 2026 e Docs_Notícias 2026. Relato contém alternativas ainda em avaliação; não registrar exclusão como decisão concluída nem alterar coleções do portal.
+
 ## Salvar e enviar — 20/10/2026
 
 - [x] Receber e revisar W06; preservar PNG original e substituir a referência externa em `editor-enviar`, com legenda de homologação e ampliação.
