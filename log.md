@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — W03a na apresentação
+
+- Preservado o PNG original do formulário Página com botão + em `imagens/capturas-wagtail/W03a-conteudo-adicionar-bloco.png`, após revisão visual sem dados pessoais ou restritos identificados.
+- Inserida a captura real no slide `editor-adicionar-bloco`, com legenda de origem e ampliação; atualizado cache do módulo. A lista aberta de blocos ainda não foi recebida.
+- Checklist mantém W03 parcial e explicita, para W01a/W01b/W02/W03a, os destinos e estados no repositório, roteiro e slides.
+
+
 ## 2026-10-20 — Confirmação da incorporação W01/W02
 
 - Confirmado no GitHub o commit `dcbf0ff983fed76637acb4334c946e821c203061`, contendo os três PNGs originais. Atualizado o checklist existente para incorporação efetiva, preservando os demais itens e a pendência específica de adaptação do slide.

@@ -10,7 +10,7 @@
   const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const label=(value)=>'<span class="teach-label">'+escape(value)+'</span>';
   const card=(title,description,tag)=>'<div class="teach-card">'+label(tag)+'<h2>'+escape(title)+'</h2><p>'+escape(description)+'</p></div>';
-  const shot=(name,alt)=>'<figure class="teach-shot"><img src="../imagens/'+escape(name)+'" alt="'+escape(alt)+'"><figcaption><span>REFERÊNCIA DO GUIA</span><button type="button" class="capture-zoom" data-zoom-image="../imagens/'+escape(name)+'" data-zoom-alt="'+escape(alt)+'" aria-label="Ampliar captura de referência: '+escape(alt)+'">Ampliar captura <span aria-hidden="true">↗</span></button></figcaption></figure>';
+  const shot=(name,alt,source='REFERÊNCIA DO GUIA')=>'<figure class="teach-shot"><img src="../imagens/'+escape(name)+'" alt="'+escape(alt)+'"><figcaption><span>'+escape(source)+'</span><button type="button" class="capture-zoom" data-zoom-image="../imagens/'+escape(name)+'" data-zoom-alt="'+escape(alt)+'" aria-label="Ampliar captura de referência: '+escape(alt)+'">Ampliar captura <span aria-hidden="true">↗</span></button></figcaption></figure>';
   const row=(title,desc)=>'<div class="teach-row"><strong>'+escape(title)+'</strong><p>'+escape(desc)+'</p></div>';
   function slideBody(id){
     switch(id){
@@ -22,7 +22,7 @@
           row('Adicionar','Clique em + no ponto em que o conteúdo precisa entrar e escolha o tipo adequado.')+
           row('Reordenar e revisar','Use as setas para mover. Duplique apenas o que puder reaproveitar. Confirme antes de usar a lixeira.')+
           row('Conferir','Pré-visualize depois de inserir ou mudar a ordem dos blocos.')+
-          '</div>'+shot('manual-ifrn/image33.png','Seletor de blocos do Wagtail na aba Conteúdo')+'</div>';
+          '</div>'+shot('capturas-wagtail/W03a-conteudo-adicionar-bloco.png','Homologação IFMG: formulário Página, aba Conteúdo, com botão + para adicionar um bloco; seletor ainda fechado','HOMOLOGAÇÃO IFMG · 20/10/2026')+'</div>';
       case 'editor-blocos':
         return '<div class="teach-grid three">'+
           card('Introdução','Apresenta de imediato o assunto da página.','APRESENTAR')+

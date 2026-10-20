@@ -15,6 +15,12 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Conteúdo e botão de inserir bloco — 20/10/2026
+
+- [x] Receber e revisar W03a, preservando o PNG original e usando-o no slide `editor-adicionar-bloco`, com identificação de homologação e ampliação disponível.
+- [x] Acrescentar ao checklist quadro por captura com destino e estado no repositório, roteiro e apresentação.
+- [ ] Receber complemento W03 com lista de blocos aberta; a captura atual mostra o botão + antes do clique.
+
 ## Capturas reais de navegação — 20/10/2026
 
 - [x] Revisar visualmente os três anexos W01/W02: somente menus, tipos e títulos institucionais, sem dados pessoais ou credenciais identificados. Incorporação autorizada pelo responsável nesta solicitação.
