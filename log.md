@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-20 — Correção do aceite de W08
+
+- Concluída W08 após reafirmação da sequência já fornecida pelo responsável: Documentos → lista → Adicionar um documento → Coleções → destino → Documento/Imagem.
+- Removida exigência indevida de seletor de coleção dentro do formulário; a escolha ocorre na navegação anterior. W09 continua limitada à evidência dos campos de cadastro. Alinhados checklist, backlog e roteiro.
+
+
 ## 2026-10-20 — W07 com identificação removida
 
 - Recortados os 72 pixels inferiores da captura de Documentos, conforme solicitação do responsável, removendo a identificação do usuário. Preservados sem redimensionamento os pixels da área restante (1875 × 850), conferidos contra o original.

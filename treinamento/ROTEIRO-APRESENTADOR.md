@@ -77,7 +77,7 @@ A distribuição de notícias (Copiar, Alias e Linkar em outra pasta) é um **ex
 
 **Imagens** e **Documentos** mostram os arquivos acessíveis ao perfil. Use a busca ou o botão de filtros para localizar o que já existe. O responsável confirmou filtros por **coleção** e **tag**; a captura recebida mostra o botão, mas não o painel de filtros aberto.
 
-Para incluir um arquivo, **Adicionar uma imagem** ou **Adicionar um documento** leva às coleções, conforme demonstração relatada pelo responsável. Escolha o destino adequado antes do cadastro.
+Para incluir um arquivo, **Adicionar uma imagem** ou **Adicionar um documento** leva às coleções, conforme demonstração relatada pelo responsável. Na tela de coleções, navegue até o destino adequado e clique em **Documento** ou **Imagem** nessa coleção para iniciar o cadastro. A escolha do destino ocorre nesse percurso; não depende de um seletor dentro do formulário.
 
 Como caminho preferido pelo responsável, quem tiver acesso pode abrir **Configurações → Coleções**, navegar até a coleção da unidade/finalidade/ano e usar **Imagem** ou **Documento** na própria linha. Isso permite começar pelo destino, evitando percorrer primeiro a listagem geral. Se Configurações ou a ação não estiver disponível, use o caminho permitido ao seu perfil ou confirme o acesso com a administração. Essa orientação não exige criar uma coleção nova.
 
