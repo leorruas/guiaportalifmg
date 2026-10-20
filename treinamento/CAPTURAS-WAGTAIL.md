@@ -88,7 +88,7 @@ Este quadro distingue arquivo recebido, imagem no repositório, roteiro e slide 
 | W01a — árvore Home | Confirmado no commit dcbf0ff | Inserida, etapa Localizar | Destino `editor-papel`; adaptação visual pendente |
 | W01b — Institucional e + | Confirmado no commit dcbf0ff | Inserida, etapa Localizar | Destino `editor-papel`; adaptação visual pendente |
 | W02 — tipos de página | Confirmado no commit dcbf0ff | Inserida, etapa Localizar | Destino `editor-papel`; ainda usa referência externa |
-| W03a — Conteúdo e + | Incorporada nesta rodada; confirmação remota registrada no commit | Explicação no slide | Inserida em `editor-adicionar-bloco`; lista aberta ainda pendente |
+| W03a — Conteúdo e + | Confirmado no [commit 4d3bfb6](https://github.com/leorruas/guiaportalifmg/commit/4d3bfb6) | Explicação no slide | Inserida em `editor-adicionar-bloco`; lista aberta ainda pendente |
 
 ## Eu consigo adiantar — sem depender de novas capturas
 

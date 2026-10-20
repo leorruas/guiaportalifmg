@@ -1,5 +1,9 @@
 # Registro de mudanças
 
+## 2026-10-20 — Confirmação de W03a
+
+- Confirmado o envio do commit `4d3bfb6` e registrado no quadro de destinos. O aviso da ampliação agora orienta conferir a origem na legenda, distinguindo homologação real de referências antigas.
+
 ## 2026-10-20 — W03a na apresentação
 
 - Preservado o PNG original do formulário Página com botão + em `imagens/capturas-wagtail/W03a-conteudo-adicionar-bloco.png`, após revisão visual sem dados pessoais ou restritos identificados.
