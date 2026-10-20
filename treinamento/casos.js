@@ -169,11 +169,11 @@
       ]
     },
     'administrador-estrutura': {
-      type:'dualScreen',title:'Navegue pela coleção antes de criar um destino',lead:'Use a seta à direita para abrir as subcoleções da coleção escolhida.',
+      type:'dualScreen',title:'Escolha a coleção pela unidade, finalidade e ano',lead:'A seta à direita abre as subcoleções; o caminho no topo mostra onde você está.',
       screens:[
-        {label:'01 / COLEÇÃO-PAI',image:'capturas-wagtail/W08a-colecoes-raiz.png',alt:'Homologação IFMG: lista de coleções com seta de navegação e botões Documento, Imagem e Sub-coleção.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Na coleção autorizada, a seta à direita abre o próximo nível. Documento e Imagem iniciam a inclusão de arquivos; Sub-coleção permite criar um destino quando houver permissão.'},
-        {label:'02 / SUBCOLEÇÕES',image:'capturas-wagtail/W08b-subcolecoes.png',alt:'Homologação IFMG: subcoleções de Coleção, com campus, cursos, servidores e outras áreas.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'O caminho Root → Coleção indica o nível atual. Escolha o destino existente conforme área e finalidade; coleções de arquivos são diferentes da árvore de páginas.'}
-      ],note:'Estrutura observada em 20/10/2026, ainda em revisão. Os destinos de Notícias e documentos de notícias precisam de confirmação; não são um padrão definitivo. Não exclua, renomeie ou crie coleções para reproduzir este exemplo. Confirme com a administração o destino e as permissões.'
+        {label:'01 / UNIDADE E FINALIDADE',image:'capturas-wagtail/W08c-estrutura-atual-colecoes.png',alt:'Homologação IFMG: Coleção com U_01 Ouro Branco, cursos, servidores, 2026, Acesso à informação e Notícias.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Unidades usam número e nome, como U_01 Ouro Branco. Há destinos para cursos, servidores e acesso à informação. A coleção 2026 deste nível reúne arquivos institucionais, conforme orientação do responsável.'},
+        {label:'02 / NOTÍCIAS POR ANO',image:'capturas-wagtail/W08d-noticias-por-ano.png',alt:'Homologação IFMG: dentro da coleção Notícias, subcoleções 2026 e 2027.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Dentro de Notícias, escolha o ano dos arquivos, como 2026 ou 2027. Mantenha documentos e imagens organizados por ano para facilitar sua localização.'}
+      ],note:'Coleção → 2026 (arquivos institucionais) e Coleção → Notícias → 2026 (arquivos de notícias) são destinos diferentes. Coleções guardam arquivos; a árvore de páginas organiza o conteúdo do portal. Use o destino autorizado e confirme com a administração quando faltar uma coleção adequada.'
     },
     'administrador-pratica': {
       type:'scenario',title:'A configuração está pronta quando cada perfil consegue agir',lead:'Síntese do que deve funcionar antes de uma entrega editorial.',

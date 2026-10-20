@@ -20,7 +20,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 - [x] Preservar e incorporar W08a/W08b em `administrador-estrutura`, como evidência também de W22: seta abre subcoleções, com ações Documento, Imagem e Sub-coleção.
 - [ ] Anonimizar W07 antes de publicar: listagem de Documentos mostra nome do usuário conectado. Original não incorporado ao repositório.
 - [ ] Confirmar seleção da coleção no formulário de inclusão de documento (W08 parcial) e receber estrutura interna dos campi.
-- [ ] Confirmar organização de Notícias, Notícias 2026 e Docs_Notícias 2026. Relato contém alternativas ainda em avaliação; não registrar exclusão como decisão concluída nem alterar coleções do portal.
+- [x] Organização atual confirmada pelo responsável e W08c/W08d: Notícias contém anos (2026 e 2027), com continuidade da separação anual de imagens/documentos. A coleção 2026 na raiz é destinada a arquivos institucionais e é distinta de Notícias → 2026. Substituídas as duas capturas do slide `administrador-estrutura`; originais anteriores preservados como histórico. Não foi executada exclusão no portal.
 
 ## Salvar e enviar — 20/10/2026
 

@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Estrutura atual e Notícias por ano
+
+- Incorporados os PNGs originais W08c/W08d, após revisão visual sem dados pessoais ou restritos identificados, substituindo no slide `administrador-estrutura` as capturas anteriores, preservadas como histórico.
+- Documentadas unidades por número/nome e áreas para cursos, servidores, arquivos institucionais e acesso à informação. Confirmada organização anual dentro de Notícias, distinguindo 2026 na raiz de Notícias → 2026.
+- Atualizados checklist, backlog e cache do módulo. W08 continua parcial quanto ao formulário de inclusão; nenhuma coleção do portal foi alterada.
+
+
 ## 2026-10-20 — Navegação real entre coleções
 
 - Incorporados dois PNGs originais de coleções e subcoleções, revisados sem dados pessoais ou restritos identificados, em `administrador-estrutura`, com ampliação e legenda de homologação.
