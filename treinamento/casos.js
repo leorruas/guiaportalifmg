@@ -95,13 +95,11 @@
       ],note:'Resolver um comentário não significa publicar. A próxima decisão continua com a moderação.'
     },
     'editor-pratica': {
-      type:'scenario',title:'A página da Biblioteca está pronta para revisão?',lead:'Síntese de uma página institucional de serviço.',
-      scenario:'Página da Biblioteca com horários, serviços, contatos e links úteis.',
-      steps:[
-        ['ENCONTRAR','A página está na seção correta e apresenta os serviços disponíveis.'],
-        ['COMPREENDER','Horários, contatos e instruções são claros e confirmados.'],
-        ['AGIR','Os links foram conferidos, a prévia foi revisada e a página foi enviada para moderação.']
-      ],note:'As atividades individuais permanecem na página separada de prática.'
+      type:'dualScreen',title:'Abra a prévia e confira em diferentes telas',lead:'O ícone de celular no topo abre o painel de pré-visualização.',
+      screens:[
+        {label:'01 / ABRIR A PRÉVIA',image:'capturas-wagtail/W05b-previa-recolhida.png',alt:'Homologação IFMG: edição de Institucional com prévia recolhida e ícone de celular no topo.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Se a prévia não estiver aparecendo, clique no ícone de celular na barra superior.'},
+        {label:'02 / CONFERIR AS TELAS',image:'capturas-wagtail/W05a-previa-aberta-dispositivos.png',alt:'Homologação IFMG: painel de prévia aberto com controles de celular, tablet, computador e abertura externa.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'No painel aberto, escolha celular, tablet ou computador. O ícone de abrir externamente permite conferir a prévia no navegador.'}
+      ],note:'As capturas mostram Institucional. No exemplo da Biblioteca, confirme horários, contatos e links antes de enviar para revisão. Abrir a prévia não publica a página; o link externo não garante acesso sem autenticação. As atividades individuais continuam na página de prática.'
     },
     'moderador-papel': {
       type:'cards',title:'Revisar conteúdo não é o mesmo que colocá-lo no ar',lead:'O moderador responde tanto pela decisão editorial quanto pela vigência.',
@@ -115,7 +113,7 @@
       type:'dualScreen',title:'A revisão começa na fila e continua na prévia',lead:'Receber uma solicitação e conferir o resultado são ações distintas.',
       screens:[
         {label:'01 / LOCALIZAR',image:'guias-contextuais/tela-inicial-fluxo-revisao.png',alt:'Referência do guia: fila de revisão no painel Wagtail.',description:'Identifique no painel o conteúdo que aguarda uma decisão editorial.'},
-        {label:'02 / CONFERIR',image:'manual-ifrn/image36.png',alt:'Referência do guia: pré-visualização da página no Wagtail.',description:'Abra a prévia; confira horários, documentos, links, leitura e próxima ação.'}
+        {label:'02 / CONFERIR',image:'capturas-wagtail/W05a-previa-aberta-dispositivos.png',alt:'Homologação IFMG: prévia de Institucional com modos celular, tablet e computador.',source:'HOMOLOGAÇÃO IFMG · 20/10/2026',description:'Clique no ícone de celular no topo para abrir a prévia. Confira celular, tablet e computador; o ícone externo abre no navegador.'}
       ],note:'No exemplo da Biblioteca, confirme as informações com a unidade. A fila depende das permissões do perfil.'
     },
     'moderador-publicar': {
@@ -202,7 +200,7 @@
         return '<div class="case-tiles">'+d.cards.map(item=>blockCard(...item)).join('')+'</div>'+note(d.note);
       case 'dualScreen':
         return '<div class="case-dual-screen">'+d.screens.map(s=>'<section class="case-dual-item">'+kicker(s.label)+
-          '<figure class="case-dual-shot"><img src="../imagens/'+html(s.image)+'" alt="'+html(s.alt)+'" loading="eager"><figcaption><span>REFERÊNCIA DO GUIA</span>'+zoomButton(s.image,s.alt)+'</figcaption></figure>'+
+          '<figure class="case-dual-shot"><img src="../imagens/'+html(s.image)+'" alt="'+html(s.alt)+'" loading="eager"><figcaption><span>'+html(s.source||'REFERÊNCIA DO GUIA')+'</span>'+zoomButton(s.image,s.alt)+'</figcaption></figure>'+
           '<p>'+html(s.description)+'</p></section>').join('')+'</div>'+note(d.note);
       case 'permission':
         return '<div class="case-permission">'+d.permissions.map(s=>'<section class="case-permission-path">'+kicker(s.label)+

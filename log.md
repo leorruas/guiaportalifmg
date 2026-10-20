@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — Prévia aberta e recolhida na apresentação
+
+- Incorporados os PNGs originais W05a/W05b, após revisão visual sem dados pessoais ou restritos identificados, preservando os bytes.
+- Atualizados os slides `editor-pratica` e `moderador-revisao` com capturas reais de Institucional, origem identificada e ampliação. Explicados ícone de celular, modos de dispositivo e abertura externa.
+- Mantidos 42 slides e a prática individual separada. Checklist e backlog distinguem o modo computador capturado dos controles disponíveis para outros dispositivos.
+
+
 ## 2026-10-20 — Promover real na apresentação
 
 - Incorporado o PNG original W04 após revisão visual do formulário vazio, sem dados pessoais ou restritos identificados, preservando seus bytes.

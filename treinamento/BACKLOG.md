@@ -15,6 +15,12 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Pré-visualização — 20/10/2026
+
+- [x] Preservar e revisar W05a/W05b, com painel aberto e recolhido, sem dados pessoais ou restritos identificados.
+- [x] Inserir ambas em `editor-pratica` e W05a em `moderador-revisao`, mantendo 42 telas, legendas de origem e ampliação. Explicar o ícone de celular que abre a prévia, os três modos e a abertura externa.
+- [x] Manter o caso Biblioteca como exemplo: as capturas reais mostram Institucional. Abertura externa não implica publicação nem acesso público sem autenticação.
+
 ## Promover — 20/10/2026
 
 - [x] Receber e revisar W04: campos vazios, sem dados pessoais ou restritos identificados; preservar PNG original e inserir no slide `editor-menus`, com legenda de homologação e ampliação.
