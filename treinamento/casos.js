@@ -52,7 +52,7 @@
     },
     'editor-texto': {
       type:'screen',title:'O editor de texto tem hierarquia, não só formatação',lead:'Use o controle de títulos para organizar seções; negrito não substitui H2 e H3.',
-      image:'guias-contextuais/barra-edicao-flutuante.png',alt:'Barra flutuante de edição de texto no Wagtail, com controles de formatação e fixação.',
+      image:'guias-contextuais/barra-edicao-texto.png',alt:'Barra flutuante de edição de texto no Wagtail, com controles de formatação e fixação.',
       steps:[
         ['BARRA','Selecione um trecho para mostrar as ferramentas; o alfinete fixa a barra no campo.'],
         ['H2','Use Título 2 nas principais partes, como Serviços e Atendimento.'],

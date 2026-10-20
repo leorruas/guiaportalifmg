@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-20 — Carregamento da imagem da barra de edição
+
+- Investigada imagem ausente em `editor-texto`: PNG original íntegro e HTTP 200 na conferência; causa da falha relatada não determinada.
+- Atualizado o slide para um novo endereço do mesmo PNG, com bytes preservados, evitando reutilizar a resposta anterior daquele endereço. Incrementado cache de `casos.js`; ampliação mantida.
+
+
 ## 2026-10-20 — W11 real: bloco Coleção e seletor
 
 - Incorporados três PNGs originais, revisados sem dados pessoais ou restritos identificados, na ordem de uso: bloco, seletor inicial e navegação até documentos de curso.
