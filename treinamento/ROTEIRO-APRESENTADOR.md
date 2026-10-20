@@ -147,7 +147,7 @@ Em **Ver Imagens**, o mesmo filtro identifica a coleção consultada. Neste exem
 
 *Homologação IFMG: resultado da consulta de imagens da coleção demonstrada, sem presumir o conteúdo de outros destinos.*
 
-Esse procedimento consulta o acervo no painel. **W11 trata de outra tarefa:** inserir o bloco Coleção no conteúdo de uma página para exibir arquivos, com as opções Recursivo, Mostrar imagens e Mostrar documentos. As três capturas acima não mostram esse bloco.
+Esse procedimento consulta o acervo no painel. **W11 trata de outra tarefa:** inserir o bloco Coleção no conteúdo de uma página para exibir arquivos, com as opções Recursivo, Mostrar imagens e Mostrar documentos. As três capturas acima não mostram esse bloco. Ele agora está documentado nas capturas W11a/W11b/W11c, usadas no slide `editor-colecao`: bloco → Escolher uma coleção → árvore até o curso. O exemplo segue Root → Coleção → U_01 Ouro Branco → Vida Acadêmica → 04 Documentos de curso → 01 Técnico em Administração. A lista capturada antecede a seleção; confira o destino de volta ao bloco.
 
 ### Encontrar arquivos de notícias de um campus
 

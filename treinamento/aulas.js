@@ -13,7 +13,7 @@
   const shot=(name,alt,source='REFERÊNCIA DO GUIA')=>'<figure class="teach-shot"><img src="../imagens/'+escape(name)+'" alt="'+escape(alt)+'"><figcaption><span>'+escape(source)+'</span><button type="button" class="capture-zoom" data-zoom-image="../imagens/'+escape(name)+'" data-zoom-alt="'+escape(alt)+'" aria-label="Ampliar captura de referência: '+escape(alt)+'">Ampliar captura <span aria-hidden="true">↗</span></button>'+relatedButtons(name)+'</figcaption></figure>';
   const related={
     'capturas-wagtail/W03b-seletor-controles-blocos.png':[['W03a-conteudo-adicionar-bloco','Antes do +']],
-    'manual-ifrn/image5.png':[['colecao-menu-ver-arquivos','Menu da coleção'],['colecao-documentos-filtrados','Ver Documentos'],['colecao-imagens-filtradas','Ver Imagens']]
+    'capturas-wagtail/W11a-bloco-colecao-opcoes.png':[['W11b-escolher-colecao-raiz','Abrir seletor'],['W11c-colecoes-documentos-curso','Escolher curso'],['colecao-menu-ver-arquivos','Menu da coleção'],['colecao-documentos-filtrados','Ver Documentos'],['colecao-imagens-filtradas','Ver Imagens']]
   };
   const relatedButtons=name=>(related[name]||[]).map(([file,label])=>'<button type="button" class="capture-zoom" data-zoom-image="../imagens/capturas-wagtail/'+escape(file)+'.png" data-zoom-alt="Homologação IFMG: '+escape(label)+'" aria-label="Abrir captura complementar: '+escape(label)+'">'+escape(label)+' ↗</button>').join('');
   const row=(title,desc)=>'<div class="teach-row"><strong>'+escape(title)+'</strong><p>'+escape(desc)+'</p></div>';
@@ -67,11 +67,11 @@
           '<div class="teach-steps">'+label('DUAS AÇÕES DIFERENTES')+
           '<h2 class="teach-route">Guardar o arquivo <span>≠</span> mostrá-lo na página.</h2>'+
           row('Consultar o acervo','No menu da linha da coleção, junto a Sub-coleção, use Ver Documentos ou Ver Imagens. Confira o filtro da coleção na listagem.')+
-          row('Bloco Coleção','Na página em edição, selecione quais arquivos já cadastrados serão exibidos.')+
+          row('Bloco Coleção','Conteúdo → + → Coleção → Escolher uma coleção. Navegue pela árvore até o destino autorizado; use Abrir seletor e Escolher curso para acompanhar.')+
           row('Recursivo','Ative somente quando precisar incluir arquivos de subcoleções da coleção escolhida.')+
           row('Mostrar arquivos','Escolha documentos, imagens ou ambos conforme a finalidade da página.')+
-          '</div>'+shot('manual-ifrn/image5.png','Configuração de referência do bloco Coleção no Wagtail')+'</div>'+
-          '<p class="teach-note">A coleção do painel não é a árvore de páginas. O bloco não cria, não renomeia e não altera permissões de uma coleção. Para mudar a estrutura, procure a equipe administradora.</p>';
+          '</div>'+shot('capturas-wagtail/W11a-bloco-colecao-opcoes.png','Homologação IFMG: bloco Coleção com seletor, Recursivo, Mostrar imagens, Mostrar documentos e ordenação por data de upload','HOMOLOGAÇÃO IFMG · 20/10/2026')+'</div>'+
+          '<p class="teach-note">A coleção do painel não é a árvore de páginas. O bloco não cria, não renomeia e não altera permissões de uma coleção. Ordenar por data de upload usa a data de envio, não a vigência do documento. Para mudar a estrutura, procure a equipe administradora.</p>';
       case 'editor-menus':
         return '<div class="teach-dual">'+
           '<section class="teach-visual-example">'+label('01 / EXIBIR NOS MENUS')+

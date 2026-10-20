@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-20 — W11 real: bloco Coleção e seletor
+
+- Incorporados três PNGs originais, revisados sem dados pessoais ou restritos identificados, na ordem de uso: bloco, seletor inicial e navegação até documentos de curso.
+- Substituída a referência externa no slide `editor-colecao` e nos dois artigos canônicos de blocos/coleções. Mantidas ampliação, consultas do acervo e distinção entre escolher uma coleção existente e criar sua estrutura.
+- Concluída W11 no checklist; documentadas opções reais e destino confirmado 01 Técnico em Administração, sem alegar seleção ou publicação comprovada pela captura da lista. Atualizado cache do módulo.
+
+
 ## 2026-10-20 — Capturas reais no guia e na apresentação
 
 - Integradas as capturas revisadas em dez artigos canônicos: navegação/tipos de página, blocos, busca/menus, prévia, envio, documentos, imagens, coleções e estrutura administrativa. Imagens ficam junto à ação demonstrada; preservadas referências externas para telas ainda não recebidas.

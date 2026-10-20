@@ -15,13 +15,18 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 **Critério de aceite:** toda demonstração que precisa de interface real está mapeada com origem, responsável, etapa e destino no slide, e nenhuma imagem de homologação é publicada sem revisão de privacidade/autorização.
 
+## Bloco Coleção real — 20/10/2026
+
+- [x] Preservar e revisar W11a/W11b/W11c; integrar aos artigos canônicos de blocos e coleções e ao slide `editor-colecao`, com ampliação.
+- [x] Explicar árvore até documentos de curso de Ouro Branco, opções independentes e ordenação pela data de envio. Não confundir escolha de coleção no bloco com criação de coleção no painel.
+
 ## Integração ao guia e conclusão das capturas nos slides — 20/10/2026
 
 - [x] Atualizar dez artigos canônicos com capturas reais junto aos passos: páginas/tipos, blocos, Promover, prévia, envio, documentos, imagens, coleções e estrutura administrativa. Preservar versões anonimizadas e imagens externas onde não há substituta real.
 - [x] Integrar W01/W02 em `editor-papel` e disponibilizar capturas antes restritas ao roteiro nos slides correspondentes, por botões de ampliação com rótulos de ação. Mantidas 42 telas e prática separada.
 - [x] Alinhar padrão de coleções de notícias à estrutura confirmada de Ouro Branco, sem recomendar renomeação para seguir exemplo antigo.
 - [x] Consolidar quadro de destinos no checklist, distinguindo guia, imagem principal do slide e captura complementar.
-- [ ] Pendências reais de captação continuam abertas, incluindo bloco Coleção W11 e demais telas ainda não recebidas; não substituir por imagens de outra tarefa.
+- [ ] Pendências reais de captação continuam abertas, incluindo comentários, inserção de imagem na página e demais telas ainda não recebidas; não substituir por imagens de outra tarefa.
 
 ## Editar imagem e área focal — 20/10/2026
 
@@ -38,7 +43,7 @@ Atualizado em 16/10/2026. Fonte principal de decisões e pendências da apresent
 
 - [x] Incorporar três capturas reais ao roteiro: menu de ações, Documentos filtrados e Imagens filtradas. Atualizar orientação textual em `editor-colecao`, distinguindo consulta do acervo do bloco inserido em página.
 - [x] Confirmar visualmente filtro de coleção aplicado nas duas listagens; exemplo tem zero documentos e uma imagem.
-- [ ] W11 permanece pendente: estas telas não mostram bloco Coleção, Recursivo, Mostrar imagens ou Mostrar documentos.
+- [x] W11 concluída posteriormente com W11a/W11b/W11c: bloco real e navegação do seletor até a coleção de curso, integrados ao guia e à apresentação.
 
 ## Cadastro de imagens e acessibilidade — 20/10/2026
 

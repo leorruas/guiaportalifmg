@@ -64,12 +64,28 @@ Confira o filtro de coleção aplicado no resultado. Uma listagem vazia correspo
 
 ## Usar uma coleção em uma página
 
-1. Na página em edição, adicione o bloco de coleção quando ele estiver disponível.
-2. Selecione a coleção que reúne os itens que devem aparecer.
-3. Marque a exibição de documentos e/ou imagens conforme a finalidade da página.
-4. Pré-visualize o resultado antes de enviar a página para moderação.
+1. Na página em edição, use **Conteúdo → + → Coleção**. Clique em **Escolher uma coleção** no bloco.
 
-![[imagens/manual-ifrn/image5.png|Configuração de um bloco de coleção em uma página]]
+![[imagens/capturas-wagtail/W11a-bloco-colecao-opcoes.png|Bloco Coleção com seletor e opções de exibição]]
+
+*Homologação IFMG, 20/10/2026: Recursivo, Mostrar imagens, Mostrar documentos e Ordenar documentos por data de upload são opções independentes; a captura mostra todas desmarcadas.*
+
+2. No seletor **Escolha uma coleção**, use a seta para entrar nos próximos níveis. O caminho no topo ajuda a conferir onde você está.
+
+![[imagens/capturas-wagtail/W11b-escolher-colecao-raiz.png|Seletor Escolha uma coleção no nível Root]]
+
+*Homologação IFMG, 20/10/2026: a seta na linha Coleção permite navegar para as subcoleções; abrir o seletor não cria uma coleção nova.*
+
+3. Navegue até o destino autorizado. No exemplo confirmado, siga **Root → Coleção → U_01 Ouro Branco → Vida Acadêmica → 04 Documentos de curso** e escolha **01 Técnico em Administração**.
+
+![[imagens/capturas-wagtail/W11c-colecoes-documentos-curso.png|Lista de coleções de documentos de curso de Ouro Branco]]
+
+*Homologação IFMG, 20/10/2026: a captura mostra o nível de documentos de curso antes da escolha de 01 Técnico em Administração; não demonstra ainda o resultado publicado.*
+
+4. De volta ao bloco, confira a coleção escolhida e marque os tipos de arquivo que devem aparecer. Ative **Recursivo** somente se quiser incluir subcoleções. Confira a ordenação e pré-visualize o resultado.
+
+
+Para entender cada opção e conferir o resultado, consulte [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos|Montar conteúdo com blocos]].
 
 ## Atualizar ou remover itens
 
