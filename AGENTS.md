@@ -41,6 +41,14 @@
 - Cada procedimento deve deixar explícitos o resultado esperado, o limite de permissão e o próximo passo quando a pessoa não puder concluir a ação sozinha.
 - Insira cada imagem imediatamente após o passo ou conceito que ela demonstra, com legenda que explique o que a pessoa deve observar. Não agrupe capturas em galeria, ao fim do artigo ou em seção separada quando elas puderem orientar uma ação específica no contexto.
 
+## Vídeos com legendas e transcrição
+
+- Insira vídeos diretamente após a instrução que demonstram, com um bloco Markdown do tipo `video` contendo `arquivo: videos/nome.mp4`, `titulo: descrição` e, quando disponível, `legenda: videos/nome.srt`. Consulte `videos/README.md` para o exemplo completo.
+- **SRT (`.srt`) é o formato canônico das legendas.** `video.js` converte o SRT para WebVTT somente na memória do navegador, habilita as legendas e mostra a transcrição com marcações de tempo clicáveis. Não exija outro formato de quem transcreve.
+- A referência `legenda` é opcional até o arquivo existir. Não invente falas, legendas, campos do Wagtail ou instruções inferidas somente pelo nome do vídeo.
+- Use MP4/WebM na pasta `videos/` e SRT em `videos/` ou `legendas/`. Evite autoplay, mantenha controles nativos e confira acessibilidade e tempo dos trechos.
+- Revise conteúdo restrito, dados pessoais e permissões antes de colocar mídia no repositório público. Para alterações no player, valide com `node scripts/test-videos.mjs` e `node --check video.js`, além dos demais testes aplicáveis.
+
 ## Acesso ao painel Wagtail pelo SUAP
 
 - No procedimento de primeiro acesso, indicar explicitamente o botão **Login com SUAP** como caminho de autenticação de editores, moderadores e demais usuários comuns.

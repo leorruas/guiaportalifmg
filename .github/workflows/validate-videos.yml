@@ -1,0 +1,31 @@
+name: Validar vídeos do guia
+
+on:
+  push:
+    paths:
+      - 'video.js'
+      - 'script.js'
+      - 'index.html'
+      - 'scripts/test-videos.mjs'
+      - 'videos/**/*.srt'
+      - '.github/workflows/validate-videos.yml'
+  pull_request:
+    paths:
+      - 'video.js'
+      - 'script.js'
+      - 'index.html'
+      - 'scripts/test-videos.mjs'
+      - 'videos/**/*.srt'
+      - '.github/workflows/validate-videos.yml'
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check video.js
+      - run: node --check script.js
+      - run: node scripts/test-videos.mjs

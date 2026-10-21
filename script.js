@@ -837,6 +837,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
     }
     
     // Filtra e remove o bloco de metadados/atributos (YAML Frontmatter --- ... ---)
+    window.GuiaVideos?.limpar();
     const markdownLimpo = removerFrontmatter(conteudoMarkdown);
 
     // O Obsidian usa ![[caminho|descrição]] para anexos locais. No site, a
@@ -863,6 +864,7 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
     // para manter links clicáveis também dentro de caixas de aviso.
     processarLinksObsidian();
     aprimorarImagensDoArtigo();
+    window.GuiaVideos?.renderizarVideosDoArtigo(artigoCorpo);
     aprimorarBlocosDePrompt();
     window.GuiaGrafoPortal?.renderizarSePresente(artigoCorpo);
 

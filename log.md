@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-21 — Suporte a vídeos e legendas SRT
+
+- Criado `video.js` para incorporar vídeos MP4/WebM nos artigos e converter legendas SRT para WebVTT no navegador, sem alterar os arquivos.
+- A legenda sincronizada e a transcrição expandível com tempos clicáveis usam o mesmo SRT. O vídeo funciona também sem legenda enquanto a transcrição é produzida.
+- Incorporado o vídeo existente de cadastro de processos seletivos junto ao procedimento do editor, ainda sem indicar legenda inexistente.
+- Atualizados cache dos scripts e estilos, regras em `AGENTS.md`, instruções em `videos/README.md` e testes de conversão/segurança de caminhos.
+
 ## 2026-10-21 — Vídeos com áudio tratado
 
 - Adicionados 11 vídeos MP4 à pasta `videos/`, com redução leve de ruído, equalização para clareza e normalização do volume.

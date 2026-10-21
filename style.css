@@ -2896,3 +2896,33 @@ body:has(.leitor-artigo:not(.escondido)) .page-masthead { display: none; }
 .training-entry__action>strong{font:750 clamp(1.7rem,3vw,2.8rem)/1.04 'Archivo',sans-serif;letter-spacing:-.055em;display:flex;align-items:end;justify-content:space-between;gap:1rem}
 .training-entry__action>strong span{font-size:1.6em;line-height:.75}
 @media(max-width:720px){.training-entry{padding:3rem 1.2rem}.training-entry__inner{grid-template-columns:1fr}.training-entry__action{min-height:175px}.training-entry__content h2{font-size:3.5rem}}
+
+/* Vídeos instrutivos e transcrição associada às legendas SRT. */
+.video-contextual { width: 100%; margin: 26px auto; }
+.video-contextual video {
+    display: block; width: 100%; aspect-ratio: 16 / 9; background: #090909;
+    border: 1px solid var(--accent-blue-alpha-30); border-radius: 8px;
+}
+.video-contextual figcaption {
+    margin-top: 9px; color: var(--muted); font-size: .72em; line-height: 1.45;
+}
+.video-legenda-status { color: var(--muted); font-size: .72em; }
+.video-transcricao {
+    margin-top: 16px; padding: 14px 16px;
+    border: 1px solid var(--accent-blue-alpha-30); border-radius: 8px;
+}
+.video-transcricao summary { color: var(--text); cursor: pointer; font-size: .8em; font-weight: 600; }
+.video-transcricao ol { margin: 14px 0 0; padding: 0; list-style: none; }
+.video-transcricao li {
+    display: flex; align-items: flex-start; gap: 14px; padding: 9px 0;
+    border-top: 1px solid var(--accent-blue-alpha-15);
+    font-size: .76em; line-height: 1.5; white-space: pre-line;
+}
+.video-transcricao li::before { display: none; }
+.video-transcricao-tempo {
+    flex: 0 0 auto; border: 0; background: transparent; color: var(--accent-blue);
+    cursor: pointer; font: inherit; font-variant-numeric: tabular-nums;
+    text-decoration: underline; text-underline-offset: 3px;
+}
+.video-transcricao-tempo:focus-visible,
+.video-transcricao summary:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 4px; }

@@ -22,6 +22,11 @@ Pense na página como a porta de entrada da seleção e na coleção como a past
 
 3. Preencha o título, o subtipo, os dados do edital, o período de ingresso, o link de inscrições e os campi relacionados, conforme os campos disponíveis.
 
+```video
+arquivo: videos/Cadastrando processos seletivos.mp4
+titulo: Demonstração do cadastro de um processo seletivo
+```
+
 Não crie ou altere um tipo e um subtipo por conta própria: essas listas são cadastros administrativos. Se não houver uma opção correta, peça ao administrador responsável.
 
 4. Para cada etapa, escolha o tipo, informe data de início e, quando houver, data de fim e campi envolvidos. Uma etapa é a resposta para “o que está acontecendo agora?” para quem acompanha a seleção.
