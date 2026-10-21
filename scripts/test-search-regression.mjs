@@ -54,6 +54,8 @@ const metadataWindow = executeBrowserModule(metadataSource, "data/guide-metadata
 
 const GuiaBusca = searchWindow.GuiaBusca;
 const GuiaMetadata = metadataWindow.GuiaMetadata;
+const videoWindow = executeBrowserModule(await readText("video.js"), "video.js");
+const converterSrt = videoWindow.GuiaVideos?.converterSrt;
 
 if (!GuiaBusca?.ranquearArtigos) {
     console.error("search.js não exporta GuiaBusca.ranquearArtigos.");
@@ -90,11 +92,21 @@ const artigos = await Promise.all(guideIndex.articles.map(async (sourcePath) => 
     const categoria = categoriaDoArtigo(sourcePath);
     const metadados = obterMetadados(sourcePath, categoria);
     const conteudo = await readText(sourcePath);
+    const referencias = GuiaBusca.extrairReferenciasVideosBusca(conteudo);
+    const transcricoes = await Promise.all(referencias.map(async referencia => {
+        if (!/^videos\/(?:legendas\/)?[^\\?#%<>]+\.srt$/i.test(referencia.legenda)
+            || referencia.legenda.split("/").includes("..")) {
+            throw new Error(`Legenda inválida para busca: ${referencia.legenda}`);
+        }
+        const trechos = converterSrt(await readText(referencia.legenda)).transcricao;
+        return { ...referencia, trechos, texto: trechos.map(trecho => trecho.texto).join(" ") };
+    }));
 
     return {
         titulo: metadados.tituloCanonico || tituloDoArquivo(sourcePath),
         categoria,
         conteudo,
+        transcricoes,
         sourcePath,
         metadados
     };
@@ -154,6 +166,29 @@ if (falhas.length) {
 
 console.log(`Busca OK: ${regression.queries.length}/${regression.queries.length} consultas com o resultado esperado no topo.`);
 console.log(`Corpus avaliado: ${artigos.length} artigos do índice publicado.`);
+
+
+const casosDasLegendas = [
+    ["logoff", "task-groups-permissions"],
+    ["acrônimo", "task-short-url-redirect"],
+    ["muito bem menino", "task-publication-review"]
+];
+for (const [consulta, esperado] of casosDasLegendas) {
+    const resultados = GuiaBusca.ranquearArtigos(artigos, consulta);
+    const artigo = resultados.find(item => item.metadados.id === esperado);
+    if (!artigo) throw new Error(`Legenda não recuperada: ${consulta}`);
+    if (GuiaBusca.contemTodosOsTermos(GuiaBusca.textoIndexavelDoArtigo(artigo), GuiaBusca.termosDaBusca(consulta))) {
+        throw new Error(`Consulta não exclusiva da legenda: ${consulta}`);
+    }
+    const acerto = GuiaBusca.encontrarCorrespondenciaLegendaBusca(artigo, consulta);
+    if (!acerto?.tempo || !acerto.trecho || !acerto.indice
+        || GuiaBusca.motivoCorrespondenciaBusca(artigo, consulta).tipo !== "transcricao") {
+        throw new Error(`Vídeo, trecho ou tempo não identificado: ${consulta}`);
+    }
+}
+const totalLegendas = artigos.reduce((soma, artigo) => soma + artigo.transcricoes.length, 0);
+if (totalLegendas !== 11) throw new Error(`Legendas indexadas: ${totalLegendas}/11`);
+console.log(`Busca nas legendas OK: ${casosDasLegendas.length} consultas e ${totalLegendas} vídeos.`);
 
 // Consultas específicas devem abrir a seção que realmente contém a resposta.
 const blocos = artigos.find(artigo => artigo.metadados.id === 'task-blocks-use');

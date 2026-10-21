@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-21 — Busca inclui as legendas SRT dos vídeos
+
+- A busca agora lê em memória as transcrições dos SRT citados pelos próprios blocos `video` dos artigos, sem lista manual de vídeos. As requisições são deduplicadas e falhas isoladas, preservando os procedimentos de texto.
+- Um acerto exclusivo na transcrição gera resultado abaixo dos acertos no texto, com identificação do vídeo, trecho falado e tempo; clicar abre o player correspondente no artigo, sem autoplay.
+- Atualizados motor, carregamento e interface, âncoras dos players, testes de regressão (incluindo 11 legendas e três consultas exclusivas), workflow de validação da busca, regras do `AGENTS.md` e versões de cache no `index.html`.
+
 ## 2026-10-21 — Busca por perguntas em linguagem natural
 
 - Atualizado `search.js` para desconsiderar palavras de apoio em consultas completas, como “como faço para criar…”, mantendo verbos de ação e o conteúdo relevante. Consultas compostas apenas por essas palavras preservam o comportamento anterior.

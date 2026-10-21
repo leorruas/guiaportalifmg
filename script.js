@@ -321,6 +321,42 @@ function iconeNeutro(nome) {
     return `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">${caminhos[nome] || caminhos.book}</svg>`;
 }
 
+// Lê os SRT citados nos artigos, uma única vez por caminho, e os associa
+// à busca; legendas indisponíveis não impedem a busca textual de funcionar.
+async function carregarLegendasDaBusca(artigos) {
+    const busca = window.GuiaBusca;
+    const videos = window.GuiaVideos;
+    if (!busca?.extrairReferenciasVideosBusca || !videos?.converterSrt || !videos?.resolverArquivo) return;
+    const cache = new Map();
+    const carregar = caminho => {
+        if (!cache.has(caminho)) {
+            cache.set(caminho, (async () => {
+                const url = videos.resolverArquivo(caminho, "legenda");
+                if (!url) return null;
+                try {
+                    const resposta = await fetch(url, { cache: "no-store" });
+                    if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
+                    return videos.converterSrt(await resposta.text()).transcricao;
+                } catch (erro) {
+                    console.warn("Legenda indisponível para a busca:", caminho, erro);
+                    return null;
+                }
+            })());
+        }
+        return cache.get(caminho);
+    };
+    await Promise.all(artigos.map(async artigo => {
+        const refs = busca.extrairReferenciasVideosBusca(artigo.conteudo);
+        const entradas = await Promise.all(refs.map(async ref => {
+            const trechos = await carregar(ref.legenda);
+            return trechos?.length
+                ? { ...ref, trechos, texto: trechos.map(trecho => trecho.texto).join(" ") }
+                : null;
+        }));
+        artigo.transcricoes = entradas.filter(Boolean);
+    }));
+}
+
 // Carrega os arquivos e busca o conteúdo de cada um
 async function carregarTodosOsArtigos() {
     const lista = await obterListaDeArquivos();
@@ -354,6 +390,7 @@ async function carregarTodosOsArtigos() {
 
     const resultados = await Promise.all(promessas);
     todosOsArtigos = resultados.filter(artigo => artigo !== null);
+    await carregarLegendasDaBusca(todosOsArtigos);
     indiceDeBuscaPronto = true;
 
     // Organiza artigos em estrutura de pasta para o accordion
@@ -592,8 +629,14 @@ function exibirResultados(artigos, termo = "") {
     resultadosFiltrados.forEach((artigo, indice) => {
         const card = document.createElement("a");
         card.className = "resultado-item";
-        const secaoBusca = window.GuiaBusca?.encontrarSecaoBusca?.(artigo, termo);
-        card.href = secaoBusca ? rotaComSecao(artigo, secaoBusca.id)
+        const somenteLegenda = !contemTodosOsTermos(textoIndexavelDoArtigo(artigo), termos);
+        const matchLegenda = somenteLegenda
+            ? window.GuiaBusca?.encontrarCorrespondenciaLegendaBusca?.(artigo, termo)
+            : null;
+        const idVideo = matchLegenda ? `guia-video-${matchLegenda.indice}` : "";
+        const secaoBusca = idVideo ? null : window.GuiaBusca?.encontrarSecaoBusca?.(artigo, termo);
+        const destino = idVideo || secaoBusca?.id || "";
+        card.href = destino ? rotaComSecao(artigo, destino)
             : `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
 
         const numero = document.createElement("span");
@@ -615,7 +658,9 @@ function exibirResultados(artigos, termo = "") {
         const trecho = document.createElement("span");
         trecho.className = "resultado-trecho";
         const buscaSemOcorrenciaLiteral = !secaoBusca && ["alias", "aproximacao"].includes(motivo.tipo);
-        const textoTrecho = extrairTrechoRelevante(secaoBusca?.conteudo || artigo.conteudo, buscaSemOcorrenciaLiteral ? "" : termo);
+        const textoTrecho = matchLegenda
+            ? matchLegenda.trecho
+            : extrairTrechoRelevante(secaoBusca?.conteudo || artigo.conteudo, buscaSemOcorrenciaLiteral ? "" : termo);
         trecho.innerHTML = destacarTexto(textoTrecho, buscaSemOcorrenciaLiteral ? "" : termo);
 
         conteudoResultado.appendChild(titulo);
@@ -634,7 +679,7 @@ function exibirResultados(artigos, termo = "") {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
             event.preventDefault();
             const abrirNaOcorrencia = !["titulo", "alias", "aproximacao"].includes(motivo.tipo);
-            abrirArtigo(artigo.titulo, artigo.conteudo, true, abrirNaOcorrencia ? termos : [], secaoBusca?.id);
+            abrirArtigo(artigo.titulo, artigo.conteudo, true, abrirNaOcorrencia && !idVideo ? termos : [], destino);
         });
 
         lista.appendChild(card);

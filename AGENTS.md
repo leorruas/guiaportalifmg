@@ -119,6 +119,7 @@
 - Quando uma nova tarefa específica passar a responder melhor por uma consulta, mova o alias correspondente para essa tarefa para evitar resultados concorrentes.
 - `search.js` contém o motor de busca e deve permanecer independente do DOM. `script.js` deve consumir `GuiaBusca.ranquearArtigos()` em vez de recriar filtros, pontuação ou desempate em paralelo.
 - A busca exata tem prioridade. O fuzzy é somente fallback quando não há resultado exato: no máximo uma palavra divergente por consulta, termo com pelo menos cinco caracteres, distância de edição máxima 1 e comparação restrita a título da ação e aliases.
+- Legendas de busca são descobertas exclusivamente pelos blocos `video` dos artigos. Seus SRT oferecem resultados adicionais, abaixo dos resultados encontrados no texto. Um resultado exclusivo do SRT deve citar vídeo, trecho e tempo, e abrir o player correspondente sem autoplay. O carregamento de legendas não pode derrubar a busca textual. Valide que os 11 vídeos foram indexados nos testes.
 - Qualquer alteração em artigos, metadados, aliases ou ranking que possa mudar a ordem dos resultados deve ser validada com `node scripts/test-search-regression.mjs`.
 - Quando uma consulta relevante ganhar comportamento novo, adicione-a a `data/search-regression.json` com o `expected_top_id` correto. Não ajuste o resultado esperado apenas para fazer o teste passar; confirme primeiro que a nova ordem é desejada.
 

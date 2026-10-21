@@ -188,6 +188,18 @@
     {
       "query": "como criar um curso",
       "expected_top_id": "task-course-create"
+    },
+    {
+      "query": "logoff",
+      "expected_top_id": "task-groups-permissions"
+    },
+    {
+      "query": "acrônimo",
+      "expected_top_id": "task-short-url-redirect"
+    },
+    {
+      "query": "muito bem menino",
+      "expected_top_id": "task-publication-review"
     }
   ]
 }

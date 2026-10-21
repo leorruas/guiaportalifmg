@@ -9,6 +9,8 @@ on:
       - "data/search-regression.json"
       - "search.js"
       - "script.js"
+      - "video.js"
+      - "videos/**/*.srt"
       - "scripts/test-search-regression.mjs"
       - ".github/workflows/validate-search.yml"
   push:
@@ -21,6 +23,8 @@ on:
       - "data/search-regression.json"
       - "search.js"
       - "script.js"
+      - "video.js"
+      - "videos/**/*.srt"
       - "scripts/test-search-regression.mjs"
       - ".github/workflows/validate-search.yml"
 

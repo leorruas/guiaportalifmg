@@ -48,6 +48,50 @@
         return `${artigo.titulo} ${artigo.categoria} ${aliasesDoArtigo(artigo)} ${artigo.conteudo}`;
     }
 
+    // Descobre legendas pelos blocos de vídeo reais do artigo.
+    function extrairReferenciasVideosBusca(markdown = "") {
+        return [...String(markdown).matchAll(/```video\s*\n([\s\S]*?)\n```/g)]
+            .map((bloco, indice) => {
+                const campos = {};
+                bloco[1].split("\n").forEach(linha => {
+                    const match = linha.match(/^\s*(arquivo|legenda|titulo)\s*:\s*(.*?)\s*$/i);
+                    if (match) campos[match[1].toLowerCase()] = match[2];
+                });
+                return { ...campos, indice: indice + 1 };
+            })
+            .filter(video => video.arquivo && video.legenda);
+    }
+
+    function encontrarCorrespondenciaLegendaBusca(artigo, consulta) {
+        const termos = termosDaBusca(consulta);
+        if (!termos.length) return null;
+        for (const video of artigo.transcricoes || []) {
+            if (!contemTodosOsTermos(video.texto, termos)) continue;
+            let melhor = 0;
+            let pontuacao = -1;
+            (video.trechos || []).forEach((trecho, indice) => {
+                const texto = normalizarTextoParaBusca(trecho.texto);
+                const acertos = termos.filter(termo => texto.includes(termo)).length;
+                if (acertos > pontuacao) { melhor = indice; pontuacao = acertos; }
+            });
+            const trechos = video.trechos || [];
+            const atual = trechos[melhor];
+            if (!atual) continue;
+            const contexto = trechos.slice(Math.max(0, melhor - 1), melhor + 2)
+                .map(trecho => trecho.texto.replace(/\s+/g, " ").trim())
+                .join(" ");
+            return {
+                indice: video.indice,
+                legenda: video.legenda,
+                titulo: video.titulo,
+                tempo: atual.tempo,
+                segundos: atual.segundos,
+                trecho: contexto.slice(0, 240)
+            };
+        }
+        return null;
+    }
+
     function removerFrontmatterBusca(markdown) {
         if (!markdown) return "";
         return markdown.replace(/^---[\s\S]*?---\s*/, "");
@@ -252,8 +296,16 @@
         const exatos = canonicos
             .filter(artigo => contemTodosOsTermos(textoIndexavelDoArtigo(artigo), termos));
 
-        if (exatos.length) {
-            return ranquearExatos(exatos, termo, termos);
+        // As correspondências no texto do artigo vêm primeiro; legendas
+        // apenas ampliam o conjunto de resultados sem reordenar as tarefas.
+        const somenteLegenda = canonicos.filter(artigo =>
+            !exatos.includes(artigo) && encontrarCorrespondenciaLegendaBusca(artigo, termo)
+        );
+        if (exatos.length || somenteLegenda.length) {
+            return [
+                ...ranquearExatos(exatos, termo, termos),
+                ...ranquearExatos(somenteLegenda, termo, termos)
+            ];
         }
 
         return canonicos
@@ -329,6 +381,9 @@
             return { tipo: "categoria", rotulo: "correspondência no perfil" };
         }
 
+        const legenda = encontrarCorrespondenciaLegendaBusca(artigo, termoBusca);
+        if (legenda) return { tipo: "transcricao", rotulo: `no vídeo: ${legenda.titulo} · ${legenda.tempo}` };
+
         return { tipo: "conteudo", rotulo: "correspondência no conteúdo" };
     }
 
@@ -387,6 +442,8 @@
         termosDaBusca,
         contemTodosOsTermos,
         textoIndexavelDoArtigo,
+        extrairReferenciasVideosBusca,
+        encontrarCorrespondenciaLegendaBusca,
         calcularPontuacaoBusca,
         ranquearArtigos,
         motivoCorrespondenciaBusca,

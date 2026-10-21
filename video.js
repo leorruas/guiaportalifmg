@@ -114,7 +114,7 @@
     }
 
     function renderizarVideosDoArtigo(container) {
-        container.querySelectorAll("pre > code.language-video").forEach(codigo => {
+        container.querySelectorAll("pre > code.language-video").forEach((codigo, indice) => {
             const configuracao = {};
             codigo.textContent.split(/\r?\n/).forEach(linha => {
                 const dado = linha.match(/^\s*(arquivo|legenda|titulo)\s*:\s*(.*?)\s*$/i);
@@ -133,6 +133,7 @@
                 || configuracao.arquivo.split("/").pop().replace(/\.(mp4|webm)$/i, "");
             const figura = document.createElement("figure");
             figura.className = "video-contextual";
+            figura.id = `guia-video-${indice + 1}`;
             const video = document.createElement("video");
             video.controls = true;
             video.playsInline = true;
