@@ -51,6 +51,7 @@
 
 - Com SRT disponível, leia a transcrição inteira antes de escolher o artigo canônico. Insira uma descrição curta e factual **antes do player**, distinguindo demonstrações de regras gerais ou recursos com nomes semelhantes. Exemplo: Redirecionamentos de Configurações não são o tipo de página Link.
 - Registre os próximos lotes, critérios de conclusão e pendências em `videos/BACKLOG.md`. Confira vídeo, SRT, descrição e localização; anote mudanças em `log.md`.
+- Quando um comportamento do template for confirmado como intencional pela equipe responsável, documente-o como funcionamento vigente, sem caracterizá-lo como bug nem anunciar melhorias ou alterações futuras que não foram decididas.
 
 ## Acesso ao painel Wagtail pelo SUAP
 

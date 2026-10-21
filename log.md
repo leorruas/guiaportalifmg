@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-21 — Todos os 11 vídeos integrados: Página e Notícia no campus
+
+- Incorporado o MP4 `Elemento do tipo página e tipo notícia dentro do site do campus.mp4`, com o SRT homônimo em `videos/legendas/`, ao artigo canônico do Moderador **Criar ou editar a página de um campus**. Inserida descrição antes do player.
+- Documentada a decisão de que **Página mantém o menu do campus e Notícia não mantém esse menu**; essa diferença é comportamento correto do template, não um erro ou proposta de melhoria.
+- Atualizado `videos/BACKLOG.md` para **11/11 vídeos integrados** e retirado o pedido de validação de melhoria do template. As verificações de reprodução no site e as permissões de Redirecionamentos permanecem separadas como QA/configuração. Atualizado `AGENTS.md` para não anunciar mudanças futuras não aprovadas.
+
 ## 2026-10-21 — Redirecionamentos como alternativa ao tipo de página Link
 
 - Criado o artigo canônico `04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/14 - Sou administrador e quero criar um endereço curto ou redirecionar uma página.md` no perfil Administrador, a partir do SRT `Criando encurtamento ou redirecionamento.srt`; incorporados MP4, legenda e descrição contextual antes do player.

@@ -25,6 +25,23 @@ legenda: videos/legendas/Elemento do tipo campus.srt
 titulo: Configurar a apresentação e a navegação de um campus
 ```
 
+## Como páginas e notícias aparecem dentro do campus
+
+O template do Portal apresenta os dois tipos de conteúdo de forma diferente:
+
+- **Página:** ao abrir uma página de conteúdo do campus, o menu de navegação do próprio campus continua visível.
+- **Notícia:** ao abrir uma notícia, a apresentação não mantém o menu específico do campus, mesmo que a notícia tenha sido cadastrada dentro de sua estrutura.
+
+Essa diferença é **o comportamento previsto do template do Portal**, não um erro de cadastro. O tipo de conteúdo determina a apresentação da página; não é necessário reorganizar a notícia na árvore para tentar reproduzir o menu de uma Página.
+
+**Demonstração: navegação em Página e Notícia no Campus Formiga.** A gravação compara os dois tipos e mostra que a Página mantém o menu do campus, enquanto a Notícia usa a apresentação própria do template, sem esse menu.
+
+```video
+arquivo: videos/Elemento do tipo página e tipo notícia dentro do site do campus.mp4
+legenda: videos/legendas/Elemento do tipo página e tipo notícia dentro do site do campus.srt
+titulo: Entender a diferença de navegação entre Página e Notícia no campus
+```
+
 ## Mapa dos campi
 
 Consulte o modelo antes de montar ou revisar a estrutura. Preserve os links para a Reitoria e para os sistemas, em vez de duplicar o conteúdo no campus.

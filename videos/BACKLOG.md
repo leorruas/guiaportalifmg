@@ -2,7 +2,7 @@
 
 Atualização: 21/10/2026. Inventário confirmado: **11 arquivos MP4 e 11 legendas SRT**, com nomes-base correspondentes, em `videos/` e `videos/legendas/`. Este planejamento é separado do backlog dos slides em `treinamento/BACKLOG.md`.
 
-**Andamento:** 10 dos 11 vídeos integrados aos artigos canônicos; 1 pendente de validação do comportamento da página Notícia no campus.
+**Andamento:** **11 de 11 vídeos integrados aos artigos canônicos.** A diferença entre Página e Notícia é o comportamento previsto do template, confirmado editorialmente em 21/10/2026. Restam apenas verificações de publicação e reprodução no site.
 
 ## Critério de conclusão
 
@@ -31,15 +31,15 @@ Os cinco artigos receberam descrição imediatamente antes do player e legenda `
 
 **Lote 2 concluído:** o vídeo de configuração do fluxo foi integrado ao novo procedimento canônico do Administrador, com a Parte 2 preservada no artigo de revisão do Moderador.
 
-## Lote 3: comportamentos específicos (1 integrado; 1 pendente)
+## Lote 3: comportamentos específicos (2 integrados)
 
 | Vídeo e SRT de mesmo nome | Destino proposto | Observação extraída da transcrição | Estado |
 | --- | --- | --- | --- |
 | Criando encurtamento ou redirecionamento | Administrador: **criar um endereço curto ou redirecionar uma página**, conectado ao procedimento editorial de Link | Demonstra `/formiga` apontando para o Campus Formiga; diferencia regra em Configurações do tipo de página Link. Perfil administrador adotado editorialmente; permissões reais devem ser conferidas | **Concluído** |
-| Elemento do tipo página e tipo notícia dentro do site do campus | Editor: escolher tipo de página, ou Moderador: editar campus | Compara menu do campus em uma Página e em uma Notícia. É comportamento do template demonstrado, ainda precisa validação na versão atual | **Pendente: confirmar comportamento atual** |
+| Elemento do tipo página e tipo notícia dentro do site do campus | Moderador: **criar ou editar a página de um campus** | Página mantém o menu do campus; Notícia usa o template sem esse menu. Comportamento confirmado como previsto, sem demanda de mudança | **Concluído** |
 
 ## Verificação final
 
-- [ ] Confirmar todos os 11 blocos integrados sem duplicação editorial.
+- [x] Integrar os 11 vídeos em artigos canônicos, sem duplicação editorial.
 - [ ] Conferir player, áudio, CC e texto da transcrição no GitHub Pages, inclusive em celular.
-- [ ] Confirmar na instalação atual o acesso administrativo a Redirecionamentos e o comportamento da página Notícia no menu do campus; distinguir essa validação da integração editorial concluída.
+- [ ] Confirmar as permissões administrativas do recurso Redirecionamentos na instalação do IFMG; o comportamento de Página versus Notícia foi definido como padrão do template e não requer solicitação de melhoria.
