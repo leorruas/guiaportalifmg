@@ -3,7 +3,8 @@
 ## 2026-10-21 — Busca por perguntas em linguagem natural
 
 - Atualizado `search.js` para desconsiderar palavras de apoio em consultas completas, como “como faço para criar…”, mantendo verbos de ação e o conteúdo relevante. Consultas compostas apenas por essas palavras preservam o comportamento anterior.
-- Conservada a precedência de resultados exatos sobre o fallback fuzzy (um erro isolado de edição), os metadados e os IDs canônicos. Adicionados seis casos de regressão de perguntas completas em `data/search-regression.json`, sem alterar as expectativas existentes.
+- Conservada a precedência de resultados exatos sobre o fallback fuzzy (um erro isolado de edição), os IDs canônicos e as expectativas de regressão anteriores. Adicionados seis casos de regressão de perguntas completas em `data/search-regression.json`.
+- Após a primeira execução da CI, ajustado o alias específico **cadastrar processo seletivo** na tarefa do editor: a consulta natural estava priorizando indevidamente o cadastro administrativo de tipos de processo. Atualizada a versão de cache dos metadados.
 - Incrementada a versão de cache de `search.js` em `index.html`.
 
 ## 2026-10-21 — Todos os 11 vídeos integrados: Página e Notícia no campus
