@@ -12,13 +12,49 @@ const contexto = {
     URL
 };
 runInNewContext(codigo, contexto);
-const { converterSrt, resolverArquivo } = contexto.window.GuiaVideos;
+const { converterSrt, resolverArquivo, analisarDestinoVideo, posicionarVideoNoTrecho } = contexto.window.GuiaVideos;
 const origem = "\uFEFF1\r\n00:00:01,250 --> 00:00:03,500\r\nPrimeira linha\r\nSegunda linha\r\n\r\n2\r\n00:00:04,000 --> 00:00:06,000\r\nPróxima fala\r\n";
 const convertido = converterSrt(origem);
 assert.match(convertido.vtt, /^WEBVTT\n\n00:00:01\.250 --> 00:00:03\.500\nPrimeira linha\nSegunda linha/);
 assert.equal(convertido.transcricao.length, 2);
 assert.equal(convertido.transcricao[0].segundos, 1.25);
 assert.equal(convertido.transcricao[1].texto, "Próxima fala");
+assert.equal(analisarDestinoVideo("guia-video-2@54.125").id, "guia-video-2");
+assert.equal(analisarDestinoVideo("guia-video-2@54.125").segundos, 54.125);
+for (const invalido of ["guia-video-2", "guia-video-2@-1", "guia-video-2@12<script>", "guia-video-0@12", "outra-secao@1"]) {
+    assert.equal(analisarDestinoVideo(invalido), null);
+}
+let iniciouReproducao = false;
+let pausou = false;
+const videoFalso = {
+    readyState: 1, isConnected: true, duration: 90, currentTime: 0,
+    pause() { pausou = true; },
+    play() { iniciouReproducao = true; }
+};
+const figuraFalsa = {
+    dataset: {},
+    querySelector(seletor) { return seletor === "video" ? videoFalso : null; }
+};
+assert.equal(posicionarVideoNoTrecho(figuraFalsa, 54.125), true);
+assert.equal(videoFalso.currentTime, 54.125);
+assert.equal(figuraFalsa.dataset.tempoBusca, "54.125");
+assert.equal(pausou, true);
+assert.equal(iniciouReproducao, false);
+let listenerMetadados = null;
+const videoPendente = {
+    readyState: 0, isConnected: true, duration: NaN, currentTime: 0,
+    addEventListener(evento, callback) { if (evento === "loadedmetadata") listenerMetadados = callback; },
+    pause() {}
+};
+const figuraPendente = {
+    dataset: {},
+    querySelector(seletor) { return seletor === "video" ? videoPendente : null; }
+};
+assert.equal(posicionarVideoNoTrecho(figuraPendente, 12.5), true);
+assert.equal(videoPendente.currentTime, 0);
+assert.equal(typeof listenerMetadados, "function");
+listenerMetadados();
+assert.equal(videoPendente.currentTime, 12.5);
 assert.throws(() => converterSrt("arquivo inválido"), /tempos válidos/);
 assert.equal(resolverArquivo("videos/Cadastrando processos seletivos.mp4"), "https://leorruas.github.io/guiaportalifmg/videos/Cadastrando%20processos%20seletivos.mp4");
 assert.equal(resolverArquivo("videos/legenda português.srt", "legenda"), "https://leorruas.github.io/guiaportalifmg/videos/legenda%20portugu%C3%AAs.srt");

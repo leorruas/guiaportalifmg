@@ -34,6 +34,8 @@ let todosOsArtigos = [];
 let todasAsPastas = {};
 let artigoAtual = null;
 let indiceDeBuscaPronto = false;
+let legendasDaBuscaProntas = false;
+let consultaAtualBusca = "";
 let resultadosDaBuscaAtual = [];
 let filtroDePerfilAtivo = "";
 
@@ -323,7 +325,7 @@ function iconeNeutro(nome) {
 
 // Lê os SRT citados nos artigos, uma única vez por caminho, e os associa
 // à busca; legendas indisponíveis não impedem a busca textual de funcionar.
-async function carregarLegendasDaBusca(artigos) {
+async function carregarLegendasDaBusca(artigos, aoIntegrar = () => {}) {
     const busca = window.GuiaBusca;
     const videos = window.GuiaVideos;
     if (!busca?.extrairReferenciasVideosBusca || !videos?.converterSrt || !videos?.resolverArquivo) return;
@@ -354,7 +356,17 @@ async function carregarLegendasDaBusca(artigos) {
                 : null;
         }));
         artigo.transcricoes = entradas.filter(Boolean);
+        if (artigo.transcricoes.length) aoIntegrar();
     }));
+}
+
+// Atualiza a lista somente se os resultados ainda estiverem abertos.
+// Preserva o filtro por perfil e a pesquisa mais recente durante o carregamento.
+function atualizarBuscaComNovasLegendas() {
+    if (!indiceDeBuscaPronto || !consultaAtualBusca || divResultados.classList.contains("escondido")
+        || normalizarTextoParaBusca(consultaAtualBusca).length < 3) return;
+    resultadosDaBuscaAtual = ranquearArtigos(todosOsArtigos, consultaAtualBusca);
+    exibirResultados(resultadosDaBuscaAtual, consultaAtualBusca);
 }
 
 // Carrega os arquivos e busca o conteúdo de cada um
@@ -390,8 +402,8 @@ async function carregarTodosOsArtigos() {
 
     const resultados = await Promise.all(promessas);
     todosOsArtigos = resultados.filter(artigo => artigo !== null);
-    await carregarLegendasDaBusca(todosOsArtigos);
     indiceDeBuscaPronto = true;
+    legendasDaBuscaProntas = false;
 
     // Organiza artigos em estrutura de pasta para o accordion
     todasAsPastas = {};
@@ -412,6 +424,14 @@ async function carregarTodosOsArtigos() {
     renderizarPastas();
 
     tratarRotaDaUrl();
+
+    // O guia e a busca textual já estão disponíveis; os vídeos entram aos poucos.
+    carregarLegendasDaBusca(todosOsArtigos, atualizarBuscaComNovasLegendas)
+        .catch(erro => console.warn("Não foi possível completar a indexação das legendas:", erro))
+        .finally(() => {
+            legendasDaBuscaProntas = true;
+            atualizarBuscaComNovasLegendas();
+        });
 }
 
 function criarIndiceNormalizado(texto = "") {
@@ -431,6 +451,7 @@ function criarIndiceNormalizado(texto = "") {
 }
 
 function filtrarArtigos(termoBusca) {
+    consultaAtualBusca = String(termoBusca || "").trim();
     leitorDePerfil.classList.add("escondido");
     if (!termoBusca || termoBusca.trim() === "") {
         containerResultados.innerHTML = "";
@@ -575,7 +596,8 @@ function exibirResultados(artigos, termo = "") {
     divResultados.classList.remove("escondido");
 
     if (artigos.length === 0) {
-        containerResultados.innerHTML = `<p class="mensagem-busca">Nenhum procedimento encontrado para <strong>“${escaparHtml(termo)}”</strong>. Tente uma palavra ligada à tarefa, como “publicar”, “página” ou “coleção”.</p>`;
+        const detalhe = legendasDaBuscaProntas ? "" : " As transcrições dos vídeos ainda estão sendo carregadas.";
+        containerResultados.innerHTML = `<p class="mensagem-busca">Nenhum procedimento encontrado para <strong>“${escaparHtml(termo)}”</strong>. Tente uma palavra ligada à tarefa, como “publicar”, “página” ou “coleção”.${detalhe}</p>`;
         return;
     }
 
@@ -613,6 +635,12 @@ function exibirResultados(artigos, termo = "") {
     const sufixoDoFiltro = filtroDePerfilAtivo ? ` em ${tituloDoIndice(filtroDePerfilAtivo)}` : "";
     resumoBusca.textContent = `${resultadosFiltrados.length} ${resultadosFiltrados.length === 1 ? "resultado encontrado" : "resultados encontrados"}${sufixoDoFiltro} para “${termo}”, em ordem de relevância`;
     containerResultados.appendChild(resumoBusca);
+    if (!legendasDaBuscaProntas) {
+        const avisoLegendas = document.createElement("p");
+        avisoLegendas.className = "mensagem-busca";
+        avisoLegendas.textContent = "Buscando também nas transcrições dos vídeos…";
+        containerResultados.appendChild(avisoLegendas);
+    }
 
     if (resultadosFiltrados.length === 0) {
         const mensagem = document.createElement("p");
@@ -635,7 +663,7 @@ function exibirResultados(artigos, termo = "") {
             : null;
         const idVideo = matchLegenda ? `guia-video-${matchLegenda.indice}` : "";
         const secaoBusca = idVideo ? null : window.GuiaBusca?.encontrarSecaoBusca?.(artigo, termo);
-        const destino = idVideo || secaoBusca?.id || "";
+        const destino = matchLegenda ? `${idVideo}@${matchLegenda.segundos}` : secaoBusca?.id || "";
         card.href = destino ? rotaComSecao(artigo, destino)
             : `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
 
@@ -973,7 +1001,13 @@ function abrirArtigo(titulo, conteudoMarkdown, atualizarRota = true, termosBusca
     });
     gerarTableOfContents();
     leitorDeArtigo.classList.remove("escondido");
-    const alvoDaBusca = secaoDestino ? document.getElementById(secaoDestino) : encontrarAlvoDaBuscaNoArtigo(termosBusca);
+    const buscaNoVideo = window.GuiaVideos?.analisarDestinoVideo?.(secaoDestino);
+    const alvoDaBusca = secaoDestino
+        ? document.getElementById(buscaNoVideo?.id || secaoDestino)
+        : encontrarAlvoDaBuscaNoArtigo(termosBusca);
+    if (buscaNoVideo && alvoDaBusca) {
+        window.GuiaVideos?.posicionarVideoNoTrecho?.(alvoDaBusca, buscaNoVideo.segundos);
+    }
     if (secaoDestino && artigoAtual && atualizarRota) {
         history.replaceState({ rota: rotaDoArtigo(artigoAtual), secao: secaoDestino }, "", rotaComSecao(artigoAtual, secaoDestino));
     }
@@ -1369,11 +1403,8 @@ function tratarRotaDaUrl() {
     }
     const artigo = todosOsArtigos.find(item => rotaDoArtigo(item) === rota);
     if (artigo) {
-        abrirArtigo(artigo.titulo, artigo.conteudo, false);
-        if (secaoCodificada) {
-            const secao = decodeURIComponent(secaoCodificada);
-            rolarParaSecao(document.getElementById(secao));
-        }
+        abrirArtigo(artigo.titulo, artigo.conteudo, false, [],
+            secaoCodificada ? decodeURIComponent(secaoCodificada) : "");
     }
 }
 

@@ -2919,6 +2919,11 @@ body:has(.leitor-artigo:not(.escondido)) .page-masthead { display: none; }
     font-size: .76em; line-height: 1.5; white-space: pre-line;
 }
 .video-transcricao li::before { display: none; }
+.video-transcricao li.video-transcricao-encontrado {
+    background: var(--accent-blue-alpha-15);
+    outline: 1px solid var(--accent-blue-alpha-30);
+    border-radius: 4px; padding-inline: 8px;
+}
 .video-transcricao-tempo {
     flex: 0 0 auto; border: 0; background: transparent; color: var(--accent-blue);
     cursor: pointer; font: inherit; font-variant-numeric: tabular-nums;

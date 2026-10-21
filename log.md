@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-21 — Busca progressiva e abertura do vídeo no instante encontrado
+
+- Alterado `script.js` para disponibilizar a navegação e a busca nos artigos assim que os Markdown estiverem carregados. Os SRT passam a ser indexados em segundo plano; novas correspondências aparecem na pesquisa ativa sem redefinir o perfil selecionado, e falhas de legendas não bloqueiam a busca textual.
+- Os resultados exclusivos de transcrição agora geram URL com âncora do vídeo e o segundo exato (`guia-video-N@segundos`); a abertura normal e via link direto posicionam o vídeo pausado, expandem a transcrição e identificam a fala encontrada. Mantida a reprodução somente após ação da pessoa.
+- Atualizados `video.js`, os testes de tempo/sem autoplay, o realce acessível em `style.css`, a versão de cache em `index.html` e as regras do `AGENTS.md`.
+
 ## 2026-10-21 — Busca inclui as legendas SRT dos vídeos
 
 - A busca agora lê em memória as transcrições dos SRT citados pelos próprios blocos `video` dos artigos, sem lista manual de vídeos. As requisições são deduplicadas e falhas isoladas, preservando os procedimentos de texto.

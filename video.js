@@ -47,6 +47,58 @@
         return { vtt: `WEBVTT\n\n${legendas.join("\n\n")}\n`, transcricao };
     }
 
+    // Permite compartilhar o resultado preservando o vídeo e o instante exato.
+    function analisarDestinoVideo(secao = "") {
+        const match = String(secao).match(/^(guia-video-[1-9]\d*)@(\d+(?:\.\d{1,3})?)$/);
+        if (!match) return null;
+        const segundos = Number(match[2]);
+        return Number.isFinite(segundos) && segundos >= 0 && segundos < 86400
+            ? { id: match[1], segundos }
+            : null;
+    }
+
+    function destacarTrechoDaTranscricao(figura, detalhes, segundos) {
+        const itens = Array.from(detalhes.querySelectorAll("li[data-tempo-segundos]"));
+        if (!itens.length) return;
+        let indiceMaisProximo = 0;
+        let menorDistancia = Infinity;
+        itens.forEach((item, indice) => {
+            const distancia = Math.abs(Number(item.dataset.tempoSegundos) - segundos);
+            if (distancia < menorDistancia) { menorDistancia = distancia; indiceMaisProximo = indice; }
+        });
+        itens.forEach((item, indice) => {
+            const encontrado = indice === indiceMaisProximo;
+            item.classList.toggle("video-transcricao-encontrado", encontrado);
+            const botao = item.querySelector("button");
+            if (encontrado) botao?.setAttribute("aria-current", "true");
+            else botao?.removeAttribute("aria-current");
+        });
+        detalhes.open = true;
+        const resumo = detalhes.querySelector("summary");
+        if (resumo) resumo.textContent = `Transcrição aberta no trecho ${itens[indiceMaisProximo].querySelector("button")?.textContent || ""}`;
+    }
+
+    function posicionarVideoNoTrecho(figura, segundos) {
+        const video = figura?.querySelector?.("video");
+        if (!video || !Number.isFinite(segundos) || segundos < 0) return false;
+        figura.dataset.tempoBusca = String(segundos);
+        const aplicarTempo = () => {
+            if (!video.isConnected) return;
+            try {
+                video.currentTime = Number.isFinite(video.duration)
+                    ? Math.min(segundos, video.duration) : segundos;
+                video.pause();
+            } catch (erro) {
+                console.warn("Não foi possível posicionar o vídeo:", erro);
+            }
+        };
+        if (video.readyState >= 1) aplicarTempo();
+        else video.addEventListener("loadedmetadata", aplicarTempo, { once: true });
+        const detalhes = figura.querySelector("details.video-transcricao");
+        if (detalhes) destacarTrechoDaTranscricao(figura, detalhes, segundos);
+        return true;
+    }
+
     function criarTranscricao(trechos, video) {
         const detalhes = document.createElement("details");
         detalhes.className = "video-transcricao";
@@ -56,6 +108,7 @@
         const lista = document.createElement("ol");
         trechos.forEach(trecho => {
             const item = document.createElement("li");
+            item.dataset.tempoSegundos = String(trecho.segundos);
             const tempo = document.createElement("button");
             tempo.type = "button";
             tempo.className = "video-transcricao-tempo";
@@ -101,7 +154,11 @@
             faixa.default = true;
             faixa.addEventListener("load", () => { faixa.track.mode = "showing"; }, { once: true });
             video.appendChild(faixa);
-            figura.appendChild(criarTranscricao(resultado.transcricao, video));
+            const detalhes = criarTranscricao(resultado.transcricao, video);
+            figura.appendChild(detalhes);
+            if (figura.dataset.tempoBusca !== undefined) {
+                destacarTrechoDaTranscricao(figura, detalhes, Number(figura.dataset.tempoBusca));
+            }
             status.remove();
         } catch (erro) {
             if (!controlador.signal.aborted && video.isConnected) {
@@ -163,5 +220,8 @@
         urlsDeLegendas.clear();
     }
 
-    window.GuiaVideos = { renderizarVideosDoArtigo, limpar, converterSrt, resolverArquivo };
+    window.GuiaVideos = {
+        renderizarVideosDoArtigo, limpar, converterSrt, resolverArquivo,
+        analisarDestinoVideo, posicionarVideoNoTrecho
+    };
 })();
