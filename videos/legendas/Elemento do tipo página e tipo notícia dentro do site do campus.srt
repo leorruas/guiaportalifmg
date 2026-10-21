@@ -1,0 +1,69 @@
+1
+00:00:00,000 --> 00:00:03,800
+Interessante, que não chega a ser um erro,
+mas é um comportamento interessante:
+
+2
+00:00:03,800 --> 00:00:08,200
+aqui dentro do campus Formiga, por exemplo,
+eu tenho o Conteúdo Formiga,
+
+3
+00:00:08,200 --> 00:00:12,000
+e dentro de Conteúdo Formiga
+eu tenho duas notícias.
+
+4
+00:00:12,000 --> 00:00:15,500
+E eu tenho aqui, dentro da pasta Notícias,
+
+5
+00:00:15,500 --> 00:00:18,500
+outras duas notícias.
+
+6
+00:00:18,500 --> 00:00:24,200
+É interessante que o site, né,
+tem um comportamento diferente
+
+7
+00:00:24,200 --> 00:00:27,500
+para esse tipo Notícia e Página.
+
+8
+00:00:27,500 --> 00:00:32,200
+Se eu vier aqui no campus Formiga,
+o que que vai acontecer?
+
+9
+00:00:32,200 --> 00:00:35,200
+Aqui eu tenho um elemento
+que é do tipo conteúdo.
+
+10
+00:00:35,200 --> 00:00:38,500
+Quando eu clico naquele conteúdo,
+
+11
+00:00:38,500 --> 00:00:43,800
+eu vou para aquela parte lá
+e ele perde o menu do campus.
+
+12
+00:00:43,800 --> 00:00:46,800
+Isso é que é interessante
+quando é Notícia.
+
+13
+00:00:46,800 --> 00:00:52,000
+Quando não é Notícia, quando é um elemento
+do tipo conteúdo,
+
+14
+00:00:52,000 --> 00:00:57,000
+ele mantém o menu do campus.
+
+15
+00:00:57,000 --> 00:01:03,000
+Isso não é um erro, é um comportamento
+padrão do template.

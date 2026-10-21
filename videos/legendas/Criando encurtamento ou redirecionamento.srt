@@ -1,0 +1,81 @@
+1
+00:00:00,000 --> 00:00:04,500
+Vou mostrar outra funcionalidade bem interessante aqui,
+que é a função de Redirecionamentos,
+
+2
+00:00:04,500 --> 00:00:08,000
+que o IFMG usa bastante, né?
+
+3
+00:00:08,000 --> 00:00:12,500
+Essa função permite a gente
+fazer encurtamento de link
+
+4
+00:00:12,500 --> 00:00:16,000
+e também redirecionamento, né?
+
+5
+00:00:16,000 --> 00:00:20,000
+Às vezes a gente tem um link muito grande,
+muito extenso, ou uma notícia,
+
+6
+00:00:20,000 --> 00:00:23,500
+e a gente quer fazer um redirecionamento.
+Então, por exemplo:
+
+7
+00:00:23,500 --> 00:00:27,500
+eu estou aqui e tenho uma unidade
+do meu sistema,
+
+8
+00:00:27,500 --> 00:00:32,500
+que é o Campus Formiga, correto?
+Está aqui.
+
+9
+00:00:32,500 --> 00:00:37,000
+Então, se eu for acessar esse campus aqui
+pelo navegador,
+
+10
+00:00:37,000 --> 00:00:41,500
+eu vou vir aqui em Campi, Campus Formiga.
+Essa é a URL que tem.
+
+11
+00:00:41,500 --> 00:00:46,500
+Porém, eu posso vir aqui e fazer
+um direcionamento de
+
+12
+00:00:46,500 --> 00:00:52,000
+/formiga para uma página
+específica do site,
+
+13
+00:00:52,000 --> 00:00:55,500
+que, no caso, é a do Campus Formiga.
+
+14
+00:00:55,500 --> 00:00:59,000
+Se eu criar isso e salvar,
+o que vai acontecer?
+
+15
+00:00:59,000 --> 00:01:04,500
+Se eu digitar aqui formiga,
+ele vai direcionar para o Campus Formiga.
+
+16
+00:01:04,500 --> 00:01:09,000
+Se eu digitar outro acrônimo aqui
+ou qualquer outra palavra, ele não existe,
+
+17
+00:01:09,000 --> 00:01:12,500
+mas eu posso criar o redirecionamento
+que eu quiser.

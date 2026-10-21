@@ -1,0 +1,236 @@
+1
+00:00:00,000 --> 00:00:04,500
+Eu estou fazendo este vídeo aqui para mostrar
+mais algumas funcionalidades
+
+2
+00:00:04,500 --> 00:00:09,000
+do controle de permissão por grupos
+no Wagtail.
+
+3
+00:00:09,000 --> 00:00:13,500
+Aqui, deste lado direito, eu estou logado
+com o usuário Formiga,
+
+4
+00:00:13,500 --> 00:00:17,500
+e aqui do lado esquerdo eu estou logado
+com o usuário administrador.
+
+5
+00:00:17,500 --> 00:00:21,500
+Se eu vier aqui, por exemplo,
+dentro dessa permissão,
+
+6
+00:00:21,500 --> 00:00:25,000
+esse usuário Formiga está dentro
+deste Grupo Formiga.
+
+7
+00:00:25,000 --> 00:00:29,500
+E, se eu clicar aqui
+dentro de Formiga
+
+8
+00:00:29,500 --> 00:00:34,000
+e tentar editar o Campus Formiga,
+eu não consigo.
+
+9
+00:00:34,000 --> 00:00:38,000
+Isso tudo é configurado, e o que é interessante
+é que você não precisa nem
+
+10
+00:00:38,000 --> 00:00:42,000
+fazer o logoff novamente.
+
+11
+00:00:42,000 --> 00:00:45,500
+Por exemplo, vou habilitar a função
+de editar Campus.
+
+12
+00:00:45,500 --> 00:00:50,000
+E essas funções que eu tenho que habilitar
+não são específicas de página,
+
+13
+00:00:50,000 --> 00:00:55,000
+como eu expliquei no outro vídeo sobre permissão
+específica de coleção e de pasta de documento.
+
+14
+00:00:55,000 --> 00:00:58,500
+Aqui são permissões de objetos.
+
+15
+00:00:58,500 --> 00:01:03,500
+Então eu marquei aqui que esse grupo
+vai ter perfil para editar Campus.
+
+16
+00:01:03,500 --> 00:01:07,500
+Então ele não pode nem criar e nem remover,
+mas ele pode editar.
+
+17
+00:01:07,500 --> 00:01:12,000
+Isso faz com que, se esse usuário clicar
+aqui novamente,
+
+18
+00:01:12,000 --> 00:01:17,000
+apareça um botão de editar, e ele vai conseguir
+editar essas informações.
+
+19
+00:01:17,000 --> 00:01:21,500
+Assim também, com esse usuário aqui,
+a gente pode ver
+
+20
+00:01:21,500 --> 00:01:25,500
+que ele está sem acesso
+para editar Notícia
+
+21
+00:01:25,500 --> 00:01:29,000
+e está sem acesso para mexer
+na Pasta de notícias.
+
+22
+00:01:29,000 --> 00:01:32,000
+Esta aqui é uma pasta de notícias
+do Campus Formiga.
+
+23
+00:01:32,000 --> 00:01:36,000
+Então, se eu tentar acessá-la aqui,
+ele consegue ver o conteúdo,
+
+24
+00:01:36,000 --> 00:01:40,000
+porque aqui nós demos permissão
+para ele ver
+
+25
+00:01:40,000 --> 00:01:44,000
+as permissões da página de Formiga,
+correto?
+
+26
+00:01:44,000 --> 00:01:47,500
+Então ele consegue ver o conteúdo,
+
+27
+00:01:47,500 --> 00:01:51,000
+mas ele não consegue editar
+nenhuma notícia.
+
+28
+00:01:51,000 --> 00:01:55,000
+E ele também não consegue editar
+nem essa própria pasta:
+
+29
+00:01:55,000 --> 00:01:58,000
+se ele tentar editá-la,
+dá esse erro.
+
+30
+00:01:58,000 --> 00:02:03,000
+Então, se eu vier aqui e der permissão
+para editar Pasta de notícias, por exemplo,
+
+31
+00:02:03,000 --> 00:02:07,500
+eu posso dar permissão para ele editar
+e adicionar Pasta de notícias,
+
+32
+00:02:07,500 --> 00:02:10,500
+mas não vou dar permissão
+para ele remover.
+
+33
+00:02:10,500 --> 00:02:16,000
+Com isso, se ele voltar aqui
+e for na raiz,
+
+34
+00:02:16,000 --> 00:02:20,000
+se ele tentar, por exemplo, remover
+a pasta de notícias de Formiga,
+
+35
+00:02:20,000 --> 00:02:23,500
+vai mostrar que ele não tem
+essa permissão.
+
+36
+00:02:23,500 --> 00:02:27,500
+Porém, se ele quiser editar
+essa pasta,
+
+37
+00:02:27,500 --> 00:02:31,000
+ele vai agora conseguir
+editar essa pasta.
+
+38
+00:02:31,000 --> 00:02:34,000
+Essa pasta geralmente não tem
+nada que editar.
+
+39
+00:02:34,000 --> 00:02:38,500
+Mas aí, se a gente olhar aqui dentro de Notícias,
+vamos ver que eu ainda
+
+40
+00:02:38,500 --> 00:02:42,500
+não consigo editar as notícias: eu consigo
+ver as notícias, mas não consigo editar.
+
+41
+00:02:42,500 --> 00:02:47,000
+Então eu posso vir aqui da mesma forma
+e clicar em Notícia.
+
+42
+00:02:47,000 --> 00:02:51,500
+Eu vou colocar como se ele pudesse
+apenas editar notícias.
+
+43
+00:02:51,500 --> 00:02:55,000
+Então cliquei em salvar e,
+nesse momento,
+
+44
+00:02:55,000 --> 00:02:59,500
+ele abre para mim a opção
+de editar as notícias.
+
+45
+00:02:59,500 --> 00:03:04,500
+Repare que aqui eu estou dentro
+da pasta de notícias.
+
+46
+00:03:04,500 --> 00:03:08,500
+Se eu clicar para adicionar subpágina
+— que, no caso aqui,
+
+47
+00:03:08,500 --> 00:03:11,500
+uma subpágina dentro de uma pasta de notícias
+é uma notícia —,
+
+48
+00:03:11,500 --> 00:03:16,500
+se eu clicar aqui, ele não dá essa permissão,
+porque eu não autorizei.

@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:03,800
+Depois que você está aqui dentro do campus Formiga,
+por exemplo, então,
+
+2
+00:00:03,800 --> 00:00:07,200
+eu tenho uma pasta específica
+de processos seletivos,
+
+3
+00:00:07,200 --> 00:00:11,500
+e dentro dessa pasta eu tenho um determinado
+processo seletivo que eu cadastrei.
+
+4
+00:00:11,500 --> 00:00:16,500
+Depois que você cadastra esse processo seletivo,
+no site,
+
+5
+00:00:16,500 --> 00:00:22,200
+esse processo seletivo aparece aqui, depois que você
+adiciona essa seção na página inicial.
+
+6
+00:00:22,200 --> 00:00:28,200
+Se você for em "Todos os processos", aqui vai mostrar
+todos os processos da instituição, correto?
+
+7
+00:00:28,200 --> 00:00:34,800
+E aí vai mostrar esse processo aqui dentro do grupo
+"Estude no IFMG", que foi um tipo de processo seletivo que nós criamos,
+
+8
+00:00:34,800 --> 00:00:40,800
+e ele vai mostrar que tem um processo seletivo aqui, que está até
+com status finalizado por conta da data,
+
+9
+00:00:40,800 --> 00:00:44,200
+mas ele vai mostrar
+esse processo seletivo.
+
+10
+00:00:44,200 --> 00:00:47,200
+Aqui ele relaciona os cursos, tá?
+
+11
+00:00:47,200 --> 00:00:52,000
+Então ele faz uma navegação que é interessante,
+da página inicial para dentro do processo seletivo,
+
+12
+00:00:52,000 --> 00:00:54,800
+que também aparece no menu.
+
+13
+00:00:54,800 --> 00:00:59,200
+E aqui dentro do curso também, se por acaso
+o usuário chegar no curso primeiro,
+
+14
+00:00:59,200 --> 00:01:04,200
+ele consegue daqui acessar os processos seletivos
+que têm aquele curso.
+
+15
+00:01:04,200 --> 00:01:06,800
+Então fica uma navegação bem interessante.
+
+16
+00:01:06,800 --> 00:01:11,500
+Essa aqui é a página do processo seletivo,
+é essa que nós editamos aqui.
+
+17
+00:01:11,500 --> 00:01:15,500
+Então qualquer conteúdo que eu queira
+que apareça aqui,
+
+18
+00:01:15,500 --> 00:01:21,500
+eu posso vir aqui e fazer uma edição
+especializada aqui,
+
+19
+00:01:21,500 --> 00:01:25,500
+que tudo o que eu colocar aqui
+
+20
+00:01:25,500 --> 00:01:29,800
+ele vai gerar para mim nessa página
+desse processo seletivo.

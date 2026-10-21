@@ -1,0 +1,190 @@
+1
+00:00:00,000 --> 00:00:04,200
+Estou fazendo esse vídeo para mostrar aqui
+como que funciona, né,
+
+2
+00:00:04,200 --> 00:00:07,200
+a parte de página do tipo Campus.
+
+3
+00:00:07,200 --> 00:00:10,200
+Então, aqui eu criei uma pasta normal, né,
+
+4
+00:00:10,200 --> 00:00:14,000
+igual você vem aqui e cria
+uma página do tipo pasta.
+
+5
+00:00:14,000 --> 00:00:18,000
+E dentro dessa pasta Campi,
+eu tenho aqui
+
+6
+00:00:18,000 --> 00:00:22,500
+dois elementos do tipo...
+
+7
+00:00:22,500 --> 00:00:26,000
+Campus, correto?
+
+8
+00:00:26,000 --> 00:00:28,200
+Aqueles dois elementos são do tipo Campus.
+
+9
+00:00:28,200 --> 00:00:31,200
+Quando você escolhe esse elemento
+do tipo Campus,
+
+10
+00:00:31,200 --> 00:00:36,500
+o que é interessante aqui é que ele tem
+uma formatação predefinida
+
+11
+00:00:36,500 --> 00:00:41,500
+para você colocar a Imagem de destaque,
+que é essa imagem que vai aparecer aqui, né?
+
+12
+00:00:41,500 --> 00:00:45,200
+Esse menu aqui, ele vai puxar
+do menu institucional, certo?
+
+13
+00:00:45,200 --> 00:00:48,800
+Aqui você vai marcar se é administrativo
+ou não.
+
+14
+00:00:48,800 --> 00:00:53,500
+E aqui em Destaques, o que é interessante
+é que essa parte exatamente aqui, ó,
+
+15
+00:00:53,500 --> 00:00:57,800
+você consegue mudar inclusive
+a ordem desses destaques
+
+16
+00:00:57,800 --> 00:01:02,200
+e editar isso, né, de uma forma
+bem fácil, né?
+
+17
+00:01:02,200 --> 00:01:08,200
+E aqui é interessante que ele já vai mostrando
+em tempo real o que você tem.
+
+18
+00:01:08,200 --> 00:01:12,000
+Aqui você tem o Endereço, tá,
+do campus,
+
+19
+00:01:12,000 --> 00:01:16,800
+que fica aqui nessa parte mais de baixo, ó,
+em Endereço.
+
+20
+00:01:16,800 --> 00:01:20,200
+E aqui você tem as Redes Sociais
+do campus, né?
+
+21
+00:01:20,200 --> 00:01:25,000
+Você pode colocar elas e elas aparecem
+aqui nesse menu.
+
+22
+00:01:25,000 --> 00:01:28,000
+O que é interessante aqui de Destaques, né,
+
+23
+00:01:28,000 --> 00:01:32,000
+é que eu tenho alguns tipos de elementos
+que eu posso colocar aqui,
+
+24
+00:01:32,000 --> 00:01:36,000
+como, por exemplo, né,
+
+25
+00:01:36,000 --> 00:01:39,500
+essa parte da página de notícias.
+
+26
+00:01:39,500 --> 00:01:44,000
+Essa parte da página de notícias,
+ele vai buscar sempre
+
+27
+00:01:44,000 --> 00:01:49,800
+de um elemento que tenha dentro
+do campus Formiga
+
+28
+00:01:49,800 --> 00:01:53,000
+que seja do tipo Pasta de notícias.
+
+29
+00:01:53,000 --> 00:01:58,500
+Então, quando eu coloco essa Pasta de notícias
+aqui dentro do campus Formiga,
+
+30
+00:01:58,500 --> 00:02:02,500
+ele automaticamente vem aqui para
+
+31
+00:02:02,500 --> 00:02:06,800
+essa parte do site,
+da página de Formiga.
+
+32
+00:02:06,800 --> 00:02:09,000
+Então, isso é bem interessante.
+
+33
+00:02:09,000 --> 00:02:13,200
+E para formar esse menu aqui,
+eu tenho que entrar dentro do campus,
+
+34
+00:02:13,200 --> 00:02:15,800
+e aqui eu vou formar o menu
+como eu quiser.
+
+35
+00:02:15,800 --> 00:02:18,200
+Então, por exemplo, aqui eu tenho
+o menu do Ensino,
+
+36
+00:02:18,200 --> 00:02:20,500
+aqui eu tenho Calendário acadêmico,
+
+37
+00:02:20,500 --> 00:02:23,500
+e esse menu é exibido aqui, ó:
+
+38
+00:02:23,500 --> 00:02:26,000
+Ensino, Calendário acadêmico.
+
+39
+00:02:26,000 --> 00:02:30,500
+Então, à medida que eu venho aqui em Promover
+e marco para Exibir nos menus,
+
+40
+00:02:30,500 --> 00:02:35,500
+aquele conteúdo passa a exibir exatamente
+naquele menu do campus.
+
+41
+00:02:35,500 --> 00:02:39,500
+Então, aqui é o menu do campus
+e aqui é o menu institucional.

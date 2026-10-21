@@ -1,0 +1,250 @@
+1
+00:00:00,000 --> 00:00:05,500
+Dentro do IFMG, nós temos muita demanda
+de páginas de site,
+
+2
+00:00:05,500 --> 00:00:11,500
+desculpa, páginas de projetos de pesquisa,
+feitas por professores,
+
+3
+00:00:11,500 --> 00:00:16,500
+páginas de eventos, né?
+Como essa aqui, que é uma bem recente
+
+4
+00:00:16,500 --> 00:00:20,500
+que a gente fez, do SEP de 2026.
+
+5
+00:00:20,500 --> 00:00:24,500
+A gente pode ver que é uma página
+bem simples, né?
+
+6
+00:00:24,500 --> 00:00:28,500
+Essas páginas hoje têm sido feitas...
+
+7
+00:00:28,500 --> 00:00:32,000
+às vezes o que é na Reitoria é feito
+dentro do Plone,
+
+8
+00:00:32,000 --> 00:00:36,000
+mas nos campi cada um tem usado, às vezes,
+para hospedar um site específico,
+
+9
+00:00:36,000 --> 00:00:39,500
+e a gente não precisa disso mais
+com o Wagtail, né?
+
+10
+00:00:39,500 --> 00:00:44,000
+Vou mostrar aqui como isso funciona
+dentro do Portal novo.
+
+11
+00:00:44,000 --> 00:00:48,000
+Aqui dentro do Portal novo, eu criei
+uma pasta de Projetos,
+
+12
+00:00:48,000 --> 00:00:52,500
+e, dentro da pasta de Projetos, a gente tem
+um conceito chamado Projeto.
+
+13
+00:00:52,500 --> 00:00:57,500
+Quando você cria essa parte aqui
+desse jeito,
+
+14
+00:00:57,500 --> 00:01:02,500
+é uma estrutura específica para você criar
+como se fosse uma página separada.
+
+15
+00:01:02,500 --> 00:01:08,000
+Então eu reproduzi essa página aqui
+do SEP de 2026 dentro do Portal, né?
+
+16
+00:01:08,000 --> 00:01:12,000
+E aqui, quando eu entro,
+ele pede uma logomarca,
+
+17
+00:01:12,000 --> 00:01:15,500
+ele pede uma especificação da página, né?
+
+18
+00:01:15,500 --> 00:01:19,500
+E você pode escolher se essa página
+vai aparecer no menu ou não,
+
+19
+00:01:19,500 --> 00:01:23,500
+e pode organizar esse conteúdo
+da forma como quiser.
+
+20
+00:01:23,500 --> 00:01:27,500
+O que é interessante é que a gente vê que,
+geralmente, essas páginas são bem simples, né?
+
+21
+00:01:27,500 --> 00:01:31,500
+Eles só querem divulgar realmente o evento,
+facilitar o acesso;
+
+22
+00:01:31,500 --> 00:01:35,500
+não são páginas complexas. Então,
+
+23
+00:01:35,500 --> 00:01:39,500
+aqui dentro de Conteúdo, eu tenho diversos
+elementos que eu posso usar,
+
+24
+00:01:39,500 --> 00:01:44,000
+como Cards, Texto, Citação,
+Linha do Tempo, Galeria,
+
+25
+00:01:44,000 --> 00:01:47,500
+e ele já me dá aqui a opção
+de colocar os endereços,
+
+26
+00:01:47,500 --> 00:01:51,000
+se tem algum curso associado
+àquele projeto, àquele evento, né?
+
+27
+00:01:51,000 --> 00:01:54,500
+Se tem algum processo seletivo associado.
+
+28
+00:01:54,500 --> 00:01:58,000
+Então isso acaba sendo muito bom,
+porque o resultado é esse aqui:
+
+29
+00:01:58,000 --> 00:02:02,000
+eu tenho uma página como se fosse
+uma página fora do IFMG.
+
+30
+00:02:02,000 --> 00:02:05,500
+Vocês vão notar que nem o menu
+institucional aparece aqui.
+
+31
+00:02:05,500 --> 00:02:10,000
+Ele vai mostrar para mim a logomarca
+que eu coloquei na pasta, né?
+
+32
+00:02:10,000 --> 00:02:15,500
+A logomarca, o título...
+
+33
+00:02:15,500 --> 00:02:19,500
+Aqui ele vai colocar para mim o que eu
+coloquei em Redes Sociais, né?
+
+34
+00:02:19,500 --> 00:02:23,500
+Ele vai fazer uma barra grande de redes sociais;
+eu coloquei só duas,
+
+35
+00:02:23,500 --> 00:02:27,000
+mas eu poderia colocar todas as redes
+sociais do evento,
+
+36
+00:02:27,000 --> 00:02:30,000
+com opção de contato, tudo aqui.
+
+37
+00:02:30,000 --> 00:02:33,500
+E depois você pode editar a página
+como você quiser.
+
+38
+00:02:33,500 --> 00:02:38,000
+E o que é muito interessante é que tudo isso
+que foi feito aqui — Evento e objetivos —
+
+39
+00:02:38,000 --> 00:02:42,000
+você pode reproduzir; você tem elementos
+muito bons
+
+40
+00:02:42,000 --> 00:02:47,500
+e muito melhores do que o Plone para reproduzir
+isso aqui nessa parte nova, né?
+
+41
+00:02:47,500 --> 00:02:51,500
+Então coloquei um texto,
+coloquei aqui uma citação, né?
+
+42
+00:02:51,500 --> 00:02:55,000
+Coloquei aqui como se fossem menus
+como esse, tá?
+
+43
+00:02:55,000 --> 00:02:58,500
+Isso tudo é navegável.
+Coloquei aqui como se fosse
+
+44
+00:02:58,500 --> 00:03:02,500
+um elemento do tipo Linha do Tempo,
+
+45
+00:03:02,500 --> 00:03:05,500
+que é muito interessante e mostra
+aqui também.
+
+46
+00:03:05,500 --> 00:03:09,500
+Aqui eu posso colocar imagens, uma galeria
+de imagens semelhante ao que foi feito aqui, né?
+
+47
+00:03:09,500 --> 00:03:13,000
+Também posso colocar
+uma galeria de imagens.
+
+48
+00:03:13,000 --> 00:03:16,500
+Se você associa um curso com esse projeto,
+ele já mostra aqui, por exemplo,
+
+49
+00:03:16,500 --> 00:03:20,500
+todos os cursos que estão associados
+com aquele projeto.
+
+50
+00:03:20,500 --> 00:03:25,500
+Então eu creio que isso resolva bem
+tanto a parte de eventos, né,
+
+51
+00:03:25,500 --> 00:03:29,500
+quanto a parte de projetos de pesquisa
+
+52
+00:03:29,500 --> 00:03:34,000
+e talvez outras demandas similares
+com essa página aqui.

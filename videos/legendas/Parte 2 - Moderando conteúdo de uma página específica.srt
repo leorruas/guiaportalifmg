@@ -1,0 +1,171 @@
+1
+00:00:00,000 --> 00:00:03,500
+Bom, aqui eu estou com uma notícia
+do Campus Formiga, né?
+
+2
+00:00:03,500 --> 00:00:08,500
+Essa notícia está publicada
+aqui dentro do campus.
+
+3
+00:00:08,500 --> 00:00:12,500
+E eu vou mostrar para vocês como funcionaria
+dentro daquela primeira parte,
+
+4
+00:00:12,500 --> 00:00:16,000
+daquela moderação, como funcionaria uma edição.
+
+5
+00:00:16,000 --> 00:00:19,500
+Aqui eu estou logado com o usuário "formiga",
+que, como eu demonstrei
+
+6
+00:00:19,500 --> 00:00:24,500
+no vídeo anterior, esse usuário não tem acesso
+a publicar conteúdo,
+
+7
+00:00:24,500 --> 00:00:28,000
+mas ele tem acesso a criar páginas.
+
+8
+00:00:28,000 --> 00:00:31,500
+Então eu vou entrar aqui dentro
+das notícias de Formiga.
+
+9
+00:00:31,500 --> 00:00:35,000
+Eu vou editar essa notícia;
+eu posso editar qualquer coisa, tá?
+
+10
+00:00:35,000 --> 00:00:39,500
+"Precisa de aprovação".
+
+11
+00:00:39,500 --> 00:00:44,500
+Então, eu tenho aqui a opção de salvar um rascunho;
+nessa hora não vai executar o fluxo de trabalho.
+
+12
+00:00:44,500 --> 00:00:48,000
+Mas, se eu clicar aqui agora, ele vai mostrar
+
+13
+00:00:48,000 --> 00:00:51,200
+exatamente aquele fluxo de trabalho que eu criei.
+
+14
+00:00:51,200 --> 00:00:55,000
+Então vou clicar aqui, e é interessante que, nessa hora,
+
+15
+00:00:55,000 --> 00:00:58,500
+se eu vier aqui e pedir para atualizar a notícia,
+
+16
+00:00:58,500 --> 00:01:04,500
+eu fiz uma alteração na notícia, mas ainda
+não está mostrando essa alteração aqui.
+
+17
+00:01:04,500 --> 00:01:08,500
+Então, o que é até interessante aqui, né?
+
+18
+00:01:08,500 --> 00:01:12,500
+Ele mostra "Online + Em moderação",
+quer dizer que a notícia já está online,
+
+19
+00:01:12,500 --> 00:01:16,500
+mas "Em moderação" quer dizer
+que ela não está atualizada.
+
+20
+00:01:16,500 --> 00:01:21,500
+E aí é interessante que aqui eu não tenho opção:
+se eu clicar aqui em "Publicar", né,
+
+21
+00:01:21,500 --> 00:01:27,500
+com esse usuário, vai mostrar que eu não tenho
+permissão para publicar essa página.
+
+22
+00:01:27,500 --> 00:01:32,000
+Então vou entrar aqui agora com o usuário
+como se fosse da comunicação
+
+23
+00:01:32,000 --> 00:01:36,000
+do Campus Formiga, que é o usuário que modera
+
+24
+00:01:36,000 --> 00:01:39,500
+todo o conteúdo da página de Formiga.
+
+25
+00:01:39,500 --> 00:01:44,000
+E aqui, quando eu entro, ele já mostra
+a opção "Aguardando sua revisão".
+
+26
+00:01:44,000 --> 00:01:48,000
+Então isso facilita bastante, porque quando o usuário entra
+ele já pode revisar o conteúdo.
+
+27
+00:01:48,000 --> 00:01:51,500
+Se ele clicar aqui, ele não vai editar a notícia aqui,
+
+28
+00:01:51,500 --> 00:01:55,000
+porque eu não dei permissão para ele,
+mas ele pode vir aqui
+
+29
+00:01:55,000 --> 00:01:59,500
+e aprovar a notícia, porque eu dei permissão
+
+30
+00:01:59,500 --> 00:02:03,500
+só para aprovar. Ele pode inclusive solicitar mudanças,
+
+31
+00:02:03,500 --> 00:02:06,500
+ele pode aprovar com comentário:
+
+32
+00:02:06,500 --> 00:02:11,000
+"muito bem menino", e clicar em "Aprovar".
+
+33
+00:02:11,000 --> 00:02:15,500
+Nessa hora aqui, porque eu dei só essa permissão
+para esse usuário aprovar Formiga,
+
+34
+00:02:15,500 --> 00:02:20,000
+quando ele aprovar, a notícia já mostra
+atualizada aqui.
+
+35
+00:02:20,000 --> 00:02:23,500
+Então seguiu todo o processo do fluxo de trabalho
+que foi criado
+
+36
+00:02:23,500 --> 00:02:26,500
+especificamente para o Campus Formiga,
+
+37
+00:02:26,500 --> 00:02:30,000
+o controle de usuários e grupos separados
+
+38
+00:02:30,000 --> 00:02:33,000
+e o controle de moderação.

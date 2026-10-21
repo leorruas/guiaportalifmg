@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 00:00:04,500
+Para a permissão de grupos
+dentro do Wagtail,
+
+2
+00:00:04,500 --> 00:00:08,500
+eu venho aqui em Configurações, Grupos,
+que é onde eu crio todo o agrupamento,
+
+3
+00:00:08,500 --> 00:00:12,500
+que são os papéis que eu vou liberar
+para o usuário.
+
+4
+00:00:12,500 --> 00:00:17,000
+Então aqui eu já venho com esses dois papéis,
+eu tenho os administradores
+
+5
+00:00:17,000 --> 00:00:20,500
+e aqui, por exemplo, eu criei
+um Grupo Formiga,
+
+6
+00:00:20,500 --> 00:00:26,000
+que é onde, nesse grupo, eu coloco todas as
+permissões que o usuário vai ter.
+
+7
+00:00:26,000 --> 00:00:31,000
+Essas permissões aqui,
+se eu concedê-las por aqui,
+
+8
+00:00:31,000 --> 00:00:36,000
+são permissões que vão acontecer em nível global,
+ou seja, vão valer para todos os campi.
+
+9
+00:00:36,000 --> 00:00:40,500
+E, nesse exemplo que eu estou fazendo aqui,
+é do Campus Formiga,
+
+10
+00:00:40,500 --> 00:00:46,500
+mas poderia valer, por exemplo,
+para uma área administrativa.
+
+11
+00:00:46,500 --> 00:00:52,500
+Eu vim aqui, e essa opção
+"Pode acessar o administrador Wagtail"
+
+12
+00:00:52,500 --> 00:00:57,000
+dá a entender que ele às vezes vai se tornar
+administrador, mas não é:
+
+13
+00:00:57,000 --> 00:01:03,500
+na verdade, é só para ele acessar a parte de
+administrador aqui para manipular os conteúdos.
+
+14
+00:01:03,500 --> 00:01:08,500
+Então aqui, por exemplo, eu dei permissão
+específica para ele na página de Formiga,
+
+15
+00:01:08,500 --> 00:01:12,000
+porque nós criamos um Campus Formiga,
+está bom?
+
+16
+00:01:12,000 --> 00:01:18,000
+Dei permissão específica para ele editar
+a coleção do tipo Formiga,
+
+17
+00:01:18,000 --> 00:01:21,500
+os documentos que estão na coleção
+do tipo Formiga
+
+18
+00:01:21,500 --> 00:01:24,500
+e as imagens que estão na coleção
+do tipo Formiga.
+
+19
+00:01:24,500 --> 00:01:29,500
+Eu então vim aqui em Usuários, criei um usuário
+chamado Formiga
+
+20
+00:01:29,500 --> 00:01:32,500
+e atribuí para ele esse papel
+Grupo Formiga.
+
+21
+00:01:32,500 --> 00:01:35,500
+Aqui eu tenho a opção de torná-lo
+administrador,
+
+22
+00:01:35,500 --> 00:01:39,500
+e ele pode fazer parte de mais de um grupo
+ao mesmo tempo.
+
+23
+00:01:39,500 --> 00:01:44,500
+Quando eu faço logoff aqui
+e entro com esse usuário...
+
+24
+00:01:49,500 --> 00:01:54,000
+Quando eu entro com esse usuário aqui,
+veja o que é interessante:
+
+25
+00:01:54,000 --> 00:01:57,500
+ele limita todas as opções para mim.
+Por exemplo,
+
+26
+00:01:57,500 --> 00:02:02,000
+quando eu vou dentro de Configurações, eu consigo
+ver só a coleção de Formiga.
+
+27
+00:02:02,000 --> 00:02:05,500
+Se eu for fazer o upload de um documento,
+
+28
+00:02:05,500 --> 00:02:09,000
+eu consigo fazer upload somente dentro
+da coleção Formiga.
+
+29
+00:02:09,000 --> 00:02:13,500
+E, obviamente, dentro da coleção Formiga
+ele conseguiria criar subcoleções.
+
+30
+00:02:13,500 --> 00:02:17,000
+Isso vale para documentos
+e vale para imagens,
+
+31
+00:02:17,000 --> 00:02:22,500
+a mesma coisa: ele está vendo aqui só as imagens
+que estão dentro da coleção de Formiga.
+
+32
+00:02:22,500 --> 00:02:26,500
+E aqui é muito interessante que,
+quando eu entro aqui,
+
+33
+00:02:26,500 --> 00:02:30,000
+como ele tem acesso só àquela página
+de Formiga,
+
+34
+00:02:30,000 --> 00:02:33,000
+ele já vai ver a raiz
+como Formiga.
+
+35
+00:02:33,000 --> 00:02:37,000
+Então ele somente consegue manipular
+o que está aqui dentro.
+
+36
+00:02:37,000 --> 00:02:40,500
+Aqui, por que ele mostrou que não tem permissão?
+
+37
+00:02:40,500 --> 00:02:45,000
+Porque eu não liberei permissão para esse
+usuário, por exemplo,
+
+38
+00:02:45,000 --> 00:02:50,500
+editar uma notícia ou editar uma página de
+conteúdo lá no formato global.
+
+39
+00:02:50,500 --> 00:02:55,000
+Então algumas coisas aqui esse usuário
+ainda não consegue fazer.

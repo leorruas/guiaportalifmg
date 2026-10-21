@@ -1,0 +1,197 @@
+1
+00:00:01,000 --> 00:00:05,800
+Bom, estou fazendo esse vídeo aqui para explicar
+como funciona a parte de processo seletivo.
+
+2
+00:00:05,800 --> 00:00:09,500
+Aqui em Configurações, nós temos
+os Tipos de processo seletivo,
+
+3
+00:00:09,500 --> 00:00:13,000
+em que eu posso, por exemplo, cadastrar
+os nomes que eu quiser.
+
+4
+00:00:13,000 --> 00:00:16,500
+Aqui eu cadastrei dois:
+um para aluno
+
+5
+00:00:16,500 --> 00:00:20,000
+e um, por exemplo, para processos seletivos
+de seleção de servidores.
+
+6
+00:00:20,000 --> 00:00:24,200
+E dentro desses tipos de processo seletivo,
+você tem os subtipos.
+
+7
+00:00:24,200 --> 00:00:30,500
+Então, dentro do tipo "Estude no IFMG",
+cadastrei aqui o Tecnólogo e a Graduação.
+
+8
+00:00:30,500 --> 00:00:35,000
+E nessa parte de processo seletivo,
+aqui quando a gente tem,
+
+9
+00:00:35,000 --> 00:00:39,200
+eu não consigo vir aqui na raiz
+e cadastrar um processo seletivo.
+
+10
+00:00:39,200 --> 00:00:44,000
+Para eu cadastrar um processo seletivo,
+pelo que eu entendi, obrigatoriamente
+
+11
+00:00:44,000 --> 00:00:49,200
+eu preciso estar dentro de uma pasta
+que é uma pasta do tipo Campus.
+
+12
+00:00:49,200 --> 00:00:54,500
+Então aqui também estou dentro de uma subpasta Projetos
+e vejo que não consigo cadastrar processo seletivo.
+
+13
+00:00:54,500 --> 00:00:59,500
+Então eu só consigo aqui dentro,
+por exemplo, de Campi.
+
+14
+00:00:59,500 --> 00:01:02,500
+Eu tenho aqui o campus Formiga.
+
+15
+00:01:02,500 --> 00:01:06,200
+Aí aqui dentro de Formiga vai aparecer para mim
+a Pasta de processos seletivos.
+
+16
+00:01:06,200 --> 00:01:11,200
+Então eu cadastrei aqui uma pasta dentro de Formiga,
+uma pasta "Processos seletivos".
+
+17
+00:01:11,200 --> 00:01:15,500
+Aí, toda vez que eu vier aqui
+e adicionar uma subpágina
+
+18
+00:01:15,500 --> 00:01:18,500
+dentro dessa subpasta
+do tipo processo seletivo,
+
+19
+00:01:18,500 --> 00:01:23,000
+ele já vai cair com uma configuração
+do tipo novo Processo Seletivo.
+
+20
+00:01:23,000 --> 00:01:27,000
+Então aqui eu vou escolher o tipo,
+aqui eu vou escolher...
+
+21
+00:01:27,000 --> 00:01:30,000
+Deixa eu pegar um que já está
+aqui cadastrado.
+
+22
+00:01:30,000 --> 00:01:35,000
+Aqui eu vou pegar, por exemplo, o nome do processo seletivo,
+que vem nessa parte do site.
+
+23
+00:01:35,000 --> 00:01:40,500
+Aqui eu vou colocar o subtipo dele,
+que é essa informação que vem aqui:
+
+24
+00:01:40,500 --> 00:01:45,000
+"Processo seletivo: Graduação",
+e ela também vai no menu.
+
+25
+00:01:45,000 --> 00:01:50,500
+Então aqui dentro, quando eu agrupo ele aqui,
+ele vai aparecer dentro do "Estude no IFMG".
+
+26
+00:01:50,500 --> 00:01:55,000
+Então aqueles tipos de processo seletivo
+é o que formam esse menu aqui.
+
+27
+00:01:55,000 --> 00:01:59,500
+Aqui eu vou colocar edital e configurações,
+que são essas informações que aparecem aqui:
+
+28
+00:01:59,500 --> 00:02:02,800
+período de ingresso e conteúdo.
+
+29
+00:02:02,800 --> 00:02:06,500
+O conteúdo é o conteúdo da página;
+aqui eu só coloquei um texto,
+
+30
+00:02:06,500 --> 00:02:12,500
+mas eu poderia colocar aqui imagem e fazer uma página
+toda personalizada desse processo seletivo.
+
+31
+00:02:12,500 --> 00:02:16,800
+Aqui no link para o sistema de inscrições, eu coloquei o link,
+e esse link vem aqui.
+
+32
+00:02:16,800 --> 00:02:21,500
+Se o usuário clicar, então,
+ele vai para aquela página.
+
+33
+00:02:21,500 --> 00:02:27,500
+E aqui eu vou colocar então, embora eu esteja
+dentro do campus Formiga — é isso que eu achei interessante —,
+
+34
+00:02:27,500 --> 00:02:31,800
+aqui eu posso marcar para onde que é
+aquele processo seletivo:
+
+35
+00:02:31,800 --> 00:02:35,000
+se ele é para Congonhas, se ele é para Formiga,
+para quais campi.
+
+36
+00:02:35,000 --> 00:02:39,800
+E eu posso selecionar quais cursos estão participando
+daquele processo seletivo.
+
+37
+00:02:39,800 --> 00:02:44,000
+O resultado final é uma página
+semelhante a essa,
+
+38
+00:02:44,000 --> 00:02:49,000
+que vai mostrar aqui o período de inscrição,
+se está aberto ou se não está aberto,
+
+39
+00:02:49,000 --> 00:02:52,200
+o link para inscrição e os cursos
+que estão relacionados.
+
+40
+00:02:52,200 --> 00:02:57,500
+E aqui ele mostraria todo aquele conteúdo
+personalizado do processo seletivo.

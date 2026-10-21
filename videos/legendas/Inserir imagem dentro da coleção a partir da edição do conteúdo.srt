@@ -1,0 +1,53 @@
+1
+00:00:00,000 --> 00:00:03,800
+Olá! Sobre a questão da imagem, na verdade,
+é só quando não tem uma determinada imagem,
+
+2
+00:00:03,800 --> 00:00:08,800
+quando a pasta está vazia.
+
+3
+00:00:08,800 --> 00:00:12,800
+Então, por exemplo: Office Jr.
+Essa pasta está vazia, essa coleção está vazia.
+
+4
+00:00:12,800 --> 00:00:15,800
+Aí aparece essa opção aqui, ó.
+
+5
+00:00:15,800 --> 00:00:19,000
+Está vendo? Enviar uma nova imagem.
+
+6
+00:00:19,000 --> 00:00:24,500
+Agora, uma coisa que poderia ter era aqui dentro,
+
+7
+00:00:24,500 --> 00:00:29,500
+ao selecionar a pasta, aqui dentro mesmo você fazer isso,
+
+8
+00:00:29,500 --> 00:00:33,200
+mesmo quando já tiver imagens,
+como é o caso aqui de Ouro Branco.
+
+9
+00:00:33,200 --> 00:00:37,200
+Ouro Branco já tem imagens, então não aparece aquele upload.
+Poderia aparecer aquela opção,
+
+10
+00:00:37,200 --> 00:00:40,800
+porque isso facilitaria acho que bastante para inserir.
+
+11
+00:00:40,800 --> 00:00:44,500
+Senão você tem que ir lá na coleção,
+inserir a imagem e depois voltar aqui, né?
+
+12
+00:00:44,500 --> 00:00:48,000
+Acho que isso complica um pouco,
+não sei se é um bug.

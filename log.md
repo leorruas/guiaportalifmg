@@ -1,5 +1,9 @@
 # Registro de mudanças
 
+## 2026-10-21 — Legendas SRT e transcrições dos vídeos
+
+- Adicionadas em `videos/legendas/` as 11 transcrições em formato SubRip (`.srt`) correspondentes aos vídeos de `videos/`, acompanhadas do documento consolidado `videos/transcricoes-legendas-videos-mp4.md`.
+
 ## 2026-10-21 — Suporte a vídeos e legendas SRT
 
 - Criado `video.js` para incorporar vídeos MP4/WebM nos artigos e converter legendas SRT para WebVTT no navegador, sem alterar os arquivos.

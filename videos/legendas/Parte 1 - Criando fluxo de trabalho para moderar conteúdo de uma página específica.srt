@@ -1,0 +1,114 @@
+1
+00:00:00,000 --> 00:00:04,500
+Aqui, como trabalhar com a parte de aprovação,
+de moderação de conteúdo, né?
+
+2
+00:00:04,500 --> 00:00:12,500
+Aqui já vem por padrão um conteúdo para
+um moderador global, tá?
+
+3
+00:00:12,500 --> 00:00:16,500
+Mas eu posso criar configurações
+específicas também.
+
+4
+00:00:16,500 --> 00:00:21,000
+Aqui em Grupos, por exemplo, eu criei o Grupo Formiga,
+
+5
+00:00:21,000 --> 00:00:26,000
+e o Grupo Formiga consegue editar e bloquear,
+mas não consegue publicar, correto?
+
+6
+00:00:26,000 --> 00:00:33,500
+Então aqui eu consigo vir em Fluxos de trabalho, tá?
+
+7
+00:00:33,500 --> 00:00:38,000
+Apenas voltando aqui só para explicar melhor:
+
+8
+00:00:38,000 --> 00:00:41,000
+eu tenho o Grupo Formiga,
+que são os criadores de conteúdo,
+
+9
+00:00:41,000 --> 00:00:45,500
+e tenho o grupo comunicação formiga,
+que tem permissão de publicar e de editar
+
+10
+00:00:45,500 --> 00:00:50,000
+dentro do site do Campus Formiga.
+
+11
+00:00:50,000 --> 00:00:54,500
+Eu então venho aqui em Fluxos de trabalho, né?
+
+12
+00:00:54,500 --> 00:00:59,500
+Primeiro, antes do fluxo de trabalho,
+eu vou criar uma nova tarefa,
+
+13
+00:00:59,500 --> 00:01:04,500
+e essa tarefa vai se chamar
+"moderação formiga".
+
+14
+00:01:04,500 --> 00:01:11,000
+E vou colocar que o grupo, os papéis que vão poder
+fazer aquilo, é o grupo "comunicação formiga".
+
+15
+00:01:11,000 --> 00:01:16,000
+Então eu crio isso, aí venho aqui
+em Fluxos de trabalho
+
+16
+00:01:16,000 --> 00:01:23,000
+e vou adicionar um novo fluxo de trabalho que se chama
+"moderar conteúdo publicado formiga".
+
+17
+00:01:23,000 --> 00:01:29,500
+Então vou adicionar uma tarefa em "Existente",
+que é aquela tarefa que acabei de criar:
+
+18
+00:01:29,500 --> 00:01:35,000
+"moderação formiga", e vou escolher uma página
+que vai participar daquele fluxo de trabalho.
+
+19
+00:01:35,000 --> 00:01:41,500
+No caso, é a página de Formiga. Então posso criar
+um fluxo para cada conteúdo.
+
+20
+00:01:41,500 --> 00:01:48,500
+Com isso aqui, todo conteúdo que for publicado
+dentro do Campus Formiga —
+
+21
+00:01:48,500 --> 00:01:53,500
+seja uma página, seja qualquer coisa,
+tudo que for publicado aqui dentro —,
+
+22
+00:01:53,500 --> 00:01:57,500
+aquele usuário que não tem acesso de publicação,
+que é o usuário que cria o conteúdo,
+
+23
+00:01:57,500 --> 00:02:02,000
+tudo que ele fizer vai passar por uma aprovação
+seguindo esse fluxo de trabalho.
+
+24
+00:02:02,000 --> 00:02:06,500
+Vou fazer um outro vídeo agora
+mostrando isso na prática.
