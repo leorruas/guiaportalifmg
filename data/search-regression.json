@@ -156,6 +156,14 @@
     {
       "query": "configurar fluxo de aprovação",
       "expected_top_id": "task-workflow-approval-config"
+    },
+    {
+      "query": "encurtar endereço",
+      "expected_top_id": "task-short-url-redirect"
+    },
+    {
+      "query": "redirecionamento permanente",
+      "expected_top_id": "task-short-url-redirect"
     }
   ]
 }

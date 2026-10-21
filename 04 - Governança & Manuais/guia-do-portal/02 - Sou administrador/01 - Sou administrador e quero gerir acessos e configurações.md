@@ -14,6 +14,7 @@ Uma configuração administrativa pode afetar várias pessoas e áreas ao mesmo 
 - criar estruturas reservadas ao nível administrativo, como pasta de notícias;
 - definir quais grupos podem editar páginas e usar coleções;
 - configurar quais grupos avaliam alterações antes da publicação e em quais áreas;
+- criar endereços curtos ou encaminhar URLs antigas sem adicionar páginas à navegação;
 - criar coleções e definir quem pode utilizá-las;
 - manter as opções administrativas usadas em processos seletivos e cursos;
 - identificar quando uma demanda é editorial, de moderação ou realmente administrativa.
@@ -29,6 +30,8 @@ Uma configuração administrativa pode afetar várias pessoas e áreas ao mesmo 
 [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/07 - Sou administrador e quero configurar grupos e permissões|Definir quem pode editar páginas e usar coleções]]
 
 [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/13 - Sou administrador e quero configurar quem aprova os conteúdos de um campus ou setor|Configurar quem aprova conteúdos de um campus ou setor]]
+
+[[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/14 - Sou administrador e quero criar um endereço curto ou redirecionar uma página|Criar um endereço curto ou redirecionar uma página]]
 
 [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/08 - Sou administrador e quero criar uma coleção e definir seus acessos|Criar uma coleção de arquivos e definir quem pode usá-la]]
 

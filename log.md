@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-21 — Redirecionamentos como alternativa ao tipo de página Link
+
+- Criado o artigo canônico `04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/14 - Sou administrador e quero criar um endereço curto ou redirecionar uma página.md` no perfil Administrador, a partir do SRT `Criando encurtamento ou redirecionamento.srt`; incorporados MP4, legenda e descrição contextual antes do player.
+- Conectados os procedimentos de **Redirecionamentos** (Configurações, URL curta ou antiga) e **Link** (tipo de página na árvore e menus) em ambos os artigos, com orientação de escolha sem misturar suas operações.
+- Registrados os controles de origem, destino, permanência e teste conforme documentação oficial do Wagtail, com ressalvas sobre URLs ocupadas e permissões da instalação do IFMG.
+- Atualizados `AGENTS.md`, o índice e metadados do guia, casos de regressão de busca, cache em `index.html`, perfil de Administrador e `videos/BACKLOG.md`. Contagem: 10/11 vídeos integrados, 1 pendente.
+
 ## 2026-10-21 — Procedimento para configurar quem aprova conteúdos
 
 - Criado o artigo canônico `04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/13 - Sou administrador e quero configurar quem aprova os conteúdos de um campus ou setor.md` no perfil Administrador para configurar a tarefa, o grupo aprovador e o fluxo aplicado ao campus ou setor. Texto fundamentado no SRT da Parte 1, com MP4, legenda sincronizada e descrição antes do player.

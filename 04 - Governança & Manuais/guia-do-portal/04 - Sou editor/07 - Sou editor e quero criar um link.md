@@ -2,6 +2,8 @@
 
 Use o tipo de página **Link** quando uma opção na árvore ou no menu do Portal deve levar a pessoa diretamente para **outro endereço**, sem criar uma página de conteúdo intermediária.
 
+**Outra possibilidade:** se você precisa apenas de uma **URL curta** para divulgar uma página, como `/formiga`, e não de uma nova opção na árvore ou no menu, existe o recurso **Configurações → Redirecionamentos**. Ele fica documentado no perfil Administrador em [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/14 - Sou administrador e quero criar um endereço curto ou redirecionar uma página|Criar um endereço curto ou redirecionar uma página]]. Os dois caminhos podem levar ao mesmo destino, mas são configurados em lugares diferentes.
+
 > [!IMPORTANT]
 > Existem dois recursos diferentes chamados “link” no Wagtail. Este artigo trata do **tipo de página Link**, usado como redirecionamento na árvore do Portal. Para inserir links dentro do conteúdo de uma página, use os blocos **Links** ou **Link único** em [[04 - Governança & Manuais/guia-do-portal/04 - Sou editor/15 - Sou editor e quero montar conteúdo com blocos|Montar uma página com blocos de conteúdo]].
 

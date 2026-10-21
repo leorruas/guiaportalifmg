@@ -63,6 +63,7 @@
 
 - **Link (tipo de página)** é uma entrada na árvore do Wagtail que possui uma rota no Portal e redireciona para outra URL. O procedimento canônico é `Criar um link de redirecionamento`.
 - **Links** e **Link único** são blocos inseridos dentro do conteúdo de uma página. Eles não criam nova rota na árvore. O procedimento canônico é `Montar conteúdo com blocos`.
+- **Redirecionamentos** em **Configurações** são regras de encaminhamento de URL, diferentes do tipo de página **Link**. Para URLs curtas e mudanças de endereço, use o procedimento administrativo `Criar um endereço curto ou redirecionar uma página`; conecte-o ao procedimento editorial de Link como **alternativa**, sem misturar os passos. Redirecionamentos padrão do Wagtail só atuam para caminhos não atendidos por uma página existente; verifique a instalação atual antes de generalizar o comportamento.
 - Ao escrever, revisar ou escolher imagens para o guia, nunca use exemplos de blocos de link para ilustrar o tipo de página Link, nem o contrário.
 - `portal.ifmg.edu.br` é o domínio do ambiente atual de homologação. O domínio público previsto é `ifmg.edu.br`. Em exemplos procedimentais que não dependem do domínio, prefira caminhos relativos como `/evento/` e `/evento/nome-do-evento/` para evitar que o manual fique preso ao endereço de homologação.
 
