@@ -30,6 +30,22 @@ titulo: Criar um grupo e limitar seu acesso a páginas e coleções
 
 **Resultado esperado:** a pessoa consegue executar apenas as tarefas necessárias na seção e nas coleções combinadas. Se ela enxergar conteúdo demais ou não conseguir usar um documento de que precisa, revise qual das duas permissões — página ou coleção — está faltando ou ampla demais.
 
+## Definir o que um grupo pode fazer com cada tipo de conteúdo
+
+Além das permissões da **árvore de páginas** e das **coleções**, o exemplo gravado mostra permissões de objetos associadas a tipos como **Campus**, **Pasta de notícias** e **Notícia**. Elas podem permitir ações diferentes, como **adicionar**, **editar** e **excluir**. A concessão de uma dessas ações não significa, por si só, que as outras também estejam autorizadas.
+
+No vídeo, o usuário do Grupo Formiga consegue visualizar páginas do campus, mas inicialmente não pode editá-las. Após o administrador conceder a edição do tipo Campus, o comando de edição aparece. Permitir edição da Pasta de notícias não libera automaticamente a edição de notícias: a permissão do tipo Notícia precisa ser configurada separadamente. O exemplo também distingue **editar** de **adicionar** uma notícia.
+
+**Demonstração: permissões por tipo de objeto.** A gravação compara a conta de um administrador com a conta limitada do Campus Formiga e mostra o efeito de mudar as permissões. Ela documenta o comportamento daquele ambiente; antes de aplicar a configuração, confira o escopo das páginas e das coleções do grupo e as opções atuais no Wagtail.
+
+```video
+arquivo: videos/Permissões de objetos.mp4
+legenda: videos/legendas/Permissões de objetos.srt
+titulo: Definir permissões de edição e criação por tipo de conteúdo
+```
+
+**Como conferir:** use uma conta de teste autorizada para verificar se o grupo consegue visualizar, criar, editar ou remover somente os tipos e conteúdos planejados. Não amplie permissões globais para resolver uma necessidade restrita a um campus.
+
 ## Regra de aplicação
 
 - Editor: cria e edita conteúdo, documentos e imagens no escopo concedido; envia conteúdo para moderação.

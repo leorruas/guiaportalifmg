@@ -44,6 +44,20 @@ Após o carregamento, revise **Título**, **Descrição**, **Coleção** e **Tag
 6. Informe **texto alternativo** quando a imagem trouxer informação necessária para compreender o conteúdo. Marque-a como decorativa somente quando ela não acrescentar informação.
 7. Pré-visualize a página para conferir corte, legibilidade e relação com o texto ao redor.
 
+## Enviar uma imagem durante a edição de uma página
+
+Ao selecionar uma imagem dentro do conteúdo de uma página, o Wagtail pode apresentar um caminho para **Enviar uma nova imagem**. Na gravação, esse botão aparece quando a coleção escolhida está vazia, como no exemplo da coleção Office Jr. Ao selecionar uma coleção que já contém imagens, como a de Ouro Branco, o mesmo seletor **não apresenta** o botão na demonstração.
+
+**Demonstração: diferença no seletor de imagens.** O vídeo compara as duas situações e aponta essa dificuldade como uma possível melhoria de usabilidade. Trata-se de um comportamento observado no ambiente gravado, **não de uma regra confirmada para todas as versões do portal nem de um erro diagnosticado**.
+
+```video
+arquivo: videos/Inserir imagem dentro da coleção a partir da edição do conteúdo.mp4
+legenda: videos/legendas/Inserir imagem dentro da coleção a partir da edição do conteúdo.srt
+titulo: Comparar o envio de imagens em coleções vazias e com arquivos
+```
+
+Se a opção de envio não aparecer no seletor, use **Imagens → Adicionar imagem**, escolha a coleção autorizada, conclua o cadastro e depois volte à edição da página para selecionar o arquivo. Caso essa diferença permaneça na homologação atual, registre-a para avaliação da equipe responsável.
+
 ## Atualizar uma imagem existente
 
 1. Em **Imagens**, busque o item pelo título e abra-o.

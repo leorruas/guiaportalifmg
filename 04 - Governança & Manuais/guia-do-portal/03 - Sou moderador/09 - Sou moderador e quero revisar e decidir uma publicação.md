@@ -20,6 +20,20 @@ A pergunta central é: **esta página já permite que uma pessoa de fora encontr
 
 ![[imagens/manual-ifrn/image14.png|Estado da página no fluxo de moderação]]
 
+## Exemplo: revisar alterações em uma página já publicada
+
+O vídeo a seguir mostra a edição de uma notícia do Campus Formiga por uma conta que **pode editar, mas não publicar**. Salvar o rascunho não equivale a enviá-lo para aprovação. Quando a alteração é encaminhada ao fluxo de trabalho, a versão que já estava publicada continua visível enquanto a nova versão aguarda decisão.
+
+Na gravação, o estado **Online + Em moderação** indica justamente essa combinação: há conteúdo online e uma alteração em revisão. Ao entrar com a conta moderadora, surge a indicação **Aguardando sua revisão**. O exemplo permite solicitar mudanças ou aprovar com comentário. Nesse caso, a conta moderadora não tem permissão para editar diretamente a notícia; isso decorre da configuração dos grupos demonstrados, não de uma restrição universal do papel.
+
+**Demonstração: do envio à aprovação da alteração.** A gravação acompanha as duas contas, o estado da página antes da decisão e a atualização pública após a aprovação.
+
+```video
+arquivo: videos/Parte 2 - Moderando conteúdo de uma página específica.mp4
+legenda: videos/legendas/Parte 2 - Moderando conteúdo de uma página específica.srt
+titulo: Revisar e aprovar a atualização de uma página já publicada
+```
+
 ## Quando devolver
 
 A orientação deve permitir que o editor saiba onde agir, o que falta e qual resultado é esperado.

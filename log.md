@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-21 — Segundo lote de vídeos legendados integrado ao guia
+
+- Integrados três MP4 e seus respectivos SRT a artigos canônicos existentes, sempre com uma descrição antes do player: `Permissões de objetos` no artigo de configuração de grupos (administrador); `Parte 2 - Moderando conteúdo de uma página específica` no artigo de revisão (moderador); `Inserir imagem dentro da coleção a partir da edição do conteúdo` no artigo de imagens (editor).
+- Explicadas as diferenças entre permissões por tipo de objeto e por páginas/coleções; entre a versão online e uma atualização em moderação; e entre seletores de imagens de coleções vazias ou já preenchidas no exemplo gravado.
+- Mantido o comportamento de upload como observação contextual, sem classificá-lo como regra ou bug confirmado. Atualizado `videos/BACKLOG.md` para 8/11 vídeos integrados e três dependentes de validação/definição do procedimento.
+
 ## 2026-10-21 — Backlog e integração do primeiro lote de vídeos legendados
 
 - Conferidas as 11 transcrições `.srt` em `videos/legendas/`; criado `videos/BACKLOG.md` com o mapeamento editorial e as pendências dos três lotes.
