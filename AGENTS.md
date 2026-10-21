@@ -122,6 +122,7 @@
 - Legendas de busca são descobertas exclusivamente pelos blocos `video` dos artigos. Seus SRT oferecem resultados adicionais, abaixo dos resultados encontrados no texto. Um resultado exclusivo do SRT deve citar vídeo, trecho e tempo, e abrir o player no instante correspondente **sem autoplay**; a URL deve preservar vídeo e segundo para permitir acesso direto. Os resultados textuais e a navegação devem ficar disponíveis antes da indexação dos SRT, que acontece em segundo plano e atualiza a busca ativa sem limpar o filtro por perfil. Falhas ao carregar legendas não podem bloquear o guia. Valide que os 11 vídeos foram indexados nos testes.
 - Qualquer alteração em artigos, metadados, aliases ou ranking que possa mudar a ordem dos resultados deve ser validada com `node scripts/test-search-regression.mjs`.
 - Quando uma consulta relevante ganhar comportamento novo, adicione-a a `data/search-regression.json` com o `expected_top_id` correto. Não ajuste o resultado esperado apenas para fazer o teste passar; confirme primeiro que a nova ordem é desejada.
+- Use `descricaoLista` como resumo principal, mostrando trechos adicionais somente quando ajudarem a localizar a informação. Em buscas sem resultados, apresente sugestões lexicais limitadas a títulos/aliases de artigos canônicos, identificadas como possibilidades — não respostas garantidas.
 
 ## Índice gerado do guia
 

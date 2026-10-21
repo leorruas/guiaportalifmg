@@ -180,9 +180,89 @@
         if (campos.corpo.includes(consulta)) pontos += 10;
         if (contemTodosOsTermos(campos.corpo, termos)) pontos += 6;
 
+        // Pontuação complementar: expressão coesa, não palavras espalhadas.
+        if (termos.length >= 2) {
+            pontos += pontuarProximidadeBusca(campos.tituloAcao, termos, 40);
+            pontos += Math.max(0, ...campos.aliases.map(alias => pontuarProximidadeBusca(alias, termos, 38)));
+            pontos += pontuarProximidadeBusca(campos.headings, termos, 18);
+        }
         if (artigo.metadados?.tipo === "tarefa") pontos += 4;
 
         return pontos;
+    }
+
+
+    // Dar destaque a palavras da consulta próximas e na mesma sequência.
+    function pontuarProximidadeBusca(textoNormalizado, termos, maximo = 35) {
+        if (termos.length < 2) return 0;
+        const palavras = normalizarTextoParaBusca(textoNormalizado).match(/[\p{L}\p{N}]+/gu) || [];
+        let menorIntervalo = Infinity;
+        for (let i = 0; i < palavras.length; i++) {
+            if (!palavras[i].includes(termos[0])) continue;
+            let posicao = i, completo = true;
+            for (const termo of termos.slice(1)) {
+                let proxima = -1;
+                for (let j = posicao + 1; j < palavras.length && j <= i + termos.length + 5; j++) {
+                    if (palavras[j].includes(termo)) { proxima = j; break; }
+                }
+                if (proxima < 0) { completo = false; break; }
+                posicao = proxima;
+            }
+            if (completo) menorIntervalo = Math.min(menorIntervalo, posicao - i + 1);
+        }
+        return Number.isFinite(menorIntervalo)
+            ? Math.max(0, maximo - Math.max(0, menorIntervalo - termos.length) * 7)
+            : 0;
+    }
+
+    // Mostrar a descrição editorial, sem expor blocos técnicos nem markup.
+    function resumoDoArtigoBusca(artigo) {
+        const descricao = String(artigo?.metadados?.descricaoLista || "").trim();
+        if (descricao) return descricao;
+        const markdown = removerFrontmatterBusca(artigo?.conteudo || "")
+            .replace(/```[\s\S]*?```/g, " ")
+            .replace(/!\[\[[^\]]+\]\]/g, " ");
+        const paragrafo = markdown.split(/\n\s*\n/)
+            .map(bloco => bloco.trim())
+            .find(bloco => bloco && !/^(?:#|>|-|\d+\.|\[\[|!\[)/.test(bloco)) || "";
+        return paragrafo
+            .replace(/\[\[[^\]|]+\|([^\]]+)\]\]/g, "$1")
+            .replace(/\[\[([^\]]+)\]\]/g, "$1")
+            .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+            .replace(/[*_`~#]/g, "")
+            .replace(/\s+/g, " ").trim().slice(0, 210);
+    }
+
+    // Quando não há acerto, propor tarefas reais por título e aliases, sem IA.
+    function sugerirResultadosBusca(artigos, consulta, limite = 4) {
+        const termos = [...new Set(termosDaBusca(consulta).filter(termo => termo.length >= 4))];
+        if (!termos.length || limite <= 0) return [];
+        return artigos
+            .filter(artigo => artigo?.metadados?.estado !== "absorver")
+            .map(artigo => {
+                const titulo = tituloDaAcaoBusca(artigo.titulo);
+                const aliases = Array.isArray(artigo.metadados?.aliases) ? artigo.metadados.aliases : [];
+                const palavras = [...new Set([titulo, ...aliases].flatMap(palavrasParaFuzzy))];
+                let coincidencias = 0, pontuacao = 0;
+                for (const termo of termos) {
+                    const exato = palavras.some(palavra => palavra.includes(termo)
+                        || (palavra.length >= 4 && termo.includes(palavra)));
+                    const aproximado = !exato && termo.length >= 6 && palavras.some(palavra =>
+                        Math.abs(palavra.length - termo.length) <= 2
+                        && distanciaEdicaoLimitada(termo, palavra, 2) <= 2);
+                    if (exato || aproximado) {
+                        coincidencias++;
+                        pontuacao += exato ? 5 : 2;
+                    }
+                }
+                return { artigo, coincidencias, pontuacao };
+            })
+            .filter(item => item.coincidencias > 0)
+            .sort((a,b) => b.coincidencias - a.coincidencias
+                || b.pontuacao - a.pontuacao
+                || calcularPontuacaoBusca(b.artigo, consulta) - calcularPontuacaoBusca(a.artigo, consulta)
+                || a.artigo.titulo.localeCompare(b.artigo.titulo, "pt-BR", {numeric:true}))
+            .slice(0, limite).map(item => item.artigo);
     }
 
     function palavrasParaFuzzy(texto = "") {
@@ -445,6 +525,9 @@
         extrairReferenciasVideosBusca,
         encontrarCorrespondenciaLegendaBusca,
         calcularPontuacaoBusca,
+        pontuarProximidadeBusca,
+        resumoDoArtigoBusca,
+        sugerirResultadosBusca,
         ranquearArtigos,
         motivoCorrespondenciaBusca,
         rotuloPerfilMinimo,

@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-21 — Busca com ranking contextual, resumos e sugestões
+
+- Ajustado `search.js` para dar pontuação complementar a palavras próximas e na sequência consultada, sobretudo em títulos e aliases, preservando resultados de texto acima das transcrições e a prioridade de correspondências exatas.
+- Resultados usam `descricaoLista` como descrição da finalidade; trecho adicional aparece quando há uma seção, conteúdo ou fala com contexto diferente. Pesquisas sem resultados sugerem até quatro artigos canônicos por similaridade lexical de títulos e aliases, sem afirmar correspondência semântica.
+- Atualizados `script.js`, `style.css`, `index.html` (cache), `AGENTS.md`, testes de regressão e novas consultas que diferenciam tarefas editoriais de configurações administrativas.
+
 ## 2026-10-21 — Busca progressiva e abertura do vídeo no instante encontrado
 
 - Alterado `script.js` para disponibilizar a navegação e a busca nos artigos assim que os Markdown estiverem carregados. Os SRT passam a ser indexados em segundo plano; novas correspondências aparecem na pesquisa ativa sem redefinir o perfil selecionado, e falhas de legendas não bloqueiam a busca textual.

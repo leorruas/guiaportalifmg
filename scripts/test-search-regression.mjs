@@ -190,6 +190,29 @@ const totalLegendas = artigos.reduce((soma, artigo) => soma + artigo.transcricoe
 if (totalLegendas !== 11) throw new Error(`Legendas indexadas: ${totalLegendas}/11`);
 console.log(`Busca nas legendas OK: ${casosDasLegendas.length} consultas e ${totalLegendas} vídeos.`);
 
+// Resumos, sugestões e prioridade das ações devem continuar coerentes.
+const artigoComResumo = artigos.find(item => item.metadados.id === "task-selection-create");
+if (GuiaBusca.resumoDoArtigoBusca(artigoComResumo) !== artigoComResumo.metadados.descricaoLista) {
+    throw new Error("Resumo não utiliza a descrição canônica.");
+}
+const testeResumo = GuiaBusca.resumoDoArtigoBusca({conteudo: "# Título\n\n```video\narquivo: videos/um.mp4\n```\n\nUma explicação **clara** sobre a tarefa."});
+if (testeResumo !== "Uma explicação clara sobre a tarefa.") throw new Error(`Resumo inadequado: ${testeResumo}`);
+const sugestoes = GuiaBusca.sugerirResultadosBusca(artigos, "configurarr permissaao", 4);
+if (!sugestoes.some(item => item.metadados.id === "task-groups-permissions")) {
+    throw new Error("Sugestões não encontraram permissões.");
+}
+if (GuiaBusca.sugerirResultadosBusca(artigos, "palavrainexistentezz").length) {
+    throw new Error("Sugestões não devem inventar relação.");
+}
+if (sugestoes.some(item => item.metadados.estado === "absorver")) {
+    throw new Error("Sugestões incluem artigo absorvido.");
+}
+if (GuiaBusca.pontuarProximidadeBusca("criar e atualizar um processo seletivo", ["criar","processo","seletivo"])
+    <= GuiaBusca.pontuarProximidadeBusca("processo seletivo para criar outra coisa", ["criar","processo","seletivo"])) {
+    throw new Error("Proximidade não respeita a ordem dos termos.");
+}
+console.log(`Resumos e sugestões OK: ${sugestoes.length} possibilidades reais.`);
+
 // Consultas específicas devem abrir a seção que realmente contém a resposta.
 const blocos = artigos.find(artigo => artigo.metadados.id === 'task-blocks-use');
 for (const [consulta, titulo] of [['recursivo', 'Coleção'], ['chapéu', 'Cards'], ['colar', 'Tabela'], ['Link único como chamada para ação', 'Link único como chamada para ação']]) {

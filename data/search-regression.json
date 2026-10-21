@@ -200,6 +200,26 @@
     {
       "query": "muito bem menino",
       "expected_top_id": "task-publication-review"
+    },
+    {
+      "query": "criar processo seletivo",
+      "expected_top_id": "task-selection-create"
+    },
+    {
+      "query": "configurar tipos de processo seletivo",
+      "expected_top_id": "task-auxiliary-registers"
+    },
+    {
+      "query": "configurar fluxo de trabalho",
+      "expected_top_id": "task-workflow-approval-config"
+    },
+    {
+      "query": "criar link no menu",
+      "expected_top_id": "task-link-create"
+    },
+    {
+      "query": "como definir quem aprova conteúdo",
+      "expected_top_id": "task-workflow-approval-config"
     }
   ]
 }

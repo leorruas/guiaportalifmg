@@ -590,6 +590,42 @@ function extrairTrechoRelevante(conteudo, termo) {
     return trecho;
 }
 
+
+function criarLinkResultadoBusca(artigo) {
+    const link = document.createElement("a");
+    link.className = "resultado-sugestao";
+    link.href = `#/${rotaDoArtigo(artigo).split("/").map(encodeURIComponent).join("/")}`;
+    link.textContent = tituloDaAcao(artigo.titulo);
+    link.addEventListener("click", event => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) return;
+        event.preventDefault();
+        abrirArtigo(artigo.titulo, artigo.conteudo);
+    });
+    return link;
+}
+function exibirSugestoesBusca(termo) {
+    const sugestoes = window.GuiaBusca?.sugerirResultadosBusca?.(todosOsArtigos, termo) || [];
+    if (!sugestoes.length) return;
+    const secao = document.createElement("section");
+    secao.className = "busca-sugestoes";
+    secao.setAttribute("aria-label", "Outros procedimentos possíveis");
+    const titulo = document.createElement("h3");
+    titulo.textContent = "Talvez você esteja procurando";
+    const descricao = document.createElement("p");
+    descricao.textContent = "São procedimentos com palavras próximas às da pesquisa. Confira o título antes de abrir.";
+    const lista = document.createElement("ul");
+    sugestoes.forEach(artigo => {
+        const item = document.createElement("li");
+        item.appendChild(criarLinkResultadoBusca(artigo));
+        const perfil = document.createElement("small");
+        perfil.textContent = rotuloPerfilMinimo(artigo);
+        item.appendChild(perfil);
+        lista.appendChild(item);
+    });
+    secao.append(titulo, descricao, lista);
+    containerResultados.appendChild(secao);
+}
+
 function exibirResultados(artigos, termo = "") {
     containerResultados.innerHTML = "";
     leitorDeArtigo.classList.add("escondido");
@@ -598,6 +634,7 @@ function exibirResultados(artigos, termo = "") {
     if (artigos.length === 0) {
         const detalhe = legendasDaBuscaProntas ? "" : " As transcrições dos vídeos ainda estão sendo carregadas.";
         containerResultados.innerHTML = `<p class="mensagem-busca">Nenhum procedimento encontrado para <strong>“${escaparHtml(termo)}”</strong>. Tente uma palavra ligada à tarefa, como “publicar”, “página” ou “coleção”.${detalhe}</p>`;
+        exibirSugestoesBusca(termo);
         return;
     }
 
@@ -683,23 +720,30 @@ function exibirResultados(artigos, termo = "") {
         meta.className = "resultado-meta";
         meta.innerHTML = `<span>${escaparHtml(rotuloPerfilMinimo(artigo))}</span><span aria-hidden="true">·</span><span>${destacarTexto(motivo.rotulo, termo)}</span>`;
 
+        const descricao = window.GuiaBusca?.resumoDoArtigoBusca?.(artigo) || "";
+        const resumo = document.createElement("span");
+        resumo.className = "resultado-resumo";
+        resumo.textContent = descricao;
         const trecho = document.createElement("span");
         trecho.className = "resultado-trecho";
-        const buscaSemOcorrenciaLiteral = !secaoBusca && ["alias", "aproximacao"].includes(motivo.tipo);
-        const textoTrecho = matchLegenda
-            ? matchLegenda.trecho
-            : extrairTrechoRelevante(secaoBusca?.conteudo || artigo.conteudo, buscaSemOcorrenciaLiteral ? "" : termo);
-        trecho.innerHTML = destacarTexto(textoTrecho, buscaSemOcorrenciaLiteral ? "" : termo);
-
+        const mostrarTrecho = Boolean(matchLegenda || secaoBusca || motivo.tipo === "conteudo");
+        if (mostrarTrecho) {
+            const textoTrecho = matchLegenda ? matchLegenda.trecho
+                : extrairTrechoRelevante(secaoBusca?.conteudo || artigo.conteudo, termo);
+            if (textoTrecho.trim() && normalizarTextoParaBusca(textoTrecho.trim()) !== normalizarTextoParaBusca(descricao.trim())) {
+                trecho.innerHTML = destacarTexto(textoTrecho, termo);
+            }
+        }
         conteudoResultado.appendChild(titulo);
         conteudoResultado.appendChild(meta);
+        if (descricao) conteudoResultado.appendChild(resumo);
         if (secaoBusca) {
             const destino = document.createElement("span");
             destino.className = "resultado-meta";
             destino.textContent = `Ir para: ${secaoBusca.titulo}`;
             conteudoResultado.appendChild(destino);
         }
-        conteudoResultado.appendChild(trecho);
+        if (trecho.textContent) conteudoResultado.appendChild(trecho);
         card.appendChild(numero);
         card.appendChild(conteudoResultado);
 
