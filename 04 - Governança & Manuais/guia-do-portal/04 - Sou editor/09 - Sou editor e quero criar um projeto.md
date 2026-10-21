@@ -13,6 +13,14 @@ A página do tipo **Projeto** serve para apresentar uma iniciativa específica. 
 5. Revise se a página explica a finalidade do projeto e dá um caminho claro para o público.
 6. Pré-visualize, valide a identidade com a área responsável e envie para moderação.
 
+**Demonstração: criar uma página de projeto com identidade própria.** O exemplo usa uma página de evento de 2026 montada com o tipo **Projeto**, incluindo logomarca, redes sociais, blocos de conteúdo e relações com cursos e processos seletivos. A gravação apresenta o modelo **Projeto**, não o cadastro de uma página do tipo **Evento**.
+
+```video
+arquivo: videos/Criando página de projeto de pesquisa ou evento.mp4
+legenda: videos/legendas/Criando página de projeto de pesquisa ou evento.srt
+titulo: Montar uma página de projeto usando um evento como exemplo
+```
+
 **Como conferir:** a pessoa entende o que é o projeto, reconhece sua identidade e encontra os canais ou conteúdos relacionados sem precisar pesquisar em outro lugar.
 
 **Limite de permissão:** não vincule cursos, processos, logotipos ou redes de outra área sem autorização. Se a página exigir uma estrutura nova ou uma coleção que seu grupo não possui, solicite o ajuste ao administrador.

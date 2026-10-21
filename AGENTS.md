@@ -49,6 +49,9 @@
 - Use MP4/WebM na pasta `videos/` e SRT em `videos/` ou `legendas/`. Evite autoplay, mantenha controles nativos e confira acessibilidade e tempo dos trechos.
 - Revise conteúdo restrito, dados pessoais e permissões antes de colocar mídia no repositório público. Para alterações no player, valide com `node scripts/test-videos.mjs` e `node --check video.js`, além dos demais testes aplicáveis.
 
+- Com SRT disponível, leia a transcrição inteira antes de escolher o artigo canônico. Insira uma descrição curta e factual **antes do player**, distinguindo demonstrações de regras gerais ou recursos com nomes semelhantes. Exemplo: Redirecionamentos de Configurações não são o tipo de página Link.
+- Registre os próximos lotes, critérios de conclusão e pendências em `videos/BACKLOG.md`. Confira vídeo, SRT, descrição e localização; anote mudanças em `log.md`.
+
 ## Acesso ao painel Wagtail pelo SUAP
 
 - No procedimento de primeiro acesso, indicar explicitamente o botão **Login com SUAP** como caminho de autenticação de editores, moderadores e demais usuários comuns.

@@ -18,6 +18,14 @@ Imagine o grupo como um crachá: ele informa onde a pessoa pode entrar e o que e
 
 7. Salve e confirme o resultado com uma pessoa do grupo.
 
+**Demonstração: criar um grupo com acesso limitado ao campus.** O vídeo percorre **Configurações → Grupos**, permissões para páginas e coleções, vínculo do usuário ao grupo e resultado do acesso restrito. A opção **Pode acessar o administrador Wagtail** permite entrar no painel administrativo para trabalhar com o conteúdo; isoladamente, ela não concede o papel de administrador do Portal.
+
+```video
+arquivo: videos/criando grupo permissao especifico.mp4
+legenda: videos/legendas/criando grupo permissao especifico.srt
+titulo: Criar um grupo e limitar seu acesso a páginas e coleções
+```
+
 **Exemplo:** para um editor do Campus Formiga, conceda edição somente nas páginas e coleções do campus. Não conceda o acesso à árvore inteira apenas porque o grupo precisa publicar uma notícia.
 
 **Resultado esperado:** a pessoa consegue executar apenas as tarefas necessárias na seção e nas coleções combinadas. Se ela enxergar conteúdo demais ou não conseguir usar um documento de que precisa, revise qual das duas permissões — página ou coleção — está faltando ou ampla demais.

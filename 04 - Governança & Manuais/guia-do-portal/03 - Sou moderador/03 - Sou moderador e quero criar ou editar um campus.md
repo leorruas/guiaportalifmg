@@ -17,6 +17,14 @@ Antes de começar, confirme que a página pertence à estrutura institucional co
 6. Confira a estrutura-padrão do campus: **Campus**, **Cursos**, **Processos seletivos**, **Vida acadêmica**, **Vida funcional**, **Projetos** e **Eventos**. Cursos, Processos seletivos e Eventos são menus fixos; Cursos e Processos seletivos filtram os dados daquele campus. Para os conteúdos locais e links compartilhados, siga o [mapa dos campi](#mapa-dos-campi). Quando uma estrutura exigir uma tarefa administrativa específica, como criar uma pasta de notícias, encaminhe essa etapa ao administrador.
 7. Pré-visualize, valide com a área responsável e publique no seu escopo.
 
+**Demonstração: configurar a página de um campus.** A gravação mostra imagem de destaque, destaques ordenáveis, endereço, redes sociais, a pasta de notícias e a diferença entre menu do campus e menu institucional. As opções ilustram a configuração mostrada no vídeo e devem ser conferidas no ambiente em uso.
+
+```video
+arquivo: videos/Elemento do tipo campus.mp4
+legenda: videos/legendas/Elemento do tipo campus.srt
+titulo: Configurar a apresentação e a navegação de um campus
+```
+
 ## Mapa dos campi
 
 Consulte o modelo antes de montar ou revisar a estrutura. Preserve os links para a Reitoria e para os sistemas, em vez de duplicar o conteúdo no campus.

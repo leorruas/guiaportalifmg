@@ -25,4 +25,34 @@ assert.equal(resolverArquivo("videos/legenda português.srt", "legenda"), "https
 for (const nome of ["https://site.com/video.mp4", "../outro.mp4", "videos/../outro.mp4", "videos/x.mp4?test=1", "/videos/x.mp4", "videos/x.srt"]) {
     assert.equal(resolverArquivo(nome), null, nome);
 }
+
+// Confere o inventário atual de vídeos, as legendas e os caminhos nos artigos.
+import { existsSync, readdirSync } from "node:fs";
+const pastaVideo = path.join(raiz, "videos");
+const pastaSrt = path.join(pastaVideo, "legendas");
+const mp4s = readdirSync(pastaVideo).filter(nome => nome.endsWith(".mp4"));
+for (const nome of mp4s) {
+    const srt = path.join(pastaSrt, nome.replace(/\.mp4$/i, ".srt"));
+    assert.ok(existsSync(srt), `Legenda ausente: ${nome}`);
+    assert.ok(converterSrt(readFileSync(srt, "utf8")).transcricao.length > 0, `Legenda vazia: ${nome}`);
+}
+function validarArtigos(diretorio) {
+    for (const entrada of readdirSync(diretorio, { withFileTypes: true })) {
+        const alvo = path.join(diretorio, entrada.name);
+        if (entrada.isDirectory()) { validarArtigos(alvo); continue; }
+        if (!entrada.name.endsWith(".md")) continue;
+        const markdown = readFileSync(alvo, "utf8");
+        for (const bloco of markdown.matchAll(/```video\n([\s\S]*?)\n```/g)) {
+            for (const linha of bloco[1].split("\n")) {
+                const campo = linha.match(/^(arquivo|legenda):\s*(.+)$/);
+                if (!campo) continue;
+                assert.ok(resolverArquivo(campo[2], campo[1] === "legenda" ? "legenda" : "video"), `Caminho inválido: ${campo[2]}`);
+                assert.ok(existsSync(path.join(raiz, campo[2])), `Mídia ausente: ${campo[2]}`);
+            }
+        }
+    }
+}
+validarArtigos(path.join(raiz, "04 - Governança & Manuais", "guia-do-portal"));
+console.log(`OK: ${mp4s.length} vídeos com legendas e referências verificadas.`);
+
 console.log("OK: vídeos, SRT e segurança dos caminhos.");

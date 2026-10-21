@@ -8,6 +8,7 @@ on:
       - 'index.html'
       - 'scripts/test-videos.mjs'
       - 'videos/**/*.srt'
+      - '04 - Governança & Manuais/guia-do-portal/**/*.md'
       - '.github/workflows/validate-videos.yml'
   pull_request:
     paths:
@@ -16,6 +17,7 @@ on:
       - 'index.html'
       - 'scripts/test-videos.mjs'
       - 'videos/**/*.srt'
+      - '04 - Governança & Manuais/guia-do-portal/**/*.md'
       - '.github/workflows/validate-videos.yml'
 
 jobs:

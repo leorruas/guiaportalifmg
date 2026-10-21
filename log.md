@@ -1,5 +1,12 @@
 # Registro de mudanças
 
+## 2026-10-21 — Backlog e integração do primeiro lote de vídeos legendados
+
+- Conferidas as 11 transcrições `.srt` em `videos/legendas/`; criado `videos/BACKLOG.md` com o mapeamento editorial e as pendências dos três lotes.
+- Inseridos cinco vídeos em quatro artigos canônicos (processos seletivos, projetos, campi e permissões de grupos), com descrição antes do player, legendas sincronizadas e títulos específicos.
+- Preservadas as diferenças entre Projeto e Evento, cadastro de tipos administrativos e edição, e acesso ao painel e papel de administrador. Os seis vídeos restantes ficam pendentes sem duplicar instruções ou presumir comportamento atual.
+- Atualizados `videos/README.md`, `AGENTS.md` e testes de referências de vídeo e SRT.
+
 ## 2026-10-21 — Legendas SRT e transcrições dos vídeos
 
 - Adicionadas em `videos/legendas/` as 11 transcrições em formato SubRip (`.srt`) correspondentes aos vídeos de `videos/`, acompanhadas do documento consolidado `videos/transcricoes-legendas-videos-mp4.md`.

@@ -22,10 +22,14 @@ Pense na página como a porta de entrada da seleção e na coleção como a past
 
 3. Preencha o título, o subtipo, os dados do edital, o período de ingresso, o link de inscrições e os campi relacionados, conforme os campos disponíveis.
 
+**Demonstração: cadastrar um processo seletivo.** A gravação percorre o exemplo do Campus Formiga: tipos e subtipos, a pasta em que a seleção é criada, edital, período de ingresso, link de inscrições e vínculos com campi e cursos. Os tipos e subtipos apresentados em **Configurações** são cadastros administrativos; o editor utiliza as opções disponíveis conforme sua permissão.
+
 ```video
 arquivo: videos/Cadastrando processos seletivos.mp4
-titulo: Demonstração do cadastro de um processo seletivo
+legenda: videos/legendas/Cadastrando processos seletivos.srt
+titulo: Cadastrar um processo seletivo no exemplo do Campus Formiga
 ```
+
 
 Não crie ou altere um tipo e um subtipo por conta própria: essas listas são cadastros administrativos. Se não houver uma opção correta, peça ao administrador responsável.
 
@@ -41,6 +45,14 @@ Quando o processo tiver fases ou resultados, apresente cada etapa de forma que a
 8. Pré-visualize, confira os documentos e envie para moderação.
 
 ![[imagens/manual-ifrn/image31.png|Exemplo de coleção com documentos de um processo seletivo]]
+
+**Demonstração: onde o processo seletivo aparece depois do cadastro.** O vídeo percorre a página inicial, a listagem de processos seletivos, a página de um curso relacionado e a página pública da seleção. Assim, ajuda a conferir como os vínculos cadastrados aparecem na navegação.
+
+```video
+arquivo: videos/Exibição de processos seletivos após criados.mp4
+legenda: videos/legendas/Exibição de processos seletivos após criados.srt
+titulo: Conferir a exibição de um processo seletivo e os cursos vinculados
+```
 
 **Resultado esperado:** quem abre a página encontra as datas, entende a etapa em que está e acessa a versão vigente de cada documento.
 
