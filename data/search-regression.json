@@ -164,6 +164,30 @@
     {
       "query": "redirecionamento permanente",
       "expected_top_id": "task-short-url-redirect"
+    },
+    {
+      "query": "como cadastrar um processo seletivo",
+      "expected_top_id": "task-selection-create"
+    },
+    {
+      "query": "como faço para enviar uma página para moderação",
+      "expected_top_id": "task-submit-moderation"
+    },
+    {
+      "query": "como criar um endereço curto",
+      "expected_top_id": "task-short-url-redirect"
+    },
+    {
+      "query": "como configurar fluxo de aprovação",
+      "expected_top_id": "task-workflow-approval-config"
+    },
+    {
+      "query": "como publicar uma notícia",
+      "expected_top_id": "task-news-create"
+    },
+    {
+      "query": "como criar um curso",
+      "expected_top_id": "task-course-create"
     }
   ]
 }

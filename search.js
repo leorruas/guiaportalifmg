@@ -6,12 +6,31 @@
             .toLocaleLowerCase("pt-BR");
     }
 
+    // Perguntas completas usam palavras de ligação que não descrevem a tarefa.
+    // Conservamos os termos de ação ("criar", "editar", "publicar") e voltamos
+    // à consulta original quando ela contém somente palavras de apoio.
+    const palavrasDeApoioBusca = new Set([
+        "a", "as", "o", "os", "um", "uma", "uns", "umas",
+        "de", "da", "do", "das", "dos", "em", "no", "na", "nos", "nas",
+        "para", "pra", "por", "pelo", "pela", "pelos", "pelas",
+        "com", "e", "ou", "que", "qual", "quais", "como", "onde",
+        "eu", "me", "meu", "minha", "isso", "esse", "essa",
+        "posso", "pode", "podemos", "preciso", "quero", "gostaria",
+        "faco", "fazer", "consigo"
+    ]);
+
     function termosDaBusca(termoBusca) {
-        return normalizarTextoParaBusca(termoBusca)
+        const termos = normalizarTextoParaBusca(termoBusca)
             .replace(/[^\p{L}\p{N}]+/gu, " ")
             .trim()
             .split(/\s+/)
             .filter(Boolean);
+        const termosSignificativos = termos.filter(termo => !palavrasDeApoioBusca.has(termo));
+        return termosSignificativos.length ? termosSignificativos : termos;
+    }
+
+    function consultaNormalizadaBusca(termoBusca) {
+        return termosDaBusca(termoBusca).join(" ");
     }
 
     function contemTodosOsTermos(texto, termos) {
@@ -83,7 +102,7 @@
     }
 
     function calcularPontuacaoBusca(artigo, termoBusca, termos = termosDaBusca(termoBusca)) {
-        const consulta = normalizarTextoParaBusca(termoBusca).trim();
+        const consulta = consultaNormalizadaBusca(termoBusca)
         const campos = extrairCamposDeBusca(artigo);
         let pontos = 0;
 
@@ -262,7 +281,7 @@
 
 
     function aliasCorrespondenteBusca(artigo, termoBusca) {
-        const consulta = normalizarTextoParaBusca(termoBusca).trim();
+        const consulta = consultaNormalizadaBusca(termoBusca)
         const termos = termosDaBusca(termoBusca);
         const aliases = Array.isArray(artigo?.metadados?.aliases)
             ? artigo.metadados.aliases
@@ -277,7 +296,7 @@
     }
 
     function motivoCorrespondenciaBusca(artigo, termoBusca) {
-        const consulta = normalizarTextoParaBusca(termoBusca).trim();
+        const consulta = consultaNormalizadaBusca(termoBusca)
         const termos = termosDaBusca(termoBusca);
         const campos = extrairCamposDeBusca(artigo);
 

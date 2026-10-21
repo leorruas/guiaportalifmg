@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-21 — Busca por perguntas em linguagem natural
+
+- Atualizado `search.js` para desconsiderar palavras de apoio em consultas completas, como “como faço para criar…”, mantendo verbos de ação e o conteúdo relevante. Consultas compostas apenas por essas palavras preservam o comportamento anterior.
+- Conservada a precedência de resultados exatos sobre o fallback fuzzy (um erro isolado de edição), os metadados e os IDs canônicos. Adicionados seis casos de regressão de perguntas completas em `data/search-regression.json`, sem alterar as expectativas existentes.
+- Incrementada a versão de cache de `search.js` em `index.html`.
+
 ## 2026-10-21 — Todos os 11 vídeos integrados: Página e Notícia no campus
 
 - Incorporado o MP4 `Elemento do tipo página e tipo notícia dentro do site do campus.mp4`, com o SRT homônimo em `videos/legendas/`, ao artigo canônico do Moderador **Criar ou editar a página de um campus**. Inserida descrição antes do player.
