@@ -5,6 +5,7 @@
 - Ajustado `search.js` para dar pontuação complementar a palavras próximas e na sequência consultada, sobretudo em títulos e aliases, preservando resultados de texto acima das transcrições e a prioridade de correspondências exatas.
 - Resultados usam `descricaoLista` como descrição da finalidade; trecho adicional aparece quando há uma seção, conteúdo ou fala com contexto diferente. Pesquisas sem resultados sugerem até quatro artigos canônicos por similaridade lexical de títulos e aliases, sem afirmar correspondência semântica.
 - Atualizados `script.js`, `style.css`, `index.html` (cache), `AGENTS.md`, testes de regressão e novas consultas que diferenciam tarefas editoriais de configurações administrativas.
+- Na validação inicial, dois testes novos apontaram disputas de intenção. Registrados aliases específicos: **criar processo seletivo** na tarefa editorial e **configurar tipos de processo seletivo** na tarefa administrativa; preservados os resultados esperados e revalidado o cache de metadados.
 
 ## 2026-10-21 — Busca progressiva e abertura do vídeo no instante encontrado
 
