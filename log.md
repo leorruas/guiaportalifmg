@@ -1,5 +1,10 @@
 # Registro de mudanças
 
+## 2026-10-21 — Vídeos com áudio tratado
+
+- Adicionados 11 vídeos MP4 à pasta `videos/`, com redução leve de ruído, equalização para clareza e normalização do volume.
+- Todos os arquivos têm menos de 10.000.000 bytes; cópias conferidas por SHA-256, com nomes em Unicode NFC e originais preservados.
+
 ## 2026-10-20 — Botão de entrada para Alterar privacidade
 
 - Atualizado `administrador-privacidade` para mostrar botão Público com olho antes da janela de opções, lado a lado, com caminho de acesso e ampliação. Reutilizadas capturas de referência já presentes no guia, sem alegar nova homologação.
