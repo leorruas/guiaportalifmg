@@ -2,7 +2,7 @@
 
 Atualização: 21/10/2026. Inventário confirmado: **11 arquivos MP4 e 11 legendas SRT**, com nomes-base correspondentes, em `videos/` e `videos/legendas/`. Este planejamento é separado do backlog dos slides em `treinamento/BACKLOG.md`.
 
-**Andamento:** 8 dos 11 vídeos integrados aos artigos canônicos; 3 pendentes de validação ou definição de procedimento.
+**Andamento:** 9 dos 11 vídeos integrados aos artigos canônicos; 2 pendentes de validação do comportamento ou das permissões.
 
 ## Critério de conclusão
 
@@ -20,16 +20,16 @@ Cada vídeo deve ter transcrição lida, artigo canônico escolhido, explicaçã
 
 Os cinco artigos receberam descrição imediatamente antes do player e legenda `.srt`. O exemplo de evento continua classificado como **Projeto**. A configuração de grupos foi atribuída ao administrador.
 
-## Lote 2: revisão e moderação (3 integrados; 1 pendente)
+## Lote 2: revisão e moderação (4 integrados)
 
 | Vídeo e SRT de mesmo nome | Destino proposto | Observação extraída da transcrição | Estado |
 | --- | --- | --- | --- |
 | Permissões de objetos | Administrador: configurar grupos e permissões | Separa permissão de **tipo de objeto** (Campus, Pasta de notícias, Notícia) da permissão de páginas/coleções. Seção específica incorporada | **Concluído** |
-| Parte 1 - Criando fluxo de trabalho para moderar conteúdo de uma página específica | Administrador: avaliar procedimento próprio para configurar fluxos | Configuração de tarefa, grupo de aprovação, fluxo e escopo Campus Formiga. Não confundir com revisão do moderador | **Pendente: escolher destino canônico** |
+| Parte 1 - Criando fluxo de trabalho para moderar conteúdo de uma página específica | Administrador: **configurar quem aprova conteúdos de um campus ou setor** | Procedimento canônico criado com tarefa, grupo aprovador, fluxo e escopo Campus Formiga; separado da revisão do moderador | **Concluído** |
 | Parte 2 - Moderando conteúdo de uma página específica | Moderador: revisar e decidir publicação | Diferença entre rascunho e envio; estado **Online + Em moderação**, revisão e aprovação | **Concluído** |
 | Inserir imagem dentro da coleção a partir da edição do conteúdo | Editor: adicionar/atualizar imagem | Upload apresentado apenas para coleção vazia no exemplo; em coleção com imagens, opção não apareceu. Relatado como observação, não regra | **Concluído** |
 
-**Restante do lote 2:** permanece pendente o vídeo da Parte 1 sobre criação e configuração do fluxo de aprovação, cujo procedimento administrativo canônico precisa ser definido.
+**Lote 2 concluído:** o vídeo de configuração do fluxo foi integrado ao novo procedimento canônico do Administrador, com a Parte 2 preservada no artigo de revisão do Moderador.
 
 ## Lote 3: comportamentos específicos (2 de 11)
 

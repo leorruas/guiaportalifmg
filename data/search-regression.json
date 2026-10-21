@@ -152,6 +152,10 @@
     {
       "query": "tipo de curso",
       "expected_top_id": "task-auxiliary-registers"
+    },
+    {
+      "query": "configurar fluxo de aprovação",
+      "expected_top_id": "task-workflow-approval-config"
     }
   ]
 }

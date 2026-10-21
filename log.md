@@ -1,5 +1,11 @@
 # Registro de mudanças
 
+## 2026-10-21 — Procedimento para configurar quem aprova conteúdos
+
+- Criado o artigo canônico `04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/13 - Sou administrador e quero configurar quem aprova os conteúdos de um campus ou setor.md` no perfil Administrador para configurar a tarefa, o grupo aprovador e o fluxo aplicado ao campus ou setor. Texto fundamentado no SRT da Parte 1, com MP4, legenda sincronizada e descrição antes do player.
+- Documentado o exemplo do Campus Formiga sem presumir permissões ou alcance global; separados o ajuste administrativo de grupos/fluxos e a revisão feita pelo Moderador. Adicionados vínculos contextuais aos artigos canônicos correspondentes.
+- Atualizados `data/guide-metadata.js`, `data/guide-index.json` (62 artigos), `data/search-regression.json`, cache do módulo no `index.html`, índice do papel Administrador e `videos/BACKLOG.md`. Andamento: 9 de 11 vídeos integrados; restam redirecionamentos e comparação Página/Notícia.
+
 ## 2026-10-21 — Segundo lote de vídeos legendados integrado ao guia
 
 - Integrados três MP4 e seus respectivos SRT a artigos canônicos existentes, sempre com uma descrição antes do player: `Permissões de objetos` no artigo de configuração de grupos (administrador); `Parte 2 - Moderando conteúdo de uma página específica` no artigo de revisão (moderador); `Inserir imagem dentro da coleção a partir da edição do conteúdo` no artigo de imagens (editor).

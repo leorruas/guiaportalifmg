@@ -46,6 +46,11 @@ titulo: Definir permissões de edição e criação por tipo de conteúdo
 
 **Como conferir:** use uma conta de teste autorizada para verificar se o grupo consegue visualizar, criar, editar ou remover somente os tipos e conteúdos planejados. Não amplie permissões globais para resolver uma necessidade restrita a um campus.
 
+Se os grupos já estão configurados e você precisa definir **quem recebe conteúdos para aprovação**, execute também a tarefa administrativa específica:
+
+> [!ACTION]
+> [[04 - Governança & Manuais/guia-do-portal/02 - Sou administrador/13 - Sou administrador e quero configurar quem aprova os conteúdos de um campus ou setor|Configurar o fluxo de aprovação de um campus ou setor]]
+
 ## Regra de aplicação
 
 - Editor: cria e edita conteúdo, documentos e imagens no escopo concedido; envia conteúdo para moderação.
